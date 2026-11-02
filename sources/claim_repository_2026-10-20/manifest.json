@@ -1,0 +1,34 @@
+{
+  "notice": "Public HTTPS only. Exact HTTP bodies retained; no downloaded code executed. A current repository does not authenticate a historical onion-server drop.",
+  "limits": {
+    "seconds": 120,
+    "requests": 8,
+    "bytes_per_response": 2000000,
+    "tree_pages": 4
+  },
+  "requests": [
+    {
+      "url": "https://gitlab.com/api/v4/projects/21skibidiserb37%2Fxyzsolving333/repository/commits?per_page=1",
+      "retrieved_at_utc": "2026-10-20T09:03:18.984701+00:00",
+      "status": 200,
+      "final_url": "https://gitlab.com/api/v4/projects/21skibidiserb37%2Fxyzsolving333/repository/commits?per_page=1",
+      "path": "sources/claim_repository_2026-10-20/head.raw",
+      "bytes": 765,
+      "sha256": "2c953c9aa27c3d6a1ccd65003d056a1615298785add47e53d0e8924fa2b14ceb"
+    },
+    {
+      "url": "https://gitlab.com/api/v4/projects/21skibidiserb37%2Fxyzsolving333/repository/tree?ref=f71dadd835c4d2b71dba80ed555494013a35c843&recursive=true&per_page=100&page=1",
+      "retrieved_at_utc": "2026-10-20T09:03:19.424778+00:00",
+      "status": 200,
+      "final_url": "https://gitlab.com/api/v4/projects/21skibidiserb37%2Fxyzsolving333/repository/tree?ref=f71dadd835c4d2b71dba80ed555494013a35c843&recursive=true&per_page=100&page=1",
+      "path": "sources/claim_repository_2026-10-20/tree-1.raw",
+      "bytes": 1524,
+      "sha256": "16f7a9ffa25a0117915256c2a67c2f2c2de1bbb7bc471dce246b0d70cf7ed87e"
+    }
+  ],
+  "tree_complete": true,
+  "candidate_paths": [],
+  "pinned_commit": "f71dadd835c4d2b71dba80ed555494013a35c843",
+  "tree_entries": 11,
+  "seconds": 0.8278528999944683
+}

@@ -1,0 +1,515 @@
+{
+  "experiment": "E060",
+  "stage_A_passed": true,
+  "stage_B_executed": true,
+  "full_gate_passed": true,
+  "controls": [
+    {
+      "kind": "regression",
+      "index": 0,
+      "runes": 729,
+      "key_length": 31,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.3256776727900625,
+      "truth_score": -2.325677672790065,
+      "output": "results/E060-regression-0-780f0ee6fb88.json"
+    },
+    {
+      "kind": "regression",
+      "index": 14,
+      "runes": 1200,
+      "key_length": 31,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 1200,
+      "found_score": -2.318409268878204,
+      "truth_score": -2.318409268878205,
+      "output": "results/E060-regression-14-9410b7f8d90c.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.1965645749579252,
+      "truth_score": -2.1965645749579252,
+      "output": "results/E060-fresh-0-7e3bdb6ea67e.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.188739117721666,
+      "truth_score": -2.188739117721664,
+      "output": "results/E060-fresh-1-9403d7df2681.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.3190324735052643,
+      "truth_score": -2.3190324735052625,
+      "output": "results/E060-fresh-2-b963882ff223.json"
+    },
+    {
+      "kind": "regression",
+      "index": 1,
+      "runes": 729,
+      "key_length": 17,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.062583069766143,
+      "truth_score": -2.0625830697661423,
+      "output": "results/E060-regression-1-8490e80a315c.json"
+    },
+    {
+      "kind": "regression",
+      "index": 2,
+      "runes": 729,
+      "key_length": 23,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.125670723804504,
+      "truth_score": -2.125670723804503,
+      "output": "results/E060-regression-2-dec4ae225c08.json"
+    },
+    {
+      "kind": "regression",
+      "index": 3,
+      "runes": 729,
+      "key_length": 31,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.2065192380721053,
+      "truth_score": -2.2065192380721093,
+      "output": "results/E060-regression-3-7ca19507743d.json"
+    },
+    {
+      "kind": "regression",
+      "index": 4,
+      "runes": 729,
+      "key_length": 17,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.186506624485005,
+      "truth_score": -2.186506624485009,
+      "output": "results/E060-regression-4-b0e99926ba11.json"
+    },
+    {
+      "kind": "regression",
+      "index": 5,
+      "runes": 729,
+      "key_length": 23,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.139828875626344,
+      "truth_score": -2.139828875626345,
+      "output": "results/E060-regression-5-cd129cf51394.json"
+    },
+    {
+      "kind": "regression",
+      "index": 6,
+      "runes": 3316,
+      "key_length": 17,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 3316,
+      "found_score": -2.0847682012053,
+      "truth_score": -2.084768201205296,
+      "output": "results/E060-regression-6-16c780d24123.json"
+    },
+    {
+      "kind": "regression",
+      "index": 7,
+      "runes": 3316,
+      "key_length": 23,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 3316,
+      "found_score": -1.9822432923367723,
+      "truth_score": -1.982243292336776,
+      "output": "results/E060-regression-7-0450f14bbf47.json"
+    },
+    {
+      "kind": "regression",
+      "index": 8,
+      "runes": 3316,
+      "key_length": 31,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 3316,
+      "found_score": -2.126283587314844,
+      "truth_score": -2.126283587314842,
+      "output": "results/E060-regression-8-63240401ad9b.json"
+    },
+    {
+      "kind": "regression",
+      "index": 9,
+      "runes": 1200,
+      "key_length": 17,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 1200,
+      "found_score": -2.1117235727080605,
+      "truth_score": -2.1117235727080597,
+      "output": "results/E060-regression-9-8153c2777cc2.json"
+    },
+    {
+      "kind": "regression",
+      "index": 10,
+      "runes": 1200,
+      "key_length": 23,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 1200,
+      "found_score": -2.083596815450242,
+      "truth_score": -2.083596815450241,
+      "output": "results/E060-regression-10-c98c14c9ecde.json"
+    },
+    {
+      "kind": "regression",
+      "index": 11,
+      "runes": 1200,
+      "key_length": 31,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 1200,
+      "found_score": -2.1277924252410982,
+      "truth_score": -2.1277924252410982,
+      "output": "results/E060-regression-11-4f834ce7f84a.json"
+    },
+    {
+      "kind": "regression",
+      "index": 12,
+      "runes": 3316,
+      "key_length": 17,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 3316,
+      "found_score": -2.1212630814652673,
+      "truth_score": -2.12126308146527,
+      "output": "results/E060-regression-12-35c763484520.json"
+    },
+    {
+      "kind": "regression",
+      "index": 13,
+      "runes": 1200,
+      "key_length": 23,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 1200,
+      "found_score": -2.0540900882522815,
+      "truth_score": -2.054090088252286,
+      "output": "results/E060-regression-13-3d03abb9f6b2.json"
+    },
+    {
+      "kind": "regression",
+      "index": 15,
+      "runes": 729,
+      "key_length": 17,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.0579602994196784,
+      "truth_score": -2.057960299419682,
+      "output": "results/E060-regression-15-a4b792384822.json"
+    },
+    {
+      "kind": "regression",
+      "index": 16,
+      "runes": 729,
+      "key_length": 23,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.1399464481389243,
+      "truth_score": -2.1399464481389243,
+      "output": "results/E060-regression-16-df79128491b8.json"
+    },
+    {
+      "kind": "regression",
+      "index": 17,
+      "runes": 729,
+      "key_length": 31,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "correct_runes": 729,
+      "found_score": -2.1377230240746523,
+      "truth_score": -2.1377230240746505,
+      "output": "results/E060-regression-17-d1b80a4bff2b.json"
+    }
+  ],
+  "null_score": -5.476413015977107,
+  "validation": {
+    "coupled_records_recomputed": 2325,
+    "pool_records_recomputed": 59168,
+    "constraint_feasibility_checks": 12416,
+    "independent_constrained_phase_optima": 128,
+    "independent_coupled_optima": 25,
+    "alternative_pairs_recomputed": 10,
+    "independent_pool_phase_optima": 672,
+    "pinned_previously_validated_branches": 19
+  },
+  "seconds": 548.3372395000188,
+  "successful_tasks": 22,
+  "peak_sampled_bytes": 169422848,
+  "entries": [
+    {
+      "id": "E060-regression-0",
+      "fingerprint": "780f0ee6fb88a57ab08cbbedf707a1722b8ce38b308cfd990cfe39d79e8a104f",
+      "output": "results/E060-regression-0-780f0ee6fb88.json",
+      "sha256": "1ffda7498daff3a4cdc8669650ada13a5ddb6ba17a3c126bc3b1707a2040db16"
+    },
+    {
+      "id": "E060-regression-14",
+      "fingerprint": "9410b7f8d90c09016b59a9ef18904176b65516a2d3bcac2b90b7216e0d9212c0",
+      "output": "results/E060-regression-14-9410b7f8d90c.json",
+      "sha256": "fb793f9e9c13d0b793488ccef61a615253129235b9e28d1d4729292a808c2d84"
+    },
+    {
+      "id": "E060-fresh-0",
+      "fingerprint": "7e3bdb6ea67e418ee75119f0c17585cfc6ac452d31b54ab4b07c63e7e615773e",
+      "output": "results/E060-fresh-0-7e3bdb6ea67e.json",
+      "sha256": "71eddecd3f5e2723e5ba68f35b45b0193ae7a950deadb73e0eee1726030fab63"
+    },
+    {
+      "id": "E060-fresh-1",
+      "fingerprint": "9403d7df2681140a914a437399f8407f793a258bd8acdb267be46761bc409b35",
+      "output": "results/E060-fresh-1-9403d7df2681.json",
+      "sha256": "775e4c97caf9f3c43b774df9f8200f4760ca8d6bede89ef2f692e5428e3a097f"
+    },
+    {
+      "id": "E060-fresh-2",
+      "fingerprint": "b963882ff2238638c3cdfa2edd4322aad7a2cdd7b4213419ef760f72ba29f0b1",
+      "output": "results/E060-fresh-2-b963882ff223.json",
+      "sha256": "fff4051d3f6c16bf8bffa632a370a41190bc192157dc30768ae321a1c4b245c8"
+    },
+    {
+      "id": "E060-null-2",
+      "fingerprint": "7c9b2dfed63a76d0c1c34817380238de012ff4f2a19e6c90ad00f3f7e5d49f1d",
+      "output": "results/E060-null-2-7c9b2dfed63a.json",
+      "sha256": "e3723995369bbcb1b8e2acb5ab0445ec71b74725e955f00a97fc1d2cfef80b53"
+    },
+    {
+      "id": "E060-regression-1",
+      "fingerprint": "8490e80a315cc4b124cd4c2a8c9118926a2fedc32dc595c00643ef67d7be4c0e",
+      "output": "results/E060-regression-1-8490e80a315c.json",
+      "sha256": "85d7add195dd1899306d3e771e92ed91b977ab92983615e92f6fe5cb004363f7"
+    },
+    {
+      "id": "E060-regression-2",
+      "fingerprint": "dec4ae225c08a2546125f4f4fd97887b02f418054b36f7bd0dc9d3057fd6e22c",
+      "output": "results/E060-regression-2-dec4ae225c08.json",
+      "sha256": "82e4e7f80b2a059f68fdb53e06fb0b6c9095fc7427858d6101947e2f9beb425a"
+    },
+    {
+      "id": "E060-regression-3",
+      "fingerprint": "7ca19507743d18a38c421a26f4b2e4c14d35e1c8d8498eb58296cba559c8b45c",
+      "output": "results/E060-regression-3-7ca19507743d.json",
+      "sha256": "08b673c4ec99367add9b71c5d90e6d2f67e37318a04d2f7adca652de6d3583a7"
+    },
+    {
+      "id": "E060-regression-4",
+      "fingerprint": "b0e99926ba11342b6c5baf53ee85f2f26c6fcdb48438f9545b6e32bb7ebe4f45",
+      "output": "results/E060-regression-4-b0e99926ba11.json",
+      "sha256": "2037c5af37040eb224576f6f209e5e04392312c10c40e09dcb60854c267eff25"
+    },
+    {
+      "id": "E060-regression-5",
+      "fingerprint": "cd129cf513942030ee493ea23456be9c438879cc92a750453619221a96f38976",
+      "output": "results/E060-regression-5-cd129cf51394.json",
+      "sha256": "e7702b9aed1cd6db3df63b7828c0157af72f78e66879ce8d33aca73fbd97ed60"
+    },
+    {
+      "id": "E060-regression-6",
+      "fingerprint": "16c780d24123096c92f5c7ec315cc35218cf6d7bb4b4c29d9fcb9bdb84b8972e",
+      "output": "results/E060-regression-6-16c780d24123.json",
+      "sha256": "327b7110b65c142c9fd273cfeb182d07fa6f6c4c72bf7c307635b466c4b74320"
+    },
+    {
+      "id": "E060-regression-7",
+      "fingerprint": "0450f14bbf4731f4b94b7f63d68f514e6d2902bf4b32690f54a7633cd2b73d4f",
+      "output": "results/E060-regression-7-0450f14bbf47.json",
+      "sha256": "c58c19de962a64a899ea7d1ee5bc2ed95f6a87476ff52408c31e42939f0c1f69"
+    },
+    {
+      "id": "E060-regression-8",
+      "fingerprint": "63240401ad9bbcbe5560a1fb24b83617301b349883e712bac13fd76e326c43de",
+      "output": "results/E060-regression-8-63240401ad9b.json",
+      "sha256": "568e4f5da0fede17edf6cefae9ccea8d113e59e64be42a55fac14fecb9318f8f"
+    },
+    {
+      "id": "E060-regression-9",
+      "fingerprint": "8153c2777cc2a41f40ce37114812a6f4b866ff9636fc05721a85baa8b7779fba",
+      "output": "results/E060-regression-9-8153c2777cc2.json",
+      "sha256": "5e38ea717ff6257b9839f700e65717e07eac78d9a0fd36ad37e8b94644dcc8f3"
+    },
+    {
+      "id": "E060-regression-10",
+      "fingerprint": "c98c14c9ecde38a70b03a8439b3af5ffa7dfecd0aaac6fb13b673d38d6b17213",
+      "output": "results/E060-regression-10-c98c14c9ecde.json",
+      "sha256": "d1756b9f078ddc825b35134df708776a3f099cdac7d13281c7d61c2fa94a3b0c"
+    },
+    {
+      "id": "E060-regression-11",
+      "fingerprint": "4f834ce7f84a5e24be9762756ad198158fb77a076109cfa8efd3706e3f71cfa0",
+      "output": "results/E060-regression-11-4f834ce7f84a.json",
+      "sha256": "9221d1c8c605f073beb102ca0117410f1540703c3e58ae5351ecc547226305ed"
+    },
+    {
+      "id": "E060-regression-12",
+      "fingerprint": "35c763484520f9c9dde4c1d0c9dcc60db14b4036f09503fc1acd8961dfc04939",
+      "output": "results/E060-regression-12-35c763484520.json",
+      "sha256": "0912526da1fd78d74ccdd8f8cb2bd755354879ab93cb19bb0f5c41a9fc0294a9"
+    },
+    {
+      "id": "E060-regression-13",
+      "fingerprint": "3d03abb9f6b23ce260c6d5d46e9c18e6d20dc167ece4c18e329e0a280f698331",
+      "output": "results/E060-regression-13-3d03abb9f6b2.json",
+      "sha256": "a061b8307103dd02d505f0d53094a38f1b097ad82c4b9f1bc234a60901ce1e35"
+    },
+    {
+      "id": "E060-regression-15",
+      "fingerprint": "a4b792384822b4c3fa38ed6d9f5e62929a2c632d2a8a0b4b4e4de426a4c44161",
+      "output": "results/E060-regression-15-a4b792384822.json",
+      "sha256": "186f1e612072fe6e17d670490f64c663e49ef433bf6a4d4489035645ab2be796"
+    },
+    {
+      "id": "E060-regression-16",
+      "fingerprint": "df79128491b8d08d25d2fcdb3e1d020aa54b697a0d28ed988f4f04e6ebac0676",
+      "output": "results/E060-regression-16-df79128491b8.json",
+      "sha256": "6f994fcb118b16352e7a35d665bb771f6e08e5dba6f07c2966a8764c22bd59cf"
+    },
+    {
+      "id": "E060-regression-17",
+      "fingerprint": "d1b80a4bff2b4b6e3e16f76d4de2b75fca4f5156166673337613a5e34f8fc642",
+      "output": "results/E060-regression-17-d1b80a4bff2b.json",
+      "sha256": "bb2197ea6cf0409ae8825e32ccc284a16ce540f6737b7f36444fe160f459aa2c"
+    }
+  ],
+  "unknown_sections_searched": 0,
+  "new_decryptions": []
+}

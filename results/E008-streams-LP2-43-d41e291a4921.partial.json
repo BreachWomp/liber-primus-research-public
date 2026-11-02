@@ -1,0 +1,98 @@
+{
+  "status": "partial_not_complete",
+  "mode": "streams",
+  "pages": [
+    {
+      "page": "LP2-43",
+      "ciphertext_runes": "ᚻᛄᛁᛖᛏᛡᚷᛁᚩᚾᚳᚢᚫᛗᛈᛋᚪᛡᚷᛚᚣᚹᛟᚠᚢᛉᚠᚫᛞᚠᛡᛄᚾᚻᛋᚦᚠᛏᚠᛄᚱᚹᚠᛋᚾᚹᛄᛖᛒᚢᚦᚩᛇᚫᛈᛡᛟᚢᛁᚩᛄᚩᛇᛟᛄᛞᚩᛈᚹᛞᚷᚱᚠᛟᛇᚷᛄᛟᛇᚫᛋᚫᚣᛒᛏᛞᛟᛠᚻᛡᚱᛠᛠᛉᛋᚠᚾᚣᚱᚠᚪᚾᛡᚪᛖᚫᚳᛇᛁᛝᛒᛡᛞᛠᚫᛒᛠᚳᛉᚠᚫᛏᛁᚱᚪᛗᚩᛚᛉᛋᚪᛒᚩᛈᚫᚩᛝᚻᛇᛖᛇᚫᚻᛖᛇᛠᚱᛗᛞᚫᛇᛗᚾᚾᚣᛡᚱᚾᛗᛠᛄᛉᛋᛄᛟᛖᛒᛏᚻᚾᚠᚪᚠᛒᚾᚩᚾᛖᛋᛏᛒᚹᛡᚻᛏᚩᛟᚩᛒᚾᛖᚳᛁᚹᚣᛟᛟᚩᛒᛋᛖᚩᚫᚻᛟᚠᚫᚷᚩᛄᛟᛒᚻᚳᛖᛁᛚᚫᚣᛚᚢᛚᛁᚾᛟᛏᚫᛈᛟᛈᛝᛗᚳᚢᛁᚣᛋᚳᚢᛡᛇᚩᚠᛖᚷᛟᚻᚫᛝᚠᛗᚠᛝᛉᛞᛁᛗᛝᚣᚪᛝᚠᛉᛁᛟᚷᛚᛇᚩᚫᛡᛏᛄᛏ",
+      "rune_count": 274,
+      "f_count": 17,
+      "evaluated_key_sign_tasks": 12,
+      "dp_transitions": 1041320,
+      "top": [
+        {
+          "score": -4.572601186459385,
+          "plaintext_runes": "ᚷᛋᛖᚩᚾᚪᚳᛈᛖᚩᚩᚹᚷᚷᛇᛏᛉᛞᛇᚩᛋᛡᛗᚠᚻᛡᛗᛒᛝᚠᚦᛗᛗᚢᛖᚹᚾᚦᛝᚳᛁᛒᛏᛁᛉᛚᚳᛚᚫᛋᛚᚠᛋᚩᛠᛒᚣᛋᚹᚦᛚᛉᛡᛁᚾᚷᛗᚦᚠᚢᛒᛒᚠᛁᛚᛖᚦᛞᛝᚾᚳᛝᚹᚦᚹᛚᛡᛁᚦᚫᚻᚳᛋᚩᛁᚠᛉᚱᛝᚠᛉᚳᛇᛈᚾᛚᚷᛗᚫᛈᛋᛖᛏᚦᚹᚾᚣᚾᚣᚠᛚᛋᛋᛋᚻᚾᚳᚩᛋᛖᚦᚢᛖᚳᛝᚢᛞᛟᛠᛄᛁᚠᛖᚹᛗᛏᚷᚫᚦᚻᚢᛏᛁᛇᚷᛗᚷᛈᛡᚾᚫᚳᛖᚣᛏᚪᚠᚩᚢᛁᚳᚻᛒᛗᛋᛋᛞᚹᛁᛈᛚᛚᚦᛖᚢᛗᚱᛖᚳᚹᛠᛒᚩᚻᚱᚷᛇᛄᚦᚱᚾᚷᚾᚱᚣᚠᛏᛄᛉᚣᛁᚾᚦᚾᚳᚩᛗᛈᛏᚣᚾᛝᛒᚪᛉᛇᛞᛋᚩᚠᛖᛖᛉᚪᛉᚹᚻᚠᚠᛠᛞᚣᚠᛉᛖᚹᛠᛚᛖᚠᚣᚠᚹᛖᛟᛈᛠᚾᚢᚢᚦᚠᚩᛋᚠᛒᛁᚻᚳᚦᛏᚹᚪᚷ",
+          "transliteration": "GSEONACPEOOWGGEOTXDEOOSIAMFHIAMBNGFTHMMUEWNTHNGCIBTIXLCLAESLFSOEABYSWTHLXIAINGMTHFUBBFILETHDNGNCNGWTHWLIAITHAEHCSOIFXRNGFXCEOPNLGMAEPSETTHWNYNYFLSSSHNCOSETHUECNGUDOEEAJIFEWMTGAETHHUTIEOGMGPIANAECEYTAFOUICHBMSSDWIPLLTHEUMRECWEABOHRGEOJTHRNGNRYFTJXYINTHNCOMPTYNNGBAXEODSOFEEXAXWHFFEADYFXEWEALEFYFWEOEPEANUUTHFOSFBIHCTHTWAG",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 83,
+            "skip_positions": [
+              23,
+              29,
+              72,
+              95,
+              99,
+              119,
+              205,
+              242,
+              249,
+              251,
+              261
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 86878,
+          "max_states": 544
+        },
+        {
+          "score": -4.601245676322703,
+          "plaintext_runes": "ᚾᛚᚫᛗᚫᛚᛚᛚᚠᚠᛏᚢᚻᛖᚣᛠᚫᚳᚾᚩᚾᚳᛞᚠᛝᛏᚠᚾᛗᚠᛗᛚᚣᚱᛠᛏᚪᛁᚠᛝᚾᚣᚠᚪᚳᚾᚠᚣᚠᚣᚻᚾᛁᚳᛞᛋᚣᚹᚱᛋᚾᚠᚢᚩᛟᚣᚦᛡᚻᛞᛋᛗᚠᛄᚱᛏᛒᚪᚹᛁᛟᚳᛁᛡᚳᚦᚳᚩᚦᛖᛟᚠᛁᚾᛖᚠᚢᚫᛚᚠᚱᛝᛈᛠᚹᛏᚾᚻᛉᚳᛗᛒᛁᚠᚹᛝᛖᛠᛝᛁᛟᛖᚣᚹᚪᚷᛠᛋᚱᚳᛖᚦᛖᛉᚷᚳᚢᛚᛚᛏᛠᛗᛈᛋᛡᛒᚣᛋᛒᛡᛗᛖᚩᚠᚢᛁᛇᛄᚹᚠᛞᛈᚪᚢᚷᛖᛞᚹᚠᚾᚠᚫᚠᚹᛞᚷᚷᚢᚷᚾᛉᚩᛏᚻᚷᚠᛇᛇᚷᛖᛞᛒᚪᚠᛏᚪᚣᚩᚩᚾᛇᚷᛗᛄᛋᛏᚢᚣᚷᚷᚳᛟᛏᛞᛏᚢᛟᛏᛒᚱᚦᛏᛄᛏᛄᚠᚣᛝᛏᚦᛉᚣᛈᚱᛝᚾᛟᛋᚫᚩᚢᛏᛡᛈᚱᛁᚣᛈᛗᚠᚱᚠᚢᛁᚹᚣᛞᚫᚣᚢᛏᚠᛡᛉᚱᚢᛖᛈᚪᛖᛟᚪᛏᛗ",
+          "transliteration": "NLAEMAELLLFFTUHEYEAAECNONCDFNGTFNMFMLYREATAIFNGNYFACNFYFYHNICDSYWRSNFUOOEYTHIAHDSMFJRTBAWIOECIIACTHCOTHEOEFINEFUAELFRNGPEAWTNHXCMBIFWNGEEANGIOEEYWAGEASRCETHEXGCULLTEAMPSIABYSBIAMEOFUIEOJWFDPAUGEDWFNFAEFWDGGUGNXOTHGFEOEOGEDBAFTAYOONEOGMJSTUYGGCOETDTUOETBRTHTJTJFYNGTTHXYPRNGNOESAEOUTIAPRIYPMFRFUIWYDAEYUTFIAXRUEPAEOEATM",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "start": 222,
+            "skip_positions": [
+              23,
+              26,
+              29,
+              38,
+              42,
+              72,
+              95,
+              99,
+              170,
+              172,
+              249,
+              251,
+              261
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 86878,
+          "max_states": 544
+        },
+        {
+          "score": -4.637355572944857,
+          "plaintext_runes": "ᚣᛝᛏᛡᚾᛝᚾᚩᛋᚳᚹᚢᛞᛡᛞᛈᛡᛖᚱᚢᛖᚱᛏᚣᛋᛗᚠᚠᛋᚪᛚᚩᚩᚠᛚᛞᛈᛚᚢᚢᚷᛏᛝᛈᛈᚹᚣᛋᛉᚣᛒᛁᛚᚳᚹᚻᚩᛖᚣᚦᛗᚫᚷᛈᛟᛞᛇᚫᛡᚾᛏᛁᚠᚩᛖᛚᚾᛗᛈᛡᚱᛋᛡᚳᚦᛏᛄᛠᛋᛈᚳᛒᛄᛞᛏᚠᛖᚪᚩᚢᚦᛋᛚᛗᛗᚠᛉᚢᛖᚩᚢᚻᚱᛟᛝᚩᚩᛏᛠᚠᛈᛏᛚᛚᚹᚠᛉᛁᚻᚩᛄᚱᚻᚫᚾᛞᛠᚷᛡᛗᛝᚦᛄᚣᚢᚻᛟᚳᛚᛁᛗᛡᛡᛋᚫᛖᚻᚢᚱᛁᛞᛉᚳᚩᛒᚩᚫᛏᛖᛄᚠᛒᚠᛉᛁᚦᛝᚷᚩᚠᚠᚻᚹᛖᚷᚳᛄᛟᚫᛡᚷᛋᚱᛏᛏᛖᚦᚪᚷᚷᛚᚠᚩᚻᛒᚠᚷᛝᛏᛋᚦᚩᛁᚢᛖᚪᚻᚣᛗᛝᚳᛈᛄᚻᛇᛏᚣᚹᛄᛖᛞᛗᛈᚢᛈᛟᚦᚻᛁᛚᛡᚪᚠᚩᚳᛏᚣᚩᚳᛚᛚᚠᛏᛄᛝᚩᛈᚣᛋᛈᛁᛞᚩᚢᚦᚷᛗᛞᛖᛗᛈᛏᛄᛡ",
+          "transliteration": "YNGTIANNGNOSCWUDIADPIAERUERTYSMFFSALOOFLDPLUUGTNGPPWYSXYBILCWHOEYTHMAEGPOEDEOAEIANTIFOELNMPIARSIACTHTJEASPCBJDTFEAOUTHSLMMFXUEOUHROENGOOTEAFPTLLWFXIHOJRHAENDEAGIAMNGTHJYUHOECLIMIAIASAEEHURIDXCOBOAETEJFBFXITHNGGOFFHWEGCJOEAEIAGSRTTETHAGGLFOHBFGNGTSTHOIUEAHYMNGCPJHEOTYWJEDMPUPOETHHILIAAFOCTYOCLLFTJNGOPYSPIDOUTHGMDEMPTJIA",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "start": 255,
+            "skip_positions": [
+              26,
+              72,
+              95,
+              119,
+              170,
+              172,
+              205,
+              242,
+              251
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 86878,
+          "max_states": 544
+        }
+      ]
+    }
+  ],
+  "new_decryptions": []
+}

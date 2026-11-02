@@ -1,0 +1,171 @@
+{
+  "experiment": "E032-claim-provenance",
+  "parameters": {
+    "experiment": "E032-claim-provenance",
+    "seconds": 30,
+    "seed": null,
+    "scope": "Static examination of complete current public GitLab tree at pinned commit, README and index.html. Not a search of all branches/history or an onion-server retrieval.",
+    "checks": [
+      "HTTP snapshot hashes",
+      "Git object blob identities",
+      "byte equality to E029 HTML",
+      "presence of named binary and analyzer in current tree",
+      "published first/last32-byte previews compared to five preserved E031 variants"
+    ],
+    "interpretation": "No provenance can be inferred from absent current-tree paths. Preview agreement or disagreement does not identify all256 bytes or authenticate an origin.",
+    "null_model": "Not applicable; deterministic source audit, no statistical or decryption claim.",
+    "memory": "Retained metadata and HTML <=2MB per file; fixed five byte variants. Single process; no remote-code execution."
+  },
+  "pinned_commit": "f71dadd835c4d2b71dba80ed555494013a35c843",
+  "tree_complete": true,
+  "tree_paths": [
+    "public",
+    "public/assets",
+    ".gitlab-ci.yml",
+    "README.md",
+    "public/Riemann_Hypothesis_XYZ-S_Monograph.pdf",
+    "public/app.js",
+    "public/assets/encrypted_master_riddle.json",
+    "public/assets/final_cicada_epiphany_unlocked.txt",
+    "public/assets/k4_solver.zig",
+    "public/index.html",
+    "public/style.css"
+  ],
+  "named_files_present": {
+    "sexagesimal.bin": false,
+    "analyze_sexagesimal.zig": false
+  },
+  "prior_html_byte_equal": true,
+  "published_previews": {
+    "first": "cbe7a7ba61ed7eb75cf99cdef704b7d479ca0f2166893b576de0ad1996428d85",
+    "last": "443449f9900075af6aeac479ee2081ad908d2ad61638e0c0719eace6b424bd50"
+  },
+  "preview_comparisons": [
+    {
+      "source": "relikd_canonical",
+      "preview": "first",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": false,
+      "differing_offsets": [
+        25
+      ],
+      "deltas": [
+        26
+      ]
+    },
+    {
+      "source": "relikd_canonical",
+      "preview": "last",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": true,
+      "differing_offsets": [],
+      "deltas": []
+    },
+    {
+      "source": "iddqd",
+      "preview": "first",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": false,
+      "differing_offsets": [
+        25
+      ],
+      "deltas": [
+        26
+      ]
+    },
+    {
+      "source": "iddqd",
+      "preview": "last",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": false,
+      "differing_offsets": [
+        246
+      ],
+      "deltas": [
+        26
+      ]
+    },
+    {
+      "source": "scream314",
+      "preview": "first",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": false,
+      "differing_offsets": [
+        25
+      ],
+      "deltas": [
+        26
+      ]
+    },
+    {
+      "source": "scream314",
+      "preview": "last",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": false,
+      "differing_offsets": [
+        246
+      ],
+      "deltas": [
+        26
+      ]
+    },
+    {
+      "source": "scream314_published_decimal",
+      "preview": "first",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": true,
+      "differing_offsets": [],
+      "deltas": []
+    },
+    {
+      "source": "scream314_published_decimal",
+      "preview": "last",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": false,
+      "differing_offsets": [
+        237
+      ],
+      "deltas": [
+        -26
+      ]
+    },
+    {
+      "source": "image_overlay_E023",
+      "preview": "first",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": false,
+      "differing_offsets": [
+        25
+      ],
+      "deltas": [
+        26
+      ]
+    },
+    {
+      "source": "image_overlay_E023",
+      "preview": "last",
+      "claimed_bytes": 32,
+      "actual_bytes": 32,
+      "equal": false,
+      "differing_offsets": [
+        246
+      ],
+      "deltas": [
+        26
+      ]
+    }
+  ],
+  "historical_binary_provenance": "unverified",
+  "remote_code_executed": false,
+  "wall_seconds": 0.004629800008842722,
+  "new_decryptions": []
+}

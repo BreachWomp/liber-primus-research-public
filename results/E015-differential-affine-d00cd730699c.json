@@ -1,0 +1,1517 @@
+{
+  "experiment": "E015-differential-affine",
+  "status": "completed",
+  "parameters": {
+    "seconds": 180,
+    "replicates": 199,
+    "seed": 3301015,
+    "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "b": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "null_batch": 16,
+    "F_interruption": "none",
+    "page_reset": true,
+    "memory": "16nullpages x29shifts, processed one multiplier at a time"
+  },
+  "motivation": "If P_i=a(C_i-C_(i-1))+b, equal neighboring ciphertext runes correspond to plaintext rune b; a rare b could explain repeat suppression.",
+  "evaluated_recipes": 44660,
+  "pages": [
+    {
+      "page": "LP2-00",
+      "ciphertext_runes": "ᛋᚻᛖᚩᚷᛗᛡᚠᛋᚣᛖᛝᚳᚦᛄᚷᚫᚠᛄᛟᚩᚾᚦᚾᛖᚹᛒᚪᛋᛟᛇᛁᛝᚢᚾᚫᚷᛁᚦᚻᛒᚾᛡᛈᛒᚾᛇᛄᚦᚪᛝᚣᛉᛒᛞᛈᛖᛡᚠᛉᚷᚠᛋᛈᛏᚠᛈᚢᛝᚣᛝᛉᛡᚣᚻᛒᚢᚷᚩᛈᛝᚫᚦᛁᚫᚻᛉᚦᛈᚷᚣᚠᛝᚳᛄᚦᚪᛗᛁᛝᛁᛡᚣᚻᛇᛏᚻᚫᛡᛉᚣᛖᚢᛝᚳᚠᚾᛇᚦᛄᛁᚦᚦᛈᚣᛝᛠᚣᚾᛖᚣᛞᛉᛝᚹᛒᚳᛉᛞᛒᚠᛗᛏᚾᛖᛠᛄᚾᛚᚷᛒᛉᚷᚦᚣᛁᛞᚪᛝᚷᛗᛄᚱᚩᛚᛇᚣᛏᛈᛁᚦᛞᛄᛟᚻᛚᛠᚠᛉᚫᛈᚷᛉᚠᛚᚹᛇᛏᚫᚠᚷᚾᛗᛇᛚᚾᛝᛗᚠᚱᛡᚪᛋᛠᛗᛝᛉᛉᛇᛞᛒᛟᛞᛗᚩᛠᛇᚻᛞᛝᚷᛟᛝᛚᚢᚱᚾᛏᚫᛋᚣᚢᚻᚱᛏᚻᚳᛋᛟᛏᛟᛝᚢᚱᛋᚠᚩᛖᚹᛠᛟᛚᚠᚫᛗᚱᛝᛞᚪᛗᚱᚹ",
+      "top_suffix": {
+        "score": -4.80459634898181,
+        "plaintext_runes": "ᛒᚪᛇᛏᛋᚢᛗᚾᛝᛚᛏᛋᚳᛡᛄᚣᛈᛝᛝᚪᚹᛒᚱᛡᚠᚪᚱᛞᚱᚣᚦᛝᛡᚢᚷᚪᛈᛚᚹᛡᛚᚠᚾᛈᛚᛏᛠᛞᛒᚳᛁᚩᛏᚹᚣᛁᛡᛗᛇᛚᛉᚾᚦᛏᛋᛋᚩᛞᛁᛄᛒᛋᛠᛝᛡᛋᛁᚳᚪᚢᛈᚹᚢᚾᛖᚹᚩᛝᛒᛞᛏᛚᛋᚹᛞᛒᛄᛞᛝᚠᚩᛠᛝᛈᛈᛚᚩᛗᚷᛖᛚᛖᛞᛋᛄᛡᛏᚣᛡᛠᛚᚫᛝᛋᛄᚱᚦᛖᛡᚢᚳᛞᚱᚾᚪᚩᛡᛡᛉᛖᚣᚳᛒᛡᚪᛖᚦᛝᚾᛝᚳᛚᚻᛄᛋᛋᛟᚳᛇᛋᛚᛒᛠᚩᛚᛇᚣᚳᚳᛚᛚᚩᛝᚾᛖᚢᛟᛇᛝᚩᛒᚢᚾᛞᚷᛁᛈᛡᛈᚹᛏᚪᛒᚢᚠᛖᚦᚪᛈᛉᚳᛞᛋᛞᛗᛒᚫᚦᛝᛉᛁᛟᚻᛋᚻᛋᚻᚾᚦᛇᚷᛠᛠᚪᛏᛁᚱᛡᚣᛝᛈᚱᚻᛖᛚᚳᚪᚱᛉᚹᛠᛡᛏᛝᛇᛏᚾᚠᛚᛉᚦᛡᚻᛉᛇᚩᛗᛟᛄᛇᛏ",
+        "transliteration": "BAEOTSUMNNGLTSCIAJYPNGNGAWBRIAFARDRYTHNGIAUGAPLWIALFNPLTEADBCIOTWYIIAMEOLXNTHTSSODIJBSEANGIASICAUPWUNEWONGBDTLSWDBJDNGFOEANGPPLOMGELEDSJIATYIAEALAENGSJRTHEIAUCDRNAOIAIAXEYCBIAAETHNGNNGCLHJSSOECEOSLBEAOLEOYCCLLONGNEUOEEONGOBUNDGIPIAPWTABUFETHAPXCDSDMBAETHNGXIOEHSHSHNTHEOGEAEAATIRIAYNGPRHELCARXWEAIATNGEOTNFLXTHIAHXEOOMOEJEOT",
+        "recipe": {
+          "a": 26,
+          "b": 25,
+          "initial_cipher_rune": 15,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-01",
+      "ciphertext_runes": "ᚪᛁᛗᛋᚾᛋᛟᚱᚢᚹᛋᛚᛡᛟᚪᚫᛝᛋᛞᛈᛏᚳᚱᚦᛡᚱᛒᚩᛞᚦᚠᚣᛉᛁᛏᛟᛁᚠᛚᚩᚠᛠᚱᚩᛟᛗᚻᛗᚷᛈᚻᚫᚻᚾᚩᚻᚣᛟᛋᛚᚾᚷᚫᚣᛟᚳᛒᛚᛄᛝᛚᛟᚫᛄᛠᚹᛠᚦᚩᛒᛟᚣᚳᚠᚳᛄᛚᚫᚾᚦᛈᚢᛉᛟᛉᚷᛈᚠᛋᛇᚫᛟᛝᛈᛇᚩᛖᚪᚷᚫᛡᛝᚦᚩᛈᚪᛟᚦᚱᛝᚫᚳᛋᛒᛇᚣᚻᛏᛉᛖᛚᚱᚷᚹᚣᛄᚠᛁᚾᛡᚳᚣᛠᛁᛡᚩᚦᛖᚳᚫᚳᛉᛡᛠᚩᛚᚳᚠᚱᛞᛝᛖᚢᛞᚳᛚᛠᛋᛉᚳᚷᛡᚹᛋᚦᚠᛞᛝᛁᛡᛗᚪᚫᚷᚹᛋᚾᛞᚳᛈᚦᛉᛈᛠᛠᚹᚢᛠᚹᚠᚹᛄᚣᛉᛞᚹᚳᚷᚳᛟᛞᛉᛟᚱᛡᚷᚾᛈᚪᚣᛈᚳᚣᚻᚠᛖᛄᛠᚾᛟᚫᚢᚪᚻᚱᛖᛠᚦᚠᛄᚪᛚᛉᛋᛏᛗᚠᛚᚠᛏᚷᛁᚦᚢᛚᚷᛉᛠᛏᛋᛚᛄᛈᛚᛉᛁ",
+      "top_suffix": {
+        "score": -4.76742926835203,
+        "plaintext_runes": "ᚱᛒᛝᚷᚾᚦᚩᛉᚾᚪᛏᚦᛠᚻᛋᛝᚷᚪᚳᚢᛇᚠᚹᛝᚾᛖᚱᛡᚪᚹᛉᛗᛝᚾᚾᛗᚳᛡᚫᛉᚠᛏᚠᚳᛉᛇᚩᚣᚦᛠᛗᚫᛋᚷᛏᛇᛝᛈᛏᛇᛉᚳᛋᛝᚫᚫᚢᛡᛁᚠᚻᚢᚱᛗᚪᛚᚢᛋᛄᛏᛞᚪᛠᛏᚾᛒᛏᛖᛈᚩᛗᛖᚪᛚᛚᚦᚣᚱᛉᛖᛉᚠᛚᚠᛡᚱᚾᚩᚳᚻᚷᛁᛋᛁᚩᚹᛒᚻᛗᛞᛒᛁᚻᛠᛄᚩᚪᚹᛞᚻᛖᚻᛋᚳᛄᛇᛁᚠᛇᚦᛚᚻᚩᛗᛏᚠᚣᚣᛡᛒᛒᛖᛋᛞᛗᛄᛠᛞᚳᚹᛉᚫᛈᚩᚱᚪᚣᚠᛡᛋᛚᛒᚪᚣᚹᚷᚹᛇᛗᛚᛏᛋᛁᛋᚪᚷᛄᚩᚪᛇᚫᚠᚱᛟᚪᚷᚹᚪᛈᚦᛞᚱᛗᛒᛖᚹᛋᚠᛗᛋᛡᚪᚩᚷᚪᚢᛞᚩᚻᚣᛚᛚᚩᛚᛇᛈᛗᛁᛖᚢᛏᚷᛖᛝᛄᛁᚢᚹᚩᛖᛝᚷᛋᛋᚢᛁᛡᛒᚣᚳᛞᛚᚠᚳᚱᚪᛄᛗᚠᛏᛡᚻᚦᚷᛝ",
+        "transliteration": "RBNGGNTHOXNATTHEAHSNGGACUEOFWNGNERIAAWXMNGNNMCIAAEXFTFCXEOOYTHEAMAESGTEONGPTEOXCSNGAEAEUIAIFHURMALUSJTDAEATNBTEPOMEALLTHYRXEXFLFIARNOCHGISIOWBHMDBIHEAJOAWDHEHSCJEOIFEOTHLHOMTFYYIABBESDMJEADCWXAEPORAYFIASLBAYWGWEOMLTSISAGJOAEOAEFROEAGWAPTHDRMBEWSFMSIAAOGAUDOHYLLOLEOPMIEUTGENGJIUWOENGGSSUIIABYCDLFCRAJMFTIAHTHGNG",
+        "recipe": {
+          "a": 22,
+          "b": 22,
+          "initial_cipher_rune": 24,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-02",
+      "ciphertext_runes": "ᛟᛗᚢᚻᛏᛒᛇᛚᛞᚻᛒᛗᛠᚱᛒᚾᚻᛒᛖᚷᛇᛞᛚᚹᛇᛡᛈᚩᚻᛖᛠᚹᛁᚱᛁᚻᚢᚦᚻᚣᚾᛉᛒᚷᛄᛈᚢᛝᛠᚠᚾᛁᛖᛞᛡᛝᚱᛞᛒᛄᛡᛟᛗᛁᚠᛏᛄᛞᛁᚦᚱᛚᛋᛖᛇᚩᚷᛒᛏᛞᚦᚪᚾᚳᚣᛡᛋᚦᛞᛝᚠᛚᛖᚷᚻᚳᛖᚩᛁᛏᚾᛉᛈᛏᚠᚻᚱᛞᛖᚠᛏᚫᚹᚻᛒᚳᚠᛈᚪᛚᚢᛠᚾᛚᛄᛄᚳᛚᚹᛠᛞᚢᛞᛇᛠᛉᛞᚹᚻᛠᚦᛡᚫᚳᛚᛏᚹᛖᛁᚳᛈᛟᛞᚳᚾᚻᚪᚱᛁᚷᚦᛠᛖᛏᚷᚦᚻᚩᛡᚹᚫᛄᛖᛝᛠᛞᚩᚫᚪᛚᛒᛄᚳᚢᛉᛏᚪᛒᛄᛈᚠᛠᚻᛞᚾᛡᚢᛈᛋᚢᚹ",
+      "top_suffix": {
+        "score": -4.750508557609906,
+        "plaintext_runes": "ᛗᚩᛚᛞᚦᛈᛞᚻᛇᚣᚳᚣᛉᚾᚱᚫᚣᚦᛝᛒᚩᛗᛖᛉᛋᛋᛡᛉᚠᚠᛞᚻᛁᛒᛟᚹᚦᛒᚪᚷᛉᚻᚪᛉᚳᛝᚢᛚᚦᚣᚦᛞᛉᛄᛁᚷᛡᛁᛁᛖᛈᛗᚢᛡᛖᛈᚷᛖᚱᚳᛖᛈᚻᛁᚢᚻᚩᚫᛚᛞᚹᛇᛏᚱᚦᛝᛖᚱᛟᛞᚢᛟᛝᚳᛗᚾᛇᛚᛒᚹᛉᚫᚻᚾᛞᛏᛡᛈᚩᛖᚣᚩᚦᚣᛝᛈᚾᚩᛏᚠᛟᚠᚩᚢᛠᛁᛋᛖᚱᛈᛚᚹᚪᛖᛋᚣᚾᚦᚢᚻᛏᛟᚣᛋᛏᚢᚩᚱᛈᛞᚣᚦᚩᛄᚫᛖᚣᛒᛏᛏᛗᛡᛟᛡᛏᛒᛈᛈᚣᚪᛋᛚᚻᛚᛈᚣᚹᚫᛏᛗᛁᛁᛏᚾᚳᛞᚹᛁᚳᛖᚫᚣᛋᛋᚪᚻᚷᚳᛋᛒ",
+        "transliteration": "MOLDTHPDHEOYCYXNRAEYTHNGBOMEXSSIAXFFDHIBOEWTHBAGXHAXCNGULTHYTHDXJIGIAIIEPMUIAEPGERCEPHIUHOAELDWEOTRTHNGEROEDUOENGCMNEOLBWXAEHNDTIAPOEYOTHYNGPNOTFOEFOUEAISERPLWAESYNTHUHTOEYSTUORPDYTHOJAEEYBTTMIAOEIATBPPYASLHLPYWAETMIITNCDWICEAEYSSAHGCSB",
+        "recipe": {
+          "a": 3,
+          "b": 28,
+          "initial_cipher_rune": 22,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-03",
+      "ciphertext_runes": "ᛚᛄᛇᚻᛝᚳᚦᛏᚫᛄᛏᛉᚻᛏᚢᛟᛋᛈᚱᚷᚣᚾᚪᚷᛇᛝᚾᚹᚠᚣᚾᛒᛠᛡᛈᚾᚣᚪᛋᛗᛒᛡᛠᛡᛁᚩᛒᚱᚾᛚᛠᚱᛚᛚᛖᛒᚹᚾᚻᛗᚠᛟᛒᛝᚱᚪᛡᚷᛟᛇᛏᛗᛉᛞᛇᛗᚣᚻᛠᛁᛚᛋᚾᚹᚳᚠᛈᛗᛈᛚᛠᛋᚦᚠᛟᛡᚦᛖᚣᚳᛄᛚᚳᛡᛗᛒᛞᚳᛇᛄᛁᛏᛟᛞᛠᛖᛡᚾᛏᛈᛞᚦᛇᛞᛇᚫᛚᚳᛡᛇᛠᚻᚹᛗᚣᚦᚢᚻᛏᚦᚱᚻᛝᛚᛝᛋᚾᚫᛠᚷᛋᛚᛋᛉᚩᚻᚹᛞᛗᛖᛗᚪᚠᚳᚣᚳᚫᚾᛏᚦᚷᛁᛄᛁᚳᛞᛡᛉᚻᚫᚫᛠᚷᛠᛝᚠᛏᚩᚱᛞᚳᛇᚠᚢᛉᛠᛒᚩᛉᛁᚣᚷᛋᛋᛒᛠᚩᛁᛈᛁᛄᛁᚩᛖᚻᛠᚻ",
+      "top_suffix": {
+        "score": -4.790158554560725,
+        "plaintext_runes": "ᛁᚷᚻᚹᚹᚫᚪᚣᛇᛏᛈᚩᚾᚪᛡᛋᛈᛁᛞᛁᛗᛇᚦᚱᚣᛒᛈᛋᚫᛗᚾᚦᚢᛇᚻᛒᛈᛁᛠᛈᛉᚷᚢᛗᛋᚪᚠᛏᚦᚾᛏᚠᛖᛈᚢᛟᛞᚢᚦᛉᛋᛚᛠᛗᛁᛄᚾᚠᛟᛠᛄᛚᚣᚳᛝᛝᚦᛁᚦᛉᛚᚩᛈᛈᛚᚹᚱᚩᛝᚾᚠᚠᛈᛋᛏᛠᚠᚾᚾᚱᚣᚪᛋᛡᛈᚱᚦᛝᚢᚢᚱᚱᚷᛏᛟᚣᚦᛝᚫᛉᚾᛉᚦᚳᚹᛚᚪᛋᚪᚠᚣᚢᛗᛝᛏᚢᛝᚾᛇᛞᛠᚹᚢᚷᚩᚩᚠᛄᛝᚣᛏᛚᚢᚳᛏᚢᚠᚻᚢᚷᛏᛏᛏᛡᚾᛁᚹᛝᛇᛠᛠᚷᚢᛚᚳᛠᚠᚩᛒᛖᛄᛝᛋᛋᚾᚠᚠᚷᛟᚦᛝᛒᚷᚹᚪᚳᛇᚦᚻᚠᚣᚣᛖᛞᚦᛠᛝᛄᚫᚷᚢᛋᛇᛟᛁᚣ",
+        "transliteration": "IGHWWAEAYEOTPONAIASPIDIMEOTHRYBPSAEMNTHUEOHBPIEAPXGUMSAFTTHNTFEPUOEDUTHXSLEAMIJNFOEEAJLYCNGNGTHITHXLOPPLWRONGNFFPSTEAFNNRYASIAPRTHNGUURRGTOEYTHNGAEXNXTHCWLASAFYUMNGTUNGNEODEAWUGOOFJNGYTLUCTUFHUGTTTIANIWNGEOEAEAGULCEAFOBEJNGSSNFFGOETHNGBGWACEOTHHFYYEDTHEANGJAEGUSEOOEIY",
+        "recipe": {
+          "a": 17,
+          "b": 18,
+          "initial_cipher_rune": 20,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-04",
+      "ciphertext_runes": "ᛚᛡᚣᛈᛉᛁᚹᛗᚳᛁᛚᚷᚠᚾᛡᚳᛉᛈᚩᚱᛡᚻᛄᛗᛟᛉᛝᚢᛗᛇᛠᚷᛝᛝᚹᚳᛚᛝᚢᛉᛄᚠᛟᚢᚷᛠᛗᛉᚪᚹᛚᚢᛉᚫᛗᛞᛝᚻᚱᚣᚻᚪᚷᛁᚠᚷᚳᚫᛝᛄᛇᛉᛡᚾᚦᛒᚢᛄᚱᚹᚷᛚᛟᚷᚦᛇᚠᚦᛠᛁᛋᚷᚷᚣᛠᛡᛈᛡᚫᛚᚦᛠᛉᚫᛖᛗᛖᛏᛟᛏᛠᚳᚠᚳᛠᚷᚦᛈᛁᚳᚾᛇᚣᛝᛄᛝᛗᚹᚳᚾᛒᚣᛠᚩᛟᚷᚱᛗᚱᛗᛈᛡᚹᚫᛟᚦᛟᛈᛉᛄᛚᚱᛚᚱᛒᚪᛈᛏᛉᛚᛏᛗᛉᛁᚹᛄᛋᛟᛗᚾᚱᛖᛒᛋᚳᛏᛚᛟᛋᛒᚠᛉᚦᚪᛠᚢᛇᛉᚱᚷᛏᛇᛠᛁᛄᛒᛟᛉᚷᛄᛝᛠᚦᚱᛝᛒᚾᚢᚪᛝᛒᛈᛋᛠᛈᚹᚩᚻᛖᚫᛇᚷᚾᚫᛋᛇᚩᛈᛗᛖᛉᛡᛒᚹᚢᛖᛁᛞᛈᚪᛇᚷᛋᚳᚷᛞᛈᚣᛡᛚᚦᚱᚳᚢᚠᛇᚦᛉᛖᛚᚢ",
+      "top_suffix": {
+        "score": -4.863933326450378,
+        "plaintext_runes": "ᛗᚪᛒᚢᛋᛖᚳᛉᛈᛠᛉᚾᚫᛞᛗᚫᚪᚣᚢᚾᛠᚹᛟᚹᚩᛗᚫᛞᚷᛒᛗᛉᛡᛉᛝᛉᚢᚫᚻᛖᛞᚷᛟᛈᚷᚠᛇᛠᚳᚻᛠᚻᚦᚾᛁᛝᛒᛋᚷᚦᛒᚦᛁᚣᛏᚪᚠᛋᚣᚢᚱᚻᚦᚷᛉᚻᛠᚷᚹᚪᛄᚱᚻᛋᛠᛚᚱᛖᚦᛈᚠᛡᚠᚱᚪᛉᛄᛝᛇᚦᛖᛉᚦᚷᚢᚪᛝᛏᚾᚳᛏᛇᛈᚾᛗᛋᚦᛖᛇᛁᚹᛄᛇᚣᛠᛝᛚᛝᛁᛟᚫᚱᛁᚣᚻᛝᛉᛄᛉᚾᛄᚫᛞᛖᚫᚠᚠᚢᛖᚫᚻᛒᚻᚻᛗᛞᚹᛝᛏᛋᚹᛇᛋᛖᛁᛁᛗᛖᚣᛇᛄᚪᛝᚣᚦᛁᚱᚷᚱᚳᛄᛚᚷᛁᚱᚦᚱᚣᚱᛠᛋᛒᚦᚢᛏᛈᚩᚩᛈᛠᛗᚹᚱᛚᛋᚩᚩᚾᛖᛋᛋᚱᚻᛄᚾᛋᛈᛠᛗᛒᚾᚹᛒᚣᛖᚠᛠᛏᚪᛋᚻᚣᚣᚾᛚᚩᚻᚣᚦᛚᚾᚫᚣᚢᛚᚣᚻᚢᚷᚦᚱᚢᛋᚪᚳᚣᚳᛁᚱᛠ",
+        "transliteration": "MABUSECXPEAXNAEDMAEAYUNEAWOEWOMAEDGBMXIAXNGXUAEHEDGOEPGFEOEACHEAHTHNINGBSGTHBTHIYTAFSYURHTHGXHEAGWAJRHSEALRETHPFIAFRAXJNGEOTHEXTHGUANGTNCTEOPNMSTHEEOIWJEOYEANGLNGIOEAERIYHNGXJXNJAEDEAEFFUEAEHBHHMDWNGTSWEOSEIIMEYEOJANGYTHIRGRCJLGIRTHRYREASBTHUTPOOPEAMWRLSOONESSRHJNSPEAMBNWBYEFEATASHYYNLOHYTHLNAEYULYHUGTHRUSACYCIREA",
+        "recipe": {
+          "a": 3,
+          "b": 27,
+          "initial_cipher_rune": 20,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-05",
+      "ciphertext_runes": "ᚱᚫᛉᚻᛄᚫᛗᛚᚠᚳᛝᛞᛁᛝᚩᚳᛋᛟᛖᚣᛟᚻᚢᚷᛞᚹᚪᛖᛋᚷᛝᚠᛉᛞᛉᛄᛠᚻᛁᚦᛈᛉᚣᛡᛇᛞᛇᛝᛇᛝᛖᛠᛞᚱᛚᛇᛏᛉᛏᚣᚱᛇᛈᛝᛇᛈᚩᛁᛚᛖᚠᛇᚫᚪᚣᛝᚠᚣᚠᛞᚾᛚᛉᛏᚾᚫᛋᛁᚩᚳᚢᚣᛠᚾᛏᚷᚳᚪᛉᛡᛇᚦᛄᚣᛄᛚᛟᛖᛚᚣᛈᛡᛖᚹᛟᛇᚾᚪᚻᛞᛇᛋᚦᚣᛇᚦᛄᚦᚱᚢᚳᛠᚪᚢᛄᛡᛈᚣᚫᛇᛋᚻᛠᛏᚣᛞᚣᚫᚠᚻᚩᛟᛗᛉᛟᛄᚷᚢᛡᚱᛡᚳᛁᚠᛟᛁᛄᛈᛒᛖᛝᚣᚦᚩᚫᚣᛠᛉᛡᛖᛚᛁᚱᚣᛞᛠᛄᚫᚳᛗᚷᛁᚫᚢᚪᚫᛄᚪᚻᛈᚠᛞᛚᛁᛠᛈᛟᚣᚩᚢᛒᚷᛝᛟᚢᛝᛋᚢᚳᛏᛞᚫᛈᚩᛄᛒᚻᚱᛁᚷᚻᛄᚣᚹᛗᛇᚾᚫᛞᛝᛇᛟᛄᛝᚳᛖᛠᛉᚪᚱᚣᚪᚢᛏᚳᛈᚳᚩᛇᛟᚫᛈᛏ",
+      "top_suffix": {
+        "score": -4.739081052754943,
+        "plaintext_runes": "ᛇᛏᛗᚹᚦᛗᚠᛠᛉᚾᛖᚾᚷᚷᛖᛒᛝᚣᛁᚣᛚᚢᛉᛡᛈᛡᛗᛋᛞᛚᛁᚦᛠᛞᛋᛡᛠᛖᛇᚷᚠᚪᚠᚦᚷᛏᛠᛞᛠᛋᛒᚻᛒᚾᛇᚫᚱᛖᛒᛝᛁᚠᛁᛞᚠᚳᛝᛒᚱᚷᚪᛈᛟᛖᚻᛁᛋᚹᛗᛚᚷᛗᛖᚢᚾᚳᚻᚢᛖᚣᚣᛖᛒᛝᚳᛟᚳᚳᛈᚦᚳᛠᛚᚦᛠᛖᚣᛖᚩᚾᚦᛞᛏᛚᚳᛋᛚᛈᛚᛏᚹᚾᚻᛚᚳᛠᛞᛖᛋᚫᛗᚣᚩᛒᚾᛚᛈᛟᚾᚹᚢᛞᛡᛒᛋᚹᛟᚫᛁᚻᚳᛋᚻᛁᛏᚻᚻᛋᚩᛗᛝᛉᚳᚢᛡᚠᛖᚫᚠᚹᛉᛉᚠᚢᚠᛖᛚᛈᛞᛖᚳᛗᚢᛋᛉᚪᚦᛠᚦᚾᚫᛚᛉᛗᚠᛚᛈᛈᛉᚾᛗᛋᚳᛏᚦᛠᚫᚩᚱᚾᛏᛚᚠᛁᛞᛗᛚᚫᚷᛝᛖᛡᚳᛁᚩᛞᚣᚩᚣᛖᚹᛚᛒᚪᚢᛋᚾᚱᚱᛞᛒᛏᛒᛈᛈᛒᛚᛒᛠᚢᚱᚩᛚᛏᛁᛇᚱᛠᛒᚹᛡᚹ",
+        "transliteration": "EOTMWTHMFEAXNENGGEBNGYIYLUXIAPIAMSDLITHEADSIAEAEEOGFAFTHGTEADEASBHBNEOAEREBNGIFIDFCNGBRGAPOEEHISWMLGMEUNCHUEYYEBNGCOECCPTHCEALTHEAEYEONTHDTLCSLPLTWNHLCEADESAEMYOBNLPOENWUDIABSWOEAEIHCSHITHHSOMNGXCUIAFEAEFWXXFUFELPDECMUSXATHEATHNAELXMFLPPXNMSCTTHEAAEORNTLFIDMLAEGNGEIACIODYOYEWLBAUSNRRDBTBPPBLBEAUROLTIEOREABWIAW",
+        "recipe": {
+          "a": 18,
+          "b": 11,
+          "initial_cipher_rune": 4,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-06",
+      "ciphertext_runes": "ᛉᚳᛏᚻᛞᛇᛉᛒᛠᚫᚾᛄᛠᚪᛒᛖᛠᚹᛡᛚᚹᛁᛡᛋᛈᛚᚦᚪᛋᛄᛡᛞᚣᚱᛞᛟᚦᚱᛉᛟᚹᚣᛞᛏᚷᛚᛡᚻᚹᛗᚱᛝᚠᚳᚱᚫᛁᛒᚷᛈᚣᛞᚪᚱᚪᛉᛟᚢᚩᛁᛠᚪᛏᛉᛒᛗᚷᛡᛋᛒᛉᛇᚷᚾᛠᚫᚷᛝᛞᛉᛖᛏᚩᚷᛡᛝᚻᛏᚳᛁᚣᛄᛏᛟᚩᚻᚱᛄᚳᛖᛡᚩᛞᚪᛏᚣᚢᚾᚱᛇᚫᚫᛁᛖᚠᛝᚦᚻᛉᛁᛟᛋᛁᛗᚪᚢᛄᚳᛋᚹᚾᚣᚩᛈᛉᚱᛚᚫᛟᛏᛡᛄᛈᛗᛞᛋᚠᛗᛟᚹᛞᛚᛏᚷᚱᚩᚢᛋᚻᚪᚣᛇᛡᛚᚢᚻᛈᚹᛄᛚᚷᛒᛗᚢᛄᛗᛇᚾᛇᚫᛚᚪᛚᚷᚪᛋ",
+      "top_suffix": {
+        "score": -4.8507692654554075,
+        "plaintext_runes": "ᚱᚪᚳᛠᚦᛋᛏᚪᛁᚣᛋᚢᚾᚷᛉᛞᛝᚱᚷᚠᛏᚢᚢᛄᛚᚪᚷᚱᚾᚠᚾᛏᛚᚩᛇᛟᛋᛞᛝᛡᚩᛁᚷᚩᛡᛚᛞᛇᚫᛡᚢᛝᛖᛇᚳᛡᛚᚦᛚᚣᛁᛉᛟᚱᚩᛝᛝᛋᛚᚦᚾᚳᛄᛏᛋᚠᚳᚢᛋᛁᛄᚹᛏᚩᛁᛞᛠᛋᚱᛒᛄᚠᛏᚳᚹᚠᛝᚦᛖᚠᛡᛖᛗᛞᛖᚾᛚᚹᚣᛟᛖᚱᛉᚳᛞᛒᛝᚻᛝᚣᛈᛡᛝᚪᚳᛞᛗᛗᚾᚫᚷᚻᛟᛖᛗᛞᚹᛞᚳᛋᚢᛗᛞᛉᚩᚠᛖᛁᚹᚪᚣᛋᛗᛒᚳᛡᚩᛏᛡᚠᛁᚾᚩᛄᛇᛄᛡᚷᚠᛋᛠᛠᚷᛞᛚᛖᚹᛒᛟᛠᚪᛋᚪᛞᛝᚷᛁᛏᚣᚻᛒᚾᛠᚦᚱ",
+        "transliteration": "RACEATHSTAIYSUNGXDNGRGFTUUJLAGRNFNTLOEOOESDNGIAOIGOIALDEOAEIAUNGEEOCIALTHLYIXOERONGNGSLTHNCJTSFCUSIJWTOIDEASRBJFTCWFNGTHEFIAEMDENLWYOEERXCDBNGHNGYPIANGACDMMNAEGHOEEMDWDCSUMDXOFEIWAYSMBCIAOTIAFINOJEOJIAGFSEAEAGDLEWBOEEAASADNGGITYHBNEATHR",
+        "recipe": {
+          "a": 1,
+          "b": 13,
+          "initial_cipher_rune": 14,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-07",
+      "ciphertext_runes": "ᚻᛝᛚᚦᛒᛋᚳᚢᚳᚩᛡᛚᚳᛄᛉᚪᚾᛇᛉᛠᛗᛈᚢᛗᚠᛚᛠᛝᛒᛉᛁᛚᚦᚱᛠᛡᛁᚳᚩᛉᛖᛞᛡᛏᛋᛗᛠᛄᛈᛠᛟᛡᚫᚦᚹᚻᛈᛇᚪᚷᛈᚻᛠᚳᛚᛠᛈᛡᚣᚾᛁᛚᛡᛁᚳᚫᛇᚾᚫᚳᛡᚱᛡᛚᛞᛒᛟᛝᛡᛉᛗᛝᚳᚻᛟᛠᚾᛈᚳᚦᛁᛇᚦᛇᚢᚩᚦᛈᚪᛡᛚᛟᚹᛡᛈᛄᛗᚷᛒᛈᛋᚾᛇᛏᚩᚷᚢᚾᚫᛖᚾᚣᛁᛖᛞᛝᛞᛝᛚᚢᛚᛉᚪᚾᛝᛇᚪᛄᚻᛞᚹᛈᚫᚹᚫᛇᛁᛚᛝᚦᚾᚳᛒᛁᛏᛠᚳᚩᛇᛖᛝᚳᚻᛟᚻᚫᛄᛟᛉᛁᚳᛖᛏᛋᚹᛖᚾᛡᚣᛄᛗᛖᚳᚪᛞᚩᛟᛏᚦᚫᚳᚹᛄᛉᛠᚷᛠᛗ",
+      "top_suffix": {
+        "score": -4.765979596505458,
+        "plaintext_runes": "ᚦᚷᛋᛖᛡᛝᛄᛒᛡᚩᛏᛁᚱᚾᚹᛁᚾᚢᛁᚠᚪᚳᛈᚹᚠᛚᛏᛄᛗᛄᚹᛋᚢᚩᚷᛞᚩᛡᛋᛒᚫᛒᛈᚷᛒᛠᛞᚢᛖᚪᚫᛡᚱᚫᛟᚫᚷᛞᛋᛇᚩᚠᚱᛖᛚᛁᛁᚷᛞᛟᚹᛇᛞᚩᚠᚣᛗᚣᛠᛏᚱᚪᛏᚾᚪᚫᚷᚱᚣᚫᚢᚦᚾᛁᚱᚹᛒᚻᛗᛚᚢᛝᚹᛈᚢᚷᛋᛋᚾᛏᚢᛁᚠᛖᛡᛚᚣᛋᛄᚢᚪᚾᛒᚣᚾᚩᛚᚣᛏᚠᚳᚦᛚᚫᛡᚢᛡᚷᚹᛝᚪᚹᛁᛞᚠᛞᚣᛗᛖᚦᚱᛞᛋᛈᚣᛡᚹᛟᚹᛇᛄᛞᛏᚱᛞᚱᛡᛠᚱᚾᚦᚾᛁᛖᚳᛖᛋᚻᛄᚩᚦᛡᚷᚻᛋᚠᛈᚷᛁᛚᚷᚣᛝᚷᛠᛝᚪᛖᚪᛠᚢᛒᚾᛁᛇᛏᚠ",
+        "transliteration": "THGSEIANGJBIAOTIRNWINUIFACPWFLTJMJWSUOGDOIASBAEBPGBEADUEAAEIARAEOEAEGDSEOOFRELIIGDOEWEODOFYMYEATRATNAAEGRYAEUTHNIRWBHMLUNGWPUGSSNTUIFEIALYSJUANBYNOLYTFCTHLAEIAUIAGWNGAWIDFDYMETHRDSPYIAWOEWEOJDTRDRIAEARNTHNIECESHJOTHIAGHSFPGILGYNGGEANGAEAEAUBNIEOTF",
+        "recipe": {
+          "a": 8,
+          "b": 14,
+          "initial_cipher_rune": 8,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-08",
+      "ciphertext_runes": "ᛉᛁᛉᛗᚢᛉᛗᚳᚦᛈᚩᛒᛡᚾᛏᛠᛉᛈᚱᚣᚩᚳᛠᛗᛝᚷᛉᛚᚢᛝᛁᛏᚩᛄᚠᛝᛋᛚᚾᛞᚩᛗᛇᚫᚱᛞᚹᛏᛄᚦᚣᚦᛋᚫᚣᛖᛋᛉᛟᛒᛠᚱᛇᛈᛝᚢᛈᚩᚦᛉᚪᚻᛟᚱᛝᚢᛖᚱᚣᛚᛉᛚᛡᛚᚱᛈᚹᛇᚾᛠᚪᚱᛉᛝᚣᛋᚻᚢᛚᛋᚣᚷᚾᚢᛇᚫᚾᚾᚩᚫᛖᛞᚪᚩᛄᛡᚢᚪᛉᚱᛉᛡᛟᛄᛗᛁᛇᛚᛠᚻᚦᛗᛠᚣᚷᛒᚳᛈᛉᚳᚾᛟᛟᛋᚷᛗᛈᛖᛏᛚᚾᛄᛄᚳᛝᚩᛁᚹᛚᛠᛒᚠᚪᛖᛏᛝᚾᛈᛠᚩᛏᚦᚻᛝᛉᛈᚻᛈᚳᛈᚱᚢᛚᚠᛖᛟᚷᚪᛒᚠᛁᚫᚠᚢᛟᛗᚠᚣᛝᛄᚳᚻᛏᚠᛚᚫᛖᚦᛋᛚᚩᚢᚫᚩᚪᛗᛟᚢᚹᛇᛒᚾᛋᛚᛝᛄᛟᚾᛗᛚᛒᛟᛏᚾᛞᛒᚩᚾᚦᛡᚻᛟᚱᛈᚾᚠᛈᛞᛋᚩᛁᛠᚣᚾᛇ",
+      "top_suffix": {
+        "score": -4.838900215052607,
+        "plaintext_runes": "ᛋᚩᛏᚹᚱᛏᚢᛠᚹᚪᛒᛞᚹᛈᛚᚢᚫᚻᚳᚠᚷᛖᚻᚷᛒᚣᚠᛞᚻᛄᚠᛉᚣᛄᛝᛖᛏᛄᛒᛁᛉᚳᚱᚣᚪᚱᛁᚦᚻᚦᛏᚱᛞᛟᛝᛠᚫᚣᚦᚹᛏᚣᛟᚣᛁᛚᚪᚫᛚᛞᚱᛒᚹᛡᛁᛡᚢᚳᛖᛖᚠᛈᚳᚱᛁᛖᛏᛠᚪᛋᛁᛞᛈᛏᛄᚳᚳᚪᚦᚹᛁᛗᛝᚹᚱᚱᚾᛖᚳᚳᛏᛟᚣᚣᛉᛗᛖᚪᚪᛞᚱᚦᛄᚣᚻᚷᚣᚣᛁᛖᛡᛁᛇᛁᚹᛡᚣᛟᚻᚩᚱᚾᚳᚻᚱᛖᛏᛇᚩᛄᚷᚾᛖᛉᚹᛈᛠᚱᚣᛄᛚᚦᛖᛇᛏᛡᚩᚢᚩᚱᚢᚠᚱᚳᚫᚦᛏᛝᚣᚻᛠᚪᛁᛄᚩᚱᛄᚳᛚᛞᚢᚩᛟᛝᛠᛞᛠᚦᚪᛖᛗᚣᚱᚻᛏᚳᚱᚱᛏᛚᛇᚦᛈᛝᚦᛗᚣᚠᛏᛏᛝᚠᛏᛟᚪᚹᛉᛞᛟᛠᛏᛖᚳᛒᛖᚢᚠᚳᛋᛞᛒᚹᛁᛋᚻᚱᛞᛝᛡᛈᛄᛇᛚᛗ",
+        "transliteration": "SOTWRTUEAWABDWPLUAEHCFGEHGBYFDHJFXYJNGETJBIXCRYARITHHTHTRDOENGEAAEYTHWTYOEYILAAELDRBWIAIIAUCEEFPCRIETEAASIDPTJCCATHWIMNGWRRNECCTOEYYXMEAADRTHJYHGYYIEIAIEOIWIAYOEHORNCHRETEOOJGNEXWPEARYJLTHEEOTIAOUORUFRCAETHTNGYHEAAIJORJCLDUOOENGEADEATHAEMYRHTCRRTLEOTHPNGTHMYFTTNGFTOEAWXDOEEATECBEUFCSDBWISHRDNGIAPJEOLM",
+        "recipe": {
+          "a": 13,
+          "b": 9,
+          "initial_cipher_rune": 14,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-09",
+      "ciphertext_runes": "ᚣᚹᚫᚷᛄᛝᛗᚪᚹᛈᚪᚢᚾᛈᛡᛗᛖᛞᛟᛁᛉᛡᛗᚠᛈᚩᚦᛉᛞᚩᛞᛋᛈᛉᛡᚷᛟᚻᚠᚦᛉᛄᛟᛋᚦᚣᚦᛏᚻᛋᚣᚻᛠᚷᛚᚫᚱᛏᚢᛋᛟᚦᚠᚠᚣᛟᛡᛇᚳᚣᛒᛚᛝᛠᚱᚻᛞᛄᚣᛏᚫᚻᛞᚳᛋᛉᚠᛞᚦᛗᚳᛇᛝᚫᚾᛡᛠᚹᛁᛡᛒᛗᛝᚷᛈᛁᚳᛠᛚᚷᛉᚣᚣᚱᛄᛉᛁᛄᚢᛖᚣᚪᛝᛈᛡᚫᚳᛖᛠᚹᛒᚦᛟᚠᛗᚫᚱᚠᚩᛏᛝᛉᛞᛗᛖᛡᚩᛈᛋᛇᛞᛇᛟᚫᚾᚷᛗᚣᛁᚫᛁᛄᛈᛄᚩᛡᚷᛈᚳᛄᛚᛖᛡᚻᛚᚷᚱᛇᛟᚣᛠᚣᛗᚹᚾᚹᚠᛁᛄᚢᛗᚫᚾᚳᛗᛠᛁᚩᛇᛒᛚᛞᚾᚹᚠᚾᛒᚱᛋᛟᚦᛡᚪᛡᛏᚷᚷᚹᚪᛋᛡᚦᛋᚦᛋᚠᛗᚷᛞᛠᛝᛈᚩᚪᚣᛝᛈᛋᛟᚾᛇᚪᛖᚻᚢᚷᚩᚢᚦᛏᛒᚷᚣᛝᚠᚣᛁᚻᚹᛡᛠᚱᚫᚹᛡᛞᚪᚦ",
+      "top_suffix": {
+        "score": -4.875591455776244,
+        "plaintext_runes": "ᛒᛈᛒᚳᛒᛞᚳᛏᛗᚦᛗᛖᛚᛋᚣᚻᚳᚻᛠᛚᚢᚣᛒᚢᛡᚻᛏᚩᚩᛇᚣᛞᚹᚢᛖᛉᚠᚣᛝᛏᚾᚦᛄᛉᛁᚳᛋᚣᚱᚦᚦᛇᚱᛋᚳᛖᛏᛋᛋᚱᚩᛞᛟᚾᚪᚳᛋᛄᚣᛇᚷᚹᚱᚳᛚᚠᛠᚠᛡᚩᛏᚠᚦᛒᚻᚠᚫᛖᛠᚠᚱᚩᛚᚢᛈᚹᛖᚷᛠᛡᛝᛝᛋᚱᚾᛁᚫᚣᚠᛖᛏᛟᚱᚱᚷᚪᚹᛡᛠᛖᛞᚾᚣᛋᛞᚩᚢᛒᛖᛒᛋᛇᚱᛡᛗᛖᚪᚷᚢᚳᛄᚩᚪᚻᚩᚳᛒᛝᚾᚦᛈᛒᚷᚢᚾᚢᚱᚢᚠᛋᚹᛝᛞᚣᛁᛖᚱᚣᛗᚩᛞᚩᛒᛏᚠᛞᛖᛒᛚᛝᛞᛄᛠᛝᛞᛄᛒᚹᛡᛈᛗᚢᚪᛋᚩᚦᛄᚩᚳᚷᚷᚠᛞᛄᚩᛖᛉᚦᚱᚩᚪᚾᚷᛈᛡᛟᚹᛠᛇᛏᛚᚢᛉᚢᛋᛡᛉᛠᚳᛄᚣᛡᚣᛝᛁᚣᛝᚱᛉᚷᛏᚫᛡᛄᚳᚾᛞᚹᛋᚹᛈᛇᛁᛖᚾᚢᛞᚻᛇᚹᚳᚣᚦᛇᚪᚹᚱ",
+        "transliteration": "BPBCBDCTMTHMELSYHCHEALUYBUIAHTOOEOYDWUEXFYNGTNTHJXICSYRTHTHEORSCETSSRODOENACSJYEOGWRCLFEAFIAOTFTHBHFAEEEAFROLUPWEGEAIANGNGSRNIAEYFETOERRGAWIAEAEDNYSDOUBEBSEORIAMEAGUCJOAHOCBNGNTHPBGUNURUFSWNGDYIERYMODOBTFDEBLNGDJEANGDJBWIAPMUASOTHJOCGGFDJOEXTHROANGPIAOEWEAEOTLUXUSIAXEACJYIAYNGIYNGRXGTAEIAJCNDWSWPEOIENUDHEOWCYTHEOAWR",
+        "recipe": {
+          "a": 14,
+          "b": 22,
+          "initial_cipher_rune": 26,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-10",
+      "ciphertext_runes": "ᚳᛉᚢᛈᛏᛋᚢᛖᚷᚦᛡᛚᛖᛋᛠᛝᛉᛈᛉᚾᛟᛞᛟᛒᚾᚹᚢᛁᛇᛚᛞᛁᚦᚣᚷᛟᛈᛡᛖᚪᚠᛋᛉᛞᛖᚷᚦᛠᚾᛋᛞᛟᛗᛖᛗᚾᛉᚹᛒᛠᛈᛟᛗᛉᚫᛄᚩᛞᚻᛡᚷᚠᚣᛗᛁᚷᛉᚻᚹᚾᛋᛗᚷᛠᚣᛚᚱᛄᛗᛉᚣᛇᚱᚢᛟᚣᚦᚢᛟᚩᚱᚢᚹᛁᛒᚳᛠᛏᛞᛚᛖᛋᛄᚳᛟᚷᛞᛡᚢᚹᛝᚻᚫᚢᛈᛏᛈᚩᚣᚾᛇᚦᛟᛏᛇᚳᚠᛒᚪᚾᛗᚦᛝᛟᛠᚢᛁᚪᚾᚻᛝᛉᚩᛇᛁᛡᚠᛟᛒᚦᚠᛋᛒᚠᛞᛇᚩᚦᛏᚷᛚᛄᛖᚫᚣᛁᚫᚹᚻᚫᛏᛁᛉᛉᚻᛞᚩᛠᚫᛋᛝᛚᛝᛖᚩᚻᛗᚩᛟᛒᚦᚱᛚᛋᚳᚻᚪᛡᚾᛇᚱᛉᚦᚣᛉᚻᛡᚾᚢᛗᛉᚹᛖᛈᛖᚩᚳᛈᚳᛞᚪᛉᚢᛗᛝᛟᛋᚾᛟᛉᚠᚱᚳᛒᚢᛄᚱᚫᛝᛒᛋᛟᛠᛡᚪᛚᛏᛟᚾᚫᛟᚪᛁ",
+      "top_suffix": {
+        "score": -4.898508892660191,
+        "plaintext_runes": "ᚠᛁᚫᚻᛞᛝᛠᛠᛡᛡᚦᚳᛏᛉᚦᚦᛞᚢᚾᛉᚢᛞᚾᛈᚳᛚᚠᛗᛄᚻᛁᛈᚾᚠᛁᚪᚩᚪᚱᛋᛝᛞᚠᚾᛠᛡᛏᛖᚱᛄᛞᛏᛞᚢᚷᛋᚦᛖᚹᚩᚠᛏᚾᚹᛝᛈᚪᚩᚷᛄᛚᛏᚦᚪᛡᛄᛚᛞᛗᚱᚣᛁᚦᚳᛚᛉᛟᛄᚾᚫᛝᛈᛏᛈᚣᛋᛞᛈᛖᚢᛏᚱᚻᛟᛠᛚᛠᛟᛏᚳᛏᛡᛚᛠᛉᛠᚣᚻᚱᚩᛁᛠᛋᚫᚻᛏᚷᛚᚫᚻᚷᚪᛚᛡᚦᚾᛠᛟᚩᛖᚫᚷᚢᚱᛗᚠᚩᚩᛞᛉᚦᛒᚠᚳᛠᛗᚦᚾᚩᚳᛝᛗᚫᛚᛒᚪᛞᚩᚷᚩᚪᛟᛟᚢᛉᛝᚹᚢᛠᚪᛚᚣᛇᛚᛝᚠᛡᛏᚷᚱᛞᚢᛏᚩᛋᚹᛉᚷᚾᚩᛗᛁᚾᚷᚻᛁᚻᚹᚻᛈᛖᛠᚾᛠᛚᚷᚹᛈᛒᚾᚦᚹᚾᛋᚩᛗᛄᛈᛒᚢᚷᛁᛒᛗᚢᚦᛚᛉᛈᛝᚣᚢᚫᛉᛖᚦᛈᛡᛡᚳᛟᚱᛞᛏᛡᛡᚱᛁᛁᛏᛗᛝ",
+        "transliteration": "FIAEHDNGEAEAIAIATHCTXTHTHDUNXUDNPCLFMJHIPNFIAOARSNGDFNEAIATERJDTDUGSTHEWOFTNWNGPAOGJLTTHAIAJLDMRYITHCLXOEJNAENGPTPYSDPEUTRHOEEALEAOETCTIALEAXEAYHROIEASAEHTGLAEHGALIATHNEAOEOEAEGURMFOODXTHBFCEAMTHNOCNGMAELBADOGOAOEOEUXNGWUEAALYEOLNGFIATGRDUTOSWXGNOMINGHIHWHPEEANEALGWPBNTHWNSOMJPBUGIBMUTHLXPNGYUAEXETHPIAIACOERDTIAIARIITMNG",
+        "recipe": {
+          "a": 18,
+          "b": 12,
+          "initial_cipher_rune": 5,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-11",
+      "ciphertext_runes": "ᛡᛋᚳᛖᚹᛒᚾᛚᛝᚦᚾᛁᛠᛒᛡᚱᚠᛖᛁᚹᚾᚠᛗᚢᚷᚾᛄᛚᚳᚱᛝᚣᛉᛋᚪᛟᚱᛉᚳᛒᚫᚠᚢᚪᛖᚪᚹᛚᚾᛄᛉᚻᚦᛉᛗᛚᚾᛖᛏᛝᚦᚪᚩᚢᛗᚣᚠᛝᚪᚻᛡᛇᛡᛚᛏᛁᛇᛁᚳᚢᚢᛖᚳᛒᚫᛇᚠᚦᚳᛚᚩᛉᛚᚩᛚᚠᚳᛠᚪᚠᛟᚫᚠᚾᚳᚢᛒᚱᚾᛇᚩᛉᛁᚳᛟᛞᛉᛠᛝᚠᚱᛡᚳᛇᛉᛟᛈᛗᛞᚳᚦᚹᛈᛡᚻᚾᚦᛇᛏᚹᛖᚢᚫᛇᚦᛝᛟᛏᚳᚷᛒᛠᚪᚳᛒᚪᚩᚹᚫᛉᚢᚫᛖᛒᛇᛏᚢᚩᛟᛞᚠᚢᛋᛡᛄᛗᚦᛠᛏᚪᛒᚹᚣᛏᛄᚻᚦᚫᛚᚪᚱᚫᛟᚦᚩᚾᛟᛁᛖᛡᚠᚷᛋᚠᚦᛏᛠᛡᛠᛁᚢᛡᛇᛝᛞᛉᛏᚠᛒᚻᚢᛋᚳᚱᛇᚹᛇᛈᛋᚢᛚᚪᛈᚢᚳᛖᚠᛞᛉᚦᛠᛇᛝᚻᚣᚱᛗᛟᚾᛚᛈᚹᛞᚱᛄᚪᛝᛞᛁᚦᛏᚷᚢᚹᚳᚻᛖᚩᚪᛖᛉᚪᚢ",
+      "top_suffix": {
+        "score": -4.848353033457178,
+        "plaintext_runes": "ᚹᚩᛋᚳᛝᛠᛗᛁᛝᛡᛁᚳᚳᛝᚠᛚᚳᛠᛖᚻᚢᚩᛗᚦᚷᚻᛞᛈᛉᚹᚦᚹᛁᛞᛏᛗᛝᚢᛒᚫᚱᛁᚪᚪᚠᛒᛋᚳᚻᚷᚪᚪᛒᚦᛁᚳᛞᛏᚦᛝᚣᚫᛏᚳᛡᚷᛠᚷᛋᚩᛈᛄᚣᛚᚪᚻᛏᛟᛚᛇᚹᚾᛒᚫᚾᚹᚻᚷᛄᛒᛗᚠᛒᚹᛞᚦᚪᛚᚦᚣᚷᚱᛞᛚᛚᚾᚾᚦᚷᚢᛗᛚᛟᚹᛁᚢᛈᚣᚫᚱᚪᛡᛡᚻᚫᚢᚠᚱᛗᛖᚦᚠᛈᛝᛁᚣᛝᚱᚢᛗᛒᛟᚾᚩᚩᛁᚪᚳᛁᛗᛗᛚᛝᛒᛡᚫᚱᚳᚳᚾᛟᚣᛉᛟᚱᛈᚻᚩᛁᚠᛁᛈᛒᛋᚫᛒᛖᚹᚫᚣᚩᚩᚩᛟᛖᚪᚪᛟᚱᛞᛠᛖᛞᛁᚠᛋᚹᚫᛞᚻᚠᛞᛈᚻᛈᛒᛉᛁᛗᚢᛖᛈᛞᚻᚢᚻᛋᚹᚢᚣᛈᚩᛉᚫᛟᚦᛁᚻᛄᚩᚱᚳᚹᚱᛋᛗᚪᚢᚹᛖᛋᛞᚾᚳᛡᛄᚷᚾᛗᚣᚪᚾᛝᛡᛋᛖᚻᚾᛠᛈᚩᛟᚠᛏᚷᛝᛈᛠᚪᛚᛝᚠ",
+        "transliteration": "WOSCNGEAMINGIAICCNGFLCEAEHUOMTHGHDPXWTHWIDTMNGUBAERIAAFBSCHGAABTHICDTTHNGYAETCIAGEAGSOPJYLAHTOELEOWNBAENWHGJBMFBWDTHALTHYGRDLLNNTHGUMLOEWIUPYAERAIAIAHAEUFRMETHFPNGIYNGRUMBOENOOIACIMMLNGBIAAERCCNOEYXOERPHOIFIPBSAEBEWAEYOOOOEEAAOERDEAEDIFSWAEDHFDPHPBXIMUEPDHUHSWUYPOXAEOETHIHJORCWRSMAUWESDNCIAJGNMYANNGIASEHNEAPOOEFTGNGPEAALNGF",
+        "recipe": {
+          "a": 27,
+          "b": 12,
+          "initial_cipher_rune": 27,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-12",
+      "ciphertext_runes": "ᚳᛁᚱᚳᚹᛠᛇᛏᚦᚳᚻᚢᛡᚹᛟᚷᛇᛈᚢᛈᚦᚷᚣᚢᚪᛗᚹᚳᛖᛝᚱᛠᛞᛏᚻᛄᛁᛈᚻᚠᛉᛝᛈᚾᛒᚳᚪᚷᛋᛟᛉᛠᛈᚪᚩᚷᚠᚳᛡᛄᛠᚢᚠᛋᛚᚣᛚᚢᛒᛉᚱᚣᚾᛁᛠᛚᚹᛋᚠᚦᚪᛠᛈᚷᛏᚷᛡᛟᛠᛡᛒᛉᛄᛒᛖᚾᛞᚠᛠᛗᚦᚪᛗᚠᚪᚻᛡᛗᛁᛏᛟᚻᚣᚹᛏᚠᛒᛁᚫᛖᛝᛒᛚᛏᛠᛉᛟᛋᚾᛉᚹᛏᛠᛏᛖᚢᛡᛖᛉᚾᛇᛟᚳᚾᚠᚩᚾᚠᚳᚪᚷᚱᚩᛠᚦᚹᚣᛒᛁᛝᛇᛟᚣᚷᛗᚩᛁᚷᛄᚩᛇᚢᛁᛉᛝᚪᚱᛉᛏᛄᛞᛈᚾᛝᚷᛏᚢᛚᚷᚳᛏᚢᛒᛇᛈᚩᚣᚢᛏᛡᚫᛏᚹᛏᛇᛡᚫᚫᚦᛏᛝᛠᚳᛁᛉᚻᚦᚣᚻᛚᚾᛋᚱᛡᚫᛚᚫᛖᚷᚻᛞᚾᚻᛠᚠᚪᚹᛖᚠᛄᛒᛇᚱᚹᛏᛉᚾᛠᛖᛁᚠᚾᛡᚳᛋᛟᚹᛈᚷᛝᛟ",
+      "top_suffix": {
+        "score": -4.828072288775376,
+        "plaintext_runes": "ᛁᛡᚩᛇᚾᚪᚢᛈᛝᛝᛖᚫᛒᛈᚪᛗᚩᚦᛋᛄᚢᚠᚢᛡᚹᚦᚳᚪᛝᛋᚹᚹᛖᚾᛝᛉᛝᚹᚾᚱᛠᚾᛏᚻᚦᛚᚷᛒᛠᚾᚱᚱᚷᚻᛝᛡᛁᛖᚪᚦᛇᛉᛈᛁᛗᛡᚣᛟᚫᛚᛖᛋᚩᛄᚾᛟᚻᚱᛇᛖᚢᚱᛖᚣᛚᚾᚹᛗᛉᛚᚫᚫᛗᚩᚠᚱᛗᛉᚠᛋᛖᚹᚣᚹᚪᛚᚾᚠᛗᛗᛈᛄᚣᛒᚪᚦᛖᛈᛖᛝᛏᛝᛏᛋᛈᚻᛖᛡᛁᛖᛒᛋᚦᛇᛋᚫᚠᛏᚹᛝᚣᛋᚢᚠᛝᛗᚠᛁᛚᚷᚳᛉᛏᛝᛁᛚᚠᛖᚷᚠᚣᚢᛒᚪᚪᛠᛏᛁᚾᛒᛄᛒᚢᛠᛝᛒᚣᛇᚹᛋᛚᛏᛋᚱᚣᚱᛚᛈᛉᚷᚱᛟᚹᚩᛚᛡᚢᛈᚷᚳᚠᚠᛒᛏᛈᚳᛞᛗᚱᛁᛠᛗᛁᚢᛡᛡᚹᚷᛋᛄᛗᛄᛡᚳᚹᛁᛖᚦᛇᛈᛈᛉᚠᚩᚹᛋᚷᚷᚷᛗᚹᚾᛝᛒᚳᚹᛚᛚᚾᛚᛒᛄᛠᚣᛠᚱᛗᛖᛈᚩ",
+        "transliteration": "IIAOEONAUPNGNGEAEBPAMOTHSJUFUIAWTHCANGSWWENNGXNGWNREANTHTHLGBEANRRGHNGIAIEATHEOXPIMIAYOEAELESOJNOEHREOEUREYLNWMXLAEAEMOFRMXFSEWYWALNFMMPJYBATHEPENGTNGTSPHEIAIEBSTHEOSAEFTWNGYSUFNGMFILGCXTNGILFEGFYUBAAEATINBJBUEANGBYEOWSLTSRYRLPXGROEWOLIAUPGCFFBTPCDMRIEAMIUIAIAWGSJMJIACWIETHEOPPXFOWSGGGMWNNGBCWLLNLBJEAYEARMEPO",
+        "recipe": {
+          "a": 9,
+          "b": 23,
+          "initial_cipher_rune": 5,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-13",
+      "ciphertext_runes": "ᚷᚦᚠᛄᚷᚳᛒᛁᛗᛚᛇᛠᚹᚾᚫᚹᚷᚩᚻᚪᛏᚾᛄᚣᛝᛏᛡᛝᚢᚩᚠᚣᛗᚢᛒᛏᚠᛈᚱᚩᛉᚩᛝᛒᛖᛏᚩᛉᚣᛗᚠᛉᛖᚩᚫᚷᚣᛚᚩᛇᚠᛋᚫᛇᛗᛡᛟᚹᚾᚩᚢᚹᛖᛁᚾᚦᚫᛠᚪᛠᛚᚹᛡᚩᚢᚦᛗᛝᛚᚪᚠᛝᛚᚠᛚᚳᛒᚢᛝᛉᚣᛡᚪᚷᚹᛟᚪᚻᚹᚢᛖᛠᚷᛁᚪᛏᛄᛗᛏᛖᛁᚣᛡᚦᚾᚠᚦᚩᛈᚻᚪᚻᛋᛠᛡᛉᚪᚫᚠᚣᛞᛠᛇᚠᚫᛏᛗᚳᛡᚷᚱᚢᛞᛄᛋᛡᛇᚩᛚᛟᚦᚱᚫᛒᛚᚦᛖᚪᚦᛗᛚᚦᛉᚪᚱᛟᛖᛒᛄᚱᛄᛖᛁᛈᚪᛖᛠᚠᛄᚢᛞᚹᚦᚣᛉᚷᚩᚳᛡᛇᛗᛞᚳᛏᚻᛚᚦᛝᛖᛗᚱᛒᚷᛞᛉᛗᛒᛉᚳᛝᚦᚣᛞᚫᛠᛋᛏᛗᛏᚻᚹᛇᚳᚪᛞᛠᚢᛒᛉᛡᛁᛡᛚᚷᛋᚦᛞᚠᚢᚩᛠᛚᛋᚣᛏᛋᚪᛞᚫᚹᛄᛞᛋᛈᛋᛄᚪᛖᛁᛇᛒᛟ",
+      "top_suffix": {
+        "score": -4.68364514256913,
+        "plaintext_runes": "ᛡᛁᚢᛝᛏᚹᚾᛖᛠᚩᚦᛇᚳᚦᚢᛏᚱᛞᚦᚩᚾᚳᚫᛝᛝᚢᛋᛖᚳᚱᚱᚾᚢᚦᛏᛈᛈᚣᛏᚢᛉᛉᛡᛠᛁᚦᚢᚹᚾᚪᛗᛒᛗᚾᚪᚣᛋᚹᛖᚻᚫᚪᚦᚷᛇᛝᛗᚳᛋᛁᚠᚢᚩᛏᚾᛋᛄᛡᛒᚩᚦᚣᛞᛁᛠᚻᚳᛏᛒᛞᚩᛏᛖᚣᛗᚹᛈᚣᚾᚹᛠᚱᚢᛠᚫᚳᛈᛏᛋᚻᚪᚷᛒᛗᚩᛝᛇᚱᚳᚩᚦᛠᛒᚷᚣᚳᛠᚪᛝᚦᛈᚷᛈᛏᚦᚪᛠᛒᚱᚱᛞᛈᚻᛡᚣᛄᚫᚾᛇᛁᚱᚾᚻᛒᚹᛗᚣᚻᚳᛖᚳᚩᚩᛄᚢᚦᚠᚷᚻᛠᚢᚹᚪᛖᛉᛡᛏᛋᚾᚷᚷᚩᛄᚢᛋᚪᛠᚢᛚᚾᛈᛝᛝᚻᚩᚱᚳᚾᛗᚷᛒᚢᚢᚩᚹᚢᛚᚱᛠᛗᛈᛉᚻᚣᛞᛁᚱᚣᚦᚪᛝᚱᚳᛄᚦᛠᛄᚱᚩᛏᛞᚾᛚᛏᛞᚳᚦᚱᛈᚹᚻᚾᚫᛖᚦᚩᚠᛠᚳᛡᚩᛝᚢᛚᛏᛖᛏᚳᚢᛒᚹᚩᛁᚳᛡᛈᛋᚩᚳᛞᛞ",
+        "transliteration": "IAIUNGTWNEEAOTHEOCTHUTRDTHONCAENGNGUSECRRNUTHTPPYTUXXIAEAITHUWNAMBMNAYSWEHAEATHGEONGMCSIFUOTNSJIABOTHYDIEAHCTBDOTEYMWPYNWEARUEAAECPTSHAGBMONGEORCOTHEABGYCEAANGTHPGPTTHAEABRRDPHIAYJAENEOIRNHBWMYHCECOOJUTHFGHEAUWAEXIATSNGGOJUSAEAULNPNGNGHORCNMGBUUOWULREAMPXHYDIRYTHANGRCJTHEAJROTDNLTDCTHRPWHNAEETHOFEACIAONGULTETCUBWOICIAPSOCDD",
+        "recipe": {
+          "a": 6,
+          "b": 22,
+          "initial_cipher_rune": 6,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-14",
+      "ciphertext_runes": "ᛏᛄᚠᚩᛚᛞᚾᚷᚳᛚᚷᛗᛠᚦᚢᛟᚻᚾᛟᚣᛡᛇᚻᚣᚪᛈᚾᛋᛞᚫᛠᚳᛉᛄᚦᚹᛋᚱᚦᚫᚾᛡᛚᚣᚫᛋᛖᛟᚣᛝᛡᚦᚣᚷᛇᚱᛋᛠᛏᛡᚳᛉᛠᚷᚳᛒᛋᚹᚾᚻᛖᛝᛋᚩᛡᛗᛉᛝᛉᚦᛠᛞᚳᛒᚷᛉᚹᛝᚢᛉᛞᛈᛉᛡᛈᛟᚾᛡᚠᛡᚢᛋᛉᚪᛖᚻᚱᚣᛠᛇᛒᛟᚪᛝᛡᚳᚱᚳᛈᚩᛏᚻᚣᚫᛁᛋᚩᚦᛚᛟᛚᛋᚪᚢᚪᛈᚻ",
+      "top_suffix": {
+        "score": -4.676556314199017,
+        "plaintext_runes": "ᚢᛁᛖᚣᛖᚠᛡᚪᚠᚠᚩᚾᛖᚪᛚᚠᛝᚩᚦᛝᛏᛉᛁᛄᛁᛉᛠᚫᚳᛖᛠᚾᛡᚹᛋᚫᛁᛄᛒᚩᛁᚱᛠᚪᛞᛖᚦᚦᚢᛠᚦᚢᚾᛠᛚᚷᚩᚣᚷᛇᚾᛏᛇᚪᛗᛄᛚᚳᚪᛟᛖᛒᚣᚢᛚᚢᛇᚱᚣᛡᚢᚷᛗᛁᚫᚱᛏᚾᚩᚾᛞᛝᚩᚠᚾᛈᛁᚳᛄᛖᛏᚪᛟᛒᛞᛉᚱᚳᚩᛋᛋᚳᛡᛠᛇᚪᛝᚫᛞᚩᛚᛁᚪᛏᛋᚣᚪᛁᚳᛄᚢᚾᛠᛒᛁᚢ",
+        "transliteration": "UIEYEFIAAFFONEALFNGOTHNGTXIJIXEAAECEEANIAWSAEIJBOIREAADETHTHUEATHUNEALGOYGEONTEOAMJLCAOEEBYULUEORYIAUGMIAERTNONDNGOFNPICJETAOEBDXRCOSSCIAEAEOANGAEDOLIATSYAICJUNEABIU",
+        "recipe": {
+          "a": 13,
+          "b": 8,
+          "initial_cipher_rune": 16,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-15",
+      "ciphertext_runes": "ᚠᚢᛚᛗᚪᛠᚣᛟᚪᛚᚢᛝᚾᚳᚢᛒᚾᛏᚠᛝᛁᚢᛁᚢᛟᚫᛄᚠᚫᚢᚷᛉᛇᛈᛉᚣᛠᛚᚪᛉᛟᛉᛡᚦᚻᛠᚾᚪᚳᚢᚷᚾᛈᛖᚾᚦᚩᚢᛁᛡᚱᛏᛁᛒᛇᚳᚠᚷᚩᚦᚪᛁᛈᚻᛡᛒᚹᛈᚻᚱᛞᛉᛏᚢᚣᛒᚠᛋᛉᚢᛗᛁᛡᚱᛝᚢᚠᚦᛝᛈᛟᛒᚻᚷᚻᛡᛚᚩᛞᚪᚳᚦᛈᛞᛋᛡᚻᛇᛚᚢᛏᛋᛞᚦᚢᛞᛝᛚᛉᛝᛏᚩᛚᚪᛚᚣᛟᛡᛉᚣᛒᚻᚫᛄᛡᛁᚱᚦᛚᚠᛠᚾᛝᛉᛗᛒᚩᛠᛈ",
+      "top_suffix": {
+        "score": -4.728246081434366,
+        "plaintext_runes": "ᛝᚾᚩᛠᛗᛞᚳᚢᚳᛋᛖᛚᚳᚳᛄᛡᛒᛈᛡᚠᛖᚷᛖᛡᛁᚦᚠᚳᛠᛠᚣᛞᛝᛝᚱᚢᛡᛗᚾᚣᛡᛈᛗᚻᛖᛋᚦᛋᚳᛠᛁᛗᛠᛖᚹᛝᛞᚷᛚᚻᚱᛏᛒᚫᚹᚫᚻᛉᚩᚹᚦᛁᚫᚾᚾᚾᚻᚫᚳᚾᛖᚢᛟᚳᛖᚱᚦᚩᛄᚠᛖᛚᚻᛚᚷᚩᚢᚾᛡᚷᚫᛖᛞᚢᚾᚹᚱᛖᛝᛋᛉᚪᛋᛡᚱᛋᛗᚣᛋᚦᚩᚣᚣᚩᚹᛞᚩᛏᛒᚫᛄᛚᛗᚳᚻᚳᛠᛄᚱᛖᛖᛚᚦᛄᚱᛏᛞᚠᚷᚩᛋᚱᚹᛠᛞᚦᚳᛟ",
+        "transliteration": "NGNOEAMDCUCSELCCJIABPIAFEGEIAITHFCEAEAYDNGNGRUIAMNYIAPMHESTHSCEAIMEAEWNGDGLHRTBAEWAEHXOWTHIAENNNHAECNEUOECERTHOJFELHLGOUNIAGAEEDUNWRENGSXASIARSMYSTHOYYOWDOTBAEJLMCHCEAJREELTHJRTDFGOSRWEADTHCOE",
+        "recipe": {
+          "a": 9,
+          "b": 12,
+          "initial_cipher_rune": 0,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-16",
+      "ciphertext_runes": "ᛖᛞᚪᚫᛏᚩᛠᛖᛠᛉᚳᛠᛏᚩᛞᚳᛠᚾᚳᚦᛗᛞᚷᛁᚳᚹᛟᚪᚢᛒᚳᚫᚦᚱᛋᚣᚪᛏᚦᛒᛝᚹᛋᚱᛁᛝᛒᛁᚪᚫᛚᛏᚱᛡᚫᚠᛞᛝᛄᚩᛡᛠᛉᚪᛡᚻᚱᛒᛁᛞᛡᛄᚪᛈᚱᛋᚢᛡᚻᚷᛚᛟᚠᚻᚷᚫᛋᛈᚹᚷᚷᛗᛟᚪᚾᚱᚩᛟᛞᚷᛟᚠᛠᛡᚷᚳᛉᛠᚠᛚᛒᚫᛈᚩᛄᛈᛄᛗᛠᚾᛉᚪᛡᛖᛋᚷᚫᚦᛄᚷᛉᚩᚦᛄᚳᚣᚢᛄᚦᛄᚪᚾᛏᛒᚳᛈᛡᛄᛋᚫᛋᛗᚻᛞᛠᛉᚢᛗᛏᛠᛖᚣᚠᛄᛏᛋᛗᛞᛟᛁᛝᚪᛉᛖᛈᛚᛇᛞᚦᚪᛋᛉᚳᛒᚢᛟᚳᛒᛚᚾᛟᛝᛉᚩᛖᚳᛝᛟᚳᛁᛒᛈᚫᚣᛖᛄᛝᛞᚢᚱᛉᛟᚩᚠᚹᚩᚣᛁᚠᚢᛇᛚᛏᛈᛒᛗᛇᛝᚢᚳᚱᛡᛖᚩᛁᚣᛄᛏᛡᛖᚠᛇᚠᛚᛁᚣᚷᚠᛝᛡᛈᚷᛒᛡᚩᚷᛡᛟᚾᚹᛡᛈᛟᚦᛈᛟᚷ",
+      "top_suffix": {
+        "score": -4.893080541741107,
+        "plaintext_runes": "ᚻᛁᛁᛋᛒᛡᚢᛚᚩᛋᛠᚦᛒᛋᚳᛠᛚᛡᛇᚦᛞᛗᛞᛈᚪᚩᚪᛟᛒᚦᛋᛟᚪᚳᚳᚣᚠᚩᚩᛞᚩᛝᛏᛟᚳᛡᛉᛖᛁᛈᛡᚦᛠᚣᛞᛠᚣᚢᚠᛈᛁᚩᛚᚾᛚᛡᚱᛉᚱᛞᚱᚱᛏᛋᚳᚩᛇᛚᚣᛖᚪᚹᛝᚣᚢᚢᚣᛠᛄᚫᚱᚾᚪᛖᛈᛄᚢᛁᛗᛒᚹᛄᛄᛝᛄᚷᛖᛁᛋᛇᛝᚦᚢᛝᚪᚣᛝᚷᛚᚻᛚᚾᛋᛇᛋᚢᛟᚷᛈᛝᛏᛄᚷᛠᚠᛞᛚᛋᚷᚱᛖᚹᛁᚦᛝᛖᚱᛞᛚᚢᛞᛏᚩᚻᚩᛒᛏᛇᛗᚢᛝᚾᚳᚻᛄᛞᛞᛄᚦᚳᚾᚢᛞᛈᚹᚠᚳᛝᛉᛋᛄᛋᛗᚱᚠᛗᛗᚾᛏᚱᛄᛉᛏᚩᛒᛒᛁᛗᚻᚹᛡᛗᛁᚠᛉᛚᚪᚹᚾᛚᛝᛚᛇᚹᛡᛠᚱᚢᛁᚳᛝᛡᛇᛞᚪᛉᚷᚷᛞᛄᛠᛋᛖᚹᛒᛖᚻᚳᛋᚳᛗᚦᛋᚢᛒᚷᛠᚠᛟᚩᛉᚳᛚᚻᚾᚠᛈᛒᚣᛋᚩᚷᚷᚳᚷᚱ",
+        "transliteration": "HIISBIAULOSEATHBSCEALIAEOTHDMDPAOAOEBTHSOEACCYFOODONGTOECIAXEIPIATHEAYDEAYUFPIOLNLIARXRDRRTSCOEOLYEAWNGYUUYEAJAERNAEPJUIMBWJJNGJGEISEONGTHUNGAYNGGLHLNSEOSUOEGPNGTJGEAFDLSGREWITHNGERDLUDTOHOBTEOMUNGNCHJDDJTHCNUDPWFCNGXSJSMRFMMNTRJXTOBBIMHWIAMIFXLAWNLNGLEOWIAEARUICNGIAEODAXGGDJEASEWBEHCSCMTHSUBGEAFOEOXCLHNFPBYSOGGCGR",
+        "recipe": {
+          "a": 14,
+          "b": 25,
+          "initial_cipher_rune": 18,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-17",
+      "ciphertext_runes": "ᛚᚦᛈᛞᚦᛇᛒᛡᚪᛒᚪᚾᛗᚳᚾᛖᛡᚹᛝᛏᚱᛝᚫᛚᛟᛁᛇᚣᛝᛡᚾᛏᚱᛁᛋᚪᛖᛇᚢᛝᛞᛄᚠᚱᛠᛗᛠᚪᚫᛈᛏᚠᛖᛏᚷᚾᚠᛁᚠᚱᚻᚱᛇᛒᚻᛈᛏᛇᚱᛝᛡᛒᚹᛚᛏᛗᛉᚦᚾᛄᚳᚫᚷᛈᛋᛖᚩᚢᛝᚩᛏᛈᛁᚣᚾᚪᛏᚹᚠᛗᚾᛟᚾᚳᛒᛄᛉᛡᛟᚪᛁᚫᛝᛒᛉᛏᛄᛁᛋᛠᚳᛖᚱᚦᚣᚩᚣᛈᚫᚷᛡᛄᛁᚩᚱᚦᛠᛇᚦᚩᛉᚾᚱᚾᚫᛁᛉᛁᛝᚣᚫᛡᚫᛗᚹᛖᛇᚷᚻᛖᛗᚷᚢᛞᚹᛄᚻᛉᚱᚢᛄᚢᚾᛈᛋᚣᛄᚫᛈᚳᚣᚳᛒᛡᚫᛟᚪᚠᛏᚷᚩᛇᛟᛁᚱᛗᛖᛉᛟᛗᛇᚫᛟᚦᚱᛞᛁᚢᚦᚻᛗᛡᚾᛁᚦᚻᛚᛏᚳᚪᚦᚠᚪᚫᚣᚻᛠᚦᚠᛋᚠᛝᚷᚱᛈᛏᛄᛉᛟᚷᛚᚻᚩᚪᚦᛏᚳᛁᚠᚣᚢᛁᚹᛟᚪᚣᛁᛠᛄᚪᛟᛝᚦᛟᚠᚦᚾᛇᚷᛠᛚᛒᚠ",
+      "top_suffix": {
+        "score": -4.851301347179242,
+        "plaintext_runes": "ᚳᚳᚫᚹᚫᚾᚫᚪᛒᛡᚩᚫᛇᚠᛏᛏᛏᚩᚷᚢᚢᚠᚷᛄᚢᛄᚩᚷᛖᚳᛡᚢᛖᚾᛏᚣᚣᛁᛠᛄᚢᛁᚠᚷᛠᛏᛋᚦᚢᛚᛞᛁᚱᛗᛚᛠᚫᛗᚠᚠᛋᚹᚾᛠᚾᛚᛋᚻᚢᛖᛗᛗᛞᛋᛚᚷᚢᛡᛄᚣᛠᚫᛡᛄᛚᚩᚱᛠᚳᛞᚪᚪᛝᛉᛇᚻᛠᛒᛗᛗᛞᛝᛋᛉᚣᛚᛞᚷᛄᛇᛇᛋᛋᚪᛄᚷᛈᚾᛞᛖᛞᛇᚱᚷᛖᚣᛝᛉᚫᚻᛞᛈᛒᚦᚱᚪᛞᛗᚦᚳᚷᚷᚾᛝᚩᚠᛋᚳᚾᛈᛄᚱᚣᚢᚳᚣᚣᛄᚫᚦᛝᚷᛒᛞᚠᚪᛖᛗᚪᚫᛗᚹᚠᛄᚳᚩᚩᚢᚻᚻᚹᛉᚫᚱᚪᛄᚾᛝᛗᚪᛏᚫᚢᚣᛇᛈᛋᚹᚪᛒᛞᚪᛏᛄᛗᛝᛠᚦᛖᚳᚹᚳᚦᚻᛖᛉᛋᛁᛗᛡᚱᚷᚦᚦᚳᛠᛚᚱᛇᚩᚻᚩᚱᛏᛚᚷᛚᚹᛞᚩᚢᚷᚻᛡᚩᛁᚾᛗᚪᚠᛏᚪᛇᛄᛄᛞᛁᛉᛞᚱᛈᚫᛠᛡᛄᛡᛚᚣᛒᚻᚪᛉ",
+        "transliteration": "CCAEWAENAEABIAOAEEOFTTTOGUUFGJUJOGECIAUENTYYIEAJUIFGEATSTHULDIRMLEAAEMFFSWNEANLSHUEMMDSLGUIAJYEAAEIAJLOREACDAANGXEOHEABMMDNGSXYLDGJEOEOSSAJGPNDEDEORGEYNGXAEHDPBTHRADMTHCGGNNGOFSCNPJRYUCYYJAETHNGGBDFAEMAAEMWFJCOOUHHWXAERAJNNGMATAEUYEOPSWABDATJMNGEATHECWCTHHEXSIMIARGTHTHCEALREOOHORTLGLWDOUGHIAOINMAFTAEOJJDIXDRPAEEAIAJIALYBHAX",
+        "recipe": {
+          "a": 9,
+          "b": 22,
+          "initial_cipher_rune": 20,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-18",
+      "ciphertext_runes": "ᛠᚪᛄᛇᛠᛚᚱᚷᛋᚹᚩᛒᛁᛠᚳᛁᛞᛄᛖᛗᚱᚷᚪᚻᛠᛚᚷᚩᛉᚻᛡᛝᛞᚱᚹᚩᛈᛡᚣᚳᚦᛁᛇᚢᛁᛟᚦᚠᚳᚻᚩᛁᛝᚾᛁᛞᛏᚫᚱᛝᚫᛈᛠᛞᛇᛉᚳᛠᚩᛟᛖᛗᛈᛒᚦᛝᛋᚢᛡᚻᛡᛏᛉᛇᚷᚠᛡᛡᛟᚢᛡᚦᚣᛞᚪᚫᛝᛒᚳᚩᚷᛏᛞᚦᛁᚠᛒᛖᚦᛟᚳᚠᚻᛞᚠᚣᛋᚾᛟᛠᛇᛄᛖᛉᚩᛈᛠᛚᚪᛟᚩᚾᛄᛉᛋᚣᚫᚷᛖᚩᛟᚢᚱᚹᚢᛟᛡᛄᛇᚢᛞᛉᛒᛇᚳᛝᛚᛗᛠᛗᚪᚱᛡᛗᛒᚩᚹᛋᛖᚾᚻᚣᛈᛞᛚᛞᛈᛏᚪᛞᛚᛉᛟᚱᚾᚹᛠᚠᛁᛟᚾᛒᛇᛟᛖᛝᚳᚠᛏᛞᛏᛇᚫᛝᚢᛠᛡᚫᛖᛟᛞᛝᛠᚠᛗᛒᛚᛏᚢᛈᚱᚹᛟᛇᛉᚳᛟᛈᛏᚢᚠᚳᛞᛄᛋᛞᛈᛚᚠᛝᚱᛄᚣᛞᛗᛖᚣᚢᛖᛝᛠᚳᛞᛈᚩᛠᛏᛒᚳᚷ",
+      "top_suffix": {
+        "score": -4.847440793447542,
+        "plaintext_runes": "ᚪᚠᛖᚠᛞᛝᛄᛚᛞᚪᛉᛏᛋᛇᛗᛝᛟᚳᛖᛉᛄᛋᛝᚢᛞᚹᛒᚷᚾᚻᚾᛄᛈᚱᚪᛈᛉᚩᛡᛒᛡᛄᛋᛚᛠᛚᛁᛗᚱᚦᚳᚷᛟᛖᛝᛏᛚᛡᛟᚣᛟᚹᚦᛋᛄᚢᚾᚣᚻᚪᛖᚾᚣᛉᚻᚾᚹᛒᛈᚻᛋᛁᛁᚾᚾᛁᚫᚦᛡᛒᚣᚦᛒᛖᛖᚪᚪᛟᛁᚱᛈᚳᛡᛡᚻᛟᛖᛝᚢᛠᚦᛡᚹᛇᛒᛋᚾᛝᛇᛝᚩᚳᚪᛋᛈᚹᛞᚣᛁᛈᛇᛄᚱᛖᚷᚩᛈᛠᛉᚻᛡᚱᚱᚾᛞᛗᛝᛖᛋᛏᚢᚱᚦᛏᚠᚩᚩᛚᚢᛗᛚᚾᛞᛁᚹᚣᛡᚱᚢᚩᛋᚠᛈᛒᚱᚻᚱᛡᚩᛒᚾᛡᚷᛗᛁᛞᛖᛈᛠᚠᛡᚦᛈᚪᚱᛝᚦᚠᚳᛏᚪᛝᚪᛚᛁᚩᛁᛏᚣᛖᛁᚳᛖᚻᛁᚱᚪᛉᛠᚢᚱᚹᚻᛄᚢᛟᚢᚱᛉᚩᛗᛋᛟᚣᛡᚻᚳᛚᛞᛠᚳᚹᛒᚪᚩᛡᚣᛟᚱᚳᛇᛋᚻᚻᚪᛟᛖᛟᛖ",
+        "transliteration": "AFEFDNGJLDAXTSEOMNGOECEXJSNGUDWBGNHNJPRAPXOIABIAJSLEALIMRTHCGOEENGTLIAOEYOEWTHSJUNYHAENYXHNWBPHSIINNIAETHIABYTHBEEAAOEIRPCIAIAHOEENGUEATHIAWEOBSNNGEONGOCASPWDYIPEOJREGOPEAXHIARRNDMNGESTURTHTFOOLUMLNDIWYIARUOSFPBRHRIAOBNIAGMIDEPEAFIATHPARNGTHFCTANGALIOITYEICEHIRAXEAURWHJUOEURXOMSOEYIAHCLDEACWBAOIAYOERCEOSHHAOEEOEE",
+        "recipe": {
+          "a": 22,
+          "b": 25,
+          "initial_cipher_rune": 28,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-19",
+      "ciphertext_runes": "ᚾᚩᛟᚾᚠᚩᛁᚠᚢᛋᚾᛞᚹᛠᛇᛈᚱᚩᚩᛄᚪᛟᛇᛠᛄᛁᛟᛄᛞᚢᚳᛝᚩᚱᛝᛋᛄᛁᛈᛉᛖᛞᛁᚾᛗᛗᚳᛉᚩᛁᛄᛞᚳᚢᚪᛇᚦᛡᛇᚻᛠᚣᛠᚻᚠᚩᛡᛠᛋᛟᚪᚹᚫᚻᚩᛄᚢᚱᚩᚣᛏᚫᚪᛡᚷᛄᛚᛄᛝᛏᛖᛒᛚᛉᚻᚱᚩᚫᛇᛈᛄᛠᚳᛈᛚᚣᛈᚪᛠᚻᚻᛋᚫᚩᛝᚹᛋᛞᚠᚳᛠᚩᛇᚫᚪᚩᚹᛗᚪᚣᚫᚷᚫᛄᚱᚹᛞᚱᚦᚷᚳᚹᚾᚷᛡᛚᛒᚳᛄᚷᚹᚹᚱᛁᚠᛏᚠᛚᛋᛄᛚᚪᛄᚱᛏᛞᚷᚫᛠᚠᛉᛞᚫᚷᚻᛏᛗᚣᛈᛏᛒᛟᛝᛄᛋᚾᛝᛁᚹᚦᛠᛝᛞᚾᛟᚷᚫᛁᛗᛝᛉᚱᛞᛋᛗᚠᚫᚹᛟᛋᚦᛞᛞᛈᛝᛞᛡᚷᛒᚪᛟᚦᛡᛒᚪᚹᚾᛉᚫᛚᛈᛁᛒᚠᚾᚠᛡᚩᛏᛞᚾᛋᛖᚳᚻᛖᚻᚢᛟᚪᛖᛗᛝᛠᚫᛈᚩᚪᛞᚠᚫᚻᚠᛏᚦᛄᛚᛄᛒᛗᛇ",
+      "top_suffix": {
+        "score": -4.845152168343891,
+        "plaintext_runes": "ᚻᛁᚣᚪᛖᛏᛁᛗᛡᚻᛡᛈᚾᛈᛗᚪᛚᚳᚢᛈᚷᛁᚣᛠᛚᛠᚫᛠᛏᚩᚣᛉᛗᛄᚻᚹᛚᛖᛗᚩᛒᚣᛚᚠᚳᛇᛋᚫᛏᛗᛠᛉᚹᚻᛄᛁᚹᛡᚹᚪᚷᚱᛋᚾᛖᛟᛗᚣᛏᚱᛠᚫᛠᛟᚢᛁᛖᛚᚻᛁᛋᛚᛖᚢᛒᛋᚪᚠᛟᚱᛚᛖᚻᚻᚹᛚᛞᚣᛗᚷᛄᚦᚢᛏᚦᚣᛉᚩᛋᚳᛏᚠᛏᚫᛇᚢᚢᚦᛒᚻᚩᛋᛈᛚᚢᚩᛠᛒᚱᛚᚠᛁᛇᛞᛖᚣᚠᚷᚩᛚᚱᚱᛝᚾᛞᛝᛄᚦᛟᛗᚳᛝᚦᛁᚣᛈᚪᛟᚹᛋᚩᚣᛞᛠᛏᛠᛁᛖᛗᛡᛋᚱᚠᚱᚢᛖᛏᚣᛖᛗᛒᛚᛁᚩᚻᛠᚫᛝᛟᛝᛞᚱᛇᛈᛈᛁᛡᛋᚱᛞᛁᛁᚾᚩᚠᚹᛉᛇᛞᚣᚾᚳᛁᚢᚱᚩᚢᛉᛏᚷᛋᚹᛁᛏᛠᚱᛒᛉᛟᛞᛝᛏᛠᛋᚪᚷᛒᛈᛏᛇᚦᛖᚣᛖᚠᛁᛞᚾᚱᚻᛗᚱᛏᛝᛄᛁᚾᛚᚦᚹᛠᚾᚣᛇᛋᛋᚪᚦᚱᛞ",
+        "transliteration": "HIYAETIMIAHIAPNPMALCUPGIYEALEAAEEATOYXMJHWLEMOBYLFCEOSAETMEAXWHJIWIAWAGRSNEOEMYTREAAEEAOEUIELHISLEUBSAFOERLEHHWLDYMGJTHUTTHYXOSCTFTAEEOUUTHBHOSPLUOEABRLFIEODEYFGOLRRNGNDNGJTHOEMCNGTHIYPAOEWSOYDEATEAIEMIASRFRUETYEMBLIOHEAAENGOENGDREOPPIIASRDIINOFWXEODYNCIUROUXTGSWITEARBXOEDNGTEASAGBPTEOTHEYEFIDNRHMRTNGJINLTHWEANYEOSSATHRD",
+        "recipe": {
+          "a": 14,
+          "b": 5,
+          "initial_cipher_rune": 9,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-20",
+      "ciphertext_runes": "ᛈᛄᚢᛒᚷᛁᛇᛈᛉᚣᛈᛟᚦᛞᚱᛠᚪᛡᛝᛡᛒᛚᚻᚦᚫᛉᛟᚫᚪᛇᛉᚳᛠᚠᚫᚢᚣᚦᛋᚠᛝᚠᚱᚹᛟᛒᛗᚷᛞᚾᛡᛞᚪᚻᚣᛇᚱᛚᛖᚣᛇᚻᛠᚩᚢᚳᚱᚻᛡᛟᛗᛠᛝᛄᚦᛄᚢᛁᛇᛄᛁᛖᚷᛁᚪᛇᛏᛝᛡᚳᛚᛇᚠᛗᚪᚷᛚᛒᛋᛉᛞᚫᛟᛋᛚᚹᛏᛠᛗᛚᚦᛗᛝᚦᚣᛈᚠᚪᛞᛚᚪᛖᛚᚩᚱᚷᛚᚳᛇᛏᚷᚣᛟᛗᚪᛁᚷᛄᛒᛡᛗᛞᛈᚪᚳᛠᚷᛋᛏᛈᚩᛋᛏᛗᚱᚣᛋᛉᛁᛄᛚᛝᛚᛁᛉᚢᛠᛗᛇᚢᛋᚻᚳᛉᛄᚩᚠᛄᚠᛁᚣᛁᛟᛏᚷᚱᚦᛡᛒᛋᚳᛇᚢᚷᛚᚱᛁᛗᚱᛗᛝᚻᛈᚫᛝᛋᚫᛖᛈᛁᛒᛇᚹᚫᚢᛄᚳᛒᚦᛋᚹᚦᚫᛡᛟᚷᛚᛞᛚᚢᛟᛡᚱᛞᚱᛒᛄᚳᚢᛠᚩᛉᛉᛝᛡᛄᛁᚫᛟᛖᛗᚹᛖᛉᚦᛗᚪᛋᛉᛞᚦᛡᚢᛉᛗᚫᛋᚳᛖ",
+      "top_suffix": {
+        "score": -4.848627579174837,
+        "plaintext_runes": "ᛏᚩᚾᚳᚱᚻᛁᛁᛒᚾᛞᛞᛠᛝᛟᛚᚷᚪᚠᚩᚷᚹᚪᚪᚳᚫᚷᛉᚹᚻᚢᚪᛁᛚᚦᛚᚦᛋᛈᛠᚫᚱᚷᛄᛟᚻᚾᚹᛄᚳᛚᛁᛋᚳᛄᛠᚾᛏᚫᛄᛚᚢᚱᛏᚱᛉᚱᚩᛟᛖᛞᚣᚩᚢᛞᚩᛞᚻᛉᛉᚫᚹᚱᛈᚹᚱᚦᚠᛡᛄᛠᚹᚩᚦᛗᛈᛖᛏᛉᛞᚻᛖᚣᚦᚾᛞᛒᚢᛁᛗᚹᚻᛝᛟᚾᚾᛟᛉᛖᚱᚪᚻᛒᛁᚻᛈᛈᛡᚱᚩᚢᛚᛖᚦᛄᛚᚦᚠᛝᛠᚱᚩᛗᛝᚪᛡᛞᛁᛖᚩᛒᛁᚷᛈᚣᚳᛉᛚᛁᛞᛁᛉᚩᚱᚾᛏᚢᚣᚳᛈᚣᛖᛞᛖᛠᛖᛗᚳᛝᚾᛋᛒᚪᚩᛏᛏᛚᚩᛏᚩᛡᚳᚦᛈᛋᚠᛞᛈᛄᚻᚾᚦᛒᛚᚪᛝᚣᛟᛖᛡᛟᛟᚳᚦᛝᚪᛒᛈᛋᛠᛟᚪᚻᛟᛋᛈᚷᛖᛝᛠᚦᚠᚩᛝᛋᚪᚪᛚᛏᚱᛗᛇᛡᚠᛋᛉᛄᛖᛚᛁᚹᛗᛚᚹᚹᚦᚢᛉᛞᚫᛚᚷᛋᚦᚠᚩᚩᛋ",
+        "transliteration": "TONCRHIIBNDDEANGOELGAFOGWAACAEGXWHUAILTHLTHSPEAAERGJOEHNWJCLISCJEANTAEJLURTRXROOEEDYOUDODHXXAEWRPWRTHFIAJEAWOTHMPETXDHEYTHNDBUIMWHNGOENNOEXERAHBIHPPIAROULETHJLTHFNGEAROMNGAIADIEOBIGPYCXLIDIXORNTUYCPYEDEEAEMCNGNSBAOTTLOTOIACTHPSFDPJHNTHBLANGYOEEIAOEOECTHNGABPSEAOEAHOESPGENGEATHFONGSAALTRMEOIAFSXJELIWMLWWTHUXDAELGSTHFOOS",
+        "recipe": {
+          "a": 27,
+          "b": 12,
+          "initial_cipher_rune": 13,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-21",
+      "ciphertext_runes": "ᚳᚫᛠᛞᚳᚷᚩᛁᛇᚾᛟᚷᚣᚳᚦᚳᚦᛗᚣᛈᚪᛒᛈᚻᚢᚻᚾᛏᚫᛒᛇᚩᛁᛈᚫᚩᚣᛡᚣᛗᚷᚠᚱᛡᛚᛏᛖᛟᚩᛈᛚᚩᚷᛁᛟᛠᛞᛖᚳᛗᛁᚣᛈᛚᛁᚹᛋᛄᚹᛟᛡᚪᚦᛖᚩᛄᚷᛋᛝᚣᛗᛟᚻᛗᚠᚦᛉᚦᚫᛋᛈᚣᚩᚠᛈᛟᛋᛖᚫᛇᛗᛚᛈᚾᛡᚠᚳᚾᚩᛄᛋᛡᚫᛄᚦᚪᛠᛈᚻᛋᛟᛗᚹᚱᚣᛁᚢᛉᚹᛋᚱᛞᛈᚦᛈᚩᛞᛄᚩᚢᛈᛖᚪᚫᛉᚫᛏᚱᛟᛏᛒᛠᚫᚳᚾᛖᛝᚦᛄᛄᚠᛚᚾᚩᛒᛉᚷᚪᚩᛚᚪᚢᛞᚻᚳᚹᛚᛡᛞᛇᛟᚩᛡᛚᚳᛡᚳᛉᛝᛠᛝᚷᛝᛞᛄᛏᛠᛈᚹᛈᛗᛈᚱᚫᛏᛖᚢᛝᚫᛡᚾᛁᛠᚻᚦᚣᛠᚫᚩᛉᛋᚩᛄᚠᛏᚷᚹᛁᚪᛁᚩᛁᛝᛠᚾᚷᛗᚹᚦᛖᚷᛟᚪᚹᛞᚻᚢᛡᚹᚣᚷᛉᛒᚪᚾᛝᛡᛄᛡᚠᚷᛈᚦᚠᚦᛁᛈᚪᛝᛋᛞᛟᚩ",
+      "top_suffix": {
+        "score": -4.764077886869758,
+        "plaintext_runes": "ᛋᚱᛝᛏᚢᚪᛁᛒᚪᛗᛗᛋᚣᚪᚱᚪᚫᛁᚾᛏᛖᚻᛝᛖᛁᚢᛁᛈᚦᛝᛋᛁᚱᚩᛁᚳᚢᛡᛖᚾᚳᛚᚳᛖᚻᛒᛚᚠᚠᛁᚩᚱᛚᚩᛞᛝᛝᚾᚷᛋᚾᚾᛁᛠᚪᚣᚻᚻᛟᚹᚪᛁᚾᚷᚣᛝᛈᛞᚹᛖᚱᛟᛏᚠᛒᚩᚫᚳᛠᛄᛗᛞᚪᛗᛈᛖᚱᛁᚾᛁᚢᛖᚻᛇᛒᚹᛚᚳᚣᛚᚩᛄᛟᛋᛖᛚᚷᛝᛁᛁᚪᚫᚪᛖᛗᛋᛗᛖᚣᛇᛠᛠᛇᛏᛠᛋᚫᚦᛄᚩᚹᛞᚢᛇᛏᛋᚫᛇᚳᚢᛏᚪᛈᛚᛈᚱᚠᛈᛉᛇᛋᛇᚳᚷᚪᚦᛇᚣᚫᛚᛞᛖᚷᚪᛒᛗᛁᚻᛇᚠᚠᛝᛖᚷᛖᛁᛈᛁᛁᛖᚷᛟᛒᚫᚹᚩᚷᚳᛞᛞᚳᛋᚦᛋᛒᚩᛋᛚᛒᛏᚢᛇᛈᚳᛝᛒᚪᛁᛏᚢᚫᚣᛇᚾᛠᚢᚱᚷᛟᛖᛁᛏᛁᚠᚪᛗᚫᛝᚾᚫᚾᛒᚩᚾᚷᛖᚪᛈᛠᛈᚣᚱᛁᚷᚩᛞᛗᚾᛒᛞᛁᛇᛄᛒᚣᚱᛏᚪᚳᚣᛡᚠ",
+        "transliteration": "SRNGTUAIBAMMSYARAAEINTEHNGEIUIPTHNGSIROICUIAENCLCEHBLFFIORLODNGNGNGSNNIEAAYHHOEWAINGYNGPDWEROETFBOAECEAJMDAMPERINIUEHEOBWLCYLOJOESELGNGIIAAEAEMSMEYEOEAEAEOTEASAETHJOWDUEOTSAEEOCUTAPLPRFPXEOSEOCGATHEOYAELDEGABMIHEOFFNGEGEIPIIEGOEBAEWOGCDDCSTHSBOSLBTUEOPCNGBAITUAEYEONEAURGOEEITIFAMAENGNAENBONGEAPEAPYRIGODMNBDIEOJBYRTACYIAF",
+        "recipe": {
+          "a": 16,
+          "b": 14,
+          "initial_cipher_rune": 5,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-22",
+      "ciphertext_runes": "ᛝᛗᛁᚷᛄᚷᚳᚩᚦᛖᚦᛄᚣᚠᚦᚳᛄᛡᛖᚢᛉᛄᚳᚻᛄᚱᛄᚪᚻᚾᚦᛚᚷᚱᚦᛒᚪᚩᛖᚢᛡᛄᚹᛏᚱᚹᛟᚦᚳᛗᚦᚠᚫᚻᛡᚠᛠᚣᚪᚦᛚᛏᛒᚢᛝᛖᛋᛗᚱᚪᚹᛒᚹᛒᛗᚱᚾᛗᚻᛗᛁᚾᚪᛞᛡᛖᚩᚾᚹᛡᚢᛄᚦᛠᛚᚳᚷᛚᛇᛟᛠᛠᚪᛇᛉᚣᚪᚷᛏᚩᛖᚹᛒᛈᚷᛝᛒᛡᚦᚠᛋᚾᛒᚦᚠᛇᛝᛠᚠᚾᛉ",
+      "top_suffix": {
+        "score": -4.6787478905476485,
+        "plaintext_runes": "ᚱᚣᚦᛄᚢᚳᚱᚳᛟᛗᛋᛝᚾᚻᚾᛇᛟᚣᛖᛗᚩᚠᚾᚾᛠᛈᛗᛗᚹᛠᚪᛝᚱᚱᛝᛈᛉᛝᛖᚩᛗᚦᛋᛞᚾᛝᛋᚾᛚᛖᚱᚦᛖᚫᚻᚳᚱᚱᛈᚪᚦᚹᛗᚣᚩᚩᛁᛚᚣᛖᛏᚫᛏᚻᛚᛄᛏᚪᛒᚣᚳᛝᚳᛁᚣᛚᛇᚱᚣᚾᛏᚣᚩᛡᛚᚹᛚᛡᛏᛇᚷᚦᛞᚻᛖᚱᛒᛏᛟᛝᚪᛏᚦᛠᛝᚦᛏᛁᚱᛝᚠᛉᛚᚱᛖᛋᛈᚹᛋᛄ",
+        "transliteration": "RYTHJUCRCOEMSNGNHNEOOEYEMOFNNEAPMMWEAANGRRNGPXNGEOMTHSDNNGSNLERTHEAEHCRRPATHWMYOOILYETAETHLJTABYCNGCIYLEORYNTYOIALWLIATEOGTHDHERBTOENGATTHEANGTHTIRNGFXLRESPWSJ",
+        "recipe": {
+          "a": 1,
+          "b": 6,
+          "initial_cipher_rune": 21,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-23",
+      "ciphertext_runes": "ᚢᚪᚹᛝᚷᛉᛞᚷᛁᛒᛁᛇᛏᛒᛁᚣᛠᚷᛋᚫᛈᚹᛗᛠᛇᛄᛇᚹᚻᛁᚷᛠᛒᚢᚣᚻᚣᛝᚹᚢᚱᛋᚩᛡᚠᛡᛠᛞᛟᚦᛗᚳᚾᛉᛞᚦᛖᚱᛇᚳᚪᛄᛋᛟᚢᚹᚱᛏᛋᛖᛋᛏᚣᚱᛠᚫᚾᛞᛈᛒᛡᛋᚢᛞᛖᚣᚦᛚᚹᛟᛋᚷᛚᛄᚫᛖᚩᚳᚦᚹᛗᚢᚩᚷᚠᚪᚩᛡᛝᛒᛠᚦᚳᚪᚱᛡᛏᛟᚹᚠᚣᛝᚢᚣᛁᛚᛏᚫᚫᚪᚱᛈᚠᛗᚹᚩᛞᛠᛒᛈᛝᛟᚾᚷᛗᛡᛖᚩᚾᛚᛉᛝᛁᛡᚫᛗᚻᛖᚹᛗᛝᛈᛇᛗᛡᛄᚫᚩᛡᚠᚣᛉᛟᚫᚦᚫᛒᚩᚪᚦᛄᚱᛄᚾᚦᛡᚠᚪᛏᚾᚻᚷᚢᛞᚳᚦᚢᚱᚢᛟᛞᚻᚱᚷᚹᛏᛈᛖᚠᚪᚻᛠᚦ",
+      "top_suffix": {
+        "score": -4.770915213733995,
+        "plaintext_runes": "ᚳᛡᛞᛞᚷᚱᛡᛉᚻᚹᛖᛉᛚᚹᛗᛖᚻᚱᚦᛒᚳᛡᚱᚫᚪᛚᚩᛚᛖᚢᚹᛋᚫᚢᚠᛋᚩᛝᚳᛏᚠᛒᚩᛖᚣᛚᚩᚪᚱᛒᛝᛉᛇᚱᚷᛗᛝᚷᚹᛈᛗᛉᚻᚷᛁᛠᛡᚪᛏᛠᛚᚦᚻᚩᛠᚫᛞᛈᛉᚦᛒᛝᚹᚩᚷᛇᛋᛗᛝᚹᛄᛞᛄᛞᚹᛞᛖᛠᛇᛡᚠᛖᛏᚳᚩᚷᚩᚳᚢᚠᛏᛏᛈᚱᚳᛋᛁᛞᚹᛠᚩᚱᚢᚫᚦᚢᚱᛟᚪᚱᚱᛗᛈᛒᚢᛄᛇᛋᚢᚷᛚᛗᛠᚫᚷᛄᛞᛁᚠᚳᚻᛋᛒᚣᚳᛋᚦᛋᛡᛖᚾᚪᚻᚷᚫᛞᚻᚩᛖᛠᛒᚷᛏᛁᚳᚾᛝᚾᚻᚱᚹᚻᚣᚹᚢᛖᚩᚾᚹᚪᚣᚩᚹᚠᛠᚪᛏᛠᚾᛚᛞᚢᛖᛚᚱᛠᛇᚠᚩᚫᛄᛏ",
+        "transliteration": "CIADDGRIAXHWEXLWMEHRTHBCIARAEALOLEUWSAEUFSONGCTFBOEYLOARBNGXEORGMNGGWPMXHGIEAIAATEALTHHOEAAEDPXTHBNGWOGEOSMNGWJDJDWDEEAEOIAFETCOGOCUFTTPRCSIDWEAORUAETHUROEARRMPBUJEOSUGLMEAAEGJDIFCHSBYCSTHSIAENAHGAEDHOEEABGTICNNGNHRWHYWUEONWAYOWFEAATEANLDUELREAEOFOAEJT",
+        "recipe": {
+          "a": 27,
+          "b": 22,
+          "initial_cipher_rune": 1,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-24",
+      "ciphertext_runes": "ᛞᚱᚠᛖᛄᚫᚾᚳᚻᚹᛇᛡᛈᛠᚹᛗᛚᚹᛟᚹᛠᚪᚾᚪᚳᚪᚷᛚᚦᛒᚩᚹᚢᚷᛚᚠᛋᚻᚾᛉᛝᛗᛖᚦᚢᛝᛡᛈᚣᚢᛉᚷᚷᚹᛞᛁᛋᚦᛡᛡᛈᚳᚪᚩᚢᛗᚢᛉᚩᚣᚻᛏᚩᚫᛗᚢᚩᚾᛏᛠᛒᛟᛒᚠᛁᛈᛚᛋᛝᚫᚳᚫᛟᛏᚢᚩᛉᚾᛡᛋᚠᛖᛉᚱᛗᚩᚩᚫᚠᚢᚦᛖᛞᚾᚣᛡᛋᛋᚱᛚᛟᚢᚻᚢᚾᛈᛁᚻᛖᛉᚦᛞᛗᛈᛟᚠᛈᚠᛝᚫᛝᛋᛟᛄᚹᛠᛒᚣᛟᚹᛞᚠᚣᛄᛁᛏᛉᛚᚩᚦᛝᚠᚪᛋᛡᛁᚻᛒᚱᚪᚢᚣᚫᚢᛟᛠᚪᚣᛖᛟᚫᛖᛈᚠᛒᛈᛄᛁᛋᛝᛒᚱᚦᚳᛇᛚᛁᚢᛈᛏᚳᛒᛉᛖᚪᚣᚠᛗᚳᚣᚱᚻᚹᛏᚾᛡᛉᚫᚦᛟᚳᚹᛠᚠᛏᛠᛝᚩᚻᛡᛠᛒᛋᚻᛟᚫᛁᛠᛏᛁᛋᛏᚫᚻᚱᚻᛄᛋᛡᚹᚾᚾᛡᚹᛚᚢᛖᛏᚱᛝᚳᚣᚪᛉᛇᛝᛋᛖᛇᛁ",
+      "top_suffix": {
+        "score": -4.892498240490861,
+        "plaintext_runes": "ᚣᚳᚾᛋᚩᛏᚳᚢᚪᚱᛗᛗᛗᛞᚠᛡᚷᛗᚩᛠᚳᚩᛗᚣᚫᛈᚩᛈᛗᛗᛒᚦᚱᚩᛁᛗᛋᛡᚱᚹᚻᚪᛏᚪᛇᛚᛗᛏᛒᛏᛠᛄᛡᚷᚷᚱᚷᚳᛄᛗᛠᚫᛞᚻᚾᛈᛏᚾᚦᛈᛞᚷᛋᚦᛈᛉᛚᚹᚠᚾᚱᛖᚠᚣᚢᚹᛖᛚᛒᛁᛇᛝᚦᚩᛉᛈᛖᚾᛟᚩᚾᚳᚫᛗᛏᛄᛋᛒᛡᛡᚷᚱᛗᛟᛡᛟᛄᚾᚷᛉᛞᚹᛋᛞᛒᛝᚻᚣᚳᛟᛠᚳᚦᛁᚹᛏᚷᛠᛒᚳᚦᚹᚾᚳᛠᚾᛁᚳᚩᚷᛚᛝᚩᚪᛚᚻᛚᚠᚪᚫᛞᛖᛇᚠᚠᚻᛁᚷᛇᛚᚳᚪᚱᛠᛚᚳᛉᛠᛒᚢᛋᛖᚷᛟᚳᚻᚪᚱᛚᚳᚷᚻᚢᚹᛞᚫᛇᚠᚢᚾᚠᛝᛒᛚᛉᚢᚫᛗᛠᚹᛒᚪᛁᛋᚾᚷᛈᛚᛇᚠᛉᛠᛡᚷᚠᛋᛈᚱᚫᛡᚾᚻᛋᚩᚢᚩᚾᛟᚦᚱᛡᛁᚠᚳᛒᚢᛒᚠᛁᛉᛄᚾᛁᛏᚣᛟᚻᛟᛟᛏᛠᚻᚫᚻᛁᚦᚢᚦᚻ",
+        "transliteration": "YCNSOTCUARMMMDFIAGMOEACOMYAEPOPMMBTHROIMSIARWHATAEOLMTBTEAJIAGGRGCJMEAAEDHNPTNTHPDGSTHPXLWFNREFYUWELBIEONGTHOXPENOEONCAEMTJSBIAIAGRMOEIAOEJNGXDWSDBNGHYCOEEACTHIWTGEABCTHWNCEANICOGLNGOALHLFAAEDEEOFFHIGEOLCAREALCXEABUSEGOECHARLCGHUWDAEEOFUNFNGBLXUAEMEAWBAISNGPLEOFXEAIAGFSPRAEIANHSOUONOETHRIAIFCBUBFIXJNITYOEHOEOETEAHAEHITHUTHH",
+        "recipe": {
+          "a": 16,
+          "b": 11,
+          "initial_cipher_rune": 23,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-25",
+      "ciphertext_runes": "ᚻᚾᚷᚹᛉᚳᛉᚣᛋᛈᚳᛟᚱᛒᚣᛄᛝᛖᛁᚾᚷᚪᚣᚷᛚᛒᚢᛄᚩᛝᛉᛉᚪᛖᛒᚦᛉᛡᚱᛏᚷᚹᛄᛋᛁᚠᛠᛁᛡᚦᛝᚾᛖᚾᚠᚩᛗᛖᚣᚪᚳᛖᚳᚹᚪᚫᚹᛇᚢᚦᚻᛉᚢᚾᛠᛚᚢᚾᚦᛈᛋᚢᛈᚱᛞᚫᛟᚱᛡᚫᚪᚢᚢᛗᛚᚦᛠᛚᛝᛈᚣᚩᛋᛟᚪᚱᛗᚦᛟᛈᛚᛋᛏᛁᚠᛋᛖᚹᛝᛗᛞᚩᛠᚫᛡᛒᛏᚩᛋᛖᛏᚪᚠᚫᛒᛚᚾᛋᚪᛉᛟᚾᛚᚹᛖᚩᛚᛁᛄᛏᛒᚪᚠᛉᛏᚩᛟᛄᚾᚷᛋᚷᛚᚷᛠᛒᚷᛖᚩᚪᚩᛖᛞᚷᛇᛗᚳᚱᚷᛈᛞᚩᚠᚹᛇᛠᛞᚣᛝᚾᛁᚠᛈᛚᛖᛟᚢᚳᛗᛚᚫᛏᛉᛄᚱᛉᛁᛠᚷᛚᚷᚳᛋᚩᛝᚫᚦᛗᚻᛟᚠᚱᛋᚳᚦᚣᚩᛒᛁᚫᚻᛖᚢᛏᛚᛚᛇᚷᛟᚣᛒᚾᚦᚻᛠᛖᛄᛒᚾᛁᛚᛠᚱᛄᚠᚳᛋᛝᚳᛈᚷᚻᛋᛗᛇᛞᛇᚣᛡᛖᛏᛠᚢ",
+      "top_suffix": {
+        "score": -4.844865095229342,
+        "plaintext_runes": "ᚱᚢᚱᛞᛄᛁᚳᚪᚾᛗᛏᚣᛈᛁᛝᛖᚢᛗᛒᚢᚪᛇᛁᛝᚢᛈᛖᛗᚪᛡᚫᛖᚷᛒᛝᚳᛈᛋᚳᚩᚱᛠᛠᛉᚩᛒᚣᛏᛠᚩᛏᛁᛄᛄᛚᚻᛒᚦᚾᛖᛈᚻᛇᛏᚱᚣᚹᚪᚱᛋᛋᚻᚦᚩᛗᛖᚦᛡᚣᛇᚠᚳᛄᚩᛇᚢᚣᚷᚾᛒᛋᚫᚪᚱᚣᚢᛗᚱᛗᛈᛋᚳᛞᛇᛁᚠᚳᛄᛄᛞᛉᚱᚷᚩᚠᛚᚪᛝᚾᛠᛁᛟᚢᛇᚩᛒᚻᚳᛚᚾᚦᚹᛟᛗᛚᚪᛋᛁᚩᚦᚻᚣᚻᚣᛝᛏᚩᚱᚹᚱᛞᚹᛝᛇᚻᚩᚪᚾᚢᛁᛄᛝᚠᛡᚪᚪᚳᛝᛗᚦᚠᚹᚳᛋᛞᚠᛒᛇᛞᛖᛁᚢᛞᚹᚻᛉᛚᛉᛏᚱᚩᛈᛞᚾᛠᚦᛠᛝᚱᚹᛄᚾᚢᛡᛖᛟᚪᛞᛝᚠᛒᛖᛏᚪᛠᛋᛏᚪᛝᛞᛠᚣᚩᚢᛉᛋᛝᛡᚠᚳᛖᚳᚠᛠᚫᛗᚷᚻᛠᛄᛗᛡᛋᛄᚩᛡᛋᛗᚱᛖᚦᚹᛞᚪᚹᛖᛋᛈᚦᛡᛇᛞᛠᛡᚣᚪᛝᚱᛄᚾᚳᛇ",
+        "transliteration": "RURDJICANMTYPINGEUMBUAEOINGUPEMAIAAEEGBNGCPSCOREAEAXOBYTEAOTIJJLHBTHNEPHEOTRYWARSSHTHOMETHIAYEOFCJOEOUYGNBSAEARYUMRMPSCDEOIFCJJDXRGOFLANGNEAIOEUEOOBHCLNTHWOEMLASIOTHHYHYNGTORWRDWNGEOHOANUIJNGFIAAACNGMTHFWCSDFBEODEIUDWHXLXTROPDNEATHEANGRWJNUIAEOEADNGFBETAEASTANGDEAYOUXSNGIAFCECFEAAEMGHEAJMIASJOIASMRETHWDAWESPTHIAEODEAIAYANGRJNCEO",
+        "recipe": {
+          "a": 8,
+          "b": 25,
+          "initial_cipher_rune": 8,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-26",
+      "ciphertext_runes": "ᛡᚩᚾᛠᚩᛄᚣᛇᛉᛠᚪᛡᚾᛞᛝᚻᛈᛠᚻᛡᚢᛝᚻᚦᛈᛉᚢᛠᚣᛈᛟᚦᛋᚣᛈᚠᛏᛒᛁᛟᚪᚷᛚᛠᚻᛝᛁᛡᛚᛝᚾᛞᚪᛈᚷᚾᛏᚦᛋᛒᛋᛋᛠᚷᚳᛠᛗᚢᛖᛉᛒᚷᚫᚠᚩᛁᛉᚠᚪᛠᚱᛇᚩᛁᛞᛋᛚᚦᛖᛒᛇᛟᚷᚣᚷᚾᚷᚦᚠᚳᛗᚩᛖᛖᚩᚠᛒᚻᛝᚳᛁᛄᚪᚾᚩᚪᛈᚻᚱᛗᚱᛗᛟᚦᚷᛄᛒᚱᚦᚪᛠᛉᛖᛡᛞᚦᚱᛝᛄᛒᚾᛏᚣᛏᛋᛒᚾᚫᚢᛖᛁᚩᛡᛄᛇᚢᚦᛚᚳᛖᛚᛁᛒᚢᚠᚪᚱᛠᛗᛒᛞᛉᛗᚢᛠᛏᚣᚪᛄᛈᚢᛈᛠᚣᚷᛗᛡᛗᚢᚪᛗᛝᚣᛡᚪᛖᛏᛖᛋᚪᛟᚳᚻᛁᛋᚠᛁᚾᛈᛟᛝᛇᚦᚣᛏᚫᛉᛖᛟᛏᛞᛡᛚᛖᛈᛏᚪᛏᚠᚱᚾᚪᛠᚱᛠᚳᚾᚻᚹᛒᛇᛋᛁᚻᚣᛋᚹᚩᛉᚹᚩᛝᚢᚻᛝᛟᛏᛚᚠᛄᚷᛏᛝᛄᛝ",
+      "top_suffix": {
+        "score": -4.785163461940119,
+        "plaintext_runes": "ᛞᛠᚷᛖᚾᛋᛋᚻᛁᚹᛈᚪᛁᛒᛚᛞᛋᛉᚷᛈᛄᛚᚣᚪᚩᛚᛒᛒᛚᛉᛉᚳᚪᛚᛚᛚᚩᛝᚠᚻᚪᛁᚾᛉᚳᚢᚫᛝᚩᚫᛁᚩᚢᛝᛈᚱᛋᚳᚻᛒᛡᚳᚱᛟᚣᛄᚪᚫᚹᛈᚢᚷᛖᛈᚱᛖᛋᚦᛖᛞᚾᛄᚱᚳᛏᛞᚪᛚᛟᚦᛗᚳᛄᛉᛈᛇᚹᛒᛞᛁᚳᛋᛡᛁᛇᚫᛄᚳᚳᛞᚩᚳᛁᚣᛏᚢᚦᚹᛋᛁᛋᛈᛉᛖᛞᛠᛚᛒᛝᛖᛋᛖᛉᚹᚾᚻᚫᚷᛠᛏᚱᛗᚷᛟᚻᛏᛚᛞᚫᛏᛝᚦᚳᚩᚢᚩᚢᛁᚳᚻᚷᚱᚳᛟᚦᛉᚦᛄᛒᛠᛄᛞᚪᛒᚫᛗᛒᛚᚻᚫᚠᛋᛒᛉᚳᚾᛏᚪᚣᚦᚻᛞᚩᛇᚣᛒᚻᛇᛉᛒᚠᛈᚻᛞᛁᛗᛟᛖᛉᛟᛄᚷᚦᚷᛉᚢᛖᛖᚣᚱᛖᛝᛒᚦᛈᚾᛏᚳᛖᛞᛋᛖᛞᚦᛠᛖᛟᛟᛗᚦᛈᚦᛒᚢᚢᛏᚹᚪᛝᚹᚢᛉᚱᚳᚩᚣᛖᛉᚪᚦᛗᛞᚷᛗ",
+        "transliteration": "DEAGENSSHIWPAIBLDSXGPJLYAOLBBLXXCALLLONGFHAINXCUAENGOAEIOUNGPRSCHBIACROEYJAAEWPUGEPRESTHEDNJRCTDALOETHMCJXPEOWBDICSIAIEOAEJCCDOCIYTUTHWSISPXEDEALBNGESEXWNHAEGEATRMGOEHTLDAETNGTHCOUOUICHGRCOETHXTHJBEAJDABAEMBLHAEFSBXCNTAYTHHDOEOYBHEOXBFPHDIMOEEXOEJGTHGXUEEYRENGBTHPNTCEDSEDTHEAEOEOEMTHPTHBUUTWANGWUXRCOYEXATHMDGM",
+        "recipe": {
+          "a": 5,
+          "b": 27,
+          "initial_cipher_rune": 27,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-27",
+      "ciphertext_runes": "ᛗᛈᚣᛚᛋᚩᚪᚫᚻᛚᛖᛇᛁᛗᛚᛚᛋᚳᛈᚾᚻᚷᚢᛡᚻᚢᛒᚠᛞᛄᚢᛒᛖᛁᚫᚠᛈᚫᛈᚦᚱᛗᛚᚳᛒᚷᚣᛗᛠᛒᚫᚾᚦᛗᚠᛡᛠᚳᛒᚷᚫᚠᛖᛄᚱᚩᛈᛒᚠᛒᚩᛇᚱᛠᚱᛠᚷᛖᛚᛇᚱᚾᛋᚩᚩᚳᚪᛖᚣᛖᛖᛏᚱᚢᚣᛟᛄᛉᛠᚷᛝᚣᛏᛝᚾᚪᛏᛋᛝᚪᛄᚠᛚᛋᚢᚹᛠᛈᛁᛏᛁᚾᚱᚱᛝᛗᚣᛗᚠᛁᚫᛁᚪᚢᛟᛒᚹᛗᛁᚻᚣᚹᛞᛚᛟᛏᛞᛟᚳᛒᛡᛒᚪᛏᚹᛏᛈᚹᛠᚩᚱᚩᛖᚣᛚᛋᚢᛡᚱᚠᛄᛇᚱᛡᚦᛖᚢᛏᛝᚫᚾᚪᛠᚩᚪᚾᚪᚦᚷᚩᚫᛉᛒᛏᛖᛠᛗᚷᚱᛗᚣᛝᚠᛒᛞᛟᛞᚪᛠᚱᚳᛁᛈᛞᚠᛗᛝᚻᛋᚩᛞᛈᛉᚾᛟᚱᛡᚾᚳᚳᛏᚾᛈᚠ",
+      "top_suffix": {
+        "score": -4.809103457678601,
+        "plaintext_runes": "ᚻᚫᚻᛋᚪᛞᛠᛖᛖᚹᚻᚹᚣᛠᛝᛋᚾᛗᛟᛉᚹᛋᚠᚱᚢᛒᛖᚻᚪᚾᛒᛠᛞᛁᛚᚫᛖᚪᚦᚷᛁᛠᚩᛖᚦᛏᚢᚣᚦᛗᚫᚢᚪᚱᚹᛠᚳᛖᚦᚾᛚᚦᚢᚢᛉᚱᛚᛖᚪᛁᚣᛞᛋᛡᛋᛇᛖᚷᛞᛞᛡᚳᚪᛝᚷᚾᚻᛗᛞᛝᚹᚪᚠᛟᛟᚦᛈᚩᛇᛁᛡᚾᛡᚪᛁᛞᛉᚳᛈᛒᚦᛏᛋᛁᚳᛞᚩᚠᚳᚻᛉᛋᛝᚪᚹᛇᚢᚱᚱᛁᚩᚩᚳᛞᛋᚾᛖᛏᚹᚦᚱᛒᚠᚷᚻᛇᛉᛖᛖᚱᚾᛇᛞᛏᚣᚠᚻᛞᛚᛠᛉᛁᛗᚻᛋᛁᚠᚳᛟᛄᛠᛞᚻᛚᛒᛖᛁᛡᛚᚫᛁᛚᛚᛞᚩᛁᛇᛚᚠᚢᚦᛈᛉᚷᚱᛏᛒᚹᛁᛇᛋᛗᚪᚳᛉᛠᛠᛚᛡᛠᛡᛈᚱᚳᚾᚷᛒᛇᚪᛏᚾᛠᛋᚫᛄᚻᛄᛟᛝᛄᚢᛚᛒ",
+        "transliteration": "HAEHSADEAEEWHWYEANGSNMOEXWSFRUBEHANBEADILAEEATHGIEAOETHTUYTHMAEUARWEACETHNLTHUUXRLEAIYDSIASEOEGDDIACANGGNHMDNGWAFOEOETHPOEOIIANIAAIDXCPBTHTSICDOFCHXSNGAWEOURRIOOCDSNETWTHRBFGHEOXEERNEODTYFHDLEAXIMHSIFCOEJEADHLBEIIALAEILLDOIEOLFUTHPXGRTBWIEOSMACXEAEALIAEAIAPRCNGBEOATNEASAEJHJOENGJULB",
+        "recipe": {
+          "a": 7,
+          "b": 21,
+          "initial_cipher_rune": 19,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-28",
+      "ciphertext_runes": "ᛈᚳᛄᚦᛒᛁᚹᛞᚹᛝᛠᛡᚹᛚᚹᛄᚾᚪᛟᛏᛞᛉᚣᛖᚱᛞᚱᛏᛇᛁᚳᛈᛝᚦᛟᚷᛄᚦᚣᛋᛠᚻᚠᛒᛚᛁᚫᛚᛞᛉᚪᛁᚹᚷᛒᚩᚹᚾᛠᛋᛖᛗᛒᛋᚳᚹᚦᛟᚠᚻᚫᛞᚢᛁᛒᛞᛇᛝᛈᚠᛁᛟᚢᚣᛏᚻᚱᛖᚾᚳᛈᛡᛈᛞᛄᛁᛏᛗᛋᚫᛉᚩᚣᚪᛄᛗᛡᛖᛇᛄᚠᛗᚱᛞᛟᚪᛒᛞᚻᚾᛈᚪᛇᚱᚻᚾᛝᛠᚠᚾᚠᚩᛗᛋᚾᛠᚪᛁᚢᛚᚪᚫᛄᛉᛡᚠᛁᛖᛈᛠᚻᚠᛇᚩᚹᛠᛄᛇᛁᛠᚫᛄᛒᛋᚠᛖᚷᛋᛁᛟᛗᛒᛁᛝᛏᚪᚢᛁᚦᚩᛝᛗᚠᚹᛟᛒᛟᛡᚠᚣᛝᚩᛠᚳᛚᛈᚱᛞᛄᚩᛝᛄᚪᛖᛗᛈᚾᚠᛠᚷᛞᛒᚩᛉᚷᚾᚣᚷᛠᛈᛄᛞᚾᛟᚩᚢᚾᚹᛗᛄᚢᚷᛠᛗᛇᚪᚻᚦᛡᛝᛈᛞᛒᚳᛉᚳᛠᛉᛟᚣᛒᚦᛁᛄᛚᛡᛝᛡᚹᛄᚫᛋᛗᚪᛡᛠᛇᛝᛏ",
+      "top_suffix": {
+        "score": -4.841181242750471,
+        "plaintext_runes": "ᛁᛠᛒᛞᚩᚱᛏᚻᚢᛝᛗᚹᚻᛏᛈᚣᛞᚣᚫᛝᛒᛋᛁᛞᚪᚠᛋᛄᚣᛖᛉᛉᚠᛒᚻᚷᛒᛖᚦᚻᚹᛁᚾᛚᚪᛞᛖᛚᛒᚠᛞᚱᛗᛟᛞᛈᛡᚪᛏᛚᚳᚣᚣᚪᛡᛖᛒᛝᛉᚾᚣᛝᚹᛝᛠᚦᚹᛁᛏᚠᛋᛉᛄᚪᛁᛄᚢᛒᛄᛉᚢᛞᚠᚾᛗᛠᛚᛄᚠᚦᚦᚫᚣᛏᛉᛉᛒᚫᛗᚦᚪᚢᚪᛗᛡᚩᛠᚢᚳᛈᛟᚾᛁᛈᚳᛋᛝᚳᚹᛒᛚᛏᛄᚫᚪᛄᛞᛒᚪᛈᚳᛞᛚᚻᛡᚠᛉᛖᛞᚹᛁᛋᛒᛈᛁᛋᚳᚣᚦᚱᛞᛠᚣᚢᚦᚾᚹᛖᛋᚱᚣᚩᛟᛖᛉᛠᚹᛁᚳᚦᚣᚠᛝᛞᛖᚷᚷᛡᚱᛖᛟᛄᛠᛞᚩᛒᚪᚾᛁᚦᚪᚻᚫᚳᚫᛄᛒᛗᛝᚾᚫᛞᛟᛁᛚᚾᚹᚩᚢᚣᛋᛞᚻᚠᚣᛉᚣᛋᛁᚪᚷᚩᛒᚩᛋᚻᚫᛄᚫᛁᚠᚫᚾᚹᛒᚫᛞᛉᛈᛒᚢᛉᚳᚹᛝᚫᛠᚹᛈᚢᚪᛈᚷᛚᚳᚻᚹᛖ",
+        "transliteration": "IEABDORTHUNGMWHTPYDYAENGBSIDAFSJYEXXFBHGBETHHWINLADELBFDRMOEDPIAATLCYYAIAEBNGXNYNGWNGEATHWITFSXJAIJUBJXUDFNMEALJFTHTHAEYTXXBAEMTHAUAMIAOEAUCPOENIPCSNGCWBLTJAEAJDBAPCDLHIAFXEDWISBPISCYTHRDEAYUTHNWESRYOOEEXEAWICTHYFNGDEGGIAREOEJEADOBANITHAHAECAEJBMNGNAEDOEILNWOUYSDHFYXYSIAGOBOSHAEJAEIFAENWBAEDXPBUXCWNGAEEAWPUAPGLCHWE",
+        "recipe": {
+          "a": 22,
+          "b": 12,
+          "initial_cipher_rune": 13,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-29",
+      "ciphertext_runes": "ᚦᛞᚷᚢᛏᛚᛏᚣᚢᛝᚷᛟᚪᛏᛄᚦᚣᚫᚻᚪᛒᛝᚦᚢᚱᚪᚾᛞᛁᛝᚫᛚᚫᚷᚹᛁᛒᚣᚾᚫᚠᛚᛋᛒᛈᛟᚪᛟᛞᚷᛟᚣᛉᚷᛚᛋᛠᛁᚳᛟᛁᚦᛈᚹᛉᛖᚢᛟᛄᛝᛋᚢᛝᚳᛡᛠᛚᛇᛚᚷᚢᛁᛏᛒᛋᛞᛁᚠᚠᚷᚠᚦᛄᚳᚫᛟᛁᛗᛡᛁᛇᚦᚩᚢᛈᛒᚻᛋᛄᚣᛄᛖᛒᛇᛇᚱᚹᛄᛏᛡᚳᚪᚫᚩᛈᚱᛡᚾᛗᛁᛝᚻᚹᚦᛡᚦᚻᚦᛉᚫᚫᛋᚳᛡᚾᛇᛟᛉᚢᚱᛄᛖᛚᚾᛞᛗᛏᚱᛟᚦᛁᛝᛡᛒᚳᚩᚹᛟᛏᛗᛋᚱᚷᚱᛚᛞᛚᚩᚣᛞᚳᚪᛖᛞᚠᚳᛇᛖᛉᛚᚫᛖᚩᛁᛋᛡᛁᛟᛋᚪᛒᛗᛗᚣᚹᛄᛖᚫᛝᛚᛄᚱᛇᛈᛚᚩᚻᚪᛞᛡᛄᛞᚠᚹᛞᛄᚳᚾᚦᛉᛄᚻᚷᛚᚠᛖᚦᛇᚻᛝᛖᛒᛚᛞᛁᛗᚠᚹᛒᛗᛟᛁᛖᛁᛠᛈᚻᛝᛖᛞᛟᚩᚻᛄᚹᚩᚾᛄᛈᛗᛖᚳᛖᛇᚷᚻᛗ",
+      "top_suffix": {
+        "score": -4.84172103506109,
+        "plaintext_runes": "ᚣᚩᚪᚢᛖᚱᛉᛖᛒᛝᛁᚠᚣᚪᛒᚪᚦᚩᛁᚷᛖᛉᚦᚾᛒᛝᛝᛁᛞᛖᚪᛡᛉᛚᚾᛏᚳᚩᛁᛖᛒᚪᚠᚱᚳᚠᛟᛚᚩᛁᛖᛗᚣᛝᚪᛇᛞᚪᛗᛗᚣᛞᛋᛏᛖᚩᚣᛠᛉᛋᚢᛒᛇᚷᛚᚣᚣᚫᚢᚪᚳᚹᛚᛟᚫᛁᚻᛄᚹᛋᚠᚳᛋᛒᛈᛗᚳᚫᚩᚠᚻᛚᛟᚩᛖᛒᛏᚱᚢᛝᛏᚦᚪᛄᚣᚾᛖᛡᛞᛏᚻᛚᛏᛉᛒᛋᛞᛉᛒᛞᛁᚦᚪᚱᛖᚹᛋᚩᛞᛄᚻᚻᚷᛞᚾᛉᚣᛁᚾᛏᛏᚠᛠᛝᚱᛈᛗᛠᚳᚫᛞᚹᚻᛗᛟᛖᚢᛋᚾᚱᛠᚠᛟᛁᚾᛈᚩᛋᛈᛞᚻᛋᛡᚹᛡᛏᚹᚱᚹᛡᚷᛝᛏᛡᚩᚩᚩᚷᚳᚷᚠᛄᛏᛉᛖᛏᛏᚱᚦᛒᚷᚫᛚᛏᚩᛡᛁᚦᛖᛇᚩᚹᛏᛁᛗᛋᛖᚷᚩᛈᛈᛟᛝᚳᛠᛇᛉᚱᛇᛈᚦᚾᚾᛁᚳᛉᛏᛉᚠᚾᛗᚫᚣᛠᛝᚪᛇᛈᛡᚦᛉᛡᚾᚱᚱᚹᚠᚠᚹᚦᛁᛇᛋᛋᚠᛞ",
+        "transliteration": "YOAUERXEBNGIFYABATHOIGEXTHNBNGNGIDEAIAXLNTCOIEBAFRCFOELOIEMYNGAEODAMMYDSTEOYEAXSUBEOGLYYAEUACWLOEAEIHJWSFCSBPMCAEOFHLOEOEBTRUNGTTHAJYNEIADTHLTXBSDXBDITHAREWSODJHHGDNXYINTTFEANGRPMEACAEDWHMOEEUSNREAFOEINPOSPDHSIAWIATWRWIAGNGTIAOOOGCGFJTXETTRTHBGAELTOIAITHEEOOWTIMSEGOPPOENGCEAEOXREOPTHNNICXTXFNMAEYEANGAEOPIATHXIANRRWFFWTHIEOSSFD",
+        "recipe": {
+          "a": 9,
+          "b": 11,
+          "initial_cipher_rune": 2,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-30",
+      "ciphertext_runes": "ᛞᚪᛈᛖᛗᛉᚫᛒᛇᚱᛖᚣᛟᚣᚱᛠᛈᚢᛠᚣᛖᚪᚻᚩᛉᛠᚢᚻᛡᛟᚷᚫᚩᛒᛉᚫᚱᛞᛋᚩᚱᚷᛠᛉᚻᛁᚷᚳᛞᛠᛡᚳᛄᛠᛉᛇᚻᛋᚹᛝᛡᚷᛖᛡᚣᛠᚩᚷᚱᚦᚠᛟᚩᚦᚦᛁᛏᚱᛇᛉᛇᚢᚷᛠᛟᛏᚩᚠᛚᛟᛝᛈᚱᛡᚪᚩᛏᚩᛠᚷᚫᛗᛈᛋᚱᛖᚦᚠᛞᚹᚾᛚᛝᚩᛇᛄᚳᛚᚢᚹᛏᚩᛖᛏᚠᚪᛚᛟᛇᛟᛠᚱᛇᚢᚪᚦᛈᛟᛡᛉᛡᛒᚱᛒᚠᚢᛚᚢᛟᛒᛇᛒᛉᚦᚹᛝᚣᛖᚳᚫᚣᛟᚹᛁᛝᚫᛏᚫᛇᛈᛡᛟᚠᛚᛝᚠᛡᛞᚪᛚᛈᛋᛁᚢᚣᚪᛚᛠᛝᚹᚪᛏᛈᚳᚣᛝᚫᚻᛗᛞᚷᛚᛠᛉᛒᛇᛡᛋᛖᚣᛁᛚᚣᛠᚣᚻᚣᛉᚾᛏᚫᛉᛋᚦᚪᚹᛗᚪᚱᚪᚩᚻᛗᛖᚫᛞᛠᛁᛗᛒᛟᚾᚳᚩᚱᛉᛋᚹᚫᚻᛖᛋᚠᚾᚢᚦᛟᚷᛖᚪᛟᛇᛇ",
+      "top_suffix": {
+        "score": -4.842579812806224,
+        "plaintext_runes": "ᚫᛉᛗᚫᚳᛁᚪᚳᚪᛚᚠᛖᚷᛏᚳᛚᚢᛋᛋᚪᚩᚹᚳᛁᛚᚾᛏᛡᚳᚹᛡᛏᛚᚦᛁᚠᛡᚪᚢᚫᚾᚻᚱᛝᚾᛖᛠᛉᛗᛠᛏᚩᚢᚱᛋᛖᛏᚪᛚᚩᚠᛞᛈᛠᚾᚷᛟᛋᛋᛋᚻᚣᛠᛇᚠᚩᚢᚠᚾᛋᛉᛗᚻᛝᛝᛒᚦᛄᚾᛠᚪᛄᛝᚦᚠᚹᛒᛖᛏᛡᛝᛝᚾᛉᛚᚹᛋᛝᚹᚾᛁᚫᛁᛈᛠᛝᚱᚣᚩᛈᛒᚱᛋᚹᚳᛖᚾᛡᚣᚩᛗᚠᛉᛝᛏᛁᛈᛗᛒᚹᛡᛒᚹᛞᚫᛡᚣᚪᚳᚳᛗᚦᚢᛗᛚᛗᚪᛒᛄᚫᛖᛚᛟᛁᚷᛄᛈᛒᚫᛚᚳᛏᛄᚫᚠᛋᛖᚫᛖᚻᚾᚳᛄᛖᛋᛖᚠᚻᚱᚢᚪᚦᚪᚪᚳᚷᛞᛁᚷᛞᛚᚠᚱᛟᚳᚱᚢᛟᚠᚹᚣᚩᚾᛋᛁᛉᚢᚳᛏᛈᛉᚫᛒᚻᛞᛞᛗᛈᛄᚠᛗᛁᛠᛏᛋᛗᛁᛈᛋᛗᛒᛖᛋᚫᚣᚫᚪᛉᛞᚣᚦᛚᛈᚪᚫᛄᚹᛞᚩᛋᛡᛇ",
+        "transliteration": "AEXMAECIACALFEGTCLUSSAOWCILNTIACWIATLTHIFIAAUAENHRNGNEEAXMEATOURSETALOFDPEANGOESSSHYEAEOFOUFNSXMHNGNGBTHJNEAAJNGTHFWBETIANGNGNXLWSNGWNIAEIPEANGRYOPBRSWCENIAYOMFXNGTIPMBWIABWDAEIAYACCMTHUMLMABJAEELOEIGJPBAELCTJAEFSEAEEHNCJESEFHRUATHAACGDIGDLFROECRUOEFWYONSIXUCTPXAEBHDDMPJFMIEATSMIPSMBESAEYAEAXDYTHLPAAEJWDOSIAEO",
+        "recipe": {
+          "a": 13,
+          "b": 12,
+          "initial_cipher_rune": 23,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-31",
+      "ciphertext_runes": "ᚦᚳᛒᛝᛏᛉᛡᛞᛋᛡᚩᚠᛈᛖᛞᛋᛁᛚᛁᚻᚾᛝᚱᚻᛈᛇᚢᚫᛞᛚᚻᛉᚳᛈᛁᛗᛉᚳᛄᚫᚾᛞᛋᛏᛚᛡᚩᛋᛗᛚᛞᚾᛈᚫᛏᚷᛈᚫᚦᛄᛗᛒᚻᚩᚻᛁᚷᚻᚳᛚᚹᛋᚱᛇᛗᛏᛄᚳᛁᛠᚦᛞᛏᛚᚱᛖᛠᛒᚪᛒᚠᛒᛁᛒᛡᛇᛏᚣᛏᛖᚣᚳᚱᛋᚠᛁᚦᚪᛉᚪᚣᚫᛠᛄᛈᛗᚠᛋᚪᛒᚱᛉᚣᚻᚦᚩᛇᛞᚢᚠᛁᚻᚩᚫᚠᚣᚷᚱᚪᛄᛏᛉᛇᛖᛠᛞᛏᚠᚢᛝᚫᛄᛖᛈᚳᛒᚦᚢᛝᛡᛒᚹᚱᛖᚾᛈᛇᚣᛇᛉᚱᚹᛒᛡᛞᛖᚱᚩᚻᚣᛠᛈᚦᛗᛁᚷᛚᚹᛉᚫᚠᛞᚾᛄᛟᚻᛚᛡᛗᛖᚷᛟᛁᛡᚻᛟᚱᛇᚹᚣᚠᛈᛄᚷᚦᚪᛒᛝᛈᛒᚪᛖᚢᚹᚻᚩᛒᛋᛉᚹᛞᚦᛇᚱᛖᛄᚾᛞᛝᚹᚪᚻᛖᚹᛟᛡᛄᛡᛟᛝᛄᛉᛚᛄᛞᛉᛟᛈᚱᚪᛁᛏᚷᛉᛝᛇᛠᛗᚩ",
+      "top_suffix": {
+        "score": -4.808147205052148,
+        "plaintext_runes": "ᛡᚩᚳᚠᛝᛁᚹᚻᚩᛇᛉᛁᛇᛇᚻᚠᛖᛞᛝᛈᚩᚩᚳᛇᛠᛏᚠᛝᛉᚾᛗᚢᚱᛉᛄᚠᚢᛗᛒᛁᛒᚻᛈᚳᚣᛇᚩᚳᛈᛡᚪᚳᚩᚢᛞᚣᚩᛗᛄᚱᛝᚢᚠᛇᛚᚹᛚᛉᚪᚦᚱᛏᚱᚣᛉᚠᛟᛇᛏᛡᚻᛋᚳᛁᛒᛖᛏᚣᛋᚩᚾᛋᚣᛖᛒᚳᛖᛞᛚᚱᚱᛠᚫᛒᛖᚻᛋᛞᛖᛚᛠᛡᚩᛚᛗᛖᚪᛄᛋᚦᛖᚩᚫᛟᛈᛄᚫᚣᛠᛖᛝᚠᛋᚳᛉᛄᛝᚢᚦᛇᛝᛝᛗᛖᚠᛋᛁᛈᚢᚳᚪᚣᚠᚻᚩᛒᛠᚢᛗᛞᛞᛉᛒᚢᚳᛠᛒᚪᛚᛞᛡᛖᛖᚹᚠᚪᛠᛇᛏᛚᛒᛏᚾᚢᚹᛒᚦᚣᚫᚳᛟᚪᛚᚫᚪᚩᚣᚻᛠᚾᚦᚾᚾᛖᛒᚫᚱᚠᛞᛡᛁᛝᚠᚹᛋᛋᚳᚻᚳᚣᛟᚩᛗᛈᚠᛒᛝᛠᛋᚦᚱᛖᚻᛒᛋᛝᛒᛝᚪᚾᛁᛖᛏᚪᛇᛁᚦᚠᛠᛞᛡᛗᚢᚩᚢᚱᚢᚢᚢᚪᛗᛞᚱᚣᚢᚦᚢᛁ",
+        "transliteration": "IAOCFNGIWHOEOXIEOEOHFEDNGPOOCEOEATFNGXNMURXJFUMBIBHPCYEOOCPIAACOUDYOMJRNGUFEOLWLXATHRTRYXFOEEOTIAHSCIBETYSONSYEBCEDLRREAAEBEHSDELEAIAOLMEAJSTHEOAEOEPJAEYEAENGFSCXJNGUTHEONGNGMEFSIPUCAYFHOBEAUMDDXBUCEABALDIAEEWFAEAEOTLBTNUWBTHYAECOEALAEAOYHEANTHNNEBAERFDIAINGFWSSCHCYOEOMPFBNGEASTHREHBSNGBNGANIETAEOITHFEADIAMUOURUUUAMDRYUTHUI",
+        "recipe": {
+          "a": 7,
+          "b": 6,
+          "initial_cipher_rune": 2,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-32",
+      "ciphertext_runes": "ᛚᚦᚫᚹᚫᚢᛈᛡᚳᚹᛝᚻᚹᛒᛗᛋᛟᛖᛁᛡᛟᚹᚦᚻᛒᛡᚱᛏᚦᚠᚠᚩᚦᚻᚩᛗᛖᛉᚹᛞᛋᛚᚠᛞᛝᛒᛇᛡᛚᚪᚹᛞᚾᚫᛉᛏᚣᛗᚷᚦᚹᛉᛡᚦᚹᛒᛋᚱᛉᛡᛉᚪᚢᛒᚻᛠᚹᛝᚢᚻᛇᛝᛡᛠᛄᛋᛈᚦᛏᛟᛝᚩᛗᛒᚢᛞᛋᛒᛄᛠᚱᛟᛖᚾᚾᚹᚷᚢᛚᚪᚩᚣᚢᛏᚠᛄᛏᚪᚷᛒᛇ",
+      "top_suffix": {
+        "score": -4.434408568277593,
+        "plaintext_runes": "ᚢᛠᚢᚪᚦᚫᛋᛝᛒᛋᚳᚩᚷᛒᛖᛝᛖᚾᚠᛞᛋᛞᚣᛄᚷᚣᚫᛁᚻᛡᛇᚩᚣᛞᚳᚩᛖᚱᚳᚾᚦᛄᛠᚻᛖᛞᛁᚱᚹᚫᚳᛁᚳᚪᛒᚷᚱᚳᛖᚦᛝᛚᚹᚦᚷᚻᚪᚷᛚᚳᚷᚣᚳᛉᛉᛏᛋᛄᛝᚹᛄᚣᛟᚫᚹᚻᚪᛋᚣᚩᚢᚳᚻᛚᚱᚾᛒᛠᚠᚦᚪᛖᛉᛡᚻᚩᛞᛗᚹᛏᛠᚹᛁᛚᚢᚦᛏᚢᚢᛞ",
+        "transliteration": "UEAUATHAESNGBSCOGBENGENFDSDYJGYAEIHIAEOOYDCOERCNTHJEAHEDIRWAECICABGRCETHNGLWTHGHAGLCGYCXXTSJNGWJYOEAEWHASYOUCHLRNBEAFTHAEXIAHODMWTEAWILUTHTUUD",
+        "recipe": {
+          "a": 24,
+          "b": 27,
+          "initial_cipher_rune": 20,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-33",
+      "ciphertext_runes": "ᛞᛇᛉᚳᚠᛁᚪᚹᚻᚷᛇᛟᚠᛏᛖᛟᛠᚪᛡᛋᚷᚣᛠᚾᚦᚫᚱᚩᛡᛗᚹᛉᛗᚣᛞᛒᛏᚱᚢᛄᚻᚫᛟᛡᛝᚹᚻᛋᚠᛡᛚᚦᛏᛁᚹᛏᚩᚢᚾᚹᛗᛚᛋᚦᛠᚹᛄᚪᛄᚫᚷᚣᛗᚹᛞᛈᛡᛖᛄᚹᛖᚢᚻᚹᛝᛁᛋᚫᚷᛄᛚᛝᚦᛇᛁᚠᚳᛟᛇᛞᛒᚣᛡᚣᚢᚣᚾᚦᚱᛖᛗᛁᛇᛞᚱᚹᛉᛒᚻᚳᛄᛡᚪᚾᚹᚾᛗᚠᛇᛁᛇᚪᚩᛋᛒᛟᛏᛄᛈᛖᛈᛄᚩᚹᚢᛠᛝᚹᛗᚳᚩᛏᛏᚠᚢᛄᛞᛠᛉᚩᛉᚦᚷᛞᛒᚩᛏᛚᛇᛁᛒᛡᚪᛖᚠᛠᚢᛖᛈᛋᚹᛞᛞᛋᛡᚹᚦᛞᛋᛝᛄᛚᚷᚢᛡᚾᛉᚠᚱᚪᚣᛗᚠᚦᚻᚱᚪᚱᚫᚪᚷᛟᛞᛒ",
+      "top_suffix": {
+        "score": -4.800897321588477,
+        "plaintext_runes": "ᛟᚻᚦᛚᛋᚱᚪᛖᛗᚣᛋᛏᛈᚻᛒᚣᛁᛡᚩᚦᚦᚻᛋᛄᚢᚷᚾᛚᛝᚩᛏᚹᛏᚠᚢᚾᚩᚠᛋᚠᚩᚠᚹᚢᛞᛖᛏᚱᛗᛄᚳᚱᚢᚠᚫᛈᛗᚷᛗᚪᛖᛚᛈᚠᚷᛒᛉᛈᚱᛋᚦᛄᚩᛈᛇᚱᚦᛄᛁᚳᚪᛏᚾᚱᛟᚹᛋᛋᚹᚫᛖᛋᛋᛗᛇᚹᚩᛇᚳᚢᚫᛖᚾᛒᛁᚪᛄᚻᚱᛖᚦᚻᚳᛋᛡᛏᛡᚦᚠᚣᛈᚠᚱᛗᚻᛋᛋᚪᛗᚻᚪᚷᚪᚻᚹᚢᛚᚻᚹᛚᛗᛝᛒᚢᛗᛄᛞᚪᛞᛗᛉᛠᛉᛖᛋᚪᚹᛞᛟᚳᚩᛒᚩᚢᛞᛉᛒᛝᛗᛏᛋᚠᚢᚳᚾᚻᚩᛚᚻᛝᛈᛠᛝᚪᚫᛚᛝᛝᚣᛇᚫᛞᛚᚠᚳᚹᛞᛒᚦᚻᛄᛋᚻᚣᛁᚦᚫᛝᚾᚳᛈᛖᚢ",
+        "transliteration": "OEHTHLSRAEMYSTPHBYIIAOTHTHHSJUGNLNGOTWTFUNOFSFOFWUDETRMJCRUFAEPMGMAELPFGBXPRSTHJOPEORTHJICATNROEWSSWAEESSMEOWOEOCUAEENBIAJHRETHHCSIATIATHFYPFRMHSSAMHAGAHWULHWLMNGBUMJDADMXEAXESAWDOECOBOUDXBNGMTSFUCNHOLHNGPEANGAAELNGNGYEOAEDLFCWDBTHHJSHYITHAENGNCPEU",
+        "recipe": {
+          "a": 19,
+          "b": 28,
+          "initial_cipher_rune": 23,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-34",
+      "ciphertext_runes": "ᛗᛒᚾᚻᛇᛞᚻᛗᛚᛁᛠᚾᛁᚫᛖᚢᛏᚦᛇᛋᛈᚻᚻᛇᚳᛠᚫᛞᛚᛋᛝᛁᚹᚪᚳᚩᛏᛇᛝᚷᚳᚦᛋᛠᚠᚢᛝᛚᚻᚹᚩᛇᚪᛈᚷᛇᛗᛚᛄᛋᛏᛚᚳᛈᚾᛋᛝᚳᚪᚳᚾᛉᚾᚢᛉᚫᛗᛏᛞᛏᚫᛟᛗᛋᛉᛏᚣᛉᛇᛠᚷᚻᛒᚾᚷᛇᚢᛟᛄᚦᛉᚩᚾᚪᛞᚩᛈᛠᛚᛋᛏᛒᚷᛁᚢᛟᛖᛁᛄᚦᛖᚻᚹᛄᚫᛄᚾᚻᛉᚹᛒᚪᛋᚠᚱᚱᛁᛉᚢᚦᚻᚢᛗᚪᛞᛝᛠᚪᚫᛉᛖᚾᚹᛟᛝᛞᚾᛈᚫᚳᛡᛈᚠᛉᚩᛒᚷᛗᚫᛚᚻᛞᚣᛖᛉᛒᛄᚹᛇᛈᚩᛁᚦᚠᚷᚾᛈᛞᛝᛏᛖᚪᛄᛋᛠᛈᛝᚢᛒᚷᚳᛉᚪᚢᛈᛚᛄᚱᚷᚣᚪᚪᚠᛗᛝᚣᚳᛟᚹᚣᚷᛈᛗᛖᚩᚹᚢᛟᛞᛋᚱᚣᛞᛋᚳᛡᛉᚻᚦᚹᛚᛞᛠᚩᛞᛠᚢᛟᛖᛠᚹᛉᚻᛡᚹᛞᚪᛗᚠᚦᛈ",
+      "top_suffix": {
+        "score": -4.862399484201401,
+        "plaintext_runes": "ᛞᛁᚢᚹᛡᛗᛡᛋᚫᛖᛚᛋᚣᛒᚳᚣᚣᛚᚠᛞᚦᚻᚹᛒᚪᛏᛞᛏᚦᛝᛖᛏᛄᛚᛞᛇᚾᛈᛗᚢᛏᛇᛇᛋᛋᚩᚢᛄᚢᚾᛈᚳᛖᛒᛝᛠᛋᚩᚹᛋᚹᛗᚷᚾᛝᛝᛇᚫᛚᚹᛉᚦᛁᛇᛡᚪᛏᛠᛒᛈᛏᛏᚾᚢᛟᛚᛄᛞᚱᛠᛟᛈᛁᛏᛝᛖᛁᛖᚩᚳᛖᛝᚣᚢᛈᛚᚣᛁᚦᛋᛋᛖᚹᚩᛁᚾᛁᛋᚩᚱᚫᚢᚹᛗᚣᛞᚢᛝᛒᛚᛠᚩᛗᚹᚻᛝᚹᚱᛋᛝᛒᛖᛉᚢᛞᛠᚾᛋᛖᚹᚩᛞᚣᚢᛟᚣᚹᚳᛈᛒᚣᚱᛗᛖᛗᛖᛇᛝᚦᛄᚣᚠᛁᚾᚠᚪᚾᛉᛋᚫᛠᛁᛞᛝᚠᚹᛚᛞᚦᛟᛝᚱᚹᛇᛗᚷᛈᚱᛖᚢᛈᛚᛝᚳᛠᚩᛒᛟᚩᛞᚻᛉᚫᛟᛉᚷᛄᛗᚫᛈᛠᛝᚢᛗᚹᚪᛁᛋᛁᛖᛒᛏᛁᚫᛒᚱᚪᚪᛉᛇᚠᛉᚹᚩᛉᛟᛁᚾᛚᚷᛠᚪᚫᛈᚱᛋᚦᛚᛟᛡ",
+        "transliteration": "DIUWIAMIASAEELSYBCYYLFDTHHWBATDTTHNGETJLDEONPMUTEOEOSSOUJUNPCEBNGEASOWSWMGNNGNGEOAELWXTHIEOIAATEABPTTNUOELJDREAOEPITNGEIEOCENGYUPLYITHSSEWOINISORAEUWMYDUNGBLEAOMWHNGWRSNGBEXUDEANSEWODYUOEYWCPBYRMEMEEONGTHJYFINFANXSAEEAIDNGFWLDTHOENGRWEOMGPREUPLNGCEAOBOEODHXAEOEXGJMAEPEANGUMWAISIEBTIAEBRAAXEOFXWOXOEINLGEAAAEPRSTHLOEIA",
+        "recipe": {
+          "a": 7,
+          "b": 8,
+          "initial_cipher_rune": 19,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-35",
+      "ciphertext_runes": "ᛝᛏᚳᚪᛠᚣᚷᚳᚦᛖᚾᚢᛁᚫᛁᚢᛡᚹᛚᚳᚻᛈᛞᛄᚳᛗᛒᛗᚪᛄᚩᚪᛞᛁᚩᚱᛟᚠᛖᚣᛟᛁᛇᛟᛁᛈᚣᛚᚪᛡᚳᛏᛠᛋᛖᛒᛝᚫᛟᚫᛞᛖᛞᚣᛡᛠᚪᛖᚦᛚᚫᚳᛋᚪᚩᚷᚹᛚᛈᛖᛏᛄᛉᛝᛚᛏᛉᚩᚣᛝᚠᚩᚣᛁᚻᛟᚫᚷᛄᛝᛡᚾᛗᚣᛟᛡᛝᚷᛖᛉᛟᛉᛈᛚᛋᛉᛠᛚᛡᚱᚪᛞᛠᚷᚱᚳᛇᚻᛗᚪᛟᚷᛞᚪᛋᛡᚻᛈᚷᛖᚳᛟᚱᛟᚢᛁᚫᛟᚦᛄᚱᛡᚱᛖᚦᚣᛏᛝᛡᚩᛒᛏᚦᚳᛉᚳᛋᚪᚫᛗᚠᛄᚱᛖᛡᛇᛁᛇᛟᛉᚳᚹᚪᛖᛋᚢᛉᛋᛟᛚᛄᚾᛈᛇᛒᚦᚦᛁᚫᛚᛋᛝᛄᛄᛡᛟᚻᛇᚢᛚᛁᚱᛡᚻᛚᛏᚹᛉᛇᚱᛏᛠᛁᚫᛚᛗᛁᚱᚷᛏᛠᛇᛟᚻᛟᚳᛋᛏᚾᚩᛁᚱᚷᚹᛞᚢᚣᛚᛁᛗᛒᚢᛚᚱᛏᛁᚢᚷᚳᚠᛇᛚᛇᚣᛏᛏᚫᚢᚫᛠᛇ",
+      "top_suffix": {
+        "score": -4.838349987292256,
+        "plaintext_runes": "ᛋᛉᛗᚦᚢᛡᚷᚫᚱᚪᚠᛡᛠᛞᚪᚫᛡᛖᛞᚣᚹᚩᚾᛁᛞᚢᛝᚹᚱᚠᚠᚷᚱᚳᛏᛉᛒᛉᛟᛚᚾᛝᚩᚾᚣᛖᛁᚦᚣᛒᚻᛈᚱᚣᚷᚦᚦᚫᚣᚢᛋᚹᚣᛏᛏᛚᛁᛖᛉᚹᛡᚩᛡᛟᚣᛏᛖᚳᚹᚢᛋᚣᛒᚷᛚᚢᛉᛁᛋᛟᚣᛁᛖᚢᛞᚣᚩᚹᚩᛇᚻᚩᛒᛚᚹᛁᛞᛈᛚᛟᚠᚷᛒᛋᚷᛞᚠᛒᛇᚪᚷᚹᛒᚢᛏᛒᛚᚻᚹᚢᛖᚾᛏᚪᛈᚩᚹᚳᛈᚱᚾᚻᛉᛟᛡᛠᚫᛡᛡᚳᛁᛇᛞᛖᛋᛗᚹᛇᚹᛞᚷᛠᚣᛡᚪᚩᛡᛏᛁᚩᚻᚳᛞᛡᛞᚢᛝᚩᚠᚪᛝᚾᛁᚫᛠᛖᛏᛒᚢᚪᚢᚦᚷᚹᛞᛄᛟᛠᛋᛋᛇᛗᛄᚱᛋᛠᚦᛉᛗᛗᛁᛁᚩᛈᛚᚪᛒᚢᚠᛈᛈᚻᛠᛋᚷᚪᛁᛝᚩᛈᛖᚩᛠᛞᛈᚩᛏᚳᛁᛒᛁᛝᛏᚱᛒᛚᛁᛗᛡᚢᛖᛗᛖᛈᛁᚪᚹᚷᛋᛈᛟᚠᛞᛗᛄᛡᚹᛋᚣᛖ",
+        "transliteration": "SXMTHUIAGAERAFIAEADAAEIAEDYWONIDUNGWRFFGRCTXBXOELNNGONYEITHYBHPRYGTHTHAEYUSWYTTLIEXWIAOIAOEYTECWUSYBGLUXISOEYIEUDYOWOEOHOBLWIDPLOEFGBSGDFBEOAGWBUTBLHWUENTAPOWCPRNHXOEIAEAAEIAIACIEODESMWEOWDGEAYIAAOIATIOHCDIADUNGOFANGNIAEEAETBUAUTHGWDJOEEASSEOMJRSEATHXMMIIOPLABUFPPHEASGAINGOPEOEADPOTCIBINGTRBLIMIAUEMEPIAWGSPOEFDMJIAWSYE",
+        "recipe": {
+          "a": 5,
+          "b": 11,
+          "initial_cipher_rune": 21,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-36",
+      "ciphertext_runes": "ᚣᚾᚢᚹᛝᚻᚷᚣᚱᚩᛁᛚᚾᛉᚾᚩᛈᚠᛠᚫᚫᚩᛉᚾᛋᛟᚫᛚᚾᚫᚦᚢᛠᚣᚫᛈᛁᛇᚢᚱᛄᛈᛟᛄᚪᛝᛈᚦᛈᚪᛝᚣᛗᛟᛉᛒᚢᛏᛇᛗᛈᚫᚣᛉᚫᚣᚱᚫᚣᚠᚠᛗᛡᛉᛖᚱᚢᛏᚷᚢᚣᚱᛡᚢᚩᛇᛁᛄᚠᛈᛄᛞᛁᚦᚩᚻᛡᚷᚻᛚᚦᛇᛟᚪᚫᛠᛗᛉᚻᚳᛉᚪᛏᚦᚫᛉᚩᛋᚳᛞᛏᚣᚹᚾᛟᛏᛉᚹᛁᛟᛄᚠᛁᚩᛁᚱᛋᛉᚾᛗᚪᛡᚱᛈᛋᛞᛁᛟᚻᛖᛏᚢᚹᛠᛟᛞᛟᛄᛁᛝᛡᛄᚱᛞᛗᛒᚩᚳᚩᚦᛟᚱᚢᛚᚢᚦᛋᚢᛞᛚᚷᛁᚣᛝᚩᛟᛁᛖᚣᛖᚠᛇᛝᛒᛚᛁᚢᚣᚠᛟᚾᛟᛒᛟᚷᛄᚪᚾᛗᚫᚣᚦᚠᛁᛒᛝᛈᚾᛁᚱᚷᛄᛇᚫᚻᚪᚱᛉᛉᚩᛚᚾᚫᛞᚣᛒᚾᚪ",
+      "top_suffix": {
+        "score": -4.874558212614971,
+        "plaintext_runes": "ᛡᚾᛁᛞᛗᚣᛄᚻᚪᚻᚦᛋᛇᚩᚳᚦᛗᚪᛠᛟᚻᚠᚩᛁᚻᛏᚩᛋᛗᛁᚪᚣᚣᚪᛒᛠᛖᛋᛏᚻᛖᚱᛋᚫᛠᚾᛋᚠᚠᛠᛇᚹᛏᚾᛏᚫᛝᚢᚻᚳᛡᛚᛒᚠᛚᚻᚾᛚᛏᛟᛈᚷᛗᛉᛝᛠᛝᛈᚩᚢᚻᚳᛏᛖᚱᚣᛚᛋᚫᚣᛡᛗᚾᛚᛇᛈᚷᛖᛡᚠᚦᚦᛖᛚᛏᛄᚩᚳᛠᚱᚦᚾᛝᚳᛋᛋᛡᛈᛋᚹᚦᚦᛖᚫᚳᚣᚹᛏᛡᛋᛋᚦᚹᚻᚳᚠᚪᚩᚦᛇᛏᛁᚱᛖᚷᛗᛡᛝᚦᚣᛞᛁᚾᚳᛚᚪᛋᚪᚠᛁᚫᚹᛈᚢᚣᛝᛖᚣᚪᛄᚠᛠᛈᚦᛚᚫᛝᚹᛠᛝᛉᛗᚩᚠᛈᛒᚷᚷᚾᚠᛡᚱᚢᛏᛈᛄᚢᛏᚹᛗᚫᚩᛇᚫᛇᚫᛞᚦᛁᛚᛇᚣᚦᚻᛉᚾᚢᛚᚳᛖᛇᛚᚫᛡᛗᚱᚦᛟᛋᛒᛋᛗᚣᛏᛄᚾᛝ",
+        "transliteration": "IANIDMYJHAHTHSEOOCTHMAEAOEHFOIHTOSMIAYYABEAESTHERSAEEANSFFEAEOWTNTAENGUHCIALBFLHNLTOEPGMXNGEANGPOUHCTERYLSAEYIAMNLEOPGEIAFTHTHELTJOCEARTHNNGCSSIAPSWTHTHEAECYWTIASSTHWHCFAOTHEOTIREGMIANGTHYDINCLASAFIAEWPUYNGEYAJFEAPTHLAENGWEANGXMOFPBGGNFIARUTPJUTWMAEOEOAEEOAEDTHILEOYTHHXNULCEEOLAEIAMRTHOESBSMYTJNNG",
+        "recipe": {
+          "a": 27,
+          "b": 22,
+          "initial_cipher_rune": 26,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-37",
+      "ciphertext_runes": "ᚾᚣᛖᛉᚾᚢᛉᛁᛝᛏᛈᚹᛋᚣᛏᛠᛈᛉᚪᛁᛄᛋᚱᚪᛏᛋᛝᛏᚳᚷᚳᚻᛖᛟᚱᚪᛡᚻᚳᛝᛒᛖᚱᛠᚪᛚᛟᛖᛚᚪᚦᛋᚳᚹᚱᚹᚩᚻᚣᚢᛝᚩᛈᛚᛁᛏᚪᚠᛋᛝᛞᚳᚪᚱᛒᚹᛈᚾᚩᚦᚳᚦᚾᛗᚩᛖᚣᛇᚾᚠᛒᛞᚢᛈᚹᚾᛖᚪᚱᛚᛁᚹᚫᛉᛝᚠᛞᚪᚠᛒᛄᛉᛞᛄᛝᚣᛇᚪᚫᛄᛝᛈᚪᚢᛠᛇᛏᚱᛖᚫᛗᚫᛠᚻᛁᚫᛟᛠᚹᚳᛄᚦᚻᛡᚩᚢᚩᚦᚷᛡᚻᛋᚷᚪᛁᛟᛞᚪᛄᛁᚹᛡᛒᛗᛝᛡᛞᚠᛒᛋᛏᛒᚷᚠᚷᛟᚢᚳᚫᛏᛁᛖᚱᚷᛗᚣᚪᚷᚹᛝᛄᛋᛄᛗᚱᛗᚾᛒᛋᛗᛉᛞᚻᛉᛁᚣᛡᚻᚣᛠᛉᚻᛞᛖᚹᛖᚦᚢᚳᛉᛗᚪᚣᛠᚹᚫᚪᚳ",
+      "top_suffix": {
+        "score": -4.798772810824055,
+        "plaintext_runes": "ᚫᛄᚣᛋᛄᛁᚣᛒᛋᚻᚱᛈᛒᛖᛠᛝᛞᚷᚩᛞᛡᚹᚠᛄᚢᛚᛋᚹᛞᚢᛏᚷᛡᛒᚠᛏᚷᚻᛉᚣᛞᚩᛋᚣᚣᚳᚣᚳᛡᚦᛁᛖᚳᚻᛏᚣᚾᚹᛡᚠᛒᚷᚦᛖᛚᛈᚾᚩᛚᚳᛒᛖᚪᛁᛖᛚᚣᚱᚢᛏᚻᚦᚷᛁᚩᛈᚩᚻᚠᚫᛚᚦᛠᚱᚳᚪᛚᚪᛉᛖᚻᚹᚹᚦᛈᚱᛞᚾᚫᚱᛏᚪᚫᚷᚾᚩᛠᛞᚩᚷᛄᛒᛚᛗᛁᛡᚫᛝᚦᚱᛚᛏᚪᚳᚩᚻᛚᛈᛗᛚᚠᛚᛖᚾᛗᚳᚢᛡᛄᚷᚦᚠᚹᚩᛠᛞᛞᛉᚢᚻᚠᛖᚳᚳᛚᚣᛚᚫᛗᛞᛞᚹᚱᛚᛉᛈᛡᚠᚠᚱᛈᚩᚳᛁᚦᛗᛒᛞᛝᛖᛡᚣᛈᛝᚩᛖᛈᛗᛡᛋᚪᛝᛚᚣᛉᛞᚷᚹᚳᚩᚱᚩᛋᚹᛒᛁᚢᛡᚪᚾᚾᚳᚳᛈᚹᚢᚷ",
+        "transliteration": "AEJYSJIYBSHRPBEEANGDGODIAWFJULSWDUTGIABFTGHXYDOSYYCYCIATHIECHTYNWIAFBGTHELPNOLCBEAIELYRUTHTHGIOPOHFAELTHEARCALAXEHWWTHPRDNAERTAAEGNOEADOGJBLMIIAAENGTHRLTACOHLPMLFLENMCUIAJGTHFWOEADDXUHFECCLYLAEMDDWRLXPIAFFRPOCITHMBDNGEIAYPNGOEPMIASANGLYXDGWCOROSWBIUIAANNCCPWUG",
+        "recipe": {
+          "a": 11,
+          "b": 12,
+          "initial_cipher_rune": 9,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-38",
+      "ciphertext_runes": "ᚢᚫᚳᛇᚳᚣᛡᚫᛏᛖᚳᚠᛋᚻᛋᚱᚢᚦᛁᛋᛝᛗᛞᚫᚢᛠᚢᚪᚾᛝᚳᛖᛈᚹᛉᚢᛉᚫᚾᛈᚳᚻᚱᚣᚹᛚᛉᚱᛒᛗᚫᛟᚣᚩᚳᛇᛗᚻᚫᛉᚦᛒᛟᛏᛟᚹᛄᚫᛠᛗᚠᚫᚳᚷᛇᚻᚹᛗᚻᛝᚣᛁᚩᛁᛏᛁᛖᛡᛄᛗᚣᛚᚻᚱᚩᛞᛒᛡᛈᛠᛗᚳᛠᛖᛒᚢᚷᛁᚦᛟᚫᛡᚻᛝᛖᚾᚱᛠᛡᛋᚻᛏᛝᚻᚪᚷᚩᛝᚫᚹᛚᛏᚱᚷᛁᚾᛖᛠᛄᛡᛞᛋᚻᛝᚾᚳᛋᚾᛞᛇᚾᛋᛁᚳᛡᚱᛝᛚᚫᚣᛇᛚᚩᚳᛞᚾᛝᚷᛡᛝᛄᚻᛄᛚᛠᛟᛄᛏᚷᛚᛒᛝᚢᛏᚻᚳᚫᛞᛟᚫᛟᛗᛟᚫᚪᚻᚱᛗᚢᚣᚢᚣᛈᛗᚪᛄᚫᛟᛠᛚᚠᛖᛡᚢᛉᚻᚪᚩᛡᛒᛠᚢᚷᚻᛏᛠᚪᛞ",
+      "top_suffix": {
+        "score": -4.833088607689214,
+        "plaintext_runes": "ᛗᚱᚦᛒᛏᚫᛟᛋᚣᛄᛗᛁᛒᚦᛈᛝᚫᚩᚠᚢᛟᛠᚣᚠᛟᚣᛖᚾᚹᚻᚻᛗᛖᚦᛄᚻᚷᚻᛠᛏᛡᛚᛒᚳᚻᛖᛉᚻᚣᚢᛝᛠᚢᚣᚦᚦᛈᛇᛈᛇᛁᚠᛖᚢᚾᛠᚾᛡᛋᚳᛚᚱᚫᚢᛚᛞᚹᛈᚻᚠᚻᛒᚦᚢᛖᚩᚱᚻᚩᚦᛖᛇᛚᛞᛋᛖᚳᛁᛁᛋᛁᛖᛉᛞᚻᚠᛠᛏᛋᛡᚣᚳᚻᛝᛋᛗᛗᛞᛇᛒᚩᚠᛄᛄᚷᛝᛈᛠᚷᚻᛚᛇᚣᛠᛞᚱᚳᚹᛄᛚᛏᛒᚻᛇᛚᚳᛖᚾᛈᛝᚢᛗᛗᛒᚢᛇᛞᚠᚫᛁᚩᚹᚣᛈᛁᚹᚾᛏᛖᛉᛝᛡᚱᚩᛖᛈᚠᛉᚾᛝᛠᚱᛁᛏᛝᛋᛟᛞᛡᛝᛝᛡᛡᛞᚻᛚᛁᚷᛚᛠᛚᛄᚢᚠᛄᚾᛝᚢᛏᚱᛈᚱᛡᚻᛖᛄᚩᛗᛉᚷᚣᚠᚣᚩᚹᛚᛞ",
+        "transliteration": "MRTHBTAEOESYJMIBTHPNGAEOFUOEEAYFOEYENWHHMETHJHGHEATIALBCHEXHYUNGEAUYTHTHPEOPEOIFEUNEANIASCLRAEULDWPHFHBTHUEORHOTHEEOLDSECIISIEXDHFEATSIAYCHNGSMMDEOBOFJJGNGPEAGHLEOYEADRCWJLTBHEOLCENPNGUMMBUEODFAEIOWYPIWNTEXNGIAROEPFXNNGEARITNGSOEDIANGNGIAIADHLIGLEALJUFJNNGUTRPRIAHEJOMXGYFYOWLD",
+        "recipe": {
+          "a": 1,
+          "b": 24,
+          "initial_cipher_rune": 1,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-39",
+      "ciphertext_runes": "ᛋᚹᚦᚾᛋᛁᚻᛒᛉᛠᛝᛒᚢᛚᛟᚢᚾᚢᚦᚩᛗᚪᚾᛞᚫᛇᚫᚣᚪᛋᚣᛝᛡᛗᚷᛇᚾᛈᛠᚳᚻᛝᛚᚠᚷᛡᛁᛡᚪᚠᛒᛈᚳᛋᚦᛠᚦᚫᚱᚷᛞᛚᛟᚷᚱᛁᛇᚣᚩᛟᚢᛝᚱᚷᛗᛏᚷᛒᛈᚷᛗᛏᛗᚣᚹᛒᛏᛒᚷᚣᛈᚷᚾᚦᛇᛒᚳᚷᛖᛇᛟᛚᛈᚹᚾᚻᚷᚱᛇᛏᛈᚷᛒᚹᛗᛋᚹᛟᚻᛡᚳᛋᛈᛞᛋᛡᚪᚹᛏᚳᚹᛟᛗᚹᛁᛒᛞᚷᛇᚢᛚᛉᛋᚫᛟᚻᛚᚦᛒᚣᚪᛚᛞᚦᚠᚻᛞᛝᚩᚢᛋᚪᚫᛖᚦᛁᛏᛄᛏᛝᚦᚾᚳᛉᛏᛝᚳᛈᛁᚾᛏᛒᚾᛡᚱᛒᚢᛈᛋᚦᛁᚳᛈᛋᛁᚹᚹᛚᚣᚾᚢᛒᛁᚪᛠᚹᛟᚳᛠᚢᚪᛚᚦᚹᚠᚾᛏᚳᛡᛁᛚᚩᚾᛗᛄᛠᚦᛟᛄᚪᚦᚹᛡᚾᛖᛠᛈᛒᛋᛄ",
+      "top_suffix": {
+        "score": -4.802357389623385,
+        "plaintext_runes": "ᚣᛁᚱᛗᛁᛞᚩᚾᛋᛄᚪᚢᛡᛝᛖᛖᚣᚹᚹᛉᚳᛋᛋᛝᛉᚢᚹᛞᛇᚦᛁᛗᚣᛉᛗᚾᛚᚠᛗᚷᚢᚻᚩᛗᚣᛏᛠᚾᚳᛠᚪᚣᛒᛉᚾᚷᚫᛖᛝᛠᚾᛝᚢᛞᛗᛝᛋᛗᛡᛖᛇᛏᛝᚢᚾᛡᚦᚪᛄᚢᚾᚷᚱᛒᛒᚻᚹᛈᛇᛉᛄᚷᛄᛒᚳᛠᚹᛏᚫᛒᛞᛄᚫᛝᚻᛞᛞᛖᛚᚾᛄᚦᛡᛏᚪᚣᚠᚠᛡᚱᛒᛞᛒᚣᛏᚾᛏᚩᛈᛝᚠᚾᛠᚷᚱᛗᛏᛗᛈᛡᚫᚹᛒᚾᚠᛏᚦᚠᚩᛞᚪᚷᛖᛞᛖᚠᛞᚦᛞᛋᚩᚹᛄᚢᛖᛗᛁᚳᚳᛒᚱᚪᚩᛝᚳᚢᛖᚾᚻᚱᚹᚣᛈᛗᚢᚢᛏᛝᛉᛖᛁᛖᛝᛁᚾᛟᚢᛗᛏᚣᛉᛄᛋᛚᛖᚠᛏᚫᛝᚫᚪᚦᚳᛄᚩᚱᛈᛄᛏᛒᛏᛗᛒᚣᛠᚷᛇᛈᚢᚱᚳᛇᚦᚩᛒᛋᛚᛞᚪ",
+        "transliteration": "YIRMIDONSJAUIANGEEYWWXCSSNGXUWDEOTHIMYXMNLFMGUHOMYTEANCEAAYBXNGAEENGEANNGUDMNGSMIAEEOTNGUNIATHAJUNGRBBHWPEOXJGJBCEAWTAEBDJAENGHDDELNJTHIATAYFFIARBDBYTNTOPNGFNEAGRMTMPIAAEWBNFTTHFODAGEDEFDTHDSOWJUEMICCBRAONGCUENHRWYPMUUTNGXEIENGINOEUMTYXJSLEFTAENGAEATHCJORPJTBTMBYEAGEOPURCEOTHOBSLDA",
+        "recipe": {
+          "a": 14,
+          "b": 22,
+          "initial_cipher_rune": 15,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-40",
+      "ciphertext_runes": "ᚠᚾᛗᚣᚷᛞᚫᚻᚪᛈᛉᚣᚻᛇᛠᚩᛖᛏᛝᛠᛚᛁᛏᚦᚠᛗᚪᚳᛖᛞᚳᛏᚱᛟᚷᛠᚾᚫᛒᚢᛖᛒᚢᚦᚠᛟᚷᛋᛟᛁᛈᛟᛉᛋᛒᚹᛄᛒᚣᛗᚢᛠᚱᛁᚢᛟᛄᛁᛗᛖᚫᚱᛋᛉᛝᛠᛈᛚᛞᚩᛚᛁᛉᛠᛝᛖᚱᚾᛈᛖᚹᛡᚾᛄᛏᚣᛋᚩᛋᛏᛝᚢᚾᛇᚪᛖᛏᚪᛄᚳᚣᛟᛒᛚᛋᛒᛞᛄᛁᛝᚣᛖᚳᛄᚻᛚᚣᚷᚫᛚᛞᛚᚫᛚᚦᛉᛚᛖᛉᚩᛉᛁᚳᚢᛗᚾᚢᚩᚾᛇᚻᛡᛚᛇᚩᚫᚪᚩᛟᚩᚣᚱᛖᚠᚢᛁᚻᛟᛚᚾᛏᚠᛞᚱᛠᚷᛈᚩᛇᚩᛗᛠᛒᛄᛡᛋᛗᚠᛏᚠᚫᚩᛟᚳᛚᛞᛡᛚᚩᚳᛝᚢᛈᚹᛏᚷᚳᛋᚢᛟᚷᚦᚠᛉᚠᛏᚳᛋᛉᛟᚷᚠᛉᚾᛞᛒᛏᛠᛡᛈᛡ",
+      "top_suffix": {
+        "score": -4.7892213832797035,
+        "plaintext_runes": "ᚩᛁᛖᚩᚢᛇᚪᛞᚻᚳᚪᛒᚣᛞᚣᛏᛈᚱᛖᚠᛋᛄᛏᛈᛋᚱᛁᚦᚱᛒᛒᚢᚻᚦᚹᛁᛞᚠᚦᚢᛚᚦᚳᛈᚹᚦᚩᛖᚢᛗᚩᚠᚳᛇᛋᚣᛄᚩᚹᛒᛈᚱᛄᛟᚠᚻᛚᚩᛚᛖᚫᛒᛚᛖᛖᚾᛖᛗᚩᚢᛋᚣᚾᚹᚷᛏᚱᚣᚱᚻᛟᛒᛇᚱᛁᚻᚢᚪᚳᚱᚩᚫᛗᚪᛉᛈᚫᛞᛉᚠᛠᛝᛗᛝᛇᛄᚢᛚᛒᚱᚠᛞᛄᚷᚪᛄᚩᛋᛝᛗᚷᚱᛝᛒᚪᛄᛈᛠᚻᛒᛠᛝᛠᚻᛋᚠᛇᛄᛗᛠᛋᚹᚠᛟᚹᛚᚫᛋᛁᛉᛖᚾᛒᚳᚩᛈᚾᛈᚻᛖᚦᛉᛁᛝᛖᛖᛋᚩᛟᛞᚩᚻᛉᛞᚢᚣᛁᛞᚦᛠᛖᛋᚪᛏᛗᚣᚹᚪᛇᛞᚩᚪᛉᚩᛋᛚᛁᛏᚠᚦᛠᛈᚾᛏᛞᚻᛁᛚᚫᚦᛉᚾᛝᚾᛉᛚᚪᛚᛏᚾ",
+        "transliteration": "OIEOUEOADHCABYDYTPREFSJTPSRITHRBBUHTHWIDFTHULTHCPWTHOEUMOFCEOSYJOWBPRJOEFHLOLEAEBLEENEMOUSYNWGTRYRHOEBEORIHUACROAEMAXPAEDXFEANGMNGEOJULBRFDJGAJOSNGMGRNGBAJPEAHBEANGEAHSFEOJMEASWFOEWLAESIXENBCOPNPHETHXINGEESOOEDOHXDUYIDTHEAESATMYWAEODOAXOSLITFTHEAPNTDHILAETHXNNGNXLALTN",
+        "recipe": {
+          "a": 7,
+          "b": 27,
+          "initial_cipher_rune": 0,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-41",
+      "ciphertext_runes": "ᛠᛁᚪᛋᚣᛗᛞᚣᛋᛒᛞᛄᛞᚩᚾᛏᛚᚳᚪᛝᚱᚷᚻᚷᛄᚹᚠᚪᚢᛇᛞᛏᛗᛄᛁᛝᚫᛉᛈᚳᛈᛠᛟᚪᛒᛁᛁᛋᛇᚷᚻᛋᛇᛡᛒᚠᚹᛝᚫᚪᚠᚩᚣᛡᚪᚾᚻᛒᚦᛟᛇᚣᛟᛁᛒᛟᚩᛋᚹᛞᚳᚠᚪᛁᛉᛏᛟᚢᚩᛟᚦᛈᛋᚩᚻᛇᚦᛝᛏᛠᚠᛝᛠᚩᛗᛏᚠᚣᛚᚣᚹᛚᛞᚪᛉᛠᚪᛄᚩᛋᛒᛚᚳᛖᚾᚪᚩᚱᛏᚦᚱᛒᚳᚣᛠᛗᚹᛚᚻᛈᛇᛈᛖᛚᛄᚩᛡᚪᛖᛋᚫᚩᛠᛉᛝᚣᛖᚫᛒᛗᛖᚻᚱᛈᚾᛗᚹᛏᛟᚣᚢᚠᛉᛈᛗᚩᚷᚾᛡᛇᚳᚠᛒᛈᛗᛋᛇᛁᛖᛈᚢᚱᛏᚳᚣᛄᛚᚠᚱᛚᚱᚫᛖᚻᛟᛇᚣᛡᚩᛉᚪᛋᚣᛁᛝᛉᛚᛄᚳᛖᚣᚢᛝᚦᛇᚱᛠᛁᚫᚦᚠᛟᚷᛠᛁᛈᛋᛒᛗᛒᛄᚠᚾᚳᛖᚻᚫᚩᛄᛉᛄᛚᛈᚪᛁᛟᚹᚱᛁᚱᚦᛖᛉᚪᚾᛞᛄᚷᛟᛟᚳᛏᛄ",
+      "top_suffix": {
+        "score": -4.875083203851368,
+        "plaintext_runes": "ᛁᛚᛄᛁᚻᚷᛟᛉᚾᚩᚢᛞᛈᚩᛏᚷᛚᛡᚦᛞᚾᚾᛋᛗᛖᚻᚳᚩᛁᛁᚻᛟᚪᛠᛁᚷᛉᛠᚪᚠᚱᛝᚾᚻᚻᛇᛗᚦᛝᚾᛏᚦᚱᛡᛞᛏᛚᚷᛠᛗᛟᛝᚫᚦᛚᛠᛈᛚᛄᛡᛚᛖᚢᛏᛗᚣᛞᚪᛒᛁᚳᚳᚱᚷᚾᚩᚠᚾᛡᛈᛁᚾᚢᛗᚷᛡᛡᚳᛞᚫᚪᛏᚷᛒᚦᚹᚦᛝᚩᚣᚹᛟᚫᛡᛚᛖᛒᚪᛞᚾᛟᛚᚹᛄᚱᚠᚫᛞᚱᚾᚹᚢᚪᚾᛄᚢᚹᚢᛗᛠᚫᛗᚾᛄᚪᚳᚦᛝᚦᚣᛏᛖᚱᛏᛗᚪᛏᚪᚾᛠᛡᛖᛈᛖᚣᚢᛈᚩᚷᚷᛠᛚᛠᚩᚹᛟᛟᛉᛚᚻᚳᚢᛖᚩᛖᚦᛋᚠᚳᚢᛟᛞᛉᚪᛚᛈᛈᚷᛒᚹᚪᚻᛡᛚᛡᛚᚫᛗᛁᚣᛄᛁᚹᛁᚻᚩᛄᛝᚹᚠᚷᛄᚣᚣᚪᚳᛁᚱᚩᛋᚻᚹᚻᛁᛟᚾᚾᚾᛋᛝᛉᛈᛖᚹᛡᚢᛏᚠᛟᚦᛈᚻᛁᚱᛞᛚᚦᚩᛝᛋᛒᛖᚣᛚᛚᚢᚳᛒᛇᛞᛁᚳ",
+        "transliteration": "ILJIHGOEXNOUDPOTGLIATHDNNSMEHCOIIHOEAEAIGXEAAFRNGNHHEOMTHNGNTTHRIADTLGEAMOENGAETHLEAPLJIALEUTMYDABICCRGNOFNIAPINUMGIAIACDAEATGBTHWTHNGOYWOEAEIALEBADNOELWJRFAEDRNWUANJUWUMEAAEMNJACTHNGTHYTERTMATANEAIAEPEYUPOGGEALEAOWOEOEXLHCUEOETHSFCUOEDXALPPGBWAHIALIALAEMIYJIWIHOJNGWFGJYYACIROSHWHIOENNNSNGXPEWIAUTFOETHPHIRDLTHONGSBEYLLUCBEODIC",
+        "recipe": {
+          "a": 13,
+          "b": 12,
+          "initial_cipher_rune": 28,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-42",
+      "ciphertext_runes": "ᛞᛉᚾᛗᚦᛁᛄᚱᛈᛉᚢᚫᚦᛒᚠᛄᚦᚠᚪᛝᛖᚹᚹᚣᛚᛇᚢᚣᚾᚱᚪᛈᚾᚹᛚᚾᛏᛚᚢᛒᚱᛝᚪᛋᚫᛈᛄᛚᚢᚳᚷᛚᛏᛄᚹᛈᚫᛗᛚᛉᛚᛗᛏᛞᚠᛈᛁᚠᚳᚦᛗᛄᚹᚱᚪᛚᚩᛝᚱᚢᛈᚱᛟᛡᚳᛉᚱᛇᛏᚦᚾᚱᛇᚫᛞᛟᚻᛒᚾᚣᚠᛡᚪᛡᛖᚫᛞᛄᚢᛖᚦᚱᚩᛇᚱᛡᚣᛁᛉᛇᚻᚩᛠᚫᚻᛡᛝᛠᚦᚾᚣᚾᚠᛁᛝᛏᚻᚹᚫᛒᛇᛡᚻᛉᛒᛞᛝᚱᛄᚦᚻᚪᚷᚣᛁᚠᚷᛁᛏᛞᛠᛒᚠᚩᛈᛇᛡᛟᚹᚱᚾᚩᛏᛋᚹᚢᛖᛡᛖᛡᚦᛉᚪᚷᛈᚾᛋᚱᚠᛞᛝᚻᛖᛄᛞᛄᛡᚱᚹᚷᛝᚪᛒᛄᛈᛄᛏᚠᛉᚪᛄᛁᚠᛉᚢᚩᚣᚻᚦᚻᚾᛁᛒᛡᛟᛡᛋᛈᚣᛉᛠᚢᛠᛚᚠᛝᛗᚻᚦᛒᚩᛗᛚᚩᛠᛋᚦᛠᛇᛋᛉᚠᛗᛒᚫᛋᛇᚾᛡᚾᚢᚫᚹᛞᛠᚢᚾᛝᚠᚾᛖᚫ",
+      "top_suffix": {
+        "score": -4.827122131008319,
+        "plaintext_runes": "ᛋᚷᛞᚱᛈᚹᚫᛖᚹᚪᚷᚩᛗᚱᛠᛋᛝᚷᛏᛏᚳᚦᛁᚢᛚᚳᛄᚱᚷᛋᚳᛄᛝᚾᚳᚻᛟᛞᚪᚪᚠᛒᛋᛞᚠᛝᛖᛞᛟᚹᛉᛄᚷᛄᚩᚱᚢᚹᚢᚩᚣᛏᚻᚩᚾᛏᛁᛡᛏᚠᛚᛄᛏᛋᛄᚱᚳᚱᛏᚱᛋᚳᛡᚻᛖᛁᛈᛟᛗᚻᚷᛈᚾᛝᚣᛗᛖᛚᚠᛒᛝᛏᛒᛋᚻᛝᚠᛁᚠᚾᛇᚣᛖᛚᚢᚣᚾᛟᛝᛄᚷᛄᛏᚱᛁᚢᚻᛒᚻᚠᚱᛋᛞᛠᚷᛚᚣᚳᛚᚷᛗᛞᚩᛒᚩᛝᚱᚻᛋᚩᚪᛠᛋᚾᛁᚩᛟᚩᚻᛡᚳᚱᛒᛞᚣᛗᚷᛉᛏᛡᚢᚾᚣᛚᚢᚠᛖᛋᛖᛟᚱᛞᛠᚻᛄᚩᚳᛄᚢᛝᚪᛞᚫᚱᚠᚪᚩᛒᚣᛗᛒᚫᚢᛇᛝᛡᚾᛉᛞᚪᚣᛁᛉᚪᛇᚢᛠᚢᚩᚹᚹᚻᛞᚷᛡᚠᛝᚾᚠᛉᛇᛝᛚᛖᛚᛝᚳᚢᛗᛗᚪᚹᚱᛄᚪᚪᛏᚾᛒᚣᛗᛁᛝᛈᛁᛏᛏᚳᛠᛚᚷᛠᚪᛡᛇᛈᚱᛈᛖᛖᚻ",
+        "transliteration": "SGDRPWAEEWAGOMREASNGGTTCTHIULCJRGSCJNGNCHOEDAAFBSDFNGEDOEWXJGJORUWUOYTHONTIIATFLJTSJRCRTRSCIAHEIPOEMHGPNNGYMELFBNGTBSHNGFIFNEOYELUYNOENGJGJTRIUHBHFRSDEAGLYCLGMDOBONGRHSOAEASNIOOEOHIACRBDYMGXTIAUNYLUFESEOERDEAHJOCJUNGADAERFAOBYMBAEUEONGIANXDAYIXAEOUEAUOWWHDGIAFNGNFXEONGLELNGCUMMAWRJAATNBYMINGPITTCEALGEAAIAEOPRPEEH",
+        "recipe": {
+          "a": 5,
+          "b": 2,
+          "initial_cipher_rune": 23,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-43",
+      "ciphertext_runes": "ᚻᛄᛁᛖᛏᛡᚷᛁᚩᚾᚳᚢᚫᛗᛈᛋᚪᛡᚷᛚᚣᚹᛟᚠᚢᛉᚠᚫᛞᚠᛡᛄᚾᚻᛋᚦᚠᛏᚠᛄᚱᚹᚠᛋᚾᚹᛄᛖᛒᚢᚦᚩᛇᚫᛈᛡᛟᚢᛁᚩᛄᚩᛇᛟᛄᛞᚩᛈᚹᛞᚷᚱᚠᛟᛇᚷᛄᛟᛇᚫᛋᚫᚣᛒᛏᛞᛟᛠᚻᛡᚱᛠᛠᛉᛋᚠᚾᚣᚱᚠᚪᚾᛡᚪᛖᚫᚳᛇᛁᛝᛒᛡᛞᛠᚫᛒᛠᚳᛉᚠᚫᛏᛁᚱᚪᛗᚩᛚᛉᛋᚪᛒᚩᛈᚫᚩᛝᚻᛇᛖᛇᚫᚻᛖᛇᛠᚱᛗᛞᚫᛇᛗᚾᚾᚣᛡᚱᚾᛗᛠᛄᛉᛋᛄᛟᛖᛒᛏᚻᚾᚠᚪᚠᛒᚾᚩᚾᛖᛋᛏᛒᚹᛡᚻᛏᚩᛟᚩᛒᚾᛖᚳᛁᚹᚣᛟᛟᚩᛒᛋᛖᚩᚫᚻᛟᚠᚫᚷᚩᛄᛟᛒᚻᚳᛖᛁᛚᚫᚣᛚᚢᛚᛁᚾᛟᛏᚫᛈᛟᛈᛝᛗᚳᚢᛁᚣᛋᚳᚢᛡᛇᚩᚠᛖᚷᛟᚻᚫᛝᚠᛗᚠᛝᛉᛞᛁᛗᛝᚣᚪᛝᚠᛉᛁᛟᚷᛚᛇᚩᚫᛡᛏᛄᛏ",
+      "top_suffix": {
+        "score": -4.775476089184207,
+        "plaintext_runes": "ᛡᚫᛋᛁᚦᛋᛈᛟᛉᚾᚾᛞᚻᚻᛇᚢᛡᛋᛖᛉᛏᚱᚠᚣᚩᚱᚾᛁᛉᛁᚩᛁᚫᚠᛗᛁᛗᚩᚦᛟᛡᛟᚱᚻᛁᛈᚠᚫᚩᚣᚣᚢᚩᚳᛖᛞᛋᚢᛟᛋᚹᚢᛏᛚᛒᚢᛏᚻᛗᛒᛁᚾᛟᚷᚻᛠᚦᚷᚩᚷᛏᚣᛝᚫᚠᚫᛉᚢᚷᛉᛞᛄᚱᚣᛖᚢᚳᚠᚾᛞᛖᛚᚪᚻᚠᚢᚠᛁᚦᚾᛏᚾᛠᚪᚹᚦᛉᚢᚱᚾᛝᚻᚻᛝᛞᚩᚳᚻᚣᚢᛟᚱᛏᛒᚠᛚᛗᛈᛉᚻᚩᛒᛏᚻᛗᛠᚱᛈᛇᛗᚠᚷᛄᚳᚣᛉᛠᛏᚢᛒᛡᚣᚾᚦᚾᚫᚫᚹᚣᛝᛞᛠᚳᚹᚻᛉᚢᚪᚣᚣᚷᛝᛏᛋᛗᚷᛏᛖᚹᚢᛗᛠᚪᚷᚾᛄᛏᛖᛁᛡᛖᛟᛒᛖᚠᚾᛏᚪᛋᚦᛞᛝᚪᚩᚹᛏᛠᚣᚻᛏᚷᚷᚫᚩᚻᚢᚳᚢᛝᛋᛁᚱᚾᚢᛗᛚᚷᚾᚪᛖᛝᚪᛚᚳᛗᚱᚳᚾᛋᚷᛏᚹᛟᚢᛗᚢᛇᛠᛁᚪᛋᛖᚾᛒᚩᛖᚹᛝᛟᛇᛚᛞᛠ",
+        "transliteration": "IAAESITHSPOEXNNDHHEOUIASEXTRFYORNIXIOIAEFMIMOTHOEIAOERHIPFAEOYYUOCEDSUOESWUTLBUTHMBINOEGHEATHGOGTYNGAEFAEXUGXDJRYEUCFNDELAHFUFITHNTNEAAWTHXURNNGHHNGDOCHYUOERTBFLMPXHOBTHMEARPEOMFGJCYXEATUBIAYNTHNAEAEWYNGDEACWHXUAYYGNGTSMGTEWUMEAAGNJTEIIAEOEBEFNTASTHDNGAOWTEAYHTGGAEOHUCUNGSIRNUMLGNAENGALCMRCNSGTWOEUMUEOEAIASENBOEWNGOEEOLDEA",
+        "recipe": {
+          "a": 15,
+          "b": 11,
+          "initial_cipher_rune": 8,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-44",
+      "ciphertext_runes": "ᛠᚢᚷᚦᚣᚦᚾᛟᚣᚩᛖᚻᛁᛋᛖᚣᚦᚪᛡᛝᛟᛇᛚᛡᛏᛝᛁᛚᚠᛉᛡᛠᛏᚠᚾᛄᚠᚻᚳᚻᛞᛠᚣᛟᛝᛉᛇᚻᚩᛋᚻᛇᛏᚠᛚᚱᛇᚦᚪᛁᛁᛒᚠᛁᛚᛄᛡᛒᚣᛗᚫᚫᛞᚻᛟᚪᚹᛉᛚᛏᛁᚪᛟᛞᛖᚾᛈᚻᚣᚦᛚᛖᛋᛖᛟᚫᛖᛏᚱᚪᛁᚫᚹᚫᛋᛈᚱᛄᛡᚪᛏᚫᚦᚠᛠᚢᛈᚣᚫᛝᚣᚾᚻᛡᚳᛗᚠᚾᛞᛄᛖᚩᛒᚷᚻᚪᛖᛞᛟᚠᛇᛞᛟᛈᚳᛁᚪᛒᚷᛒᛈᛟᛟᛄᚠᚪᛖᛄᚣᚩᛄᚣᚫᛋᚦᛁᚫᛄᚫᛏᛖᛇᚻᛟᚣᚠᚹᛞᚷᛡᚱᛒᚢᛒᛚᚢᚷᛈᛄᚪᛏᛡᚳᛄᚠᛡᛝᛚᚣᛒᛗᚻᚱᛚᛟᛠᛋᚦᛝᛏᚳᛟᛉᛁᛄᚱᚳᛖᛏᛄᚷᛡᛈᛏᛉᚩᛁᛄᛟᚷᚩᚪᚢᚣᛖᚪᛋᛟᛇᚢᚪᛡᛗᚱᛚᚳᚠᛒᛗᛝᚻᛉᛠᛄᚫᛉᚪᚷᚻᚣᛏᛖᛝᛉᛉᛗᚾᚫᛋᚱᛗᛞᛋ",
+      "top_suffix": {
+        "score": -4.853046131772175,
+        "plaintext_runes": "ᚳᚱᚹᛒᚱᛈᛄᛉᛞᛚᚾᚳᚱᚪᚩᚱᚻᚪᛡᛋᚾᚩᛈᛗᚱᛗᛇᛟᚢᛄᛋᚠᛄᛟᚳᛗᚩᚣᚪᛚᚱᛏᚹᚷᚻᛏᚹᛒᛝᚻᛉᛉᛄᛠᛄᚩᚾᚻᛚᚫᛈᛝᛇᛇᛠᛁᚾᛟᚻᛞᚫᛏᚢᚢᚳᛝᛈᛞᚹᛡᚢᛏᛋᛒᛠᛉᛒᛗᚱᛗᛏᚣᚪᛉᚪᚻᛏᚠᛠᛚᛚᚦᛗᚾᛏᛠᛈᛁᚣᛖᛟᛞᛏᚷᚳᛝᛄᚷᚹᚱᛝᚷᚾᛈᚢᛇᛟᚢᚠᛈᚢᚢᛗᚳᛁᛡᚱᚷᛈᛝᚦᚷᛠᛖᚱᚢᚻᛗᚦᚹᛟᚫᛗᛗᛒᛡᚻᛚᛞᚩᛚᚷᚾᛁᚩᛚᛚᚢᛠᚳᛡᚹᚢᛉᚪᛈᛁᛝᛖᛞᛄᛄᛁᚪᛇᚱᛈᛏᛄᛖᚦᛈᛞᛗᛏᛡᚷᛞᛠᚳᛗᚹᛁᚳᛞᛁᛁᚾᛒᛗᚠᛖᚹᛋᚻᛋᛄᛏᛒᛒᛖᛚᚪᛏᛗᛈᛋᚦᛄᚣᛖᛞᚹᛖᛞᛠᛈᚾᛗᛡᚪᛖᚢᛁᚢᛒᚠᚳᚳᛁᛞᚢᛝᚢᛗᛇᚦᚳᛗᚾᚳᚪᚻᚫᚱᚾᛁᚾᛗᛚᛉᛖ",
+        "transliteration": "CRWBRPJXDLNCRAORHAIASNOPMRMEOOEUJSFJOECMOYALRTWGHTWBNGHXXJEAJONHLAEPNGEOEOEAINOEHDAETUUCNGPDWIAUTSBEAXBMRMTYAXAHTFEALLTHMNTEAPIYEOEDTGCNGJGWRNGGNPUEOOEUFPUUMCIIARGPNGTHGEAERUHMTHWOEAEMMBIAHLDOLGNIOLLUEACIAWUXAPINGEDJJIAEORPTJETHPDMTIAGDEACMWICDIINBMFEWSHSJTBBELATMPSTHJYEDWEDEAPNMIAAEUIUBFCCIDUNGUMEOTHCMNCAHAERNINMLXE",
+        "recipe": {
+          "a": 19,
+          "b": 25,
+          "initial_cipher_rune": 28,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-45",
+      "ciphertext_runes": "ᚳᚦᛚᛟᛝᛇᚢᚻᚩᛏᚢᛁᚦᛄᚾᚠᚱᚦᛋᛟᚷᛠᛗᚪᛝᛚᚪᛁᛒᛠᚢᛋᚩᛖᛋᛝᚠᛡᚢᛟᛞᛇᚪᛞᛡᛒᚹᚩᛄᛋᛟᛝᛏᚳᚻᚾᛇᛋᛗᛚᚻᛞᛖᛈᚫᛄᚱᚪᚢᚻᚱᚦᚱᛟᛄᛟᛗᚩᛟᛏᚫᛇᛉᛒᚳᛄᛁᚪᚩᛉᚹᚪᚾᛈᛏᚢᚣᛁᛒᚢᚦᚩᛡᛗᚳᚠᛉᚱᛁᚪᛗᛏᛒᛗᛚᛁᚦᛏᛠᛋᚾᚷᛚᛏᛇᛈᚩᛚᛞᛚᚹᚳᛄᚹᛉᚪᛡᚹᛇᛖᛖᚹᛏᚪᚣᚠᛉᚳᛗᚩᚷᛞᚷᛚᚳᛒᚣᛋᚣᚠᛞᚣᛝᛠᛇᛏᚩᚢᚫᛟᛁᛒᛏᚾᚫᚠᛄᛟᛗᚾᛈᛠᛡᚩᛏᛡᚪᚱᛞᚪᛝᛈᚹᛗᛄᛟᛠᚩᛚᚹᛉᚱᛗᚩᛏᚹᛄᚹᚾᚷᚳᛠᛄᚳᚢᚱᛟᛇᛟᚾᚻᚫᛉᚣᛚᚩᚩᛡᚳᚻᛄᛋᚣᚹᛁᚣᚠᛋᚾᚪᚷᛖᚾᛄᚪᚹᛠᛞᚠᛟᚢᛁᛖᛇᚦᚫᛞᚳᛄᚷᚢᚻᚣᚻᛁᛒᛉᚾᚹᛝ",
+      "top_suffix": {
+        "score": -4.81379827807173,
+        "plaintext_runes": "ᚣᚢᚾᚫᚠᚢᛝᛡᛖᚩᛚᛉᛚᛄᚠᚻᛄᛖᛝᛖᛠᚠᛟᚣᚫᚻᛒᛝᛗᚾᚩᛏᛒᚣᚹᚷᛄᛞᛉᚪᚢᚱᚫᚻᛋᛋᛇᚷᚻᛝᚫᛡᚢᛞᚪᛞᛞᚻᚪᛏᛒᛡᛡᚱᛒᛠᚠᚹᛝᛇᛄᚾᚢᚢᛗᚣᛖᛋᛈᛚᚦᚾᛞᛏᚹᚫᚩᚷᛗᛠᛏᚩᚻᛞᚩᛇᛖᛝᛖᚪᚪᛡᛉᛒᛡᚩᛋᚹᚩᛡᚣᚪᚾᚪᛋᛉᚩᚱᚦᛈᚣᚩᛇᛇᚪᛋᛏᛞᚣᚦᛄᚹᛇᛝᚳᛞᛚᛟᚹᛁᚢᛚᚷᚾᛞᚩᚠᚩᛖᛞᛏᚱᚩᚩᚱᛚᚢᛗᛞᛈᛞᛡᛝᛖᚻᚦᛄᛡᚣᛏᛝᚫᛠᚦᚻᛗᛗᚣᛋᚻᛒᚫᛟᛖᛗᚣᛚᛋᚪᚣᛉᛈᚱᛉᛗᚹᚻᛏᚦᛝᛋᛒᛖᛖᚠᚻᛇᚾᚣᚫᛈᚱᛈᛇᛞᚢᛋᚳᚦᚫᛏᚢᚱᛈᚱᛁᛡᛝᛞᛞᚻᛗᚳᛞᚦᛞᛒᛈᛒᛗᚱᚠᚾᛖᚱᛉᛡᚹᛠᚷᛚᚷᛈᛋᛈᛄᛗᚹᛡᛡᛝᚢᛗᚾᛝᚣᛡᛄᚩ",
+        "transliteration": "YUNAEFUNGIAEOLXLJFHJENGEEAFOEYAEHBNGMNOTBYWGJDXAURAEHSSEOGHNGAEIAUDADDHATBIAIARBEAFWNGEOJNUUMYESPLTHNDTWAEOGMEATOHDOEOENGEAAIAXBIAOSWOIAYANASXORTHPYOEOEOASTDYTHJWEONGCDLOEWIULGNDOFOEDTROORLUMDPDIANGEHTHJIAYTNGAEEATHHMMYSHBAEOEEMYLSAYXPRXMWHTTHNGSBEEFHEONYAEPRPEODUSCTHAETURPRIIANGDDHMCDTHDBPBMRFNERXIAWEAGLGPSPJMWIAIANGUMNNGYIAJO",
+        "recipe": {
+          "a": 14,
+          "b": 10,
+          "initial_cipher_rune": 5,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-46",
+      "ciphertext_runes": "ᚻᛏᛉᚫᛁᛄᚢᛞᚠᛡᚫᛋᛁᚹᛝᛈᛗᛉᛄᛈᛞᛗᛝᛇᛚᛞᚣᚠᚩᛞᛝᚷᚾᛇᚷᛖᛚᛉᚣᚫᛚᛖᛉᛡᛝᛋᚳᛁᚦᚷᛏᚣᚹᚩᛝᛖᛒᚪᛗᛏᚪᚷᛒᛈᛡᛟᚪᛉᛝᛒᛞᛉᛄᚦᚢᛏᛇᛖᚣᚪᚳᛠᚦᚹᛏᛉᚩᚳᛞᛒᛟᚩᛠᚾᚠᚪᛚᛗᛖᛁᚦᚫᚪᛡᛄᛁᚪᚱᚦᚱᛖᛖᚣᛋᚾᛖᛏᚢᚻᛈᚳᚦᛋᚳᛇᛉᛖᛇᚠᛞᛠᛏᛈᚣᛇᛠᚢᛏᛉᚦᚷᚻᚫᚾᛠᚱᛡᛒᛏᛁᛉᚩᚢᛝᛚᛒᛇᚩᛟᛉᚦᛞᚷᚠᚩᚱᛈᚪᛏᚫᛋᚪᚦᛖᛟᚪᛝᚫᚣᛒᛚᛡᚦᚾᚠᛈᛟᛡᚾᛖᚹᛖᛗᚩᛉᚹᚦᛠᛁᚦᛒᛖᚱᛟᚳᛉᛈᛖᛁᚢᚦᛈᚠᛞᛈᛄᛁᛟᚻᛒᚦᛏᚩᚳᚢᛚᛞᛄᛝᚦᛄᛁᚪᚹᚣᚢᛝᚾᛋᚾᛈᚠᚫᛒᛄᚫᛡᛗᚹᛇᚪᚩᚾᛄᚳᛚᛒᛉᚣᛠᚦᚹᛝᛚᛗᚳᛡᛇᚠᚫ",
+      "top_suffix": {
+        "score": -4.837597260484523,
+        "plaintext_runes": "ᚦᛡᚾᛏᚳᛖᚫᚹᛡᛡᛖᛚᛋᛏᛈᚹᛚᛋᛒᚣᚩᛒᚢᚦᚠᚠᚠᚠᚢᛡᛏᚠᚠᚻᛝᛒᚻᛝᛁᛚᛡᚩᚱᚻᚻᛖᚪᛈᛇᚣᚣᚣᚩᚷᛋᛁᛗᛚᛋᚦᚾᚾᚩᛏᛚᛒᛖᛗᚩᚹᚢᛋᚢᛁᛠᚩᚹᚦᛡᚣᚻᚠᚪᛉᛡᚷᛒᚷᚻᚪᚣᚩᚣᚢᛚᚩᛁᛁᛈᛈᚻᛁᚠᚱᛁᛏᛉᛡᛒᛏᛟᚦᚷᚻᛉᛡᛏᛗᚪᛈᛋᚱᛖᛗᛒᛇᚻᛞᚻᚪᛞᛋᚱᛠᛄᛒᛠᛡᛞᛇᛒᛞᚱᛖᚪᚻᛖᛁᚻᛇᚷᛡᚢᛁᛋᛚᚢᛖᛈᛞᛈᛝᚻᚠᚳᛉᚾᛈᛉᛖᛉᛗᛄᛇᛒᛋᛇᚳᚢᚠᛗᛇᛗᚢᚱᛉᚪᚾᛉᚷᚾᚳᚱᚾᚫᛚᛋᚾᛈᛠᚳᛠᚷᛝᛉᛁᚪᛈᚢᚳᚾᛄᚻᛖᛡᛁᛝᛠᛉᛏᛏᛄᛒᚩᛖᚠᛞᚣᚣᛉᛁᛏᛝᛖᛇᚢᛞᚹᚻᛇᛄᚩᛈᚻᛏᛒᛈᛞᚪᛝᚦᚹᛒᚻᛠᛋᛋᛝᛒᚠᚪᛏᛁᛁᛠᚫᛏᛞᚩ",
+        "transliteration": "THIANTCEAEWIAIAELSTPWLSBYOBUTHFFFFUIATFFHNGBHNGILIAORHHEAPEOYYYOGSIMLSTHNNOTLBEMOWUSUIEAOWTHIAYHFAXIAGBGHAYOYULOIIPPHIFRITXIABTOETHGHXIATMAPSREMBEOHDHADSREAJBEAIADEOBDREAHEIHEOGIAUISLUEPDPNGHFCXNPXEXMJEOBSEOCUFMEOMURXANXGNCRNAELSNPEACEAGNGXIAPUCNJHEIAINGEAXTTJBOEFDYYXITNGEEOUDWHEOJOPHTBPDANGTHWBHEASSNGBFATIIEAAETDO",
+        "recipe": {
+          "a": 12,
+          "b": 22,
+          "initial_cipher_rune": 8,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-47",
+      "ciphertext_runes": "ᛠᛁᚦᛒᛠᛚᚦᚳᛞᛁᛇᚠᚢᛉᛋᛉᛁᚦᚫᛋᛗᚦᚹᛈᛒᛋᛏᚫᚾᚱᛁᚦᛇᛡᚱᛚᛡᚹᚢᚩᛋᚱᚹᚫᛒᚹᛡᛖᛟᛄᛡᚣᛖᚩᛖᛡᚷᚫᚠᚾᚹᛟᛏᚫᚠᛄᚹᛠᚦᛞᛁᚫᚩᚾᛋᚷᛈᚪᛖᚩᚣᚦᚹᚾᚷᛠᛋᚩᛇᛏᛝᛚᚷᛞᛒᛈᛈᛗᛁᚪᛖᛚᛏᛁᚫᛄᛖᛒᚾᚠᚪᛋᚷᛒᚠᚫᚹᚣᚷᚢᛡᚠᛠᛖᛋᛞᛚᚳᛒᛞᛏᛈᛖᚾᛈᚣᚱᚠᚻᚫᛝᛟᚪᛗᛒᛡᛚᛝᛋᚱᚢᚹᚱᚣᚻᚹᚹᛡᛈᛁᚻᚾᚻᚱᚳᛖᛏᚫᚩᛋᚣᛋᛝᚫᛡᛝᚫᚻᚦᛇᚪᛞᛋᛒᛁᚳᛈᛇᛒᛟᚫᛠᛝᛖᛝᛠᚣᛒᚣᛉᚻᚢᚠᚦᛞᚹᛗᚢᛁᛡᛄᚩᛋᛇᚫᛇᛝᚱᛚᛇᛠᛏᚩᛄᚩᛝᛈᚱᚻᛠᚢᛉᚦᚣᚢᛋᛡᛚᛖᚷᛗᛝᚹᚻᚱᛋᚢᛟᚣᛠᚷᚩᚷᛇᛁᛖᛠᛄᛇᛁᚾᛄᚩᛗᚱᛡᛉᚠᚻᚳᚪᚩᚪᚫ",
+      "top_suffix": {
+        "score": -4.876779330927005,
+        "plaintext_runes": "ᛒᛖᚠᛒᛖᛒᛟᚾᚩᛗᚷᛏᛞᛏᛁᚢᛖᚪᛇᚫᛚᛠᚦᚫᚹᛏᛄᛞᛡᚦᛖᛉᚠᚦᚩᚳᛄᚪᛗᛚᚾᛟᚾᛖᛇᛋᛋᚫᚾᚩᛁᛖᚣᚠᛄᚻᛇᚫᛄᚹᚠᚪᛄᚫᛒᚢᛖᛟᛖᚩᚠᚳᚦᚦᛋᚳᛒᚪᚣᚪᛠᛠᛗᚱᛝᚩᚷᛄᚫᛠᛁᚠᚷᚪᚢᛈᚦᛋᚣᚪᛗᚢᚪᚠᚠᚳᛁᛖᛋᛡᛋᛋᛒᛚᚢᛒᛇᛄᛡᚱᛗᛁᛇᚱᚻᚱᚣᛚᚦᛝᚱᛠᛋᚫᛞᚳᚢᚻᚷᚢᛏᛗᛡᚹᛉᛝᛏᚪᚾᚱᚦᚱᛝᛒᛁᛈᛋᚠᚱᚹᛏᛁᚢᛏᛞᚹᛄᚳᛚᛒᚾᚦᚫᛗᚪᚫᛚᚪᛉᛚᛁᛖᛗᛝᛡᚻᛁᛠᛠᛟᛟᛝᚱᛟᚳᚹᛋᛄᚷᚪᛝᛁᛗᛖᛞᛚᛒᛄᚷᛞᛖᛚᚱᛞᚩᛄᛚᚩᛖᚩᚷᚩᚻᛖᚾᛖᛋᚫᛋᛗᛞᚷᛡᚫᚣᛚᛝᚹᚷᛞᛗᚠᛏᚢᛒᚠᛖᚫᛗᚳᚱᛟᚦᚹᚻᛉᛚᛏᚹᛁᛗᛖᚩᚣᚪᚩᚠᚻᚱᛇᚻᛖᛏ",
+        "transliteration": "BEFBEBOENOMGTDTIUEAEOAELEATHAEWTJDIATHEXFTHOCJAMLNOENEEOSSAENOIEYFJHEOAEJWFAJAEBUEOEEOFCTHTHSCBAYAEAEAMRNGOGJAEEAIFGAUPTHSYAMUAFFCIESIASSBLUBEOJIARMIEORHRYLTHNGREASAEDCUHGUTMIAWXNGTANRTHRNGBIPSFRWTIUTDWJCLBNTHAEMAAELAXLIEMNGIAHIEAEAOEOENGROECWSJGANGIMEDLBJGDELRDOJLOEOGOHENESAESMDGIAAEYLNGWGDMFTUBFEAEMCROETHWHXLTWIMEOYAOFHREOHET",
+        "recipe": {
+          "a": 3,
+          "b": 13,
+          "initial_cipher_rune": 28,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-48",
+      "ciphertext_runes": "ᚻᚳᛁᚦᛄᚷᛝᛖᚢᛡᛏᛁᛚᚩᚱᛈᚠᚪᛈᛞᚱᛒᛝᛁᛋᚷᚠᚾᛈᚠᛒᛟᚦᛁᛠᚪᛡᛏᚾᚳᚦᛟᚻᛈᛖᛚᚫᛟᚠᛗᛡᛝᛒᛝᚦᛝᛠᚠᛇᛗᛟᚩᛠᛈᛁᛡᚱᚹᚹᛟᚩᛒᚩᚾᚩᛄᛟᚾᚦᛡᚠᚩᛄᛞᚦᛏᛁᛈᚾᚪᚱᛄᛉᚱᚣᛝᛡᛏᛗᛈᛞᚣᚻᛗᛝᚫᚳᛇᛡᚣᛄᛟᛝᚩᚢᛇᛁᚱᛏᚪᚩᚻᚪᛚᚫᛚᚪᛋᛈᛏᚪᛄᚳᚦᚢᛏᚹᚦᛗᚷᛖᛗᚣᛡᛁᛞᚢᛋᚠᛒᛟᛚᛟᚪᛒᚦᛚᚣᚳᛠᚣᛞᛇᛁᚹᛉᛟᛝᛒᚢᛋᛞᚻᛞᚢᛠᚱᚫᚩᚻᛝᛒᚪᚹᛈᛡᚾᛚᛇᛖᛟᛝᛡᚠᛇᛡᚳᚦᚹᛚᚦᚪᛁᛈᛞᛟᛄᚢᛉᚢᚾᛠᚠᚩᚾᚪᚱᛠᚷᛗᚢᛗᛁᛄᛒᛗᚱᚾᛗᚩᚾᚠᚣᛗᚠᛇᚠᛄᛒᛡᛈᛄᛖᛡᛏᛈᛟᚫᛏᛟᚻᛖᚾᚳᛇᚩᛋᚻᚫᛇᛝᛁᛟᛇᚠᚢᛞᚣᚪᛚᚠ",
+      "top_suffix": {
+        "score": -4.8437968472763,
+        "plaintext_runes": "ᛚᛖᛉᛒᚷᚢᛚᚾᛚᛟᛠᚪᚾᛗᛒᚻᚷᛟᚪᚪᛏᛄᛟᛖᚹᛠᛒᛄᚻᛋᛖᛒᛁᛟᛈᚱᛟᛝᛈᛚᚹᚢᛖᛖᚣᛖᛚᚩᚠᛁᛠᛈᛄᚪᚠᚩᛗᚾᚩᚱᚪᛈᛞᛚᛋᚫᚱᛇᚢᚪᛞᚢᚫᛠᛁᚦᚻᛝᛈᚣᚱᛁᚾᛁᛞᛠᚱᛈᚢᛒᚩᚱᚠᛝᚷᚫᛟᚱᛠᚪᚱᚦᚦᚣᛄᛒᚩᚢᚳᛞᚦᚳᚦᛡᚦᛡᛠᚾᛁᛁᛖᚻᛈᛖᚷᛄᚹᛡᚱᛁᚻᛠᛚᚳᚢᚹᚷᛋᚻᚾᛗᚩᛗᚾᛏᚩᛞᛞᛋᛖᛡᚣᚣᛝᛞᛟᚫᛁᛠᛡᛚᛟᛡᛚᚩᛁᚳᛈᛏᛞᛁᛞᚢᚩᛡᛖᛉᚩᛖᛏᛈᚩᚾᚫᛞᚦᚦᛉᚫᛄᚳᚫᚣᚾᚢᚩᛚᛖᛏᚦᛝᚢᚱᚪᚳᛟᚠᛏᚻᛁᚠᛗᚱᚫᚢᛒᚷᚩᛏᚦᛟᚹᛗᚫᚣᛞᛖᚪᛏᚫᚹᛚᛝᚪᚾᛋᚦᚫᚪᚢᛡᚩᛒᛟᛚᛒᚱᚹᚫᚢᚪᚹᛈᚩᚹᚾᛝᛋᚻᛒᛟᚾᚠᛋᛗᛝᚱᛡᛈᛒ",
+        "transliteration": "LEXBGULNLOEEAANMBHGOEAATJOEEWEABJHSEBIOEPROENGPLWUEEYELOFIEAPJAFOMNORAPDLSAEREOUADUAEEAITHHNGPYRINIDEARPUBORFNGGAEOEREAARTHTHYJBOUCDTHCTHIATHIAEANIIEHPEGJWIARIHEALCUWGSHNMOMNTODDSEIAYYNGDOEAEIEAIALOEIALOICPTDIDUOIAEXOETPONAEDTHTHXAEJCAEYNUOLETTHNGURACOEFTHIFMRAEUBGOTTHOEWMAEYDEATAEWLNGANSTHAEAUIAOBOELBRWAEUAWPOWNNGSHBOENFSMNGRIAPB",
+        "recipe": {
+          "a": 7,
+          "b": 12,
+          "initial_cipher_rune": 8,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-49",
+      "ciphertext_runes": "ᛡᛖᛄᚠᛚᛟᛁᚳᛁᛝᚷᚦᛗᛋᚫᚷᚪᛠᛗᛁᛒᛡᛏᚾᛝᛗᚦᛏᚣᚫᛄᛖᚻᚠᚪᛡᚷᚪᛗᛁᛞᛉᛏᚢᛖᚦᚾᛖᚪᛈᚹᛠᛚᛒᚢᚱᛡᛟᚪᚣᛟᛇᚹᛄᛈᛞ",
+      "top_suffix": {
+        "score": -4.390202371514675,
+        "plaintext_runes": "ᚷᛄᚢᚷᛗᛈᛏᛇᛡᛚᚱᛈᚱᛁᛁᚢᚪᚷᚷᛒᛁᚢᛄᛋᚾᛋᛚᛁᚣᚻᛒᛖᛞᛏᚹᚳᚢᛏᚷᚩᚷᛗᛚᛈᚩᛒᛟᚠᚢᛠᛞᛞᛝᚩᚹᛠᛏᛗᛗᚱᛖᛏᚪᛗᛁ",
+        "transliteration": "GJUGMPTEOIALRPRIIUAGGBIUJSNSLIYHBEDTWCUTGOGMLPOBOEFUEADDNGOWEATMMRETAMI",
+        "recipe": {
+          "a": 17,
+          "b": 14,
+          "initial_cipher_rune": 27,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-51",
+      "ciphertext_runes": "ᚹᚹᛈᚠᛡᛚᛉᛒᚾᚳᛗᚾᚱᛗᚻᚦᚫᛞᛄᛒᛡᚫᛇᚹᛗᚢᚪᛈᛡᛈᛁᛄᚪᚢᚾᛠᛖᛞᛗᚪᛏᛟᛗᛋᛞᛝᚷᛚᛋᛞᛝᛟᛋᛄᛞᛚᛟᚠᛄᚫᚠᚪᛝᛟᚣᛈᚣᚩᛒᚷᚳᛖᛏᚹᚪᛋᛒᛗᛠᚣᛇᛗᚫᛚᚱᚹᛇᛄᛒᛈᛚᚠ",
+      "top_suffix": {
+        "score": -4.535082718973835,
+        "plaintext_runes": "ᛞᚩᛖᛚᛡᛉᛈᛄᛒᛋᚻᚢᚦᛝᛉᛉᛚᚳᚩᚾᛚᛖᚢᛇᚫᛉᛝᛋᚦᚱᛁᛠᚩᚷᚻᚻᛏᛒᛏᛄᚩᚱᛒᚷᛚᛋᛋᚢᚷᛚᛁᛡᛒᛇᚱᚣᛗᚫᛋᚠᚢᚱᛁᚠᛖᛠᚩᛋᛝᚹᛠᛚᚪᚳᚪᚣᚣᛟᛚᚦᛗᚩᚢᛠᛈᛏᚹᚩᛒᛗᛟ",
+        "transliteration": "DOELIAXPJBSHUTHNGXXLCONLEUEOAEXNGSTHRIEAOGHHTBTJORBGLSSUGLIIABEORYMAESFURIFEEAOSNGWEALACAYYOELTHMOUEAPTWOBMOE",
+        "recipe": {
+          "a": 16,
+          "b": 23,
+          "initial_cipher_rune": 7,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-52",
+      "ciphertext_runes": "ᛈᚠᛗᛝᚪᛇᚾᛟᚹᛇᛉᚣᚫᛉᛞᛟᚱᛒᛡᚱᛟᚹᛏᚷᚱᛄᛖᛠᛈᛚᛞᚻᚦᚱᚦᚣᛚᛉᛠᛈᚫᚠᚪᚫᚪᛒᛈᛋᛗᛏᚫᚳᛈᛝᚹᚦᚻᛠᛞᚩᛄᚷᛋᚩᛠᚳᛖᛋᚣᛖᚫᛈᚦᛁᛇᛈᚳᛝᛈᚳᛇᚢᛏᚳᛡᛇᛝᚾᚢᚻᚦᚣᚠᛗᚾᛝᚠᛄᛉᛟᚱᛗᛝᛠᛄᛏᚳᚢᚷᚦᚠᚦᛋᚪᛈᚩᚪᚫᛞᛋᛝᛒᛗᚩᚷᚹᚠᛗᛖᛠᛇᚻᚠᚻᚳᚱᚫᛝᛗᛉᚳᛋᚪᚹᛋᛠᚩᚣᛚᛉᛝᛠᛟᛉᛟᛠᛡᛝᛒᛝᚳᚫᛁᚱᛒᚠᛏᚣᚣᛠᛒᚣᛚᚩᛇᛉᚩᚷᛗᚩᚠᛚᛟᛝᚦᛠᚦᚣᛖᚣᚾᚷᚾᛡᛏᛄᛟᚾᛁᛋᛟᛠᚦᚣᛋᛒᚫᛚᚪᛄᛡᛖᚷᛉᛡᚾᛉᛏᛡᛒᚻᛚᚷᚢᚦᛠᚢᚾᛁᚩᛗᛠᛁᚷᛟᚦᚱᚣᛒᛖᛠᚩᛈᛗᛏᚱᚫᚢᚻᛁᛝᛇᚳᚠᛄᚾᚱᚷᛟᚷᚻᚣᚻ",
+      "top_suffix": {
+        "score": -4.865476688930561,
+        "plaintext_runes": "ᛞᚫᚱᚪᛉᛚᛝᛇᚷᚱᚢᚦᚳᛠᚦᛁᛝᛗᚣᚳᛇᛠᚫᛄᛒᛒᛗᛇᛒᚪᛇᛖᚱᛄᚾᛖᛖᛇᛇᚢᛋᚾᛈᚦᛡᚠᚱᛋᛚᛠᛠᚻᚻᚩᚾᚣᛏᚾᛠᚻᚾᛠᛉᚠᚣᛝᛚᛁᚹᛒᛉᚳᚻᚱᛈᚹᛞᚹᚹᛒᚳᚩᚳᛡᛇᛠᛉᚹᛒᛖᚾᚪᚫᚫᚢᚻᛁᚪᚻᛁᚩᚱᛒᚢᚷᚳᚠᚷᚠᛄᚱᛝᛠᚳᚫᚹᛈᛄᚹᚣᚠᚱᛝᚪᛈᛡᚫᚦᛗᛝᚠᚹᚻᛚᚦᚹᚠᛄᚾᛏᛗᛠᚢᚻᛝᛋᛖᛖᛖᛒᛒᛖᚹᚻᚣᚦᛖᚠᛋᛝᛏᛇᛖᛝᚢᛞᛗᛟᚱᚳᛠᛖᚢᛠᚱᚳᚪᛝᛝᛚᛏᚱᚦᛗᛚᚪᚾᚹᚻᚢᛚᚪᚳᚳᚾᛁᛞᛈᚷᛒᚣᚪᚾᚳᚱᚻᚾᛋᛞᛞᛏᛉᚻᛝᛁᚷᚱᛁᚫᛏᚢᚩᚾᛈᛚᚱᚻᛈᛡᛞᛠᛁᚠᛞᛠᚱᛡᛏᛈᛗᛋᛗᚣᛚᛉᚹᚷᛒᚱᛁᛏᛡᚾᛁᛄᚾᚱᛞᛝᚱᚳᛁ",
+        "transliteration": "DAERAXLNGEOGRUTHCEATHINGMYCEOEAAEJBBMEOBAEOERJNEEEOEOUSNPTHIAFRSLEAEAHHONYTNEAHNEAXFYNGLIWBXCHRPWDWWBCOCIAEOEAXWBENAAEAEUHIAHIORBUGCFGFJRNGEACAEWPJWYFRNGAPIAAETHMNGFWHLTHWFJNTMEAUHNGSEEEBBEWHYTHEFSNGTEOENGUDMOERCEAEUEARCANGNGLTRTHMLANWHULACCNIDPGBYANCRHNSDDTXHNGIGRIAETUONPLRHPIADEAIFDEARIATPMSMYLXWGBRITIANIJNRDNGRCI",
+        "recipe": {
+          "a": 20,
+          "b": 22,
+          "initial_cipher_rune": 13,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-53",
+      "ciphertext_runes": "ᛇᚫᛠᚫᚣᚢᛗᛈᛉᛁᚢᚾᚩᛟᚾᚷᛞᚦᛡᚫᚹᛞᛟᛖᚱᛗᚾᛖᚻᚷᛒᚢᛄᚢᚦᛗᛖᛞᛝᛒᚷᚣᚱᛖᛁᚢᛄᚣᛡᛚᚢᛄᛟᛠᛉᚣᛇᚱᚩᛈᛋᚳᚫᛗᛇᚾᛄᛖᚠᛋᛖᚠᚪᛝᚢᛝᛄᛇᚷᚠᛝᚱᛁᚦᛄᚢᚫᚣᛋᚠᛖᚢᛋᚫᚣᛠᛁᛏᛟᚱᛏᛟᚩᚷᚾᚻᛞᛗᚩᚳᛞᛖᛏᚹᛉᛞᛚᚩᚫᛄᛇᚢᛒᛗᛏᛞᛗᛖᛏᛈᚹᛇᛋᚹᛒᛇᚦᚾᚻᚷᛄᚱᛡᛞᛡᚦᚪᛁᛇᚫᛉᛚᛇᛠᛡᚪᛄᚻᚱᚦᛈᛞᛄᛝᚩᚷᚠᛇᛗᚳᚻᛞᚩᛏᚳᚢᚱᛈᚾ",
+      "top_suffix": {
+        "score": -4.721563172829848,
+        "plaintext_runes": "ᛝᚱᛒᛖᚣᛋᚾᛖᚪᚢᛡᚾᚻᚠᛒᛟᛡᚪᛁᚷᚠᚩᚪᚹᚹᚻᛚᚻᛁᚷᛝᛈᚻᛖᛟᚩᛗᛁᚪᛋᚢᚳᛉᛞᚢᛈᚹᛖᛏᛈᛈᚷᛇᚹᛠᚹᛞᚩᛈᛄᚻᚢᚾᛏᛒᛄᚳᚷᚹᚱᚷᚦᛒᛚᚢᚻᛖᚾᚾᛞᛠᛇᛞᛚᚻᚦᛖᛋᛉᛋᛠᛉᛈᛖᛄᚷᛇᛇᚷᛠᛇᛈᚱᚱᚩᚹᚪᛝᛄᛋᚦᛁᚢᚳᛚᛒᛠᛏᚹᛖᛋᚠᛄᛒᚳᚪᚩᛁᛒᚾᛗᚱᛞᛈᚦᚻᚳᚩᛁᛗᛏᚾᚪᚣᚣᛏᚹᛄᛝᛋᛇᛞᚠᚩᛒᚠᛒᚪᛁᚷᛈᛟᛈᚷᚱᚾᛠᚳᚹᚱᚹᛚᛝᛋᚪᚱᛚᚪ",
+        "transliteration": "NGRBEYSNEAUIANHFBOEIAAIGFOAWWHLHIGNGPHEOEOMIASUCXDUPWETPPGEOWEAWDOPJHUNTBJCGWRGTHBLUHENNDEAEODLHTHESXSEAXPEJGEOEOGEAEOPRROWANGJSTHIUCLBEATWESFJBCAOIBNMRDPTHHCOIMTNAYYTWJNGSEODFOBFBAIGPOEPGRNEACWRWLNGSARLA",
+        "recipe": {
+          "a": 22,
+          "b": 25,
+          "initial_cipher_rune": 12,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-54",
+      "ciphertext_runes": "ᚪᛗᛝᛞᛡᚦᛉᛁᛗᛡᛞᛈᛝᚢᚹᚪᛗᛏᚪᛝᛝᚦᛡᚹᛋᚻᛁᚳᚫᛈᚫᚷᚩᛗᛁᚪᛖᚩᛏᚹᚩᚠᚣᚢᛏᛄᚦᛄᛠᛖᚳᚾᛠᚳᛠᛖᚱᚩᚢᛉᛞᚹᚻᛒᛝᚠᚪᚳᛄᚢᚩᛄᛡᛠᛁᛚᚷᚻᛒᚢᛄᛉᚪᚳᚹᛡᛗᚩᛈᚣᛞᛡᛚᛈᛇᛁᚦᚱᚣᚷᛗᛉᛟᚷᛋᛗᛈᛄᛟᛞᛟᛏᛡᛟᛏᛝᛁᛗᛝᚣᚪᚫᛝᚱᚣᛄᚾᛚᚢᛉᛒᚻᛈᛄᚩᛠᚷᚫᚹᛉᛋᛞᚳᚢᛏᛟᚻᛇᚾᛈᛏᛠᚣᛒᚢᚷᚷᚪᛇᚾᚷᚩᛖᛚᛗᛒᚦᚣᛡᛟᛇᚣᛗᚳᛟᚦᛖᛚᚱᛇᛈᚱᛞᚣᛉᛞᛝᚣᛈᛋᛖᛉᚹᚳᚷᚠᛞᚱᛖᛞᛖᚹᚩᛇᛟᚻᚩᛟᛒᛋᚻᛠᚪᚳᛁᛗᛉᛄᛗᛖᛗᛚᚷᚩᛏᚦᛉᛖᛠᚱᚷᚣ",
+      "top_suffix": {
+        "score": -4.6457867430675766,
+        "plaintext_runes": "ᚹᛞᛞᛄᛄᛝᚢᛁᛏᚢᚻᛏᛁᛠᛚᚹᚪᛏᚪᚷᚱᚢᛁᛏᛗᛞᚹᚦᛚᛝᚱᚪᚣᚦᚾᛈᚾᛋᚦᚢᚪᚪᛄᚩᚹᚦᛁᛚᚻᚣᛄᚻᛠᛈᚻᚩᛇᛖᛋᛁᛋᚠᛁᛄᛏᚹᚱᛠᚻᛞᛏᚣᚠᛡᚱᚩᛞᛁᛋᚱᛒᚱᚱᛞᚦᚫᛋᚱᛋᚪᛄᛗᛗᛇᛖᚫᛞᛗᛁᛋᚹᛏᛋᛁᛄᛈᛖᛡᚠᛇᛈᛡᚹᛈᚳᛉᛁᛞᚳᛖᚠᚢᛝᛗᚾᛖᛡᚱᛋᛒᚦᚳᛖᚫᚢᛟᚻᛡᛟᚠᛏᛡᚢᚩᛠᚩᛄᚪᛄᛒᛝᛖᚦᛋᚳᚷᛉᛚᚪᚪᚪᚩᛞᛇᛖᚾᚹᚠᚹᚻᚾᛗᚩᛚᛁᚣᛞᛋᛏᚠᚦᚻᛒᛚᛁᛖᚳᚣᛞᛒᚢᛗᛖᚠᛈᛈᚱᚾᚳᚹᛉᚢᛁᚱᚩᚹᚻᚹᛖᛗᚦᚢᚱᚳᛁᚹᚪᛏᛇᚠᚠᚩᚪᛋᚩᛝᛄᚱᚳᛞᚦ",
+        "transliteration": "WDDJJNGUITUHTIEALWATAGRUITMDWTHLNGRAYTHNPNSTHUAAJOWTHILHYJHEAPHOEOESISFIJTWREAHDTYFIARODISRBRRDTHAESRSAJMMEOEAEDMISWTSIJPEIAFEOPIAWPCXIDCEFUNGMNEIARSBTHCEAEUOEHIAOEFTIAUOEAOJAJBNGETHSCGXLAAAODEOENWFWHNMOLIYDSTFTHHBLIECYDBUMEFPPRNCWXUIROWHWEMTHURCIWATEOFFOASONGJRCDTH",
+        "recipe": {
+          "a": 23,
+          "b": 6,
+          "initial_cipher_rune": 24,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    },
+    {
+      "page": "LP2-55",
+      "ciphertext_runes": "ᛝᚫᛗᛁᚹᛋᛒᛉᛗᛋᛇᚷᛞᚦᚫᚠᛡᚪᛒᚳᚢᚹᚱᛒᛠᚠᛉᛁᛗᚢᚳᛈᚻᛝᛚᛇᛗᛋᛞᛡᛈᚠᛒᚻᛇᚳᛇᛖᛠᛖᛁᚷᛉᚷᛋᛖᛋᛇᚦᚦᛖᛋᚦᛟᚳᛠᛁᛗᚳᛉᛞᛄᚢᛒᛖᛁ",
+      "top_suffix": {
+        "score": -4.535957562082741,
+        "plaintext_runes": "ᚣᚦᛖᛋᚪᛡᛋᛄᚢᛋᚦᚳᚪᚦᚣᚠᛋᛒᚳᚢᚫᛋᚹᚻᛈᛝᚢᚾᚻᚣᚪᛏᚹᛉᚩᛁᚢᚪᚣᚷᛚᚳᛖᚣᛒᛁᚫᛞᚱᚩᚢᚪᚩᚾᛇᛋᛋᚱᛠᛚᛋᛚᛖᛟᚦᚻᚾᚷᚾᚾᚳᚱᛚᛈᚩ",
+        "transliteration": "YTHESAIASJUSTHCATHYFSBCUAESWHPNGUNHYATWXOIUAYGLCEYBIAEDROUAONEOSSREALSLEOETHHNGNNCRLPO",
+        "recipe": {
+          "a": 14,
+          "b": 28,
+          "initial_cipher_rune": 21,
+          "unrecovered_prefix_runes": 1
+        },
+        "reencryption_verified": true
+      }
+    }
+  ],
+  "observed_global_max": -4.390202371514675,
+  "null_calibration": {
+    "q_plugin": 0.0063802637175669925,
+    "global_p_plugin": 0.48,
+    "null_global_maxima": [
+      -4.101503881711241,
+      -4.2854547925246145,
+      -4.346733627009052,
+      -4.331034516856104,
+      -4.369264645382055,
+      -4.472815635696319,
+      -4.402362519534249,
+      -4.534531871289371,
+      -4.37839389753018,
+      -4.481537238246419,
+      -4.282580197392547,
+      -4.512203061322419,
+      -4.323577053856343,
+      -4.39004309888555,
+      -4.393490509950193,
+      -4.328494937245949,
+      -4.427016615020417,
+      -4.472564361275063,
+      -4.412070092345007,
+      -4.25503024042063,
+      -4.439364298356032,
+      -4.479980872147128,
+      -4.304340753523339,
+      -4.378431392117966,
+      -4.435043591441556,
+      -4.315104905814611,
+      -4.290104521303385,
+      -4.384715990694182,
+      -4.4902311765313225,
+      -4.359175557793509,
+      -4.434898414729794,
+      -4.427608831207828,
+      -4.233774938318989,
+      -4.394132580537963,
+      -4.312183674405043,
+      -4.348922182718565,
+      -4.512410190407161,
+      -4.446493365919217,
+      -4.387134612047585,
+      -4.348436006507455,
+      -4.440871545147549,
+      -4.490888991762329,
+      -4.397744967634755,
+      -4.2548078472307145,
+      -4.395606137756431,
+      -4.536079694922312,
+      -4.487673045713516,
+      -4.461006067060969,
+      -4.411821537107057,
+      -4.421690839200438,
+      -4.282500811473743,
+      -4.515740156075811,
+      -4.353944608448739,
+      -4.3062043666246055,
+      -4.549959664734058,
+      -4.346701481644616,
+      -4.340241407808425,
+      -4.458085571869495,
+      -4.336150122318743,
+      -4.0946852728922245,
+      -4.391218446128465,
+      -4.371758675061364,
+      -4.311958390209708,
+      -4.274141303207038,
+      -4.3664658007406025,
+      -4.434254931642142,
+      -4.460687395720867,
+      -4.45347451961338,
+      -4.4492674755345245,
+      -4.50638415454424,
+      -4.389777573282435,
+      -4.382000626348782,
+      -4.398279340262612,
+      -4.452592389169554,
+      -4.484894802053441,
+      -4.414496262706296,
+      -4.420098552454582,
+      -4.47849172125411,
+      -4.437249727232744,
+      -4.30272715137037,
+      -4.344252552893984,
+      -4.479297325861775,
+      -4.4434264564816965,
+      -4.322057435365614,
+      -4.280467511595104,
+      -4.448244556385889,
+      -4.403333130085747,
+      -4.484171830407453,
+      -4.525253440242258,
+      -4.322671064168738,
+      -4.506094435214444,
+      -4.45626032412301,
+      -4.470573097167832,
+      -4.332521471216609,
+      -4.342661091061641,
+      -4.393001126581721,
+      -4.474095261396772,
+      -4.272145778210163,
+      -4.481286148349297,
+      -4.295832303723822,
+      -4.327575183623284,
+      -4.35991591129503,
+      -4.493456303577767,
+      -4.4543210618590825,
+      -4.5368788415177335,
+      -4.565258773281998,
+      -4.408053271067772,
+      -4.372796050146994,
+      -4.411243742799084,
+      -4.3093191935185855,
+      -4.488308658743198,
+      -4.45778938980054,
+      -4.332318445095276,
+      -4.475110441367642,
+      -4.301055223173465,
+      -4.431806702919552,
+      -4.3375071676377965,
+      -4.423442920791106,
+      -4.467167159342219,
+      -4.25504148957293,
+      -4.48435994996277,
+      -4.2863496218208335,
+      -4.466888116735508,
+      -4.311518328211596,
+      -4.248642454423327,
+      -4.3871677981701716,
+      -4.325118656209128,
+      -4.474163624587805,
+      -4.430825082694086,
+      -4.430090277347704,
+      -4.511197342734353,
+      -4.48197717209749,
+      -4.466478297750996,
+      -4.3835669230074,
+      -4.285397547479854,
+      -4.400802649215172,
+      -4.467659947136909,
+      -4.412016100225804,
+      -4.266385334928232,
+      -4.319941279529281,
+      -4.511771417910194,
+      -4.341170001093413,
+      -4.352210468236916,
+      -4.49828259573181,
+      -4.333508460093841,
+      -4.168349976518251,
+      -4.461958515540649,
+      -4.466838605590048,
+      -4.362263186881,
+      -4.340070553391328,
+      -4.484018295743067,
+      -4.365011722401275,
+      -4.323226547125955,
+      -4.065862220129982,
+      -4.380281858779665,
+      -4.343838596703553,
+      -4.526180181396113,
+      -4.253710241930238,
+      -4.410692988488664,
+      -4.388411237762789,
+      -4.3680611713571,
+      -4.4285265433867504,
+      -4.315226578316352,
+      -4.231726893587138,
+      -4.431893042599781,
+      -4.3102014272698,
+      -4.327132727754748,
+      -4.397890922409419,
+      -4.355622951349034,
+      -4.259790857706228,
+      -4.436619244410277,
+      -4.354940215846127,
+      -4.430334962789775,
+      -4.463925586768163,
+      -4.398901802671915,
+      -4.362623273180954,
+      -4.31735484448208,
+      -4.474555126592769,
+      -4.472789623258533,
+      -4.512907820038348,
+      -4.257679085536311,
+      -4.5861058902970235,
+      -4.306214129369814,
+      -4.327379120632901,
+      -4.428450490303846,
+      -4.260748262553455,
+      -4.460974824386743,
+      -4.355056977994922,
+      -4.402417555170173,
+      -4.336556889648375,
+      -4.443395054188362,
+      -4.280108799017295,
+      -4.249363062155781,
+      -4.227011386397952,
+      -4.394667564431021,
+      -4.294086227011145,
+      -4.394952582783016,
+      -4.498467093647614,
+      -4.514301223941675
+    ],
+    "selection": "Each simulation maximizes over all55pages and812affine maps.",
+    "model": "Symmetric stationary Markov with fixed E002training split; uniform marginals; q uncertainty not propagated."
+  },
+  "positive_control": {
+    "fixture": "LP1-14_15_circumference",
+    "excluded_from_training": true,
+    "ciphertext_indices": [
+      17,
+      8,
+      21,
+      18,
+      9,
+      25,
+      8,
+      18,
+      23,
+      19,
+      10,
+      27,
+      28,
+      5,
+      11,
+      8,
+      24,
+      13,
+      14,
+      23,
+      14,
+      20,
+      5,
+      6,
+      11,
+      12,
+      10,
+      0,
+      17,
+      8,
+      3,
+      19,
+      20,
+      3,
+      21,
+      22,
+      17,
+      6,
+      7,
+      2,
+      26,
+      3,
+      21,
+      22,
+      3,
+      0,
+      24,
+      8,
+      9,
+      6,
+      8,
+      26,
+      27,
+      11,
+      6,
+      11,
+      24,
+      5,
+      14,
+      16,
+      17,
+      22,
+      23,
+      10,
+      23,
+      24,
+      3,
+      4,
+      10,
+      1,
+      25,
+      8,
+      8,
+      16,
+      17,
+      4,
+      24,
+      1,
+      14,
+      15,
+      27,
+      20,
+      27,
+      18,
+      24,
+      9,
+      19,
+      2,
+      3,
+      19,
+      4,
+      18,
+      15,
+      16,
+      14,
+      4,
+      21,
+      12,
+      7,
+      23,
+      23,
+      2,
+      22,
+      7,
+      25,
+      16,
+      1,
+      10,
+      4,
+      20,
+      5,
+      23,
+      24,
+      4,
+      24,
+      1,
+      15,
+      16,
+      21,
+      27,
+      18,
+      13,
+      25,
+      20,
+      5,
+      0,
+      6,
+      26,
+      7,
+      4,
+      28,
+      12,
+      13,
+      8,
+      24,
+      1,
+      25,
+      8,
+      9,
+      16,
+      13,
+      23,
+      28,
+      7,
+      1,
+      13,
+      8,
+      20,
+      17,
+      4,
+      18,
+      26,
+      17,
+      27,
+      28,
+      19,
+      0,
+      26,
+      21,
+      5,
+      6,
+      1,
+      17,
+      26,
+      4,
+      12,
+      6,
+      18,
+      7,
+      4,
+      14,
+      6,
+      14,
+      28,
+      17,
+      18,
+      24,
+      9,
+      19,
+      2,
+      3,
+      19,
+      4,
+      24,
+      11,
+      23,
+      2,
+      3,
+      8,
+      28,
+      23,
+      0,
+      1,
+      13,
+      21,
+      16,
+      22,
+      1,
+      21,
+      8,
+      20,
+      5,
+      2,
+      16,
+      17,
+      5,
+      22,
+      11,
+      12,
+      21,
+      12,
+      18,
+      3,
+      4,
+      9,
+      27,
+      28,
+      8,
+      28,
+      5,
+      19,
+      20,
+      25,
+      2,
+      16,
+      13,
+      3,
+      22,
+      23,
+      6,
+      24,
+      25,
+      2,
+      16,
+      26,
+      9,
+      10,
+      26,
+      11,
+      2,
+      18,
+      1,
+      7,
+      27,
+      22,
+      5,
+      23,
+      24,
+      5,
+      2,
+      26,
+      10,
+      11,
+      0,
+      20,
+      5,
+      8,
+      18,
+      24,
+      9,
+      15,
+      6,
+      1,
+      13,
+      20,
+      17,
+      27,
+      6,
+      26,
+      7,
+      8,
+      24,
+      21,
+      2,
+      28,
+      23,
+      7,
+      8,
+      3,
+      19,
+      26,
+      23,
+      4,
+      9,
+      17,
+      11,
+      23,
+      18,
+      24,
+      13,
+      14,
+      9,
+      0,
+      16,
+      28,
+      17,
+      18,
+      24,
+      9,
+      19,
+      2,
+      3,
+      19,
+      4,
+      10,
+      10,
+      11,
+      16,
+      17,
+      18,
+      5,
+      22,
+      17,
+      9,
+      17,
+      2,
+      3,
+      19,
+      20,
+      3
+    ],
+    "injected_a": 11,
+    "injected_b": 7,
+    "injected_initial_cipher": 17,
+    "exact_top_one": true,
+    "result": {
+      "score": -2.875355269704115,
+      "plaintext_runes": "ᚪᚳᚩᚪᚾᛞᚢᚱᛝᚪᛚᛖᛋᛋᚩᚾᚦᛖᛗᚪᛋᛏᛖᚱᛖᛉᛈᛚᚪᛁᚾᛖᛞᚦᛖᛁᚦᛖᛁᛁᛋᚦᛖᚢᚩᛁᚳᛖᚩᚠᚦᛖᚳᛁᚱᚳᚢᛗᚠᛖᚱᛖᚾᚳᛖᚻᛖᛋᚪᛁᛞᚹᚻᛖᚾᚪᛋᚳᛖᛞᛒᚣᚪᛋᛏᚢᛞᛖᚾᛏᛏᚩᛖᛉᛈᛚᚪᛁᚾᚹᚻᚪᛏᚦᚪᛏᛗᛠᚾᛏᚦᛖᛗᚪᛋᛏᛖᚱᛋᚪᛁᛞᛁᛏᛁᛋᚪᚢᚩᛁᚳᛖᛁᚾᛋᛁᛞᛖᚣᚩᚢᚱᚻᛠᛞᛁᛞᚩᚾᛏᚻᚪᚢᛖᚪᚢᚩᛁᚳᛖᛁᚾᛗᚣᚻᛠᛞᚦᚩᚢᚷᚻᛏᚦᛖᛋᛏᚢᛞᛖᚾᛏᚪᚾᛞᚻᛖᚱᚪᛁᛋᛖᛞᚻᛁᛋᚻᚪᚾᛞᛏᚩᛏᛖᛚᛚᚦᛖᛗᚪᛋᛏᛖᚱᚦᛖᛗᚪᛋᛏᛖᚱᛋᛏᚩᛈᛈᛖᛞᚦᛖᛋᛏᚢᛞᛖᚾᛏᚪᚾᛞᛋᚪᛁᛞᚦᛖᚢᚩᛁᚳᛖᚦᚪᛏᛄᚢᛋᛏᛋᚪᛁᛞᚣᚩᚢᚻᚪᚢᛖᚾᚩᚢᚩᛁᚳᛖᛁᚾᚣᚩᚢᚱᚻᛠᛞᛁᛋᚦᛖᛁᚪᚾᛞᚦᛖᛋᛏᚢᛞᛖᚾᛏᛋᚹᛖᚱᛖᛖᚾᛚᛁᚷᚻᛏᛖᚾᛖᛞ",
+      "transliteration": "ACOANDURNGALESSONTHEMASTEREXPLAINEDTHEITHEIISTHEUOICEOFTHECIRCUMFERENCEHESAIDWHENASCEDBYASTUDENTTOEXPLAINWHATTHATMEANTTHEMASTERSAIDITISAUOICEINSIDEYOURHEADIDONTHAUEAUOICEINMYHEADTHOUGHTTHESTUDENTANDHERAISEDHISHANDTOTELLTHEMASTERTHEMASTERSTOPPEDTHESTUDENTANDSAIDTHEUOICETHATJUSTSAIDYOUHAUENOUOICEINYOURHEADISTHEIANDTHESTUDENTSWEREENLIGHTENED",
+      "recipe": {
+        "a": 11,
+        "b": 7,
+        "initial_cipher_rune": 17,
+        "unrecovered_prefix_runes": 1
+      },
+      "reencryption_verified": true
+    }
+  },
+  "limits": [
+    "This is first-order modular difference plus affine substitution only; no arbitrary substitution or higher-order feedback.",
+    "The first source cipher rune serves as IV; no original plaintext rune is claimed for that position.",
+    "Prior E010covered only two difference slopes and no additive shift; this extends that family, not an independent replication.",
+    "Reused corpus and fitted null; exploratory model diagnostic, not exact permutation inference."
+  ],
+  "numpy": "2.3.5",
+  "wall_seconds": 27.57937900000252,
+  "new_decryptions": []
+}

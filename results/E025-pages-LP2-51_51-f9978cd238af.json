@@ -1,0 +1,81 @@
+{
+  "experiment": "E025-periodic-feedback",
+  "status": "completed",
+  "parameters": {
+    "mode": "pages",
+    "first": 51,
+    "last": 51,
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "pages": [
+    {
+      "page": "LP2-51",
+      "ciphertext_runes": "ᚹᚹᛈᚠᛡᛚᛉᛒᚾᚳᛗᚾᚱᛗᚻᚦᚫᛞᛄᛒᛡᚫᛇᚹᛗᚢᚪᛈᛡᛈᛁᛄᚪᚢᚾᛠᛖᛞᛗᚪᛏᛟᛗᛋᛞᛝᚷᛚᛋᛞᛝᛟᛋᛄᛞᛚᛟᚠᛄᚫᚠᚪᛝᛟᚣᛈᚣᚩᛒᚷᚳᛖᛏᚹᚪᛋᛒᛗᛠᚣᛇᛗᚫᛚᚱᚹᛇᛄᛒᛈᛚᚠ",
+      "top": [
+        {
+          "score": -5.360102426200998,
+          "plaintext_runes": "ᚻᚪᛝᛄᛈᛏᛝᚢᛖᛖᚹᛈᛒᛖᛁᛞᛝᛄᛄᛇᚷᚳᚣᚻᚢᚳᚪᛏᛖᛋᚪᚢᛉᚩᛏᛞᛇᛄᚣᚦᚣᛞᚢᛁᛈᚷᛚᛡᚳᚻᛒᚱᚠᚦᛝᚢᛏᛝᛟᛚᛡᛒᛋᛗᛝᛚᚦᛖᚣᚾᛝᛁᚻᚣᚣᛋᚻᚦᛇᚾᚹᛝᛏᛞᚩᚾᛝᛚᛗᛇᛁᛚ",
+          "transliteration": "HANGJPTNGUEEWPBEIDNGJJEOGCYHUCATESAUXOTDEOJYTHYDUIPGLIACHBRFTHNGUTNGOELIABSMNGLTHEYNNGIHYYSHTHEONWNGTDONNGLMEOIL",
+          "recipe": {
+            "delay": 2,
+            "a": 11,
+            "b": 21,
+            "initial_key": [
+              5,
+              3
+            ],
+            "initial_plaintext": [
+              8,
+              24
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.439473600371547,
+          "plaintext_runes": "ᛚᚦᛖᚢᛁᚳᛡᛞᚾᚾᚪᚠᛁᚳᚢᛏᛒᛄᚩᚣᛒᛋᛒᚱᛠᛏᚦᛏᚦᛏᚫᛒᛋᚻᚩᛗᚹᛡᛞᛏᛖᚣᛉᛚᛁᛉᚦᚣᚻᛏᚻᚣᛄᛟᛞᚢᛋᛋᚦᚪᚢᚠᛗᛖᛄᛒᚹᚹᚪᛋᚪᛈᚱᚩᛗᛞᚢᚦᚢᛒᚾᛠᛝᚱᛞᛈᛚᚢᛏᛞᛡᚣ",
+          "transliteration": "LTHEUICIADNNAFICUTBJOYBSBREATTHTTHTAEBSHOMWIADTEYXLIXTHYHTHYJOEDUSSTHAUFMEJBWWASAPROMDUTHUBNEANGRDPLUTDIAY",
+          "recipe": {
+            "delay": 2,
+            "a": 14,
+            "b": 15,
+            "initial_key": [
+              18,
+              11
+            ],
+            "initial_plaintext": [
+              20,
+              2
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.485305563090502,
+          "plaintext_runes": "ᚱᚪᚳᛈᛞᛖᛈᚢᛈᚷᚹᚻᛚᛚᚹᛠᛗᛇᚦᚳᚫᚢᚾᛠᚠᚦᚩᛏᚳᚣᛁᚹᚷᛏᚻᛒᚾᚠᚠᚩᚦᚻᚪᚳᚳᛋᚪᚹᚱᚣᚷᛇᛏᚣᛚᛗᛏᚣᚱᛏᚹᚦᚱᛠᚩᛖᛞᛝᛒᛞᚳᛠᛖᛁᛚᛞᛗᛁᛋᛠᚷᚣᛁᛗᛖᛏᚱᚱᛚᚳᛞᛏ",
+          "transliteration": "RACPDEPUPGWHLLWEAMEOTHCAEUNEAFTHOTCYIWGTHBNFFOTHHACCSAWRYGEOTYLMTYRTWTHREAOEDNGBDCEAEILDMISEAGYIMETRRLCDT",
+          "recipe": {
+            "delay": 2,
+            "a": 11,
+            "b": 9,
+            "initial_key": [
+              8,
+              7
+            ],
+            "initial_plaintext": [
+              4,
+              24
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "recipes": 655980
+    }
+  ],
+  "wall_seconds": 2.53142100002151
+}

@@ -1,0 +1,145 @@
+{
+  "experiment": "E028-boundary-selective",
+  "status": "completed",
+  "parameters": {
+    "mode": "page",
+    "page": "LP2-40",
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "page": "LP2-40",
+  "ciphertext_runes": "ᚠᚾᛗᚣᚷᛞᚫᚻᚪᛈᛉᚣᚻᛇᛠᚩᛖᛏᛝᛠᛚᛁᛏᚦᚠᛗᚪᚳᛖᛞᚳᛏᚱᛟᚷᛠᚾᚫᛒᚢᛖᛒᚢᚦᚠᛟᚷᛋᛟᛁᛈᛟᛉᛋᛒᚹᛄᛒᚣᛗᚢᛠᚱᛁᚢᛟᛄᛁᛗᛖᚫᚱᛋᛉᛝᛠᛈᛚᛞᚩᛚᛁᛉᛠᛝᛖᚱᚾᛈᛖᚹᛡᚾᛄᛏᚣᛋᚩᛋᛏᛝᚢᚾᛇᚪᛖᛏᚪᛄᚳᚣᛟᛒᛚᛋᛒᛞᛄᛁᛝᚣᛖᚳᛄᚻᛚᚣᚷᚫᛚᛞᛚᚫᛚᚦᛉᛚᛖᛉᚩᛉᛁᚳᚢᛗᚾᚢᚩᚾᛇᚻᛡᛚᛇᚩᚫᚪᚩᛟᚩᚣᚱᛖᚠᚢᛁᚻᛟᛚᚾᛏᚠᛞᚱᛠᚷᛈᚩᛇᚩᛗᛠᛒᛄᛡᛋᛗᚠᛏᚠᚫᚩᛟᚳᛚᛞᛡᛚᚩᚳᛝᚢᛈᚹᛏᚷᚳᛋᚢᛟᚷᚦᚠᛉᚠᛏᚳᛋᛉᛟᚷᚠᛉᚾᛞᛒᛏᛠᛡᛈᛡ",
+  "segment_ends": [
+    3,
+    8,
+    13,
+    17,
+    20,
+    25,
+    29,
+    31,
+    43,
+    46,
+    49,
+    51,
+    55,
+    62,
+    68,
+    71,
+    75,
+    78,
+    87,
+    92,
+    96,
+    101,
+    105,
+    111,
+    113,
+    115,
+    118,
+    123,
+    127,
+    131,
+    136,
+    137,
+    147,
+    150,
+    157,
+    160,
+    162,
+    165,
+    167,
+    171,
+    176,
+    183,
+    185,
+    188,
+    192,
+    198,
+    202,
+    205,
+    208,
+    212,
+    216,
+    220,
+    225,
+    229,
+    231
+  ],
+  "top": [
+    {
+      "score": -6.4181135311184185,
+      "plaintext_runes": "ᚠᛉᚱᚷᚻᛡᛋᛗᛋᚢᛚᛈᚱᚠᛝᚫᛈᚻᛄᛁᚣᚦᛈᚠᚠᛒᛠᛡᛖᚪᚾᚷᛁᚹᛁᚠᚻᛡᚩᚷᛁᚦᛒᚻᚠᛄᛋᚪᛗᚩᛋᛒᚹᚦᚢᚢᛒᚩᛇᚷᛁᚳᛞᛒᛖᛒᚢᚱᚱᚪᛒᚩᚻᚩᚷᛖᛟᚪᛗᚣᚳᚷᛋᚩᛒᛖᛖᛗᛈᚠᛏᚱᛋᛗᛁᛉᛗᚣᚻᚠᚫᛚᛟᚢᚾᚷᚣᚹᛞᚠᛞᚷᚣᛉᚠᛖᛏᛏᚦᛞᛈᚫᛗᛚᛚᛗᛒᚩᚣᚷᛏᚣᚳᛁᚹᚷᛋᛒᛖᛄᛞᛝᚢᛗᛖᛄᛡᚩᚻᛖᛄᚢᛈᚩᚻᛟᛞᛄᚦᛗᚢᚳᛟᛚᛁᚩᛗᛝᚦᚷᚱᚠᛈᛏᚻᛟᛄᚪᛚᛚᚩᛉᚩᚱᚾᚳᚩᚠᚻᚩᚳᛚᚱᚣᚩᚱᛗᚪᚣᚹᛗᛠᚾᚹᛚᛗᛚᛗᚢᛇᚻᛚᚱᚪᚾᛁᛄᚩᛈᛚᛁᛖᛏᛒᛟᛁᛚᛞᛈᛁᚻ",
+      "transliteration": "FXRGHIASMSULPRFNGAEPHJIYTHPFFBEAIAEANGIWIFHIAOGITHBHFJSAMOSBWTHUUBOEOGICDBEBURRABOHOGEOEAMYCGSOBEEMPFTRSMIXMYHFAELOEUNGYWDFDGYXFETTTHDPAEMLLMBOYGTYCIWGSBEJDNGUMEJIAOHEJUPOHOEDJTHMUCOELIOMNGTHGRFPTHOEJALLOXORNCOFHOCLRYORMAYWMEANWLMLMUEOHLRANIJOPLIETBOEILDPIH",
+      "recipe": {
+        "family": "integer_totient",
+        "cipher_sign": 1,
+        "key_sign": 1,
+        "start": 150,
+        "skip_positions": [
+          0,
+          24,
+          44,
+          171,
+          187
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 67491,
+      "max_states": 1038
+    },
+    {
+      "score": -6.431679765469108,
+      "plaintext_runes": "ᚾᚦᚪᚩᚩᛒᛖᛝᛉᛡᚠᚩᚢᛠᛋᚣᛚᚪᛟᚢᛖᚢᛡᛡᚾᛝᛗᚪᛚᛒᚾᛈᚳᛖᚻᚢᚠᛋᚣᛠᛚᛞᛈᛡᚠᛏᚳᛠᚹᛠᛡᛝᛋᛞᛞᚹᛖᛝᛉᚪᛠᛁᚹᚱᛠᛏᚠᚱᛁᛚᛋᛁᛉᚪᛗᛋᛏᛖᛒᛄᚾᛠᚣᛋᚻᛚᚹᚳᛏᛚᚱᛏᛚᛡᚪᛒᛉᚷᚫᛡᚻᚻᚦᚦᚳᛚᚪᛗᛖᚱᛉᛝᛇᛖᚫᚣᚷᛡᚢᛟᚩᛚᚷᚩᛝᛖᛉᚻᚱᛖᛒᛞᚱᛖᚾᚠᚾᛚᚣᛄᛋᛠᚷᛈᛁᚠᛁᛄᛚᚣᚩᛏᚾᚣᚻᛖᚳᚷᛖᛄᚩᚳᛟᛉᛠᛠᚩᛝᚾᚠᚪᚠᛚᚫᛁᚳᚢᚣᚣᚻᚪᚢᛝᚠᛏᛉᛗᚠᚪᛉᚱᚷᛖᚾᚾᛋᛈᛞᚣᚱᛗᛈᛏᚦᚪᚻᚪᛞᛁᛝᛞᚹᚠᚣᚠᛡᚪᛞᚣᛝᛞᚾᚣᚳᚷᛝᚪᛋᚦᚫᛈ",
+      "transliteration": "NTHAOOBENGXIAFOUEASYLAOEUEUIAIANNGMALBNPCEHUFSYEALDPIAFTCEAWEAIANGSDDWENGXAEAIWREATFRILSIXAMSTEBJNEAYSHLWCTLRTLIAABXGAEIAHHTHTHCLAMERXNGEOEAEYGIAUOEOLGONGEXHREBDRENFNLYJSEAGPIFIJLYOTNYHECGEJOCOEXEAEAONGNFAFLAEICUYYHAUNGFTXMFAXRGENNSPDYRMPTTHAHADINGDWFYFIAADYNGDNYCGNGASTHAEP",
+      "recipe": {
+        "family": "vigenere",
+        "cipher_sign": -1,
+        "key_sign": -1,
+        "key_indices": [
+          0,
+          20,
+          18,
+          15
+        ],
+        "start": 1,
+        "skip_positions": [
+          44,
+          171,
+          187,
+          212,
+          214
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 1029,
+      "max_states": 14
+    },
+    {
+      "score": -6.433406347452704,
+      "plaintext_runes": "ᛏᚣᚱᛒᚻᛗᚪᛋᛋᚾᛡᚻᚦᛞᛏᛚᛗᛉᛋᛇᚪᚠᚱᛞᚠᛉᛄᛁᛋᚳᛚᛒᚫᛟᛈᚢᚾᚪᚷᛟᚩᛖᛄᛞᚠᛈᚢᚢᚩᚠᚩᛖᚢᚣᚦᛁᚷᛒᚷᚣᛗᚹᛄᛖᚷᚦᚣᛒᛞᚱᛗᛏᚦᛏᛒᚱᛋᛞᛈᛚᚠᚠᛁᚾᛈᛇᛝᛇᚹᚠᚣᛈᛝᛏᛏᚩᛋᛚᛄᛁᛋᚻᛋᛚᚷᚩᚱᛖᛉᛞᛠᛏᚩᛏᚩᛈᚪᛝᚦᛖᛚᚦᚻᛚᚠᚢᛋᛁᛖᛞᛈᛡᛉᚫᚷᛇᚠᛞᚱᚳᚩᚾᚩᚪᛏᛖᚢᛠᚪᛒᛒᛖᛞᛈᚣᛉᚩᚻᚩᛏᛞᚦᚳᚠᛄᛚᛞᚩᛚᛖᚳᚠᚹᚩᚣᛠᚢᚠᚹᚾᛖᚠᛈᛡᛋᚾᛡᚠᚳᚠᛋᚷᛖᛈᚠᚦᚻᛁᚱᚦᚱᚾᛝᚾᛡᚠᚻᚦᚦᛞᚠᛋᚠᚩᚠᛄᚾᚩᛉᚹᚹᛚᚣᚳᚠᚠᚱᛏᚪᚢᚣ",
+      "transliteration": "TYRBHMASSNIAHTHDTLMXSEOAFRDFXJISCLBAEOEPUNAGOEOEJDFPUUOFOEUYTHIGBGYMWJEGTHYBDRMTTHTBRSDPLFFINPEONGEOWFYPNGTTOSLJISHSLGOREXDEATOTOPANGTHELTHHLFUSIEDPIAXAEGEOFDRCONOATEUEAABBEDPYXOHOTDTHCFJLDOLECFWOYEAUFWNEFPIASNIAFCFSGEPFTHHIRTHRNNGNIAFHTHTHDFSFOFJNOXWWLYCFFRTAUY",
+      "recipe": {
+        "family": "integer_totient",
+        "cipher_sign": -1,
+        "key_sign": -1,
+        "start": 201,
+        "skip_positions": [
+          24,
+          44,
+          163,
+          171,
+          187,
+          189,
+          212,
+          214
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 67491,
+      "max_states": 1038
+    }
+  ],
+  "key_sign_tasks": 1536,
+  "wall_seconds": 9.55865459999768
+}

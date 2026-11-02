@@ -1,0 +1,39 @@
+{
+  "registered_at": "2026-10-18T20:08:04.177865+00:00",
+  "experiment": "E010",
+  "hypothesis": "Ciphertext feedback autokey seed lengths1..64 can expose a readable suffix without knowing the seed.",
+  "parameters": {
+    "periods": [
+      1,
+      64
+    ],
+    "minimum_suffix_runes": 60,
+    "signs": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "interruptions": "none",
+    "replicates": 999,
+    "seed": 3301010,
+    "timeout_seconds": 180,
+    "batch": 128
+  },
+  "null": "E002 stationary symmetric Markov model, q fitted with original page%4!=0 rule; approximate plugin diagnostic.",
+  "selection": "Maximize null scores over same55pages,allperiods,allsigns; extra Bonferroni3 with two E009 page diagnostics.",
+  "positive_control": "Reencrypt LP1DIVINITY with ciphertext autokey seed8, exclude that section from model; require exact winning suffix.",
+  "claims": "Exploratory suffix search. No success without full rule and independent source validation."
+}

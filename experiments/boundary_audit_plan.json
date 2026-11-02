@@ -1,0 +1,12 @@
+{
+  "experiment":"E026-boundary-audit",
+  "hypothesis":"H026",
+  "scope":"All75 canonical pages and corresponding pinned iddqd master sections where present. Compare rune-index boundary positions, not just rune strings.",
+  "rules":"Explicit punctuation separates lexical segments; line slashes and whitespace do not. Page joins introduce no inferred word boundary. Non-rune content remains recorded and separates surrounding rune segments. Apostrophes split lexical segments to match the unchanged external corpus tokenizer; this is not a claim that an apostrophe is a printed word separator.",
+  "source_policy":"Preserve exact raw text, character offsets and explicit rune-alias records. No changed canonical data. Unknown unlisted punctuation is an error.",
+  "gate":"A page with competing rune or internal boundary positions is flagged, not silently merged. Only source-agreeing layouts eligible for an initial boundary-scored attack.",
+  "null_model":"Not applicable: deterministic source audit, no significance or decryption claim.",
+  "seed":null,
+  "seconds":30,
+  "workers":1
+}

@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-10-19T22:49:29.345701+00:00",
+  "pages_audited": 75,
+  "source_agreeing_unknown_boundaries": 54,
+  "image_supported_boundary_exception": "LP2-35 rune offset80",
+  "word_strict_wins": 1582,
+  "baseline_strict_wins": 1568,
+  "comparisons": 1600,
+  "known_key_controls": 3,
+  "full_union_controls": 4,
+  "unknown_pages": 55,
+  "selected_page": "LP2-55",
+  "top": {
+    "score": -5.6969447963397855,
+    "plaintext_runes": "ᛁᚷᚾᛞᛁᚢᚷᚪᚾᛠᛋᛝᛇᛇᛋᛈᚢᛁᚷᛋᛚᛚᚹᚩᛒᚠᚪᚠᚩᚱᛚᚦᛖᛄᚱᛋᚳᚱᚱᛒᚣᚠᛚᛞᚢᛋᚦᚦᚦᚱᛠᛏᚱᛗᛖᚱᚱᛟᛝᛋᛝᚢᛚᚩᚪᛇᛈᚳᛞᚪᛈᚪᚱᚩᚹᛚ",
+    "transliteration": "IGNDIUGANEASNGEOEOSPUIGSLLWOBFAFORLTHEJRSCRRBYFLDUSTHTHTHREATRMERROENGSNGULOAEOPCDAPAROWL",
+    "recipe": {
+      "family": "vigenere",
+      "cipher_sign": 1,
+      "key_sign": 1,
+      "key_indices": [
+        3,
+        15,
+        18,
+        10,
+        19,
+        13
+      ],
+      "start": 2,
+      "skip_positions": [
+        25,
+        41
+      ]
+    },
+    "replay_verified": true,
+    "transitions": 564,
+    "max_states": 12
+  },
+  "segmented_transliteration": "I GNDI UG AN EASNGEOEOS PUIGSL LW OBFAFORLTHEJRS CRRBYF LDUS THTH THREATRME RROENGSNGU LO AEOPCDA PAR OWL",
+  "raw_p": 0.2,
+  "page_adjusted_p": 1,
+  "null_exceedances": 3,
+  "null_replicates": 19,
+  "pending_larger_calibration": false,
+  "candidate_records_recomputed": 180,
+  "tests_passed": 77,
+  "new_completed_processes": 78,
+  "seconds": 674.7702466000046,
+  "attack_seconds": 672.9997196000186,
+  "attack_orchestration_seconds": 660.7959397999803,
+  "phase_budget_seconds": 900,
+  "new_decryptions": [],
+  "community_claim_triage": {
+    "matching_prior_byte_digest": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+    "arithmetic_facts_reproduced": 2,
+    "new_decryptions_confirmed": 0,
+    "alternate_binary_provenance": "unverified"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "experiment": "E029-community-claim-triage",
+  "status": "completed",
+  "project_url": "https://21skibidiserb37.gitlab.io/xyzsolving333/",
+  "post_url": "https://www.reddit.com/r/mystery/comments/1x0432x/proof_5_new_liber_primus_pages_solved/",
+  "published_digest_matches_E023": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+  "alternate_claimed_authoritative_digest": "8db2a93497bc02bbf0ab07ac3cf96edd227fec630232c04ea35493d3a7d7b65e",
+  "digest_interpretation": "E023 reproduces a byte sequence already reported by this source; no novelty claim. Alternate digest provenance has not been established.",
+  "order_11_mod29": 28,
+  "powers_11_mod29": [
+    11,
+    5,
+    26,
+    25,
+    14,
+    9,
+    12,
+    16,
+    2,
+    22,
+    10,
+    23,
+    21,
+    28,
+    18,
+    24,
+    3,
+    4,
+    15,
+    20,
+    17,
+    13,
+    27,
+    7,
+    19,
+    6,
+    8,
+    1
+  ],
+  "pisano_29": 14,
+  "fibonacci_states_until_return": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      13,
+      21
+    ],
+    [
+      21,
+      5
+    ],
+    [
+      5,
+      26
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      2,
+      28
+    ],
+    [
+      28,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "mathematical_limit": "These two arithmetic facts alone do not imply a particular cipher or yield unknown plaintext.",
+  "known_solution_classification": "LP2-56 and LP2-57 are existing source-anchored controls, not previously unknown solutions.",
+  "unverified": [
+    "Historical provenance of claimed sexagesimal.bin",
+    "RSA identification from256-byte length",
+    "Any new plaintext arising from claimed matrix inversion",
+    "Entire project correctness outside the scoped checks"
+  ],
+  "remote_code_executed": false,
+  "wall_seconds": 0.026913699985016137,
+  "new_decryptions": []
+}

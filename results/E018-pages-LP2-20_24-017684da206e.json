@@ -1,0 +1,597 @@
+{
+  "experiment": "E018-external-selective-pages",
+  "status": "completed",
+  "source": {
+    "source_sha256": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278",
+    "excluded_chapter": "II.Self-Reliance",
+    "sections": [
+      {
+        "roman": "I",
+        "title": "HISTORY",
+        "source_character_range": [
+          1204,
+          48452
+        ],
+        "runes": 34859
+      },
+      {
+        "roman": "III",
+        "title": "COMPENSATION",
+        "source_character_range": [
+          105038,
+          148548
+        ],
+        "runes": 31693
+      },
+      {
+        "roman": "IV",
+        "title": "SPIRITUAL LAWS",
+        "source_character_range": [
+          148568,
+          192880
+        ],
+        "runes": 32454
+      },
+      {
+        "roman": "V",
+        "title": "LOVE",
+        "source_character_range": [
+          192889,
+          218073
+        ],
+        "runes": 18408
+      },
+      {
+        "roman": "VI",
+        "title": "FRIENDSHIP",
+        "source_character_range": [
+          218089,
+          251419
+        ],
+        "runes": 24523
+      },
+      {
+        "roman": "VII",
+        "title": "PRUDENCE",
+        "source_character_range": [
+          251434,
+          276868
+        ],
+        "runes": 18721
+      },
+      {
+        "roman": "VIII",
+        "title": "HEROISM",
+        "source_character_range": [
+          276883,
+          301411
+        ],
+        "runes": 17965
+      },
+      {
+        "roman": "IX",
+        "title": "THE OVER-SOUL",
+        "source_character_range": [
+          301430,
+          340292
+        ],
+        "runes": 28407
+      },
+      {
+        "roman": "X",
+        "title": "CIRCLES",
+        "source_character_range": [
+          340304,
+          367105
+        ],
+        "runes": 19707
+      },
+      {
+        "roman": "XI",
+        "title": "INTELLECT",
+        "source_character_range": [
+          367120,
+          395164
+        ],
+        "runes": 20713
+      },
+      {
+        "roman": "XII",
+        "title": "ART",
+        "source_character_range": [
+          395174,
+          419196
+        ],
+        "runes": 17679
+      }
+    ],
+    "paragraphs": 393,
+    "runes": 265129,
+    "word_tokens": 64574,
+    "distinct_rune_words": 8182,
+    "non_ascii_letters": {
+      "æ": 9,
+      "Æ": 4,
+      "œ": 1,
+      "Ἀ": 1,
+      "ε": 2,
+      "ὶ": 1,
+      "γ": 1,
+      "ὰ": 1,
+      "ρ": 1,
+      "ὖ": 1,
+      "π": 2,
+      "ί": 1,
+      "τ": 1,
+      "ο": 3,
+      "υ": 1,
+      "σ": 1,
+      "ι": 3,
+      "ν": 1,
+      "ἱ": 1,
+      "Δ": 1,
+      "ὸ": 1,
+      "ς": 1,
+      "κ": 1,
+      "ύ": 1,
+      "β": 1,
+      "é": 2,
+      "ë": 1
+    },
+    "normalization": "Explicit ae/oe ligature expansion; NFKD and combining-mark removal; ASCII words; QU->CW, remainingQ->C; greedyGP within words; no ngrams across paragraphs.",
+    "training_data": "No Liber Primus plaintext or ciphertext, and no Self-Reliance text is used."
+  },
+  "parameters": {
+    "mode": "pages",
+    "first": 20,
+    "last": 24,
+    "seconds": 180.0,
+    "replicates": 19,
+    "seed": 3301018,
+    "key_cycles": 381,
+    "number_streams": 3,
+    "number_stream_offsets": [
+      0,
+      255
+    ],
+    "signs": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "F_masks": "all subsets via exactDP",
+    "language_order": 4,
+    "alpha": 0.5,
+    "strength": 5.0
+  },
+  "new_decryptions": [],
+  "pages": [
+    {
+      "page": "LP2-20",
+      "ciphertext_runes": "ᛈᛄᚢᛒᚷᛁᛇᛈᛉᚣᛈᛟᚦᛞᚱᛠᚪᛡᛝᛡᛒᛚᚻᚦᚫᛉᛟᚫᚪᛇᛉᚳᛠᚠᚫᚢᚣᚦᛋᚠᛝᚠᚱᚹᛟᛒᛗᚷᛞᚾᛡᛞᚪᚻᚣᛇᚱᛚᛖᚣᛇᚻᛠᚩᚢᚳᚱᚻᛡᛟᛗᛠᛝᛄᚦᛄᚢᛁᛇᛄᛁᛖᚷᛁᚪᛇᛏᛝᛡᚳᛚᛇᚠᛗᚪᚷᛚᛒᛋᛉᛞᚫᛟᛋᛚᚹᛏᛠᛗᛚᚦᛗᛝᚦᚣᛈᚠᚪᛞᛚᚪᛖᛚᚩᚱᚷᛚᚳᛇᛏᚷᚣᛟᛗᚪᛁᚷᛄᛒᛡᛗᛞᛈᚪᚳᛠᚷᛋᛏᛈᚩᛋᛏᛗᚱᚣᛋᛉᛁᛄᛚᛝᛚᛁᛉᚢᛠᛗᛇᚢᛋᚻᚳᛉᛄᚩᚠᛄᚠᛁᚣᛁᛟᛏᚷᚱᚦᛡᛒᛋᚳᛇᚢᚷᛚᚱᛁᛗᚱᛗᛝᚻᛈᚫᛝᛋᚫᛖᛈᛁᛒᛇᚹᚫᚢᛄᚳᛒᚦᛋᚹᚦᚫᛡᛟᚷᛚᛞᛚᚢᛟᛡᚱᛞᚱᛒᛄᚳᚢᛠᚩᛉᛉᛝᛡᛄᛁᚫᛟᛖᛗᚹᛖᛉᚦᛗᚪᛋᛉᛞᚦᛡᚢᛉᛗᚫᛋᚳᛖ",
+      "top": [
+        {
+          "score": -6.0870353000491795,
+          "plaintext_runes": "ᚫᚫᛝᛇᚹᛗᚫᛠᚱᛖᚾᚩᛏᛉᚣᚦᚠᚾᚾᛗᛋᚪᛉᛖᛉᚹᛒᚩᛉᚷᛁᚳᚳᚠᚱᛗᛝᚩᛟᚠᚢᛋᛞᛠᚪᚱᛁᛠᛚᛚᛋᛝᚪᛇᚹᚢᛠᛝᛞᚻᚦᚦᚢᛋᛋᚠᚢᛄᚳᚷᛄᚪᛗᛈᛏᚱᛡᛋᛝᚣᚻᛖᚪᚳᚠᛞᚱᛄᛞᛄᚩᚢᛚᛏᛡᛈᚠᚾᛒᛖᚦᛁᛈᚻᚫᛏᚦᛟᛞᚩᚪᛚᛠᛋᛉᚾᚠᚣᚠᚳᛈᛝᚱᛠᚦᛉᚢᛗᛠᛈᛒᛇᛁᛄᚢᛚᛖᛡᚪᚾᚾᛞᛝᚹᛞᛞᛋᛠᚷᚾᚹᚫᚾᛏᚹᚦᚢᚦᚱᛋᚣᚻᚾᚳᛡᛖᛖᛈᛇᚹᚠᛠᚦᚱᚩᚳᛁᚦᚠᚹᚠᛝᛏᛉᛁᛉᛉᛏᛖᚣᚳᛉᚹᛖᚳᚪᚳᛏᚳᚩᚹᚠᛁᛠᚢᚩᚦᚳᛉᛋᚪᛞᚪᛝᚢᛈᛈᚻᚩᛖᛉᛄᚾᛒᚪᛚᛈᛠᚦᛏᛉᛡᚻᚷᛚᛖᛏᛏᛉᛏᚣᛁᛏᚱᚢᛚᛞᛄᚩᚩᚷᚱᛡᚫᛞᛗᚢᛡᚩᚢᛋᛋᛚᛏᚦᛚᛖᚪᛟ",
+          "transliteration": "AEAENGEOWMAEEARENOTXYTHFNNMSAXEXWBOXGICCFRMNGOOEFUSDEAARIEALLSNGAEOWUEANGDHTHTHUSSFUJCGJAMPTRIASNGYHEACFDRJDJOULTIAPFNBETHIPHAETTHOEDOALEASXNFYFCPNGREATHXUMEAPBEOIJULEIAANNDNGWDDSEAGNWAENTWTHUTHRSYHNCIAEEPEOWFEATHROCITHFWFNGTXIXXTEYCXWECACTCOWFIEAUOTHCXSADANGUPPHOEXJNBALPEATHTXIAHGLETTXTYITRULDJOOGRIAAEDMUIAOUSSLTTHLEAOE",
+          "recipe": {
+            "family": "prime_totient",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 19,
+            "skip_positions": [
+              33,
+              39,
+              116,
+              178
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 78247,
+          "max_states": 1026
+        },
+        {
+          "score": -6.12567313665095,
+          "plaintext_runes": "ᛡᛇᚱᚣᚻᚢᛡᛡᚾᚻᚢᛝᚾᛏᚹᚪᛁᛏᛟᛈᛟᛚᛋᚩᛖᚠᛖᛉᛏᛄᛚᚾᛋᛄᛉᛁᚣᚩᛠᛉᛗᚠᚷᚱᚢᛒᚪᚻᛒᚢᛈᚠᛁᚷᛒᛠᚷᛚᚳᚻᚦᚷᛇᚹᛁᛖᚢᚷᛏᛖᛚᛇᚦᛞᛇᚩᛁᚠᛠᛇᚪᚫᚻᚢᛋᛠᚹᛈᛏᚾᛚᛡᛄᚱᛁᚻᛞᛞᚪᚣᚠᚾᛝᛠᛚᚩᚪᚪᛋᛞᛇᛝᛖᚾᚣᛝᚠᛗᛚᛚᛋᛟᚩᚦᛁᚻᛚᚳᛠᚹᛠᛒᛝᛝᛋᚢᛒᛞᚣᛏᛝᛏᛡᛠᚠᛋᚻᚫᛞᛡᛚᛗᛡᚪᚹᛈᚫᚾᚪᚩᛞᛗᛗᚢᚾᚱᛋᚪᛠᚾᚫᛋᚠᚠᚩᚻᛁᚠᚠᛈᚻᚱᛝᚪᚱᚹᛝᚹᚣᛠᚷᛡᛁᛒᛉᛁᚱᛝᚷᛝᚦᚣᚢᛖᛗᚪᛋᚳᛝᚱᚣᛠᚩᛋᛟᛞᚾᚣᚾᚪᚱᛝᚾᛏᛝᚳᛗᛒᚩᚱᛝᛏᚹᛏᚹᚷᛞᚾᛈᛇᚹᚣᚾᛈᛏᚩᚢᛉᛖᚳᛋᚹᚫᚣᚻᛝᛠᛗᚠᛚᚾᛇᛁᚾᛋᛖᛠᚷᛝ",
+          "transliteration": "IAEORYHUIAIANHUNGNTWAITOEPOELSOEFEXTJLNSJXIYOEAXMFGRUBAHBUPFIGBEAGLCHTHGEOWIEUGTELEOTHDEOOIFEAEOAAEHUSEAWPTNLIAJRIHDDAYFNNGEALOAASDEONGENYNGFMLLSOEOTHIHLCEAWEABNGNGSUBDYTNGTIAEAFSHAEDIALMIAAWPAENAODMMUNRSAEANAESFFOHIFFPHRNGARWNGWYEAGIAIBXIRNGGNGTHYUEMASCNGRYEAOSOEDNYNARNGNTNGCMBORNGTWTWGDNPEOWYNPTOUXECSWAEYHNGEAMFLNEOINSEEAGNG",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              6,
+              24,
+              15,
+              15,
+              18,
+              19,
+              18
+            ],
+            "start": 6,
+            "skip_positions": [
+              41,
+              116,
+              178
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 2107,
+          "max_states": 28
+        },
+        {
+          "score": -6.19650018458172,
+          "plaintext_runes": "ᚷᚠᛞᚩᚳᛈᚹᚫᚪᛉᚠᛡᛒᛒᛚᛝᛏᚫᛡᛄᛝᛚᚳᛖᛞᚣᚦᚪᛏᛄᚳᚱᛁᚠᛋᛇᛞᛒᚫᚠᚩᚠᛏᚱᚢᚦᛗᚩᛒᚱᛟᚫᛏᛏᛞᛠᛗᛠᛚᛇᛠᚳᛝᛏᛁᛗᛏᚩᚫᚣᛗᛁᛗᚦᛖᚻᛁᛉᚻᚠᛈᚢᚩᛠᛏᚢᚱᛡᛈᛗᚠᛠᚠᚱᚪᚩᛖᛞᛡᚷᚫᛋᚦᚳᛚᛏᚩᛁᛗᛚᛄᚢᛡᚾᛡᚹᚠᛏᚠᛠᛉᛚᛚᛁᛏᛈᛚᛗᚻᚪᛒᛟᛏᛗᛏᚩᛉᚻᛞᚣᚢᛒᛁᚪᚱᛁᚳᛡᚱᚷᚻᚾᚱᛝᛗᛟᛞᚪᚢᚦᚠᛡᛚᛉᚷᛁᚪᚠᚣᚻᚫᚳᛋᚳᚠᛝᛚᚠᛞᚾᛇᛠᛖᚣᛉᛋᚾᚣᚩᚫᛖᚹᚻᚩᛚᚾᛁᚠᚹᚳᛠᚩᛁᛞᛒᛞᛋᚪᚹᚾᛞᛇᛈᛋᛟᚻᚱᛝᚾᛡᛈᛒᛋᚣᛡᚳᚩᚫᛖᚻᛖᛋᛏᚫᚹᚹᚾᚷᛟᛚᚷᚪᚣᛝᛟᚻᚢᛠᛡᛟᚱᛇᛚᚪᚾᛞᚫᚱᚣᚢᛖᛈᛟᚳᛗᛈᚫᚻᚦ",
+          "transliteration": "GFDOCPWAEAXFIABBLNGTAEIAJNGLCEDYTHATJCRIFSEODBAEFOFTRUTHMOBROEAETTDEAMEALEOEACNGTIMTOAEYMIMTHEHIXHFPUOEATURIAPMFEAFRAOEDIAGAESTHCLTOIMLJUIANIAWFTFEAXLLITPLMHABOETMTOXHDYUBIARICIARGHNRNGMOEDAUTHFIALXGIAFYHAECSCFNGLFDNEOEAEYXSNYOAEEWHOLNIFWCEAOIDBDSAWNDEOPSOEHRNGNIAPBSYIACOAEEHESTAEWWNGOELGAYNGOEHUEAIAOEREOLANDAERYUEPOECMPAEHTH",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              5,
+              9,
+              18,
+              6,
+              10,
+              20,
+              20,
+              18,
+              16,
+              9,
+              10,
+              18
+            ],
+            "start": 10,
+            "skip_positions": [
+              33,
+              39,
+              41,
+              92,
+              116
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 3612,
+          "max_states": 48
+        }
+      ],
+      "key_sign_tasks": 1536
+    },
+    {
+      "page": "LP2-21",
+      "ciphertext_runes": "ᚳᚫᛠᛞᚳᚷᚩᛁᛇᚾᛟᚷᚣᚳᚦᚳᚦᛗᚣᛈᚪᛒᛈᚻᚢᚻᚾᛏᚫᛒᛇᚩᛁᛈᚫᚩᚣᛡᚣᛗᚷᚠᚱᛡᛚᛏᛖᛟᚩᛈᛚᚩᚷᛁᛟᛠᛞᛖᚳᛗᛁᚣᛈᛚᛁᚹᛋᛄᚹᛟᛡᚪᚦᛖᚩᛄᚷᛋᛝᚣᛗᛟᚻᛗᚠᚦᛉᚦᚫᛋᛈᚣᚩᚠᛈᛟᛋᛖᚫᛇᛗᛚᛈᚾᛡᚠᚳᚾᚩᛄᛋᛡᚫᛄᚦᚪᛠᛈᚻᛋᛟᛗᚹᚱᚣᛁᚢᛉᚹᛋᚱᛞᛈᚦᛈᚩᛞᛄᚩᚢᛈᛖᚪᚫᛉᚫᛏᚱᛟᛏᛒᛠᚫᚳᚾᛖᛝᚦᛄᛄᚠᛚᚾᚩᛒᛉᚷᚪᚩᛚᚪᚢᛞᚻᚳᚹᛚᛡᛞᛇᛟᚩᛡᛚᚳᛡᚳᛉᛝᛠᛝᚷᛝᛞᛄᛏᛠᛈᚹᛈᛗᛈᚱᚫᛏᛖᚢᛝᚫᛡᚾᛁᛠᚻᚦᚣᛠᚫᚩᛉᛋᚩᛄᚠᛏᚷᚹᛁᚪᛁᚩᛁᛝᛠᚾᚷᛗᚹᚦᛖᚷᛟᚪᚹᛞᚻᚢᛡᚹᚣᚷᛉᛒᚪᚾᛝᛡᛄᛡᚠᚷᛈᚦᚠᚦᛁᛈᚪᛝᛋᛞᛟᚩ",
+      "top": [
+        {
+          "score": -6.2047948582157835,
+          "plaintext_runes": "ᛗᛁᚱᚱᛁᛚᛒᛋᛟᛉᚹᛚᚦᛋᚹᛗᛏᚪᚹᛖᚾᚦᛖᛖᚷᛟᛞᛝᚷᛟᚣᛒᛋᛞᚢᛒᛄᚩᚹᚪᛚᛉᚾᚻᚫᚢᚩᛡᛈᛖᚳᛒᛄᛚᛡᛈᚻᛞᛋᚪᚪᛄᛖᚢᛋᛝᚠᛏᛒᛡᛇᚾᚹᛠᚻᚫᛚᛚᚦᚦᚱᚹᛈᚠᚳᛏᛠᚹᚷᛚᛡᛄᚻᛁᛖᚹᚠᛞᚷᛒᚱᚳᛖᛗᚩᛉᛗᛉᛈᛏᚠᛇᚢᛝᚹᚾᛈᛖᛖᛚᚹᚱᛇᛉᚦᚪᛋᛗᛒᛚᛖᚻᛖᛇᛖᛒᚻᛏᛈᚷᛡᚩᚠᚷᛗᛁᚢᚾᚩᛝᚦᛈᚢᛋᛉᚩᚷᚹᛝᛏᛉᚳᛉᛈᛟᛠᛚᚠᛈᚫᚾᛋᛠᛖᛁᛝᚳᚩᚱᛒᚹᛒᚩᚢᛁᛇᛗᛗᚦᚱᚷᛚᚣᚱᛏᚢᛈᛖᛒᛖᚱᛡᚾᚷᛝᚩᛋᚣᚷᚩᛞᚪᚱᛖᚹᛄᛈᚢᛈᛗᚠᛒᛏᛁᛝᛚᛝᛋᚳᛋᛒᚪᚣᚾᛉᛚᚱᛇᛇᛞᛚᚹᚠᛒᛠᛟᛋᚩᛒᚦᛚᛠᛟᚳᛉᚷᛇᛏᚻᚠᛄᛡᛏᚠᚹᛚᛖᚾᚷᛚᚱᛡᛒ",
+          "transliteration": "MIRRILBSOEXWLTHSWMTAWENTHEEGOEDNGGOEYBSDUBJOWALXNHAEUOIAPECBJLIAPHDSAAJEUSNGFTBIAEONWEAHAELLTHTHRWPFCTEAWGLIAJHIEWFDGBRCEMOXMXPTFEOUNGWNPEELWREOXTHASMBLEHEEOEBHTPGIAOFGMIUNONGTHPUSXOGWNGTXCXPOEEALFPAENSEAEINGCORBWBOUIEOMMTHRGLYRTUPEBERIANGNGOSYGODAREWJPUPMFBTINGLNGSCSBAYNXLREOEODLWFBEAOESOBTHLEAOECXGEOTHFJIATFWLENGLRIAB",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              15,
+              15,
+              24,
+              19,
+              24
+            ],
+            "start": 0,
+            "skip_positions": [
+              259,
+              263
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 1525,
+          "max_states": 10
+        },
+        {
+          "score": -6.214358350312304,
+          "plaintext_runes": "ᚫᚢᛝᚪᛄᛖᛏᚠᚱᛄᚻᛚᛞᛈᛉᛗᛒᛚᛗᚹᚷᚾᚹᛁᛋᛏᛁᛞᛚᚩᛖᛞᛁᚳᛚᛝᛟᛇᛗᚢᚪᚠᛟᛟᛡᚠᚷᚣᚹᚩᚠᛡᛚᛁᚫᛒᚢᚢᚳᚣᛁᚱᛈᚠᚻᚾᚾᚻᚩᛞᛟᚷᚪᚦᛋᚳᛖᚱᛖᛗᚢᚻᛖᚢᛖᛉᛁᛒᛉᚢᚹᚱᛞᛚᚳᛞᚾᚢᛉᚱᚢᛁᛈᛄᛚᛏᛗᛁᚹᚳᚳᚩᚢᚾᛏᛝᚫᚷᚦᚢᛡᛄᛗᛏᛝᚷᛞᚳᚩᚢᛏᚹᛈᛖᚳᛈᚢᚻᚹᛋᚹᛇᚦᚪᚱᛚᚻᛋᛒᚠᚩᚦᚢᛋᚾᛡᚩᛒᛠᚳᚠᚠᛝᛞᚩᚱᛁᚠᛏᛗᛝᛗᚹᛖᛋᛄᚫᚣᚫᛡᛞᛒᚩᚷᛋᛚᛄᛁᛡᛄᚪᛉᚾᚩᚾᚦᛒᛄᛇᚣᚣᚹᚣᚢᚱᚠᛋᚩᛞᛇᚹᛁᚦᛖᛖᛝᛒᛠᛏᚫᚢᛒᛗᚣᚱᛇᚾᛉᚪᚠᛈᛁᚾᛡᛄᛇᚣᛒᛒᛝᛁᛡᚷᛗᚣᛁᛋᚣᛇᛈᛁᚷᛈᚦᛄᚣᛖᛈᛝᚠᚱᚩᛖᚢᚪᛁᚳᛝᚩᚱᛏᛞᛒ",
+          "transliteration": "AEUNGAJETFRJHLDPXMBLMWGNWISTIDLOEDICLNGOEEOMUAFOEOEIAFGYWOFIALIAEBUUCYIRPFHNNHODOEGATHSCEREMUHEUEXIBXUWRDLCDNUXRUIPJLTMIWCCOUNTNGAEGTHUIAJMTNGGDCOUTWPECPUHWSWEOTHARLHSBFOTHUSNIAOBEACFFNGDORIFTMNGMWESJAEYAEIADBOGSLJIIAJAXNONTHBJEOYYWYURFSODEOWITHEENGBEATAEUBMYREONXAFPINIAJEOYBBNGIIAGMYISYEOPIGPTHJYEPNGFROEUAICNGORTDB",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "key_indices": [
+              1,
+              26,
+              20,
+              18,
+              16,
+              24,
+              19,
+              10,
+              16,
+              20
+            ],
+            "start": 0,
+            "skip_positions": [
+              41,
+              160,
+              259
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 3050,
+          "max_states": 20
+        },
+        {
+          "score": -6.2236876674376935,
+          "plaintext_runes": "ᛈᛡᚪᛋᚪᛈᚠᚳᚩᛞᚢᛇᛚᚪᛋᛁᚣᚷᚩᛄᛏᚩᚪᛄᛡᚢᛞᚣᛝᚩᛋᚱᚢᚦᛁᛋᛠᛋᛁᚢᛈᛟᛟᛉᚩᚻᚷᚦᚦᚱᚹᛈᛁᚠᚻᚻᚣᛈᛞᚫᛇᛟᚹᚱᛝᛇᛁᚱᛗᚩᚦᛁᛈᛡᚻᛁᛠᚠᚠᛠᛠᚠᚳᚻᚻᚱᛁᛗᚢᛏᚻᛋᛗᚠᛞᛚᚩᛒᛟᚳᚷᚳᛝᛈᚠᚠᚩᚪᛏᛖᛒᛞᛋᛟᚪᚹᚣᚹᚠᚩᚱᛟᚷᚢᛒᛖᛠᛁᛠᚳᛗᚩᛁᛏᛗᚣᛄᚪᛁᚠᚻᚳᚹᛞᚻᛈᚦᛋᛡᛗᛉᛋᛝᚪᚪᚦᛁᛏᛞᛈᛗᚻᛏᚦᛁᚢᛏᛏᛖᚦᚱᛡᛁᛇᚢᛏᛋᛏᚻᚪᚢᚾᛞᚱᛇᛠᛒᚪᛋᛚᛚᛠᚷᚦᛋᛖᚣᚩᛚᛏᛚᚱᛁᛝᚷᚫᚷᛟᚪᛏᛋᛉᛏᛞᛄᚦᚦᛖᛒᛁᛏᚠᚦᛇᛇᚠᚣᛝᛗᚩᛝᛚᚫᚣᚩᛒᛠᛞᛇᚣᚻᛚᛏᛉᚪᚳᚫᛏᛝᚳᚦᚱᚢᛞᚱᛁᚱᚾᛗᚠᛞᚱᚱᛝᛋᛗᛏᚫᛏᛒᛈᛁᚱ",
+          "transliteration": "PIAASAPFCODUEOLASIYGOJTOAJIAUDYNGOSRUTHISEASIUPOEOEXOHGTHTHRWPIFHHYPDAEEOOEWRNGEOIRMOTHIPIAHIEAFFEAEAFCHHRIMUTHSMFDLOBOECGCNGPFFOATEBDSOEAWYWFOROEGUBEEAIEACMOITMYJAIFHCWDHPTHSIAMXSNGAATHITDPMHTTHIUTTETHRIAIEOUTSTHAUNDREOEABASLLEAGTHSEYOLTLRINGGAEGOEATSXTDJTHTHEBITFTHEOEOFYNGMONGLAEYOBEADEOYHLTXACAETNGCTHRUDRIRNMFDRRNGSMTAETBPIR",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "start": 109,
+            "skip_positions": [
+              93,
+              105,
+              259
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 79116,
+          "max_states": 526
+        }
+      ],
+      "key_sign_tasks": 1536
+    },
+    {
+      "page": "LP2-22",
+      "ciphertext_runes": "ᛝᛗᛁᚷᛄᚷᚳᚩᚦᛖᚦᛄᚣᚠᚦᚳᛄᛡᛖᚢᛉᛄᚳᚻᛄᚱᛄᚪᚻᚾᚦᛚᚷᚱᚦᛒᚪᚩᛖᚢᛡᛄᚹᛏᚱᚹᛟᚦᚳᛗᚦᚠᚫᚻᛡᚠᛠᚣᚪᚦᛚᛏᛒᚢᛝᛖᛋᛗᚱᚪᚹᛒᚹᛒᛗᚱᚾᛗᚻᛗᛁᚾᚪᛞᛡᛖᚩᚾᚹᛡᚢᛄᚦᛠᛚᚳᚷᛚᛇᛟᛠᛠᚪᛇᛉᚣᚪᚷᛏᚩᛖᚹᛒᛈᚷᛝᛒᛡᚦᚠᛋᚾᛒᚦᚠᛇᛝᛠᚠᚾᛉ",
+      "top": [
+        {
+          "score": -5.685139509435005,
+          "plaintext_runes": "ᚾᛈᚣᚹᚱᛋᛚᚪᚠᚫᛉᛄᚢᚠᚦᚳᚹᚾᛠᚢᛝᚣᚹᛁᛋᚣᛝᛉᛈᛟᚦᛒᚱᛁᛖᛋᛚᛚᛒᛄᛖᛄᛞᛖᚾᛁᚾᚱᚹᚪᛏᚪᚢᚪᛋᚱᛄᛒᛝᚾᚪᚢᛁᚾᛚᚱᛋᛒᚾᚪᚢᚣᛄᚩᛈᚾᛏᛉᛇᛋᚢᚷᛟᛡᚫᛋᛈᛈᛝᛗᛖᚪᚷᚦᛏᛁᛋᚳᛋᚾᛄᛒᚦᛏᚪᚣᚾᚱᚷᛝᛁᛞᛞᛁᛗᛚᚣᛟᛟᚣᛝᚷᛏᚣᚠᛚᛒᛖᚠᚪᛝ",
+          "transliteration": "NPYWRSLAFAEXJUFTHCWNEAUNGYWISYNGXPOETHBRIESLLBJEJDENINRWATAUASRJBNGNAUINLRSBNAUYJOPNTXEOSUGOEIAAESPPNGMEAGTHTISCSNJBTHTAYNRGNGIDDIMLYOEOEYNGGTYFLBEFANG",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "start": 205,
+            "skip_positions": [
+              13,
+              124,
+              128
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 39752,
+          "max_states": 522
+        },
+        {
+          "score": -5.698989252864674,
+          "plaintext_runes": "ᛠᚠᚪᚹᚢᛚᛋᛏᚩᚪᛁᛋᛞᛗᚩᚻᚢᛠᚦᛖᛚᚦᚹᛖᚾᛋᛞᛖᚱᛒᛖᛠᛠᚾᛁᚾᚫᛏᛏᛇᛉᛋᛈᚩᚢᚷᛗᚪᛋᚠᚩᚠᛒᚱᛠᛚᛚᚻᛖᛁᚷᚱᚦᚱᛝᛞᛄᚢᛋᛁᚷᚪᛗᚩᚠᚢᚱᛟᛖᚢᚾᚫᛖᛖᛠᚦᛏᚫᚷᛉᚫᚾᛒᚷᛟᚹᛚᚠᚹᛇᛉᛈᚦᚻᚳᚻᛖᚷᛁᛒᚢᛡᚫᛠᛚᛠᚦᚹᛄᚠᚣᛒᚩᛒᚳᚢᛚᛡᛚᛁᛚ",
+          "transliteration": "EAFAWULSTOAISDMOHUEATHELTHWENSDERBEEAEANINAETTEOXSPOUGMASFOFBREALLHEIGRTHRNGDJUSIGAMOFUROEEUNAEEEEATHTAEGXAENBGOEWLFWEOXPTHHCHEGIBUIAAEEALEATHWJFYBOBCULIALIL",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              3,
+              9,
+              10,
+              24,
+              16,
+              17
+            ],
+            "start": 1,
+            "skip_positions": [
+              51,
+              119
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 924,
+          "max_states": 12
+        },
+        {
+          "score": -5.707180453911546,
+          "plaintext_runes": "ᚢᚹᛋᛝᛄᛚᛚᚪᛚᚻᛞᛏᚫᚠᚪᛚᛏᚪᚻᚪᛈᛄᛝᛒᛏᛖᛋᚢᛗᛈᚪᚳᛝᛖᚪᚻᚩᛗᚻᚪᚠᛄᛗᚾᛞᛋᚱᛞᛟᚩᚪᚠᚠᛗᚪᚣᚣᚢᛡᚪᚳᛄᚳᚫᚱᚾᚹᚹᛝᚩᛋᚾᛖᛁᚩᛟᛏᚻᛉᚹᛋᛖᛡᚩᛡᚾᛗᛒᛖᚠᛝᛋᛞᛠᚦᛝᛗᚹᛁᚱᚣᛠᛡᛉᛄᚢᛡᛚᚾᚪᚱᛗᚻᛉᛏᚳᚻᚠᛚᚠᛄᛏᛁᛚᚣᛈᚷᛞᚣᛏᛈ",
+          "transliteration": "UWSNGJLLALHDTAEFALTAHAPJNGBTESUMPACNGEAHOMHAFJMNDSRDOEOAFFMAYYUIAACJCAERNWWNGOSNEIOOETHXWSEIAOIANMBEFNGSDEATHNGMWIRYEAIAXJUIALNARMHXTCHFLFJTILYPGDYTP",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              2,
+              7,
+              3,
+              4
+            ],
+            "start": 1,
+            "skip_positions": [
+              13,
+              51,
+              119
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 616,
+          "max_states": 8
+        }
+      ],
+      "key_sign_tasks": 1536
+    },
+    {
+      "page": "LP2-23",
+      "ciphertext_runes": "ᚢᚪᚹᛝᚷᛉᛞᚷᛁᛒᛁᛇᛏᛒᛁᚣᛠᚷᛋᚫᛈᚹᛗᛠᛇᛄᛇᚹᚻᛁᚷᛠᛒᚢᚣᚻᚣᛝᚹᚢᚱᛋᚩᛡᚠᛡᛠᛞᛟᚦᛗᚳᚾᛉᛞᚦᛖᚱᛇᚳᚪᛄᛋᛟᚢᚹᚱᛏᛋᛖᛋᛏᚣᚱᛠᚫᚾᛞᛈᛒᛡᛋᚢᛞᛖᚣᚦᛚᚹᛟᛋᚷᛚᛄᚫᛖᚩᚳᚦᚹᛗᚢᚩᚷᚠᚪᚩᛡᛝᛒᛠᚦᚳᚪᚱᛡᛏᛟᚹᚠᚣᛝᚢᚣᛁᛚᛏᚫᚫᚪᚱᛈᚠᛗᚹᚩᛞᛠᛒᛈᛝᛟᚾᚷᛗᛡᛖᚩᚾᛚᛉᛝᛁᛡᚫᛗᚻᛖᚹᛗᛝᛈᛇᛗᛡᛄᚫᚩᛡᚠᚣᛉᛟᚫᚦᚫᛒᚩᚪᚦᛄᚱᛄᚾᚦᛡᚠᚪᛏᚾᚻᚷᚢᛞᚳᚦᚢᚱᚢᛟᛞᚻᚱᚷᚹᛏᛈᛖᚠᚪᚻᛠᚦ",
+      "top": [
+        {
+          "score": -6.066502186154672,
+          "plaintext_runes": "ᛝᚫᚢᚷᛗᚹᛝᚩᚣᚹᛁᚦᛗᚻᚹᛁᚠᛏᚢᛏᛚᛚᚱᛏᛠᛋᚱᚣᛞᛄᛈᛏᚫᚦᛝᚷᛋᛏᛏᛖᛈᛡᛗᛚᚠᛇᚢᛡᚪᚾᛋᛋᚹᚫᛁᛞᚢᚩᛚᛝᚠᚩᚣᛈᚪᛏᚾᚪᛗᛡᚣᛞᚾᚫᚪᛗᚠᚾᚣᛚᚠᚱᚻᚾᚻᛝᚱᛄᛖᚣᚦᚳᚻᚹᚱᚾᛚᛇᛈᚦᛋᚦᚫᛁᚠᛗᚳᚳᚳᚩᛈᛝᚻᚱᛚᚪᚦᛗᚣᚠᚩᚷᛚᛇᛖᚷᚷᚪᛚᛋᛞᚦᚠᛒᛒᛋᛚᚾᛇᛇᚫᛚᛗᛖᛠᛖᛞᚩᚪᚹᚩᚳᛁᛖᛖᚠᚹᚪᚫᚢᚣᚪᛒᚱᛗᚠᚣᛈᛉᚠᛈᛈᚪᚾᚪᛉᚻᛏᛚᛄᛡᚩᛋᚳᚷᚱᚠᛖᚪᛋᛉᛞᛟᛝᚱᚩᚦᚪᛗᛝᛁᛞᛒᚢᛗᚱᚪᛒᚠᚹᛝᛚᚳ",
+          "transliteration": "NGAEUGMWNGOYWITHMHWIFTUTLLRTEASRYDJPTAETHNGGSTTEPIAMLFEOUIAANSSWAEIDUOLNGFOYPATNAMIAYDNAEAMFNYLFRHNHNGRJEYTHCHWRNLEOPTHSTHAEIFMCCCOPNGHRLATHMYFOGLEOEGGALSDTHFBBSLNEOEOAELMEEAEDOAWOCIEEFWAAEUYABRMFYPXFPPANAXHTLJIAOSCGRFEASXDOENGROTHAMNGIDBUMRABFWNGLC",
+          "recipe": {
+            "family": "prime_totient",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "start": 112,
+            "skip_positions": [
+              44,
+              104,
+              119,
+              132,
+              169,
+              186,
+              208
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 62218,
+          "max_states": 524
+        },
+        {
+          "score": -6.091642643491416,
+          "plaintext_runes": "ᛈᚩᛈᛞᛞᚫᚪᚳᚳᚷᛚᛏᛉᛄᛡᚷᚱᚩᚦᛁᛒᚾᛋᛚᛡᛖᛋᚻᚳᚪᛇᚢᛄᛚᛁᚾᚫᚦᛄᚪᛝᚣᛇᚢᚠᛚᛋᚱᚢᚱᛋᚣᛠᛝᛚᚣᚾᛖᛚᛄᛖᚢᛠᛡᚫᛞᛁᛉᚹᚱᚣᛗᛞᚣᛈᚷᚳᚾᛏᛖᛖᚱᛋᚷᛚᛉᛋᚦᛉᛋᚱᛟᚩᚩᛈᛡᚦᚫᛖᛒᛞᛚᛖᛋᚩᛗᛝᚱᛞᛈᛟᛋᛏᚠᛠᛚᛠᚩᛄᛋᚻᚢᚷᚫᚩᚳᚪᛡᚳᚦᚢᚦᚻᛝᚩᛚᛠᚠᛇᚦᚻᚩᚹᛞᛖᚪᛄᛗᛞᛠᛖᛞᚻᛈᚾᚣᛁᛉᚣᚢᛉᚫᛁᛈᛗᛠᚹᚷᚣᚠᛞᚳᚢᛞᛡᛒᚹᛖᚱᛠᚫᛁᚳᚣᛋᚳᛠᛗᚩᛝᚷᚠᛖᚾᛏᚹᚱᚢᛒᛖᛈᛞᛒᚪᛝᛠᛋᚻᛒᚦᚹᛝᛖ",
+          "transliteration": "POPDDAEACCGLTXJIAGROTHIBNSLIAESHCAEOUJLINAETHJANGYEOUFLSRURSYEANGLYNELJEUEAIAAEDIXWRYMDYPGCNTEERSGLXSTHXSROEOOPIATHAEEBDLESOMNGRDPOESTFEALEAOJSHUGAEOCAIACTHUTHHNGOLEAFEOTHHOWDEAJMDEAEDHPNYIXYUXAEIPMEAWGYFDCUDIABWEREAAEICYSCEAMONGGFENTWRUBEPDBANGEASHBTHWNGE",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "start": 62,
+            "skip_positions": [
+              44,
+              169
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 62281,
+          "max_states": 524
+        },
+        {
+          "score": -6.120594275929659,
+          "plaintext_runes": "ᚪᚪᚱᚷᛗᚳᛒᛝᛋᚦᚢᛋᚾᚦᚢᚢᚣᛈᚫᚦᛇᛇᛝᛠᛈᚻᛠᛚᛒᚾᚳᛠᚻᛖᛉᛗᛠᛡᚱᚣᛝᚱᚻᚠᚠᛡᛚᛒᚳᛞᚠᚷᛖᛄᚫᚾᚾᛝᚹᚷᚩᛉᚱᛖᚣᛖᛋᚪᛇᚹᚱᚪᚢᛝᛚᛋᛖᚦᚷᛞᚠᛁᛖᛒᚾᛠᛒᛚᛚᚩᚱᚳᚹᛉᛞᛟᚪᛚᛒᚱᚻᚪᛏᚳᛡᚢᛏᛈᚷᚻᛚᚾᛟᚢᛋᛈᛄᚩᛇᛄᚢᚱᛖᛉᛒᚳᚩᛋᚦᚢᛋᛡᚠᚻᛖᛏᛒᛠᚻᚷᛗᚳᛏᛈᛝᚠᚹᛏᚦᚹᛄᛡᚢᚠᚠᚠᚩᚾᛖᚠᛗᛉᛈᚠᛈᛏᚠᛏᛈᛡᛠᚳᛖᚦᛞᛞᛞᚪᚢᛒᚠᛞᛉᛁᚾᚠᚫᚪᚪᛖᛒᛈᛁᚱᛚᛒᛁᛞᚪᚣᛒᛗᛝᛈᚱᛄᛇᚢᚠᛏᛗᚣᛒ",
+          "transliteration": "AARGMCBNGSTHUSNTHUUYPAETHEOEONGEAPHEALBNCEAHEXMEAIARYNGRHFFIALBCDFGEJAENNNGWGOXREYESAEOWRAUNGLSETHGDFIEBNEABLLORCWXDOEALBRHATCIAUTPGHLNOEUSPJOEOJUREXBCOSTHUSIAFHETBEAHGMCTPNGFWTTHWJIAUFFFONEFMXPFPTFTPIAEACETHDDDAUBFDXINFAEAAEBPIRLBIDAYBMNGPRJEOUFTMYB",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              2,
+              4,
+              10,
+              18
+            ],
+            "start": 1,
+            "skip_positions": [
+              44,
+              132,
+              208
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 964,
+          "max_states": 8
+        }
+      ],
+      "key_sign_tasks": 1536
+    },
+    {
+      "page": "LP2-24",
+      "ciphertext_runes": "ᛞᚱᚠᛖᛄᚫᚾᚳᚻᚹᛇᛡᛈᛠᚹᛗᛚᚹᛟᚹᛠᚪᚾᚪᚳᚪᚷᛚᚦᛒᚩᚹᚢᚷᛚᚠᛋᚻᚾᛉᛝᛗᛖᚦᚢᛝᛡᛈᚣᚢᛉᚷᚷᚹᛞᛁᛋᚦᛡᛡᛈᚳᚪᚩᚢᛗᚢᛉᚩᚣᚻᛏᚩᚫᛗᚢᚩᚾᛏᛠᛒᛟᛒᚠᛁᛈᛚᛋᛝᚫᚳᚫᛟᛏᚢᚩᛉᚾᛡᛋᚠᛖᛉᚱᛗᚩᚩᚫᚠᚢᚦᛖᛞᚾᚣᛡᛋᛋᚱᛚᛟᚢᚻᚢᚾᛈᛁᚻᛖᛉᚦᛞᛗᛈᛟᚠᛈᚠᛝᚫᛝᛋᛟᛄᚹᛠᛒᚣᛟᚹᛞᚠᚣᛄᛁᛏᛉᛚᚩᚦᛝᚠᚪᛋᛡᛁᚻᛒᚱᚪᚢᚣᚫᚢᛟᛠᚪᚣᛖᛟᚫᛖᛈᚠᛒᛈᛄᛁᛋᛝᛒᚱᚦᚳᛇᛚᛁᚢᛈᛏᚳᛒᛉᛖᚪᚣᚠᛗᚳᚣᚱᚻᚹᛏᚾᛡᛉᚫᚦᛟᚳᚹᛠᚠᛏᛠᛝᚩᚻᛡᛠᛒᛋᚻᛟᚫᛁᛠᛏᛁᛋᛏᚫᚻᚱᚻᛄᛋᛡᚹᚾᚾᛡᚹᛚᚢᛖᛏᚱᛝᚳᚣᚪᛉᛇᛝᛋᛖᛇᛁ",
+      "top": [
+        {
+          "score": -5.971807398495368,
+          "plaintext_runes": "ᚪᛚᛚᚳᚷᚻᛏᛞᚩᛞᛞᛁᚣᛗᚦᛇᚻᛞᚷᛡᚦᛗᚩᛈᛏᛗᛈᛗᚦᚱᚳᚻᚻᚾᛁᛚᛞᛄᚪᚾᚱᛉᚩᚾᛇᛠᚠᚻᛒᚱᛁᛒᚢᚦᚠᛞᛈᛈᛠᛟᛡᛚᚣᛚᛋᛟᛁᛡᚳᚻᛝᛗᛖᛋᚾᚪᛟᛏᚻᛁᚦᛇᛈᚠᛒᛉᛖᚠᛝᚳᚻᛗᚪᚾᚩᛏᛝᛗᚱᛇᚠᚻᛠᛋᛄᛄᛒᚦᛚᛏᚪᚻᛠᛝᚢᛒᛄᚠᚢᚳᚫᛇᛈᛋᛖᛋᛉᛡᚠᚳᛗᚠᚷᚾᛁᚠᚷᛟᛏᛒᛄᚣᛠᚩᚱᚣᛋᚢᛋᚹᚪᚱᛏᛒᚪᛚᛋᛗᚳᛒᚣᛝᚾᚦᚱᛠᛒᚣᚢᛒᚩᛝᛖᛒᚷᛟᚢᛇᚱᚾᚳᚪᚩᚹᚳᚻᚢᚱᚠᛡᚾᚩᚪᛞᚣᛁᛗᚳᚾᛁᛗᛈᛋᛟᛚᚣᚠᚱᛋᚣᛋᛒᛈᛟᛒᛝᚦᚠᚫᛋᛖᛄᛖᛈᚳᛈᚾᛈᛚᛁᛞᛉᛠᛒᛏᛁᛄᛝᛝᚦᛒᚩᚩᛟᛈᛚᛁᚷᚪᚻᚪᚦᚱᛏᛁᚷᛁᛄᚩᚫᛈᚷᚷᛁᚢᛚᛒᛋᛇᚾ",
+          "transliteration": "ALLCGHTDODDIYMTHEOHDGIATHMOPTMPMTHRCHHNILDJANRXONEOEAFHBRIBUTHFDPPEAOEIALYLSOEIIACHNGMESNAOETHITHEOPFBXEFNGCHMANOTNGMREOFHEASJJBTHLTAHEANGUBJFUCAEEOPSESXIAFCMFGNIFGOETBJYEAORYSUSWARTBALSMCBYNGNTHREABYUBONGEBGOEUEORNCAOWCHURFIANOADYIMCNIMPSOELYFRSYSBPOEBNGTHFAESEJEPCPNPLIDXEABTIJNGNGTHBOOOEPLIGAHATHRTIGIJOAEPGGIULBSEON",
+          "recipe": {
+            "family": "integer_totient",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 30,
+            "skip_positions": [
+              83,
+              100,
+              135,
+              206
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 83779,
+          "max_states": 1032
+        },
+        {
+          "score": -6.172216797500229,
+          "plaintext_runes": "ᚹᚩᚠᛚᚻᚠᛟᚩᚦᚾᚻᚪᛗᛖᛉᚱᚹᚳᚫᛝᚦᛁᚦᚪᛚᚹᚠᛝᛖᚹᚠᚷᛉᛗᚹᚠᛖᚠᚳᚻᚳᚾᛉᛈᛟᚷᚻᚣᛗᛡᛏᛈᛗᛠᛖᚻᚳᚪᚾᛋᚷᛏᚩᚢᚹᛚᛝᛖᚦᛇᚹᚳᛚᛁᛚᛋᛝᚫᚣᚪᛉᛋᚣᚠᚻᛈᛇᛝᛞᛞᛠᛖᚱᛇᚻᚻᚢᚻᚠᚣᚠᛡᚱᛖᛒᚻᛁᛝᚠᚹᛁᚦᚹᚠᛏᛝᛁᚪᛁᚠᚱᚱᚩᛟᛖᛚᚫᚻᚠᛁᚩᛈᛡᚷᚩᛉᚳᛚᚩᚳᛋᚠᛠᛏᛈᛞᛋᛉᛠᛚᛁᚠᛋᛈᛖᛖᚣᛟᛏᚠᛚᚠᚷᛒᚾᚩᚹᚱᛝᚩᚢᛒᛚᛝᚳᚳᛋᛝᛖᚪᚷᛒᚪᚠᚪᚳᛋᛚᛒᛒᚱᛡᚦᚩᛡᛞᛁᚦᚦᚹᚢᚪᚦᚱᚷᚻᚠᛞᛇᚳᚦᚱᚹᚦᛋᛠᛖᛒᚦᛒᚾᚾᛇᚠᛠᛖᚷᚹᚱᚪᚦᛗᛡᛄᛋᛖᚻᛝᛏᚩᛁᛒᚪᚣᚹᚹᚷᚷᚫᚣᚹᛈᚢᛁᛠᚳᛗᛉᚩᛞᛏᛠᚩᛒᛡᚪᛄᛁᚣᛈ",
+          "transliteration": "WOFLHFOEOTHNHAMEXRWCAENGTHITHALWFNGEWFGXMWFEFCHCNXPOEGHYMIATPMEAEHCANSGTOUWLNGETHEOWCLILSNGAEYAXSYFHPEONGDDEAEREOHHUHFYFIAREBHINGFWITHWFTNGIAIFRROOEELAEHFIOPIAGOXCLOCSFEATPDSXEALIFSPEEYOETFLFGBNOWRNGOUBLNGCCSNGEAGBAFACSLBBRIATHOIADITHTHWUATHRGHFDEOCTHRWTHSEAEBTHBNNEOFEAEGWRATHMIAJSEHNGTOIBAYWWGGAEYWPUIEACMXODTEAOBIAAJIYP",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "start": 50,
+            "skip_positions": [
+              2,
+              35,
+              83,
+              100,
+              108,
+              151,
+              161,
+              183,
+              206,
+              223
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 83859,
+          "max_states": 1044
+        },
+        {
+          "score": -6.173939668737195,
+          "plaintext_runes": "ᛄᛝᚠᛁᛈᛖᚩᛝᚣᛖᛏᚣᚢᛈᛗᛋᚳᛝᚦᚹᛈᚦᚫᚢᛞᚠᚻᛝᚪᛒᛟᛝᛞᚻᛝᚠᛄᚣᛏᛉᚩᚪᛞᚪᚱᚱᚢᛄᛒᛄᛇᛠᛗᛝᚢᚱᚣᚪᚹᛡᛋᛗᛗᚾᚫᛋᚪᛉᛝᛒᚱᛁᚦᚠᚾᛞᛄᚩᛁᚷᚻᚷᚹᚠᚱᛠᚷᛗᚱᚩᛗᛖᛗᛁᚱᛟᛉᛋᛏᚣᚣᛏᛄᚪᚳᛄᚾᚢᚳᚪᚣᚷᛚᚩᚠᚹᛁᛈᛚᛞᛗᚫᚣᚪᛗᛄᚱᚱᚻᛚᛞᚳᚳᚢᛗᚣᛝᚠᚱᚩᚩᛠᛗᛋᛡᚣᛄᛡᛝᚳᚩᚠᚻᛉᛖᚻᚠᛝᛞᚩᚱᛠᚠᛠᛉᛏᚣᚻᚪᚠᛈᛋᚢᚱᚩᚠᚠᛒᛞᚱᚾᚹᛋᚠᚹᚢᚢᛏᛗᚱᛄᛚᛇᚹᛉᛉᛋᛡᛄᛡᚹᚾᛚᚹᚱᛡᚠᚪᚹᚠᚢᛒᛝᚻᚳᛉᛇᚾᛞᚷᛗᚹᛈᚣᛖᚣᚹᛝᚷᛉᛡᛒᛁᛚᚦᛖᚦᛡᛖᛋᛈᚻᛖᚱᛟᚣᛉᛈᚣᚹᚩᛒᚹᛖᚻᛞᚫᚫᛟᛈᛚᚦᚠᚠᚠᚳᛗᚹᛏᛉ",
+          "transliteration": "JNGFIPEONGYETYUPMSCNGTHWPTHAEUDFHNGABOENGDHNGFJYTXOADARRUJBJEOEAMNGURYAWIASMMNAESAXNGBRITHFNDJOIGHGWFREAGMROMEMIROEXSTYYTJACJNUCAYGLOFWIPLDMAEYAMJRRHLDCCUMYNGFROOEAMSIAYJIANGCOFHXEHFNGDOREAFEAXTYHAFPSUROFFBDRNWSFWUUTMRJLEOWXXSIAJIAWNLWRIAFAWFUBNGHCXEONDGMWPYEYWNGGXIABILTHETHIAESPHEROEYXPYWOBWEHDAEAEOEPLTHFFFCMWTX",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              1,
+              5,
+              15,
+              17,
+              3,
+              24,
+              4
+            ],
+            "start": 5,
+            "skip_positions": [
+              2,
+              35,
+              83,
+              137,
+              151,
+              183,
+              206
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 2240,
+          "max_states": 28
+        }
+      ],
+      "key_sign_tasks": 1536
+    }
+  ],
+  "limits": [
+    "This is a changed-score rescan of E007/E008, not a new cipher family or independent discovery.",
+    "External model fixed using previously seen controls; source-independent training is not independent historical validation.",
+    "AllFsubsets covered only in these finite known-key streams; no arbitrary keys, transpositions or across-page continuation.",
+    "B19cannot resolve corrected significance; null calibration is a screen for chance maxima."
+  ],
+  "wall_seconds": 47.58185799999046
+}

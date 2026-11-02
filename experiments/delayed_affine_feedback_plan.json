@@ -1,0 +1,12 @@
+{
+  "experiment":"E072", "hypothesis":"H049",
+  "mechanism":"P_i=a*C_i+b*P_(i-m)+c mod29; a,b1..28,c0..28,m4..32. Initial key=(P-a*C-c)/b; encrypt=(P-b*queue-c)/a. No skips or resets.",
+  "algebra_gate":"E071-algebra must pass. 659344 families, including22736 per period. Histogram reduction verified against direct prefix queues; b=1 uses block drift, b!=1 uses shifted weights. This is a computation reduction, not linguistic equivalence with c=0.",
+  "screen":"For each period rank all a,b,c in lexicographic order by np.round(score,9), stable ties. Retain8 per period (232 total). Store all floating/rounded score digests in little-endian float64 plus top8, and true family rank for controls. Different machines may differ in final float bits; independent numeric check tolerance1e-7 and rounded ranking are authoritative.",
+  "optimizer":"Same fixed E068 budget:8 starts,6 trigram sweeps,keep2; cyclic beam cuts0,m//2,width128,keep2/cut; top12 distinct family/prefix candidates,6 fourgram sweeps,top3 distinct plaintexts. Seed3303072+22736*m+812*(a-1)+29*(b-1)+c. No optimization of c after family selection.",
+  "controls":"12 fresh keys Random3301072+index. Same excluded Emerson blocks as E068 controls0..11, previously inspected texts, not unseen prose. a=(2,7,14,27)[index%4]; b=(1,3,15)[index%3]; c=(5*index+1)%28+1. m13/23/31, except index11m32. Four regressions reuse exact E068 INPUTS0,3,6,11 with c0 under changed solver. All16 run even if a recovery gate fails.",
+  "null":"One diagnostic full-optimizer null of control5. Interior shuffle Random3302072, preserve endpoints/counts/adjacent equality,100000 rejection cap. No inferential pvalue from this diagnostic.",
+  "gate":"All16 full plaintexts and key/a/b/c exact, true family retained; independent source/queue/screen/score checks before unknown scan. If gate fails, preserve result and investigate screening versus optimizer, with no tuning in this experiment.",
+  "bounds":{"process_seconds":180,"watchdog_seconds":185,"family_seconds":1800,"phase_seconds":3600,"memory_ceiling_mib":768,"workers":1},
+  "unknown":"Separate preregistration only after controls and independent validation. Matched full-optimizer nulls and correction across all inputs mandatory."
+}

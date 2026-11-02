@@ -1,0 +1,7826 @@
+{
+  "experiment": "E007-selective-dictionary",
+  "status": "completed",
+  "parameters": {
+    "mode": "dictionary",
+    "page_range": [
+      37,
+      37
+    ],
+    "max_offset": 255,
+    "signs": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "model": {
+      "order": 3,
+      "alpha": 0.5,
+      "strength": 5
+    },
+    "all_initial_key_phases": true,
+    "F_masks": "all subsets, optimized exactly by dynamic programming",
+    "training_ids": [
+      "LP1-01_atbash",
+      "LP1-03_04_divinity",
+      "LP1-05_direct",
+      "LP1-10_13_direct",
+      "LP1-14_15_circumference",
+      "LP1-16_direct"
+    ],
+    "timeout_seconds": 180.0
+  },
+  "key_catalog": [
+    {
+      "indices": [
+        0,
+        0,
+        1,
+        15,
+        21,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚢᚠᚠᛖᚱᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        0,
+        1,
+        17,
+        15,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᚢᚠᚠᛖᚱᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        0,
+        18,
+        4,
+        15,
+        17,
+        1
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᚢᚠᚠᛖᚱᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        0,
+        18,
+        4,
+        21,
+        15,
+        1
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚢᚠᚠᛖᚱᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        1,
+        9,
+        5,
+        16,
+        27,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚢᚾᚳᛏᛡᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        1,
+        19,
+        0,
+        18,
+        4,
+        18,
+        9,
+        0,
+        18,
+        0,
+        10,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᛁᚱᚠᚢᛗᚠᛖᚱᛖᚾᚠᛖ",
+          "reversed": false,
+          "sources": [
+            "explicit historical/thematic label: FIRFUMFERENFE"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        1,
+        20,
+        19,
+        3,
+        1,
+        4,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚩᚢᚱᚾᚠᚢᛚ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        3,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚩᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        3,
+        4,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚩᚱᛗ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        3,
+        20,
+        20,
+        3,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚩᛚᛚᚩᚹ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        3,
+        20,
+        20,
+        3,
+        7,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚩᛚᛚᚩᚹᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        4,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚩᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        4,
+        3,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚱᚩᛗ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        4,
+        10,
+        0,
+        18,
+        0,
+        9,
+        18,
+        4,
+        18,
+        0,
+        19,
+        1
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᛁᚱᚠᚢᛗᚠᛖᚱᛖᚾᚠᛖ",
+          "reversed": true,
+          "sources": [
+            "explicit historical/thematic label: FIRFUMFERENFE"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        7,
+        3,
+        20,
+        20,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚩᛚᛚᚩᚹ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        9,
+        4,
+        1,
+        3,
+        19,
+        20,
+        1
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚩᚢᚱᚾᚠᚢᛚ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        9,
+        27,
+        16,
+        5,
+        9,
+        1
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚢᚾᚳᛏᛡᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        10,
+        9,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᛁᚾᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        15,
+        18,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛖᛚᚠ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        0,
+        18,
+        4,
+        18,
+        9,
+        5,
+        18,
+        5,
+        10,
+        4,
+        5,
+        1,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᛁᚱᚳᚢᛗᚠᛖᚱᛖᚾᚳᛖ",
+          "reversed": false,
+          "sources": [
+            "explicit historical/thematic label: CIRCUMFERENCE",
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        19,
+        1,
+        5,
+        4,
+        10,
+        5,
+        18,
+        5,
+        9,
+        18,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᛁᚱᚳᚢᛗᚠᛖᚱᛖᚾᚳᛖ",
+          "reversed": true,
+          "sources": [
+            "explicit historical/thematic label: CIRCUMFERENCE",
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        19,
+        3,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚱᚩᛗ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        19,
+        4,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚩᚱᛗ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        20,
+        18,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛖᛚᚠ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        0,
+        20,
+        18,
+        15,
+        4,
+        1,
+        3,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚣᚩᚢᚱᛋᛖᛚᚠ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        21,
+        7,
+        3,
+        20,
+        20,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᚩᛚᛚᚩᚹᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        0,
+        23,
+        9,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚠᛁᚾᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        0,
+        26,
+        3,
+        1,
+        4,
+        15,
+        18,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚣᚩᚢᚱᛋᛖᛚᚠ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        2,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚢᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        2,
+        16,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚱᚢᚦ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        3,
+        2,
+        16,
+        8,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚩᚢᚷᚻᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        3,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚢᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        3,
+        4,
+        2,
+        8,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚱᚩᚢᚷᚻ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        3,
+        5,
+        15,
+        10,
+        23,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛁᛋᚳᚩᚢᛖᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        3,
+        8,
+        15,
+        23,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚻᚩᚢᛚᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        3,
+        9,
+        18,
+        8,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚾᚩᚢᚷᚻ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        1,
+        3,
+        10,
+        5,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚢᚩᛁᚳᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 5
+    },
+    {
+      "indices": [
+        1,
+        3,
+        10,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚢᚩᛁᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        3,
+        11,
+        26,
+        18,
+        9,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛄᚩᚢᚱᚾᛖᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        3,
+        15,
+        18,
+        1,
+        20,
+        18,
+        15,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚢᚱᛋᛖᛚᚢᛖᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        3,
+        16,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚢᚾᛏᚩ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        3,
+        17,
+        24,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛒᚩᚢᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        3,
+        18,
+        23,
+        10,
+        15,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚢᛏᛋᛁᛞᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        3,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚣᚩᚢ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 9
+    },
+    {
+      "indices": [
+        1,
+        3,
+        26,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚣᚩᚢᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg107-167.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 11
+    },
+    {
+      "indices": [
+        1,
+        4,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚢᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        4,
+        9,
+        18,
+        26,
+        11,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛄᚩᚢᚱᚾᛖᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        4,
+        15,
+        18,
+        20,
+        1,
+        18,
+        15,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚢᚱᛋᛖᛚᚢᛖᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        4,
+        16,
+        2
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚱᚢᚦ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        4,
+        16,
+        15,
+        9,
+        10,
+        9,
+        27,
+        16,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        4,
+        16,
+        15,
+        18,
+        20,
+        6,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚱᚢᚷᚷᛚᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        4,
+        16,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚱᚢᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        4,
+        18,
+        15,
+        18,
+        4,
+        13,
+        9,
+        27,
+        16,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛖᛋᛖᚱᚢᚪᛏᛡᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        4,
+        18,
+        15,
+        18,
+        4,
+        13,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛖᛋᛖᚱᚢᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        4,
+        18,
+        15,
+        18,
+        4,
+        13,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛖᛋᛖᚱᚢᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        4,
+        21,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᚢᚱᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        4,
+        24,
+        3,
+        17,
+        15,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᛒᛋᚳᚢᚱᚪ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        4,
+        26,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚣᚩᚢᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg107-167.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 11
+    },
+    {
+      "indices": [
+        1,
+        5,
+        5,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚢᚳᚳ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        5,
+        8,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚢᚳᚻ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        5,
+        15,
+        17,
+        3,
+        24,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᛒᛋᚳᚢᚱᚪ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        5,
+        16,
+        27,
+        9,
+        10,
+        9,
+        15,
+        16,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        6,
+        6,
+        20,
+        18,
+        15,
+        16,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚱᚢᚷᚷᛚᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        6,
+        8,
+        2,
+        4,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚱᚩᚢᚷᚻ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        6,
+        8,
+        16,
+        2,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚩᚢᚷᚻᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        6,
+        8,
+        18,
+        9,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚾᚩᚢᚷᚻ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        1,
+        9,
+        15,
+        4,
+        18,
+        17,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᚢᛗᛒᛖᚱᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        9,
+        16,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚢᚾᛏᚩ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        10,
+        4,
+        4,
+        24,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚱᚱᛁᚢᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        10,
+        9,
+        10,
+        16,
+        26,
+        23,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛁᚢᛁᚾᛁᛏᚣ",
+          "reversed": false,
+          "sources": [
+            "explicit historical/thematic label: DIVINITY",
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        1,
+        10,
+        17,
+        3,
+        19,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚩᛒᛁᚢᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        10,
+        18,
+        20,
+        18,
+        17,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᛚᛖᛁᚢᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        10,
+        20,
+        15,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᛁᚢᛖᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        10,
+        23,
+        26,
+        16,
+        10,
+        9,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛁᚢᛁᚾᛁᛏᚣ",
+          "reversed": true,
+          "sources": [
+            "explicit historical/thematic label: DIVINITY",
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        1,
+        11,
+        16,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛄᚢᛋᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        2
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚢᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        9,
+        3,
+        5,
+        9,
+        27,
+        16,
+        13,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚾᛋᚢᛗᛈᛏᛡᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        15,
+        9,
+        3,
+        5,
+        18,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚾᛋᚢᛗᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        9,
+        3,
+        5,
+        21,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚾᛋᚢᛗᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        13,
+        4,
+        10,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛁᛗᚢᛋ",
+          "reversed": false,
+          "sources": [
+            "explicit historical/thematic label: PRIMUS"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        16,
+        11
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛄᚢᛋᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        18,
+        5,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚪᚢᛋᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        18,
+        17,
+        18,
+        5,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᚳᚪᚢᛋᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        15,
+        19,
+        3,
+        17,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚩᛒᛁᚢᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        20,
+        10,
+        17,
+        18,
+        4,
+        13,
+        4,
+        10,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᛁᛒᛖᚱᛈᚱᛁᛗᚢᛋ",
+          "reversed": false,
+          "sources": [
+            "explicit historical/thematic label: LIBERPRIMUS"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        15,
+        27,
+        9,
+        15,
+        10,
+        20,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᛚᛚᚢᛋᛡᚾᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        16,
+        15,
+        10,
+        23,
+        18,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚢᛏᛋᛁᛞᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        16,
+        15,
+        15,
+        16,
+        9,
+        18,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚢᛞᛖᚾᛏᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        16,
+        15,
+        16,
+        9,
+        18,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚢᛞᛖᚾᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        16,
+        17
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᚢᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        16,
+        24,
+        17,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛒᚩᚢᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        17,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᚢᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        18,
+        4,
+        9,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᛖᚢᛖᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        18,
+        4,
+        23,
+        10,
+        15,
+        5,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛁᛋᚳᚩᚢᛖᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        18,
+        5,
+        10,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚢᚩᛁᚳᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 5
+    },
+    {
+      "indices": [
+        1,
+        18,
+        8,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᚪᚢᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 6
+    },
+    {
+      "indices": [
+        1,
+        18,
+        9,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᛖᚢᛖᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        18,
+        10,
+        20,
+        18,
+        17,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᛚᛁᛖᚢᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        18,
+        13,
+        4,
+        18,
+        15,
+        18,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛖᛋᛖᚱᚢᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        18,
+        15,
+        20,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᛁᚢᛖᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        18,
+        16,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚱᚢᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        18,
+        17,
+        18,
+        20,
+        10,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᛚᛁᛖᚢᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        18,
+        17,
+        18,
+        20,
+        18,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᛚᛖᛁᚢᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        18,
+        24,
+        4,
+        4,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚱᚱᛁᚢᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        19,
+        8,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚢᚳᚻ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        19,
+        10,
+        4,
+        13,
+        4,
+        18,
+        17,
+        10,
+        20,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᛁᛒᛖᚱᛈᚱᛁᛗᚢᛋ",
+          "reversed": true,
+          "sources": [
+            "explicit historical/thematic label: LIBERPRIMUS"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        19,
+        10,
+        4,
+        13,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛁᛗᚢᛋ",
+          "reversed": true,
+          "sources": [
+            "explicit historical/thematic label: PRIMUS"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        19,
+        13,
+        16,
+        27,
+        9,
+        5,
+        3,
+        9,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚾᛋᚢᛗᛈᛏᛡᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        19,
+        17,
+        18,
+        4,
+        15,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᚢᛗᛒᛖᚱᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        19,
+        18,
+        5,
+        3,
+        9,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚾᛋᚢᛗᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        19,
+        21,
+        5,
+        3,
+        9,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚾᛋᚢᛗᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        20,
+        5,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚢᚳᚳ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        20,
+        16,
+        10,
+        19,
+        24,
+        16,
+        18,
+        20,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚢᛚᛏᛁᛗᚪᛏᛖᛚᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        20,
+        20,
+        10,
+        15,
+        9,
+        27,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᛚᛚᚢᛋᛡᚾᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        20,
+        23,
+        15,
+        8,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚻᚩᚢᛚᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        21,
+        13,
+        4,
+        18,
+        15,
+        18,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛖᛋᛖᚱᚢᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        23,
+        10,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚢᚩᛁᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        23,
+        18,
+        9,
+        16,
+        15,
+        15,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚢᛞᛖᚾᛏᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        23,
+        18,
+        9,
+        16,
+        15,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚢᛞᛖᚾᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        1,
+        23,
+        21,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᚢᚱᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        24,
+        5,
+        18,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚪᚢᛋᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        24,
+        5,
+        18,
+        17,
+        18,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᚳᚪᚢᛋᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        24,
+        8,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᚪᚢᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 6
+    },
+    {
+      "indices": [
+        1,
+        24,
+        8,
+        18,
+        17,
+        15,
+        4,
+        27
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᚻᚪᚢᛡᚱᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        24,
+        16,
+        27,
+        9,
+        13,
+        4,
+        18,
+        15,
+        18,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛖᛋᛖᚱᚢᚪᛏᛡᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        1,
+        26,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚣᚩᚢ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 9
+    },
+    {
+      "indices": [
+        1,
+        26,
+        20,
+        18,
+        16,
+        24,
+        19,
+        10,
+        16,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚢᛚᛏᛁᛗᚪᛏᛖᛚᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        1,
+        27,
+        4,
+        15,
+        17,
+        18,
+        8,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᚻᚪᚢᛡᚱᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        3,
+        9,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᚩᚦᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        2,
+        3,
+        15,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚦᛖᚱᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        3,
+        15,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚩᛋᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        4,
+        3,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚩᚱᚦ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        4,
+        10,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛖᛁᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        4,
+        18,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚱᛖᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        7,
+        3,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚩᚱᚦ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        7,
+        28,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛠᛚᚦ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        10,
+        7,
+        9,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛁᚦᛁᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        2,
+        10,
+        9,
+        7,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛁᚦᛁᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        2,
+        10,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛁᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_0_wisdom.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 6
+    },
+    {
+      "indices": [
+        2,
+        10,
+        18,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛁᚦᛖᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        15,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛁᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_0_wisdom.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 6
+    },
+    {
+      "indices": [
+        2,
+        15,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛝᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_0_wisdom.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 6
+    },
+    {
+      "indices": [
+        2,
+        16,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚪᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 8
+    },
+    {
+      "indices": [
+        2,
+        18,
+        4,
+        15,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚦᛖᚱᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        18,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛖᚱᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        },
+        {
+          "original_runes": "ᚦᛖᚱᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        2,
+        18,
+        4,
+        18,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛁᚦᛖᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        18,
+        4,
+        28,
+        20,
+        25
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚫᚦᛖᚱᛠᛚ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        18,
+        10,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛖᛁᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        18,
+        15,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚩᛋᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        18,
+        18,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚱᛖᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        18,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛖᛗ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        19,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛖᛗ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        20,
+        28,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛠᛚᚦ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        2,
+        21,
+        9,
+        3
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᚩᚦᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        2,
+        21,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᛝᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_0_wisdom.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 6
+    },
+    {
+      "indices": [
+        2,
+        23,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛠᚦ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        24,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚦᚪᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 8
+    },
+    {
+      "indices": [
+        2,
+        25,
+        20,
+        28,
+        4,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚫᚦᛖᚱᛠᛚ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        2,
+        28,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛠᚦ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        3,
+        5,
+        17
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᚩᚩᚳ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        3,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚩᚩ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        },
+        {
+          "original_runes": "ᛏᚩᚩ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        3,
+        17,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᚩᚩᚳ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        4,
+        4,
+        18,
+        15,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚱᚱᚩᚱᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        4,
+        13,
+        19,
+        24,
+        4,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᚩᚷᚱᚪᛗ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        4,
+        15,
+        18,
+        4,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚱᚱᚩᚱᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        4,
+        16,
+        15,
+        18,
+        23,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛖᛋᛏᚱᚩᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        4,
+        16,
+        15,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚱᚩᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        4,
+        23,
+        15,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚩᚱᛞᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        5,
+        9,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚪᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        5,
+        18,
+        9,
+        5,
+        18,
+        10,
+        9,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᚾᚩᚳᛖᚾᚳᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        5,
+        18,
+        17,
+        18,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᚳᚩᛗᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        5,
+        20,
+        18,
+        7,
+        18,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛖᛚᚳᚩᛗᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        5,
+        23,
+        9,
+        24,
+        19,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᛗᛗᚪᚾᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        5,
+        23,
+        18,
+        9,
+        10,
+        24,
+        16,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚾᛏᚪᛁᚾᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        6,
+        4,
+        24,
+        19,
+        13,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᚩᚷᚱᚪᛗ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        6,
+        19,
+        24,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᚩᚷᛗᚪ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        6,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚷᚩᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        6,
+        24,
+        9,
+        24,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚾᚪᛚᚩᚷ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        7,
+        5,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚾᚩᚹ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_wisdom.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        3,
+        7,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚻᚩ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        7,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚹᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        },
+        {
+          "original_runes": "ᚾᚩᚹ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        3,
+        7,
+        15,
+        15,
+        8,
+        24,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚻᚪᛞᚩᚹᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        7,
+        15,
+        23,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚩᚱᛞᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        7,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚹᚩ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        7,
+        20,
+        18,
+        23,
+        6,
+        18,
+        5,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚾᚩᚹᛚᛖᛞᚷᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        7,
+        24,
+        4,
+        23,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚩᚹᚪᚱᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        8,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚻᚩ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        8,
+        26,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᚩᛚᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        9,
+        4,
+        28,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᛠᛋᚩᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        9,
+        5,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚾᚩᚹ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_wisdom.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        3,
+        9,
+        5,
+        18,
+        6,
+        23,
+        18,
+        20,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚾᚩᚹᛚᛖᛞᚷᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        9,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚹᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        },
+        {
+          "original_runes": "ᚾᚩᚹ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        3,
+        9,
+        9,
+        10,
+        18,
+        5,
+        9,
+        18,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᚾᚩᚳᛖᚾᚳᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        9,
+        10,
+        24,
+        16,
+        17
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᛒᛏᚪᛁᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        9,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᚩᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 8
+    },
+    {
+      "indices": [
+        3,
+        9,
+        16,
+        24,
+        10,
+        9,
+        18,
+        23,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚾᛏᚪᛁᚾᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        9,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚾᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        9,
+        20,
+        18,
+        15,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᛖᛋᛋᚩᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        9,
+        20,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚾᛚᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        9,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᚩᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        13,
+        13,
+        18,
+        23,
+        15,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚩᛈᛈᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        13,
+        19,
+        10,
+        18,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᛗᛈᚩᛋᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        15,
+        15,
+        18,
+        20,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᛖᛋᛋᚩᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        15,
+        15,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚩᛋᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        15,
+        16,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚩᛋᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        15,
+        18,
+        10,
+        19,
+        13
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᛗᛈᚩᛋᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        15,
+        18,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚩᛗᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        15,
+        18,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚩᛋᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        15,
+        23,
+        10,
+        7,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛁᛞᛋᚩᛗ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        15,
+        28,
+        4,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᛠᛋᚩᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        16,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚹᚩ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        16,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᚩᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 8
+    },
+    {
+      "indices": [
+        3,
+        16,
+        10,
+        18,
+        9,
+        16,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚩᛏᛁᛖᚾᛏ",
+          "reversed": false,
+          "sources": [
+            "explicit historical/thematic label: TOTIENT",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        16,
+        15,
+        23,
+        18,
+        13,
+        13
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚩᛈᛈᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        16,
+        16,
+        9,
+        18,
+        10,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚩᛏᛁᛖᚾᛏ",
+          "reversed": true,
+          "sources": [
+            "explicit historical/thematic label: TOTIENT",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        16,
+        23,
+        4,
+        24,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚩᚹᚪᚱᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        17,
+        16,
+        24,
+        10,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᛒᛏᚪᛁᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        18,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚾᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        19,
+        7,
+        10,
+        15,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛁᛋᛞᚩᛗ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        19,
+        7,
+        10,
+        23,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛁᛞᛋᚩᛗ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        19,
+        16,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚩᛋᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        19,
+        18,
+        7,
+        18,
+        20,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛖᛚᚳᚩᛗᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        19,
+        18,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚩᛗᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        19,
+        18,
+        17,
+        18,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᚳᚩᛗᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        19,
+        19,
+        24,
+        9,
+        23,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᛗᛗᚪᚾᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        20,
+        15,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚩᛋᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        20,
+        18,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚩᛋᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        20,
+        18,
+        17,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᛚᚩᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        3,
+        20,
+        24,
+        9,
+        24,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚾᚪᛚᚩᚷ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        20,
+        24,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛚᚩᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        20,
+        26,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᚩᛚᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        21,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚷᚩᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        21,
+        15,
+        16,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᛏᚱᚩᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        21,
+        17,
+        18,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᛚᚩᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        3,
+        21,
+        24,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛚᚩᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        23,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᚩᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        23,
+        15,
+        10,
+        7,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛁᛋᛞᚩᛗ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        3,
+        23,
+        24,
+        8,
+        15,
+        15,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚻᚪᛞᚩᚹᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        23,
+        24,
+        19,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᚩᚷᛗᚪ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        24,
+        9,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚩᚪᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        26,
+        20,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚩᚾᛚᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        3,
+        26,
+        23,
+        18,
+        15,
+        16,
+        4
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛖᛋᛏᚱᚩᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        5,
+        9,
+        18,
+        23,
+        18,
+        16,
+        13,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚾᚳᚱᚣᛈᛏᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        5,
+        24,
+        15,
+        23,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚪᚳᚱᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        4,
+        6,
+        16,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚷᚱᛠᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        6,
+        18,
+        18,
+        19,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛗᛖᚱᚷᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        6,
+        20,
+        10,
+        13,
+        18,
+        6,
+        24,
+        19,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᛁᛚᚷᚱᛁᛗᚪᚷᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        6,
+        20,
+        10,
+        13,
+        19,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᛁᛚᚷᚱᛁᛗ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        9,
+        21,
+        7,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚪᚱᚾᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        9,
+        24,
+        20,
+        5,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚪᚱᚾᚪᛚ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        10,
+        6,
+        8,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᛁᚷᚻᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        4,
+        10,
+        9,
+        15,
+        16,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᛋᛏᚪᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        10,
+        13,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚱᛁᛈ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        10,
+        18,
+        9,
+        5,
+        18,
+        18,
+        14,
+        13,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛉᛈᛖᚱᛁᛖᚾᚳᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        10,
+        19,
+        13,
+        10,
+        20,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᛁᛚᚷᚱᛁᛗ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        10,
+        19,
+        18,
+        15,
+        13
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛁᛗᛖᛋ",
+          "reversed": false,
+          "sources": [
+            "explicit historical/thematic label: PRIMES",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        10,
+        19,
+        24,
+        6,
+        18,
+        13,
+        10,
+        20,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᛁᛚᚷᚱᛁᛗᚪᚷᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        10,
+        19,
+        24,
+        20,
+        10,
+        16,
+        26,
+        13
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛁᛗᚪᛚᛁᛏᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        13,
+        15,
+        18,
+        5,
+        10,
+        16,
+        5,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᚪᚳᛏᛁᚳᛖᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        13,
+        15,
+        18,
+        19,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛁᛗᛖᛋ",
+          "reversed": true,
+          "sources": [
+            "explicit historical/thematic label: PRIMES",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        13,
+        23,
+        18,
+        4,
+        24,
+        13,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛖᛈᚪᚱᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        13,
+        26,
+        16,
+        10,
+        20,
+        24,
+        19,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛁᛗᚪᛚᛁᛏᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        15,
+        18,
+        10,
+        16,
+        10,
+        20,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᛠᛚᛁᛏᛁᛖᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        16,
+        8,
+        6,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᛁᚷᚻᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        4,
+        16,
+        13,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᚱᛁᛈ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        16,
+        24,
+        10,
+        9,
+        16,
+        26,
+        5,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᛖᚱᛏᚪᛁᚾᛏᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        18,
+        5,
+        26,
+        16,
+        9,
+        10,
+        24,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᛖᚱᛏᚪᛁᚾᛏᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        18,
+        7,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛖᚱᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        },
+        {
+          "original_runes": "ᚹᛖᚱᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        18,
+        8,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᛖᚱᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        },
+        {
+          "original_runes": "ᚻᛖᚱᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        18,
+        8,
+        23,
+        24,
+        18,
+        5,
+        9,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛞᚻᛖᚱᛖᚾᚳᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        18,
+        9,
+        5,
+        18,
+        24,
+        23,
+        8,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛞᚻᛖᚱᛖᚾᚳᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        18,
+        13,
+        14,
+        18,
+        18,
+        5,
+        9,
+        18,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛉᛈᛖᚱᛁᛖᚾᚳᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        18,
+        13,
+        24,
+        4,
+        18,
+        23,
+        13
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᛖᛈᚪᚱᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        18,
+        16,
+        15,
+        24,
+        19
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚪᛋᛏᛖᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        4,
+        18,
+        16,
+        24,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚪᛏᛖᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        18,
+        19,
+        18,
+        18,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛗᛖᚱᚷᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        18,
+        23,
+        15,
+        24,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚪᚳᚱᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        4,
+        18,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚱᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 6
+    },
+    {
+      "indices": [
+        4,
+        19,
+        24,
+        15,
+        16,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚪᛋᛏᛖᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        4,
+        20,
+        24,
+        16,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚪᛏᛖᚱ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        23,
+        18,
+        15,
+        10,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᚪᛁᛋᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        24,
+        5,
+        16,
+        10,
+        5,
+        18,
+        15,
+        13
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛈᚱᚪᚳᛏᛁᚳᛖᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        24,
+        5,
+        20,
+        24,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚪᚱᚾᚪᛚ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        24,
+        7,
+        21,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚪᚱᚾᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        24,
+        10,
+        15,
+        18,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᚪᛁᛋᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        24,
+        15,
+        15,
+        18,
+        5,
+        18,
+        9,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᛖᚳᛖᛋᛋᚪᚱᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        24,
+        16,
+        15,
+        9,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᛋᛏᚪᚱ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        24,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚱᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 6
+    },
+    {
+      "indices": [
+        4,
+        26,
+        9,
+        18,
+        5,
+        18,
+        15,
+        15,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᛖᚳᛖᛋᛋᚪᚱᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        26,
+        13,
+        16,
+        18,
+        23,
+        18,
+        9,
+        5
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚾᚳᚱᚣᛈᛏᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        26,
+        16,
+        10,
+        20,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᛠᛚᛁᛏᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        28,
+        16,
+        6
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚷᚱᛠᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        4,
+        28,
+        20,
+        10,
+        16,
+        10,
+        18,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᛠᛚᛁᛏᛁᛖᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        4,
+        28,
+        20,
+        10,
+        16,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚱᛠᛚᛁᛏᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        5,
+        7,
+        18,
+        15,
+        16,
+        27,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚹᛖᛋᛏᛡᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        7,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛠᚳ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        8,
+        7,
+        8,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚻᛁᚳᚻ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        8,
+        18,
+        23,
+        24,
+        16,
+        16,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛏᛏᚪᚳᚻᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        8,
+        24,
+        21,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚻᚪᛝᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        8,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛠᚳᚻ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        9,
+        18,
+        6,
+        10,
+        20,
+        20,
+        18,
+        16,
+        9,
+        10,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᛏᛖᛚᛚᛁᚷᛖᚾᚳᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        9,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚪᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        5,
+        9,
+        27,
+        16,
+        15,
+        18,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚹᛖᛋᛏᛡᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        10,
+        5,
+        24,
+        23,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᛁᚳᚪᛞᚪ",
+          "reversed": false,
+          "sources": [
+            "explicit historical/thematic label: CICADA"
+          ]
+        },
+        {
+          "original_runes": "ᚳᛁᚳᚪᛞᚪ",
+          "reversed": true,
+          "sources": [
+            "explicit historical/thematic label: CICADA"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        5,
+        10,
+        8,
+        7,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚻᛁᚳᚻ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        10,
+        20,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᛁᚳᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        14,
+        18,
+        16,
+        13,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛉᚳᛖᛈᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        15,
+        24,
+        23,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛋᚳᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        18,
+        10,
+        9,
+        16,
+        18,
+        20,
+        20,
+        10,
+        6,
+        18,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᛏᛖᛚᛚᛁᚷᛖᚾᚳᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        18,
+        13,
+        16,
+        18,
+        14
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛉᚳᛖᛈᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        18,
+        13,
+        16,
+        27,
+        9,
+        23,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛖᚳᛖᛈᛏᛡᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        5,
+        18,
+        20,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᛁᚳᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        18,
+        21,
+        24,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚻᚪᛝᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        18,
+        23,
+        9,
+        27,
+        16,
+        13,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛖᚳᛖᛈᛏᛡᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        5,
+        18,
+        23,
+        24,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛋᚳᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        20,
+        24,
+        17,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚪᛒᚪᛚ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        24,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚪᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        5,
+        24,
+        16,
+        16,
+        24,
+        23,
+        18,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛏᛏᚪᚳᚻᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        24,
+        17,
+        24,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚳᚪᛒᚪᛚ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_wisdom.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        28,
+        7
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛠᚳ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        5,
+        28,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛠᚳᚻ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        6,
+        8,
+        16,
+        18,
+        9,
+        18,
+        23,
+        18,
+        9,
+        20,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚾᛚᛁᚷᚻᛏᛖᚾᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        6,
+        9,
+        10,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚷᚪᛁᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        6,
+        10,
+        20,
+        9,
+        18,
+        23,
+        18,
+        9,
+        18,
+        16,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚾᛚᛁᚷᚻᛏᛖᚾᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        6,
+        18,
+        19,
+        18,
+        15,
+        15,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᛖᛋᛋᚪᚷᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        6,
+        24,
+        9,
+        10,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚷᚪᛁᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        6,
+        24,
+        10,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚷᚪᛁᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        6,
+        24,
+        10,
+        9,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚷᚪᛁᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        6,
+        24,
+        15,
+        15,
+        18,
+        19,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᛖᛋᛋᚪᚷᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        7,
+        8,
+        18,
+        9
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚻᛖᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        7,
+        8,
+        24,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚻᚪᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 5
+    },
+    {
+      "indices": [
+        7,
+        9,
+        18,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚻᛖᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        7,
+        10,
+        20,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛁᛚᛚ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 5
+    },
+    {
+      "indices": [
+        7,
+        16,
+        24,
+        8
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚻᚪᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 5
+    },
+    {
+      "indices": [
+        7,
+        20,
+        20,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᛁᛚᛚ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 5
+    },
+    {
+      "indices": [
+        7,
+        20,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚪᚹ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        7,
+        24,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛚᚪᚹ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        7,
+        24,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚪᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        7,
+        26,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚹᚪᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        8,
+        10,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᛁᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        8,
+        15,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᛁᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        8,
+        15,
+        18,
+        13,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚻᚪᛈᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        8,
+        23,
+        9,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᚪᚾᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        8,
+        23,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᛠᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        8,
+        24,
+        9,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᚪᚾᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        8,
+        24,
+        13,
+        18,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚻᚪᛈᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        8,
+        28,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚻᛠᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        9,
+        10,
+        18,
+        23,
+        10,
+        15
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᛋᛁᛞᛖ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        9,
+        10,
+        19,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᛁᚾᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        10,
+        24,
+        20,
+        13,
+        14,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛉᛈᛚᚪᛁᚾ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        10,
+        24,
+        20,
+        13,
+        14,
+        18,
+        23,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛉᛈᛚᚪᛁᚾᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        15,
+        10,
+        23,
+        18,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛁᚾᛋᛁᛞᛖ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        9,
+        16,
+        19,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᛠᚾᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        18,
+        14,
+        13,
+        20,
+        24,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛉᛈᛚᚪᛁᚾ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        18,
+        18,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᛖᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        18,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚾᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        9,
+        18,
+        23,
+        18,
+        14,
+        13,
+        20,
+        24,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛉᛈᛚᚪᛁᚾᛖᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        23,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᚾᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 3
+    },
+    {
+      "indices": [
+        9,
+        23,
+        18,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚾᛖᛖᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        23,
+        19,
+        10
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᛁᚾᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        9,
+        23,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚾᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 12
+    },
+    {
+      "indices": [
+        9,
+        24,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᚾᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 12
+    },
+    {
+      "indices": [
+        9,
+        28,
+        19,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᛠᚾᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        10,
+        16,
+        18,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛞᛁᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        10,
+        23,
+        15,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚪᛁᛞ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        10,
+        23,
+        18,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛖᛞᛁᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        10,
+        24,
+        15,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛋᚪᛁᛞ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 4
+    },
+    {
+      "indices": [
+        13,
+        18,
+        18,
+        23
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛖᛖᛈ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        13,
+        23,
+        18,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛞᛖᛖᛈ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        15,
+        15,
+        24,
+        19,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛗᚪᛋᛋ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        },
+        {
+          "original_runes": "ᚪᛗᚪᛋᛋ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt"
+          ]
+        }
+      ],
+      "frequency": 2
+    },
+    {
+      "indices": [
+        15,
+        16,
+        16,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᛖᛋᛏ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        15,
+        18,
+        16,
+        16
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᛖᛋᛏ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_warning.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        15,
+        26,
+        28
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛠᛋᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        15,
+        28,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛠᛋᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        16,
+        18,
+        20,
+        20
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᛖᛚᛚ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        16,
+        20,
+        20,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛏᛖᛚᛚ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_jpg107-167.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        17,
+        18,
+        21
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᛝ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        17,
+        21,
+        18
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛒᛖᛝ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        19,
+        24,
+        26
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚪᚣ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        19,
+        26,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᛗᚪᚣ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_welcome.txt"
+          ]
+        }
+      ],
+      "frequency": 1
+    },
+    {
+      "indices": [
+        20,
+        20,
+        24
+      ],
+      "evidence": [
+        {
+          "original_runes": "ᚪᛚᛚ",
+          "reversed": false,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_0_wisdom.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        },
+        {
+          "original_runes": "ᚪᛚᛚ",
+          "reversed": true,
+          "sources": [
+            "relikd:pages/solved_0_loss_of_divinity.txt",
+            "relikd:pages/solved_0_warning.txt",
+            "relikd:pages/solved_0_welcome.txt",
+            "relikd:pages/solved_0_wisdom.txt",
+            "relikd:pages/solved_jpg229.txt"
+          ]
+        }
+      ],
+      "frequency": 14
+    }
+  ],
+  "stream_families": null,
+  "input_sha256": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67",
+  "fixtures_sha256": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+  "pages": [
+    {
+      "page": "LP2-37",
+      "ciphertext_runes": "ᚾᚣᛖᛉᚾᚢᛉᛁᛝᛏᛈᚹᛋᚣᛏᛠᛈᛉᚪᛁᛄᛋᚱᚪᛏᛋᛝᛏᚳᚷᚳᚻᛖᛟᚱᚪᛡᚻᚳᛝᛒᛖᚱᛠᚪᛚᛟᛖᛚᚪᚦᛋᚳᚹᚱᚹᚩᚻᚣᚢᛝᚩᛈᛚᛁᛏᚪᚠᛋᛝᛞᚳᚪᚱᛒᚹᛈᚾᚩᚦᚳᚦᚾᛗᚩᛖᚣᛇᚾᚠᛒᛞᚢᛈᚹᚾᛖᚪᚱᛚᛁᚹᚫᛉᛝᚠᛞᚪᚠᛒᛄᛉᛞᛄᛝᚣᛇᚪᚫᛄᛝᛈᚪᚢᛠᛇᛏᚱᛖᚫᛗᚫᛠᚻᛁᚫᛟᛠᚹᚳᛄᚦᚻᛡᚩᚢᚩᚦᚷᛡᚻᛋᚷᚪᛁᛟᛞᚪᛄᛁᚹᛡᛒᛗᛝᛡᛞᚠᛒᛋᛏᛒᚷᚠᚷᛟᚢᚳᚫᛏᛁᛖᚱᚷᛗᚣᚪᚷᚹᛝᛄᛋᛄᛗᚱᛗᚾᛒᛋᛗᛉᛞᚻᛉᛁᚣᛡᚻᚣᛠᛉᚻᛞᛖᚹᛖᚦᚢᚳᛉᛗᚪᚣᛠᚹᚫᚪᚳ",
+      "rune_count": 228,
+      "f_count": 6,
+      "evaluated_key_sign_tasks": 1524,
+      "dp_transitions": 2111640,
+      "top": [
+        {
+          "score": -4.626346611867732,
+          "plaintext_runes": "ᛒᛞᚫᛉᚢᛋᛠᛝᛠᚻᛈᛈᛠᚦᛞᛒᚠᛒᚫᛉᛋᚳᛁᚱᛞᚢᛝᛋᛋᛖᛝᛇᚫᚷᚷᛝᛋᛞᛋᚩᚾᚦᛁᚠᛋᚫᛚᛈᚠᚠᚪᚳᚾᛝᚷᚾᛁᛞᛞᛞᚳᛒᚢᚻᚠᚠᛖᚦᚳᚩᚩᛋᛗᚪᛟᚾᚠᛟᛒᛟᛝᛖᚳᚾᚹᛡᛏᛗᛄᚪᚾᚣᛈᛋᚩᚹᚪᚹᛏᚱᛏᛈᛖᛉᛖᛏᛗᚹᛚᚹᛋᚷᛚᛒᛖᛗᚢᚹᚪᛈᚳᚹᛗᛡᛄᚱᚣᛡᚦᛠᚹᚪᛋᛚᚠᛚᛚᚩᛈᛗᛋᛖᚷᚢᚹᛋᛁᚠᛉᚣᛖᚳᚻᚱᚠᛞᛗᚹᚾᛉᛗᛟᚣᚾᛖᛖᛗᚠᛉᚳᚻᚾᛉᚠᚻᚷᚾᛄᛒᛋᛁᚷᛟᛉᚪᚦᛋᛁᚷᛁᚾᚾᛋᚢᛁᚾᚢᛠᛡᛇᚷᚢᛖᚷᚱᚦᛇᚻᛏᚩᚷᛏᚩᚦᚹᛁᚻᛋᚻᛒᚢᚠᚠᛝᚹᚩᛋᛄ",
+          "transliteration": "BDAEXUSEANGEAHPPEATHDBFBAEXSCIRDUNGSSENGEOAEGGNGSDSONTHIFSAELPFFACNNGGNIDDDCBUHFFETHCOOSMAOENFOEBOENGECNWIATMJANYPSOWAWTRTPEXETMWLWSGLBEMUWAPCWMIAJRYIATHEAWASLFLLOPMSEGUWSIFXYECHRFDMWNXMOEYNEEMFXCHNXFHGNJBSIGOEXATHSIGINNSUINUEAIAEOGUEGRTHEOHTOGTOTHWIHSHBUFFNGWOSJ",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              1,
+              19,
+              13,
+              16,
+              27,
+              9,
+              5,
+              3,
+              9,
+              15
+            ],
+            "start": 7,
+            "skip_positions": [
+              167,
+              173
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 2460,
+          "max_states": 20
+        },
+        {
+          "score": -4.661497178210127,
+          "plaintext_runes": "ᛉᚦᛗᚾᛗᚹᚾᛖᛏᚹᛋᚢᚻᚦᛝᚪᛋᛞᛠᛖᚣᚻᚪᛈᚹᛈᛏᚹᛞᚦᛖᛚᛗᚢᚪᛈᚫᛚᚩᚦᛄᛗᛗᚠᛈᚩᚷᛗᚩᚱᚷᚻᛞᚢᛗᛝᚳᛋᚦᚹᚦᚫᚪᚩᛖᛝᛠᛠᛟᚦᚳᚩᛠᚪᛚᛏᛋᛠᛚᚣᚩᛝᛗᛖᛚᛁᛄᛄᛗᚻᚷᚳᚹᛁᛝᛠᚳᚱᚱᚩᛖᚢᛡᛉᛏᚠᚠᚱᚻᚷᛒᛞᚠᛒᛏᚣᛏᛈᛡᛒᛏᛁᚱᚹᚪᛏᛝᛗᛁᛇᚱᚩᚾᛋᛖᛇᚢᚠᚢᛖᛒᚷᛋᚢᚳᛟᚫᚷᛒᚢᚠᚻᛟᛈᛈᚷᛉᛠᛒᛡᛏᚢᛚᚱᚹᛁᚠᛠᛚᚻᛇᛚᛒᚠᛟᛋᛟᛞᛇᚹᛖᛗᛗᛟᛖᚣᚱᚦᛏᚹᚣᚻᛒᛖᛗᚾᛠᚷᛈᛖᚾᚳᚠᚾᛖᛄᚫᛚᛄᚪᛉᚠᚠᛁᚢᚳᚣᚹᛖᛉᛖᛠᚦᚾᛏᚩᛈᛖ",
+          "transliteration": "XTHMNMWNETWSUHTHNGASDEAEYHAPWPTWDTHELMUAPAELOTHJMMFPOGMORGHDUMNGCSTHWTHAEAOENGEAEAOETHCOEAALTSEALYONGMELIJJMHGCWINGEACRROEUIAXTFFRHGBDFBTYTPIABTIRWATNGMIEORONSEEOUFUEBGSUCOEAEGBUFHOEPPGXEABIATULRWIFEALHEOLBFOESOEDEOWEMMOEEYRTHTWYHBEMNEAGPENCFNEJAELJAXFFIUCYWEXEEATHNTOPE",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "key_indices": [
+              8,
+              23,
+              28
+            ],
+            "start": 1,
+            "skip_positions": [
+              105,
+              173
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 738,
+          "max_states": 6
+        },
+        {
+          "score": -4.680675586881472,
+          "plaintext_runes": "ᛄᛉᚹᚣᛚᚾᛉᛉᚱᚩᛄᚱᚾᛞᚪᚣᛡᛋᛋᛖᛈᛁᛋᚠᚪᚾᛠᚪᛚᚳᚪᚦᛁᚦᛝᚪᚣᚩᛗᛠᛞᚹᚹᚢᛋᚻᚦᚹᛠᚠᚾᚾᛋᚱᛝᚱᚣᚦᚦᛞᚱᛏᛄᛚᛉᚱᛏᚠᛁᛗᚷᚳᚱᛚᚻᛇᛄᚦᛝᛖᚷᛞᚦᛁᚹᛁᛡᛈᛁᚠᚹᛒᛞᚹᚱᛏᛟᚳᚷᚻᛉᛖᛞᛁᛗᚪᚣᛏᚠᚻᚠᛋᛏᛒᚩᛠᚹᚠᛋᛈᛠᛡᚢᛁᚢᛡᛇᛚᚹᛞᚳᛋᚫᛇᚢᚠᛖᚢᚩᛞᛈᛞᛄᚣᚻᛞᛒᚾᛗᛈᛝᚪᛟᚠᛋᚣᚢᛏᛈᛁᚱᛡᛞᛁᛖᚢᚢᚠᚻᚱᚻᛞᛖᛚᚳᚩᛁᚪᛉᛇᛉᚹᛋᛖᛝᛡᚫᚳᛖᛗᛖᚪᛒᚳᛝᚠᛋᛞᚾᚢᚣᚦᚩᛋᚠᚦᚣᛒᛟᚫᚣᛏᚣᛟᛖᛟᛡᚾᛞᛁᚷᚪᛡᛇᛒᚪᛏᛚ",
+          "transliteration": "JXWYLNXXROJRNDAYIASSEPISFANEAALCATHITHNGAYOMEADWWUSHTHWEAFNNSRNGRYTHTHDRTJLXRTFIMGCRLHEOJTHNGEGDTHIWIIAPIFWBDWRTOECGHXEDIMAYTFHFSTBOEAWFSPEAIAUIUIAEOLWDCSAEEOUFEUODPDJYHDBNMPNGAOEFSYUTPIRIADIEUUFHRHDELCOIAXEOXWSENGIAAECEMEABCNGFSDNUYTHOSFTHYBOEAEYTYOEEOEIANDIGAIAEOBATL",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              0,
+              19,
+              1,
+              5,
+              4,
+              10,
+              5,
+              18,
+              5,
+              9,
+              18,
+              4,
+              18
+            ],
+            "start": 9,
+            "skip_positions": [
+              67,
+              89,
+              108,
+              167
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 3192,
+          "max_states": 26
+        }
+      ]
+    }
+  ],
+  "evaluated_key_sign_tasks": 1524,
+  "dp_transitions": 2111640,
+  "limits": [
+    "DP finds the global optimum under this finite-context score, not the correct plaintext by guarantee.",
+    "No deleted nulls, transpositions, changing alphabets, or cross-page keys in this family.",
+    "Scores are selected over keys/phases/signs/F masks; uncalibrated maxima are not evidence of decryption.",
+    "Distinct keys are reduced by primitive period and rotation; reverse spellings are also included.",
+    "A negative result only concerns this finite family and scorer."
+  ],
+  "wall_seconds": 2.6079237000085413,
+  "new_decryptions": []
+}

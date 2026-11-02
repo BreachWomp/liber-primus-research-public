@@ -1,0 +1,10 @@
+{
+  "experiment": "E032-claim-provenance",
+  "seconds": 30,
+  "seed": null,
+  "scope": "Static examination of complete current public GitLab tree at pinned commit, README and index.html. Not a search of all branches/history or an onion-server retrieval.",
+  "checks": ["HTTP snapshot hashes", "Git object blob identities", "byte equality to E029 HTML", "presence of named binary and analyzer in current tree", "published first/last32-byte previews compared to five preserved E031 variants"],
+  "interpretation": "No provenance can be inferred from absent current-tree paths. Preview agreement or disagreement does not identify all256 bytes or authenticate an origin.",
+  "null_model": "Not applicable; deterministic source audit, no statistical or decryption claim.",
+  "memory": "Retained metadata and HTML <=2MB per file; fixed five byte variants. Single process; no remote-code execution."
+}

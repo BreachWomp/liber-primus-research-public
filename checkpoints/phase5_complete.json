@@ -1,0 +1,185 @@
+{
+  "created_at": "2026-10-19T12:49:04.023538+00:00",
+  "status": "fifth_batch_complete_no_new_decryption",
+  "summary": "results/phase5_summary.json",
+  "summary_sha256": "9aeb3b964fba1ef1ac822173600050c79a9d58a95cbd636561e4b2e4b0e4975c",
+  "new_experiments": [
+    {
+      "id": "E018-pages-LP2-35_39",
+      "fingerprint": "7c59d0e32d9c856ef685515343c2a6b7395d2c1e7113e537064a6ae21133ab0a",
+      "output": "results/E018-pages-LP2-35_39-7c59d0e32d9c.json",
+      "sha256": "058a5acafb8cd3766ca243043bd6b995a7613346a06b5feaa114056276f8ea19"
+    },
+    {
+      "id": "E018-pages-LP2-40_44",
+      "fingerprint": "fc7e342f0c1f4e3dd415b6bafa591d0f532ff2978a086c69a4611f75b4bd6055",
+      "output": "results/E018-pages-LP2-40_44-fc7e342f0c1f.json",
+      "sha256": "899e86606c61cb7b0373744ff0a3ef5f6dc8a1cbf9cad3b266c5088874fa344a"
+    },
+    {
+      "id": "E018-pages-LP2-45_49",
+      "fingerprint": "0f01a3036637ed1b718b42c892723ef9b39d71245cc80dbe7f1bb26859742efe",
+      "output": "results/E018-pages-LP2-45_49-0f01a3036637.json",
+      "sha256": "a4a3e47ae01fa6ea9f28c2ee0688e1f097e24198661a299b026ab79611ca07d7"
+    },
+    {
+      "id": "E018-pages-LP2-50_54",
+      "fingerprint": "85b59ac1ca4932c7cee388bd0799768a3f11c576808bb9371694056863c62aed",
+      "output": "results/E018-pages-LP2-50_54-85b59ac1ca49.json",
+      "sha256": "33d2c6d1abfa4c190732cf33a28058a22a0c46fc016285a60198cdd7fa6f574e"
+    },
+    {
+      "id": "E018-pages-LP2-55_55",
+      "fingerprint": "ac2dafd4315f90d0abe789142ba807506a5f51c7ffbb7e33a412cd80f619c96d",
+      "output": "results/E018-pages-LP2-55_55-ac2dafd4315f.json",
+      "sha256": "3f9c6a10cb9f5e7adf4b8d74a0eb9002d1a087d49837f495ae7958b86d1eace7"
+    },
+    {
+      "id": "E018-null-LP2-49_49",
+      "fingerprint": "83ebdbc0fafbe9b1913e4168dc6c0b1edb4f65a7b9f36eded24191fdfcf5237d",
+      "output": "results/E018-null-LP2-49_49-83ebdbc0fafb.json",
+      "sha256": "fd751b27d09cfb671558f65762dfa212364112a74976aa9485668021a3c4d0e6"
+    },
+    {
+      "id": "E019-controls",
+      "fingerprint": "96a6be59a5ea7b45fb93ac9673650a48a4b8b9cd40efb479403afdd8081b2a7b",
+      "output": "results/E019-controls-96a6be59a5ea.json",
+      "sha256": "402cf1ce4db14e14d9a95653d8c028a2f56ca8b5b099e0e60a88b548678ef82c"
+    },
+    {
+      "id": "E019-pages-LP2-00_55",
+      "fingerprint": "e867cef4e36304a6df2cde6a4e09e32ec8d0ee8e989ab356cb6b66ae3e14bca2",
+      "output": "results/E019-pages-LP2-00_55-e867cef4e363.json",
+      "sha256": "5cd5761d1e6e8619388c03da492ca934f3fe33e8bba6cc72604d5c868b61e641"
+    },
+    {
+      "id": "E019-null-LP2-55_55",
+      "fingerprint": "3dcb82f90999a460287fbb54de9f5b391360c4306804b7c621e2f9b2adc367ca",
+      "output": "results/E019-null-LP2-55_55-3dcb82f90999.json",
+      "sha256": "a7e7840a17af8926d1ff7268205d95b41eb5f95950031d41a8ac902e089f37c0"
+    },
+    {
+      "id": "E020-null-batch-00",
+      "fingerprint": "a99340c694177294f8b9fda85714aca5b1ea9f4446c5e38c73baf6e26e38c888",
+      "output": "results/E020-null-batch-00-a99340c69417.json",
+      "sha256": "189749363c3d2f798463786f7558c6f29b0dc49df8779f23cda9fa7c23451c54"
+    },
+    {
+      "id": "E020-null-batch-01",
+      "fingerprint": "b8caffc95d7dce2cd4e67d433ca1e6ac167e3886791b1817135c5ef2b6f4d4a2",
+      "output": "results/E020-null-batch-01-b8caffc95d7d.json",
+      "sha256": "8af798fc555aed456f63d68f705c758fd7f466d43ee095e5ee9c83071b43a27f"
+    },
+    {
+      "id": "E020-null-batch-02",
+      "fingerprint": "17bf3afceae2b0c959c88a2dc4d973837f636b41edb0faa73c3082d281e732c5",
+      "output": "results/E020-null-batch-02-17bf3afceae2.json",
+      "sha256": "1ea9f47ea693f018605541c6ed2adefbdf10711645d8d7c52eeb90e702e72a12"
+    },
+    {
+      "id": "E020-null-batch-03",
+      "fingerprint": "5fcb23d60c72a529be51d4535fec5415f394aa01e3fa79d1496304eb5c4c16be",
+      "output": "results/E020-null-batch-03-5fcb23d60c72.json",
+      "sha256": "c7de13af1f5d264719a0d2fc1c5292adccf3f4432d15234a2bc90938579ad59e"
+    },
+    {
+      "id": "E020-null-batch-04",
+      "fingerprint": "169d0376b2c9a84a7b508a9a5c11d929eb1cb77e25657e423475d71732a0a084",
+      "output": "results/E020-null-batch-04-169d0376b2c9.json",
+      "sha256": "400217a4405d122d38927fc427e10cd01eaf7deb0453c650d60d920479616d91"
+    },
+    {
+      "id": "E020-null-batch-05",
+      "fingerprint": "be9b83af0950a084ba74e5a5fd1d59c57dc200c2e80fb128b79e0c70dfa2769e",
+      "output": "results/E020-null-batch-05-be9b83af0950.json",
+      "sha256": "25cba5ef8d99c9876b970d582e90e08831a4b147e0909428b3830a737ae36dbb"
+    },
+    {
+      "id": "E020-null-batch-06",
+      "fingerprint": "32a24108232f2cd95a8d7f2a6665594a1ea4cc4ecc10400fd04f7a921bd92648",
+      "output": "results/E020-null-batch-06-32a24108232f.json",
+      "sha256": "51bd7ba66f161ad2e942fdc5c35d41d37efe21ebe66be2439499af7d50708781"
+    },
+    {
+      "id": "E020-null-batch-07",
+      "fingerprint": "c17b88690dbee3a8ed189d2469d8d30e2a063fdad5f550e5b72407533248dfb7",
+      "output": "results/E020-null-batch-07-c17b88690dbe.json",
+      "sha256": "e80294919ec0147bafd662570521c23354023540fdcd17f0e1c4e1dafe62d1b2"
+    },
+    {
+      "id": "E020-null-batch-08",
+      "fingerprint": "595cef18970111caf5549bfd78372d57792382e7ce4255dde9b2d92706f5e7da",
+      "output": "results/E020-null-batch-08-595cef189701.json",
+      "sha256": "426c2608aa742c7fd134af6736375e255fb4f128a28525be569c1496be6e1191"
+    },
+    {
+      "id": "E020-null-batch-09",
+      "fingerprint": "a6fd5ffb6acdcfddc457eac519ce298ec9f81ecea37d2c4e15b77b604feaa370",
+      "output": "results/E020-null-batch-09-a6fd5ffb6acd.json",
+      "sha256": "d5310661e939d7d1d1534921b52db0e8adf607922f78aae753a4fb706f2d1e98"
+    },
+    {
+      "id": "E020-null-batch-10",
+      "fingerprint": "e1f1da64665fc6342db357124a0b70979dcdf486a30cf661543b4b1cbd365b8b",
+      "output": "results/E020-null-batch-10-e1f1da64665f.json",
+      "sha256": "4646a1ad27f23cc51b7a4c931ab11a4849cf00645079195f3583f093e44b198b"
+    },
+    {
+      "id": "E020-null-batch-11",
+      "fingerprint": "88ffe60665139b9db031c98d0b40c7fc975c87712492bdc01dd827bd5ef6f5dd",
+      "output": "results/E020-null-batch-11-88ffe6066513.json",
+      "sha256": "443c98bee988c5a78434a9cf63fa5c87b691682091bad61a7357103a3682df39"
+    },
+    {
+      "id": "E020-null-batch-12",
+      "fingerprint": "c5f6dfccf9cb837e50337939424cc213494077cc881cccb7be0584aabc3cd5b0",
+      "output": "results/E020-null-batch-12-c5f6dfccf9cb.json",
+      "sha256": "4e2ad3c7197f6fe30e596ed4cc4c45e0fd2010c6821f2d0cffbb553cee452259"
+    },
+    {
+      "id": "E020-null-batch-13",
+      "fingerprint": "0ee3be57d21865366be9fd192bec84ee7d300177fb944be04d47654ed847321d",
+      "output": "results/E020-null-batch-13-0ee3be57d218.json",
+      "sha256": "abee498e55c12ff97d158ba69c1b4dc38b5a63472ac3def95803f97ae231135e"
+    },
+    {
+      "id": "E020-null-batch-14",
+      "fingerprint": "4eb4d2d69335db436c90917d32c3c4ef73d37188fc23a21666deeed9215af9f5",
+      "output": "results/E020-null-batch-14-4eb4d2d69335.json",
+      "sha256": "1bae9e9291377f0262cf2960d6472110205461fead4af17d9a1234aa7315db67"
+    },
+    {
+      "id": "E020-null-batch-15",
+      "fingerprint": "63c1f8fbdb68255a2f7a160829b9f71ede7dbc767fc03fa5cd8380a26154df38",
+      "output": "results/E020-null-batch-15-63c1f8fbdb68.json",
+      "sha256": "c3b268771371863cd57a56ceb2666fd681ef409545b053f09fe39e1d7e51c5de"
+    },
+    {
+      "id": "E020-null-batch-16",
+      "fingerprint": "85cfc2a146e037104a1ffe32e2d03eed00f224677550fa7a20de211c50361e8e",
+      "output": "results/E020-null-batch-16-85cfc2a146e0.json",
+      "sha256": "40c47612ac1bee0804b2caaf76370f217297c8d8b54429adfd0a14427d4662b1"
+    },
+    {
+      "id": "E020-null-batch-17",
+      "fingerprint": "59db72925734f984060b696c94a0b6bab8ca710d0249dfd6840ccc71aae0d348",
+      "output": "results/E020-null-batch-17-59db72925734.json",
+      "sha256": "79d404dfbf250872a26fa0f88e64b5174220e563b603665ad314573fa7d848ac"
+    },
+    {
+      "id": "E020-null-batch-18",
+      "fingerprint": "03f82c6930072d55c315bfb4cf78d66f7690ce3dee1639dae255c577d889872d",
+      "output": "results/E020-null-batch-18-03f82c693007.json",
+      "sha256": "0aa5a9d2daeaa70fd5b181f0862ea4110d55d5ebb37df578184b11da872383a6"
+    },
+    {
+      "id": "E020-null-batch-19",
+      "fingerprint": "db444b7fd4df37b478d3a5e2c614cf78244114385b7e462d1e6525fc949ee3f8",
+      "output": "results/E020-null-batch-19-db444b7fd4df.json",
+      "sha256": "dcfb495bf8b743944fab15e6dffc92ac267f85c12b3968e1d78d8a8eff448c47"
+    }
+  ],
+  "tests": 63,
+  "new_decryptions": [],
+  "resume": "Read current state/hypotheses/report; do not recompute completed fingerprints."
+}

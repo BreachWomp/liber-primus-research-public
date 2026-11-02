@@ -1,0 +1,13 @@
+{
+  "experiment": "E023-glyph-audit",
+  "review_type": "Single analyst visual review with reproducible ink-height measurements; no second independent reader.",
+  "measurement_status": "Thresholds 32,128,224 selected after initial visual inspection as a sensitivity check, not a preregistered statistical classifier.",
+  "observations": [
+    {"page_id":"LP2-49","row_1based":6,"column_1based":6,"selected_token":"1l","historical_alternatives":["1L","1l"],"status":"image_supported","reason":"No L foot. Second glyph has height 73/74/74 at thresholds 32/128/224, matching same-page lowercase l (r1c3), rather than the 67-pixel I (r4c2).","comparison_cells":[["LP2-49",1,3],["LP2-49",4,2],["LP2-49",4,7]]},
+    {"page_id":"LP2-49","row_1based":7,"column_1based":3,"selected_token":"0l","historical_alternatives":["0L","0l"],"status":"image_supported","reason":"No L foot. Second glyph height 73/74/74 matches lowercase l; uppercase I is 67 pixels.","comparison_cells":[["LP2-49",1,3],["LP2-49",4,2],["LP2-49",4,7]]},
+    {"page_id":"LP2-50","row_1based":11,"column_1based":6,"selected_token":"0I","historical_alternatives":["0l","0I"],"status":"image_supported","reason":"Second glyph height 67/67/67 matches the same-page I in r2c3 and r12c8; lowercase l in r13c7 is 73/74/74.","comparison_cells":[["LP2-50",2,3],["LP2-50",12,8],["LP2-50",13,7]]},
+    {"page_id":"LP2-50","row_1based":12,"column_1based":5,"selected_token":"2S","historical_alternatives":["2s","2S"],"status":"image_supported","reason":"Capital-height S measures 69/69/71, matching r1c6. Lowercase s in r9c6 measures 44/44/45.","comparison_cells":[["LP2-50",1,6],["LP2-50",9,6]]},
+    {"page_id":"LP2-51","row_1based":8,"column_1based":7,"selected_token":"3I","historical_alternatives":["3i","3I"],"status":"image_supported","reason":"Continuous 67-pixel stem, no dot. Same-page lowercase l is 73/74/74. Dotted i comparison from LP2-49 is contextual cross-page evidence; crop directly shows absence of a dot.","comparison_cells":[["LP2-51",2,8],["LP2-49",10,1]]}
+  ],
+  "limits": ["Five disputed cells reviewed, not all 256 cells independently transcribed.","Source images are pinned repository copies; historical authenticity not independently established.","All old alternatives remain preserved, and canonical transcriptions/pages.json is unchanged.","The supported readings match iddqd/scream314 tokens for these cells; no novelty claim about those transcriptions."]
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "E041-joint-key-skip-external",
+  "hypothesis_id": "H034",
+  "historical_gate": "Require completed E040 both actual historical ciphertexts exact in plaintext,key and mask without oracle.",
+  "controls": "First2 paragraphs per chapterX,XI,XII containing>=350runes and at least2F in first350runes. Take first350runes. Positions refer to pinned raw source paragraphs. This source exclusion is not a historically unseen blind test.",
+  "injection": "Random(3301041), keys length5 then13 per chapter; each key symbol uniform1..28, signs+1 then-1. Skip every other plaintextF, beginning with firstF. Other positions consume key normally. Nonzero key symbols make plaintext0 versus keyed-sourceF distinguishable. Preserve injected key and mask only for post-search checking.",
+  "optimizer": "Unchanged E040 joint_skip_search.py, search seed3303040. Never supply injection key, mask or period to search. No tuning to controls or unknown pages.",
+  "gate": "All6 synthetic cases exact plaintext,key phase/sign and mask, plus prior E040 pass. Failure blocks unknown scan; inspect whether seed omission, local optimization or score limits caused it.",
+  "null": "Three independent exact-count/doublet rejection shuffles of first external cipher, seeds3302041+k,max100000proposals, unchanged full optimizer. Diagnostic only, no inferential p-value.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "memory": "Same bounds as E040,one process,max1024runes,12seeds,at most128fixed-key DP states,29coordinate rows."
+}

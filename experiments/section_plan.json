@@ -1,0 +1,211 @@
+{
+  "registered_at": "2026-10-19T09:25:50.409211+00:00",
+  "experiment": "E012",
+  "sections": [
+    {
+      "id": "LP2-00_02",
+      "page_ids": [
+        "LP2-00",
+        "LP2-01",
+        "LP2-02"
+      ],
+      "source_refs": [
+        "relikd:pages/p0-2.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-03_07",
+      "page_ids": [
+        "LP2-03",
+        "LP2-04",
+        "LP2-05",
+        "LP2-06",
+        "LP2-07"
+      ],
+      "source_refs": [
+        "relikd:pages/p3-7.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-08_14",
+      "page_ids": [
+        "LP2-08",
+        "LP2-09",
+        "LP2-10",
+        "LP2-11",
+        "LP2-12",
+        "LP2-13",
+        "LP2-14"
+      ],
+      "source_refs": [
+        "relikd:pages/p8-14.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-15_22",
+      "page_ids": [
+        "LP2-15",
+        "LP2-16",
+        "LP2-17",
+        "LP2-18",
+        "LP2-19",
+        "LP2-20",
+        "LP2-21",
+        "LP2-22"
+      ],
+      "source_refs": [
+        "relikd:pages/p15-22.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-23_26",
+      "page_ids": [
+        "LP2-23",
+        "LP2-24",
+        "LP2-25",
+        "LP2-26"
+      ],
+      "source_refs": [
+        "relikd:pages/p23-26.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-27_32",
+      "page_ids": [
+        "LP2-27",
+        "LP2-28",
+        "LP2-29",
+        "LP2-30",
+        "LP2-31",
+        "LP2-32"
+      ],
+      "source_refs": [
+        "relikd:pages/p27-32.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-33_39",
+      "page_ids": [
+        "LP2-33",
+        "LP2-34",
+        "LP2-35",
+        "LP2-36",
+        "LP2-37",
+        "LP2-38",
+        "LP2-39"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-40_53",
+      "page_ids": [
+        "LP2-40",
+        "LP2-41",
+        "LP2-42",
+        "LP2-43",
+        "LP2-44",
+        "LP2-45",
+        "LP2-46",
+        "LP2-47",
+        "LP2-48",
+        "LP2-49",
+        "LP2-50",
+        "LP2-51",
+        "LP2-52",
+        "LP2-53"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-54_55",
+      "page_ids": [
+        "LP2-54",
+        "LP2-55"
+      ],
+      "source_refs": [
+        "relikd:pages/p54-55.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-40_55",
+      "page_ids": [
+        "LP2-40",
+        "LP2-41",
+        "LP2-42",
+        "LP2-43",
+        "LP2-44",
+        "LP2-45",
+        "LP2-46",
+        "LP2-47",
+        "LP2-48",
+        "LP2-49",
+        "LP2-50",
+        "LP2-51",
+        "LP2-52",
+        "LP2-53",
+        "LP2-54",
+        "LP2-55"
+      ],
+      "source_refs": [
+        "iddqd:liber-primus__index/liber-primus__index.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    }
+  ],
+  "source_partition_difference": "relikd separates54-55; iddqd index retains54 as subsegment of40-55. All other starts agree.",
+  "parameters": {
+    "offsets": [
+      0,
+      255
+    ],
+    "signs": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "families": [
+      "prime_totient",
+      "prime",
+      "integer_totient"
+    ],
+    "F_masks": "all subsets",
+    "language_context": "continuous across pages",
+    "numeric_page_key_consumption": 0,
+    "timeout_per_process": 180,
+    "phase_compute_budget": 900
+  },
+  "null": {
+    "selection": "highest section mean score across10; fixed before scan",
+    "replicates": 39,
+    "seed": 3301012,
+    "model": "E002 plugin symmetric Markov; independent page starts",
+    "correction": "Bonferroni10sections, withinsection wholegrid max"
+  },
+  "memory": "One DP task at a time; finite cursors/context, 100000 language cache; stream length rune_count+256."
+}

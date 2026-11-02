@@ -1,0 +1,6 @@
+{
+  "experiment":"E062-null-endpoints",
+  "reason":"Independent validation found E062-null-2 called conditional_shuffle, which shuffles the entire sequence. This violates the endpoint-preserving null specified in E062. Preserve that completed diagnostic and explicitly classify its deviation; do not use it as the planned null.",
+  "replacement":"One new registered diagnostic on E062 control2 using frozen search and the original seed3302062. Shuffle only interior symbols; reject until the full sequence adjacent-equality count matches. Preserve counts and endpoints exactly. Max100000 proposals,180seconds,768MiB watchdog. No solver/control parameter changes.",
+  "gate":"E062 unknown eligibility requires12 exact independently verified controls plus this independently verified planned null. The old mismatched null remains recorded and is not used for inference."
+}

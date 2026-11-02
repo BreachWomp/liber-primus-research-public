@@ -1,0 +1,16 @@
+{
+  "hypothesis":"H031",
+  "experiment":"E080",
+  "registered_design":"One fixed BOS/EOS alternative, no parameter sweep or unknown-page access for model design. Previous E036 short-control TUNNELNG->TUNNELEA failure is known, so this is a targeted general repair tested on previously inspected regression and excluded-source texts, not blind model selection.",
+  "training":"Pinned pg2944.txt, split tokens from heldout_language.corpus; chaptersI,III,IV,V,VI,VII,VIII,IX only. II excluded, X/XI/XII excluded from fitting. No LP words/counts added.",
+  "model":"Order4 hierarchical Dirichlet conditional events over29 runes plus EOS=30; BOS=29 only in context, three initial BOS per word. alpha0.5,strength5. Count all word-token events including EOS and all suffix context lengths0..3. Q(w) product including EOS. Q permits empty emissions; full word distribution (count(w)+20*Q(w))/(total_word_tokens+20). Observed segments nonempty. Sum log probabilities divided by rune count. No cross-word context, apostrophe joining, edge fallback or spelling correction.",
+  "regressions":["LP1-03_04_divinity","LP1-14_15_circumference","LP2-57_direct"],
+  "diagnostic":"E080 evaluates truth and every406 single symbol-transposition neighbor of each regression; ignore swaps leaving plaintext unchanged for ranking gate. Compare previous E036 selected wrong plaintext as a preserved diagnostic, never relabel old results.",
+  "heldout":"Same18 E036 windows: first6 paragraphs with at least20 words in each of X,XI,XII, first20 words. Fresh20 single-position nonzero mutations per window, Random3304080. Known inspected text, fresh draws. Compare unchanged E036 word score to new score on identical samples.",
+  "null":"19 independent exact-count shuffles per heldout window, fixed segment endpoints, seed3302080+100*window_index+replicate. Both scalar objectives and vector implementation checked. Language diagnostic only, no optimized ciphertext test or p-value; not used to select parameters.",
+  "arithmetic":"All regression-neighbor and heldout sequence scores compared between vector and scalar implementations within1e-9; unit tests cover independent event counts, conditional normalization, EOS, and batch scores.",
+  "gate":"All three true regression texts strictly exceed every distinct one-swap neighbor by1e-12; new heldout strict-win rate>=0.95 and no loss vs old exceeding0.01; scalar/vector agreement. These local checks do not establish global optimizer recovery.",
+  "followup":"Only on E080 gate, preregister E081 fresh-permutation blind-key search on3regressions+6excluded Emerson windows, plus3 full-search diagnostic nulls for shortest regression. Unchanged E036 starts/warmup, then40 all406-swap sweeps using new word score. All controls exact on observed symbols before separately registered unknown scan with full matched nulls and selection correction.",
+  "bounds":{"process_seconds":180,"watchdog_seconds":185,"phase_seconds":1800,"memory_ceiling_mib":768,"workers":1},
+  "limits":"General substitution heuristic; not a29! exhaustive search. Page edges assumed word endpoints. No historical text decryption inferred from synthetic substitution recovery. Failed gate blocks unknown search; do not tune against this outcome in the same batch."
+}

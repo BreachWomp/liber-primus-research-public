@@ -1,0 +1,113 @@
+{
+  "experiment": "E028-boundary-selective",
+  "status": "completed",
+  "parameters": {
+    "mode": "page",
+    "page": "LP2-22",
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "page": "LP2-22",
+  "ciphertext_runes": "ᛝᛗᛁᚷᛄᚷᚳᚩᚦᛖᚦᛄᚣᚠᚦᚳᛄᛡᛖᚢᛉᛄᚳᚻᛄᚱᛄᚪᚻᚾᚦᛚᚷᚱᚦᛒᚪᚩᛖᚢᛡᛄᚹᛏᚱᚹᛟᚦᚳᛗᚦᚠᚫᚻᛡᚠᛠᚣᚪᚦᛚᛏᛒᚢᛝᛖᛋᛗᚱᚪᚹᛒᚹᛒᛗᚱᚾᛗᚻᛗᛁᚾᚪᛞᛡᛖᚩᚾᚹᛡᚢᛄᚦᛠᛚᚳᚷᛚᛇᛟᛠᛠᚪᛇᛉᚣᚪᚷᛏᚩᛖᚹᛒᛈᚷᛝᛒᛡᚦᚠᛋᚾᛒᚦᚠᛇᛝᛠᚠᚾᛉ",
+  "segment_ends": [
+    2,
+    4,
+    6,
+    12,
+    14,
+    20,
+    27,
+    31,
+    33,
+    35,
+    47,
+    54,
+    65,
+    69,
+    72,
+    84,
+    87,
+    90,
+    94,
+    99,
+    103,
+    107,
+    110,
+    117,
+    122,
+    125,
+    128,
+    131
+  ],
+  "top": [
+    {
+      "score": -6.058907561938041,
+      "plaintext_runes": "ᚾᛈᚣᚹᚱᛋᛚᚪᚠᚫᛉᛄᚢᚠᚦᚳᚹᚾᛠᚢᛝᚣᚹᛁᛋᚣᛝᛉᛈᛟᚦᛒᚱᛁᛖᛋᛚᛚᛒᛄᛖᛄᛞᛖᚾᛁᚾᚱᚹᚪᛏᚪᚢᚪᛋᚱᛄᛒᛝᚾᚪᚢᛁᚾᛚᚱᛋᛒᚾᚪᚢᚣᛄᚩᛈᚾᛏᛉᛇᛋᚢᚷᛟᛡᚫᛋᛈᛈᛝᛗᛖᚪᚷᚦᛏᛁᛋᚳᛋᚾᛄᛒᚦᛏᚪᚣᚾᚱᚷᛝᛁᛞᛞᛁᛗᛚᚣᛟᛟᚣᛝᚷᛏᚣᚠᛚᛒᛖᚠᚪᛝ",
+      "transliteration": "NPYWRSLAFAEXJUFTHCWNEAUNGYWISYNGXPOETHBRIESLLBJEJDENINRWATAUASRJBNGNAUINLRSBNAUYJOPNTXEOSUGOEIAAESPPNGMEAGTHTISCSNJBTHTAYNRGNGIDDIMLYOEOEYNGGTYFLBEFANG",
+      "recipe": {
+        "family": "prime",
+        "cipher_sign": -1,
+        "key_sign": 1,
+        "start": 205,
+        "skip_positions": [
+          13,
+          124,
+          128
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 39238,
+      "max_states": 522
+    },
+    {
+      "score": -6.147938095746625,
+      "plaintext_runes": "ᛝᛖᛟᛚᚹᛒᚳᚩᚢᚢᛏᚹᚻᚠᚦᚳᛁᛁᚩᚣᚫᛄᚳᚹᛞᛖᚹᚷᚻᚾᚢᚩᛚᚠᛈᛒᚪᚦᚢᛋᛞᛟᚹᛏᚩᛗᚹᛡᛏᛗᚦᚠᚪᛚᛇᚠᚪᚻᚪᚦᛗᛠᚦᚣᚩᛖᛋᛖᛏᚾᚩᛠᚹᛒᛖᛏᛞᛋᛗᛗᛁᚻᚹᚻᛞᚠᚩᚾᚷᛁᛋᚹᛈᛠᛚᚱᛖᚳᚻᚱᛠᛠᛞᚪᛠᛟᚷᚷᛏᚦᚢᛝᛈᚪᚷᛝᛏᛁᛏᚫᚣᚾᛒᚢᚠᚪᚷᚪᛄᚾᛉ",
+      "transliteration": "NGEOELWBCOUUTWHFTHCIIOYAEJCWDEWGHNUOLFPBATHUSDOEWTOMWIATMTHFALEOFAHATHMEATHYOESETNOEAWBETDSMMIHWHDFONGISWPEALRECHREAEADAEAOEGGTTHUNGPAGNGTITAEYNBUFAGAJNX",
+      "recipe": {
+        "family": "vigenere",
+        "cipher_sign": 1,
+        "key_sign": -1,
+        "key_indices": [
+          0,
+          0,
+          1,
+          17,
+          15,
+          4,
+          18
+        ],
+        "start": 1,
+        "skip_positions": [
+          13,
+          51,
+          55,
+          124
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 1051,
+      "max_states": 14
+    },
+    {
+      "score": -6.162288839102236,
+      "plaintext_runes": "ᚷᛡᛈᚩᚦᛖᛠᛏᚢᛈᚪᚠᚾᚱᚦᚩᚩᚹᛒᛡᚹᚦᛝᛖᚾᛗᛖᛗᚣᛞᛁᛚᚦᛝᛋᛏᛗᛝᚳᛈᚱᛋᚳᚱᚢᛡᚾᛏᚪᚳᛋᚠᛠᛠᛏᚠᚹᚣᛖᛗᚦᚾᚱᛈᚦᛏᚩᚪᚢᚳᚩᚹᛟᚢᛠᛄᚷᚱᛏᛝᛞᛚᛗᛏᛡᛇᛖᛖᛇᚢᚠᚦᛏᚩᛟᚣᛈᛒᚩᚢᚳᚢᚪᚦᛝᚦᛈᛟᚣᚾᛟᚢᚩᛁᚻᛗᚾᛄᛠᚠᛁᚠᚠᛡᛞᚦᚩᚱᛠᚱᚣ",
+      "transliteration": "GIAPOTHEEATUPAFNRTHOOWBIAWTHNGENMEMYDILTHNGSTMNGCPRSCRUIANTACSFEAEATFWYEMTHNRPTHTOAUCOWOEUEAJGRTNGDLMTIAEOEEEOUFTHTOOEYPBOUCUATHNGTHPOEYNOEUOIHMNJEAFIFFIADTHOREARY",
+      "recipe": {
+        "family": "prime_totient",
+        "cipher_sign": 1,
+        "key_sign": -1,
+        "start": 215,
+        "skip_positions": [
+          51,
+          55,
+          119
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 39220,
+      "max_states": 520
+    }
+  ],
+  "key_sign_tasks": 1536,
+  "wall_seconds": 6.086860399984289
+}

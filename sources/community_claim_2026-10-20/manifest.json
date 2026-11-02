@@ -1,0 +1,35 @@
+{
+  "notice": "Public HTTP retrieval only; content never executed. Failed retrieval does not establish that a claim is false. Social post has no pinned Git commit; saved bytes are the timestamped snapshot.",
+  "requests": [
+    {
+      "label": "reddit",
+      "url": "https://www.reddit.com/r/mystery/comments/1x0432x/proof_5_new_liber_primus_pages_solved/",
+      "retrieval_started_at_utc": "2026-10-19T22:45:39.456061+00:00",
+      "status": 200,
+      "final_url": "https://www.reddit.com/r/mystery/comments/1x0432x/proof_5_new_liber_primus_pages_solved/",
+      "path": "sources/community_claim_2026-10-20/reddit.html",
+      "sha256": "1e25ef8fdb9cf272a7a7643252010abcf195fb74a074dfe173e89cf0e8f500bd",
+      "bytes": 8471
+    },
+    {
+      "label": "project",
+      "url": "https://21skibidiserb37.gitlab.io/xyzsolving333/",
+      "retrieval_started_at_utc": "2026-10-19T22:45:39.536784+00:00",
+      "status": 200,
+      "final_url": "https://21skibidiserb37-gitlab-io-e46f79.gitlab.io/",
+      "path": "sources/community_claim_2026-10-20/project.html",
+      "sha256": "08ed5a04ae83d078a2eee5329b73a69b6a988cdf3713ed49bcad36a56199021d",
+      "bytes": 329116
+    },
+    {
+      "label": "mirror",
+      "url": "https://21skibidiserb37-gitlab-io-e46f79.gitlab.io/",
+      "retrieval_started_at_utc": "2026-10-19T22:45:40.793141+00:00",
+      "status": 200,
+      "final_url": "https://21skibidiserb37-gitlab-io-e46f79.gitlab.io/",
+      "path": "sources/community_claim_2026-10-20/mirror.html",
+      "sha256": "08ed5a04ae83d078a2eee5329b73a69b6a988cdf3713ed49bcad36a56199021d",
+      "bytes": 329116
+    }
+  ]
+}

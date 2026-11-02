@@ -1,0 +1,11 @@
+{
+  "experiment": "E071",
+  "hypothesis": "H049",
+  "purpose": "Independent algebra and screening validation plus bounded synthetic runtime benchmark; no unknown pages or language inference.",
+  "formula": "P_i=a*C_i+b*P_(i-m)+c mod29. For b!=1 use d=c/(1-b), P_i=a*(base1_i+b^q*t_r)+d. For b=1 use P_i=a*(base1_i+t_r)+q*c. q=floor(i/m). All 29 prefixes are represented bijectively. Scoring must include d or q*c; constant is NOT already covered by c=0 scoring.",
+  "validation": "Fixed Random3301071 uniform41-rune cipher at m4. Direct vectorized queue enumeration of all29 prefixes for every a,b,c (22736 families), independent of production chain/histogram. Compare unigram maxima with tolerance1e-7. For m13,32 also compare every b,c and a1,7,28 on101 runes. No optimized language candidates.",
+  "benchmark": "Random3302071 uniform3316-rune stream, all29 periods and659344 families; retain8 per period. Unigram logp proportional to symbols1..29, deterministic nonuniform fixture.",
+  "bounds": {"process_seconds": 120, "watchdog_seconds": 125, "memory_ceiling_mib": 768, "workers": 1},
+  "gate": "All direct comparisons <=1e-7 and full synthetic screen <60seconds. No tuning within this registered experiment.",
+  "null": "Synthetic uniform stream is a throughput fixture, not an inferential null experiment. Fresh positive language controls and complete optimizer matched nulls are separately required before unknown inference."
+}

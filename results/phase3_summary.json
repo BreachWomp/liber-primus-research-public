@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-19T09:41:13.152804+00:00",
+  "experiment_groups": [
+    "E012",
+    "E013",
+    "E014",
+    "E015"
+  ],
+  "completed_processes": 16,
+  "distinct_current_tasks": 15,
+  "seconds": 451.7912941999384,
+  "max_process_seconds": 179.24528659999487,
+  "budget_seconds": 900,
+  "section_start_sign_combinations": 30720,
+  "running_key_recipes": 36336608,
+  "short_seed_recipes": 11113960,
+  "differential_affine_recipes": 44660,
+  "candidate_records_recomputed": 418,
+  "tests_passed": 57,
+  "numpy": "2.3.5",
+  "phase_local_bonferroni4_p": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "new_decryptions": [],
+  "duplicate_control_note": "E012control ran twice because default180 and explicit180.0 produced different fingerprints; same scientific parameters, not independent replication. Both immutable events retained and both times counted."
+}

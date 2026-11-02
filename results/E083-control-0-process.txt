@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\neoro\Documents\ChatGPT\Cicada\experiments\long_substitution_controls.py", line 51, in <module>
+    registered(ident,load(PLAN)|vars(a)|{'numpy':np.__version__},DEPS,lambda:run(a.kind,a.index,a.replicate))
+  File "C:\Users\neoro\Documents\ChatGPT\Cicada\experiments\registry.py", line 12, in registered
+    hashes={p:digest(p) for p in dependencies}
+              ^^^^^^^^^
+  File "C:\Users\neoro\Documents\ChatGPT\Cicada\experiments\attack_support.py", line 23, in digest
+    def digest(path):return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neoro\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neoro\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\neoro\\Documents\\ChatGPT\\Cicada\\results\\phase30_benchmark_validation.json'

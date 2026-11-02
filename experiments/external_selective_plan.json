@@ -1,0 +1,23 @@
+{
+  "registered_at": "2026-10-19T09:49:47.160849+00:00",
+  "experiment": "E018",
+  "rationale": "E016external4gram resolves all3previously failed/ambiguous controls; re-evaluate same E007/E008cipherfamilies with this changed training source and score.",
+  "grid": "381keycycles allphases,3numberstreams offsets0..255,foursigns,allFsubsets exactDP;55unknownrune pages",
+  "model": {
+    "order": 4,
+    "alpha": 0.5,
+    "strength": 5.0,
+    "training": "Emerson11essays excludingSelfReliance, noLPtext"
+  },
+  "control_gate": "Fulluniongrid top1 exact on DIVINITY,CIRCUMFERENCE,LP2-56 beforeunknown scan.",
+  "null": {
+    "replicates": 19,
+    "seed": 3301018,
+    "selection": "highest mean score page",
+    "model": "exact counts/doublets rejection shuffles",
+    "correction": "full uniongrid eachreplicate;Bonferroni55"
+  },
+  "timeout_per_process": 180.0,
+  "memory": "finiteDPcontext,cursor;100000modelcache;onepage at a time",
+  "phase_budget_seconds": 900
+}

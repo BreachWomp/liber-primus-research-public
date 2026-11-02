@@ -1,0 +1,124 @@
+{
+  "created_at": "2026-10-21T10:24:33.561076+00:00",
+  "unknown_sections": 0,
+  "control_gate_passed": false,
+  "original_controls": [
+    {
+      "chapter": "X",
+      "key_length": 17,
+      "runes": 3316,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true
+      }
+    },
+    {
+      "chapter": "XI",
+      "key_length": 23,
+      "runes": 1200,
+      "exact": true,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true
+      }
+    },
+    {
+      "chapter": "XII",
+      "key_length": 31,
+      "runes": 1200,
+      "exact": false,
+      "checks": {
+        "plaintext_exact": false,
+        "key_exact": false,
+        "mask_exact": false
+      }
+    }
+  ],
+  "diagnosis": [
+    {
+      "chapter": "X",
+      "key_length": 17,
+      "original_exact": true,
+      "runes": 3316,
+      "correct_runes": 3316,
+      "truth_language_score": -2.0573392431361057,
+      "truth_score": -2.1093013845965163,
+      "found_score": -2.109301384596514,
+      "truth_minus_found": -2.220446049250313e-15,
+      "true_initial_seed_indices": [],
+      "true_final_key_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "chapter": "XI",
+      "key_length": 23,
+      "original_exact": true,
+      "runes": 1200,
+      "correct_runes": 1200,
+      "truth_language_score": -1.9499422701953912,
+      "truth_score": -2.0462513527124626,
+      "found_score": -2.0462513527124586,
+      "truth_minus_found": -3.9968028886505635e-15,
+      "true_initial_seed_indices": [],
+      "true_final_key_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "chapter": "XII",
+      "key_length": 31,
+      "original_exact": false,
+      "runes": 1200,
+      "correct_runes": 59,
+      "truth_language_score": -2.1870232209300777,
+      "truth_score": -2.309824300866992,
+      "found_score": -5.810930730168819,
+      "truth_minus_found": 3.5011064293018266,
+      "true_initial_seed_indices": [],
+      "true_final_key_indices": [],
+      "known_key_oracle": {
+        "truth_inputs": [
+          "injected_key",
+          "injected_sign"
+        ],
+        "mask_exact": true,
+        "key_exact": true
+      },
+      "known_period_mask_oracle": {
+        "truth_inputs": [
+          "injected_period",
+          "injected_prefix_mask"
+        ],
+        "range": [
+          0,
+          1024
+        ],
+        "period": 31,
+        "key_exact": true,
+        "plaintext_exact": true
+      }
+    }
+  ],
+  "adaptive_repair_exact": false,
+  "repair_correct_runes": 78,
+  "repair_score": -5.870171640883411,
+  "repair_null_score": -5.770010472365931,
+  "pool_fragments": 12,
+  "pool_runes": 512,
+  "candidate_records_recomputed": 342,
+  "seed_records_recomputed": 72,
+  "restart_traces_checked": 72,
+  "pool_records_recomputed": 72,
+  "independent_schedule_optima": 6,
+  "tests_passed": 108,
+  "successful_tasks": 3,
+  "seconds": 162.74954809999326,
+  "new_decryptions": []
+}

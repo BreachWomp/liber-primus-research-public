@@ -1,0 +1,21 @@
+{
+  "experiment": "E039-periodic-key-unknown",
+  "hypothesis_id": "H033",
+  "control_output": "results/E038-periodic-key-controls-e7c56ebb67c0.json",
+  "gate": "E038 all8 exact top1:2 historical ORACLE-skip controls and6 source-excluded synthetic controls. Oracle tests key recovery only, not selective interruption discovery.",
+  "optimizer": "Freeze E038 periodic_key_search.py without changes: periods1..16, signs+1/-1, policies none/all_F,4starts,12 order2 plus12 order4 coordinate sweeps per start. All29 values per coordinate, local factor update exact.",
+  "score": "Mean order4 log probability minus primitive_key_length*log29/full_rune_count. Fixed description-length score, not a probability of correctness.",
+  "search_seed": 3303038,
+  "unknown_scope": "All55 unknown rune pages LP2-00..55 except preserved numericLP2-50. Normal order, page-local cursor. No crib, known key, selective F oracle or layout normalization.",
+  "selection": "Greatest penalized score over55pages, all64sign/policy/nominal-period families and restarts. Freeze page, score and hashes of55page outputs plus passed E038 control before any null.",
+  "null_seed": 3301039,
+  "replicates": 19,
+  "null": "Independent uniform rejection shuffles conditional on exact rune counts and adjacent equality count of frozen selected page; max100000 proposals. Every null repeats all64families and4starts with SAME search seed3303038. all_F positions recomputed from each shuffled cipher.",
+  "correction": "Plus-one p and Bonferroni55 for page selection. Exploratory after previous families, not project-wide significance.19replicates cannot resolve corrected significance; zero exceedances trigger a fresh separately preregistered larger full-optimizer calibration.",
+  "process_seconds": 180,
+  "family_seconds": 650,
+  "phase_seconds": 900,
+  "workers": 1,
+  "memory": "At most1024runes,16key positions,29neighbor rows, dense29^4lookup; no29^period allocation.",
+  "limits": "Heuristic search, not exhaustive key enumeration. None/all_F cannot test the arbitrary interruption schedules of the historical controls. No new decryption claim without independent source replay and evidence beyond search-selected language."
+}

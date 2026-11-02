@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-10-19T12:49:04.023538+00:00",
+  "families": {
+    "E018": {
+      "status": "screen_complete",
+      "pages": 55,
+      "exact_controls": 3,
+      "selected": "LP2-49",
+      "top": {
+        "score": -5.305280173408523,
+        "plaintext_runes": "ᚱᚻᚱᛁᛒᚹᛏᚪᚩᚦᚩᛏᚫᚳᛖᛏᛝᛈᚫᚠᛁᚻᛈᛞᛡᚾᚪᚣᛞᛁᛒᚻᚢᚠᚳᚪᛚᚢᚾᚩᚱᛄᚢᚹᚻᚪᛗᛋᚾᛗᚣᛝᚢᛉᛋᛁᛒᛋᚳᛞᚹᛖᚣᚱᛞᛚ",
+        "transliteration": "RHRIBWTAOTHOTAECETNGPAEFIHPDIANAYDIBHUFCALUNORJUWHAMSNMYNGUXSIBSCDWEYRDL",
+        "recipe": {
+          "family": "vigenere",
+          "cipher_sign": 1,
+          "key_sign": -1,
+          "key_indices": [
+            3,
+            15,
+            23,
+            10,
+            7,
+            19
+          ],
+          "start": 2,
+          "skip_positions": [
+            33
+          ]
+        },
+        "replay_verified": true,
+        "transitions": 444,
+        "max_states": 12
+      },
+      "exceedances": 9,
+      "replicates": 19,
+      "raw_p": 0.5,
+      "page_adjusted_p": 1,
+      "phase_adjusted_p": 1
+    },
+    "E019": {
+      "status": "screen_complete",
+      "pages": 55,
+      "exact_controls": 3,
+      "selected": "LP2-55",
+      "top": {
+        "score": -5.225325413318316,
+        "plaintext_runes": "ᛒᚢᛠᚢᚣᛋᚻᛡᚣᛋᛇᚾᚳᛞᚳᛈᛖᛏᛠᚳᛖᛖᚩᚠᚪᛏᛈᛚᚦᛏᚣᚳᚪᚳᚣᚠᚻᚩᚢᛁᚱᛟᚩᛈᚢᛏᚩᚳᚻᛖᚱᛞᚻᛏᛖᛋᛡᛚᚱᚩᚳᚢᚢᛉᛋᚳᚳᛝᛁᚾᚳᛁᚦᚾᚾᛡ",
+        "transliteration": "BUEAUYSHIAYSEONCDCPETEACEEOFATPLTHTYCACYFHOUIROEOPUTOCHERDHTESIALROCUUXSCCNGINCITHNNIA",
+        "recipe": {
+          "a": 5,
+          "b": 20,
+          "initial_key": 13,
+          "initial_plaintext": 17,
+          "F_policy": "none"
+        },
+        "reencryption_verified": true
+      },
+      "exceedances": 115,
+      "replicates": 4000,
+      "raw_p": 0.02899275181204699,
+      "page_adjusted_p": 1,
+      "phase_adjusted_p": 1,
+      "initial_raw_p": 0.05,
+      "initial_exceedances": 0,
+      "initial_replicates": 19,
+      "calibration": "E020 fresh fixed4000-replicate follow-up; initial19 excluded from inference"
+    }
+  },
+  "completed_new_processes": 29,
+  "new_experiment_seconds": 436.11826630000724,
+  "max_process_seconds": 57.06101390000549,
+  "budget_seconds": 900,
+  "candidate_records_recomputed": 354,
+  "tests_passed": 63,
+  "new_decryptions": [],
+  "resume_note": "Eight E018 completed tasks reused; interrupted LP2-35_39 recomputed; earlier phase4 budget/report remain historical.",
+  "orchestration_seconds": {
+    "selective": 245.18468569999095,
+    "feedback": 11.29065619999892,
+    "confirmation": 187.11349950000294
+  }
+}

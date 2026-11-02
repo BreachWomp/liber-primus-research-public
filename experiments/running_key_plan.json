@@ -1,0 +1,37 @@
+{
+  "registered_at": "2026-10-19T09:30:46.514689+00:00",
+  "experiment": "E013",
+  "hypothesis": "Self-Reliance may serve as a continuous running key; thematic speculative test, not an established source clue.",
+  "source": {
+    "source_sha256": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278",
+    "decoded_character_range": [
+      48471,
+      105019
+    ],
+    "section": "Self-Reliance, after chapter heading and before III.Compensation; includes epigraph and repeated essay title",
+    "tokenization": "ASCII letter words only; punctuation/numbers omitted; greedy GP encoding within each word, never across words",
+    "non_ascii_letters": [
+      "\u00e6",
+      "\u00e9"
+    ],
+    "stream_hashes": {
+      "Q_to_C": "9006b5f5eb15adb44433fef256180b0845cf6c6dd320c3dec080908010ddba2e",
+      "QU_to_CW_Q_to_C": "e487fd6b1179fadb417115595e0544729f63d1e18ea8f33521785881453ee985"
+    },
+    "stream_lengths": {
+      "Q_to_C": 41522,
+      "QU_to_CW_Q_to_C": 41522
+    }
+  },
+  "grid": "All55unknownrune pages; fullvalidstartoffsets; twoQencodingpolicies; four signs; none or allF pauses; forward key only.",
+  "null": {
+    "selection": "single page with highest mean score",
+    "replicates": 39,
+    "seed": 3301013,
+    "model": "exact counts and doublets via rejection",
+    "correction": "same complete search per draw, Bonferroni55"
+  },
+  "control": "LP1circumference plaintext encrypted with QU_to_CW key at123, no skips; leave that fixture out of scoring.",
+  "timeout_seconds": 180,
+  "memory": "512 candidate rows per chunk, chapter window is a strided view; fixed29^3scoretable."
+}

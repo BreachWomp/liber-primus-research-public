@@ -1,0 +1,13 @@
+{
+  "experiment": "E060-hybrid-fragment-controls",
+  "hypothesis": "H044",
+  "motivation": "E058 independently verified17/18 exact: repairs short729-key31 but fails old1200-key31 regression11. Preserve complementary candidate sets rather than replacing one initializer.",
+  "solver": "Run frozen E058 constrained_fragment_search (seed3303058) and frozen E057 context_blind_search (seed3303052), each unchanged with its own complete internal search. Stable constrained-first union of both top3 lists ranked by identical full-context penalized score, keep top3 unique plaintexts. Retain leading-F alternatives of union winner. No oracle inputs or score thresholds.",
+  "cache": "Reuse only previously independently validated complete E058/E057 results with identical ciphertext,page spans,training and frozen branch code hashes. Cache selection does not inspect correctness or true key. Every reused output is a pinned input dependency. New cases run both branches. No completed search repeated.",
+  "stage_A": "E058 control-list indices0 and14 (old failed729-key31 and1200-key31), then3new natural controls plus1full-hybrid matched null. Always finish6. Any failure blocks stageB and unknown scans.",
+  "stage_B": "If all5 stageA controls exact, remaining16 E058 controls unchanged. All21 controls must recover exact text,key,sign,Fmask,pagephases. Then only a separately preregistered unknown plan may run.",
+  "fresh_controls": "Emerson X/XI/XII runeoffset16850,length729,spans262/266/201,keys17/23/31,signs+1,-1,+1. Random3301060+index nonzero key then phases[0,randrange(m),randrange(m)]; independent Random3304060+index Bernoulli plaintextF copies probabilities.25,.5,.75. Training I,III-IX unchanged. Adjacent heldout chapter ranges are not an independent corpus.",
+  "null": "Fresh2 conditional perpage endpoints/counts/adjacent-equality preserving null;seed3302060+pageindex,max100000proposals. Both complete solvers and union selection,diagnostic only,no pvalue.",
+  "bounds": "Oneprocess,BLAS1,768MiB watchdog,180seconds per combined task,family1800seconds. Prospective phase21 extension:3600seconds total E058+E060+any later unknown experiment,registered before E060. E058 itself remains within its original2400 cap; E059 is blocked and unexecuted, not silently repurposed.",
+  "validation": "Independently replay branch outputs or pinned prior validation evidence, score-based stable union, full-context optimum and reversible alternatives, source bytes and fresh generation, null and staged gates. No unknown claim from controls."
+}

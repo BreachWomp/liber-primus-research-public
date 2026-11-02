@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "url": "https://gitlab.com/api/v4/projects/21skibidiserb37%2Fxyzsolving333/repository/files/README.md/raw?ref=f71dadd835c4d2b71dba80ed555494013a35c843",
+      "source_path": "README.md",
+      "commit": "f71dadd835c4d2b71dba80ed555494013a35c843",
+      "status": 200,
+      "path": "sources/claim_repository_2026-10-20/README.raw",
+      "retrieved_at_utc": "2026-10-20T09:04:03.354823+00:00",
+      "bytes": 908,
+      "sha256": "83f55034f25f557479d37bd281ae922082c4ae17dbc40869a3ad620da4ac8301",
+      "git_blob_sha1": "44a629156acf14218e8675cbaf0fdff47477ca4c"
+    },
+    {
+      "url": "https://gitlab.com/api/v4/projects/21skibidiserb37%2Fxyzsolving333/repository/files/public%2Findex.html/raw?ref=f71dadd835c4d2b71dba80ed555494013a35c843",
+      "source_path": "public/index.html",
+      "commit": "f71dadd835c4d2b71dba80ed555494013a35c843",
+      "status": 200,
+      "path": "sources/claim_repository_2026-10-20/index.raw",
+      "retrieved_at_utc": "2026-10-20T09:04:04.826644+00:00",
+      "bytes": 329116,
+      "sha256": "08ed5a04ae83d078a2eee5329b73a69b6a988cdf3713ed49bcad36a56199021d",
+      "git_blob_sha1": "063087c277e0527b78aa4f743ecd0da90723d305"
+    }
+  ],
+  "seconds": 2.003599799994845,
+  "remote_code_executed": false,
+  "limits": {
+    "requests": 2,
+    "timeout_per_request": 12,
+    "bytes_per_file": 2000000
+  }
+}

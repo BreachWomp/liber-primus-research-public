@@ -1,0 +1,380 @@
+{
+  "new_controls": [
+    {
+      "index": 0,
+      "runes": 3316,
+      "key_length": 13,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "output": "results/E064-control-0-0791220c81ac.json"
+    },
+    {
+      "index": 1,
+      "runes": 3316,
+      "key_length": 23,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "output": "results/E064-control-1-7e3cf1520d81.json"
+    },
+    {
+      "index": 2,
+      "runes": 3316,
+      "key_length": 31,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "output": "results/E064-control-2-9986685f3298.json"
+    },
+    {
+      "index": 3,
+      "runes": 3316,
+      "key_length": 32,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "output": "results/E064-control-3-278574de2caa.json"
+    }
+  ],
+  "reused_control_entries": [
+    {
+      "id": "E062-control-0",
+      "fingerprint": "e545e6e97bda5cfc85f53f5f2c29149b0b1d83547f33dd565788f83141afc45b",
+      "output": "results/E062-control-0-e545e6e97bda.json",
+      "sha256": "16e1ae6a3f26552e728e9a49eaece6579e050193f54252c086ff70cb9157afe0"
+    },
+    {
+      "id": "E062-control-1",
+      "fingerprint": "08f82ddafcdfcc33f4faa5319608e34de6f1bc513c278dd5c6e62465e56f1297",
+      "output": "results/E062-control-1-08f82ddafcdf.json",
+      "sha256": "2ab9855314540cc59b420aaf50b785710357ad221c2ce672758b3878ce6c0f06"
+    },
+    {
+      "id": "E062-control-2",
+      "fingerprint": "feef91546aab570e332fc95ca681a5d83917cdb8c27174fb71682643d1ead434",
+      "output": "results/E062-control-2-feef91546aab.json",
+      "sha256": "0ae109b802fc73309fbafa9bccbfc89441a7de84ad064f2c393f8edba2674992"
+    },
+    {
+      "id": "E062-control-3",
+      "fingerprint": "730b74eac241bab343c10f17933c7a58ca3d933830059a965e73aa9030925200",
+      "output": "results/E062-control-3-730b74eac241.json",
+      "sha256": "786cc0a98771cf969540e0c0613f91c0ed95a7385d2e7921ae91ab5f94679471"
+    },
+    {
+      "id": "E062-control-4",
+      "fingerprint": "e84d8fe04cf485ac3c3a0fe6ac3d64bfa586d2f2d8062d37ed826558dd18af64",
+      "output": "results/E062-control-4-e84d8fe04cf4.json",
+      "sha256": "48fb67c5f55ab0e183097a6cd728060e0e8b79d0e6d4817a8ceb0ef3672af316"
+    },
+    {
+      "id": "E062-control-5",
+      "fingerprint": "f6074fb24681311c5c7e29a46be88890b2f3f90292133ed4d3526399f163f0d5",
+      "output": "results/E062-control-5-f6074fb24681.json",
+      "sha256": "44d77f09eb514c02597a3fde174fe8270cd74260e9541cde36a316eea1903ca9"
+    },
+    {
+      "id": "E062-control-6",
+      "fingerprint": "65cfb254a60e8a382d5b939e13dec63440f4326aba18fbbae26db5e246dedcf4",
+      "output": "results/E062-control-6-65cfb254a60e.json",
+      "sha256": "699e5c5b97fb597a0e4804280987a5c752203397f50e4486f670b18894ff52aa"
+    },
+    {
+      "id": "E062-control-7",
+      "fingerprint": "ee51f8084039f01d0e4b7f46098826e4afd685eb4311d796b3d88f6ce1301b00",
+      "output": "results/E062-control-7-ee51f8084039.json",
+      "sha256": "6a196d3bf5b05132618a2a13d392d0f70381fffd08241081f617b0bb41402925"
+    },
+    {
+      "id": "E062-control-8",
+      "fingerprint": "8b1b5e19436f4d5f0ecce5c4aa4b7715b9ef038c0544b5f9ff4b4ed558797de9",
+      "output": "results/E062-control-8-8b1b5e19436f.json",
+      "sha256": "2914a488d01da712d3c070db7576fd8c50e085115898d7add0d4ab951252cad4"
+    },
+    {
+      "id": "E062-control-9",
+      "fingerprint": "f4a6449a0cce5572d5d629b1044835e1f1f58a2c4b9f26594b2bd9897ec0418d",
+      "output": "results/E062-control-9-f4a6449a0cce.json",
+      "sha256": "c0e4a6cf0737c8a4b4b573ffa0e09739ca857dbfcd93e5a6f61fcbe0ef79f836"
+    },
+    {
+      "id": "E062-control-10",
+      "fingerprint": "b6c78ccfae970031ac710af7ff9b50822d29b7cc03fbecff90efcd5dbd846e89",
+      "output": "results/E062-control-10-b6c78ccfae97.json",
+      "sha256": "34b73d3682f6db3e727907ed02b2959a1a1f1d8b9a81924d5ed402843bd09c64"
+    },
+    {
+      "id": "E062-control-11",
+      "fingerprint": "73d167a1af0ceac8e7757227a77492d3bb45a36c1c467db9e3ffe0aa2a74658e",
+      "output": "results/E062-control-11-73d167a1af0c.json",
+      "sha256": "faf1e2ee7c0dbc1b7f985b7c58ee8a21c6dfec7b053cd77e72bffa553baae54a"
+    }
+  ],
+  "control_null_score": -6.248615604462041,
+  "unknown": {
+    "sections": [
+      {
+        "section": "LP2-00_02",
+        "replicate": 0,
+        "runes": 729,
+        "score": -5.378247628559735,
+        "key_length": 32,
+        "output": "results/E065-section-LP2-00_02-05bc7832616f.json"
+      },
+      {
+        "section": "LP2-03_07",
+        "replicate": 0,
+        "runes": 1145,
+        "score": -5.701464842354584,
+        "key_length": 29,
+        "output": "results/E065-section-LP2-03_07-e0af606f17df.json"
+      },
+      {
+        "section": "LP2-08_14",
+        "replicate": 0,
+        "runes": 1729,
+        "score": -5.960523922021644,
+        "key_length": 31,
+        "output": "results/E065-section-LP2-08_14-6eb6dbf5d903.json"
+      },
+      {
+        "section": "LP2-15_22",
+        "replicate": 0,
+        "runes": 1903,
+        "score": -6.014723244396313,
+        "key_length": 30,
+        "output": "results/E065-section-LP2-15_22-313a748a59ad.json"
+      },
+      {
+        "section": "LP2-23_26",
+        "replicate": 0,
+        "runes": 1021,
+        "score": -5.669822980621606,
+        "key_length": 30,
+        "output": "results/E065-section-LP2-23_26-4ccb4eea152e.json"
+      },
+      {
+        "section": "LP2-27_32",
+        "replicate": 0,
+        "runes": 1433,
+        "score": -5.82319467892298,
+        "key_length": 32,
+        "output": "results/E065-section-LP2-27_32-4c82a60f1fac.json"
+      },
+      {
+        "section": "LP2-33_39",
+        "replicate": 0,
+        "runes": 1680,
+        "score": -5.906238403244891,
+        "key_length": 31,
+        "output": "results/E065-section-LP2-33_39-ff88e781d467.json"
+      },
+      {
+        "section": "LP2-40_53",
+        "replicate": 0,
+        "runes": 3008,
+        "score": -6.2442087459962785,
+        "key_length": 32,
+        "output": "results/E065-section-LP2-40_53-010f1102371c.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 0,
+        "runes": 308,
+        "score": -4.471883333944896,
+        "key_length": 31,
+        "output": "results/E065-section-LP2-54_55-3f6c7725308a.json"
+      },
+      {
+        "section": "LP2-40_55",
+        "replicate": 0,
+        "runes": 3316,
+        "score": -6.261513731631626,
+        "key_length": 32,
+        "output": "results/E065-section-LP2-40_55-32ff3c692ad2.json"
+      }
+    ],
+    "nulls": [
+      {
+        "section": "LP2-54_55",
+        "replicate": 0,
+        "runes": 308,
+        "score": -4.419988378504489,
+        "key_length": 31,
+        "output": "results/E065-null-LP2-54_55-00-4bf6de4a11ab.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 1,
+        "runes": 308,
+        "score": -4.427320539274719,
+        "key_length": 31,
+        "output": "results/E065-null-LP2-54_55-01-eebe2644b055.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 2,
+        "runes": 308,
+        "score": -4.453702533320157,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-02-dfe4a96655ba.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 3,
+        "runes": 308,
+        "score": -4.423973967507728,
+        "key_length": 31,
+        "output": "results/E065-null-LP2-54_55-03-1ae8cd4c0bee.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 4,
+        "runes": 308,
+        "score": -4.349961779336843,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-04-bdf58d3dd4ea.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 5,
+        "runes": 308,
+        "score": -4.4634797045948895,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-05-131e81532518.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 6,
+        "runes": 308,
+        "score": -4.51737668375375,
+        "key_length": 31,
+        "output": "results/E065-null-LP2-54_55-06-5cff013edfb0.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 7,
+        "runes": 308,
+        "score": -4.384708636940478,
+        "key_length": 31,
+        "output": "results/E065-null-LP2-54_55-07-eb385a8e5ac7.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 8,
+        "runes": 308,
+        "score": -4.508188682711762,
+        "key_length": 28,
+        "output": "results/E065-null-LP2-54_55-08-a4479c9216e4.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 9,
+        "runes": 308,
+        "score": -4.466299492272913,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-09-8b9a42d00386.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 10,
+        "runes": 308,
+        "score": -4.463341206274023,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-10-74fd0449f47c.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 11,
+        "runes": 308,
+        "score": -4.474953733251675,
+        "key_length": 31,
+        "output": "results/E065-null-LP2-54_55-11-50077b6ea90d.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 12,
+        "runes": 308,
+        "score": -4.497401235315965,
+        "key_length": 29,
+        "output": "results/E065-null-LP2-54_55-12-9dd1dc65a4e1.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 13,
+        "runes": 308,
+        "score": -4.423308460157887,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-13-fbb95fe2de37.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 14,
+        "runes": 308,
+        "score": -4.373436835274077,
+        "key_length": 31,
+        "output": "results/E065-null-LP2-54_55-14-fb6fa978a9bb.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 15,
+        "runes": 308,
+        "score": -4.4802701490819805,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-15-418c691168bc.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 16,
+        "runes": 308,
+        "score": -4.458173111665413,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-16-a493af86b6ed.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 17,
+        "runes": 308,
+        "score": -4.423642514843897,
+        "key_length": 32,
+        "output": "results/E065-null-LP2-54_55-17-9f714d5def79.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 18,
+        "runes": 308,
+        "score": -4.4297106021408785,
+        "key_length": 30,
+        "output": "results/E065-null-LP2-54_55-18-e2321d950fd3.json"
+      }
+    ],
+    "selected_section": "LP2-54_55",
+    "score": -4.471883333944896,
+    "exceedances": 14,
+    "raw_p": 0.75,
+    "bonferroni10": 1,
+    "pending_larger_calibration": false,
+    "unique_unknown_rune_pages": 55,
+    "empty_pages_preserved": [
+      "LP2-50"
+    ],
+    "seconds": 400.72218840010464,
+    "peak_sampled_bytes": 109019136,
+    "validation_seconds": 209.76839320000727,
+    "new_decryptions": []
+  },
+  "validation": {
+    "scalar_decodings": 87639,
+    "independent_trigram_coordinate_optima": 31031,
+    "initial_and_final_scores": 63104,
+    "candidate_score_pairs": 23655,
+    "fourgram_trace_scores": 880,
+    "independent_fourgram_coordinate_optima": 408,
+    "reencryptions": 102,
+    "continuous_page_queue_replays": 102
+  },
+  "tests_passed": 126,
+  "successful_tasks": 34,
+  "seconds": 657.4603464000975,
+  "peak_sampled_bytes": 109191168,
+  "control_validation_sha256": "cc65b9602c53ede628a67ecd08c4795f10af67ae8815a130b0a706f6c64a627e",
+  "unknown_validation_sha256": "03b4f084d0751595196aab15b03969babf1e417bc9110008a4c8d3fa011881da",
+  "new_decryptions": []
+}

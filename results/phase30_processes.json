@@ -1,0 +1,650 @@
+[
+  {
+    "experiment": "E083-control-0",
+    "exit_code": 1,
+    "reason": null,
+    "seconds": 1.2571273000212386,
+    "peak_sampled_bytes": 54460416,
+    "log": "results/E083-control-0-process.txt"
+  },
+  {
+    "experiment": "E083-control-0",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.2596334000118077,
+    "peak_sampled_bytes": 171454464,
+    "log": "results/E083-control-0-attempt02-process.txt"
+  },
+  {
+    "experiment": "E083-control-1",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.0102755000116304,
+    "peak_sampled_bytes": 171417600,
+    "log": "results/E083-control-1-process.txt"
+  },
+  {
+    "experiment": "E083-control-2",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 2.763984900084324,
+    "peak_sampled_bytes": 171085824,
+    "log": "results/E083-control-2-process.txt"
+  },
+  {
+    "experiment": "E083-control-3",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 2.7593910000286996,
+    "peak_sampled_bytes": 171847680,
+    "log": "results/E083-control-3-process.txt"
+  },
+  {
+    "experiment": "E083-control-4",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.009612299967557,
+    "peak_sampled_bytes": 171700224,
+    "log": "results/E083-control-4-process.txt"
+  },
+  {
+    "experiment": "E083-control-5",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.2602475999156013,
+    "peak_sampled_bytes": 171769856,
+    "log": "results/E083-control-5-process.txt"
+  },
+  {
+    "experiment": "E083-control-6",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.009745700052008,
+    "peak_sampled_bytes": 173281280,
+    "log": "results/E083-control-6-process.txt"
+  },
+  {
+    "experiment": "E083-control-7",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.0097685999935493,
+    "peak_sampled_bytes": 173670400,
+    "log": "results/E083-control-7-process.txt"
+  },
+  {
+    "experiment": "E083-control-8",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.0088755000615492,
+    "peak_sampled_bytes": 173187072,
+    "log": "results/E083-control-8-process.txt"
+  },
+  {
+    "experiment": "E083-control-9",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.009171099984087,
+    "peak_sampled_bytes": 175497216,
+    "log": "results/E083-control-9-process.txt"
+  },
+  {
+    "experiment": "E083-control-10",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.511242000036873,
+    "peak_sampled_bytes": 175624192,
+    "log": "results/E083-control-10-process.txt"
+  },
+  {
+    "experiment": "E083-control-11",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 2.7593314999248832,
+    "peak_sampled_bytes": 176058368,
+    "log": "results/E083-control-11-process.txt"
+  },
+  {
+    "experiment": "E083-null-0-0",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.0098692000610754,
+    "peak_sampled_bytes": 172576768,
+    "log": "results/E083-null-0-0-process.txt"
+  },
+  {
+    "experiment": "E083-null-0-1",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.260092700016685,
+    "peak_sampled_bytes": 172998656,
+    "log": "results/E083-null-0-1-process.txt"
+  },
+  {
+    "experiment": "E083-null-0-2",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.260742099955678,
+    "peak_sampled_bytes": 172834816,
+    "log": "results/E083-null-0-2-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-00",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.0111093000741675,
+    "peak_sampled_bytes": 164876288,
+    "log": "results/E084-page-LP2-00-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-01",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.5106455999193713,
+    "peak_sampled_bytes": 165007360,
+    "log": "results/E084-page-LP2-01-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-02",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 2.508459100034088,
+    "peak_sampled_bytes": 164782080,
+    "log": "results/E084-page-LP2-02-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-03",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.5099697000114247,
+    "peak_sampled_bytes": 164708352,
+    "log": "results/E084-page-LP2-03-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-04",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.012588799931109,
+    "peak_sampled_bytes": 166715392,
+    "log": "results/E084-page-LP2-04-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-05",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.508874100050889,
+    "peak_sampled_bytes": 165625856,
+    "log": "results/E084-page-LP2-05-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-07",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.7598443999886513,
+    "peak_sampled_bytes": 166129664,
+    "log": "results/E084-page-LP2-07-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-08",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.760428600013256,
+    "peak_sampled_bytes": 165969920,
+    "log": "results/E084-page-LP2-08-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-09",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.510884500108659,
+    "peak_sampled_bytes": 166375424,
+    "log": "results/E084-page-LP2-09-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-10",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.0115440000081435,
+    "peak_sampled_bytes": 166117376,
+    "log": "results/E084-page-LP2-10-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-11",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.512812800006941,
+    "peak_sampled_bytes": 167952384,
+    "log": "results/E084-page-LP2-11-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-12",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.7600711999693885,
+    "peak_sampled_bytes": 167645184,
+    "log": "results/E084-page-LP2-12-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-13",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.259609300061129,
+    "peak_sampled_bytes": 167661568,
+    "log": "results/E084-page-LP2-13-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-16",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.261551099945791,
+    "peak_sampled_bytes": 167112704,
+    "log": "results/E084-page-LP2-16-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-17",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.262433600029908,
+    "peak_sampled_bytes": 167145472,
+    "log": "results/E084-page-LP2-17-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-18",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.5095783000579104,
+    "peak_sampled_bytes": 167538688,
+    "log": "results/E084-page-LP2-18-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-19",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.010905800038017,
+    "peak_sampled_bytes": 168415232,
+    "log": "results/E084-page-LP2-19-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-20",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.7601445999462157,
+    "peak_sampled_bytes": 168742912,
+    "log": "results/E084-page-LP2-20-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-21",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.0105462000938132,
+    "peak_sampled_bytes": 168669184,
+    "log": "results/E084-page-LP2-21-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-23",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.2607789000030607,
+    "peak_sampled_bytes": 168300544,
+    "log": "results/E084-page-LP2-23-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-24",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.761801499989815,
+    "peak_sampled_bytes": 168542208,
+    "log": "results/E084-page-LP2-24-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-25",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.5115779999177903,
+    "peak_sampled_bytes": 168300544,
+    "log": "results/E084-page-LP2-25-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-26",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.5191368999658152,
+    "peak_sampled_bytes": 169119744,
+    "log": "results/E084-page-LP2-26-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-27",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.7625243000220507,
+    "peak_sampled_bytes": 169811968,
+    "log": "results/E084-page-LP2-27-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-28",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.263551999931224,
+    "peak_sampled_bytes": 169689088,
+    "log": "results/E084-page-LP2-28-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-29",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.763004900072701,
+    "peak_sampled_bytes": 170012672,
+    "log": "results/E084-page-LP2-29-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-30",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.269725299905986,
+    "peak_sampled_bytes": 169938944,
+    "log": "results/E084-page-LP2-30-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-31",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.5127373998984694,
+    "peak_sampled_bytes": 169799680,
+    "log": "results/E084-page-LP2-31-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-33",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.762015899992548,
+    "peak_sampled_bytes": 170713088,
+    "log": "results/E084-page-LP2-33-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-34",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.512604099931195,
+    "peak_sampled_bytes": 170459136,
+    "log": "results/E084-page-LP2-34-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-35",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.76072770007886,
+    "peak_sampled_bytes": 170598400,
+    "log": "results/E084-page-LP2-35-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-36",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.759805800043978,
+    "peak_sampled_bytes": 171261952,
+    "log": "results/E084-page-LP2-36-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-37",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.512305499985814,
+    "peak_sampled_bytes": 170795008,
+    "log": "results/E084-page-LP2-37-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-38",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.2607413000660017,
+    "peak_sampled_bytes": 170340352,
+    "log": "results/E084-page-LP2-38-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-39",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.2615026999264956,
+    "peak_sampled_bytes": 171986944,
+    "log": "results/E084-page-LP2-39-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-40",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.762007499928586,
+    "peak_sampled_bytes": 172167168,
+    "log": "results/E084-page-LP2-40-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-41",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.760783299920149,
+    "peak_sampled_bytes": 172244992,
+    "log": "results/E084-page-LP2-41-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-42",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.759833899908699,
+    "peak_sampled_bytes": 171810816,
+    "log": "results/E084-page-LP2-42-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-43",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.262107899994589,
+    "peak_sampled_bytes": 172077056,
+    "log": "results/E084-page-LP2-43-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-44",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.50862129998859,
+    "peak_sampled_bytes": 171573248,
+    "log": "results/E084-page-LP2-44-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-45",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 5.263305299915373,
+    "peak_sampled_bytes": 172507136,
+    "log": "results/E084-page-LP2-45-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-46",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.011217300081626,
+    "peak_sampled_bytes": 173219840,
+    "log": "results/E084-page-LP2-46-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-47",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.267351599992253,
+    "peak_sampled_bytes": 173805568,
+    "log": "results/E084-page-LP2-47-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-48",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.263096099952236,
+    "peak_sampled_bytes": 173441024,
+    "log": "results/E084-page-LP2-48-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-52",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.519382799975574,
+    "peak_sampled_bytes": 173088768,
+    "log": "results/E084-page-LP2-52-process.txt"
+  },
+  {
+    "experiment": "E084-page-LP2-54",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.5114806999918073,
+    "peak_sampled_bytes": 172621824,
+    "log": "results/E084-page-LP2-54-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-00",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.259216400096193,
+    "peak_sampled_bytes": 173027328,
+    "log": "results/E084-null-LP2-02-00-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-01",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.2614187999861315,
+    "peak_sampled_bytes": 174202880,
+    "log": "results/E084-null-LP2-02-01-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-02",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 2.7678546000970528,
+    "peak_sampled_bytes": 173580288,
+    "log": "results/E084-null-LP2-02-02-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-03",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.014993100077845,
+    "peak_sampled_bytes": 174325760,
+    "log": "results/E084-null-LP2-02-03-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-04",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.2595638000639156,
+    "peak_sampled_bytes": 174333952,
+    "log": "results/E084-null-LP2-02-04-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-05",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.5102473999140784,
+    "peak_sampled_bytes": 174231552,
+    "log": "results/E084-null-LP2-02-05-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-06",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.5090701000299305,
+    "peak_sampled_bytes": 174981120,
+    "log": "results/E084-null-LP2-02-06-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-07",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.2592890999512747,
+    "peak_sampled_bytes": 174956544,
+    "log": "results/E084-null-LP2-02-07-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-08",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.259933999972418,
+    "peak_sampled_bytes": 175497216,
+    "log": "results/E084-null-LP2-02-08-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-09",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.0100235999561846,
+    "peak_sampled_bytes": 175587328,
+    "log": "results/E084-null-LP2-02-09-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-10",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.0103200000012293,
+    "peak_sampled_bytes": 175431680,
+    "log": "results/E084-null-LP2-02-10-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-11",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.01011859998107,
+    "peak_sampled_bytes": 175390720,
+    "log": "results/E084-null-LP2-02-11-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-12",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.763622700003907,
+    "peak_sampled_bytes": 176431104,
+    "log": "results/E084-null-LP2-02-12-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-13",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.015312200062908,
+    "peak_sampled_bytes": 176128000,
+    "log": "results/E084-null-LP2-02-13-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-14",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 3.510892700054683,
+    "peak_sampled_bytes": 176357376,
+    "log": "results/E084-null-LP2-02-14-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-15",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.011347099905834,
+    "peak_sampled_bytes": 175915008,
+    "log": "results/E084-null-LP2-02-15-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-16",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.513259199913591,
+    "peak_sampled_bytes": 176283648,
+    "log": "results/E084-null-LP2-02-16-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-17",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.011842399952002,
+    "peak_sampled_bytes": 176181248,
+    "log": "results/E084-null-LP2-02-17-process.txt"
+  },
+  {
+    "experiment": "E084-null-LP2-02-18",
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 4.263047099928372,
+    "peak_sampled_bytes": 178208768,
+    "log": "results/E084-null-LP2-02-18-process.txt"
+  }
+]

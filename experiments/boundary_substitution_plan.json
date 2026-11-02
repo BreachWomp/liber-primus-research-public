@@ -1,0 +1,17 @@
+{
+  "experiment": "E036-boundary-substitution-controls",
+  "hypothesis_id": "H031",
+  "seed": 3301036,
+  "seconds": 180,
+  "training": "Use only pinned Emerson chapters I,III,IV,V,VI,VII,VIII,IX for BOTH word counts and character model; exclude II and hold out X,XI,XII. Same split as E030. Those chapters were seen by earlier experiments, not historically unseen.",
+  "score": "Unchanged normalized E027 length-conditioned WordModel: (count(w)+20*Q(w))/(N_length+20). Q=order4 alpha0.5 strength5 character chain reset at each segment. No tuning, no edge fallback, no apostrophe joining.",
+  "search": "E035 dictionary-pattern initializations, at most24. Each first runs at most40 all406-swap sweeps under the current TRAINING-ONLY character model, then at most40 all406-swap sweeps under the word score. Same fixed seeds and budgets for truth and nulls. Final selection by word score only.",
+  "controls": ["LP1-03_04_divinity","LP1-14_15_circumference","LP2-57_direct"],
+  "encryption": "Random(3301036) shuffles one29-rune permutation per listed fixture. Search seeds3303036+100*fixture_index.",
+  "control_nulls": "Three independent uniform exact-count shuffles per fixture, source segment endpoints fixed, seed3302036+100*fixture_index+replicate. Doublets not conditioned; capability diagnostic only, no significance inference. Full identical two-stage optimizer.",
+  "external_holdout": "First6 paragraphs in each of X,XI,XII having at least20 lexical segments. Take first20 segments;20 uniform one-rune nonzero modular mutations per window using Random(3304036). Score truth and identical mutations with training-only character and word models.",
+  "gate": "All3 synthetic LP controls exact top1; heldout word strict-win fraction>=0.95 and no loss over character strict-win fraction exceeding0.01. Descriptive engineering gate, not statistical proof. No unknown scan if either fails.",
+  "memory": "One process, max1024 cipher runes and32 runes per segment. At most406 neighbor mappings; grouped word scoring arrays <=406x1024 positions. Int64 exact base29 word codes up to length12, direct tuple lookup for longer words. At most24 starts.",
+  "unknown_followup": "Only after gate: separately registered E037 all55unknown rune pages; identical optimizer on19 exact-count/doublet shuffles of frozen selected page, boundaries fixed; plus-one p and Bonferroni55. E037 family650seconds, phase900seconds including E036.",
+  "limits": "Previously seen controls and text corpus, finite heuristic search, no exhaustive29! claim, no historical decryption from synthetic controls; page-edge segment assumption retained explicitly."
+}

@@ -1,0 +1,32 @@
+{
+  "experiment": "E059-constrained-fragments-unknown",
+  "control_validation": "results/phase21_constraints_validation.json",
+  "required_gate": "All18 E058 controls exact, full gate independently verified before execution. No unknown run if gate fails.",
+  "scope": "Nine E012 section groups with >=512 runes; omit LP2-54_55 (308 runes) because outside validated solver bound. LP2-54/55 still occur in LP2-40_55. Preserve LP2-50 empty numeric page in spans. Grouping is a hypothesis, not authenticated cipher boundaries.",
+  "section_ids": [
+    "LP2-00_02",
+    "LP2-03_07",
+    "LP2-08_14",
+    "LP2-15_22",
+    "LP2-23_26",
+    "LP2-27_32",
+    "LP2-33_39",
+    "LP2-40_53",
+    "LP2-40_55"
+  ],
+  "solver": "Frozen E058 constrained_fragment_search.search and training unchanged. Shared key with independent page phases, selective F copies and continuous language context; source-position constrained fragment initialization. All starts, periods17..32 and signs; no oracle or target-specific tuning.",
+  "search_seed": 3303058,
+  "selection": "Highest full-stream penalized score across nine groups, stable plan order breaks ties; save immutable selection with all observed output hashes before drawing any null.",
+  "null": "19 independent perpage conditional nulls of selected group. Preserve each page's counts,endpoints,adjacent equal pairs; include empty numeric spans; completely rerun same solver and all internal selection.",
+  "null_seed": 3302059,
+  "replicates": 19,
+  "replicate_seed_stride": 100,
+  "inference": "raw_p=(1+number_null_scores>=observed)/(19+1); Bonferroni9 for selection across groups. No significance claim from this coarse screen; minimum adjusted p=.45. If no exceedance, mark pending separately preregistered larger calibration, never declare a decryption.",
+  "process_seconds": 180,
+  "family_seconds": 1800,
+  "memory_ceiling_mib": 768,
+  "workers": 1,
+  "resume": "Registry skips unchanged completed fingerprints; supervisor charges previously recorded times, no repeated completed search. Freeze selection file rather than overwrite.",
+  "limits": "Synthetic success validates only tested cases. Unknown page grouping and continuous plaintext context are hypotheses. Coarse selection-corrected null screening is not a decryption. Preserve alternative leading-F recipes. No unsupported community claims.",
+  "combined_phase21_seconds": 2400
+}

@@ -1,0 +1,81 @@
+{
+  "experiment": "E025-periodic-feedback",
+  "status": "completed",
+  "parameters": {
+    "mode": "pages",
+    "first": 55,
+    "last": 55,
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "pages": [
+    {
+      "page": "LP2-55",
+      "ciphertext_runes": "ᛝᚫᛗᛁᚹᛋᛒᛉᛗᛋᛇᚷᛞᚦᚫᚠᛡᚪᛒᚳᚢᚹᚱᛒᛠᚠᛉᛁᛗᚢᚳᛈᚻᛝᛚᛇᛗᛋᛞᛡᛈᚠᛒᚻᛇᚳᛇᛖᛠᛖᛁᚷᛉᚷᛋᛖᛋᛇᚦᚦᛖᛋᚦᛟᚳᛠᛁᛗᚳᛉᛞᛄᚢᛒᛖᛁ",
+      "top": [
+        {
+          "score": -5.173288243562495,
+          "plaintext_runes": "ᛋᚾᛁᛈᚷᛏᛋᛈᛁᛏᛁᚪᛈᛈᚪᚱᚱᚪᚢᛡᚦᚾᛞᚹᛝᛚᛗᚩᚾᛏᚾᛖᛞᛝᚩᚠᛈᛇᚳᚹᛠᛚᚪᛈᛝᚻᚠᚪᚳᛚᛉᛞᛠᛋᚳᛋᛖᛏᚠᛋᚣᚢᛡᛈᛗᚾᚫᚣᚳᚫᚹᚱᛋᚢᛋᛋ",
+          "transliteration": "SNIPGTSPITIAPPARRAUIATHNDWNGLMONTNEDNGOFPEOCWEALAPNGHFACLXDEASCSETFSYUIAPMNAEYCAEWRSUSS",
+          "recipe": {
+            "delay": 2,
+            "a": 24,
+            "b": 7,
+            "initial_key": [
+              13,
+              15
+            ],
+            "initial_plaintext": [
+              15,
+              9
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.2827328431171345,
+          "plaintext_runes": "ᚢᚷᚩᛉᛏᚠᛖᚳᚹᚩᛈᚣᛒᛁᛋᛏᛋᚷᛠᚷᚠᛋᛖᛠᚱᛁᛞᚩᛋᛖᚩᚾᚷᛗᚢᚾᚩᛝᚢᛈᚳᛋᛇᚦᛝᛒᛖᛡᚱᛉᚳᚩᛈᚣᛁᚪᛄᛒᛋᛈᛖᛁᚩᛠᚹᛚᚱᛏᚣᛗᚩᛗᛖᛒᛒᛚ",
+          "transliteration": "UGOXTFECWOPYBISTSGEAGFSEEARIDOSEONGMUNONGUPCSEOTHNGBEIARXCOPYIAJBSPEIOEAWLRTYMOMEBBL",
+          "recipe": {
+            "delay": 2,
+            "a": 19,
+            "b": 19,
+            "initial_key": [
+              5,
+              15
+            ],
+            "initial_plaintext": [
+              1,
+              6
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.297867128183393,
+          "plaintext_runes": "ᚠᚷᚩᛋᚱᚣᚱᛁᛋᛄᚪᚻᛁᚷᚻᛖᛈᛇᚦᛚᚣᚣᛈᛇᛗᚹᛖᛖᛠᛏᛁᛖᛏᛁᛈᚾᛈᚻᚷᛈᛒᛁᛉᛏᛝᚩᛈᛝᛗᛒᚫᚣᚹᚪᚦᚣᛏᛠᚢᚻᛋᚳᛡᛚᚹᛄᛖᚹᚾᛄᛞᛝᚦᚣᛖᛒ",
+          "transliteration": "FGOSRYRISJAHIGHEPEOTHLYYPEOMWEEEATIETIPNPHGPBIXTNGOPNGMBAEYWATHYTEAUHSCIALWJEWNJDNGTHYEB",
+          "recipe": {
+            "delay": 2,
+            "a": 20,
+            "b": 3,
+            "initial_key": [
+              5,
+              19
+            ],
+            "initial_plaintext": [
+              0,
+              6
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "recipes": 655980
+    }
+  ],
+  "wall_seconds": 2.2455362000036985
+}

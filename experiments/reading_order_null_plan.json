@@ -1,0 +1,17 @@
+{
+  "registered_at": "2026-10-19T17:38:04.213622+00:00",
+  "selected_page": "LP2-49",
+  "observed_score": -5.304834651342594,
+  "source_outputs": {
+    "results/E021-controls-ac916ebddc09.json": "e5be0947204d7de9d700df08f5fec598c369f074fdc7e4525f8274f32487bb65",
+    "results/E021-page-LP2-00-932df49de765.json": "94dd94ccf7b32b6646ea749ec043200e42b66f3368b6c15fb64a45490b0fde39",
+    "results/E021-page-LP2-49-c91f3b37d586.json": "5ccee7e117acce71632952e34f11cc87e80676bce4a68d02662f0e4029bf6952",
+    "results/E021-page-LP2-51-841abf6e1794.json": "b10ab000a0508d357e3190fbc08403c81805f144f00927d86431bd0c20b9e0d2",
+    "results/E021-page-LP2-55-792bbe207c6c.json": "a29e07aea7261e1d477a70b2c62f59be9e0375ed99e1668e3df095837e0bec59"
+  },
+  "replicates": 19,
+  "seed": 3301021,
+  "selection_correction": 55,
+  "optimizer": "Full frozen route+cipher grid, no reranking changes",
+  "total_family_budget_seconds": 900
+}

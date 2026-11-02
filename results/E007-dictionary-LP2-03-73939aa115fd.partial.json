@@ -1,0 +1,104 @@
+{
+  "status": "partial_not_complete",
+  "mode": "dictionary",
+  "pages": [
+    {
+      "page": "LP2-03",
+      "ciphertext_runes": "ᛚᛄᛇᚻᛝᚳᚦᛏᚫᛄᛏᛉᚻᛏᚢᛟᛋᛈᚱᚷᚣᚾᚪᚷᛇᛝᚾᚹᚠᚣᚾᛒᛠᛡᛈᚾᚣᚪᛋᛗᛒᛡᛠᛡᛁᚩᛒᚱᚾᛚᛠᚱᛚᛚᛖᛒᚹᚾᚻᛗᚠᛟᛒᛝᚱᚪᛡᚷᛟᛇᛏᛗᛉᛞᛇᛗᚣᚻᛠᛁᛚᛋᚾᚹᚳᚠᛈᛗᛈᛚᛠᛋᚦᚠᛟᛡᚦᛖᚣᚳᛄᛚᚳᛡᛗᛒᛞᚳᛇᛄᛁᛏᛟᛞᛠᛖᛡᚾᛏᛈᛞᚦᛇᛞᛇᚫᛚᚳᛡᛇᛠᚻᚹᛗᚣᚦᚢᚻᛏᚦᚱᚻᛝᛚᛝᛋᚾᚫᛠᚷᛋᛚᛋᛉᚩᚻᚹᛞᛗᛖᛗᚪᚠᚳᚣᚳᚫᚾᛏᚦᚷᛁᛄᛁᚳᛞᛡᛉᚻᚫᚫᛠᚷᛠᛝᚠᛏᚩᚱᛞᚳᛇᚠᚢᛉᛠᛒᚩᛉᛁᚣᚷᛋᛋᛒᛠᚩᛁᛈᛁᛄᛁᚩᛖᚻᛠᚻ",
+      "rune_count": 217,
+      "f_count": 7,
+      "evaluated_key_sign_tasks": 1524,
+      "dp_transitions": 2042768,
+      "top": [
+        {
+          "score": -4.616655951595572,
+          "plaintext_runes": "ᚠᛁᛋᛒᚩᛖᚹᚣᛋᚪᚫᛈᛄᚫᛇᚷᛚᛞᛞᛗᚷᚻᛡᛋᛞᚳᛉᛒᛗᛁᛖᛏᚦᚹᚪᛟᚦᚳᚳᚩᚣᚣᚦᚹᛝᛏᛟᛉᛠᚱᚻᚩᛞᚠᚠᚢᛇᛗᛡᚩᚾᛝᛚᚢᛋᚻᚩᛏᛇᚫᚫᛖᛒᚩᛞᚩᚦᛖᛖᛞᚠᛉᛇᛏᛏᛈᛖᚠᚩᚱᚻᛉᚳᚾᚱᛄᚹᛠᛏᛖᛚᛗᚻᚹᚢᚢᛠᛋᚦᚪᛗᛋᚫᚩᛁᚦᚩᛗᚷᚣᚩᚢᛋᚩᛞᚾᚫᛋᛒᚫᚻᚹᛁᛠᚻᛋᚷᛖᚷᛋᛈᚹᚪᚠᚩᛠᛉᚷᛖᛗᚪᛗᛖᛞᛉᛝᛇᚱᚾᚦᛠᛞᚩᛉᚻᛖᚢᛗᚷᛋᛋᚾᛉᛗᛏᚹᚩᚪᛡᚾᚳᛡᚾᚻᚩᚠᚠᚻᛉᛈᛖᛝᛠᚱᛞᛁᚢᚻᚪᚠᛁᛋᛉᛖᚣᛁᛏᛋᛞᚠᚪᛗᚦᛝᛒᛁᛝ",
+          "transliteration": "FISBOEWYSAAEPJAEEOGLDDMGHIASDCXBMIETTHWAOETHCCOYYTHWNGTOEXEARHODFFUEOMIAONNGLUSHOTEOAEAEEBODOTHEEDFXEOTTPEFORHXCNRJWEATELMHWUUEASTHAMSAEOITHOMGYOUSODNAESBAEHWIEAHSGEGSPWAFOEAXGEMAMEDXNGEORNTHEADOXHEUMGSSNXMTWOAIANCIANHOFFHXPENGEARDIUHAFISXEYITSDFAMTHNGBING",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              1,
+              26,
+              20,
+              18,
+              16,
+              24,
+              19,
+              10,
+              16,
+              20
+            ],
+            "start": 9,
+            "skip_positions": [
+              185
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 2380,
+          "max_states": 20
+        },
+        {
+          "score": -4.632045992817139,
+          "plaintext_runes": "ᚻᚦᚦᚷᛝᛋᚾᛗᚩᚦᛡᚠᚳᚱᛁᛈᛈᚠᛁᚻᛏᛄᛏᚠᛏᛝᚳᚹᚠᛏᛄᛞᚹᚢᚠᚳᛒᛖᚳᛝᛖᚢᛉᛏᚱᛁᚩᚹᚣᚻᛉᛁᛞᛟᚦᛞᛠᛗᚳᚪᛉᛚᚩᛗᚦᚱᛋᚻᛝᚢᚱᛝᛝᚳᚢᚪᛒᚳᛝᚢᛋᛈᚱᚹᚾᚠᚠᚢᛡᛋᚠᛡᛇᚠᛝᛋᛖᛟᚾᛞᚦᛞᚾᛋᚢᛞᛇᛞᚢᚩᚱᚣᛡᛒᚹᛁᛋᚳᛡᚠᚣᚾᛞᚳᚢᛖᛞᚻᛟᛠᚹᛚᚷᚪᛒᛄᛗᚩᛗᚣᚾᚷᛟᛟᛠᚫᚣᚩᛉᚻᛠᛟᚳᚣᚩᛚᚷᛚᚪᚪᚢᛏᚠᚢᚦᚻᛖᚳᚣᛖᚳᚫᛒᚩᚾᛚᛋᚷᚩᛁᚩᛉᚻᛋᛝᚠᚱᚻᚦᚳᚻᚦᛉᛇᚷᛇᛖᚫᛠᚱᛒᚹᚳᚫᛖᚠᛁᚱᚢᚩᚾᚢᚩᛁᚳᛋᚷ",
+          "transliteration": "HTHTHGNGSNMOTHIAFCRIPPFIHTJTFTNGCWFTJDWUFCBECNGEUXTRIOWYHXIDOETHDEAMCAXLOMTHRSHNGURNGNGCUABCNGUSPRWNFFUIASFIAEOFNGSEOENDTHDNSUDEODUORYIABWISCIAFYNDCUEDHOEEAWLGABJMOMYNGOEOEEAAEYOXHEAOECYOLGLAAUTFUTHHECYECAEBONLSGOIOXHSNGFRHTHCHTHXEOGEOEAEEARBWCAEEFIRUONUOICSG",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              1,
+              16,
+              15,
+              15,
+              16,
+              9,
+              18,
+              23
+            ],
+            "start": 0,
+            "skip_positions": [
+              28,
+              85,
+              93,
+              162,
+              185
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 1904,
+          "max_states": 16
+        },
+        {
+          "score": -4.648114106134071,
+          "plaintext_runes": "ᛁᛚᛈᚱᚪᛖᛝᚫᚣᚹᛗᛡᛡᚫᚦᛖᛖᚣᛞᛋᛡᚳᛡᛗᚦᚢᛁᚩᚩᛁᛠᚣᚠᛞᛏᛟᛏᚱᛏᛋᛚᛄᛖᚹᛄᛠᛚᛒᛠᚠᚠᚠᛞᚱᚻᚣᚻᚳᛄᚩᛗᚦᛖᛒᚹᚻᛒᛋᛞᚻᛗᚩᚱᚩᛈᛋᚠᛝᛖᛗᛝᛄᛇᛚᚪᚾᛉᛋᛏᚱᛖᚪᚩᚠᛖᚢᛋᚻᚷᚷᚹᛞᛖᛒᛠᛖᛗᚻᚫᚢᛗᛒᛖᚣᛇᚻᚹᛁᛇᛏᚹᛝᛝᚪᚻᛠᚱᚪᚹᛈᚪᛄᛚᚾᚷᚩᚣᛄᚠᛝᛈᚾᛒᛞᚳᚳᛖᚣᚪᚾᛠᛁᚪᛋᛠᛄᛚᛈᛠᛗᛋᛡᛈᚪᚷᚷᛝᛇᚠᛝᛋᛄᚹᛈᛖᛈᚹᛋᚱᛠᚾᛖᛋᚠᛒᚠᛗᛏᛞᚩᚷᚻᚠᚱᛡᛖᚣᚱᛁᛈᛁᚫᚪᛏᛈᚦᛏᚠᛟᛄᚹᛈᛏᚻᛒᚠᚱ",
+          "transliteration": "ILPRAENGAEYWMIAIAAETHEEYDSIACIAMTHUIOOIEAYFDTOETRTSLJEWJEALBEAFFFDRHYHCJOMTHEBWHBSDHMOROPSFNGEMNGJEOLANXSTREAOFEUSHGGWDEBEAEMHAEUMBEYEOHWIEOTWNGNGAHEARAWPAJLNGOYJFNGPNBDCCEYANEAIASEAJLPEAMSIAPAGGNGEOFNGSJWPEPWSREANESFBFMTDOGHFRIAEYRIPIAEATPTHTFOEJWPTHBFR",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              4,
+              26,
+              16,
+              10,
+              20,
+              28
+            ],
+            "start": 3,
+            "skip_positions": [
+              93,
+              185,
+              192
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 1428,
+          "max_states": 12
+        }
+      ]
+    }
+  ],
+  "new_decryptions": []
+}

@@ -1,0 +1,22 @@
+{
+  "experiment": "E083",
+  "hypothesis": "H051",
+  "scope": "New prospective >=200-rune capability gate, motivated after E081. E081 remains failed8/9, with no retrospective waiver. E082 was never registered/run and remains unused. No model, objective or search change.",
+  "benchmark_validation": "results/phase29_benchmark_validation.json",
+  "benchmark_validation_sha256": "0b28387a6af854bbcb0ddf3b899618c385fb2797700e58cba4f53fa87d337444",
+  "controls": 12,
+  "source_rule": "For index0..11, chapter(X,XI,XII)[index%3], block=index//3. Take zero-based paragraph rank2+block among that chapter's paragraphs with >=760runes. Whole-word prefix until >=(200,300,500,729)[block]runes. Keep full last word; actual lengths recorded. Four distinct paragraphs per chapter, outside E081 first two >=350-rune paragraphs. Prior corpus exposure is acknowledged; no historically unseen-text claim.",
+  "permutation": "Independent Random3301083+index shuffles0..28 as plaintext-to-cipher map. Exactness means plaintext and map on observed symbols; unobserved symbols unidentifiable.",
+  "search": "Frozen E081 model/search: at most24 pattern/frequency/random starts,40 full406-swap character sweeps and40 full406-swap BOS/EOS word-score sweeps. Search seed3303083+100*index. No new words, corrections, retries or tuning. Only ciphertext and original endpoints passed to solver.",
+  "null": "Three full-optimizer diagnostic exact-count shuffles of control0, Random3302083+replicate, same endpoints/search seed. No doublet conditioning or p-value; capability diagnostics only.",
+  "gate": "All12 controls exact top1 and independently verified scores, source ranges, keys, inverse maps, final local optima. Run all controls and3nulls even if any fails. No unknown scan on failure, no threshold adjustment or same-batch retuning.",
+  "bounds": {
+    "process_seconds": 180,
+    "watchdog_seconds": 185,
+    "phase_seconds": 1800,
+    "memory_ceiling_mib": 768,
+    "workers": 1
+  },
+  "unknown_followup": "Only after full independent gate, separately preregister E084 on all unknown individual LP2 rune pages with >=200runes. Preserve shorter and numeric pages with explicit exclusion reasons. Freeze maximum before19 selected-page count/endpoints/doublet-matched full optimizer nulls, Bonferroni over searched pages. Zero exceedances requires separately registered larger calibration. No inference to short pages.",
+  "limits": "Finite heuristic search, not29! exclusion. English training remains limited to pinned Emerson chaptersI,III,IV,V,VI,VII,VIII,IX; no LP text in training, II excluded, X/XI/XII excluded from fitting. Word boundaries assumed preserved and page edges treated as word endpoints. Control gate is engineering evidence, not a solution proof."
+}

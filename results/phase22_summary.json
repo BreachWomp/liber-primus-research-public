@@ -1,0 +1,815 @@
+{
+  "controls": [
+    {
+      "index": 0,
+      "runes": 300,
+      "key_length": 13,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E062-control-0-e545e6e97bda.json"
+    },
+    {
+      "index": 1,
+      "runes": 300,
+      "key_length": 23,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E062-control-1-08f82ddafcdf.json"
+    },
+    {
+      "index": 2,
+      "runes": 300,
+      "key_length": 31,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E062-control-2-feef91546aab.json"
+    },
+    {
+      "index": 3,
+      "runes": 300,
+      "key_length": 4,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E062-control-3-730b74eac241.json"
+    },
+    {
+      "index": 4,
+      "runes": 300,
+      "key_length": 8,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E062-control-4-e84d8fe04cf4.json"
+    },
+    {
+      "index": 5,
+      "runes": 300,
+      "key_length": 12,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E062-control-5-f6074fb24681.json"
+    },
+    {
+      "index": 6,
+      "runes": 200,
+      "key_length": 13,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 200,
+      "output": "results/E062-control-6-65cfb254a60e.json"
+    },
+    {
+      "index": 7,
+      "runes": 200,
+      "key_length": 23,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 200,
+      "output": "results/E062-control-7-ee51f8084039.json"
+    },
+    {
+      "index": 8,
+      "runes": 200,
+      "key_length": 31,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 200,
+      "output": "results/E062-control-8-8b1b5e19436f.json"
+    },
+    {
+      "index": 9,
+      "runes": 729,
+      "key_length": 13,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 729,
+      "output": "results/E062-control-9-f4a6449a0cce.json"
+    },
+    {
+      "index": 10,
+      "runes": 729,
+      "key_length": 23,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 729,
+      "output": "results/E062-control-10-b6c78ccfae97.json"
+    },
+    {
+      "index": 11,
+      "runes": 729,
+      "key_length": 31,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 729,
+      "output": "results/E062-control-11-73d167a1af0c.json"
+    }
+  ],
+  "branch_comparisons": [
+    {
+      "index": 0,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 1,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 2,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 3,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 4,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 5,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 6,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 7,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 8,
+      "before_refinement_exact": {
+        "coordinate": false,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 9,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 10,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    },
+    {
+      "index": 11,
+      "before_refinement_exact": {
+        "coordinate": true,
+        "beam": true
+      },
+      "after_union_refinement_exact": true
+    }
+  ],
+  "control_null_score": -4.317967222673193,
+  "null_deviation": "Original E062-null-2 did not preserve endpoints. Preserved and separately verified; E062-null-endpoints supplies planned diagnostic with unchanged solver.",
+  "original_noncompliant_null_score": -4.352204809934894,
+  "unknown": {
+    "pages": [
+      {
+        "page": "LP2-00",
+        "replicate": 0,
+        "runes": 262,
+        "score": -4.20990030926009,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-00-23f04735383f.json"
+      },
+      {
+        "page": "LP2-01",
+        "replicate": 0,
+        "runes": 266,
+        "score": -4.160968400354831,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-01-6ec8a988904d.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 0,
+        "runes": 201,
+        "score": -3.8091249707956796,
+        "key_length": 29,
+        "output": "results/E063-page-LP2-02-30e0e0b0d723.json"
+      },
+      {
+        "page": "LP2-03",
+        "replicate": 0,
+        "runes": 217,
+        "score": -3.9761302160085057,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-03-8ffe4c117835.json"
+      },
+      {
+        "page": "LP2-04",
+        "replicate": 0,
+        "runes": 261,
+        "score": -4.222178228406805,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-04-ede809465155.json"
+      },
+      {
+        "page": "LP2-05",
+        "replicate": 0,
+        "runes": 263,
+        "score": -4.178705414376015,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-05-a0ae4d38da67.json"
+      },
+      {
+        "page": "LP2-07",
+        "replicate": 0,
+        "runes": 208,
+        "score": -3.9192176617025583,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-07-065bd75ae478.json"
+      },
+      {
+        "page": "LP2-08",
+        "replicate": 0,
+        "runes": 255,
+        "score": -4.181968277594285,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-08-cf9e2d8e74de.json"
+      },
+      {
+        "page": "LP2-09",
+        "replicate": 0,
+        "runes": 268,
+        "score": -4.2014571584445255,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-09-c5924ed4d6e3.json"
+      },
+      {
+        "page": "LP2-10",
+        "replicate": 0,
+        "runes": 263,
+        "score": -4.269308815709195,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-10-771c32c37f1f.json"
+      },
+      {
+        "page": "LP2-11",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.333442559262297,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-11-930e2d9a98bc.json"
+      },
+      {
+        "page": "LP2-12",
+        "replicate": 0,
+        "runes": 261,
+        "score": -4.2524451356964645,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-12-bbd0cd55c17c.json"
+      },
+      {
+        "page": "LP2-13",
+        "replicate": 0,
+        "runes": 272,
+        "score": -4.365174877809843,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-13-ca1fb414e007.json"
+      },
+      {
+        "page": "LP2-16",
+        "replicate": 0,
+        "runes": 267,
+        "score": -4.258564322109987,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-16-e02f7c6a1a45.json"
+      },
+      {
+        "page": "LP2-17",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.234052836207701,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-17-1b906a107eb3.json"
+      },
+      {
+        "page": "LP2-18",
+        "replicate": 0,
+        "runes": 260,
+        "score": -4.255560700488317,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-18-fe9e09df8941.json"
+      },
+      {
+        "page": "LP2-19",
+        "replicate": 0,
+        "runes": 271,
+        "score": -4.247794184165833,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-19-d7dd366c8472.json"
+      },
+      {
+        "page": "LP2-20",
+        "replicate": 0,
+        "runes": 269,
+        "score": -4.249547248605121,
+        "key_length": 30,
+        "output": "results/E063-page-LP2-20-6b763789d056.json"
+      },
+      {
+        "page": "LP2-21",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.218606064761976,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-21-03813897c0ad.json"
+      },
+      {
+        "page": "LP2-23",
+        "replicate": 0,
+        "runes": 213,
+        "score": -3.9696338418895323,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-23-31ca94074e1f.json"
+      },
+      {
+        "page": "LP2-24",
+        "replicate": 0,
+        "runes": 270,
+        "score": -4.195579329456979,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-24-eb8aef701500.json"
+      },
+      {
+        "page": "LP2-25",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.301723500755283,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-25-c3c6479e736a.json"
+      },
+      {
+        "page": "LP2-26",
+        "replicate": 0,
+        "runes": 265,
+        "score": -4.274462665323747,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-26-0182cc111d4c.json"
+      },
+      {
+        "page": "LP2-27",
+        "replicate": 0,
+        "runes": 234,
+        "score": -4.097716137206953,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-27-7fcd7664019c.json"
+      },
+      {
+        "page": "LP2-28",
+        "replicate": 0,
+        "runes": 269,
+        "score": -4.251083471851918,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-28-ebe5eb159f32.json"
+      },
+      {
+        "page": "LP2-29",
+        "replicate": 0,
+        "runes": 277,
+        "score": -4.324031341429645,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-29-2098372eb659.json"
+      },
+      {
+        "page": "LP2-30",
+        "replicate": 0,
+        "runes": 263,
+        "score": -4.237949429569325,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-30-539648b0e279.json"
+      },
+      {
+        "page": "LP2-31",
+        "replicate": 0,
+        "runes": 269,
+        "score": -4.314109668515401,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-31-acb0a9add97b.json"
+      },
+      {
+        "page": "LP2-33",
+        "replicate": 0,
+        "runes": 214,
+        "score": -3.94071496102755,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-33-1b3f888e6b4e.json"
+      },
+      {
+        "page": "LP2-34",
+        "replicate": 0,
+        "runes": 261,
+        "score": -4.273996218064733,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-34-5dc4e594c4d4.json"
+      },
+      {
+        "page": "LP2-35",
+        "replicate": 0,
+        "runes": 271,
+        "score": -4.273758401199678,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-35-0d4007bdede2.json"
+      },
+      {
+        "page": "LP2-36",
+        "replicate": 0,
+        "runes": 238,
+        "score": -4.082999493485753,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-36-8fe19d384b89.json"
+      },
+      {
+        "page": "LP2-37",
+        "replicate": 0,
+        "runes": 228,
+        "score": -3.992790729189554,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-37-9d1e8649899c.json"
+      },
+      {
+        "page": "LP2-38",
+        "replicate": 0,
+        "runes": 228,
+        "score": -3.9376245308101048,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-38-6dd32888c27c.json"
+      },
+      {
+        "page": "LP2-39",
+        "replicate": 0,
+        "runes": 240,
+        "score": -4.149464969815141,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-39-00bf545eec51.json"
+      },
+      {
+        "page": "LP2-40",
+        "replicate": 0,
+        "runes": 231,
+        "score": -4.0367701398991525,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-40-c330eaa4f3ee.json"
+      },
+      {
+        "page": "LP2-41",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.236237035485395,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-41-5cc13624da50.json"
+      },
+      {
+        "page": "LP2-42",
+        "replicate": 0,
+        "runes": 272,
+        "score": -4.2001843050581735,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-42-34ef06d40c55.json"
+      },
+      {
+        "page": "LP2-43",
+        "replicate": 0,
+        "runes": 274,
+        "score": -4.249430699838838,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-43-430eddf35f90.json"
+      },
+      {
+        "page": "LP2-44",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.299778676292297,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-44-ae98c90c985f.json"
+      },
+      {
+        "page": "LP2-45",
+        "replicate": 0,
+        "runes": 270,
+        "score": -4.25931397294396,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-45-7bfe9e8afc4f.json"
+      },
+      {
+        "page": "LP2-46",
+        "replicate": 0,
+        "runes": 270,
+        "score": -4.278361143190977,
+        "key_length": 31,
+        "output": "results/E063-page-LP2-46-5388fd834c48.json"
+      },
+      {
+        "page": "LP2-47",
+        "replicate": 0,
+        "runes": 274,
+        "score": -4.389392603358254,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-47-907d8822a3bf.json"
+      },
+      {
+        "page": "LP2-48",
+        "replicate": 0,
+        "runes": 271,
+        "score": -4.249934528454548,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-48-5354089b065b.json"
+      },
+      {
+        "page": "LP2-52",
+        "replicate": 0,
+        "runes": 263,
+        "score": -4.153836004431455,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-52-4ff9818fae83.json"
+      },
+      {
+        "page": "LP2-54",
+        "replicate": 0,
+        "runes": 232,
+        "score": -4.1063626096195005,
+        "key_length": 32,
+        "output": "results/E063-page-LP2-54-6a264036a2fa.json"
+      }
+    ],
+    "nulls": [
+      {
+        "page": "LP2-02",
+        "replicate": 0,
+        "runes": 201,
+        "score": -3.772338595056894,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-00-78a3808cc4a0.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 1,
+        "runes": 201,
+        "score": -3.8943134320035964,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-01-0f3d0787e9c4.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 2,
+        "runes": 201,
+        "score": -3.702721665850322,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-02-80ee2b5bd2e0.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 3,
+        "runes": 201,
+        "score": -3.8552962518690705,
+        "key_length": 31,
+        "output": "results/E063-null-LP2-02-03-b179110d29f6.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 4,
+        "runes": 201,
+        "score": -3.799924250563552,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-04-f10a1e38910b.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 5,
+        "runes": 201,
+        "score": -3.750391215815861,
+        "key_length": 31,
+        "output": "results/E063-null-LP2-02-05-a136e3403055.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 6,
+        "runes": 201,
+        "score": -3.82670721784682,
+        "key_length": 31,
+        "output": "results/E063-null-LP2-02-06-944747eb2836.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 7,
+        "runes": 201,
+        "score": -3.7903306337863927,
+        "key_length": 31,
+        "output": "results/E063-null-LP2-02-07-9040c7a9b2f0.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 8,
+        "runes": 201,
+        "score": -3.801314207113831,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-08-a96e9d397e11.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 9,
+        "runes": 201,
+        "score": -3.899959453429599,
+        "key_length": 30,
+        "output": "results/E063-null-LP2-02-09-990c4701eacb.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 10,
+        "runes": 201,
+        "score": -3.8261849889664865,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-10-2101a339fd6d.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 11,
+        "runes": 201,
+        "score": -3.8535917242176345,
+        "key_length": 30,
+        "output": "results/E063-null-LP2-02-11-a4818d1c4249.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 12,
+        "runes": 201,
+        "score": -3.8274033414144735,
+        "key_length": 31,
+        "output": "results/E063-null-LP2-02-12-8b52e0d4f226.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 13,
+        "runes": 201,
+        "score": -3.9136483691944104,
+        "key_length": 31,
+        "output": "results/E063-null-LP2-02-13-f511d0ead8fc.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 14,
+        "runes": 201,
+        "score": -3.834666556336433,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-14-a64de8c21048.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 15,
+        "runes": 201,
+        "score": -3.8850738648682133,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-15-868d80922176.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 16,
+        "runes": 201,
+        "score": -3.8102999953225933,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-16-974a7502001d.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 17,
+        "runes": 201,
+        "score": -3.839620518584568,
+        "key_length": 32,
+        "output": "results/E063-null-LP2-02-17-5d2d013adebc.json"
+      },
+      {
+        "page": "LP2-02",
+        "replicate": 18,
+        "runes": 201,
+        "score": -3.9163231395253915,
+        "key_length": 30,
+        "output": "results/E063-null-LP2-02-18-54f574ddad05.json"
+      }
+    ],
+    "selected_page": "LP2-02",
+    "score": -3.8091249707956796,
+    "exceedances": 6,
+    "raw_p": 0.35,
+    "bonferroni46": 1,
+    "pending_larger_calibration": false,
+    "excluded_pages": [
+      {
+        "page": "LP2-06",
+        "runes": 196,
+        "reason": "Below200-rune validated length bound"
+      },
+      {
+        "page": "LP2-14",
+        "runes": 137,
+        "reason": "Below200-rune validated length bound"
+      },
+      {
+        "page": "LP2-15",
+        "runes": 159,
+        "reason": "Below200-rune validated length bound"
+      },
+      {
+        "page": "LP2-22",
+        "runes": 131,
+        "reason": "Below200-rune validated length bound"
+      },
+      {
+        "page": "LP2-32",
+        "runes": 121,
+        "reason": "Below200-rune validated length bound"
+      },
+      {
+        "page": "LP2-49",
+        "runes": 66,
+        "reason": "Below200-rune validated length bound"
+      },
+      {
+        "page": "LP2-50",
+        "runes": 0,
+        "reason": "Numeric non-rune page preserved"
+      },
+      {
+        "page": "LP2-51",
+        "runes": 92,
+        "reason": "Below200-rune validated length bound"
+      },
+      {
+        "page": "LP2-53",
+        "runes": 179,
+        "reason": "Below200-rune validated length bound"
+      },
+      {
+        "page": "LP2-55",
+        "runes": 76,
+        "reason": "Below200-rune validated length bound"
+      }
+    ],
+    "seconds": 388.98287200013874,
+    "peak_sampled_bytes": 107663360,
+    "validation_seconds": 157.1557874000282,
+    "new_decryptions": []
+  },
+  "validation": {
+    "scalar_decodings": 203672,
+    "independent_trigram_coordinate_optima": 72095,
+    "initial_and_final_scores": 146624,
+    "candidate_score_pairs": 54952,
+    "fourgram_trace_scores": 2096,
+    "independent_fourgram_coordinate_optima": 948,
+    "reencryptions": 237
+  },
+  "tests_passed": 126,
+  "successful_tasks": 79,
+  "seconds": 497.7076644001063,
+  "peak_sampled_bytes": 107663360,
+  "new_decryptions": []
+}

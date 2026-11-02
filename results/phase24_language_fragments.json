@@ -1,0 +1,186 @@
+{
+  "purpose": "Post-hoc illustrative substring selection requested by user, not a new statistical test or decryption claim.",
+  "selection": "Top-ranked E067 candidates for LP2-33 and LP2-02; handpicked substrings after inspecting results.",
+  "separator_note": "Source layout retained. Latin digraphs are not silently split or corrected. IN TUNE adds a hypothetical internal word boundary inside OINTUNE.",
+  "pages": [
+    {
+      "page": "LP2-33",
+      "output": "results/E067-section-LP2-33-dfb07770a28a.json",
+      "output_sha256": "91cd8eb3c455762ed5b4fb433df0b016124b54048727a00adae54c7c0ac827a8",
+      "candidate_rank": 1,
+      "score": -3.8053108450822344,
+      "recipe": {
+        "key_indices": [
+          6,
+          5,
+          11,
+          0,
+          19,
+          15,
+          17,
+          19,
+          7,
+          0,
+          11,
+          15,
+          8,
+          11,
+          5,
+          7,
+          13,
+          9,
+          18,
+          24,
+          20,
+          20,
+          18,
+          4,
+          13,
+          19,
+          7,
+          9,
+          12,
+          17,
+          15
+        ],
+        "cipher_sign": -1,
+        "feedback_sign": 17,
+        "skip_positions": [],
+        "skip_policy": "none"
+      },
+      "transliteration": "NGSEAARPRYADUULYNIMPETSABUTHEACONTARSHOETHGGLGNGADSUBEEELNGSEIABJESELTHAPSIRMSEMALIMICNIALUTASTOWCOAMEAITHPUPTTYEWUATTHNGNEXNDWANDXIATAWACTSECHEATRUSASFNGLACOUPRIUAUNGASOUTBATHAGICTFLSOBEARRORBMNWRTISHHAINCTPLAMYPLWDERSLILTHANRWSCOFO",
+      "layout": "NGS•EAARPRYAD⁜UU•LYNIMP\nETS•ABUTHEA•CON•TAR•S\nHOETHG•GLG•NGA•DSUBEEE•LNG\nS•EIA•BJESEL•THAPS•IRMSEMAL•\nIM•ICN•IAL•UT•AS•TOW•CO⁜\n\nAMEA•ITHPUP⁜TTYEWU•ATTHNGN\nEX•NDWA•NDX•IATAW•AC•TS•E\nCH•EAT•RUSA•SF•NG•LACOUPR\nIU•AUNGASOUT•BATHA•GICT•FLSO\nBEARRO•RBMNW•RTISH•HA•INCT•P\nL•AMYP•LWD•ERSLILTH•ANR•WSCOF•O",
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "fragments": [
+        {
+          "literal": "EAT",
+          "latin_range_zero_based_half_open": [
+            143,
+            146
+          ],
+          "rune_range_zero_based_half_open": [
+            130,
+            132
+          ],
+          "unsegmented_context": "WACTSECHEATRUSASFNG",
+          "rune_tokens": [
+            "EA",
+            "T"
+          ]
+        },
+        {
+          "literal": "BEAR",
+          "latin_range_zero_based_half_open": [
+            185,
+            189
+          ],
+          "rune_range_zero_based_half_open": [
+            168,
+            171
+          ],
+          "unsegmented_context": "GICTFLSOBEARRORBMNWR",
+          "rune_tokens": [
+            "B",
+            "EA",
+            "R"
+          ]
+        },
+        {
+          "literal": "OUTBATH",
+          "latin_range_zero_based_half_open": [
+            169,
+            176
+          ],
+          "rune_range_zero_based_half_open": [
+            153,
+            159
+          ],
+          "unsegmented_context": "IUAUNGASOUTBATHAGICTFLS",
+          "rune_tokens": [
+            "O",
+            "U",
+            "T",
+            "B",
+            "A",
+            "TH"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "LP2-02",
+      "output": "results/E067-section-LP2-02-8f2f1a587ae1.json",
+      "output_sha256": "9415479a1390497878deb824dcead716a84b1bcd6176b576420c30706c393d9b",
+      "candidate_rank": 1,
+      "score": -3.8512359172841606,
+      "recipe": {
+        "key_indices": [
+          24,
+          12,
+          7,
+          24,
+          13,
+          1,
+          2,
+          22,
+          17,
+          27,
+          3,
+          28,
+          13,
+          1,
+          8,
+          19,
+          19,
+          1,
+          2,
+          11,
+          4,
+          10,
+          1,
+          27,
+          21,
+          2,
+          23,
+          14
+        ],
+        "cipher_sign": 1,
+        "feedback_sign": 16,
+        "skip_positions": [],
+        "skip_policy": "none"
+      },
+      "transliteration": "FHYSNGRSACCWORLFDOERNGHENWRFURAHUNSIAIESDARTSSBYSMERYEACTEIREATITMAHBELDBEEISUDOINTUNEFISENGPITURJEMYMOTEEOFREASAAONGESADAPOFTMYESNDIGNOIWCWNUMETHNGSSMNOSCSUBTERRHOREADLYGCEPTMDITBYYRRYHIEUTHUOWBENGSYRINEAPEANRNJDNGWB",
+      "layout": "FH•Y⁘SNG•RSACCWO•RLF•DOERNGHE•\nNWRFURA•HUN•SIAIES•DART•SSBYS\nME•RYEACTEIREAT•ITMAHBE•LD•B\nEEISUD•OINTUNE•FISENG•PITU•RJE\nMYMO•TEEOFR•EASAAONGESA•DAP•O\nF•T•MYESNDIG•NOIWCWNUM•ETH\nNGSSM•NOSCSUBTER•RHOR•EADL•YGC\nEPTMD•ITBYYRRY•HIE•UTH•UO•WB\nENGSYRINE•AP•EANRNJDNGWB⁜",
+      "source_refs": [
+        "relikd:pages/p0-2.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "fragments": [
+        {
+          "literal": "INTUNE",
+          "latin_range_zero_based_half_open": [
+            80,
+            86
+          ],
+          "rune_range_zero_based_half_open": [
+            74,
+            80
+          ],
+          "unsegmented_context": "BEEISUDOINTUNEFISENGPI",
+          "rune_tokens": [
+            "I",
+            "N",
+            "T",
+            "U",
+            "N",
+            "E"
+          ]
+        }
+      ]
+    }
+  ],
+  "script_sha256": "2b2120fe33979f90a653217cceec88d31891b9fbd01f40284cda63886ed9285d"
+}

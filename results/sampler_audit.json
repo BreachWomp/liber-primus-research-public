@@ -1,0 +1,522 @@
+{
+  "experiment_id": "E004-sampler-audit",
+  "status": "completed",
+  "decryption_claim": false,
+  "external_source": "https://github.com/Dukotah/cicada3301/blob/master/liber-primus/analysis/r5_doublet_anatomy.py",
+  "source_scope": "make_fixed_doublet_surrogate phase 3 stops after mix_swaps accepted state-changing swaps",
+  "parameters": {
+    "multiset": [
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "target_doublets": 1,
+    "method": "exact finite enumeration; no Monte Carlo",
+    "seed": null
+  },
+  "state_count": 12,
+  "unordered_position_pairs": 10,
+  "states": [
+    {
+      "sequence": [
+        0,
+        0,
+        1,
+        2,
+        1
+      ],
+      "eligible_swap_degree": 2,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.07142857142857142
+    },
+    {
+      "sequence": [
+        0,
+        1,
+        1,
+        0,
+        2
+      ],
+      "eligible_swap_degree": 1,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.03571428571428571
+    },
+    {
+      "sequence": [
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "eligible_swap_degree": 4,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.14285714285714285
+    },
+    {
+      "sequence": [
+        0,
+        2,
+        0,
+        1,
+        1
+      ],
+      "eligible_swap_degree": 2,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.07142857142857142
+    },
+    {
+      "sequence": [
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "eligible_swap_degree": 4,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.14285714285714285
+    },
+    {
+      "sequence": [
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "eligible_swap_degree": 1,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.03571428571428571
+    },
+    {
+      "sequence": [
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "eligible_swap_degree": 4,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.14285714285714285
+    },
+    {
+      "sequence": [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "eligible_swap_degree": 2,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.07142857142857142
+    },
+    {
+      "sequence": [
+        1,
+        2,
+        0,
+        0,
+        1
+      ],
+      "eligible_swap_degree": 4,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.14285714285714285
+    },
+    {
+      "sequence": [
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      "eligible_swap_degree": 2,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.07142857142857142
+    },
+    {
+      "sequence": [
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "eligible_swap_degree": 1,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.03571428571428571
+    },
+    {
+      "sequence": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "eligible_swap_degree": 1,
+      "uniform_probability": 0.08333333333333333,
+      "accepted_jump_chain_stationary_probability": 0.03571428571428571
+    }
+  ],
+  "transition_matrices": {
+    "accepted_swap_jump_chain": [
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.25,
+        0.25,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.25,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.25,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "fixed_number_of_proposals": [
+      [
+        0.8,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.9,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.1,
+        0.1,
+        0.6,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.8,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.1,
+        0.1,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.1,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.9,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.6,
+        0.1,
+        0.1,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.8,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.6,
+        0.1,
+        0.0,
+        0.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.8,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.9,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.9
+      ]
+    ]
+  },
+  "stationarity_residual_maxabs": {
+    "degree_weighted_on_jump_chain": 0.0,
+    "uniform_on_jump_chain": 0.10416666666666667,
+    "uniform_on_fixed_proposal_chain": 0.0
+  },
+  "conclusion": "Fixed accepted-step count does not in general sample uniformly conditional on multiset and doublet count. Fixed proposals retain rejection self-loops and preserve the uniform stationary distribution.",
+  "limits": [
+    "This exact counterexample audits a general sampler property, not the magnitude or direction of full-corpus bias.",
+    "Fixed proposals establish stationarity, not convergence; initialization, connectivity, aperiodicity, and mixing still require checks.",
+    "The external source is a mutable branch URL; pin the source revision when reproducing its particular results.",
+    "No Liber Primus transcription or candidate plaintext enters this audit."
+  ],
+  "implementation_sha256": "6481e5818d0b0f7e3f1bc19e304ffe9ed78a55ff1c41ed6820f629846964884d"
+}

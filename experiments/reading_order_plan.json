@@ -1,0 +1,34 @@
+{
+  "registered_at": "2026-10-19T17:34:39.253442+00:00",
+  "experiment": "E021",
+  "hypothesis": "A page-local reversal/alternating row reading order followed by a small known cipher family exposes plaintext.",
+  "unknown_pages": [
+    "LP2-00",
+    "LP2-49",
+    "LP2-51",
+    "LP2-55"
+  ],
+  "selection": "Prior inspected short-page scores plus numeric-neighbor structure and one long dropcap page; not a fresh random sample; correction conservatively55pages.",
+  "orders": "top/bottom row order x left/right/snake_left/snake_right, no padding, deduplicate identical permutations; permutation applied BEFORE decryption",
+  "cipher_grid": {
+    "affine": "28invertible multipliers x29shifts",
+    "vigenere": "Known DIVINITY and FIRFUMFERENFE keys, all phases,4signs, exact allF-subsets",
+    "streams": "prime,prime_totient,integer_totient; starts0..255,4signs,exact allF-subsets"
+  },
+  "numeric_policy": "LP2-49/50/51 tables and LP2-56 hash preserved as source data; not decoded in E021; no key consumption as explicit rune-only hypothesis",
+  "controls": "LP2-56 known canonical ciphertext scattered with inverse of each of8orders, search full grid without telling route; exact plaintext gate8/8 plus known LP2-57 direct9thcontrol.",
+  "model": "Fixed external4gram from E016",
+  "null": {
+    "replicates": 19,
+    "seed": 3301021,
+    "model": "Independent uniform rejection shuffles in original storage order, preserve counts and doublets, then complete same route+cipher search.",
+    "correction": "full maximum over routes/ciphers in each sample,Bonferroni55pages",
+    "escalation": "zeroexceedances requires larger fixed fresh calibration before inference"
+  },
+  "budgets": {
+    "phase_seconds": 900,
+    "process_seconds": 180.0,
+    "null_processes": "one replicate per task, resumable",
+    "memory": "one page/order, <=812affine rows, finiteDP,100000modelcache,oneworker"
+  }
+}

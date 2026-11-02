@@ -1,0 +1,16 @@
+{
+  "experiment": "E054-long-page-phase-controls",
+  "hypothesis": "H040",
+  "rule": "P_i=s*C_i+K[(page_phase+local_consumed_cursor)%m] mod29, selective ciphertextF copied without key consumption. Shared key, independent phase and reset language context per page; empty numeric page preserved with phase0. Rotate key so first nonempty phase0.",
+  "initialization": "Frozen E052 initialization and20 diversified candidates; same seed3303052,periods17..32,bothsigns,16starts,20unigram alternations,top2perfamily,3bigram and3fourgram rounds of<=6 coordinate sweeps. Only pooling change: maximal non-F runs cannot cross page boundaries; select12longest>=16,cap256. Global offset-based phase starts remain heuristic; no true phases supplied.",
+  "refinement": "For20 selected pooled seeds, E047 exact independent perpage phase/Fmask optimization then up to3 rounds shared-key coordinates(max6sweeps) and exact perpage optimization. Final ranking by page-reset score,top3 distinctplaintexts.",
+  "score": "(sum page logp4 - primitive_m*ln29 - cipherFcount*ln2 - (nonempty_pages-1)*ln(m))/N. Pool score and order schedule unchangedE052.",
+  "fresh_controls": "Six cases: indices0..2 chaptersX,XI,XII at runeoffset6000,length729,spans copied LP2-00_02; indices3..5 samechapters offset8000,length3316,spans copied LP2-40_55 including numericempty. Keylengths17,23,31 repeated,signs+1,-1,+1 repeated. Eachcase independent Random(3301054+index): key uniform1..28,then perpage phasesrandrange(m),firstnonempty0,empty0. Separate Random(3304054+index) copies each plaintextF independently with probabilities.25,.5,.75 repeated. TrainingI,III-IX unchanged; fresh ranges for this calibration, historicallyknown chapters.",
+  "regressions": "All six E052 originalciphertexts and plaintexts,keys,masks retained. Derive true localpagephase from preceding consumed cursor modulo keylength,empty0; no truthinput to solver. Uses page-reset language objective, so exact gate rechecked.",
+  "null": "One diagnostic complete rerun on freshcase2, perpage endpoints/counts/doublet conditional sampler seed3302054+page_index. No pvalue from one null. Same full solver selection.",
+  "gate": "All twelve controls must recover exactplaintext,key,sign,Fmask and phases. Anyfailure blocks unknown scan. No unknowninput in this calibration; if allpass,freeze separate nine-group/19null plan before unknown work.",
+  "bounds": "512..4096runes,<=16pages,<=12fragmentscap256,32keyslots,512unigramstarts,<=64poolcandidates,20finalstarts,<=256DPstates perpage,29coordinate rows. Oneprocess,BLASthreads1,768MiB sampledresident/private watchdog.",
+  "process_seconds": 180,
+  "phase_seconds": 1200,
+  "limits": "Algorithmic extension of H039. Failure is not cipher exclusion. No tuning to this batch's controls or unknown pages; retain all prior results. CopiedF patterns and page phases are synthetic assumptions."
+}

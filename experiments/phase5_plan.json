@@ -1,0 +1,13 @@
+{
+  "registered_at": "2026-10-19T12:39:04.185791+00:00",
+  "phase": "5",
+  "budget_seconds": 900,
+  "workers": 1,
+  "E018_continuation_budget_seconds": 450,
+  "E019_new_feedback_budget_seconds": 400,
+  "reserve_seconds": 50,
+  "baseline_checkpoint": "checkpoints/phase4_complete.json",
+  "baseline_completed_experiments": 160,
+  "resume": "Scientific dependencies and parameters of E018 unchanged; old completed outputs skipped; old reports/checkpoints preserved.",
+  "E019": "New one-rune affine plaintext-feedback family, subject to exact synthetic controls and same-grid conditional nulls; details registered separately before execution."
+}

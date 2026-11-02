@@ -1,0 +1,13 @@
+{
+  "experiment": "E023-glyph-audit",
+  "scope": "Five E022 disagreements plus same-image comparison cells; no full independent transcription.",
+  "method": "Inspect unresampled native-pixel crops. Compare L foot, i dot, S/s relative height and I/l ascender height. Do not infer a character solely from transcription majority or downstream plaintext scores.",
+  "source_policy": "Retain all historical source bytes and canonical transcription. Record a separate explicit observation overlay, including any unresolved alternatives.",
+  "controls": "Same-image uppercase L, lowercase dotted i, upper/lower S and previously agreed vertical stems; agreement is contextual evidence, not ground truth.",
+  "null_model": "Not applicable to deterministic source and glyph inspection; no significance or decryption claim.",
+  "seed": null,
+  "max_compute_seconds": 30,
+  "max_decoded_pixels_per_image": 8640000,
+  "workers": 1,
+  "image_processing": "Pillow used only for analysis crops/contact sheets. No resampling, sharpening, threshold-based replacement or generated glyphs. Core audit code remains standard library."
+}

@@ -1,0 +1,123 @@
+{
+  "experiment": "E021-reading-order-null",
+  "status": "completed",
+  "parameters": {
+    "mode": "null",
+    "page": "LP2-49",
+    "batch": 2,
+    "seconds": 180.0,
+    "seed": 3301021
+  },
+  "new_decryptions": [],
+  "page": "LP2-49",
+  "row_lengths": [
+    23,
+    22,
+    21
+  ],
+  "ciphertext_indices": [
+    27,
+    7,
+    2,
+    1,
+    10,
+    27,
+    23,
+    13,
+    5,
+    27,
+    24,
+    21,
+    14,
+    24,
+    15,
+    12,
+    28,
+    7,
+    19,
+    18,
+    23,
+    2,
+    26,
+    6,
+    26,
+    18,
+    0,
+    17,
+    20,
+    24,
+    22,
+    11,
+    22,
+    19,
+    13,
+    2,
+    6,
+    24,
+    18,
+    10,
+    20,
+    10,
+    27,
+    28,
+    21,
+    11,
+    6,
+    17,
+    19,
+    10,
+    9,
+    24,
+    19,
+    25,
+    18,
+    4,
+    11,
+    22,
+    9,
+    16,
+    8,
+    0,
+    16,
+    25,
+    1,
+    16
+  ],
+  "proposals": 1,
+  "score": -5.032788753112921,
+  "route_scores": [
+    {
+      "route": "top_left",
+      "score": -5.337263794915912
+    },
+    {
+      "route": "top_right",
+      "score": -5.586885549285261
+    },
+    {
+      "route": "top_snake_left",
+      "score": -5.032788753112921
+    },
+    {
+      "route": "top_snake_right",
+      "score": -5.231469306563495
+    },
+    {
+      "route": "bottom_left",
+      "score": -5.396893066006078
+    },
+    {
+      "route": "bottom_right",
+      "score": -5.307783457887536
+    },
+    {
+      "route": "bottom_snake_left",
+      "score": -5.369903358278387
+    },
+    {
+      "route": "bottom_snake_right",
+      "score": -5.514433647096307
+    }
+  ],
+  "wall_seconds": 7.220633000019006
+}

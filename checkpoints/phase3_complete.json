@@ -1,0 +1,488 @@
+{
+  "created_at": "2026-10-19T09:41:13.152804+00:00",
+  "summary": {
+    "created_at": "2026-10-19T09:41:13.152804+00:00",
+    "experiment_groups": [
+      "E012",
+      "E013",
+      "E014",
+      "E015"
+    ],
+    "completed_processes": 16,
+    "distinct_current_tasks": 15,
+    "seconds": 451.7912941999384,
+    "max_process_seconds": 179.24528659999487,
+    "budget_seconds": 900,
+    "section_start_sign_combinations": 30720,
+    "running_key_recipes": 36336608,
+    "short_seed_recipes": 11113960,
+    "differential_affine_recipes": 44660,
+    "candidate_records_recomputed": 418,
+    "tests_passed": 57,
+    "numpy": "2.3.5",
+    "phase_local_bonferroni4_p": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "new_decryptions": [],
+    "duplicate_control_note": "E012control ran twice because default180 and explicit180.0 produced different fingerprints; same scientific parameters, not independent replication. Both immutable events retained and both times counted."
+  },
+  "records": [
+    {
+      "experiment": "E012-section-control",
+      "fingerprint": "e08044a6e9b751c9bb509980b35eb42f3f778d126f2c0af644beae49d86d88e7",
+      "finished_at": "2026-10-19T09:26:44.250639+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-control-e08044a6e9b7.json",
+      "output_sha256": "efeff8b6098dca8d8943d4c3a74c7e0b3c42f82cb690009d46f745a0d4bb8e0b",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "control",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:26:43.083188+00:00",
+      "status": "completed",
+      "wall_seconds": 1.1671491999877617
+    },
+    {
+      "experiment": "E012-section-LP2-00_02",
+      "fingerprint": "a790b0f2b9641a6e62919cad0f5aac0f2796edc39b4f3ef34c74e6edff06996c",
+      "finished_at": "2026-10-19T09:26:47.545742+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-00_02-a790b0f2b964.json",
+      "output_sha256": "69040db2cecdc9fd7921ca4c411eaf50ce01b5c61106c2c77eb66534d215e29a",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-00_02",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:26:44.449191+00:00",
+      "status": "completed",
+      "wall_seconds": 3.0958823999972083
+    },
+    {
+      "experiment": "E012-section-LP2-03_07",
+      "fingerprint": "1fef07415599aed8b57804931850286b31f32dd7aa81b51e896d8309a83befc1",
+      "finished_at": "2026-10-19T09:26:52.220732+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-03_07-1fef07415599.json",
+      "output_sha256": "13e1aff362dd7cf382c547586122b811b17c6ae160e6ba81415b9650f9a4a5a9",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-03_07",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:26:47.857219+00:00",
+      "status": "completed",
+      "wall_seconds": 4.363299999997253
+    },
+    {
+      "experiment": "E012-section-LP2-08_14",
+      "fingerprint": "09f0f73e381bedafa0dd3997b6b70c66e3ceba5930e2f86451bef5adb498c77a",
+      "finished_at": "2026-10-19T09:27:00.209947+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-08_14-09f0f73e381b.json",
+      "output_sha256": "2f9553a843f6a74ab43da4cefff547450f591c044e24abee38e7ed45f31081e0",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-08_14",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:26:52.521161+00:00",
+      "status": "completed",
+      "wall_seconds": 7.6885185999854
+    },
+    {
+      "experiment": "E012-section-LP2-15_22",
+      "fingerprint": "b0ec3c4c54855e0ddd0d9c1d66361a3840646887c602670c0ee09400154366f1",
+      "finished_at": "2026-10-19T09:27:08.923353+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-15_22-b0ec3c4c5485.json",
+      "output_sha256": "c342fd65b112bf703b8700373c3dbaaac861df637582df61dbcef433a5ba2eb2",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-15_22",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:27:00.415578+00:00",
+      "status": "completed",
+      "wall_seconds": 8.508129900001222
+    },
+    {
+      "experiment": "E012-section-LP2-23_26",
+      "fingerprint": "81a9738b572baeb50aa332957a2a8b318ae3ce9d6b6012a7ecce62a036e3b322",
+      "finished_at": "2026-10-19T09:27:13.254227+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-23_26-81a9738b572b.json",
+      "output_sha256": "b5240b8868834a7fcc02bc85961866a31cea1fe1593f6409356faaeaa3f3d367",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-23_26",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:27:09.123872+00:00",
+      "status": "completed",
+      "wall_seconds": 4.13037689999328
+    },
+    {
+      "experiment": "E012-section-LP2-27_32",
+      "fingerprint": "d42e500ab5643db7231c587077b51b104f67bec9f3ff0405ab371c961fb7d3b9",
+      "finished_at": "2026-10-19T09:27:19.752651+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-27_32-d42e500ab564.json",
+      "output_sha256": "d45cfc40511c1c655c43838525dde37d2275b01fb09ba3f28b3b2d5132d71111",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-27_32",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:27:13.447062+00:00",
+      "status": "completed",
+      "wall_seconds": 6.304831700021168
+    },
+    {
+      "experiment": "E012-section-LP2-33_39",
+      "fingerprint": "b8aa9357cb92d84eda56b84a29c2ecb9b0a27f21996d2bd8441de93a4d590228",
+      "finished_at": "2026-10-19T09:27:26.922255+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-33_39-b8aa9357cb92.json",
+      "output_sha256": "e1d69936d0e8248ec3a35ef4b7c6fe4307356f72abb270b9660f4e81105a291d",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-33_39",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:27:20.016767+00:00",
+      "status": "completed",
+      "wall_seconds": 6.905392899992876
+    },
+    {
+      "experiment": "E012-section-LP2-40_53",
+      "fingerprint": "e68fbeb961cb90271b5ddef9ad25e3b6b87afaadcd278d5946d1a4c5f79f8161",
+      "finished_at": "2026-10-19T09:27:43.006289+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-40_53-e68fbeb961cb.json",
+      "output_sha256": "ac554b3d4ac079424f257fd3d11113e2b2ce646b44430eea5254896d63d5b692",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-40_53",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:27:27.122263+00:00",
+      "status": "completed",
+      "wall_seconds": 15.880527900008019
+    },
+    {
+      "experiment": "E012-section-LP2-54_55",
+      "fingerprint": "a0f05cf9bb3ecfcc183ec9f907c8311a1f7177554443c54ccf9a56d4bcfd883d",
+      "finished_at": "2026-10-19T09:27:44.275748+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-54_55-a0f05cf9bb3e.json",
+      "output_sha256": "3686b9395f26277e5d5b5c90a8f8f7a0a8348405ce5e013fb57a303254d828a8",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-54_55",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:27:43.203374+00:00",
+      "status": "completed",
+      "wall_seconds": 1.071853600005852
+    },
+    {
+      "experiment": "E012-section-LP2-40_55",
+      "fingerprint": "03d00fded2338d41a6b997d2e5c22f952c6189917b91b40a864748c0d1ad9235",
+      "finished_at": "2026-10-19T09:28:02.382709+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-section-LP2-40_55-03d00fded233.json",
+      "output_sha256": "30c69f8820dbb9d017e8a16551d42295c7dc6ca3bcaa27867128d797f9c82aaf",
+      "parameters": {
+        "replicates": 0,
+        "seconds": 180.0,
+        "section": "LP2-40_55",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:27:44.482345+00:00",
+      "status": "completed",
+      "wall_seconds": 17.90017410001019
+    },
+    {
+      "experiment": "E012-null-LP2-00_02",
+      "fingerprint": "7b924d37c396aa0a03a7ccab36b2cc80af3dddc283017a7e7563dde952e59980",
+      "finished_at": "2026-10-19T09:29:57.866361+00:00",
+      "input_dependencies": {
+        "data/raw/iddqd/liber-primus__index/liber-primus__index.txt": "a3b62f17d7a9281829e85eaed13d5541b6c1be70b1683fad2701d1f53a954ebf",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/section_plan.json": "49081eec78bb02552a3bb3c7c9d807925a47e8a7941713ffeb1bfc808490ce31",
+        "experiments/section_stream_attack.py": "2fcb60c2f1849f4f8cedb386a7413e86f95e291c43130538888870fed48c9785",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/manifest.json": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E012-null-LP2-00_02-7b924d37c396.json",
+      "output_sha256": "45f63a3ef3956c74eea4209a3bcb235181e284cab9860ad33ef29866183c153e",
+      "parameters": {
+        "replicates": 39,
+        "seconds": 180.0,
+        "section": "LP2-00_02",
+        "seed": 3301012
+      },
+      "started_at": "2026-10-19T09:28:02.579456+00:00",
+      "status": "completed",
+      "wall_seconds": 115.28618060000008
+    },
+    {
+      "experiment": "E013-running-key",
+      "fingerprint": "bcba00e94c6816dce5dd4ca236b387d70c7c28bf8dd75f4d14b174763770cdc8",
+      "finished_at": "2026-10-19T09:34:00.854254+00:00",
+      "input_dependencies": {
+        "data/raw/gutenberg/pg2944.txt": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/ciphertext_autokey_scan.py": "c2efa76033dd404ecc556af97c39db482d9be503c1e0e259fab50e7d7eb30e01",
+        "experiments/conditional_attack_null.py": "78bb0337325fef5c8ec22d39499ee84ab97ec28a3c6fec9c14c4301ef8d0b470",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/running_key_attack.py": "c151abce130386455d15aca330efc4d2eb12843082ba36fc7a953bfcf41bf657",
+        "experiments/running_key_plan.json": "c2d533a370c3aa52782c884d1c2a70f210bb0db88a51ead6fbd571455c89325b",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "sources/emerson_manifest.json": "d0ce2bc8932e113b23c209cf7e62e23c8f50274004c461ca29c250e0f673dac9",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E013-running-key-bcba00e94c68.json",
+      "output_sha256": "bc7e2c7860770d738ad0942a6d1e324421e96cf6762b646f8d029eeb53c61265",
+      "parameters": {
+        "numpy": "2.3.5",
+        "replicates": 39,
+        "seconds": 180,
+        "seed": 3301013
+      },
+      "started_at": "2026-10-19T09:31:01.609634+00:00",
+      "status": "completed",
+      "wall_seconds": 179.24528659999487
+    },
+    {
+      "experiment": "E014-short-autokey",
+      "fingerprint": "c238b3631ce2c163ce1f81d3b317da685e660ac8424121049e701a2e03ab2a89",
+      "finished_at": "2026-10-19T09:35:11.523966+00:00",
+      "input_dependencies": {
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/ciphertext_autokey_scan.py": "c2efa76033dd404ecc556af97c39db482d9be503c1e0e259fab50e7d7eb30e01",
+        "experiments/conditional_attack_null.py": "78bb0337325fef5c8ec22d39499ee84ab97ec28a3c6fec9c14c4301ef8d0b470",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/plaintext_autokey_attack.py": "cfd8044daf779271bbb233ce1078e636de428586cb5b6f26c42ab618aac2d791",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "experiments/short_seed_autokey.py": "a0c9ea75357849ccf09f74b91a6155f83bea23b51b8d82e41f03216a641eae2a",
+        "experiments/short_seed_plan.json": "1346ba95621e8e34bf836718ee4e96fae23c4e34a0fd4cf9b5c8006a4fc9cb80",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E014-short-autokey-c238b3631ce2.json",
+      "output_sha256": "f1553a2f9e49f5cf26e0ec2c0ce7e32c5ccf843198638c6a946eab1488762e61",
+      "parameters": {
+        "numpy": "2.3.5",
+        "replicates": 39,
+        "seconds": 180,
+        "seed": 3301014
+      },
+      "started_at": "2026-10-19T09:34:20.018691+00:00",
+      "status": "completed",
+      "wall_seconds": 51.50544699997408
+    },
+    {
+      "experiment": "E015-differential-affine",
+      "fingerprint": "d00cd730699c241754b71057f56b77d7833dbc517a6ff5bfe66cfee7e870db10",
+      "finished_at": "2026-10-19T09:37:51.772579+00:00",
+      "input_dependencies": {
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/ciphertext_autokey_scan.py": "c2efa76033dd404ecc556af97c39db482d9be503c1e0e259fab50e7d7eb30e01",
+        "experiments/differential_affine.py": "f737ba23edd2ee9cfa3fb6e052f5d5b240252e09e5ad9e197b3d55f7aca3e7ba",
+        "experiments/differential_plan.json": "6dd4d145e9122d4e9f406174675c6cc864188e657793f69467b7737d805c9377",
+        "experiments/markov_followup.py": "e81b40963939c39ff522eb341db55f4932ea7b1af37cf8c372850f7a81d3e0d3",
+        "experiments/registry.py": "3d1f0305a766f04f333238008ee94650f51e1113319730707b63b79864926c83",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67"
+      },
+      "output": "results/E015-differential-affine-d00cd730699c.json",
+      "output_sha256": "54d478414917ab4cefc22fbb714dbef5d83186042c55f179b034d7225166c099",
+      "parameters": {
+        "numpy": "2.3.5",
+        "replicates": 199,
+        "seconds": 180,
+        "seed": 3301015
+      },
+      "started_at": "2026-10-19T09:37:24.179770+00:00",
+      "status": "completed",
+      "wall_seconds": 27.588999999978114
+    }
+  ],
+  "research_state_sha256": "f529ea63695432fc1ed787f28a0020b6c98e032988ab448350d67b994bae2907",
+  "hypotheses_sha256": "218869458870fee97310a19d68658434e28e1476326d2c69083d32d5d15a254f"
+}

@@ -1,0 +1,2810 @@
+{
+  "experiment": "E076",
+  "mode": "page",
+  "page": "LP2-36",
+  "replicate": 0,
+  "group": {
+    "id": "LP2-36",
+    "page_ids": [
+      "LP2-36"
+    ],
+    "source_refs": [
+      "relikd:pages/p33-39.txt",
+      "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+    ]
+  },
+  "parameters": {
+    "registered_at": "2026-11-01T08:57:47.037856+00:00",
+    "experiment": "E076",
+    "hypothesis": "H023",
+    "groups": [
+      {
+        "id": "LP2-00",
+        "page_ids": [
+          "LP2-00"
+        ],
+        "source_refs": [
+          "relikd:pages/p0-2.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-01",
+        "page_ids": [
+          "LP2-01"
+        ],
+        "source_refs": [
+          "relikd:pages/p0-2.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-02",
+        "page_ids": [
+          "LP2-02"
+        ],
+        "source_refs": [
+          "relikd:pages/p0-2.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-03",
+        "page_ids": [
+          "LP2-03"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-04",
+        "page_ids": [
+          "LP2-04"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-05",
+        "page_ids": [
+          "LP2-05"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-06",
+        "page_ids": [
+          "LP2-06"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-07",
+        "page_ids": [
+          "LP2-07"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-08",
+        "page_ids": [
+          "LP2-08"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-09",
+        "page_ids": [
+          "LP2-09"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-10",
+        "page_ids": [
+          "LP2-10"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-11",
+        "page_ids": [
+          "LP2-11"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-12",
+        "page_ids": [
+          "LP2-12"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-13",
+        "page_ids": [
+          "LP2-13"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-14",
+        "page_ids": [
+          "LP2-14"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-15",
+        "page_ids": [
+          "LP2-15"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-16",
+        "page_ids": [
+          "LP2-16"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-17",
+        "page_ids": [
+          "LP2-17"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-18",
+        "page_ids": [
+          "LP2-18"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-19",
+        "page_ids": [
+          "LP2-19"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-20",
+        "page_ids": [
+          "LP2-20"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-21",
+        "page_ids": [
+          "LP2-21"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-22",
+        "page_ids": [
+          "LP2-22"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-23",
+        "page_ids": [
+          "LP2-23"
+        ],
+        "source_refs": [
+          "relikd:pages/p23-26.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-24",
+        "page_ids": [
+          "LP2-24"
+        ],
+        "source_refs": [
+          "relikd:pages/p23-26.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-25",
+        "page_ids": [
+          "LP2-25"
+        ],
+        "source_refs": [
+          "relikd:pages/p23-26.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-26",
+        "page_ids": [
+          "LP2-26"
+        ],
+        "source_refs": [
+          "relikd:pages/p23-26.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-27",
+        "page_ids": [
+          "LP2-27"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-28",
+        "page_ids": [
+          "LP2-28"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-29",
+        "page_ids": [
+          "LP2-29"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-30",
+        "page_ids": [
+          "LP2-30"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-31",
+        "page_ids": [
+          "LP2-31"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-32",
+        "page_ids": [
+          "LP2-32"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-33",
+        "page_ids": [
+          "LP2-33"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-34",
+        "page_ids": [
+          "LP2-34"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-35",
+        "page_ids": [
+          "LP2-35"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-36",
+        "page_ids": [
+          "LP2-36"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-37",
+        "page_ids": [
+          "LP2-37"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-38",
+        "page_ids": [
+          "LP2-38"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-39",
+        "page_ids": [
+          "LP2-39"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-40",
+        "page_ids": [
+          "LP2-40"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-41",
+        "page_ids": [
+          "LP2-41"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-42",
+        "page_ids": [
+          "LP2-42"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-43",
+        "page_ids": [
+          "LP2-43"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-44",
+        "page_ids": [
+          "LP2-44"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-45",
+        "page_ids": [
+          "LP2-45"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-46",
+        "page_ids": [
+          "LP2-46"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-47",
+        "page_ids": [
+          "LP2-47"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-48",
+        "page_ids": [
+          "LP2-48"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-49",
+        "page_ids": [
+          "LP2-49"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-51",
+        "page_ids": [
+          "LP2-51"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-52",
+        "page_ids": [
+          "LP2-52"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-53",
+        "page_ids": [
+          "LP2-53"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-54",
+        "page_ids": [
+          "LP2-54"
+        ],
+        "source_refs": [
+          "relikd:pages/p54-55.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-55",
+        "page_ids": [
+          "LP2-55"
+        ],
+        "source_refs": [
+          "relikd:pages/p54-55.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      }
+    ],
+    "section_ids": [
+      "LP2-00",
+      "LP2-01",
+      "LP2-02",
+      "LP2-03",
+      "LP2-04",
+      "LP2-05",
+      "LP2-06",
+      "LP2-07",
+      "LP2-08",
+      "LP2-09",
+      "LP2-10",
+      "LP2-11",
+      "LP2-12",
+      "LP2-13",
+      "LP2-14",
+      "LP2-15",
+      "LP2-16",
+      "LP2-17",
+      "LP2-18",
+      "LP2-19",
+      "LP2-20",
+      "LP2-21",
+      "LP2-22",
+      "LP2-23",
+      "LP2-24",
+      "LP2-25",
+      "LP2-26",
+      "LP2-27",
+      "LP2-28",
+      "LP2-29",
+      "LP2-30",
+      "LP2-31",
+      "LP2-32",
+      "LP2-33",
+      "LP2-34",
+      "LP2-35",
+      "LP2-36",
+      "LP2-37",
+      "LP2-38",
+      "LP2-39",
+      "LP2-40",
+      "LP2-41",
+      "LP2-42",
+      "LP2-43",
+      "LP2-44",
+      "LP2-45",
+      "LP2-46",
+      "LP2-47",
+      "LP2-48",
+      "LP2-49",
+      "LP2-51",
+      "LP2-52",
+      "LP2-53",
+      "LP2-54",
+      "LP2-55"
+    ],
+    "preserved_non_rune_pages": [
+      {
+        "id": "LP2-50",
+        "edition": "LP2",
+        "page": 50,
+        "complete_page": 67,
+        "runes": "",
+        "text_with_layout": "2M\t0w\t3L\t3D\t2r\t0S\t1p\t15\n3V\t3e\t3I\t0n\t3u\t1O\t0u\t0Z\n3g\t2U\t1C\t0Y\t1N\t3n\t0W\t3Q\n22\t13\t0V\t3c\t0E\t34\t0W\t1t\n1D\t2N\t3H\t47\t0s\t2p\t0Z\t34\n0g\t3v\t1Q\t0s\t0D\t0K\t2h\t3D\n3L\t2x\t1Q\t20\t2n\t2L\t1C\t2p\n0A\t29\t3r\t0D\t45\t0k\t2e\t2W\n25\t3U\t1W\t2r\t46\t2s\t2X\t39\n3p\t0X\t0E\t1q\t0q\t4B\t49\t48\n3r\t3b\t3C\t1M\t1j\t0l\t4A\t48\n40\t3m\t4E\t0s\t2s\t1v\t3T\t0I\n3t\t2B\t2k\t2t\t2O\t0e\t2l\t1L",
+        "layout_scheme": "relikd_literal",
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ],
+        "status": "non_rune",
+        "image_ref": "https://raw.githubusercontent.com/scream314/cicada3301/10733feb487bb8beb9966d534727ee5897aa54fc/assets/2014/liber-primus-complete/67.jpg",
+        "transcription_agreement": true,
+        "rune_count": 0,
+        "runes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "solver": "Frozen E074/E075:delay3,a,b1..28,c0..28,top16 unigram families, all24389 prefixes exact per retained family. No omissions or hidden resets.",
+    "control_validation": "results/phase27_controls_validation.json",
+    "control_validation_sha256": "3df2aac64068ad374e41f2d17f06f22bdc8c117cb4b688f51d6f92d70eeefc0e",
+    "selection": "Highest mean fourgram score among55 inputs; stable page order for ties. Freeze all55 output hashes and winner before nulls.",
+    "null_seed": 3302076,
+    "replicates": 19,
+    "null": "19 independent selected-page interior shuffles preserving endpoints,counts,doublets; cap100000 proposals. Entire screen and exhaustive retained-family prefix search repeated.",
+    "inference": "Plus-one p=(1+exceedances)/20, Bonferroni55. Minimum corrected p is1; coarse screening, no significance claim. Zero exceedances triggers separately preregistered larger calibration.",
+    "bounds": {
+      "process_seconds": 180,
+      "watchdog_seconds": 185,
+      "memory_ceiling_mib": 768,
+      "workers": 1,
+      "phase_seconds": 1800
+    },
+    "limits": "Only16 of22736 coefficient/constant families retained. Exactness applies only to their prefix space. English-prose model, no interrupted updates. No community solution claims."
+  },
+  "ciphertext_indices": [
+    26,
+    9,
+    1,
+    7,
+    21,
+    8,
+    6,
+    26,
+    4,
+    3,
+    10,
+    20,
+    9,
+    14,
+    9,
+    3,
+    13,
+    0,
+    28,
+    25,
+    25,
+    3,
+    14,
+    9,
+    15,
+    22,
+    25,
+    20,
+    9,
+    25,
+    2,
+    1,
+    28,
+    26,
+    25,
+    13,
+    10,
+    12,
+    1,
+    4,
+    11,
+    13,
+    22,
+    11,
+    24,
+    21,
+    13,
+    2,
+    13,
+    24,
+    21,
+    26,
+    19,
+    22,
+    14,
+    17,
+    1,
+    16,
+    12,
+    19,
+    13,
+    25,
+    26,
+    14,
+    25,
+    26,
+    4,
+    25,
+    26,
+    0,
+    0,
+    19,
+    27,
+    14,
+    18,
+    4,
+    1,
+    16,
+    6,
+    1,
+    26,
+    4,
+    27,
+    1,
+    3,
+    12,
+    10,
+    11,
+    0,
+    13,
+    11,
+    23,
+    10,
+    2,
+    3,
+    8,
+    27,
+    6,
+    8,
+    20,
+    2,
+    12,
+    22,
+    24,
+    25,
+    28,
+    19,
+    14,
+    8,
+    5,
+    14,
+    24,
+    16,
+    2,
+    25,
+    14,
+    3,
+    15,
+    5,
+    23,
+    16,
+    26,
+    7,
+    9,
+    22,
+    16,
+    14,
+    7,
+    10,
+    22,
+    11,
+    0,
+    10,
+    3,
+    10,
+    4,
+    15,
+    14,
+    9,
+    19,
+    24,
+    27,
+    4,
+    13,
+    15,
+    23,
+    10,
+    22,
+    8,
+    18,
+    16,
+    1,
+    7,
+    28,
+    22,
+    23,
+    22,
+    11,
+    10,
+    21,
+    27,
+    11,
+    4,
+    23,
+    19,
+    17,
+    3,
+    5,
+    3,
+    2,
+    22,
+    4,
+    1,
+    20,
+    1,
+    2,
+    15,
+    1,
+    23,
+    20,
+    6,
+    10,
+    26,
+    21,
+    3,
+    22,
+    10,
+    18,
+    26,
+    18,
+    0,
+    12,
+    21,
+    17,
+    20,
+    10,
+    1,
+    26,
+    0,
+    22,
+    9,
+    22,
+    17,
+    22,
+    6,
+    11,
+    24,
+    9,
+    19,
+    25,
+    26,
+    2,
+    0,
+    10,
+    17,
+    21,
+    13,
+    9,
+    10,
+    4,
+    6,
+    11,
+    12,
+    25,
+    8,
+    24,
+    4,
+    14,
+    14,
+    3,
+    20,
+    9,
+    25,
+    23,
+    26,
+    17,
+    9,
+    24
+  ],
+  "page_spans": [
+    {
+      "page_id": "LP2-36",
+      "start": 0,
+      "end": 238,
+      "runes": 238,
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "zero_rune_page": false
+    }
+  ],
+  "page_proposals": null,
+  "training": {
+    "training_chapters": [
+      "I",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "VIII",
+      "IX"
+    ],
+    "training_source_ranges": [
+      [
+        1209,
+        1339
+      ],
+      [
+        1339,
+        1501
+      ],
+      [
+        1501,
+        1514
+      ],
+      [
+        1514,
+        1971
+      ],
+      [
+        1971,
+        2852
+      ],
+      [
+        2852,
+        4855
+      ],
+      [
+        4855,
+        6409
+      ],
+      [
+        6409,
+        7483
+      ],
+      [
+        7483,
+        7992
+      ],
+      [
+        7992,
+        9925
+      ],
+      [
+        9925,
+        10647
+      ],
+      [
+        10647,
+        11418
+      ],
+      [
+        11418,
+        12213
+      ],
+      [
+        12213,
+        13005
+      ],
+      [
+        13005,
+        13659
+      ],
+      [
+        13659,
+        15448
+      ],
+      [
+        15448,
+        16854
+      ],
+      [
+        16854,
+        17389
+      ],
+      [
+        17389,
+        18283
+      ],
+      [
+        18283,
+        19081
+      ],
+      [
+        19081,
+        19372
+      ],
+      [
+        19372,
+        20259
+      ],
+      [
+        20259,
+        21696
+      ],
+      [
+        21696,
+        22784
+      ],
+      [
+        22784,
+        23757
+      ],
+      [
+        23757,
+        24026
+      ],
+      [
+        24026,
+        24538
+      ],
+      [
+        24538,
+        26844
+      ],
+      [
+        26844,
+        27062
+      ],
+      [
+        27062,
+        27277
+      ],
+      [
+        27277,
+        29388
+      ],
+      [
+        29388,
+        31420
+      ],
+      [
+        31420,
+        31898
+      ],
+      [
+        31898,
+        32223
+      ],
+      [
+        32223,
+        32461
+      ],
+      [
+        32461,
+        32648
+      ],
+      [
+        32648,
+        32996
+      ],
+      [
+        32996,
+        33887
+      ],
+      [
+        33887,
+        34582
+      ],
+      [
+        34582,
+        35168
+      ],
+      [
+        35168,
+        39084
+      ],
+      [
+        39084,
+        39877
+      ],
+      [
+        39877,
+        40852
+      ],
+      [
+        40852,
+        41419
+      ],
+      [
+        41419,
+        41902
+      ],
+      [
+        41902,
+        43372
+      ],
+      [
+        43372,
+        43612
+      ],
+      [
+        43612,
+        44965
+      ],
+      [
+        44965,
+        45218
+      ],
+      [
+        45218,
+        46392
+      ],
+      [
+        46392,
+        47858
+      ],
+      [
+        47858,
+        48452
+      ],
+      [
+        105043,
+        105508
+      ],
+      [
+        105508,
+        106025
+      ],
+      [
+        106025,
+        106043
+      ],
+      [
+        106043,
+        107251
+      ],
+      [
+        107251,
+        107838
+      ],
+      [
+        107838,
+        108720
+      ],
+      [
+        108720,
+        109161
+      ],
+      [
+        109161,
+        110089
+      ],
+      [
+        110089,
+        110299
+      ],
+      [
+        110299,
+        111190
+      ],
+      [
+        111190,
+        111935
+      ],
+      [
+        111935,
+        112297
+      ],
+      [
+        112297,
+        113762
+      ],
+      [
+        113762,
+        114785
+      ],
+      [
+        114785,
+        115854
+      ],
+      [
+        115854,
+        116715
+      ],
+      [
+        116715,
+        117324
+      ],
+      [
+        117324,
+        118296
+      ],
+      [
+        118296,
+        119202
+      ],
+      [
+        119202,
+        120071
+      ],
+      [
+        120071,
+        120664
+      ],
+      [
+        120664,
+        121205
+      ],
+      [
+        121205,
+        122446
+      ],
+      [
+        122446,
+        122492
+      ],
+      [
+        122492,
+        123028
+      ],
+      [
+        123028,
+        123153
+      ],
+      [
+        123153,
+        124145
+      ],
+      [
+        124145,
+        124972
+      ],
+      [
+        124972,
+        125843
+      ],
+      [
+        125843,
+        126513
+      ],
+      [
+        126513,
+        127173
+      ],
+      [
+        127173,
+        127459
+      ],
+      [
+        127459,
+        127958
+      ],
+      [
+        127958,
+        128637
+      ],
+      [
+        128637,
+        129259
+      ],
+      [
+        129259,
+        129891
+      ],
+      [
+        129891,
+        130289
+      ],
+      [
+        130289,
+        131156
+      ],
+      [
+        131156,
+        132185
+      ],
+      [
+        132185,
+        133528
+      ],
+      [
+        133528,
+        134500
+      ],
+      [
+        134500,
+        135281
+      ],
+      [
+        135281,
+        135800
+      ],
+      [
+        135800,
+        135924
+      ],
+      [
+        135924,
+        136815
+      ],
+      [
+        136815,
+        138080
+      ],
+      [
+        138080,
+        138965
+      ],
+      [
+        138965,
+        140166
+      ],
+      [
+        140166,
+        140644
+      ],
+      [
+        140644,
+        141517
+      ],
+      [
+        141517,
+        142073
+      ],
+      [
+        142073,
+        142662
+      ],
+      [
+        142662,
+        144047
+      ],
+      [
+        144047,
+        145336
+      ],
+      [
+        145336,
+        146554
+      ],
+      [
+        146554,
+        147351
+      ],
+      [
+        147351,
+        148548
+      ],
+      [
+        148573,
+        148972
+      ],
+      [
+        148972,
+        148992
+      ],
+      [
+        148992,
+        150231
+      ],
+      [
+        150231,
+        151384
+      ],
+      [
+        151384,
+        151924
+      ],
+      [
+        151924,
+        152815
+      ],
+      [
+        152815,
+        154078
+      ],
+      [
+        154078,
+        154620
+      ],
+      [
+        154620,
+        155014
+      ],
+      [
+        155014,
+        156145
+      ],
+      [
+        156145,
+        156728
+      ],
+      [
+        156728,
+        157190
+      ],
+      [
+        157190,
+        158481
+      ],
+      [
+        158481,
+        160302
+      ],
+      [
+        160302,
+        161085
+      ],
+      [
+        161085,
+        162346
+      ],
+      [
+        162346,
+        163592
+      ],
+      [
+        163592,
+        164571
+      ],
+      [
+        164571,
+        164935
+      ],
+      [
+        164935,
+        166543
+      ],
+      [
+        166543,
+        167624
+      ],
+      [
+        167624,
+        167875
+      ],
+      [
+        167875,
+        168788
+      ],
+      [
+        168788,
+        169289
+      ],
+      [
+        169289,
+        169649
+      ],
+      [
+        169649,
+        170058
+      ],
+      [
+        170058,
+        171390
+      ],
+      [
+        171390,
+        172108
+      ],
+      [
+        172108,
+        172744
+      ],
+      [
+        172744,
+        174482
+      ],
+      [
+        174482,
+        175043
+      ],
+      [
+        175043,
+        176107
+      ],
+      [
+        176107,
+        176389
+      ],
+      [
+        176389,
+        178958
+      ],
+      [
+        178958,
+        179440
+      ],
+      [
+        179440,
+        179993
+      ],
+      [
+        179993,
+        180736
+      ],
+      [
+        180736,
+        181132
+      ],
+      [
+        181132,
+        181950
+      ],
+      [
+        181950,
+        183348
+      ],
+      [
+        183348,
+        184318
+      ],
+      [
+        184318,
+        184784
+      ],
+      [
+        184784,
+        185331
+      ],
+      [
+        185331,
+        185620
+      ],
+      [
+        185620,
+        186257
+      ],
+      [
+        186257,
+        187636
+      ],
+      [
+        187636,
+        188535
+      ],
+      [
+        188535,
+        189191
+      ],
+      [
+        189191,
+        189717
+      ],
+      [
+        189717,
+        190386
+      ],
+      [
+        190386,
+        190438
+      ],
+      [
+        190438,
+        190979
+      ],
+      [
+        190979,
+        192662
+      ],
+      [
+        192662,
+        192880
+      ],
+      [
+        192894,
+        192990
+      ],
+      [
+        192990,
+        193000
+      ],
+      [
+        193000,
+        193820
+      ],
+      [
+        193820,
+        195530
+      ],
+      [
+        195530,
+        196677
+      ],
+      [
+        196677,
+        199113
+      ],
+      [
+        199113,
+        201473
+      ],
+      [
+        201473,
+        201602
+      ],
+      [
+        201602,
+        201839
+      ],
+      [
+        201839,
+        201894
+      ],
+      [
+        201894,
+        202326
+      ],
+      [
+        202326,
+        202859
+      ],
+      [
+        202859,
+        203113
+      ],
+      [
+        203113,
+        203436
+      ],
+      [
+        203436,
+        203689
+      ],
+      [
+        203689,
+        204255
+      ],
+      [
+        204255,
+        205424
+      ],
+      [
+        205424,
+        207270
+      ],
+      [
+        207270,
+        207683
+      ],
+      [
+        207683,
+        207926
+      ],
+      [
+        207926,
+        208787
+      ],
+      [
+        208787,
+        210482
+      ],
+      [
+        210482,
+        211184
+      ],
+      [
+        211184,
+        212721
+      ],
+      [
+        212721,
+        212863
+      ],
+      [
+        212863,
+        215319
+      ],
+      [
+        215319,
+        215407
+      ],
+      [
+        215407,
+        216984
+      ],
+      [
+        216984,
+        218073
+      ],
+      [
+        218094,
+        218714
+      ],
+      [
+        218714,
+        218730
+      ],
+      [
+        218730,
+        219211
+      ],
+      [
+        219211,
+        219664
+      ],
+      [
+        219664,
+        221618
+      ],
+      [
+        221618,
+        222286
+      ],
+      [
+        222286,
+        223980
+      ],
+      [
+        223980,
+        224881
+      ],
+      [
+        224881,
+        227926
+      ],
+      [
+        227926,
+        227942
+      ],
+      [
+        227942,
+        228340
+      ],
+      [
+        228340,
+        229787
+      ],
+      [
+        229787,
+        230140
+      ],
+      [
+        230140,
+        230332
+      ],
+      [
+        230332,
+        231128
+      ],
+      [
+        231128,
+        231454
+      ],
+      [
+        231454,
+        235389
+      ],
+      [
+        235389,
+        237871
+      ],
+      [
+        237871,
+        239691
+      ],
+      [
+        239691,
+        240409
+      ],
+      [
+        240409,
+        241397
+      ],
+      [
+        241397,
+        242379
+      ],
+      [
+        242379,
+        244142
+      ],
+      [
+        244142,
+        244751
+      ],
+      [
+        244751,
+        246246
+      ],
+      [
+        246246,
+        247395
+      ],
+      [
+        247395,
+        248543
+      ],
+      [
+        248543,
+        250238
+      ],
+      [
+        250238,
+        251419
+      ],
+      [
+        251439,
+        251632
+      ],
+      [
+        251632,
+        251646
+      ],
+      [
+        251646,
+        252723
+      ],
+      [
+        252723,
+        253049
+      ],
+      [
+        253049,
+        253518
+      ],
+      [
+        253518,
+        254423
+      ],
+      [
+        254423,
+        255580
+      ],
+      [
+        255580,
+        256361
+      ],
+      [
+        256361,
+        257039
+      ],
+      [
+        257039,
+        257920
+      ],
+      [
+        257920,
+        260406
+      ],
+      [
+        260406,
+        263351
+      ],
+      [
+        263351,
+        265198
+      ],
+      [
+        265198,
+        266598
+      ],
+      [
+        266598,
+        267530
+      ],
+      [
+        267530,
+        269658
+      ],
+      [
+        269658,
+        270747
+      ],
+      [
+        270747,
+        271947
+      ],
+      [
+        271947,
+        272846
+      ],
+      [
+        272846,
+        273581
+      ],
+      [
+        273581,
+        275386
+      ],
+      [
+        275386,
+        276440
+      ],
+      [
+        276440,
+        276868
+      ],
+      [
+        276888,
+        276965
+      ],
+      [
+        276965,
+        277311
+      ],
+      [
+        277311,
+        277324
+      ],
+      [
+        277324,
+        278512
+      ],
+      [
+        278512,
+        278550
+      ],
+      [
+        278550,
+        278692
+      ],
+      [
+        278692,
+        278991
+      ],
+      [
+        278991,
+        279034
+      ],
+      [
+        279034,
+        279417
+      ],
+      [
+        279417,
+        279486
+      ],
+      [
+        279486,
+        279667
+      ],
+      [
+        279667,
+        280013
+      ],
+      [
+        280013,
+        280050
+      ],
+      [
+        280050,
+        280128
+      ],
+      [
+        280128,
+        280225
+      ],
+      [
+        280225,
+        280607
+      ],
+      [
+        280607,
+        282169
+      ],
+      [
+        282169,
+        283139
+      ],
+      [
+        283139,
+        283629
+      ],
+      [
+        283629,
+        285242
+      ],
+      [
+        285242,
+        285979
+      ],
+      [
+        285979,
+        287643
+      ],
+      [
+        287643,
+        289373
+      ],
+      [
+        289373,
+        290190
+      ],
+      [
+        290190,
+        290709
+      ],
+      [
+        290709,
+        291578
+      ],
+      [
+        291578,
+        291729
+      ],
+      [
+        291729,
+        292444
+      ],
+      [
+        292444,
+        294382
+      ],
+      [
+        294382,
+        296346
+      ],
+      [
+        296346,
+        297427
+      ],
+      [
+        297427,
+        298047
+      ],
+      [
+        298047,
+        298719
+      ],
+      [
+        298719,
+        299415
+      ],
+      [
+        299415,
+        300307
+      ],
+      [
+        300307,
+        300523
+      ],
+      [
+        300523,
+        300583
+      ],
+      [
+        300583,
+        301411
+      ],
+      [
+        301435,
+        301700
+      ],
+      [
+        301700,
+        302058
+      ],
+      [
+        302058,
+        302077
+      ],
+      [
+        302077,
+        303586
+      ],
+      [
+        303586,
+        303948
+      ],
+      [
+        303948,
+        306047
+      ],
+      [
+        306047,
+        307786
+      ],
+      [
+        307786,
+        308569
+      ],
+      [
+        308569,
+        309183
+      ],
+      [
+        309183,
+        309264
+      ],
+      [
+        309264,
+        311427
+      ],
+      [
+        311427,
+        312392
+      ],
+      [
+        312392,
+        313012
+      ],
+      [
+        313012,
+        313963
+      ],
+      [
+        313963,
+        316743
+      ],
+      [
+        316743,
+        317080
+      ],
+      [
+        317080,
+        317643
+      ],
+      [
+        317643,
+        318871
+      ],
+      [
+        318871,
+        319394
+      ],
+      [
+        319394,
+        321608
+      ],
+      [
+        321608,
+        321893
+      ],
+      [
+        321893,
+        323794
+      ],
+      [
+        323794,
+        324592
+      ],
+      [
+        324592,
+        325355
+      ],
+      [
+        325355,
+        326046
+      ],
+      [
+        326046,
+        327156
+      ],
+      [
+        327156,
+        328214
+      ],
+      [
+        328214,
+        330527
+      ],
+      [
+        330527,
+        332009
+      ],
+      [
+        332009,
+        332567
+      ],
+      [
+        332567,
+        333904
+      ],
+      [
+        333904,
+        336463
+      ],
+      [
+        336463,
+        337425
+      ],
+      [
+        337425,
+        340292
+      ]
+    ],
+    "training_runes": 207030,
+    "source_sha256": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278"
+  },
+  "result": {
+    "screen_audit": {
+      "families": 22736,
+      "retained": 16,
+      "score_sha256": "01309e773e5fe066fa69282ddcc64ec0fec735cbf69409034fa84745df978424"
+    },
+    "families": [
+      {
+        "a": 10,
+        "b": 23,
+        "c": 20,
+        "rank": 1,
+        "unigram_max_total": -851.4110117046893,
+        "prefix_scores_sha256": "0799c10035f647177e703367a06f388089e4b570badd607aa59b018cd4ff445d",
+        "top_prefixes": [
+          {
+            "prefix": [
+              12,
+              26,
+              13
+            ],
+            "score": -6.024169082752907
+          },
+          {
+            "prefix": [
+              16,
+              26,
+              8
+            ],
+            "score": -6.061647427156321
+          },
+          {
+            "prefix": [
+              16,
+              25,
+              13
+            ],
+            "score": -6.0797644698535125
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 19,
+        "c": 2,
+        "rank": 2,
+        "unigram_max_total": -852.010929960254,
+        "prefix_scores_sha256": "ca0ec610518a2c3232ac4d05c1a4335b300b8b4871a8448b80a1d37febd9f180",
+        "top_prefixes": [
+          {
+            "prefix": [
+              20,
+              28,
+              15
+            ],
+            "score": -5.942664152684329
+          },
+          {
+            "prefix": [
+              20,
+              16,
+              15
+            ],
+            "score": -5.985480803640848
+          },
+          {
+            "prefix": [
+              20,
+              18,
+              17
+            ],
+            "score": -6.009393860539533
+          }
+        ]
+      },
+      {
+        "a": 28,
+        "b": 3,
+        "c": 17,
+        "rank": 3,
+        "unigram_max_total": -852.805382582444,
+        "prefix_scores_sha256": "bf74fbb4ec9bfd47c60d44a501658e08322ab41c76787ff8a3cc2c3d568b6be7",
+        "top_prefixes": [
+          {
+            "prefix": [
+              17,
+              3,
+              23
+            ],
+            "score": -6.012920333023029
+          },
+          {
+            "prefix": [
+              17,
+              3,
+              13
+            ],
+            "score": -6.089328430934466
+          },
+          {
+            "prefix": [
+              17,
+              13,
+              23
+            ],
+            "score": -6.109740302821174
+          }
+        ]
+      },
+      {
+        "a": 16,
+        "b": 6,
+        "c": 13,
+        "rank": 4,
+        "unigram_max_total": -853.3580401094309,
+        "prefix_scores_sha256": "fae5b5c175b3eb6517b6ab29b72202efeacbe8a75583ca0b37499ef65a56e787",
+        "top_prefixes": [
+          {
+            "prefix": [
+              26,
+              20,
+              2
+            ],
+            "score": -6.02841454283825
+          },
+          {
+            "prefix": [
+              9,
+              21,
+              16
+            ],
+            "score": -6.033723719241492
+          },
+          {
+            "prefix": [
+              9,
+              21,
+              2
+            ],
+            "score": -6.052339803482065
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 15,
+        "c": 24,
+        "rank": 5,
+        "unigram_max_total": -853.5129556669185,
+        "prefix_scores_sha256": "b3daf6c230b25e0cc558d14d053216380929ff26ac313cdce70f76d0f72e2d5d",
+        "top_prefixes": [
+          {
+            "prefix": [
+              5,
+              26,
+              15
+            ],
+            "score": -6.093192544544666
+          },
+          {
+            "prefix": [
+              16,
+              26,
+              21
+            ],
+            "score": -6.1287532974370835
+          },
+          {
+            "prefix": [
+              16,
+              21,
+              21
+            ],
+            "score": -6.140619341187022
+          }
+        ]
+      },
+      {
+        "a": 8,
+        "b": 8,
+        "c": 22,
+        "rank": 6,
+        "unigram_max_total": -854.5293011455813,
+        "prefix_scores_sha256": "51884aba819adb5159c271ba4f97fe50e70378fa4ef8dd7c9c9082c9dafc894a",
+        "top_prefixes": [
+          {
+            "prefix": [
+              20,
+              18,
+              24
+            ],
+            "score": -6.0911678407056025
+          },
+          {
+            "prefix": [
+              18,
+              24,
+              6
+            ],
+            "score": -6.141606724797197
+          },
+          {
+            "prefix": [
+              18,
+              24,
+              21
+            ],
+            "score": -6.171667944705911
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "c": 18,
+        "rank": 7,
+        "unigram_max_total": -855.5258799566153,
+        "prefix_scores_sha256": "609df190f5c223414a5e2cbc75fac5079ab313bdfd2b633809eb23cbb7e182c5",
+        "top_prefixes": [
+          {
+            "prefix": [
+              13,
+              8,
+              28
+            ],
+            "score": -6.055083995545981
+          },
+          {
+            "prefix": [
+              13,
+              8,
+              16
+            ],
+            "score": -6.063504185654057
+          },
+          {
+            "prefix": [
+              18,
+              8,
+              22
+            ],
+            "score": -6.066794222954279
+          }
+        ]
+      },
+      {
+        "a": 22,
+        "b": 24,
+        "c": 28,
+        "rank": 8,
+        "unigram_max_total": -856.1127418863266,
+        "prefix_scores_sha256": "1d612aafc9c1b2a9dcfd531dbc7e9f8c6b2175924dc7a6f99add7a45f9a83d15",
+        "top_prefixes": [
+          {
+            "prefix": [
+              15,
+              18,
+              0
+            ],
+            "score": -6.078166384204668
+          },
+          {
+            "prefix": [
+              4,
+              0,
+              20
+            ],
+            "score": -6.082540530722828
+          },
+          {
+            "prefix": [
+              1,
+              21,
+              0
+            ],
+            "score": -6.092348822862923
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "b": 4,
+        "c": 14,
+        "rank": 9,
+        "unigram_max_total": -856.2718074283544,
+        "prefix_scores_sha256": "077c3c7018c875265a00fe7dd7403eb2c6f070687c6ab2280e3c43e88930df85",
+        "top_prefixes": [
+          {
+            "prefix": [
+              20,
+              3,
+              1
+            ],
+            "score": -6.073891542960192
+          },
+          {
+            "prefix": [
+              20,
+              24,
+              16
+            ],
+            "score": -6.084067829094284
+          },
+          {
+            "prefix": [
+              20,
+              24,
+              1
+            ],
+            "score": -6.11645271109867
+          }
+        ]
+      },
+      {
+        "a": 17,
+        "b": 14,
+        "c": 12,
+        "rank": 10,
+        "unigram_max_total": -856.3554057346524,
+        "prefix_scores_sha256": "0150164414cf4cb730a7f87b671682329b0cca546cedfdb9cb95141cbfe361ec",
+        "top_prefixes": [
+          {
+            "prefix": [
+              26,
+              28,
+              4
+            ],
+            "score": -6.1701044070623166
+          },
+          {
+            "prefix": [
+              5,
+              2,
+              27
+            ],
+            "score": -6.175125259541106
+          },
+          {
+            "prefix": [
+              25,
+              23,
+              25
+            ],
+            "score": -6.182596848716394
+          }
+        ]
+      },
+      {
+        "a": 19,
+        "b": 6,
+        "c": 8,
+        "rank": 11,
+        "unigram_max_total": -857.626351274863,
+        "prefix_scores_sha256": "02ec864ab47e45af34c1e845d5eafbaf4b9034087f291f369676655d84d2c86a",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              11,
+              24
+            ],
+            "score": -5.869426856962329
+          },
+          {
+            "prefix": [
+              18,
+              25,
+              24
+            ],
+            "score": -5.986413347602358
+          },
+          {
+            "prefix": [
+              18,
+              6,
+              24
+            ],
+            "score": -6.038258582795521
+          }
+        ]
+      },
+      {
+        "a": 26,
+        "b": 21,
+        "c": 2,
+        "rank": 12,
+        "unigram_max_total": -858.1511489285998,
+        "prefix_scores_sha256": "4920ed2dd251ccba8252a1b2c691e05b91e1161388ebf09e344d4516b388cf80",
+        "top_prefixes": [
+          {
+            "prefix": [
+              6,
+              5,
+              27
+            ],
+            "score": -5.976826137020691
+          },
+          {
+            "prefix": [
+              6,
+              2,
+              27
+            ],
+            "score": -6.0771562682620734
+          },
+          {
+            "prefix": [
+              6,
+              2,
+              11
+            ],
+            "score": -6.127005435101502
+          }
+        ]
+      },
+      {
+        "a": 17,
+        "b": 23,
+        "c": 23,
+        "rank": 13,
+        "unigram_max_total": -858.3766047927348,
+        "prefix_scores_sha256": "bf1551b004fe536ac0a616d70e9d202800765d397bfb34833af4fcdf3e91c701",
+        "top_prefixes": [
+          {
+            "prefix": [
+              4,
+              7,
+              1
+            ],
+            "score": -6.042087528755766
+          },
+          {
+            "prefix": [
+              16,
+              7,
+              28
+            ],
+            "score": -6.060472856085852
+          },
+          {
+            "prefix": [
+              24,
+              7,
+              11
+            ],
+            "score": -6.101949992319871
+          }
+        ]
+      },
+      {
+        "a": 25,
+        "b": 6,
+        "c": 0,
+        "rank": 14,
+        "unigram_max_total": -858.3859483448265,
+        "prefix_scores_sha256": "966038f49799c5efdae287ca7ebe676951097edc55b97f2f284f5442527bec7e",
+        "top_prefixes": [
+          {
+            "prefix": [
+              15,
+              19,
+              9
+            ],
+            "score": -5.830767339303584
+          },
+          {
+            "prefix": [
+              15,
+              10,
+              18
+            ],
+            "score": -5.938910257728611
+          },
+          {
+            "prefix": [
+              15,
+              28,
+              22
+            ],
+            "score": -6.0543069674852195
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "b": 8,
+        "c": 17,
+        "rank": 15,
+        "unigram_max_total": -859.2913282520533,
+        "prefix_scores_sha256": "48da3c16341be3a6087fd2694865a7fbf4ba63eb08c81426426ed89098a0d549",
+        "top_prefixes": [
+          {
+            "prefix": [
+              16,
+              17,
+              8
+            ],
+            "score": -6.027049498329017
+          },
+          {
+            "prefix": [
+              16,
+              17,
+              12
+            ],
+            "score": -6.113328531970553
+          },
+          {
+            "prefix": [
+              16,
+              5,
+              20
+            ],
+            "score": -6.165994541416055
+          }
+        ]
+      },
+      {
+        "a": 19,
+        "b": 22,
+        "c": 11,
+        "rank": 16,
+        "unigram_max_total": -859.3602846829106,
+        "prefix_scores_sha256": "2b093e5279908ab078d290297bce72af266e7b94fe0317ef4ebf5fcb93014d1b",
+        "top_prefixes": [
+          {
+            "prefix": [
+              11,
+              25,
+              22
+            ],
+            "score": -5.8866464417387325
+          },
+          {
+            "prefix": [
+              12,
+              25,
+              22
+            ],
+            "score": -5.9154124165266335
+          },
+          {
+            "prefix": [
+              0,
+              25,
+              11
+            ],
+            "score": -5.99713166623588
+          }
+        ]
+      }
+    ],
+    "top": [
+      {
+        "score": -5.830767339303584,
+        "plaintext_runes": "ᛋᛗᚾᚱᚢᛟᚠᛖᚠᛒᛁᚹᚻᚱᚷᚹᚢᚹᛒᛟᚠᚩᛖᛟᛏᛚᚩᛏᚣᚳᚢᚹᚳᛖᚠᚹᛁᛁᚾᛋᛏᚦᚦᛞᚩᛋᛠᛁᚾᛉᚳᚻᚻᚠᛝᚾᚫᚱᚷᛏᚢᛞᛝᚻᚾᛟᚩᛇᛠᛖᛉᚳᚠᛠᛏᛈᛗᚩᚫᛞᚢᛖᚢᚦᚾᛏᚢᛁᚾᛇᛏᛚᚩᚢᛝᛋᛉᛋᚠᚱᚪᛁᛞᛗᛖᚣᚾᛞᚻᚳᚪᛁᚪᛚᛖᚢᛝᛗᛋᚳᛝᛋᚦᚩᚦᚷᛚᛈᚫᚩᚳᚳᚹᛖᛗᚣᛗᚠᚱᚾᛚᚩᚾᛁᛏᛚᛚᚻᚢᛗᛈᚦᛠᚪᛄᛖᛡᛟᛁᛚᚪᛏᛒᛞᛚᚳᛁᛈᛖᛞᛗᚳᛖᚳᚣᛈᛠᚹᛋᚢᛖᛝᛖᚪᛡᛚᛒᚩᛏᚢᛖᛗᚾᛄᚳᛉᚱᛈᚣᛞᛈᛁᛇᛗᚹᛠᛖᚷᚳᚻᛗᛟᛗᛏᚷᚢᛋᚠᚪᛏᚳᛈᛗᛒᛒᛖᛠᛒᛞᛄᛟᛋᚪᛄᛋᛖᚢᛞ",
+        "transliteration": "SMNRUOEFEFBIWHRGWUWBOEFOEOETLOTYCUWCEFWIINSTTHTHDOSEAINXCHHFNGNAERGTUDNGHNOEOEOEAEXCFEATPMOAEDUEUTHNTUINEOTLOUNGSXSFRAIDMEYNDHCAIALEUNGMSCNGSTHOTHGLPAEOCCWEMYMFRNLONITLLHUMPTHEAAJEIAOEILATBDLCIPEDMCECYPEAWSUENGEAIALBOTUEMNJCXRPYDPIEOMWEAEGCHMOEMTGUSFATCPMBBEEABDJOESAJSEUD",
+        "recipe": {
+          "key_indices": [
+            15,
+            14,
+            7
+          ],
+          "cipher_sign": 25,
+          "feedback_sign": 6,
+          "constant": 0,
+          "skip_positions": [],
+          "skip_policy": "none"
+        }
+      },
+      {
+        "score": -5.869426856962329,
+        "plaintext_runes": "ᛖᛄᚪᛒᚾᛉᛝᚳᛞᛒᚫᚱᛚᛖᚠᛄᛋᚻᚣᛟᚾᛖᚠᚢᚪᛚᚫᛁᚾᚪᛗᛞᛒᚹᛇᚾᚻᛖᛞᛏᚷᛏᚠᛝᚾᚢᚱᛈᚠᚪᛝᚾᛚᚢᚾᛏᚱᛖᛈᛏᛋᛁᛖᛏᛝᚢᚷᚠᛋᛋᚻᚪᚦᚩᚢᚾᛏᛠᚦᚹᚩᚾᛇᛏᚩᛖᚱᚩᚠᛖᚩᛁᛏᚷᚾᚪᚷᚦᛉᛖᚠᚢᛇᚠᚫᚩᛝᛖᚱᚣᚳᚪᚱᛖᛖᚻᛠᚪᚷᚱᛝᛏᛚᛋᚠᚣᛏᚫᚷᚠᛗᛋᚪᚳᛡᚫᚱᚢᛁᛏᚷᚢᚷᚢᚾᛒᚢᛏᚢᚻᚦᚱᛋᚢᛋᛈᚣᛒᛋᛇᛉᛒᛄᚹᚹᛚᛚᚠᛄᛝᛚᚳᚻᛋᛠᚹᚷᛝᛞᛖᛏᛒᚢᛁᛟᚣᚣᛖᛚᛈᚠᚻᛝᛇᚢᚳᛇᛋᚾᚳᚻᛏᛈᛁᛋᚳᚦᚻᛟᚦᛠᚱᛚᛖᚹᚳᛋᛖᚫᚠᛡᛗᚱᚹᛈᚪᛁᚱᛇᚾᚷᛗᛋᛒᚹᛋᛚᛈ",
+        "transliteration": "EJABNXNGCDBAERLEFJSHYOENEFUALAEINAMDBWEONHEDTGTFNGNURPFANGNLUNTREPTSIETNGUGFSSHATHOUNTEATHWONEOTOEROFEOITGNAGTHXEFUEOFAEONGERYCAREEHEAAGRNGTLSFYTAEGFMSACIAAERUITGUGUNBUTUHTHRSUSPYBSEOXBJWWLLFJNGLCHSEAWGNGDETBUIOEYYELPFHNGEOUCEOSNCHTPISCTHHOETHEARLEWCSEAEFIAMRWPAIREONGMSBWSLP",
+        "recipe": {
+          "key_indices": [
+            16,
+            1,
+            14
+          ],
+          "cipher_sign": 19,
+          "feedback_sign": 6,
+          "constant": 8,
+          "skip_positions": [],
+          "skip_policy": "none"
+        }
+      },
+      {
+        "score": -5.8866464417387325,
+        "plaintext_runes": "ᛄᚫᛟᚾᚩᚾᚱᛚᚪᛄᚩᛚᛖᚪᛈᚠᚩᚹᛝᚢᚦᚻᚾᛞᚻᛖᚷᛏᛡᚾᚪᛋᛏᛖᚱᚢᛒᚻᛞᚣᛗᛁᛋᚠᛚᛋᚣᚫᚻᚪᚩᛉᚢᚦᚳᚻᛏᛗᚾᛠᚾᛒᛗᛄᛗᚪᛁᚳᛖᛠᚳᛉᚾᛁᛞᚪᛖᚾᛋᛚᚹᛄᚹᛁᛚᛏᛋᛟᛋᚻᚻᚪᚠᛟᛏᛖᛟᛈᚻᚳᛏᚾᛒᚹᛒᛖᚱᛈᚻᛚᛇᚳᚢᛞᛏᚾᛞᛁᛉᚣᛈᚢᛚᚱᛏᚢᛒᚩᛚᛚᚫᛏᚩᚾᚦᚻᚢᚦᛁᛒᛖᛗᚣᛏᛖᚳᚦᛈᛇᛚᛝᚱᚱᛗᚪᛉᚷᛞᛏᛚᛋᛝᚳᚪᛟᚾᛏᛁᚳᚪᛄᛞᚹᚪᛉᚠᛇᛗᛈᛒᛝᛞᚾᚦᛞᛖᛈᛖᚦᚢᚢᛟᚣᚻᚳᛗᚩᚷᛞᚦᚪᚹᚢᚠᛖᛁᚩᛡᛇᚢᚣᛞᚱᛗᛠᚳᚾᛋᛝᚪᛚᛋᛈᛡᚠᛠᛉᛏᛞᛠᛖᛝᚠᚩᛁᛋᛏᛚ",
+        "transliteration": "JAEOENONRLAJOLEAPFOWNGUTHHNDHEGTIANASTERUBHDYMISFLSYAEHAOXUTHCHTMNEANBMJMAICEEACXNIDAENSLWJWILTSOESHHAFOETEOEPHCTNBWBERPHLEOCUDTNDIXYPULRTUBOLLAETONTHHUTHIBEMYTECTHPEOLNGRRMAXGDTLSNGCAOENTICAJDWAXFEOMPBNGDNTHDEPETHUUOEYHCMOGDTHAWUFEIOIAEOUYDRMEACNSNGALSPIAFEAXTDEAENGFOISTL",
+        "recipe": {
+          "key_indices": [
+            25,
+            10,
+            26
+          ],
+          "cipher_sign": 19,
+          "feedback_sign": 22,
+          "constant": 11,
+          "skip_positions": [],
+          "skip_policy": "none"
+        }
+      }
+    ],
+    "prefixes_per_retained_family": 24389,
+    "total_prefix_evaluations": 390224
+  },
+  "wall_seconds": 3.542191200016532,
+  "new_decryptions": []
+}

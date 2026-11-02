@@ -1,0 +1,16 @@
+{
+  "experiment": "E051-pooled-long-key-diagnostic",
+  "control_output": "results/E049-long-key-controls-74c0828cc750.json",
+  "diagnostic_output": "results/E050-long-key-diagnostic-320d399c7db9.json",
+  "purpose": "Adaptive repair probe on the already failed31-key control only; not a blind validation. No unknown sections regardless of outcome. E050 shows objective prefers truth while old search misses it.",
+  "target": "ChapterXII failed E049 control,1200runes,key31. The solver receives ciphertext only and nominal17..32 range, not key,period31,mask or plaintext.",
+  "repair": "Retain E049 source seeds and top12 unchanged. Pool12longest maximal non-F runs of length>=16 capped256, each as separate fragment with unknown phase and reset language context. For each initial key apply E047 exact independent fragment-phase DP and2rounds of6shared-coordinate sweeps plus phase DP. Then E049 full continuous stream schedule and3coordinate/schedule rounds from refined key. No injection of target key or correct mask.",
+  "search_seed": 3303049,
+  "pool_score": "E047 phase-description penalty on pool for coordinate trace audit; only final full-stream E049 score ranks final outputs.",
+  "null": "One fully reoptimized perpage conditional null of target from E043 sampler seed3302051+page_index. Same pooling/seed procedure. Diagnostic only, no p-value.",
+  "bounds": "4096stream runes,12fragments cap256,32keyslots,12seeds,29coordinate rows,<=256DPstates,one process.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "success_criterion": "Record exact text/key/Fmask repair and full null score. Any success still requires separately preregistered fresh controls and regression checks before unknown search.",
+  "limits": "Parameters chosen after E049 failure; explicitly adaptive, not independent validation or historical decryption. Original failed outcome retained."
+}

@@ -1,0 +1,10 @@
+{'stage': 'pool', 'sign': 1, 'through_period': 24}
+{'stage': 'pool', 'sign': 1, 'through_period': 32}
+{'stage': 'pool', 'sign': -1, 'through_period': 24}
+{'stage': 'pool', 'sign': -1, 'through_period': 32}
+{'stage': 'pool', 'sign': 1, 'through_period': 24}
+{'stage': 'pool', 'sign': 1, 'through_period': 32}
+{'stage': 'pool', 'sign': -1, 'through_period': 24}
+{'stage': 'pool', 'sign': -1, 'through_period': 32}
+{'experiment': 'E060-fresh-2', 'wall_seconds': 37.454984900017735, 'checks': {'plaintext_exact': True, 'key_exact': True, 'mask_exact': True, 'phases_exact': True}, 'correct_runes': 729}
+{"status": "completed", "output": "results/E060-fresh-2-b963882ff223.json", "seconds": 37.70533720002277}

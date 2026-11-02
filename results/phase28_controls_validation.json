@@ -1,0 +1,306 @@
+{
+  "full_gate_passed": true,
+  "controls": [
+    {
+      "index": 0,
+      "runes": 66,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 2,
+      "b": 1,
+      "c": 2,
+      "output": "results/E078-control-0-ee215ced2dc6.json"
+    },
+    {
+      "index": 1,
+      "runes": 66,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 7,
+      "b": 3,
+      "c": 7,
+      "output": "results/E078-control-1-a8b47c95ccf8.json"
+    },
+    {
+      "index": 2,
+      "runes": 66,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 14,
+      "b": 15,
+      "c": 12,
+      "output": "results/E078-control-2-96492396799d.json"
+    },
+    {
+      "index": 3,
+      "runes": 95,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 27,
+      "b": 28,
+      "c": 17,
+      "output": "results/E078-control-3-527476740335.json"
+    },
+    {
+      "index": 4,
+      "runes": 95,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 2,
+      "b": 1,
+      "c": 22,
+      "output": "results/E078-control-4-eee96a517f7a.json"
+    },
+    {
+      "index": 5,
+      "runes": 95,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 7,
+      "b": 3,
+      "c": 27,
+      "output": "results/E078-control-5-25bca2e3d2cc.json"
+    },
+    {
+      "index": 6,
+      "runes": 200,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 14,
+      "b": 15,
+      "c": 4,
+      "output": "results/E078-control-6-b762e7ba5323.json"
+    },
+    {
+      "index": 7,
+      "runes": 200,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 27,
+      "b": 28,
+      "c": 9,
+      "output": "results/E078-control-7-aaf65620de5c.json"
+    },
+    {
+      "index": 8,
+      "runes": 200,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 2,
+      "b": 1,
+      "c": 14,
+      "output": "results/E078-control-8-296234b52e18.json"
+    },
+    {
+      "index": 9,
+      "runes": 300,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 7,
+      "b": 3,
+      "c": 19,
+      "output": "results/E078-control-9-f676177e796a.json"
+    },
+    {
+      "index": 10,
+      "runes": 300,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 14,
+      "b": 15,
+      "c": 24,
+      "output": "results/E078-control-10-402d51c553a0.json"
+    },
+    {
+      "index": 11,
+      "runes": 300,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 27,
+      "b": 28,
+      "c": 1,
+      "output": "results/E078-control-11-152556ba4bb2.json"
+    },
+    {
+      "index": 12,
+      "runes": 200,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 1,
+      "b": 1,
+      "c": 0,
+      "output": "results/E078-control-12-6cf2a8f31970.json"
+    },
+    {
+      "index": 13,
+      "runes": 300,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 1,
+      "b": 28,
+      "c": 0,
+      "output": "results/E078-control-13-b837d3be6618.json"
+    },
+    {
+      "index": 14,
+      "runes": 729,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 28,
+      "b": 1,
+      "c": 0,
+      "output": "results/E078-control-14-dc647b35c8d9.json"
+    },
+    {
+      "index": 15,
+      "runes": 3316,
+      "exact": true,
+      "recipe_exact": true,
+      "family_rank": 1,
+      "a": 28,
+      "b": 28,
+      "c": 0,
+      "output": "results/E078-control-15-2f0951be4643.json"
+    }
+  ],
+  "null_score": -5.259722277694591,
+  "entries": [
+    {
+      "id": "E077-benchmark",
+      "fingerprint": "5714f6a5b6bbc0314b0485a61aced9538425ff832b938b857595091a17ff241b",
+      "output": "results/E077-benchmark-5714f6a5b6bb.json",
+      "sha256": "cfa5f8c8db6f863a67add5538ed4244b18afb619991c343252ceb11a2b257d4c"
+    },
+    {
+      "id": "E078-control-0",
+      "fingerprint": "ee215ced2dc6fe2c7bac0e7463a6d7c819602c0640ed09fc879d401336800f49",
+      "output": "results/E078-control-0-ee215ced2dc6.json",
+      "sha256": "6b2efdab8d726b4b3863d5a44dea61e57fdf20c93f69e69b1adf32810d2c1c96"
+    },
+    {
+      "id": "E078-control-1",
+      "fingerprint": "a8b47c95ccf8a263e6e1dc6352fdcc68febc3e5d2801b5f97b1270eed1d6f31b",
+      "output": "results/E078-control-1-a8b47c95ccf8.json",
+      "sha256": "096edd81aa7a3c7c072504948bff8d3192e9a5f09b2f0f4ecf428f9493d86261"
+    },
+    {
+      "id": "E078-control-2",
+      "fingerprint": "96492396799dd59e0e1260650849d51c8fcfe2b43284224b4801e08c60817592",
+      "output": "results/E078-control-2-96492396799d.json",
+      "sha256": "6c5286f8fa35f1a2f183b541ac1c944c10ea03041a5b626a3218347d7e5b74d5"
+    },
+    {
+      "id": "E078-control-3",
+      "fingerprint": "52747674033597657141030873566687fb4c878f7cb859a0200970e290fdb532",
+      "output": "results/E078-control-3-527476740335.json",
+      "sha256": "3fde6791f45c181d810d24ad11fbfafdaaabeca66e38e026c4a08c760fed924b"
+    },
+    {
+      "id": "E078-control-4",
+      "fingerprint": "eee96a517f7abf6690b10014a52bfccaff840d05ac7eb366793a306d58319e71",
+      "output": "results/E078-control-4-eee96a517f7a.json",
+      "sha256": "849460f021f42a8923042b23867ba7cc7102c4d4ee59011c3e1f35dd22a8dfb0"
+    },
+    {
+      "id": "E078-control-5",
+      "fingerprint": "25bca2e3d2cc013862c1cafc09a5c48eeedfbb270dda35e3f463d68cb086f7f9",
+      "output": "results/E078-control-5-25bca2e3d2cc.json",
+      "sha256": "736a0262238dc6f597af4018071e3c11d92a36dc370b75f28ab8196e00f38392"
+    },
+    {
+      "id": "E078-control-6",
+      "fingerprint": "b762e7ba53234d256a94ad908e986d6961ac98fe3b40a1aec28975582759e24b",
+      "output": "results/E078-control-6-b762e7ba5323.json",
+      "sha256": "6476d0fc0b0cd1b89f5397c01070918ab8987334bf8a8e36e05e2c1f9af476dc"
+    },
+    {
+      "id": "E078-control-7",
+      "fingerprint": "aaf65620de5cd894d1d5f3d9aa3cc4237aace0e7afad03ab9d334636dce7ceca",
+      "output": "results/E078-control-7-aaf65620de5c.json",
+      "sha256": "f98b1f1914cdcf83624f59b5bed5556440d5e6c45545d8689c099d95bc8c97e3"
+    },
+    {
+      "id": "E078-control-8",
+      "fingerprint": "296234b52e18051bdcc035c41b03351d40311855bc7a2f518abf6ff91b563df5",
+      "output": "results/E078-control-8-296234b52e18.json",
+      "sha256": "87563fd8da32f50d6399ea41ea0c3915cd42aa50311811e4ec339efeacbcba27"
+    },
+    {
+      "id": "E078-control-9",
+      "fingerprint": "f676177e796aa331b828afcf3b167f820474addba2b85c94c6075c57082e632b",
+      "output": "results/E078-control-9-f676177e796a.json",
+      "sha256": "9f314d3498b506ed5c0d0515e31072936b07386d727c6fb208592720b469ca8e"
+    },
+    {
+      "id": "E078-control-10",
+      "fingerprint": "402d51c553a0385bdeeb04dafd12d4fb913b562114d0ade723ac4a62092837f2",
+      "output": "results/E078-control-10-402d51c553a0.json",
+      "sha256": "3a8df0a80421e53f2962fda558140002037b85f7714b61fdf37f151e20d650b8"
+    },
+    {
+      "id": "E078-control-11",
+      "fingerprint": "152556ba4bb2c4ec9ff7979f90e943ecdad59c6e947be02eece6eedb03f2de4d",
+      "output": "results/E078-control-11-152556ba4bb2.json",
+      "sha256": "045de2c15f6f44b2dd6befec86600ce8b03086db34ee362bab2e355d3d671dc4"
+    },
+    {
+      "id": "E078-control-12",
+      "fingerprint": "6cf2a8f31970e998eed021139d37c1e06f11a041ac192d9aeb1d14b85e36b21b",
+      "output": "results/E078-control-12-6cf2a8f31970.json",
+      "sha256": "8965796f5c0bbc6b49eea8d0715b2afb90d79e4bfa4ca215e25df343a5076aa1"
+    },
+    {
+      "id": "E078-control-13",
+      "fingerprint": "b837d3be661817a8858059a36d77df534bec5e1fc620596634ff8120dad4f74a",
+      "output": "results/E078-control-13-b837d3be6618.json",
+      "sha256": "291d782520c21d52c60153409cba09e60329094ba6e498bde8bc1d9c1c096d95"
+    },
+    {
+      "id": "E078-control-14",
+      "fingerprint": "dc647b35c8d9a20d32b8a586d7bfe9241489dfcc1e768a92273faa919e9bd058",
+      "output": "results/E078-control-14-dc647b35c8d9.json",
+      "sha256": "93ed3ef8989d903d3d02e9793b7df7ae0e5c24c69ea01d30090db0fc597f6cad"
+    },
+    {
+      "id": "E078-control-15",
+      "fingerprint": "2f0951be46431412568eaf772b968613991911a1be5f3780d49bd12733ecb89a",
+      "output": "results/E078-control-15-2f0951be4643.json",
+      "sha256": "5ce6e64d3951b114c0a2a62de77c2d3b84fbcd0b050268dfb4d1106085ba250e"
+    },
+    {
+      "id": "E078-null-5",
+      "fingerprint": "88c1caa7f6972353ec77820c44dc1adc4f52c8c4c4f5d5fc496fc0d178de0f98",
+      "output": "results/E078-null-5-88c1caa7f697.json",
+      "sha256": "7413cff240960fb69fafce68aaec04f41bd4f9de1ffa951fa7425db1920070de"
+    }
+  ],
+  "validation": {
+    "scalar_model_table_entries": 732540,
+    "reference_sequence_crosschecks": 12,
+    "replayed_family_scores": 409248,
+    "scalar_decodings": 11552,
+    "independent_retained_family_scores": 2304,
+    "independent_full_prefix_scores": 1937664,
+    "independent_family_optima": 2304,
+    "reencryptions": 54
+  },
+  "validation_seconds": 50.21286790003069,
+  "verifier_sha256": "0fd09e9c3f6953996e39164efa638c7234f99e8ed4ac6882d55e254a9357aaff",
+  "seconds": 61.87164570018649,
+  "new_decryptions": []
+}

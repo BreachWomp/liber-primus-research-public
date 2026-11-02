@@ -1,0 +1,81 @@
+{
+  "experiment": "E025-periodic-feedback",
+  "status": "completed",
+  "parameters": {
+    "mode": "pages",
+    "first": 49,
+    "last": 49,
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "pages": [
+    {
+      "page": "LP2-49",
+      "ciphertext_runes": "ᛡᛖᛄᚠᛚᛟᛁᚳᛁᛝᚷᚦᛗᛋᚫᚷᚪᛠᛗᛁᛒᛡᛏᚾᛝᛗᚦᛏᚣᚫᛄᛖᚻᚠᚪᛡᚷᚪᛗᛁᛞᛉᛏᚢᛖᚦᚾᛖᚪᛈᚹᛠᛚᛒᚢᚱᛡᛟᚪᚣᛟᛇᚹᛄᛈᛞ",
+      "top": [
+        {
+          "score": -5.0251404655748395,
+          "plaintext_runes": "ᛄᛏᛋᛏᛒᚪᛖᛁᛗᛋᚻᛝᚹᚻᚪᚣᚾᛞᚻᚪᚢᛖᛚᛏᚫᛋᚦᚳᛟᛟᚣᛖᛝᛖᚷᛇᚪᚣᛞᛡᚳᛄᚪᛉᛚᛚᛖᛏᚩᚣᚪᛞᚣᛏᚠᛠᛞᚹᚻᛡᛏᚳᚻᚾᛖᛚ",
+          "transliteration": "JTSTBAEIMSHNGWHAYNDHAUELTAESTHCOEOEYENGEGEOAYDIACJAXLLETOYADYTFEADWHIATCHNEL",
+          "recipe": {
+            "delay": 2,
+            "a": 3,
+            "b": 1,
+            "initial_key": [
+              17,
+              20
+            ],
+            "initial_plaintext": [
+              11,
+              16
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.10633999924761,
+          "plaintext_runes": "ᛏᚹᛡᚪᚦᛁᚩᛟᛞᛞᚣᚷᚷᛝᛈᛋᚩᚳᛁᚳᚪᚩᚾᛖᚪᛚᚣᛏᛇᛁᚳᚠᚪᚠᛚᛗᚪᚹᚪᛏᛋᛈᚩᚱᚳᚩᚠᚳᚱᛚᛠᛖᛟᛁᛁᛒᛏᛋᚳᚪᚹᛖᚢᚾᛡᚳ",
+          "transliteration": "TWIAATHIOOEDDYGGNGPSOCICAONEALYTEOICFAFLMAWATSPORCOFCRLEAEOEIIBTSCAWEUNIAC",
+          "recipe": {
+            "delay": 2,
+            "a": 5,
+            "b": 20,
+            "initial_key": [
+              10,
+              6
+            ],
+            "initial_plaintext": [
+              16,
+              7
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.129839671750232,
+          "plaintext_runes": "ᚢᛏᚠᚱᛖᛋᛠᚢᛏᚾᛝᛚᛖᚱᛡᛖᚪᛝᚣᚹᛏᛈᚢᚹᚾᚠᛚᚣᛄᚠᛒᛟᛁᛚᛡᚾᚦᚳᚷᚩᛠᚾᚱᛟᛞᛏᚪᚣᛏᚪᛗᚻᚢᚣᛚᛈᚾᛁᚳᛞᚻᛖᛒᚣᚠᚱ",
+          "transliteration": "UTFRESEAUTNNGLERIAEANGYWTPUWNFLYJFBOEILIANTHCGOEANROEDTAYTAMHUYLPNICDHEBYFR",
+          "recipe": {
+            "delay": 2,
+            "a": 27,
+            "b": 22,
+            "initial_key": [
+              17,
+              5
+            ],
+            "initial_plaintext": [
+              1,
+              16
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "recipes": 655980
+    }
+  ],
+  "wall_seconds": 2.136614799994277
+}

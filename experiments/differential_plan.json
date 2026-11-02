@@ -1,0 +1,15 @@
+{
+  "registered_at": "2026-10-19T09:37:23.168794+00:00",
+  "experiment": "E015",
+  "hypothesis": "Differential encoding with affine substitution can explain low adjacent repetition if the rune representing a zero difference is rare.",
+  "grid": "All55unknownrune pages; firstdifferences; all28nonzero slopes times29shifts; noFskips; firstcipher asIV.",
+  "null": {
+    "replicates": 199,
+    "seed": 3301015,
+    "model": "E002plugin symmetric Markov",
+    "selection": "global maximum acrossall55pages and812maps in every replicate"
+  },
+  "control": "LP1circumference plaintext reencrypted with a11,b7,IV17; that section excluded from language model.",
+  "timeout_seconds": 180,
+  "memory": "16nullpages perbatch,29shifts at a time; bounded arrays."
+}

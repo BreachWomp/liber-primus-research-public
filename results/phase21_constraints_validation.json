@@ -1,0 +1,444 @@
+{
+  "experiment": "E058",
+  "stage_A_passed": true,
+  "stage_B_executed": true,
+  "full_gate_passed": false,
+  "controls": [
+    {
+      "kind": "regression",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.3256776727900625,
+      "truth_score": -2.325677672790065,
+      "output": "results/E058-regression-2-adb6b4c06b9d.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.062583069766143,
+      "truth_score": -2.0625830697661423,
+      "output": "results/E058-fresh-0-26c50166af69.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.125670723804504,
+      "truth_score": -2.125670723804503,
+      "output": "results/E058-fresh-1-eb72b0565ff3.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.2065192380721053,
+      "truth_score": -2.2065192380721093,
+      "output": "results/E058-fresh-2-f15791d6e4b9.json"
+    },
+    {
+      "kind": "regression",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.186506624485005,
+      "truth_score": -2.186506624485009,
+      "output": "results/E058-regression-0-039d9b9c728e.json"
+    },
+    {
+      "kind": "regression",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.139828875626344,
+      "truth_score": -2.139828875626345,
+      "output": "results/E058-regression-1-8f476110f700.json"
+    },
+    {
+      "kind": "regression",
+      "index": 3,
+      "runes": 3316,
+      "key_length": 17,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 3316,
+      "found_score": -2.0847682012053,
+      "truth_score": -2.084768201205296,
+      "output": "results/E058-regression-3-a8944f9f010d.json"
+    },
+    {
+      "kind": "regression",
+      "index": 4,
+      "runes": 3316,
+      "key_length": 23,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 3316,
+      "found_score": -1.9822432923367723,
+      "truth_score": -1.982243292336776,
+      "output": "results/E058-regression-4-47ae9c77e849.json"
+    },
+    {
+      "kind": "regression",
+      "index": 5,
+      "runes": 3316,
+      "key_length": 31,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 3316,
+      "found_score": -2.126283587314844,
+      "truth_score": -2.126283587314842,
+      "output": "results/E058-regression-5-d92bf6795400.json"
+    },
+    {
+      "kind": "regression",
+      "index": 6,
+      "runes": 1200,
+      "key_length": 17,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.1117235727080605,
+      "truth_score": -2.1117235727080597,
+      "output": "results/E058-regression-6-48a29fe2fd5f.json"
+    },
+    {
+      "kind": "regression",
+      "index": 7,
+      "runes": 1200,
+      "key_length": 23,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.083596815450242,
+      "truth_score": -2.083596815450241,
+      "output": "results/E058-regression-7-d757fd85f975.json"
+    },
+    {
+      "kind": "regression",
+      "index": 8,
+      "runes": 1200,
+      "key_length": 31,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.1277924252410982,
+      "truth_score": -2.1277924252410982,
+      "output": "results/E058-regression-8-bfbc02e0dce2.json"
+    },
+    {
+      "kind": "regression",
+      "index": 9,
+      "runes": 3316,
+      "key_length": 17,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 3316,
+      "found_score": -2.1212630814652673,
+      "truth_score": -2.12126308146527,
+      "output": "results/E058-regression-9-76232f14bbd7.json"
+    },
+    {
+      "kind": "regression",
+      "index": 10,
+      "runes": 1200,
+      "key_length": 23,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.0540900882522815,
+      "truth_score": -2.054090088252286,
+      "output": "results/E058-regression-10-21688ee63139.json"
+    },
+    {
+      "kind": "regression",
+      "index": 11,
+      "runes": 1200,
+      "key_length": 31,
+      "checks": {
+        "plaintext_exact": false,
+        "key_exact": false,
+        "mask_exact": false,
+        "phases_exact": false
+      },
+      "exact": false,
+      "correct_runes": 49,
+      "found_score": -5.742914505431843,
+      "truth_score": -2.318409268878205,
+      "output": "results/E058-regression-11-1f5dc49e640b.json"
+    },
+    {
+      "kind": "stress",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.0579602994196784,
+      "truth_score": -2.057960299419682,
+      "output": "results/E058-stress-0-c2501266c67d.json"
+    },
+    {
+      "kind": "stress",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.1399464481389243,
+      "truth_score": -2.1399464481389243,
+      "output": "results/E058-stress-1-85ae3eaa704c.json"
+    },
+    {
+      "kind": "stress",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.1377230240746523,
+      "truth_score": -2.1377230240746505,
+      "output": "results/E058-stress-2-0bab863ec29e.json"
+    }
+  ],
+  "null_score": -5.494805926134932,
+  "validation": {
+    "pool_records_recomputed": 40544,
+    "constraint_feasibility_checks": 40544,
+    "independent_constrained_phase_optima": 608,
+    "coupled_records_recomputed": 1622,
+    "independent_coupled_optima": 19,
+    "alternative_pairs_recomputed": 5
+  },
+  "seconds": 366.7707762999926,
+  "successful_tasks": 19,
+  "peak_sampled_bytes": 138993664,
+  "entries": [
+    {
+      "id": "E058-regression-2",
+      "fingerprint": "adb6b4c06b9d432cf2a6bc34006d8e0c389307691947130d518df13801cace85",
+      "output": "results/E058-regression-2-adb6b4c06b9d.json",
+      "sha256": "472b0f28d7e283bc05090c023d20f69a0390d0dd4cce7614e0991cc965ec62cf"
+    },
+    {
+      "id": "E058-fresh-0",
+      "fingerprint": "26c50166af69f5de89677b55c757b5e2764691200bd570255a306f8cca65ef46",
+      "output": "results/E058-fresh-0-26c50166af69.json",
+      "sha256": "7ee8dbfb2190b220656e54efbcb2a20c2661fd33eb18ef77b985f20bac303aa4"
+    },
+    {
+      "id": "E058-fresh-1",
+      "fingerprint": "eb72b0565ff36cb3526fc79629e3c5c08e083929a074b723eb12ea86dd4cad2b",
+      "output": "results/E058-fresh-1-eb72b0565ff3.json",
+      "sha256": "ba78118a68838995c7b4f91be22e76431fd8cb2c335a2f42767a394ef4c6d2c8"
+    },
+    {
+      "id": "E058-fresh-2",
+      "fingerprint": "f15791d6e4b929b13f1e545d8d385af12cbd020fcc65ddcab01c0344ed1557db",
+      "output": "results/E058-fresh-2-f15791d6e4b9.json",
+      "sha256": "a77571b69531f5d05f69ec58c39f04b2af12d0c4bf40dd87805353b8e4097d6f"
+    },
+    {
+      "id": "E058-null-2",
+      "fingerprint": "ad98d39a69ddae07f1f9af92da68e22720525a705f2fbeb3eb3ec293f0a70565",
+      "output": "results/E058-null-2-ad98d39a69dd.json",
+      "sha256": "de514b6e085d2cce73f27f00bcbf1dcb8db15a4997238e6022b110c9c9e741f8"
+    },
+    {
+      "id": "E058-regression-0",
+      "fingerprint": "039d9b9c728e995b2cbe310e3b2886e97427f50810e5949180e5a3a00f685e22",
+      "output": "results/E058-regression-0-039d9b9c728e.json",
+      "sha256": "12496ce4c8ccde961f382affd33dffa7352459ea43a8dded95edda8c94264c74"
+    },
+    {
+      "id": "E058-regression-1",
+      "fingerprint": "8f476110f70052588bce5cd8de6de003ddcfc08036bb52db53c05b0dace321a1",
+      "output": "results/E058-regression-1-8f476110f700.json",
+      "sha256": "5ccd4950376a77c823cd6683bb98172ffe9a1e3c33eaf485715035b887337085"
+    },
+    {
+      "id": "E058-regression-3",
+      "fingerprint": "a8944f9f010d90d7473f3c408447c54d61621a745f83746237789e2dbd716fbb",
+      "output": "results/E058-regression-3-a8944f9f010d.json",
+      "sha256": "2870df8df865c93db9acc6384fb5a1a8ff931e5acc61418b7b7ae3f27142d1bb"
+    },
+    {
+      "id": "E058-regression-4",
+      "fingerprint": "47ae9c77e84982912e1c5ac6e8501f8bf2588fb0374421bca842d3ca0fb290b6",
+      "output": "results/E058-regression-4-47ae9c77e849.json",
+      "sha256": "dd6ef97c202bc21689cf74f7620b08b97a173da4c5e6c4596b7bcd6b46ccadb3"
+    },
+    {
+      "id": "E058-regression-5",
+      "fingerprint": "d92bf6795400f23f9d21970d6612597d4c10f82837c8d43158b37f27204ca629",
+      "output": "results/E058-regression-5-d92bf6795400.json",
+      "sha256": "82ca50a43da52ecc5e4cd4ec6a11079bdaea4f34e0b021e85312371fe29d0dac"
+    },
+    {
+      "id": "E058-regression-6",
+      "fingerprint": "48a29fe2fd5f7497400fc374237bf57ac553e0f509dc6bcbacbcb2fc1c48bfe9",
+      "output": "results/E058-regression-6-48a29fe2fd5f.json",
+      "sha256": "687f920d26c43be209848d816c1c014994caf17bce06ab05421be32d6bd5781a"
+    },
+    {
+      "id": "E058-regression-7",
+      "fingerprint": "d757fd85f975dbd0d6bf212be093c9a3daddd02bca49ed97df8a289d320647ef",
+      "output": "results/E058-regression-7-d757fd85f975.json",
+      "sha256": "2068596505e46b28b90d51840592a25e565e7a3a4c075081ad571cc0b9314570"
+    },
+    {
+      "id": "E058-regression-8",
+      "fingerprint": "bfbc02e0dce29956c28965ad6a8a62fce824cae44fe1ffb13b8b8402397765ac",
+      "output": "results/E058-regression-8-bfbc02e0dce2.json",
+      "sha256": "c48cabe19c43697928083e7ec99c1e75d30cd91073ffd568780e333123f18143"
+    },
+    {
+      "id": "E058-regression-9",
+      "fingerprint": "76232f14bbd70d1c6f98c7cc294a63d34974c9c37c3000e2dcab84a1f9e6f775",
+      "output": "results/E058-regression-9-76232f14bbd7.json",
+      "sha256": "8171c3551a0831ed914868fb156aa5723d9777e3ca39ca273ffa9e72a8964d9e"
+    },
+    {
+      "id": "E058-regression-10",
+      "fingerprint": "21688ee6313950f4d0c1dd760ccea97370a766ee4f61a7b0fdf785a82fdc3b6f",
+      "output": "results/E058-regression-10-21688ee63139.json",
+      "sha256": "10c692be95b6fc8fc9b92cbdafae3b0e3e9173f52ecc59da722f1b3be2622f93"
+    },
+    {
+      "id": "E058-regression-11",
+      "fingerprint": "1f5dc49e640bb299ccd2209998d155eb7a146433d7701bfd225ff02a2ee16a0e",
+      "output": "results/E058-regression-11-1f5dc49e640b.json",
+      "sha256": "feadd27a25c8eb443c1b5bf4eb4e22dd3482ed247e7cd4ba4a832c01ca235d2c"
+    },
+    {
+      "id": "E058-stress-0",
+      "fingerprint": "c2501266c67dfff7a611f81f5957d6639557d232c3932f126f163c6cccb93fe3",
+      "output": "results/E058-stress-0-c2501266c67d.json",
+      "sha256": "c3ef1ccbd07f21c4bc9283a6582959d43e1bd85e16846b706dee59d4c3751130"
+    },
+    {
+      "id": "E058-stress-1",
+      "fingerprint": "85ae3eaa704c8908a6237cc94949b80e9cea247c1cd24d035ea00a580f11b1aa",
+      "output": "results/E058-stress-1-85ae3eaa704c.json",
+      "sha256": "a0b024a85ae0e1b3bf3ee39b5e4af26920027b83816d909fb09d9caae76279ba"
+    },
+    {
+      "id": "E058-stress-2",
+      "fingerprint": "0bab863ec29eb195c4aaa4522ba65ca0cba5852721626e266ca0d3d4955e9b8c",
+      "output": "results/E058-stress-2-0bab863ec29e.json",
+      "sha256": "82872e8e251e46d14fe7afcbd6b7e9bdc6e00e66e432670efa6039bd7bba9fd6"
+    }
+  ],
+  "unknown_sections_searched": 0,
+  "new_decryptions": []
+}

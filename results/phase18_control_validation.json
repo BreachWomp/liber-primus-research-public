@@ -1,0 +1,121 @@
+{
+  "experiment": "E052",
+  "gate_passed": true,
+  "controls": [
+    {
+      "kind": "fresh",
+      "chapter": "X",
+      "key_length": 17,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.10464053934792,
+      "truth_score": -2.104640539347919
+    },
+    {
+      "kind": "fresh",
+      "chapter": "XI",
+      "key_length": 23,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.075758079910419,
+      "truth_score": -2.0757580799104183
+    },
+    {
+      "kind": "fresh",
+      "chapter": "XII",
+      "key_length": 31,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.1192074572298853,
+      "truth_score": -2.119207457229886
+    },
+    {
+      "kind": "regression",
+      "chapter": "X",
+      "key_length": 17,
+      "runes": 3316,
+      "exact": true,
+      "correct_runes": 3316,
+      "found_score": -2.109301384596514,
+      "truth_score": -2.1093013845965163
+    },
+    {
+      "kind": "regression",
+      "chapter": "XI",
+      "key_length": 23,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.0462513527124586,
+      "truth_score": -2.0462513527124626
+    },
+    {
+      "kind": "regression",
+      "chapter": "XII",
+      "key_length": 31,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.3098243008669916,
+      "truth_score": -2.309824300866992
+    }
+  ],
+  "null_score": -5.8426284471777485,
+  "seconds": 116.94560759997694,
+  "successful_tasks": 7,
+  "peak_sampled_bytes": 123572224,
+  "validation": {
+    "pool_records_recomputed": 7392,
+    "independent_pool_phase_optima": 224,
+    "stream_records_recomputed": 663,
+    "independent_stream_optima": 7
+  },
+  "entries": [
+    {
+      "id": "E052-fresh-0",
+      "fingerprint": "521392ae2ef7eb1f52c98cb2abfb911e8e9a1b720ff5c6373dbba1dffeaa03b2",
+      "output": "results/E052-fresh-0-521392ae2ef7.json",
+      "sha256": "07cf989407df7eade6f66dc27a332114bcef1398bdcf0c325f0f66c7501cb59d"
+    },
+    {
+      "id": "E052-fresh-1",
+      "fingerprint": "ac26a64d72a1a57f1e27b179e00a5b2219f3232fce4cdf6269dc37709084bf4d",
+      "output": "results/E052-fresh-1-ac26a64d72a1.json",
+      "sha256": "d96771ca07bbfac54031bca9d6af865766f8b4ae32c1ef1e41960b1f20508668"
+    },
+    {
+      "id": "E052-fresh-2",
+      "fingerprint": "39f10f15775d231b29626ab50b9e1ec1c3704c971e6c0d57ae0ff64ed318b823",
+      "output": "results/E052-fresh-2-39f10f15775d.json",
+      "sha256": "2770593035f35b8dd3754d0599a10e5fdb70ba7c11a2204967c5562bf764c47c"
+    },
+    {
+      "id": "E052-regression-0",
+      "fingerprint": "1118cd6014bf7edc0776df80a40242b9686dfe8013b4e9b36d3fbf37f396f622",
+      "output": "results/E052-regression-0-1118cd6014bf.json",
+      "sha256": "713bbe11b5a8c6b6de7b604e8a6626ccf8f0f836be5f3e084ae131b5b10b5808"
+    },
+    {
+      "id": "E052-regression-1",
+      "fingerprint": "38e8b70b8f9fb95cec6204738fc2a8304b409f586610230e8330df6c05fd3fba",
+      "output": "results/E052-regression-1-38e8b70b8f9f.json",
+      "sha256": "8d3191b6246998ad2b6e91fe8b1e7e4f10d8b642d46f87840b1fe3a5c800d22b"
+    },
+    {
+      "id": "E052-regression-2",
+      "fingerprint": "02b7effc024e04eca90a94fbcd107b391e8181ad5f5018105c0b3c447a60bc2f",
+      "output": "results/E052-regression-2-02b7effc024e.json",
+      "sha256": "4e5578611a4a8d504348b73e54ff46503f679f3f32f53378a8c624231c3784e2"
+    },
+    {
+      "id": "E052-null-2",
+      "fingerprint": "ff83d76a3e3d3fe20db71a43d782c351646c73ef77b1220081de81095131fa73",
+      "output": "results/E052-null-2-ff83d76a3e3d.json",
+      "sha256": "2478e3d901957ce74325c80cade39ce4969a81f3df392a8a202d9fb0d37451fb"
+    }
+  ],
+  "new_decryptions": []
+}

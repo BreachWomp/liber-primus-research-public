@@ -1,0 +1,105 @@
+{
+  "status": "partial_not_complete",
+  "mode": "dictionary",
+  "pages": [
+    {
+      "page": "LP2-37",
+      "ciphertext_runes": "ᚾᚣᛖᛉᚾᚢᛉᛁᛝᛏᛈᚹᛋᚣᛏᛠᛈᛉᚪᛁᛄᛋᚱᚪᛏᛋᛝᛏᚳᚷᚳᚻᛖᛟᚱᚪᛡᚻᚳᛝᛒᛖᚱᛠᚪᛚᛟᛖᛚᚪᚦᛋᚳᚹᚱᚹᚩᚻᚣᚢᛝᚩᛈᛚᛁᛏᚪᚠᛋᛝᛞᚳᚪᚱᛒᚹᛈᚾᚩᚦᚳᚦᚾᛗᚩᛖᚣᛇᚾᚠᛒᛞᚢᛈᚹᚾᛖᚪᚱᛚᛁᚹᚫᛉᛝᚠᛞᚪᚠᛒᛄᛉᛞᛄᛝᚣᛇᚪᚫᛄᛝᛈᚪᚢᛠᛇᛏᚱᛖᚫᛗᚫᛠᚻᛁᚫᛟᛠᚹᚳᛄᚦᚻᛡᚩᚢᚩᚦᚷᛡᚻᛋᚷᚪᛁᛟᛞᚪᛄᛁᚹᛡᛒᛗᛝᛡᛞᚠᛒᛋᛏᛒᚷᚠᚷᛟᚢᚳᚫᛏᛁᛖᚱᚷᛗᚣᚪᚷᚹᛝᛄᛋᛄᛗᚱᛗᚾᛒᛋᛗᛉᛞᚻᛉᛁᚣᛡᚻᚣᛠᛉᚻᛞᛖᚹᛖᚦᚢᚳᛉᛗᚪᚣᛠᚹᚫᚪᚳ",
+      "rune_count": 228,
+      "f_count": 6,
+      "evaluated_key_sign_tasks": 1524,
+      "dp_transitions": 2111640,
+      "top": [
+        {
+          "score": -4.626346611867732,
+          "plaintext_runes": "ᛒᛞᚫᛉᚢᛋᛠᛝᛠᚻᛈᛈᛠᚦᛞᛒᚠᛒᚫᛉᛋᚳᛁᚱᛞᚢᛝᛋᛋᛖᛝᛇᚫᚷᚷᛝᛋᛞᛋᚩᚾᚦᛁᚠᛋᚫᛚᛈᚠᚠᚪᚳᚾᛝᚷᚾᛁᛞᛞᛞᚳᛒᚢᚻᚠᚠᛖᚦᚳᚩᚩᛋᛗᚪᛟᚾᚠᛟᛒᛟᛝᛖᚳᚾᚹᛡᛏᛗᛄᚪᚾᚣᛈᛋᚩᚹᚪᚹᛏᚱᛏᛈᛖᛉᛖᛏᛗᚹᛚᚹᛋᚷᛚᛒᛖᛗᚢᚹᚪᛈᚳᚹᛗᛡᛄᚱᚣᛡᚦᛠᚹᚪᛋᛚᚠᛚᛚᚩᛈᛗᛋᛖᚷᚢᚹᛋᛁᚠᛉᚣᛖᚳᚻᚱᚠᛞᛗᚹᚾᛉᛗᛟᚣᚾᛖᛖᛗᚠᛉᚳᚻᚾᛉᚠᚻᚷᚾᛄᛒᛋᛁᚷᛟᛉᚪᚦᛋᛁᚷᛁᚾᚾᛋᚢᛁᚾᚢᛠᛡᛇᚷᚢᛖᚷᚱᚦᛇᚻᛏᚩᚷᛏᚩᚦᚹᛁᚻᛋᚻᛒᚢᚠᚠᛝᚹᚩᛋᛄ",
+          "transliteration": "BDAEXUSEANGEAHPPEATHDBFBAEXSCIRDUNGSSENGEOAEGGNGSDSONTHIFSAELPFFACNNGGNIDDDCBUHFFETHCOOSMAOENFOEBOENGECNWIATMJANYPSOWAWTRTPEXETMWLWSGLBEMUWAPCWMIAJRYIATHEAWASLFLLOPMSEGUWSIFXYECHRFDMWNXMOEYNEEMFXCHNXFHGNJBSIGOEXATHSIGINNSUINUEAIAEOGUEGRTHEOHTOGTOTHWIHSHBUFFNGWOSJ",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              1,
+              19,
+              13,
+              16,
+              27,
+              9,
+              5,
+              3,
+              9,
+              15
+            ],
+            "start": 7,
+            "skip_positions": [
+              167,
+              173
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 2460,
+          "max_states": 20
+        },
+        {
+          "score": -4.661497178210127,
+          "plaintext_runes": "ᛉᚦᛗᚾᛗᚹᚾᛖᛏᚹᛋᚢᚻᚦᛝᚪᛋᛞᛠᛖᚣᚻᚪᛈᚹᛈᛏᚹᛞᚦᛖᛚᛗᚢᚪᛈᚫᛚᚩᚦᛄᛗᛗᚠᛈᚩᚷᛗᚩᚱᚷᚻᛞᚢᛗᛝᚳᛋᚦᚹᚦᚫᚪᚩᛖᛝᛠᛠᛟᚦᚳᚩᛠᚪᛚᛏᛋᛠᛚᚣᚩᛝᛗᛖᛚᛁᛄᛄᛗᚻᚷᚳᚹᛁᛝᛠᚳᚱᚱᚩᛖᚢᛡᛉᛏᚠᚠᚱᚻᚷᛒᛞᚠᛒᛏᚣᛏᛈᛡᛒᛏᛁᚱᚹᚪᛏᛝᛗᛁᛇᚱᚩᚾᛋᛖᛇᚢᚠᚢᛖᛒᚷᛋᚢᚳᛟᚫᚷᛒᚢᚠᚻᛟᛈᛈᚷᛉᛠᛒᛡᛏᚢᛚᚱᚹᛁᚠᛠᛚᚻᛇᛚᛒᚠᛟᛋᛟᛞᛇᚹᛖᛗᛗᛟᛖᚣᚱᚦᛏᚹᚣᚻᛒᛖᛗᚾᛠᚷᛈᛖᚾᚳᚠᚾᛖᛄᚫᛚᛄᚪᛉᚠᚠᛁᚢᚳᚣᚹᛖᛉᛖᛠᚦᚾᛏᚩᛈᛖ",
+          "transliteration": "XTHMNMWNETWSUHTHNGASDEAEYHAPWPTWDTHELMUAPAELOTHJMMFPOGMORGHDUMNGCSTHWTHAEAOENGEAEAOETHCOEAALTSEALYONGMELIJJMHGCWINGEACRROEUIAXTFFRHGBDFBTYTPIABTIRWATNGMIEORONSEEOUFUEBGSUCOEAEGBUFHOEPPGXEABIATULRWIFEALHEOLBFOESOEDEOWEMMOEEYRTHTWYHBEMNEAGPENCFNEJAELJAXFFIUCYWEXEEATHNTOPE",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "key_indices": [
+              8,
+              23,
+              28
+            ],
+            "start": 1,
+            "skip_positions": [
+              105,
+              173
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 738,
+          "max_states": 6
+        },
+        {
+          "score": -4.680675586881472,
+          "plaintext_runes": "ᛄᛉᚹᚣᛚᚾᛉᛉᚱᚩᛄᚱᚾᛞᚪᚣᛡᛋᛋᛖᛈᛁᛋᚠᚪᚾᛠᚪᛚᚳᚪᚦᛁᚦᛝᚪᚣᚩᛗᛠᛞᚹᚹᚢᛋᚻᚦᚹᛠᚠᚾᚾᛋᚱᛝᚱᚣᚦᚦᛞᚱᛏᛄᛚᛉᚱᛏᚠᛁᛗᚷᚳᚱᛚᚻᛇᛄᚦᛝᛖᚷᛞᚦᛁᚹᛁᛡᛈᛁᚠᚹᛒᛞᚹᚱᛏᛟᚳᚷᚻᛉᛖᛞᛁᛗᚪᚣᛏᚠᚻᚠᛋᛏᛒᚩᛠᚹᚠᛋᛈᛠᛡᚢᛁᚢᛡᛇᛚᚹᛞᚳᛋᚫᛇᚢᚠᛖᚢᚩᛞᛈᛞᛄᚣᚻᛞᛒᚾᛗᛈᛝᚪᛟᚠᛋᚣᚢᛏᛈᛁᚱᛡᛞᛁᛖᚢᚢᚠᚻᚱᚻᛞᛖᛚᚳᚩᛁᚪᛉᛇᛉᚹᛋᛖᛝᛡᚫᚳᛖᛗᛖᚪᛒᚳᛝᚠᛋᛞᚾᚢᚣᚦᚩᛋᚠᚦᚣᛒᛟᚫᚣᛏᚣᛟᛖᛟᛡᚾᛞᛁᚷᚪᛡᛇᛒᚪᛏᛚ",
+          "transliteration": "JXWYLNXXROJRNDAYIASSEPISFANEAALCATHITHNGAYOMEADWWUSHTHWEAFNNSRNGRYTHTHDRTJLXRTFIMGCRLHEOJTHNGEGDTHIWIIAPIFWBDWRTOECGHXEDIMAYTFHFSTBOEAWFSPEAIAUIUIAEOLWDCSAEEOUFEUODPDJYHDBNMPNGAOEFSYUTPIRIADIEUUFHRHDELCOIAXEOXWSENGIAAECEMEABCNGFSDNUYTHOSFTHYBOEAEYTYOEEOEIANDIGAIAEOBATL",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              0,
+              19,
+              1,
+              5,
+              4,
+              10,
+              5,
+              18,
+              5,
+              9,
+              18,
+              4,
+              18
+            ],
+            "start": 9,
+            "skip_positions": [
+              67,
+              89,
+              108,
+              167
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 3192,
+          "max_states": 26
+        }
+      ]
+    }
+  ],
+  "new_decryptions": []
+}

@@ -1,0 +1,139 @@
+{
+  "experiment": "E024-numeric-structure",
+  "status": "completed",
+  "plan": {
+    "experiment": "E024-numeric-structure",
+    "input": "results/E023-glyph-audit-8315f5c684bb.json",
+    "input_selection": "Use the image-supported overlay fixed before structure statistics. No choice among transcriptions by statistical score.",
+    "scope": "One 256-byte stream, original 32 rows of 8 cells across LP2-49/50/51. Diagnostic only, no decryption search.",
+    "hypothesis": "The source-aligned byte sequence departs from independent uniform bytes under one of four prespecified statistics.",
+    "statistics": [
+      "abs(2 * unordered equal-byte pairs - 255), a two-sided collision statistic",
+      "abs(256 * adjacent equal-byte count - 255), a two-sided adjacency statistic",
+      "max over 8 bit positions of abs(2 * one-count - 256)",
+      "sum over 8 source-aligned columns of (8 * column byte-sum - total byte-sum)^2"
+    ],
+    "null_model": "9999 independent uniform 256-byte draws via Python Random(seed).randbytes(256), every draw evaluated on all four statistics. This null does not preserve the observed histogram.",
+    "seed": 3301024,
+    "replicates": 9999,
+    "p_value": "(1 + null statistic >= observed count) / 10000; Bonferroni factor 4 across the prespecified statistics. Bit-plane maximum already recomputed in every null draw.",
+    "positive_controls": "Constant zero bytes for severe collision, adjacency and bit bias; repeated columns 0,32,...,224 for column separation. Controls evaluated by the same null samples; no plaintext recovery control applicable.",
+    "limits": "Failure to reject is not evidence of encryption or randomness. Rejection is not a decryption. No unknown-key search, file-type inference, statistical novelty claim or cryptographic authentication.",
+    "max_seconds": 120,
+    "memory": "Streaming samples, one 256-byte draw at a time; fixed 256-entry count arrays, no ensemble retention.",
+    "workers": 1
+  },
+  "input_byte_sha256": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+  "descriptive": {
+    "length": 256,
+    "distinct_values": 161,
+    "equal_unordered_pairs": 127,
+    "adjacent_equal_pairs": 0,
+    "empirical_entropy_bits": 7.169654589725435,
+    "entropy_note": "Finite-sample descriptive plug-in estimate; not a test of cryptographic randomness.",
+    "bit_one_counts_lsb_first": [
+      122,
+      120,
+      129,
+      126,
+      129,
+      132,
+      130,
+      129
+    ],
+    "column_sums": [
+      4468,
+      4908,
+      4005,
+      3771,
+      4187,
+      3427,
+      4362,
+      3878
+    ]
+  },
+  "calibration": {
+    "observed": {
+      "collision_deviation": {
+        "statistic": 1,
+        "exceedances": 9999,
+        "raw_p": 1.0,
+        "adjusted_p": 1
+      },
+      "adjacent_repeat_deviation": {
+        "statistic": 255,
+        "exceedances": 6361,
+        "raw_p": 0.6362,
+        "adjusted_p": 1
+      },
+      "max_bit_imbalance": {
+        "statistic": 16,
+        "exceedances": 9662,
+        "raw_p": 0.9663,
+        "adjusted_p": 1
+      },
+      "column_sum_dispersion": {
+        "statistic": 94635232,
+        "exceedances": 2878,
+        "raw_p": 0.2879,
+        "adjusted_p": 1
+      }
+    },
+    "constant_zero": {
+      "collision_deviation": {
+        "statistic": 65025,
+        "exceedances": 0,
+        "raw_p": 0.0001,
+        "adjusted_p": 0.0004
+      },
+      "adjacent_repeat_deviation": {
+        "statistic": 65025,
+        "exceedances": 0,
+        "raw_p": 0.0001,
+        "adjusted_p": 0.0004
+      },
+      "max_bit_imbalance": {
+        "statistic": 256,
+        "exceedances": 0,
+        "raw_p": 0.0001,
+        "adjusted_p": 0.0004
+      },
+      "column_sum_dispersion": {
+        "statistic": 0,
+        "exceedances": 9999,
+        "raw_p": 1.0,
+        "adjusted_p": 1
+      }
+    },
+    "column_stripes": {
+      "collision_deviation": {
+        "statistic": 7681,
+        "exceedances": 0,
+        "raw_p": 0.0001,
+        "adjusted_p": 0.0004
+      },
+      "adjacent_repeat_deviation": {
+        "statistic": 255,
+        "exceedances": 6361,
+        "raw_p": 0.6362,
+        "adjusted_p": 1
+      },
+      "max_bit_imbalance": {
+        "statistic": 256,
+        "exceedances": 0,
+        "raw_p": 0.0001,
+        "adjusted_p": 0.0004
+      },
+      "column_sum_dispersion": {
+        "statistic": 2818572288,
+        "exceedances": 0,
+        "raw_p": 0.0001,
+        "adjusted_p": 0.0004
+      }
+    }
+  },
+  "controls_passed": 4,
+  "rejected_at_familywise_005": [],
+  "wall_seconds": 1.8022973999904934,
+  "new_decryptions": []
+}

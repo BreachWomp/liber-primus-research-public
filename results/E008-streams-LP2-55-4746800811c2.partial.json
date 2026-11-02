@@ -1,0 +1,68 @@
+{
+  "status": "partial_not_complete",
+  "mode": "streams",
+  "pages": [
+    {
+      "page": "LP2-55",
+      "ciphertext_runes": "ᛝᚫᛗᛁᚹᛋᛒᛉᛗᛋᛇᚷᛞᚦᚫᚠᛡᚪᛒᚳᚢᚹᚱᛒᛠᚠᛉᛁᛗᚢᚳᛈᚻᛝᛚᛇᛗᛋᛞᛡᛈᚠᛒᚻᛇᚳᛇᛖᛠᛖᛁᚷᛉᚷᛋᛖᛋᛇᚦᚦᛖᛋᚦᛟᚳᛠᛁᛗᚳᛉᛞᛄᚢᛒᛖᛁ",
+      "rune_count": 76,
+      "f_count": 3,
+      "evaluated_key_sign_tasks": 12,
+      "dp_transitions": 262712,
+      "top": [
+        {
+          "score": -4.371253858145045,
+          "plaintext_runes": "ᚾᛇᚩᚢᛁᛁᛄᚩᚢᛁᛗᚳᛞᛖᛡᚠᛠᚦᛚᚪᛝᛋᚹᚩᛞᚠᚣᚳᚱᚻᛏᛚᛁᛏᛄᛋᛋᚣᛖᛟᛗᛈᛋᛗᛈᚠᚣᚱᚢᚷᚪᚾᛞᛗᛒᚠᛠᛋᛒᛝᚻᚾᛝᚠᚣᛁᚪᚾᚢᛝᚪᚾᛋᛒᛡᛈ",
+          "transliteration": "NEOOUIIJOUIMCDEIAFEATHLANGSWODFYCRHTLITJSSYEOEMPSMPFYRUGANDMBFEASBNGHNNGFYIANUNGANSBIAP",
+          "recipe": {
+            "family": "integer_totient",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 46,
+            "skip_positions": [
+              15,
+              25
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 21891,
+          "max_states": 516
+        },
+        {
+          "score": -4.375812835444533,
+          "plaintext_runes": "ᚾᚩᛚᛞᛏᚦᛞᚪᛈᚹᚱᚱᛉᚠᚠᚠᛞᚪᛗᛝᛞᛈᛁᛚᚹᚠᚾᚾᛞᚱᛗᚩᛡᚷᚢᚩᛝᛒᚩᚪᚢᛁᚻᚹᛚᚫᚻᚠᛋᛞᛝᛄᛠᚳᛝᚱᚩᚱᛁᛗᛠᛞᚣᛡᛄᛄᛞᚠᛁᚪᚾᛈᛒᛖᛈᛋ",
+          "transliteration": "NOLDTTHDAPWRRXFFFDAMNGDPILWFNNDRMOIAGUONGBOAUIHWLAEHFSDNGJEACNGRORIMEADYIAJJDFIANPBEPS",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "start": 97,
+            "skip_positions": [
+              15,
+              25
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 21907,
+          "max_states": 516
+        },
+        {
+          "score": -4.381086158787507,
+          "plaintext_runes": "ᚠᚷᚱᚣᚱᚣᚩᚦᛄᛝᛟᛖᛁᚾᚹᛗᛡᚩᚠᛞᚫᛏᛒᚹᚪᚱᚪᚩᛏᚱᛁᛠᚫᛋᚪᛖᚷᚱᛖᛄᚢᛗᛄᚻᛖᛗᚩᛋᛖᛁᛇᛏᚳᚩᛖᚠᚾᛁᚷᛇᚢᚱᚩᚱᚳᚢᛏᚦᛗᚳᛖᚻᚦᚢᚱᚦ",
+          "transliteration": "FGRYRYOTHJNGOEEINWMIAOFDAETBWARAOTRIEAAESAEGREJUMJHEMOSEIEOTCOEFNIGEOURORCUTTHMCEHTHURTH",
+          "recipe": {
+            "family": "prime_totient",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 141,
+            "skip_positions": []
+          },
+          "replay_verified": true,
+          "transitions": 21880,
+          "max_states": 516
+        }
+      ]
+    }
+  ],
+  "new_decryptions": []
+}

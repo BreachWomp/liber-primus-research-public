@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-10-19T17:56:16.716925+00:00",
+  "image_supported_cells": 5,
+  "inspected_crops": 16,
+  "numeric_byte_sha256": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+  "numeric_rejected_statistics": [],
+  "numeric_controls_passed": 4,
+  "feedback_pages": 55,
+  "feedback_recipes": 36078900,
+  "feedback_exact_controls": 3,
+  "selected_page": "LP2-49",
+  "top": {
+    "score": -5.0251404655748395,
+    "plaintext_runes": "ᛄᛏᛋᛏᛒᚪᛖᛁᛗᛋᚻᛝᚹᚻᚪᚣᚾᛞᚻᚪᚢᛖᛚᛏᚫᛋᚦᚳᛟᛟᚣᛖᛝᛖᚷᛇᚪᚣᛞᛡᚳᛄᚪᛉᛚᛚᛖᛏᚩᚣᚪᛞᚣᛏᚠᛠᛞᚹᚻᛡᛏᚳᚻᚾᛖᛚ",
+    "transliteration": "JTSTBAEIMSHNGWHAYNDHAUELTAESTHCOEOEYENGEGEOAYDIACJAXLLETOYADYTFEADWHIATCHNEL",
+    "recipe": {
+      "delay": 2,
+      "a": 3,
+      "b": 1,
+      "initial_key": [
+        17,
+        20
+      ],
+      "initial_plaintext": [
+        11,
+        16
+      ],
+      "F_policy": "none"
+    },
+    "reencryption_verified": true
+  },
+  "raw_p": 0.4,
+  "page_adjusted_p": 1,
+  "null_exceedances": 7,
+  "null_replicates": 19,
+  "pending_larger_calibration": false,
+  "candidate_records_recomputed": 174,
+  "tests_passed": 73,
+  "new_completed_processes": 77,
+  "seconds": 320.63428039988503,
+  "feedback_seconds": 318.78517239991925,
+  "feedback_orchestration_seconds": 319.4310204999929,
+  "phase_budget_seconds": 900,
+  "period3_searched": false,
+  "new_decryptions": []
+}

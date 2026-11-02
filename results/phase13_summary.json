@@ -1,0 +1,120 @@
+{
+  "created_at": "2026-10-20T14:59:36.073719+00:00",
+  "selected_page": "LP2-49",
+  "top": {
+    "key": [
+      11,
+      14,
+      3,
+      15,
+      15,
+      14,
+      11,
+      25,
+      28,
+      18,
+      2,
+      26,
+      11,
+      21,
+      20,
+      24
+    ],
+    "sign": 1,
+    "skip_positions": [
+      3,
+      33
+    ],
+    "language_score": -3.1092993595519944,
+    "score": -3.946617960171744,
+    "selected_phase": 0,
+    "dp_transitions": 1184,
+    "dp_max_states": 32,
+    "input_period": 16,
+    "coordinate_changes": 0,
+    "seed_index": 2,
+    "plaintext_runes": "ᚾᚩᛉᚠᚷᚻᚪᛏᚷᛚᚪᚱᛏᚣᛒᚣᛗᛁᚱᛈᚩᛈᚢᛚᛒᛖᛚᛖᛞᚹᚩᚾᚩᚠᚷᛇᚾᛁᚳᚪᚳᛁᛋᛗᛚᛠᛚᛁᛋᚻᛖᛈᛞᚩᛏᛖᚾᛖᛞᛋᚪᚾᛖᚩᚱᛖ",
+    "transliteration": "NOXFGHATGLARTYBYMIRPOPULBELEDWONOFGEONICACISMLEALISHEPDOTENEDSANEORE"
+  },
+  "unknown_pages": 55,
+  "controls_exact": 8,
+  "oracle_used": false,
+  "controls": [
+    {
+      "fixture": "LP1-03_04_divinity",
+      "exact": true,
+      "key_length": 8,
+      "skips": 11,
+      "oracle_used": false
+    },
+    {
+      "fixture": "LP1-14_15_circumference",
+      "exact": true,
+      "key_length": 13,
+      "skips": 2,
+      "oracle_used": false
+    },
+    {
+      "chapter": "X",
+      "paragraph": 3,
+      "exact": true,
+      "key_length": 5,
+      "skips": 6,
+      "oracle_used": false
+    },
+    {
+      "chapter": "X",
+      "paragraph": 5,
+      "exact": true,
+      "key_length": 13,
+      "skips": 6,
+      "oracle_used": false
+    },
+    {
+      "chapter": "XI",
+      "paragraph": 3,
+      "exact": true,
+      "key_length": 5,
+      "skips": 2,
+      "oracle_used": false
+    },
+    {
+      "chapter": "XI",
+      "paragraph": 4,
+      "exact": true,
+      "key_length": 13,
+      "skips": 9,
+      "oracle_used": false
+    },
+    {
+      "chapter": "XII",
+      "paragraph": 1,
+      "exact": true,
+      "key_length": 5,
+      "skips": 4,
+      "oracle_used": false
+    },
+    {
+      "chapter": "XII",
+      "paragraph": 3,
+      "exact": true,
+      "key_length": 13,
+      "skips": 6,
+      "oracle_used": false
+    }
+  ],
+  "raw_p": 0.2,
+  "bonferroni55": 1,
+  "null_exceedances": 3,
+  "null_replicates": 19,
+  "pending_larger_calibration": false,
+  "candidate_records_recomputed": 4226,
+  "seed_records_recomputed": 1044,
+  "restart_traces_checked": 1044,
+  "independent_schedule_optima": 87,
+  "tests_passed": 98,
+  "successful_tasks": 76,
+  "seconds": 359.5731512000784,
+  "family_accounted_seconds": 319.06591970002046,
+  "new_decryptions": []
+}

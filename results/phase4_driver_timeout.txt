@@ -1,0 +1,28 @@
+Command: python scripts/run_phase4_attacks.py --family selective --budget-seconds 400
+The running process loaded the earlier driver version. Source lines in the traceback reflect an on-disk update made for future runs, not the code loaded by this process.
+{'page': 'LP2-30', 'score': -6.170702951298908, 'seconds': 11.525511799991364}
+{'page': 'LP2-31', 'score': -6.111511519380545, 'seconds': 22.33741059998283}
+{'page': 'LP2-32', 'score': -5.799705660070133, 'seconds': 27.543043299985584}
+{'page': 'LP2-33', 'score': -6.078496882684788, 'seconds': 36.63278009998612}
+{'page': 'LP2-34', 'score': -6.193339502080948, 'seconds': 46.73926269999356}
+{"status": "completed", "output": "results/E018-pages-LP2-30_34-daa75bede1e5.json", "seconds": 46.746886599983554}
+
+Traceback (most recent call last):
+  File "C:\Users\neoro\Documents\ChatGPT\Cicada\scripts\run_phase4_attacks.py", line 38, in <module>
+    "subprocess_wall_seconds":time.perf_counter()-started}
+                                                           
+  File "C:\Users\neoro\Documents\ChatGPT\Cicada\scripts\run_phase4_attacks.py", line 29, in main
+    # subprocess.run has killed and waited for the child at this point.
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neoro\Documents\ChatGPT\Cicada\scripts\run_phase4_attacks.py", line 18, in call
+    remaining=budget-(time.perf_counter()-tick)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neoro\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neoro\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neoro\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1630, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['C:\\Users\\neoro\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe', 'experiments/external_selective_attack.py', '--mode', 'pages', '--first', '35', '--last', '39']' timed out after 8.645507500012172 seconds

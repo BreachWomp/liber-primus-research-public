@@ -1,0 +1,2280 @@
+{
+  "created_at": "2026-10-31T12:14:43.995412+00:00",
+  "status": "twentysixth_batch_affine_constant_no_supported_decryption",
+  "algebra": {
+    "experiment": "E071",
+    "direct_families_checked": 27608,
+    "max_absolute_error": 1.1368683772161603e-13,
+    "benchmark_seconds": 3.9631373999873176,
+    "benchmark_runes": 3316,
+    "screened_families": 659344,
+    "retained_families": 232,
+    "audit": [
+      {
+        "period": 4,
+        "families": 22736,
+        "score_sha256": "754c19da39b6eafe304007a701686ee7744175cab752e9e31583b1091d2783d5",
+        "rounded_score_sha256": "fb286547709dae67d0101fe8eb49961b55bb22960b74a72baab7cc942aee7c30"
+      },
+      {
+        "period": 5,
+        "families": 22736,
+        "score_sha256": "e7941a63ee374bf738781b9d938e3edeb17ace24066ac2ba14839335a24911f5",
+        "rounded_score_sha256": "78527d526c91b23e6003d6ea90aa358f54582551a6068202ed0030712b3f2a19"
+      },
+      {
+        "period": 6,
+        "families": 22736,
+        "score_sha256": "d965459ddff0eaea1b035dfd4c3b8b63f87ab44f262436bfa4dd3f60c170db92",
+        "rounded_score_sha256": "0eadf2a8081dc65ea7217af03f6f9e33efe00f6559e18e2fe4a6f8a37f93124c"
+      },
+      {
+        "period": 7,
+        "families": 22736,
+        "score_sha256": "0c1f03177febf4aa03c7a3d6751c91047026549210c3d45a23f8c9305ba61662",
+        "rounded_score_sha256": "d5463d74189af95617935538127e6faa2330fc489ee7a1b01a8c59524d2527dd"
+      },
+      {
+        "period": 8,
+        "families": 22736,
+        "score_sha256": "1a157f152955c738a09bbf8290cf29c0521779269bac7914ddd0d23a911db2ff",
+        "rounded_score_sha256": "9d31dc51267b06513deed9249833944ee13e625f6fd300b8c6376cbca92af567"
+      },
+      {
+        "period": 9,
+        "families": 22736,
+        "score_sha256": "e9f4d8a804e48e599f682a310b15b2d2d2a95b5505ddefddab93f04c22c0be14",
+        "rounded_score_sha256": "4674c02d074cf846210f2aba22d01cb8daa174830b5bb4e2abc839e64015fc9e"
+      },
+      {
+        "period": 10,
+        "families": 22736,
+        "score_sha256": "6472f269c74f9cb8a3ef9dcca4717ac8cf66cf870613a5773fca1b857febfe8d",
+        "rounded_score_sha256": "4443af3aeef64a09cfbb08a02e10e2fdcc4e0c13e1048eb1ac4e53becd025750"
+      },
+      {
+        "period": 11,
+        "families": 22736,
+        "score_sha256": "2220690a6de3619837b95e368eb744887b606271e33d5891d2c06cbb3c1e4b20",
+        "rounded_score_sha256": "68e4966a4ad33089ef7111590aa1accb9146f8adc7fefa0a463a7e4d50b33b2a"
+      },
+      {
+        "period": 12,
+        "families": 22736,
+        "score_sha256": "e45b2675acaa8f097cbfb5155104dd3c33bf583bbe8655badde7995b1c7a9bed",
+        "rounded_score_sha256": "44f3ae7ce3c679bf263c1690ab44887f565d48d6120c168f78765e8a1e714c6d"
+      },
+      {
+        "period": 13,
+        "families": 22736,
+        "score_sha256": "64de107b077fec1663b8d8febbf5b5dfa329493cf777f889110b1f5e12f3dba3",
+        "rounded_score_sha256": "d01be7d7b93ab1ef4151447622e08c24d704be2ed425884b79cc9561fc53a8ec"
+      },
+      {
+        "period": 14,
+        "families": 22736,
+        "score_sha256": "9bc02da4619510165a904ae3d6ceb7510e140dfc0fdbd5ed2ecf9789412a6459",
+        "rounded_score_sha256": "a8abbf3cf99a69e11cef644f4ead17d54ca50e089672f4c3c0d7c15f5db81704"
+      },
+      {
+        "period": 15,
+        "families": 22736,
+        "score_sha256": "9b358e0fc62727808dafc64f69bd65c508f554fcbe275611daeeaf1cff1305a3",
+        "rounded_score_sha256": "a5e0c7c0f460679eefa3b5df037bdcfaf33d00fa0e13bd2b111fd1b87f013c25"
+      },
+      {
+        "period": 16,
+        "families": 22736,
+        "score_sha256": "ababb967374c7775afd61a08a114f911f8feca0cbaf0e08c5e3fb2585cd6568e",
+        "rounded_score_sha256": "6fb32c829293da38f7cabaefd60054f95433f727fe1da5daf9e1104fa491e881"
+      },
+      {
+        "period": 17,
+        "families": 22736,
+        "score_sha256": "8585a646589800f33f7d637c1694bf17737ed035e39713a1f05622a32cb905db",
+        "rounded_score_sha256": "1f243333fa91d7e85215da2bd90f397d9dc7fd124e375ccd92383ec3d960264a"
+      },
+      {
+        "period": 18,
+        "families": 22736,
+        "score_sha256": "7912128a743eac4ab634665ab96bd338e1ce123955e88a460bd0f9ea4e3ee1da",
+        "rounded_score_sha256": "b00514d7dc10c8c2e864d0a6f4218bbe918d4cb7a48adc7c679ad1878a150d5a"
+      },
+      {
+        "period": 19,
+        "families": 22736,
+        "score_sha256": "27aea0cf7c0aeba76f6209e6df00964ffe3cb68df4d987c089304fd55f4fc549",
+        "rounded_score_sha256": "f7be8b292e8dc4c81475bea4513290ba8a63f4363dab03cd388124b2d3b0888f"
+      },
+      {
+        "period": 20,
+        "families": 22736,
+        "score_sha256": "ab1e77e2f8ce00f8a4230e69efcfc8511c7842f9cd7f9b6636ce485832380416",
+        "rounded_score_sha256": "e6d445f923ded6558eb6d9b89edcc32683b72f36f34cf30efaa2c203cc823e92"
+      },
+      {
+        "period": 21,
+        "families": 22736,
+        "score_sha256": "06c57e92124fe7371bd0e316cb4297c4510c288f2bbc613b20324c6a8a59091c",
+        "rounded_score_sha256": "232c3bd45e7af0d9a25d1c95bc6c9db240455e9fa330075cfdf6cc57b52023c0"
+      },
+      {
+        "period": 22,
+        "families": 22736,
+        "score_sha256": "f69b1589bd9c19ca76120d61afd683da1c9b21c4bb86293fbd43040f3b45a0d9",
+        "rounded_score_sha256": "a07e02ddcdc308dba926f236ef15bec4544d7220170d7edd8b098be029501152"
+      },
+      {
+        "period": 23,
+        "families": 22736,
+        "score_sha256": "5ac220afd0baef98a6b6970a5a90d922367958f6bfd53edd5287c432e640f734",
+        "rounded_score_sha256": "ca25358346cee066ada1610199089ed175db1159fb87c9468d204565d4e70015"
+      },
+      {
+        "period": 24,
+        "families": 22736,
+        "score_sha256": "9eeeb0897a490a21be096a297d3d2100ddccddd5b595be72712b2565de541f6c",
+        "rounded_score_sha256": "d3b277e808acb0c00501d8ef6d29855f0c20a8eb00a0e311741a7c7bfe3620fe"
+      },
+      {
+        "period": 25,
+        "families": 22736,
+        "score_sha256": "a7cd5239f49496fefe95e9e523a430446fa1fc3d9be7943c3e469031f37d211c",
+        "rounded_score_sha256": "1a0dc3353ad03646656f60fbc6721ed6e8a2c81a29dbcf1ff6987e66d2b5eb49"
+      },
+      {
+        "period": 26,
+        "families": 22736,
+        "score_sha256": "3c690795b38394eca52249d5bf9001e70dd03e19c9d0d0537d280b5bc0efbcb5",
+        "rounded_score_sha256": "6b85534f427b5ba89794188e090ee1aa5f3281e772d5c82191d04fd78b5acbf4"
+      },
+      {
+        "period": 27,
+        "families": 22736,
+        "score_sha256": "1572a9dabe57b4a5c3b0024034fce811ac4995c42a6add705d3554d1bddf2aa2",
+        "rounded_score_sha256": "406cb97916358ee9df01cfdcad62ab5f6cb0046978332701875098632e9b92d3"
+      },
+      {
+        "period": 28,
+        "families": 22736,
+        "score_sha256": "09ba6b8620fee4a9c45dbedb152ae48c581baa67a84f9c8447dc405c5427169b",
+        "rounded_score_sha256": "a19342743f11feb8e38b89fda2a1de6d65764188c1c187390736f92335b39652"
+      },
+      {
+        "period": 29,
+        "families": 22736,
+        "score_sha256": "723f3bd4db17ae21339dd9321e91f9e0c97533d5e4542d02a24c544f5630752d",
+        "rounded_score_sha256": "13062019eae6c33a23365f2599f508b61f9d62639defb8eb4ec7a6857617c23c"
+      },
+      {
+        "period": 30,
+        "families": 22736,
+        "score_sha256": "6c07c4a97e623d66c1dfdabae56cb362c5190d94be942e9ce603f022a43c6bfc",
+        "rounded_score_sha256": "75440d553a2d60a983bf23c0d4e1c21753cab345182c68c2b5774c6da9eb7684"
+      },
+      {
+        "period": 31,
+        "families": 22736,
+        "score_sha256": "0f2d20cfa35e314bd22458efad9b6ab9bfda6a6248ff5c7d496be584f35568fb",
+        "rounded_score_sha256": "c5be76336f8fd39923ca0b0329f197e2c8b63674969aacd00c3c8ca8a7ef7cc2"
+      },
+      {
+        "period": 32,
+        "families": 22736,
+        "score_sha256": "cb156ac2d8fccd9a223cf7686edcb93490c805281ee5303e915ea1a32bb62735",
+        "rounded_score_sha256": "ec051b49162839d79e4a24dd8c482d368e6005cf39b68473364702f4441223a1"
+      }
+    ],
+    "gate_passed": true,
+    "wall_seconds": 10.983614199911244,
+    "new_decryptions": []
+  },
+  "controls": {
+    "full_gate_passed": true,
+    "controls": [
+      {
+        "index": 0,
+        "runes": 200,
+        "key_length": 13,
+        "cipher_sign": 2,
+        "feedback_sign": 1,
+        "constant": 2,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 200,
+        "output": "results/E072-control-0-217d34bb9c3f.json"
+      },
+      {
+        "index": 1,
+        "runes": 200,
+        "key_length": 23,
+        "cipher_sign": 7,
+        "feedback_sign": 3,
+        "constant": 7,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 200,
+        "output": "results/E072-control-1-5d93663f858a.json"
+      },
+      {
+        "index": 2,
+        "runes": 200,
+        "key_length": 31,
+        "cipher_sign": 14,
+        "feedback_sign": 15,
+        "constant": 12,
+        "family_rank": 3,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 200,
+        "output": "results/E072-control-2-aa201b9b92c6.json"
+      },
+      {
+        "index": 3,
+        "runes": 300,
+        "key_length": 13,
+        "cipher_sign": 27,
+        "feedback_sign": 1,
+        "constant": 17,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 300,
+        "output": "results/E072-control-3-6ee3870e7377.json"
+      },
+      {
+        "index": 4,
+        "runes": 300,
+        "key_length": 23,
+        "cipher_sign": 2,
+        "feedback_sign": 3,
+        "constant": 22,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 300,
+        "output": "results/E072-control-4-0f1537b93a71.json"
+      },
+      {
+        "index": 5,
+        "runes": 300,
+        "key_length": 31,
+        "cipher_sign": 7,
+        "feedback_sign": 15,
+        "constant": 27,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 300,
+        "output": "results/E072-control-5-1e77406be88a.json"
+      },
+      {
+        "index": 6,
+        "runes": 729,
+        "key_length": 13,
+        "cipher_sign": 14,
+        "feedback_sign": 1,
+        "constant": 4,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 729,
+        "output": "results/E072-control-6-c2736df08115.json"
+      },
+      {
+        "index": 7,
+        "runes": 729,
+        "key_length": 23,
+        "cipher_sign": 27,
+        "feedback_sign": 3,
+        "constant": 9,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 729,
+        "output": "results/E072-control-7-bbc7d6f528e1.json"
+      },
+      {
+        "index": 8,
+        "runes": 729,
+        "key_length": 31,
+        "cipher_sign": 2,
+        "feedback_sign": 15,
+        "constant": 14,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 729,
+        "output": "results/E072-control-8-3b84cd0f079b.json"
+      },
+      {
+        "index": 9,
+        "runes": 3316,
+        "key_length": 13,
+        "cipher_sign": 7,
+        "feedback_sign": 1,
+        "constant": 19,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 3316,
+        "output": "results/E072-control-9-6c46631bee74.json"
+      },
+      {
+        "index": 10,
+        "runes": 3316,
+        "key_length": 23,
+        "cipher_sign": 14,
+        "feedback_sign": 3,
+        "constant": 24,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 3316,
+        "output": "results/E072-control-10-b9aab5278eae.json"
+      },
+      {
+        "index": 11,
+        "runes": 3316,
+        "key_length": 32,
+        "cipher_sign": 27,
+        "feedback_sign": 15,
+        "constant": 1,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 3316,
+        "output": "results/E072-control-11-c41311282397.json"
+      },
+      {
+        "index": 12,
+        "runes": 200,
+        "key_length": 13,
+        "cipher_sign": 2,
+        "feedback_sign": 3,
+        "constant": 0,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 200,
+        "output": "results/E072-control-12-e8338982fe39.json"
+      },
+      {
+        "index": 13,
+        "runes": 300,
+        "key_length": 13,
+        "cipher_sign": 27,
+        "feedback_sign": 3,
+        "constant": 0,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 300,
+        "output": "results/E072-control-13-3f9617a04e22.json"
+      },
+      {
+        "index": 14,
+        "runes": 729,
+        "key_length": 13,
+        "cipher_sign": 14,
+        "feedback_sign": 3,
+        "constant": 0,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 729,
+        "output": "results/E072-control-14-8579d0091c72.json"
+      },
+      {
+        "index": 15,
+        "runes": 3316,
+        "key_length": 32,
+        "cipher_sign": 27,
+        "feedback_sign": 15,
+        "constant": 0,
+        "family_rank": 1,
+        "family_retained": true,
+        "exact": true,
+        "injected_recipe_exact": true,
+        "correct_runes": 3316,
+        "output": "results/E072-control-15-59699a290a84.json"
+      }
+    ],
+    "null_score": -4.318018985661038,
+    "entries": [
+      {
+        "id": "E072-control-0",
+        "fingerprint": "217d34bb9c3f8f1ce7bfbb6f71c8debbf03ede9463acc9173cd2140d55c48b42",
+        "output": "results/E072-control-0-217d34bb9c3f.json",
+        "sha256": "4185c135f6e57adbeebff03154576a66e1966301669270324d02840ef50429a6"
+      },
+      {
+        "id": "E072-control-1",
+        "fingerprint": "5d93663f858a350e82eb1fa6d0123352b87cf72422923c036b00187d5343bcd0",
+        "output": "results/E072-control-1-5d93663f858a.json",
+        "sha256": "5a47bea5afefa74b298373b144d85ebca564cf696c3efe2b391d6ed003de4175"
+      },
+      {
+        "id": "E072-control-2",
+        "fingerprint": "aa201b9b92c6943a5b0c7eccc32cf5900cf6a1c37b6e4d23ccd0ecf908d87526",
+        "output": "results/E072-control-2-aa201b9b92c6.json",
+        "sha256": "796262f219156c9caf2ef6542a1544251be67a05fcba56475b0df5d700226764"
+      },
+      {
+        "id": "E072-control-3",
+        "fingerprint": "6ee3870e7377c0e2255f1ab4c870c205954897a7700dd52aac98b9d4461856ed",
+        "output": "results/E072-control-3-6ee3870e7377.json",
+        "sha256": "ec3a157560e36b5faf7bd0a6627a30994c89e9efb6fa07678afcde6c109f8a51"
+      },
+      {
+        "id": "E072-control-4",
+        "fingerprint": "0f1537b93a7112cbb3250d9a93b21df0fc9c69dd267c02c1ca079154abe60513",
+        "output": "results/E072-control-4-0f1537b93a71.json",
+        "sha256": "5fa81049f4ab4721a2cb67f9bdc165b94c2386b4b495c5627a7f07eeecca787b"
+      },
+      {
+        "id": "E072-control-5",
+        "fingerprint": "1e77406be88af22412776a5c7130fcf360e5f9108a225a6877d3bf7254176428",
+        "output": "results/E072-control-5-1e77406be88a.json",
+        "sha256": "aafeba6b0771a77f1a8c6c0ea434c3708735f41206fe7195d8d970ac5f644cbf"
+      },
+      {
+        "id": "E072-control-6",
+        "fingerprint": "c2736df0811599f4f93330395f852ddc8e90f948af688cbb8a0d9dc81aee0889",
+        "output": "results/E072-control-6-c2736df08115.json",
+        "sha256": "b5019f2353e54c175fac188df5f38540023182d5a8b379d6915059b6386b1ed5"
+      },
+      {
+        "id": "E072-control-7",
+        "fingerprint": "bbc7d6f528e118669ff677057d28edb5310ef20a3a8577cc972f545a6a5f1464",
+        "output": "results/E072-control-7-bbc7d6f528e1.json",
+        "sha256": "f2116b38c2c92680948bea858be4f4cb6c9029e878e4437a1aeba49e29abfdbb"
+      },
+      {
+        "id": "E072-control-8",
+        "fingerprint": "3b84cd0f079b1233529159e1e800f31969d9f0eeeee14efb1ff3e1fc8f6dff01",
+        "output": "results/E072-control-8-3b84cd0f079b.json",
+        "sha256": "6b9aff4891461c03a2143d8d758065f3114cad0e7736cc498119a3ff78e7a336"
+      },
+      {
+        "id": "E072-control-9",
+        "fingerprint": "6c46631bee74f1827eccfd361ca2146487c04e97c55683b799eca3b47a14ee4b",
+        "output": "results/E072-control-9-6c46631bee74.json",
+        "sha256": "33d127844d73b6c2d227196b609418e3a9d098ed6df15d2a0be488569433aa5f"
+      },
+      {
+        "id": "E072-control-10",
+        "fingerprint": "b9aab5278eae1038195c3456c49c6148e581e580f08499209840f17ea1fe211a",
+        "output": "results/E072-control-10-b9aab5278eae.json",
+        "sha256": "dae3d7ff714793b2246072d01de5e552d94a91d85bd822ce1f1880ad52b9a4fa"
+      },
+      {
+        "id": "E072-control-11",
+        "fingerprint": "c413112823976becb75d763a3de4e88ced3f34c8ba638d6500ad25fc1f540061",
+        "output": "results/E072-control-11-c41311282397.json",
+        "sha256": "e03f3b8f75aa1f5e5e150ba3f2e442eea2123967ee393e2dd3d65f4d6e35cc19"
+      },
+      {
+        "id": "E072-control-12",
+        "fingerprint": "e8338982fe39df3cc8bc14bbe712b13f79f84e895860996759f8bed0355e36a9",
+        "output": "results/E072-control-12-e8338982fe39.json",
+        "sha256": "83e4a8f98b4d6ece900d189ef09fb39f644493a959516d7dca810718d842ac73"
+      },
+      {
+        "id": "E072-control-13",
+        "fingerprint": "3f9617a04e220200081f3fac5ec72b61dcf057f23eec28ce402949586104127f",
+        "output": "results/E072-control-13-3f9617a04e22.json",
+        "sha256": "cab7af295e3e069c505431243c20e5903ccd359f948a76f23f3facf06ea6f883"
+      },
+      {
+        "id": "E072-control-14",
+        "fingerprint": "8579d0091c72ecb370ab199596b11952b2fb02a5a77bec294e7e0398254b49b6",
+        "output": "results/E072-control-14-8579d0091c72.json",
+        "sha256": "0c28fb814b739ab45d328957ef8bb467f2f6fc1fa1bd7e74613e33979aad6d37"
+      },
+      {
+        "id": "E072-control-15",
+        "fingerprint": "59699a290a843526670dbb6cc2a1697771d4ee71c3a627cd6245bb4e4ecb6357",
+        "output": "results/E072-control-15-59699a290a84.json",
+        "sha256": "71efe14ba01e42e2cdb42c8b3be5033e783e6ca68b919161f4eee2f42d8ae9ac"
+      },
+      {
+        "id": "E072-null-5",
+        "fingerprint": "03ab5dc31b1fd1427fdafb58309700e8d868689e6a1fb4d4ec55eed3f4708f6a",
+        "output": "results/E072-null-5-03ab5dc31b1f.json",
+        "sha256": "575c24348fafb0b6e331759d0ce5e707ade8bbf6d9b3e5d1db7d620fd99eb487"
+      }
+    ],
+    "validation": {
+      "scalar_model_table_entries": 732540,
+      "reference_sequence_crosschecks": 12,
+      "replayed_full_screen_scores": 11208848,
+      "scalar_decodings": 102960,
+      "independent_retained_family_scores": 3944,
+      "independent_injected_family_scores": 16,
+      "seeded_initializers_checked": 31552,
+      "independent_trigram_coordinate_optima": 31007,
+      "initial_and_final_scores": 63104,
+      "candidate_score_pairs": 23641,
+      "fourgram_trace_scores": 407,
+      "independent_fourgram_coordinate_optima": 204,
+      "reencryptions": 51
+    },
+    "seconds": 638.9253125000978,
+    "peak_sampled_bytes": 138960896,
+    "validation_seconds": 238.1712511999649,
+    "verifier_sha256": "87040bbc8bdcf169a96dcd6bd6bfec419a6384a6211a8323e0fda7848394c349",
+    "verification_limits": "All full screens replayed. Independent direct queues validate every retained family and injected family; E071 independently enumerates27608 families. This is not a separate full-grid implementation for every input.",
+    "new_decryptions": []
+  },
+  "unknown": {
+    "sections": [
+      {
+        "section": "LP2-00",
+        "replicate": 0,
+        "runes": 262,
+        "score": -4.049275387834127,
+        "key_length": 32,
+        "cipher_sign": 9,
+        "feedback_sign": 7,
+        "constant": 9,
+        "output": "results/E073-section-LP2-00-8c5e10eaf2ce.json"
+      },
+      {
+        "section": "LP2-01",
+        "replicate": 0,
+        "runes": 266,
+        "score": -4.079168015407659,
+        "key_length": 32,
+        "cipher_sign": 27,
+        "feedback_sign": 10,
+        "constant": 23,
+        "output": "results/E073-section-LP2-01-15d90f8eb4d6.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 0,
+        "runes": 201,
+        "score": -3.6642211332779917,
+        "key_length": 31,
+        "cipher_sign": 19,
+        "feedback_sign": 23,
+        "constant": 2,
+        "output": "results/E073-section-LP2-02-33dc73aa96ab.json"
+      },
+      {
+        "section": "LP2-03",
+        "replicate": 0,
+        "runes": 217,
+        "score": -3.8173417218415846,
+        "key_length": 31,
+        "cipher_sign": 1,
+        "feedback_sign": 22,
+        "constant": 24,
+        "output": "results/E073-section-LP2-03-7c79a47ff2fd.json"
+      },
+      {
+        "section": "LP2-04",
+        "replicate": 0,
+        "runes": 261,
+        "score": -4.110783902290484,
+        "key_length": 30,
+        "cipher_sign": 26,
+        "feedback_sign": 16,
+        "constant": 14,
+        "output": "results/E073-section-LP2-04-58d9400f14e1.json"
+      },
+      {
+        "section": "LP2-05",
+        "replicate": 0,
+        "runes": 263,
+        "score": -4.115218854840738,
+        "key_length": 32,
+        "cipher_sign": 11,
+        "feedback_sign": 27,
+        "constant": 22,
+        "output": "results/E073-section-LP2-05-e8c647c393cf.json"
+      },
+      {
+        "section": "LP2-07",
+        "replicate": 0,
+        "runes": 208,
+        "score": -3.6981057607806562,
+        "key_length": 32,
+        "cipher_sign": 1,
+        "feedback_sign": 2,
+        "constant": 5,
+        "output": "results/E073-section-LP2-07-ae4e78e43728.json"
+      },
+      {
+        "section": "LP2-08",
+        "replicate": 0,
+        "runes": 255,
+        "score": -4.032793491553669,
+        "key_length": 31,
+        "cipher_sign": 27,
+        "feedback_sign": 2,
+        "constant": 10,
+        "output": "results/E073-section-LP2-08-6689dc480265.json"
+      },
+      {
+        "section": "LP2-09",
+        "replicate": 0,
+        "runes": 268,
+        "score": -4.046354290100741,
+        "key_length": 32,
+        "cipher_sign": 19,
+        "feedback_sign": 15,
+        "constant": 25,
+        "output": "results/E073-section-LP2-09-be63141abc86.json"
+      },
+      {
+        "section": "LP2-10",
+        "replicate": 0,
+        "runes": 263,
+        "score": -4.097869991267684,
+        "key_length": 31,
+        "cipher_sign": 19,
+        "feedback_sign": 3,
+        "constant": 28,
+        "output": "results/E073-section-LP2-10-43811c94bfba.json"
+      },
+      {
+        "section": "LP2-11",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.211309303871854,
+        "key_length": 32,
+        "cipher_sign": 19,
+        "feedback_sign": 11,
+        "constant": 21,
+        "output": "results/E073-section-LP2-11-1defa75e813c.json"
+      },
+      {
+        "section": "LP2-12",
+        "replicate": 0,
+        "runes": 261,
+        "score": -4.131151859997946,
+        "key_length": 32,
+        "cipher_sign": 13,
+        "feedback_sign": 6,
+        "constant": 11,
+        "output": "results/E073-section-LP2-12-050d7d2ddd85.json"
+      },
+      {
+        "section": "LP2-13",
+        "replicate": 0,
+        "runes": 272,
+        "score": -4.134328548123375,
+        "key_length": 32,
+        "cipher_sign": 8,
+        "feedback_sign": 5,
+        "constant": 16,
+        "output": "results/E073-section-LP2-13-e65f23b48abf.json"
+      },
+      {
+        "section": "LP2-16",
+        "replicate": 0,
+        "runes": 267,
+        "score": -3.9839631198210714,
+        "key_length": 32,
+        "cipher_sign": 18,
+        "feedback_sign": 16,
+        "constant": 25,
+        "output": "results/E073-section-LP2-16-807a74f57aa0.json"
+      },
+      {
+        "section": "LP2-17",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.186697582021271,
+        "key_length": 29,
+        "cipher_sign": 21,
+        "feedback_sign": 3,
+        "constant": 6,
+        "output": "results/E073-section-LP2-17-4124647a2c2b.json"
+      },
+      {
+        "section": "LP2-18",
+        "replicate": 0,
+        "runes": 260,
+        "score": -3.9732630266828375,
+        "key_length": 31,
+        "cipher_sign": 13,
+        "feedback_sign": 2,
+        "constant": 26,
+        "output": "results/E073-section-LP2-18-11a0088ef571.json"
+      },
+      {
+        "section": "LP2-19",
+        "replicate": 0,
+        "runes": 271,
+        "score": -4.215476305214191,
+        "key_length": 32,
+        "cipher_sign": 28,
+        "feedback_sign": 11,
+        "constant": 9,
+        "output": "results/E073-section-LP2-19-dc5a8ca5b81c.json"
+      },
+      {
+        "section": "LP2-20",
+        "replicate": 0,
+        "runes": 269,
+        "score": -4.0876570127806335,
+        "key_length": 32,
+        "cipher_sign": 3,
+        "feedback_sign": 4,
+        "constant": 25,
+        "output": "results/E073-section-LP2-20-79020f6f632e.json"
+      },
+      {
+        "section": "LP2-21",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.17850753959335,
+        "key_length": 32,
+        "cipher_sign": 24,
+        "feedback_sign": 27,
+        "constant": 11,
+        "output": "results/E073-section-LP2-21-18d1d1cc1e58.json"
+      },
+      {
+        "section": "LP2-23",
+        "replicate": 0,
+        "runes": 213,
+        "score": -3.744364584571224,
+        "key_length": 31,
+        "cipher_sign": 2,
+        "feedback_sign": 7,
+        "constant": 24,
+        "output": "results/E073-section-LP2-23-e07b22f3ee93.json"
+      },
+      {
+        "section": "LP2-24",
+        "replicate": 0,
+        "runes": 270,
+        "score": -4.112037682602608,
+        "key_length": 32,
+        "cipher_sign": 9,
+        "feedback_sign": 15,
+        "constant": 7,
+        "output": "results/E073-section-LP2-24-d9d019741b83.json"
+      },
+      {
+        "section": "LP2-25",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.208060852752011,
+        "key_length": 31,
+        "cipher_sign": 4,
+        "feedback_sign": 14,
+        "constant": 11,
+        "output": "results/E073-section-LP2-25-c0636c0d62d9.json"
+      },
+      {
+        "section": "LP2-26",
+        "replicate": 0,
+        "runes": 265,
+        "score": -4.181733741410543,
+        "key_length": 29,
+        "cipher_sign": 7,
+        "feedback_sign": 6,
+        "constant": 21,
+        "output": "results/E073-section-LP2-26-6cdcb9b31385.json"
+      },
+      {
+        "section": "LP2-27",
+        "replicate": 0,
+        "runes": 234,
+        "score": -3.869667414081451,
+        "key_length": 32,
+        "cipher_sign": 11,
+        "feedback_sign": 9,
+        "constant": 15,
+        "output": "results/E073-section-LP2-27-c2386cfc1fdd.json"
+      },
+      {
+        "section": "LP2-28",
+        "replicate": 0,
+        "runes": 269,
+        "score": -4.0761726353778975,
+        "key_length": 32,
+        "cipher_sign": 4,
+        "feedback_sign": 8,
+        "constant": 15,
+        "output": "results/E073-section-LP2-28-93fb3e46f223.json"
+      },
+      {
+        "section": "LP2-29",
+        "replicate": 0,
+        "runes": 277,
+        "score": -4.242051552901763,
+        "key_length": 30,
+        "cipher_sign": 20,
+        "feedback_sign": 22,
+        "constant": 26,
+        "output": "results/E073-section-LP2-29-a17ca9d0a381.json"
+      },
+      {
+        "section": "LP2-30",
+        "replicate": 0,
+        "runes": 263,
+        "score": -4.040405504542504,
+        "key_length": 31,
+        "cipher_sign": 21,
+        "feedback_sign": 5,
+        "constant": 15,
+        "output": "results/E073-section-LP2-30-dadb8075836b.json"
+      },
+      {
+        "section": "LP2-31",
+        "replicate": 0,
+        "runes": 269,
+        "score": -4.1453743504166,
+        "key_length": 32,
+        "cipher_sign": 11,
+        "feedback_sign": 2,
+        "constant": 9,
+        "output": "results/E073-section-LP2-31-e79b58eac880.json"
+      },
+      {
+        "section": "LP2-33",
+        "replicate": 0,
+        "runes": 214,
+        "score": -3.8662103178465204,
+        "key_length": 31,
+        "cipher_sign": 7,
+        "feedback_sign": 5,
+        "constant": 8,
+        "output": "results/E073-section-LP2-33-8c0b5157ada0.json"
+      },
+      {
+        "section": "LP2-34",
+        "replicate": 0,
+        "runes": 261,
+        "score": -4.136165358095128,
+        "key_length": 32,
+        "cipher_sign": 15,
+        "feedback_sign": 25,
+        "constant": 17,
+        "output": "results/E073-section-LP2-34-892f09332030.json"
+      },
+      {
+        "section": "LP2-35",
+        "replicate": 0,
+        "runes": 271,
+        "score": -4.1759754955818655,
+        "key_length": 32,
+        "cipher_sign": 25,
+        "feedback_sign": 27,
+        "constant": 20,
+        "output": "results/E073-section-LP2-35-72bb11691267.json"
+      },
+      {
+        "section": "LP2-36",
+        "replicate": 0,
+        "runes": 238,
+        "score": -3.9265302799059274,
+        "key_length": 32,
+        "cipher_sign": 11,
+        "feedback_sign": 15,
+        "constant": 13,
+        "output": "results/E073-section-LP2-36-fc6d6cc5f36a.json"
+      },
+      {
+        "section": "LP2-37",
+        "replicate": 0,
+        "runes": 228,
+        "score": -3.891313176604086,
+        "key_length": 31,
+        "cipher_sign": 27,
+        "feedback_sign": 15,
+        "constant": 28,
+        "output": "results/E073-section-LP2-37-bbb23d14d6bc.json"
+      },
+      {
+        "section": "LP2-38",
+        "replicate": 0,
+        "runes": 228,
+        "score": -3.9770793829248783,
+        "key_length": 32,
+        "cipher_sign": 25,
+        "feedback_sign": 16,
+        "constant": 9,
+        "output": "results/E073-section-LP2-38-3a6dbdf9f6be.json"
+      },
+      {
+        "section": "LP2-39",
+        "replicate": 0,
+        "runes": 240,
+        "score": -4.005728959534649,
+        "key_length": 31,
+        "cipher_sign": 28,
+        "feedback_sign": 21,
+        "constant": 10,
+        "output": "results/E073-section-LP2-39-83b2220b5dc3.json"
+      },
+      {
+        "section": "LP2-40",
+        "replicate": 0,
+        "runes": 231,
+        "score": -3.941307843947731,
+        "key_length": 29,
+        "cipher_sign": 1,
+        "feedback_sign": 24,
+        "constant": 1,
+        "output": "results/E073-section-LP2-40-ef39478ddbca.json"
+      },
+      {
+        "section": "LP2-41",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.149682645036624,
+        "key_length": 31,
+        "cipher_sign": 4,
+        "feedback_sign": 18,
+        "constant": 19,
+        "output": "results/E073-section-LP2-41-1ce625efe80f.json"
+      },
+      {
+        "section": "LP2-42",
+        "replicate": 0,
+        "runes": 272,
+        "score": -4.18653469731382,
+        "key_length": 30,
+        "cipher_sign": 22,
+        "feedback_sign": 4,
+        "constant": 18,
+        "output": "results/E073-section-LP2-42-a0128f182606.json"
+      },
+      {
+        "section": "LP2-43",
+        "replicate": 0,
+        "runes": 274,
+        "score": -4.21024847150734,
+        "key_length": 31,
+        "cipher_sign": 25,
+        "feedback_sign": 19,
+        "constant": 13,
+        "output": "results/E073-section-LP2-43-d6fdbc5cf117.json"
+      },
+      {
+        "section": "LP2-44",
+        "replicate": 0,
+        "runes": 273,
+        "score": -4.171096850818667,
+        "key_length": 30,
+        "cipher_sign": 14,
+        "feedback_sign": 14,
+        "constant": 10,
+        "output": "results/E073-section-LP2-44-d24b7e2f6228.json"
+      },
+      {
+        "section": "LP2-45",
+        "replicate": 0,
+        "runes": 270,
+        "score": -4.169673820143132,
+        "key_length": 31,
+        "cipher_sign": 10,
+        "feedback_sign": 20,
+        "constant": 5,
+        "output": "results/E073-section-LP2-45-286840f1f88b.json"
+      },
+      {
+        "section": "LP2-46",
+        "replicate": 0,
+        "runes": 270,
+        "score": -4.224878204680305,
+        "key_length": 32,
+        "cipher_sign": 3,
+        "feedback_sign": 6,
+        "constant": 25,
+        "output": "results/E073-section-LP2-46-f23817542194.json"
+      },
+      {
+        "section": "LP2-47",
+        "replicate": 0,
+        "runes": 274,
+        "score": -4.174121293946122,
+        "key_length": 32,
+        "cipher_sign": 8,
+        "feedback_sign": 2,
+        "constant": 18,
+        "output": "results/E073-section-LP2-47-51a32f643caf.json"
+      },
+      {
+        "section": "LP2-48",
+        "replicate": 0,
+        "runes": 271,
+        "score": -4.130168606056609,
+        "key_length": 32,
+        "cipher_sign": 7,
+        "feedback_sign": 23,
+        "constant": 13,
+        "output": "results/E073-section-LP2-48-5861f7b1fca0.json"
+      },
+      {
+        "section": "LP2-52",
+        "replicate": 0,
+        "runes": 263,
+        "score": -4.176116839387665,
+        "key_length": 30,
+        "cipher_sign": 27,
+        "feedback_sign": 7,
+        "constant": 2,
+        "output": "results/E073-section-LP2-52-202146a992df.json"
+      },
+      {
+        "section": "LP2-54",
+        "replicate": 0,
+        "runes": 232,
+        "score": -3.9045869701559437,
+        "key_length": 31,
+        "cipher_sign": 27,
+        "feedback_sign": 2,
+        "constant": 9,
+        "output": "results/E073-section-LP2-54-c9b47e6291d5.json"
+      },
+      {
+        "section": "LP2-00_02",
+        "replicate": 0,
+        "runes": 729,
+        "score": -5.266653085793978,
+        "key_length": 32,
+        "cipher_sign": 2,
+        "feedback_sign": 2,
+        "constant": 2,
+        "output": "results/E073-section-LP2-00_02-9bc26cd56576.json"
+      },
+      {
+        "section": "LP2-03_07",
+        "replicate": 0,
+        "runes": 1145,
+        "score": -5.613540900760433,
+        "key_length": 32,
+        "cipher_sign": 14,
+        "feedback_sign": 3,
+        "constant": 25,
+        "output": "results/E073-section-LP2-03_07-b16a1a681b26.json"
+      },
+      {
+        "section": "LP2-08_14",
+        "replicate": 0,
+        "runes": 1729,
+        "score": -5.910716946753039,
+        "key_length": 32,
+        "cipher_sign": 23,
+        "feedback_sign": 4,
+        "constant": 24,
+        "output": "results/E073-section-LP2-08_14-535b25669ff3.json"
+      },
+      {
+        "section": "LP2-15_22",
+        "replicate": 0,
+        "runes": 1903,
+        "score": -5.956971441961974,
+        "key_length": 31,
+        "cipher_sign": 24,
+        "feedback_sign": 16,
+        "constant": 22,
+        "output": "results/E073-section-LP2-15_22-85466b62268a.json"
+      },
+      {
+        "section": "LP2-23_26",
+        "replicate": 0,
+        "runes": 1021,
+        "score": -5.545310598912115,
+        "key_length": 31,
+        "cipher_sign": 16,
+        "feedback_sign": 4,
+        "constant": 6,
+        "output": "results/E073-section-LP2-23_26-46562f5ab62f.json"
+      },
+      {
+        "section": "LP2-27_32",
+        "replicate": 0,
+        "runes": 1433,
+        "score": -5.747922134397468,
+        "key_length": 32,
+        "cipher_sign": 18,
+        "feedback_sign": 26,
+        "constant": 19,
+        "output": "results/E073-section-LP2-27_32-49c0070ef78a.json"
+      },
+      {
+        "section": "LP2-33_39",
+        "replicate": 0,
+        "runes": 1680,
+        "score": -5.894594197995498,
+        "key_length": 31,
+        "cipher_sign": 25,
+        "feedback_sign": 20,
+        "constant": 20,
+        "output": "results/E073-section-LP2-33_39-c3efc392f6d9.json"
+      },
+      {
+        "section": "LP2-40_53",
+        "replicate": 0,
+        "runes": 3008,
+        "score": -6.15952662625054,
+        "key_length": 32,
+        "cipher_sign": 5,
+        "feedback_sign": 6,
+        "constant": 23,
+        "output": "results/E073-section-LP2-40_53-5b566a4cd127.json"
+      },
+      {
+        "section": "LP2-54_55",
+        "replicate": 0,
+        "runes": 308,
+        "score": -4.2572986578008205,
+        "key_length": 32,
+        "cipher_sign": 21,
+        "feedback_sign": 9,
+        "constant": 9,
+        "output": "results/E073-section-LP2-54_55-53f00e3b4ca4.json"
+      },
+      {
+        "section": "LP2-40_55",
+        "replicate": 0,
+        "runes": 3316,
+        "score": -6.196766220148618,
+        "key_length": 32,
+        "cipher_sign": 28,
+        "feedback_sign": 13,
+        "constant": 3,
+        "output": "results/E073-section-LP2-40_55-0f5acbda1b94.json"
+      }
+    ],
+    "nulls": [
+      {
+        "section": "LP2-02",
+        "replicate": 0,
+        "runes": 201,
+        "score": -3.670738295881281,
+        "key_length": 32,
+        "cipher_sign": 14,
+        "feedback_sign": 6,
+        "constant": 23,
+        "output": "results/E073-null-LP2-02-00-bd75273fccab.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 1,
+        "runes": 201,
+        "score": -3.6352141329465826,
+        "key_length": 31,
+        "cipher_sign": 2,
+        "feedback_sign": 2,
+        "constant": 15,
+        "output": "results/E073-null-LP2-02-01-f51e09cc833e.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 2,
+        "runes": 201,
+        "score": -3.644313080351811,
+        "key_length": 32,
+        "cipher_sign": 5,
+        "feedback_sign": 18,
+        "constant": 8,
+        "output": "results/E073-null-LP2-02-02-931c7c16c80a.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 3,
+        "runes": 201,
+        "score": -3.6847297894173545,
+        "key_length": 32,
+        "cipher_sign": 15,
+        "feedback_sign": 21,
+        "constant": 14,
+        "output": "results/E073-null-LP2-02-03-d388dd320c7d.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 4,
+        "runes": 201,
+        "score": -3.6978836818075456,
+        "key_length": 32,
+        "cipher_sign": 7,
+        "feedback_sign": 10,
+        "constant": 17,
+        "output": "results/E073-null-LP2-02-04-01863cca1192.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 5,
+        "runes": 201,
+        "score": -3.766413968031568,
+        "key_length": 32,
+        "cipher_sign": 6,
+        "feedback_sign": 7,
+        "constant": 20,
+        "output": "results/E073-null-LP2-02-05-772c067dd9d4.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 6,
+        "runes": 201,
+        "score": -3.718627635216091,
+        "key_length": 32,
+        "cipher_sign": 2,
+        "feedback_sign": 8,
+        "constant": 23,
+        "output": "results/E073-null-LP2-02-06-7f4e7bce5120.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 7,
+        "runes": 201,
+        "score": -3.6385694906692283,
+        "key_length": 32,
+        "cipher_sign": 25,
+        "feedback_sign": 26,
+        "constant": 11,
+        "output": "results/E073-null-LP2-02-07-15869b38d455.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 8,
+        "runes": 201,
+        "score": -3.670370161415864,
+        "key_length": 32,
+        "cipher_sign": 15,
+        "feedback_sign": 4,
+        "constant": 21,
+        "output": "results/E073-null-LP2-02-08-b3c9b64a4141.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 9,
+        "runes": 201,
+        "score": -3.771402690871049,
+        "key_length": 30,
+        "cipher_sign": 21,
+        "feedback_sign": 28,
+        "constant": 4,
+        "output": "results/E073-null-LP2-02-09-955f8ad9c198.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 10,
+        "runes": 201,
+        "score": -3.7255912232453245,
+        "key_length": 32,
+        "cipher_sign": 25,
+        "feedback_sign": 24,
+        "constant": 2,
+        "output": "results/E073-null-LP2-02-10-3a208ae36d69.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 11,
+        "runes": 201,
+        "score": -3.6975196612623886,
+        "key_length": 32,
+        "cipher_sign": 16,
+        "feedback_sign": 16,
+        "constant": 12,
+        "output": "results/E073-null-LP2-02-11-056af7a15564.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 12,
+        "runes": 201,
+        "score": -3.6930371914812805,
+        "key_length": 32,
+        "cipher_sign": 16,
+        "feedback_sign": 10,
+        "constant": 26,
+        "output": "results/E073-null-LP2-02-12-afaecc02f771.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 13,
+        "runes": 201,
+        "score": -3.6747750435008815,
+        "key_length": 31,
+        "cipher_sign": 2,
+        "feedback_sign": 9,
+        "constant": 27,
+        "output": "results/E073-null-LP2-02-13-f68ef988cc15.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 14,
+        "runes": 201,
+        "score": -3.7100231278794533,
+        "key_length": 29,
+        "cipher_sign": 22,
+        "feedback_sign": 17,
+        "constant": 0,
+        "output": "results/E073-null-LP2-02-14-a99b2b02d428.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 15,
+        "runes": 201,
+        "score": -3.681252902514212,
+        "key_length": 29,
+        "cipher_sign": 13,
+        "feedback_sign": 9,
+        "constant": 2,
+        "output": "results/E073-null-LP2-02-15-71216b565073.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 16,
+        "runes": 201,
+        "score": -3.7068931893995716,
+        "key_length": 32,
+        "cipher_sign": 16,
+        "feedback_sign": 11,
+        "constant": 3,
+        "output": "results/E073-null-LP2-02-16-f278837029ee.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 17,
+        "runes": 201,
+        "score": -3.665804916935095,
+        "key_length": 32,
+        "cipher_sign": 7,
+        "feedback_sign": 11,
+        "constant": 1,
+        "output": "results/E073-null-LP2-02-17-b3302177b330.json"
+      },
+      {
+        "section": "LP2-02",
+        "replicate": 18,
+        "runes": 201,
+        "score": -3.7472178774643417,
+        "key_length": 30,
+        "cipher_sign": 6,
+        "feedback_sign": 8,
+        "constant": 14,
+        "output": "results/E073-null-LP2-02-18-b357f8c1ef6f.json"
+      }
+    ],
+    "selected_section": "LP2-02",
+    "score": -3.6642211332779917,
+    "exceedances": 3,
+    "raw_p": 0.2,
+    "bonferroni56": 1,
+    "pending_larger_calibration": false,
+    "unique_unknown_rune_pages": 55,
+    "empty_pages_preserved": [
+      "LP2-50"
+    ],
+    "entries": [
+      {
+        "id": "E073-section-LP2-00",
+        "fingerprint": "8c5e10eaf2cef9f3389198026e4d0bfa6b875959412730c033434d73117693e9",
+        "output": "results/E073-section-LP2-00-8c5e10eaf2ce.json",
+        "sha256": "6e03e8b8f3c5ba4a8e22a7d8d1c3097ed1de38480dcac713415753632debae56"
+      },
+      {
+        "id": "E073-section-LP2-01",
+        "fingerprint": "15d90f8eb4d693132d206f26f33f252ccab99175f0fc2ab89aece342c31123df",
+        "output": "results/E073-section-LP2-01-15d90f8eb4d6.json",
+        "sha256": "5102c728624e48d70aeebb3d96750c1692946d33414c876332963aea7244014c"
+      },
+      {
+        "id": "E073-section-LP2-02",
+        "fingerprint": "33dc73aa96ab7b3320ef5d83939caaf4c6befe0e049b6b6d21dd215fd646630c",
+        "output": "results/E073-section-LP2-02-33dc73aa96ab.json",
+        "sha256": "33464fc15f0738a1d3760943a4bb957b8321afda6644d54a1f4be018f396afec"
+      },
+      {
+        "id": "E073-section-LP2-03",
+        "fingerprint": "7c79a47ff2fd186eaba966480228e21720542bafc1e7ce614cc52afe524da28a",
+        "output": "results/E073-section-LP2-03-7c79a47ff2fd.json",
+        "sha256": "4fc52f3e333957f02c014cafa2853a975bae51d18df2b63625dac2cfa61f20db"
+      },
+      {
+        "id": "E073-section-LP2-04",
+        "fingerprint": "58d9400f14e165e0bc9ec440cf3db929fef1e76374baf93c82de7ad841551e3c",
+        "output": "results/E073-section-LP2-04-58d9400f14e1.json",
+        "sha256": "c35cb3a0ecc5e56ea1e6a4475393d3b60ec1215623339550ba63c4e7b957db4c"
+      },
+      {
+        "id": "E073-section-LP2-05",
+        "fingerprint": "e8c647c393cfaec3d1418b601b3fb9b9812d1f3632c816864591bb2ec2950bce",
+        "output": "results/E073-section-LP2-05-e8c647c393cf.json",
+        "sha256": "908aa98cc42ef009b2bf7f94f908c4de52cdfcb9249cf4bc77d6aeee2bd54efa"
+      },
+      {
+        "id": "E073-section-LP2-07",
+        "fingerprint": "ae4e78e437283c1efbd1fd6525565507eddbc992e28bc0127cf4eaa8874e3e88",
+        "output": "results/E073-section-LP2-07-ae4e78e43728.json",
+        "sha256": "a397c100df653a235060ebe4508a4ee9d565a559023a9dfa7de9a71e08c4d130"
+      },
+      {
+        "id": "E073-section-LP2-08",
+        "fingerprint": "6689dc4802650755b42900c4e9ca302706f95e9985369cc216952c0d74a553f1",
+        "output": "results/E073-section-LP2-08-6689dc480265.json",
+        "sha256": "0a765a5befd49f7fcd2fd14f770d9164f81ecce2cee9db817d2057cd2d72a7c5"
+      },
+      {
+        "id": "E073-section-LP2-09",
+        "fingerprint": "be63141abc868842f7b64719bada7a00c972b8daf9e333055ad4fa1da9a2632c",
+        "output": "results/E073-section-LP2-09-be63141abc86.json",
+        "sha256": "537acbc14d9f1e956f67e45266162e8693042640352bef0203e99853dbecd6be"
+      },
+      {
+        "id": "E073-section-LP2-10",
+        "fingerprint": "43811c94bfbade609c7c758b40e01cb960501b5f4c4fd754767920ad8999dc5b",
+        "output": "results/E073-section-LP2-10-43811c94bfba.json",
+        "sha256": "a65b374d9312b3cc4ef4823ccd809a31fe187dbc895bee8e8e9f5989cc7df8c9"
+      },
+      {
+        "id": "E073-section-LP2-11",
+        "fingerprint": "1defa75e813ce421d039328384d99da5a35aa2ad23dc620eccc763afbf4840be",
+        "output": "results/E073-section-LP2-11-1defa75e813c.json",
+        "sha256": "114b2ec314740dfb67a0b6f17e1d16397a55ef2da4d94cd643e0393e662dfa7a"
+      },
+      {
+        "id": "E073-section-LP2-12",
+        "fingerprint": "050d7d2ddd85a6679afc590061504db3b13dcd708bff2662ee02c1241bbbd4de",
+        "output": "results/E073-section-LP2-12-050d7d2ddd85.json",
+        "sha256": "0cf59299df8e3e46782133c08957e79fb4896a3c129b34ee9b17c781589dc297"
+      },
+      {
+        "id": "E073-section-LP2-13",
+        "fingerprint": "e65f23b48abfd9f2cdd21a1e8e9782542b98d044db13ce2381fb5a54f5ee924b",
+        "output": "results/E073-section-LP2-13-e65f23b48abf.json",
+        "sha256": "fe30ea3c69e11f6dee1d4a55638fa7f70ba0c8dc3df121d345bdf295843c6804"
+      },
+      {
+        "id": "E073-section-LP2-16",
+        "fingerprint": "807a74f57aa0409bde51c3fc49cfb8b7fc76141b565333e98d88362c2a7dc960",
+        "output": "results/E073-section-LP2-16-807a74f57aa0.json",
+        "sha256": "637f17e946b29a8d400856d61087dbb87713369877db38b819f03e86a2b74c97"
+      },
+      {
+        "id": "E073-section-LP2-17",
+        "fingerprint": "4124647a2c2bb4fa4c48b4796961f7a7e86bf099264dec03707f9c5a9d785b6f",
+        "output": "results/E073-section-LP2-17-4124647a2c2b.json",
+        "sha256": "3aab05e7dc95786e5441f57ef14a070078e59272ed4f97d8bacf971518d6b7fd"
+      },
+      {
+        "id": "E073-section-LP2-18",
+        "fingerprint": "11a0088ef571c4f9158dc79d9524bc14b68bf451f1983ac0adbe2713b82a82df",
+        "output": "results/E073-section-LP2-18-11a0088ef571.json",
+        "sha256": "815def32e6d6ef6a61e1571daba465637c05cf321d9b8039bfad8789f7a3a526"
+      },
+      {
+        "id": "E073-section-LP2-19",
+        "fingerprint": "dc5a8ca5b81c5fe8e2313810f6a454a2d65201bf5c6125bfbef9573e18231593",
+        "output": "results/E073-section-LP2-19-dc5a8ca5b81c.json",
+        "sha256": "2cace3b46014205554c11fa73a5e5712798928ddf2ceaafddc7c798341218228"
+      },
+      {
+        "id": "E073-section-LP2-20",
+        "fingerprint": "79020f6f632e2dd1440c8844d98d4ab01c6f0734e5a4faa52b03676bd28da616",
+        "output": "results/E073-section-LP2-20-79020f6f632e.json",
+        "sha256": "a28b544c7c44648bb1d45f88b14347feafb9a351618a953f61216bc15da6296d"
+      },
+      {
+        "id": "E073-section-LP2-21",
+        "fingerprint": "18d1d1cc1e58b96aecb439c28253902ef5d53a7e1bd9c7269df43cdaaa33855d",
+        "output": "results/E073-section-LP2-21-18d1d1cc1e58.json",
+        "sha256": "d4c7516a5804cde120a8a41641d84bbb896d809de1dcc830386f83b9c5ff42ec"
+      },
+      {
+        "id": "E073-section-LP2-23",
+        "fingerprint": "e07b22f3ee9381f81bc0c534e33cd7835fafa1fd72060c0ce0af0a131b5ba7b1",
+        "output": "results/E073-section-LP2-23-e07b22f3ee93.json",
+        "sha256": "8527c289abf422b0d833f51fad11ecf325d1ebbdce53c6d91b1fcb2579772651"
+      },
+      {
+        "id": "E073-section-LP2-24",
+        "fingerprint": "d9d019741b83651ff386222646ab3d9e02a7801ac651bbed82370589eafc637b",
+        "output": "results/E073-section-LP2-24-d9d019741b83.json",
+        "sha256": "fee102a03f7bb4ce85a45a8c89f62402f8d0ab4a3d929ce5c34f6dcd69cc5967"
+      },
+      {
+        "id": "E073-section-LP2-25",
+        "fingerprint": "c0636c0d62d9971f198950d47fe7278e661b2c5257fd158a7a4583613bca450a",
+        "output": "results/E073-section-LP2-25-c0636c0d62d9.json",
+        "sha256": "45a94d29130e27a8dde2b636421aec2eecae0fa557dd18d7bc7d24f7759623a9"
+      },
+      {
+        "id": "E073-section-LP2-26",
+        "fingerprint": "6cdcb9b3138536746e0789c267e98cba6f4d15a6a0de2152c39e3d315525dd3a",
+        "output": "results/E073-section-LP2-26-6cdcb9b31385.json",
+        "sha256": "0ce017cda25219b2a8fad6f1cac5a506c39b5a9c0ddd55999eff60deb7705cb4"
+      },
+      {
+        "id": "E073-section-LP2-27",
+        "fingerprint": "c2386cfc1fdd0995fd9f29c019a12297238f362d3226969a5ca0d4e19cde93df",
+        "output": "results/E073-section-LP2-27-c2386cfc1fdd.json",
+        "sha256": "ec01fa4e096e0b3cd552ff905ac32fe561b71b921595d2848fd80776d28ba4e6"
+      },
+      {
+        "id": "E073-section-LP2-28",
+        "fingerprint": "93fb3e46f2239049ffd0d96f17c8e855a52ea12b07078c6dca96bf7e7ef60af5",
+        "output": "results/E073-section-LP2-28-93fb3e46f223.json",
+        "sha256": "d982d9f967fed87bf7374f1deb76fc33a9bb24468f79698cfad742eef206e017"
+      },
+      {
+        "id": "E073-section-LP2-29",
+        "fingerprint": "a17ca9d0a381ae679b010a2c5d0e16d8136f59916f26efe89cba20a43ff515cd",
+        "output": "results/E073-section-LP2-29-a17ca9d0a381.json",
+        "sha256": "37b83b5040b59fc82201def0a3123fed7b590aa2ff92b7d6c0377f1286b518ee"
+      },
+      {
+        "id": "E073-section-LP2-30",
+        "fingerprint": "dadb8075836b589e6473a56e6df42a764a0dab4cd5222b563272f2945932f5db",
+        "output": "results/E073-section-LP2-30-dadb8075836b.json",
+        "sha256": "c37b05254ac5b1d18dfb2e2747a0a59b6f609022b6d93389cb20f36e5d7444ff"
+      },
+      {
+        "id": "E073-section-LP2-31",
+        "fingerprint": "e79b58eac8805c875f012e712534c433cfc9558805dc87c09a5b3a543e874f6e",
+        "output": "results/E073-section-LP2-31-e79b58eac880.json",
+        "sha256": "b1b3be70b2a7f530e0363be48885b8bf9a921811d7eb8832d6b1e378d9901e37"
+      },
+      {
+        "id": "E073-section-LP2-33",
+        "fingerprint": "8c0b5157ada0c61c2f545d67b159ea88179bd2ec74191c32c0ab69812e46a6f8",
+        "output": "results/E073-section-LP2-33-8c0b5157ada0.json",
+        "sha256": "9457b557fff5f1fe011c427c0f1e5fc10a720bdbc921421874d3416eea603baf"
+      },
+      {
+        "id": "E073-section-LP2-34",
+        "fingerprint": "892f09332030c340eb1d73134f274486a4326d9b39e462283c3540931b86bf75",
+        "output": "results/E073-section-LP2-34-892f09332030.json",
+        "sha256": "4675a2f4c6b3997efc20e5d74f02dce449a03f6e210ad1b84c48c39f31e9da0c"
+      },
+      {
+        "id": "E073-section-LP2-35",
+        "fingerprint": "72bb11691267c8067d0b6740d831689b64e9a442f03acd286b922336a42aeac3",
+        "output": "results/E073-section-LP2-35-72bb11691267.json",
+        "sha256": "c0194051bf512fce83e54dc590a80ab4552c635ff0cd9682a95b53f3991620bd"
+      },
+      {
+        "id": "E073-section-LP2-36",
+        "fingerprint": "fc6d6cc5f36a9e51b352f4d4c1e720d380df4d974e4d18dff143184720b2acba",
+        "output": "results/E073-section-LP2-36-fc6d6cc5f36a.json",
+        "sha256": "9a4fed92c61d87d74c32791e2c77cc542665e8f0350c106d614f782008bf0c6e"
+      },
+      {
+        "id": "E073-section-LP2-37",
+        "fingerprint": "bbb23d14d6bcf0bd2b366b71fc67f7ec5f3eddf9e4003601aaa2ccdd29ac59aa",
+        "output": "results/E073-section-LP2-37-bbb23d14d6bc.json",
+        "sha256": "c5bafaf5451a900dd8e39747dea2a177f584998e0b8df319212f36290c441154"
+      },
+      {
+        "id": "E073-section-LP2-38",
+        "fingerprint": "3a6dbdf9f6bec1cef2572dcf7781a891bdf3425345fb8cbf70f963a97529ba42",
+        "output": "results/E073-section-LP2-38-3a6dbdf9f6be.json",
+        "sha256": "d66d78ff1428d9c890f86faed75621c872131c8b70cf62583dae4abc50aa89ca"
+      },
+      {
+        "id": "E073-section-LP2-39",
+        "fingerprint": "83b2220b5dc3a4cd08ba3302a39a3e7cff277ee387d52f19fa5e323dcd0a6214",
+        "output": "results/E073-section-LP2-39-83b2220b5dc3.json",
+        "sha256": "c2047f8ed4631b02cb90f34200100fdbe827aa12839a09e4323b6b797beec033"
+      },
+      {
+        "id": "E073-section-LP2-40",
+        "fingerprint": "ef39478ddbca3b3b4d4f70a9b4faad3a815a8251188128fe7adb2dd3f2613e3d",
+        "output": "results/E073-section-LP2-40-ef39478ddbca.json",
+        "sha256": "27a11dfa247b5b86c39a919a7b0095e3349262f535b6d6d277dc57a66cdcd9df"
+      },
+      {
+        "id": "E073-section-LP2-41",
+        "fingerprint": "1ce625efe80ff29f4b1aeac1d4bcc96d1b55c42525029b80f5df62a6a579dfbe",
+        "output": "results/E073-section-LP2-41-1ce625efe80f.json",
+        "sha256": "438c712fa4cf56be87a0150ad29e6b199569b557310b7b0679df97eafed912df"
+      },
+      {
+        "id": "E073-section-LP2-42",
+        "fingerprint": "a0128f182606ee8fd872040859bed9fb0ff991bb3d78f2214195aeb5dbedb760",
+        "output": "results/E073-section-LP2-42-a0128f182606.json",
+        "sha256": "05de10e891e80c1b94cd072c721bcb613f5133fc34aa4f4a909b00d924710041"
+      },
+      {
+        "id": "E073-section-LP2-43",
+        "fingerprint": "d6fdbc5cf117271ac43d6957b05b1366b8c5d1b21d4d6999bf6f59fc14538c08",
+        "output": "results/E073-section-LP2-43-d6fdbc5cf117.json",
+        "sha256": "530455d7eeb3e56a9a977598f2df1b84bf64f86fd130add7e6cfe6a24021582d"
+      },
+      {
+        "id": "E073-section-LP2-44",
+        "fingerprint": "d24b7e2f622827aa20ea9bba78c63c20438f287ae1bf562d6af3a95802f1156e",
+        "output": "results/E073-section-LP2-44-d24b7e2f6228.json",
+        "sha256": "12dd4a0d5453153e2647791c0f437be63d2cde81d6b05be67945b929e2a8b3ee"
+      },
+      {
+        "id": "E073-section-LP2-45",
+        "fingerprint": "286840f1f88b98fef8c088dc40b8c8f9dffcd32553900ac28f995c118a34c459",
+        "output": "results/E073-section-LP2-45-286840f1f88b.json",
+        "sha256": "8673ec2a6ddf16257ae1d2d7151f1d96561db5ba53ec265a3a8a70c396ccc394"
+      },
+      {
+        "id": "E073-section-LP2-46",
+        "fingerprint": "f2381754219479105ce020eb532849c35f2bcf2d4fb74b7840da9047344cc46f",
+        "output": "results/E073-section-LP2-46-f23817542194.json",
+        "sha256": "f5cb0552a8704393e9ad40b3aa0b4697c8bed2eb4869af01c2d731c3d4ca04d5"
+      },
+      {
+        "id": "E073-section-LP2-47",
+        "fingerprint": "51a32f643caf7698745ec9e188e7b15101a92230ca627dcf6bbf35b9827871ce",
+        "output": "results/E073-section-LP2-47-51a32f643caf.json",
+        "sha256": "b75af99e52a95400c45e4a66021aec498b619b77880c389b6d3b7deab82bb42f"
+      },
+      {
+        "id": "E073-section-LP2-48",
+        "fingerprint": "5861f7b1fca00e7b1baa267aabac8aa4b4e8792f7be9a627b049e16b38112e96",
+        "output": "results/E073-section-LP2-48-5861f7b1fca0.json",
+        "sha256": "17dffeb466ce39578eea3e86d92597559011174c4a7d3b5c271de9376e158f71"
+      },
+      {
+        "id": "E073-section-LP2-52",
+        "fingerprint": "202146a992df966bc6f8b9036b62e5356bdb4842b0bcaea2b38009a9f38f086e",
+        "output": "results/E073-section-LP2-52-202146a992df.json",
+        "sha256": "eb184ef892abbcfa3a624c93876f35fcfc842ad467e9327c2d69b432291383e0"
+      },
+      {
+        "id": "E073-section-LP2-54",
+        "fingerprint": "c9b47e6291d5d20b1687c19df2f1464d7dcba294256799f5bd7c910d8dd3c692",
+        "output": "results/E073-section-LP2-54-c9b47e6291d5.json",
+        "sha256": "b6edecc35d35da4a832469440cfd08bf49ef1b4665e8003942f681472230e045"
+      },
+      {
+        "id": "E073-section-LP2-00_02",
+        "fingerprint": "9bc26cd56576d921765fb51c2a67a5555afa9dd5a6b9fc4a7d08f8632bd6fc7f",
+        "output": "results/E073-section-LP2-00_02-9bc26cd56576.json",
+        "sha256": "8a1b914b54f919a66b4c2442bd70998555383416fe77bdd434b8dd37edb56445"
+      },
+      {
+        "id": "E073-section-LP2-03_07",
+        "fingerprint": "b16a1a681b26ea464ac775e8f58bd7fe5a13b104ad58934e21a3a3ac76812fd0",
+        "output": "results/E073-section-LP2-03_07-b16a1a681b26.json",
+        "sha256": "a9a5f7611fac798cd4a60addb60079195d9562614b7ab250a0155a818fbafbec"
+      },
+      {
+        "id": "E073-section-LP2-08_14",
+        "fingerprint": "535b25669ff3761c18f3fbec1e32aa5fe61b991325ba1b62edafcad7ec1aeba7",
+        "output": "results/E073-section-LP2-08_14-535b25669ff3.json",
+        "sha256": "3f8c68bad15727b10bce65ec7338628893a35ed32b9476dc9320245603de46d4"
+      },
+      {
+        "id": "E073-section-LP2-15_22",
+        "fingerprint": "85466b62268a261393930f461f3fc44f4b725af62dc5b9e038fa00f4377a0ab3",
+        "output": "results/E073-section-LP2-15_22-85466b62268a.json",
+        "sha256": "e325cc3250b3a571a889f2b5e1a267bad5e24f6b569c86576bc5610afb39d7a7"
+      },
+      {
+        "id": "E073-section-LP2-23_26",
+        "fingerprint": "46562f5ab62f0c9b5e656d3e26d1f9b50b8fb4400bc3c57068f967f7467c31ea",
+        "output": "results/E073-section-LP2-23_26-46562f5ab62f.json",
+        "sha256": "8dda67b55f119367c8041b6c30dc9ccb4fc49e7725a3dd7d340ecd72b17a09a3"
+      },
+      {
+        "id": "E073-section-LP2-27_32",
+        "fingerprint": "49c0070ef78a6820c2aad5eaf35c6077ed0b7ac24406bc8c918ac17af8a4ff94",
+        "output": "results/E073-section-LP2-27_32-49c0070ef78a.json",
+        "sha256": "6cad704f8297ea4dfb3c92ec0627f62af1f6ab5d39e153f6c5872f8f18a9b618"
+      },
+      {
+        "id": "E073-section-LP2-33_39",
+        "fingerprint": "c3efc392f6d9271d7e194c9ef724250374d0ba7337203ac3e511c31d3fd34249",
+        "output": "results/E073-section-LP2-33_39-c3efc392f6d9.json",
+        "sha256": "8b9669655cf26fd338ffe9ac9005645e2ddfb27c00f73424940224affc2b0ec2"
+      },
+      {
+        "id": "E073-section-LP2-40_53",
+        "fingerprint": "5b566a4cd1277ad1c3d26decc6f69a9a873124deea925a10862a12571f051f7f",
+        "output": "results/E073-section-LP2-40_53-5b566a4cd127.json",
+        "sha256": "a762c7e421d72891e0dd8af1b15df689006b36d851f323c7a85bd12c7c69631e"
+      },
+      {
+        "id": "E073-section-LP2-54_55",
+        "fingerprint": "53f00e3b4ca49d0a8b034a8f6b9fc11833fa88426a0127e2df2d1e7b45327f99",
+        "output": "results/E073-section-LP2-54_55-53f00e3b4ca4.json",
+        "sha256": "37724cedf5beb97f99ac765952d0f7734d64c2a916673cbbb2d086368597ce1b"
+      },
+      {
+        "id": "E073-section-LP2-40_55",
+        "fingerprint": "0f5acbda1b943154f12522b117041cead2d3c47913a48574e8a59b24b6fa3193",
+        "output": "results/E073-section-LP2-40_55-0f5acbda1b94.json",
+        "sha256": "177b79d1fc2fc370e3c6620b806cd5c61378998b2e68d7baa6f704ee4bc8f79e"
+      },
+      {
+        "id": "E073-null-LP2-02-00",
+        "fingerprint": "bd75273fccabb36c261dc314319efbdefaf002a83e6798e3dfdc8021255adf71",
+        "output": "results/E073-null-LP2-02-00-bd75273fccab.json",
+        "sha256": "ead8f79f42d28a38a7a31bb3d45ba7789204590c8f38bb91b3792bab7909fd9d"
+      },
+      {
+        "id": "E073-null-LP2-02-01",
+        "fingerprint": "f51e09cc833ee7c5d6ffb49c823b77de60e3b5f5cfafe7801f2d29c396ed6d65",
+        "output": "results/E073-null-LP2-02-01-f51e09cc833e.json",
+        "sha256": "06956f049ff856d4a0a577ef12a68a159e08e6754bf040ef9c58fd574fcfda95"
+      },
+      {
+        "id": "E073-null-LP2-02-02",
+        "fingerprint": "931c7c16c80ac495e838174368d2fc8a95632d4fb2120a4be61b2de902da3a27",
+        "output": "results/E073-null-LP2-02-02-931c7c16c80a.json",
+        "sha256": "1b94598b9f0f50973db0bed2cc52c6ba9d9bab9cb9959b4edf21fc28f1e89d2e"
+      },
+      {
+        "id": "E073-null-LP2-02-03",
+        "fingerprint": "d388dd320c7d81f9de93c0ade2876560d2ab70b6e24af44a864d1fc205cfdf4d",
+        "output": "results/E073-null-LP2-02-03-d388dd320c7d.json",
+        "sha256": "c9db6ed106fa534c080f4dbbdfc0269698d3d355704ecf830672e3b775129370"
+      },
+      {
+        "id": "E073-null-LP2-02-04",
+        "fingerprint": "01863cca119256dacff0a868043c4c8b05b432ab4685128fa83bfa9679a32a8a",
+        "output": "results/E073-null-LP2-02-04-01863cca1192.json",
+        "sha256": "7e58107218a457e1f2b606a3e7c4ea31c0045ff7dbab52420bba92c907ffd910"
+      },
+      {
+        "id": "E073-null-LP2-02-05",
+        "fingerprint": "772c067dd9d480bdda46e1f49959f0c654f29d1f6f05a916a67070e765a30684",
+        "output": "results/E073-null-LP2-02-05-772c067dd9d4.json",
+        "sha256": "cd2bf1a57f249b4c01e3f2da8cc7fda1bf33dccd1dd1ae3f1b3cae9076d4eec4"
+      },
+      {
+        "id": "E073-null-LP2-02-06",
+        "fingerprint": "7f4e7bce51200c66294894adc5e85c36cbf1b1a34a3a76467befb81495f7de40",
+        "output": "results/E073-null-LP2-02-06-7f4e7bce5120.json",
+        "sha256": "322da82b117ad2f06562798f4d7f8d2b10d57e317431646e83c9952fd639c8b0"
+      },
+      {
+        "id": "E073-null-LP2-02-07",
+        "fingerprint": "15869b38d455cd2469e2003c7c201b7348f8a7dd17728a7b752e4ea009a59e9d",
+        "output": "results/E073-null-LP2-02-07-15869b38d455.json",
+        "sha256": "2a557540c25855218f7f696d1fe24d806e54948f909df9ba74e9fcf3dfe5a203"
+      },
+      {
+        "id": "E073-null-LP2-02-08",
+        "fingerprint": "b3c9b64a4141332a1bdabf02853b97150933e83d8c0bc30af140b300b5d8027a",
+        "output": "results/E073-null-LP2-02-08-b3c9b64a4141.json",
+        "sha256": "46b5d4ba0b0e19d0aa2afe62250fe10ed040e504580380a4c896b7ab2cfeccfe"
+      },
+      {
+        "id": "E073-null-LP2-02-09",
+        "fingerprint": "955f8ad9c1981cec953633f241d996fe93287fcbbc1606a04d089e36df101637",
+        "output": "results/E073-null-LP2-02-09-955f8ad9c198.json",
+        "sha256": "5d6e6b62f08191edd671af061b26cf5a9a76578bf1b87baae533d2ae835963dd"
+      },
+      {
+        "id": "E073-null-LP2-02-10",
+        "fingerprint": "3a208ae36d69689653f5b930433cf95f03bb98ac4e9de3d723b493d4ade7bf15",
+        "output": "results/E073-null-LP2-02-10-3a208ae36d69.json",
+        "sha256": "1496176499caf701df71bfb8f4b12b507d3331e31800dac947516fb5f139d3f5"
+      },
+      {
+        "id": "E073-null-LP2-02-11",
+        "fingerprint": "056af7a15564b3472ff23e3fd6b0a3577e1538034303f262e884848f7560fbc6",
+        "output": "results/E073-null-LP2-02-11-056af7a15564.json",
+        "sha256": "404b7383f508777aea70dc6e54764e36251eea9236c1e4299db84b4b93482c30"
+      },
+      {
+        "id": "E073-null-LP2-02-12",
+        "fingerprint": "afaecc02f771ecd83179755200cf9bfa896da2ff52bfc76d6266e706caa4b793",
+        "output": "results/E073-null-LP2-02-12-afaecc02f771.json",
+        "sha256": "822cb629788f790ebce9bd2e878da9052b17184f9f230886a95b1b9e2577029d"
+      },
+      {
+        "id": "E073-null-LP2-02-13",
+        "fingerprint": "f68ef988cc157d893de68299247e8b2ef0209096b3ed28ae564fb052ed2d73bb",
+        "output": "results/E073-null-LP2-02-13-f68ef988cc15.json",
+        "sha256": "cd246cf7758c60ddd52e48f205657a2f52f3c615bc1965db5a6e06f476bb571d"
+      },
+      {
+        "id": "E073-null-LP2-02-14",
+        "fingerprint": "a99b2b02d428867265c10198f3c1bb057b26e3458cdd100d5f66a545773f7d8e",
+        "output": "results/E073-null-LP2-02-14-a99b2b02d428.json",
+        "sha256": "c6259240e7faf5b8a80643d0955f3fb59ef7686eefc146deeebb6e5f9c720507"
+      },
+      {
+        "id": "E073-null-LP2-02-15",
+        "fingerprint": "71216b565073630d783f2947d28affa719548cee9856ba7f81152fd3e85255d0",
+        "output": "results/E073-null-LP2-02-15-71216b565073.json",
+        "sha256": "21941c4446f78248bb01e895b4d4f3e06fa8529269272f6c74129d1787a70516"
+      },
+      {
+        "id": "E073-null-LP2-02-16",
+        "fingerprint": "f278837029eeccfaefc33b1ba7796cdf4a374770e336f975888d70f14e83d1d4",
+        "output": "results/E073-null-LP2-02-16-f278837029ee.json",
+        "sha256": "53d96dc7db59caa0fef39e2bd5e9efa225d5e7a136320c0a97facaf86f770a9f"
+      },
+      {
+        "id": "E073-null-LP2-02-17",
+        "fingerprint": "b3302177b33059fd31dfacae3644ab0b4c76bab498208f735c14f116e8a6e622",
+        "output": "results/E073-null-LP2-02-17-b3302177b330.json",
+        "sha256": "5653a3c5f5a7a986efd70089e1333db2b0c3f58aa115853ec2268b37b5ca3f23"
+      },
+      {
+        "id": "E073-null-LP2-02-18",
+        "fingerprint": "b357f8c1ef6fc4b83f4de5e4a1d7c416b52df4fc54999a6cc477cb6e373355c8",
+        "output": "results/E073-null-LP2-02-18-b357f8c1ef6f.json",
+        "sha256": "7a85d616a5a102f879b883b5fc29e324aba03e818688f1ef2bb0557a946f53aa"
+      }
+    ],
+    "validation": {
+      "scalar_model_table_entries": 732540,
+      "reference_sequence_crosschecks": 12,
+      "literal_source_page_anchors": 56,
+      "pinned_source_file_hashes": 10,
+      "replayed_full_screen_scores": 49450800,
+      "scalar_decodings": 454363,
+      "independent_retained_family_scores": 17400,
+      "seeded_initializers_checked": 139200,
+      "independent_trigram_coordinate_optima": 136689,
+      "initial_and_final_scores": 278400,
+      "candidate_score_pairs": 104355,
+      "fourgram_trace_scores": 2008,
+      "independent_fourgram_coordinate_optima": 900,
+      "reencryptions": 225,
+      "continuous_page_queue_replays": 225
+    },
+    "seconds": 1334.0442172003095,
+    "peak_sampled_bytes": 146173952,
+    "source_anchors": {
+      "files": {
+        "data/raw/relikd/pages/p0-2.txt": "c54b019ed29305e29c3fdafa792106e3249d27998f94473a2652e7c7bb787521",
+        "data/raw/iddqd/liber-primus__transcription--master/liber-primus__transcription--master.txt": "b0b2e13c3cd35512ee5955a2d9a56c22d7410e283d35dd9c90abbaa7b99279eb",
+        "data/raw/relikd/pages/p3-7.txt": "dad38fdac7a46e15ca19f38762225755bf3ddd553c83141e3bdfd9354f243486",
+        "data/raw/relikd/pages/p8-14.txt": "c010b87c379263fffc0e75eb6a170ac1dd090cf56a579db9f64c4b866f6eccc5",
+        "data/raw/relikd/pages/p15-22.txt": "cbb16452f0c09ea894aaf14015dc980f6a6e17ac6a653cbda9ab1226f0b027cc",
+        "data/raw/relikd/pages/p23-26.txt": "43bc3a968d536ddd9642947437d20ec9be716e77ea488c80ee56c9e048d2a094",
+        "data/raw/relikd/pages/p27-32.txt": "a3b2365a8172455f004ff1352f40298af6944d47106e5cf1f9418436861907ff",
+        "data/raw/relikd/pages/p33-39.txt": "00c7defc87a99774ada0c3ec9c1d4eeb656f1f2c2eac3c5bb4e6ea517f0bbb25",
+        "data/raw/relikd/pages/p40-53.txt": "282ce106e92eb69a11fdf38382670ebd3b73acf777e88be9e7142768edd5a73b",
+        "data/raw/relikd/pages/p54-55.txt": "f4a2f9dde276a0ffa6c4f6e6319f37066e55a6e170722cc9b4f4b37d5b36aeba"
+      },
+      "pages": [
+        {
+          "page_id": "LP2-00",
+          "source": "relikd:pages/p0-2.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 331,
+          "runes_sha256": "7ecb645e3b05ae4f23e781277d41dcd9ae64a1c0ed6a9d98cc8ce80ed9539527"
+        },
+        {
+          "page_id": "LP2-01",
+          "source": "relikd:pages/p0-2.txt",
+          "decoded_text_offset": 333,
+          "decoded_text_length": 339,
+          "runes_sha256": "5bb878f645031bb399e95be189dfe40f397492db2171c8a8f5efe920011cc4c8"
+        },
+        {
+          "page_id": "LP2-02",
+          "source": "relikd:pages/p0-2.txt",
+          "decoded_text_offset": 674,
+          "decoded_text_length": 247,
+          "runes_sha256": "65e8f11cdd3681fee0fbcac6648e851f450e1a6e8e7492a19c0ef31e94fd43d6"
+        },
+        {
+          "page_id": "LP2-03",
+          "source": "relikd:pages/p3-7.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 271,
+          "runes_sha256": "56a087903b931d30a717e5595c885b14ab6cccab92d5110c894aa2b27edda3b6"
+        },
+        {
+          "page_id": "LP2-04",
+          "source": "relikd:pages/p3-7.txt",
+          "decoded_text_offset": 273,
+          "decoded_text_length": 333,
+          "runes_sha256": "51cfab1f9db68a7686577bc482af620a8a535d9dfbdb4cba8ca35ef41d139fca"
+        },
+        {
+          "page_id": "LP2-05",
+          "source": "relikd:pages/p3-7.txt",
+          "decoded_text_offset": 608,
+          "decoded_text_length": 334,
+          "runes_sha256": "ec3dcd57787af4c9cfad3601ccd45932507ac4afcb9df23e1d4c3111f465cabe"
+        },
+        {
+          "page_id": "LP2-06",
+          "source": "relikd:pages/p3-7.txt",
+          "decoded_text_offset": 944,
+          "decoded_text_length": 250,
+          "runes_sha256": "4390314a1be4cdce462de2df43e81519cf2f48f6516f7b36110a956a17df432a"
+        },
+        {
+          "page_id": "LP2-07",
+          "source": "relikd:pages/p3-7.txt",
+          "decoded_text_offset": 1196,
+          "decoded_text_length": 270,
+          "runes_sha256": "29966de9e8b8d2ab6aa23818ab163980fbba1a45b99c10911a36ece991d87e26"
+        },
+        {
+          "page_id": "LP2-08",
+          "source": "relikd:pages/p8-14.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 316,
+          "runes_sha256": "2e9d72979db8949a6f6d5d984462805bd03050e4b62904ae6e8e63f956221502"
+        },
+        {
+          "page_id": "LP2-09",
+          "source": "relikd:pages/p8-14.txt",
+          "decoded_text_offset": 318,
+          "decoded_text_length": 335,
+          "runes_sha256": "ccaf7a50a3604ca8316146d343c6ba101ef2119d1bbeabdfef4c5d52af10628a"
+        },
+        {
+          "page_id": "LP2-10",
+          "source": "relikd:pages/p8-14.txt",
+          "decoded_text_offset": 655,
+          "decoded_text_length": 341,
+          "runes_sha256": "477599ed094c227d592ab7c3814d010df362a3c8d3c7125db28c266dfc183ad8"
+        },
+        {
+          "page_id": "LP2-11",
+          "source": "relikd:pages/p8-14.txt",
+          "decoded_text_offset": 998,
+          "decoded_text_length": 341,
+          "runes_sha256": "9c6984dac299a1aa7ebf4cd0d9aae7d7e9332b697efb1c2c1437b88d1fb691a0"
+        },
+        {
+          "page_id": "LP2-12",
+          "source": "relikd:pages/p8-14.txt",
+          "decoded_text_offset": 1341,
+          "decoded_text_length": 337,
+          "runes_sha256": "2d24fd02a7559844829ea78cf433723d1585c461ecff770eae4854859006fc73"
+        },
+        {
+          "page_id": "LP2-13",
+          "source": "relikd:pages/p8-14.txt",
+          "decoded_text_offset": 1680,
+          "decoded_text_length": 343,
+          "runes_sha256": "eebad0b0f349118f7e7ab73850d3ab07085c3f8bdb0c052a002dc075727411db"
+        },
+        {
+          "page_id": "LP2-14",
+          "source": "relikd:pages/p8-14.txt",
+          "decoded_text_offset": 2025,
+          "decoded_text_length": 175,
+          "runes_sha256": "8271a0b19950af0b36295389a0e5b837f35bbc18ce2279af64b4ab97c730e367"
+        },
+        {
+          "page_id": "LP2-15",
+          "source": "relikd:pages/p15-22.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 301,
+          "runes_sha256": "a91824bf18729c3260bd436b660591e8aa066cb6f8fc31c008c5bb994eb2edcc"
+        },
+        {
+          "page_id": "LP2-16",
+          "source": "relikd:pages/p15-22.txt",
+          "decoded_text_offset": 303,
+          "decoded_text_length": 337,
+          "runes_sha256": "c9e4a08e0c0521908a9afa18cf926792251c693c5a45fd82a8c55f338ae18966"
+        },
+        {
+          "page_id": "LP2-17",
+          "source": "relikd:pages/p15-22.txt",
+          "decoded_text_offset": 642,
+          "decoded_text_length": 352,
+          "runes_sha256": "efdf9006d6f3de2e49302b16881449d3234bb32b093c02c47d6e3da872605d8d"
+        },
+        {
+          "page_id": "LP2-18",
+          "source": "relikd:pages/p15-22.txt",
+          "decoded_text_offset": 996,
+          "decoded_text_length": 332,
+          "runes_sha256": "b15a5626e3967f8aafda8233fcb857a1a9725b40c203cdf91ef2aeb1d0f9b726"
+        },
+        {
+          "page_id": "LP2-19",
+          "source": "relikd:pages/p15-22.txt",
+          "decoded_text_offset": 1330,
+          "decoded_text_length": 347,
+          "runes_sha256": "9409b1c027d376174563788fdbd71490b7255b6af961a8b8cf3f33d4fc0189d2"
+        },
+        {
+          "page_id": "LP2-20",
+          "source": "relikd:pages/p15-22.txt",
+          "decoded_text_offset": 1679,
+          "decoded_text_length": 347,
+          "runes_sha256": "c55bc2e50c8453e61ff991c140cf82872c83a2ef4dcd727d6f13b1ed65098d5f"
+        },
+        {
+          "page_id": "LP2-21",
+          "source": "relikd:pages/p15-22.txt",
+          "decoded_text_offset": 2028,
+          "decoded_text_length": 339,
+          "runes_sha256": "27e17450a21c90c3b22421b5db42203e318507e0bce76e588bdde0d275c17805"
+        },
+        {
+          "page_id": "LP2-22",
+          "source": "relikd:pages/p15-22.txt",
+          "decoded_text_offset": 2369,
+          "decoded_text_length": 166,
+          "runes_sha256": "b72d9f760e452230e353e8f4cd8a5bf67dc58b513c665f3b81177a9d743bd1d4"
+        },
+        {
+          "page_id": "LP2-23",
+          "source": "relikd:pages/p23-26.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 267,
+          "runes_sha256": "bcff1e2d0cf50ec6bc690f9319358d1035d9864ff0e8705194df6a4bb92a282f"
+        },
+        {
+          "page_id": "LP2-24",
+          "source": "relikd:pages/p23-26.txt",
+          "decoded_text_offset": 269,
+          "decoded_text_length": 344,
+          "runes_sha256": "8cb9189cf907349669664f0069fd092f225906376594fe9939cddcbcd0494539"
+        },
+        {
+          "page_id": "LP2-25",
+          "source": "relikd:pages/p23-26.txt",
+          "decoded_text_offset": 615,
+          "decoded_text_length": 341,
+          "runes_sha256": "558e7453f751ca7966fad9f7fa6cdee1e9dbfccf4a270d16f90d8a90aa6fbc06"
+        },
+        {
+          "page_id": "LP2-26",
+          "source": "relikd:pages/p23-26.txt",
+          "decoded_text_offset": 958,
+          "decoded_text_length": 335,
+          "runes_sha256": "5a7a3612b559e4031ee84987aedeaf13c9d59e537a990373afbfb386283b3900"
+        },
+        {
+          "page_id": "LP2-27",
+          "source": "relikd:pages/p27-32.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 295,
+          "runes_sha256": "790817aa909f0e06a6ded7eaa282c17cb32bcf9d90fc60ca66510a1b3fd8e06d"
+        },
+        {
+          "page_id": "LP2-28",
+          "source": "relikd:pages/p27-32.txt",
+          "decoded_text_offset": 297,
+          "decoded_text_length": 339,
+          "runes_sha256": "86075614a75f01a500d4ed47a346490118bd8f5cc7b6837c1e98e9386ab24668"
+        },
+        {
+          "page_id": "LP2-29",
+          "source": "relikd:pages/p27-32.txt",
+          "decoded_text_offset": 638,
+          "decoded_text_length": 358,
+          "runes_sha256": "8bc04c5dc19a2b35b40e533bcbcdc772b954c78d0eb44bab086540f032f0fc75"
+        },
+        {
+          "page_id": "LP2-30",
+          "source": "relikd:pages/p27-32.txt",
+          "decoded_text_offset": 998,
+          "decoded_text_length": 335,
+          "runes_sha256": "ec55082f57ddbbaa4ebaf240d8361dae278057661129960044ddaf3d0abc1b47"
+        },
+        {
+          "page_id": "LP2-31",
+          "source": "relikd:pages/p27-32.txt",
+          "decoded_text_offset": 1335,
+          "decoded_text_length": 343,
+          "runes_sha256": "def9970ecca71c48f0d07d9913024957fb96f6bf0bf4136e333bcc9046c5eaea"
+        },
+        {
+          "page_id": "LP2-32",
+          "source": "relikd:pages/p27-32.txt",
+          "decoded_text_offset": 1680,
+          "decoded_text_length": 148,
+          "runes_sha256": "f783d4adf385279b1d792dc419aec3da779a4951b25a4f0aed1f3e1bfb5ca227"
+        },
+        {
+          "page_id": "LP2-33",
+          "source": "relikd:pages/p33-39.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 277,
+          "runes_sha256": "0b2e98ac0381b138a2c239af25dd20e9efc7a728a07c02f8b85935dad09a56cf"
+        },
+        {
+          "page_id": "LP2-34",
+          "source": "relikd:pages/p33-39.txt",
+          "decoded_text_offset": 279,
+          "decoded_text_length": 333,
+          "runes_sha256": "94deb4ea7d9e59e52d5282a2c3659117c0b6f99fd0ec44c280028e9111327b0a"
+        },
+        {
+          "page_id": "LP2-35",
+          "source": "relikd:pages/p33-39.txt",
+          "decoded_text_offset": 614,
+          "decoded_text_length": 343,
+          "runes_sha256": "f7c54d0b87b6a92f2e372e0e7d0c77fa43cce426da1890c5326f3078280054f4"
+        },
+        {
+          "page_id": "LP2-36",
+          "source": "relikd:pages/p33-39.txt",
+          "decoded_text_offset": 959,
+          "decoded_text_length": 299,
+          "runes_sha256": "809a93bf1e093efaec988955874dfcdf666fd04ada0b785671949475d7169715"
+        },
+        {
+          "page_id": "LP2-37",
+          "source": "relikd:pages/p33-39.txt",
+          "decoded_text_offset": 1260,
+          "decoded_text_length": 294,
+          "runes_sha256": "75fa07f674dc6ed20c8f8b123a32bf9689531ef543e1316a85a2038886bd2c67"
+        },
+        {
+          "page_id": "LP2-38",
+          "source": "relikd:pages/p33-39.txt",
+          "decoded_text_offset": 1556,
+          "decoded_text_length": 287,
+          "runes_sha256": "c4d97ebe1752750ce99d45667eb90080a70503f25a4c9d023dceca759c145e96"
+        },
+        {
+          "page_id": "LP2-39",
+          "source": "relikd:pages/p33-39.txt",
+          "decoded_text_offset": 1845,
+          "decoded_text_length": 307,
+          "runes_sha256": "8acd3d58a81df88f986702b2d2cac6e96c0eaa3d7c3fc8d64fa689052fdab764"
+        },
+        {
+          "page_id": "LP2-40",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 299,
+          "runes_sha256": "c9d14bcf210eb615cedad8579e670cef117ddb97d8e12129158e974c2f332a25"
+        },
+        {
+          "page_id": "LP2-41",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 301,
+          "decoded_text_length": 346,
+          "runes_sha256": "980cbe09e38d086f274c1b5278b519670c5e2ccc9a3cceb934049e38d3221520"
+        },
+        {
+          "page_id": "LP2-42",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 649,
+          "decoded_text_length": 343,
+          "runes_sha256": "65d78168c9e39f304f9eb3392335063cbbf69bfbd683a97ef2c5b06a81b5689c"
+        },
+        {
+          "page_id": "LP2-43",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 994,
+          "decoded_text_length": 344,
+          "runes_sha256": "43e7fe27ed1b012165f9d02dbe00b289234f3843cdf3372c6c057f13189f2be3"
+        },
+        {
+          "page_id": "LP2-44",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 1340,
+          "decoded_text_length": 340,
+          "runes_sha256": "39af79f72f63c510b5d948a6c7d8af783e5c5b40ebdf596695620936da296263"
+        },
+        {
+          "page_id": "LP2-45",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 1682,
+          "decoded_text_length": 344,
+          "runes_sha256": "a49ece7e024b18553b50d8bfc667b273a58e179b938067680f30d400fcceebaa"
+        },
+        {
+          "page_id": "LP2-46",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 2028,
+          "decoded_text_length": 342,
+          "runes_sha256": "fbb020d9bafb80d7b172f8e6333d6661d0cb8b4a0bd2f755ab8f5f013d4bd3b0"
+        },
+        {
+          "page_id": "LP2-47",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 2372,
+          "decoded_text_length": 343,
+          "runes_sha256": "dbc89127fe9ab87dfffd302a86b6646db8dee706eece7bc4f616e42d4d4bd689"
+        },
+        {
+          "page_id": "LP2-48",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 2717,
+          "decoded_text_length": 348,
+          "runes_sha256": "23d0b8f3902bd4556d6ea8c996dfa2a3833caff6255b53fdc630d55e2291b446"
+        },
+        {
+          "page_id": "LP2-49",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 3067,
+          "decoded_text_length": 327,
+          "runes_sha256": "d4bd4375a9fba3cb35477fac008148aab1c3c0140e5d6546582a61412ff5f7a2"
+        },
+        {
+          "page_id": "LP2-50",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 3396,
+          "decoded_text_length": 311,
+          "runes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "page_id": "LP2-51",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 3709,
+          "decoded_text_length": 331,
+          "runes_sha256": "3b4ead8b0cfa2f49b049806b77d34263c4450ce6c13f4200e114b86aae1cdf2f"
+        },
+        {
+          "page_id": "LP2-52",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 4042,
+          "decoded_text_length": 333,
+          "runes_sha256": "2dd7b014f677ae1e8fb93eaf70873453bc9e4336ba40dba1a9119b0c38297a46"
+        },
+        {
+          "page_id": "LP2-53",
+          "source": "relikd:pages/p40-53.txt",
+          "decoded_text_offset": 4377,
+          "decoded_text_length": 229,
+          "runes_sha256": "b709fe0c220ba39469ea36d710ee10b3881826e82703530846a12041ae31f77f"
+        },
+        {
+          "page_id": "LP2-54",
+          "source": "relikd:pages/p54-55.txt",
+          "decoded_text_offset": 0,
+          "decoded_text_length": 291,
+          "runes_sha256": "bfe0cac3f8d8111f0c97b25d9ba3585059081fe72fb36f3c3cea0746cc9d6c9b"
+        },
+        {
+          "page_id": "LP2-55",
+          "source": "relikd:pages/p54-55.txt",
+          "decoded_text_offset": 293,
+          "decoded_text_length": 96,
+          "runes_sha256": "f14f0f4d0ef5e2b8db5e375b4d356788e1ba22a8b18046fbdc73b5daedde622f"
+        }
+      ],
+      "manifest_sha256": "ee2b9661b76a058e04aae0ef244b2588745f4f010c48a23fce4d41b9ae30ed67",
+      "note": "Literal layout substring in decoded source; text offsets are character offsets after universal newline reading, not byte offsets. Raw bytes verified separately; only declared alias ᛂ to ᛄ."
+    },
+    "verifier_sha256": "57d94bc2da6e9afd620f6df565cb6a23f2d074df35931727ac5f227e47d703ee",
+    "core_verifier_sha256": "87040bbc8bdcf169a96dcd6bd6bfec419a6384a6211a8323e0fda7848394c349",
+    "validation_seconds": 501.09081640001386,
+    "new_decryptions": []
+  },
+  "successful_tasks": 93,
+  "seconds": 1983.9615841004415,
+  "peak_sampled_search_bytes": 146173952,
+  "algebra_memory_note": "E071 bounded synthetic arrays and cooperative120-second deadline; no sampled OS peak recorded for that preliminary process.",
+  "tests_passed": 136,
+  "source_path_migration": "checkpoints/phase26_path_migration.json",
+  "new_decryptions": []
+}

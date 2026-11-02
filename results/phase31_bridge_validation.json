@@ -1,0 +1,96 @@
+{
+  "full_gate_passed": true,
+  "controls": [
+    {
+      "index": 0,
+      "runes": 204,
+      "exact": true,
+      "source_output": "results/E083-control-0-32ee72460c26.json"
+    },
+    {
+      "index": 1,
+      "runes": 202,
+      "exact": true,
+      "source_output": "results/E083-control-1-cb1ade4d03e0.json"
+    },
+    {
+      "index": 2,
+      "runes": 200,
+      "exact": true,
+      "source_output": "results/E083-control-2-b3534764eb6e.json"
+    },
+    {
+      "index": 3,
+      "runes": 302,
+      "exact": true,
+      "source_output": "results/E083-control-3-a8588073f85a.json"
+    },
+    {
+      "index": 4,
+      "runes": 306,
+      "exact": true,
+      "source_output": "results/E083-control-4-7d0722ecc2f2.json"
+    },
+    {
+      "index": 5,
+      "runes": 300,
+      "exact": true,
+      "source_output": "results/E083-control-5-934393a46a1e.json"
+    },
+    {
+      "index": 6,
+      "runes": 502,
+      "exact": true,
+      "source_output": "results/E083-control-6-dd7868cc739a.json"
+    },
+    {
+      "index": 7,
+      "runes": 501,
+      "exact": true,
+      "source_output": "results/E083-control-7-bbb55a7a77bd.json"
+    },
+    {
+      "index": 8,
+      "runes": 502,
+      "exact": true,
+      "source_output": "results/E083-control-8-b16acf4c26e0.json"
+    },
+    {
+      "index": 9,
+      "runes": 729,
+      "exact": true,
+      "source_output": "results/E083-control-9-4cb02713ae3e.json"
+    },
+    {
+      "index": 10,
+      "runes": 730,
+      "exact": true,
+      "source_output": "results/E083-control-10-6ac00b1a8f70.json"
+    },
+    {
+      "index": 11,
+      "runes": 730,
+      "exact": true,
+      "source_output": "results/E083-control-11-e3191dd9d200.json"
+    }
+  ],
+  "entries": [
+    {
+      "id": "E085-reversible-bridge",
+      "fingerprint": "90196dba259ddad411258316094951cd8b6d70bd45937194230de79881b92cf0",
+      "output": "results/E085-reversible-bridge-90196dba259d.json",
+      "sha256": "f4888c1082e838612e68449d95116ecd1d4d6e4ef88820579d1a2591ffdde703"
+    }
+  ],
+  "validation": {
+    "independent_scores": 245,
+    "all_iv_transport_checks": 435,
+    "cumulative_reencryptions": 245,
+    "raw_source_inputs": 15
+  },
+  "seconds": 0.17449110001325607,
+  "validation_seconds": 3.1365815000608563,
+  "verifier_sha256": "188c3c054897f01dcd7d06317e2b620317ad1e60b1dbacb6af5447e9fbd04d38",
+  "limits": "Reused E083 capability, not new independent search recovery. Unknown attack IV0 only. Shared GP tokenizer, independent raw-source event counts and transport arithmetic.",
+  "new_decryptions": []
+}

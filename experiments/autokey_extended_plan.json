@@ -1,0 +1,14 @@
+{
+  "experiment": "E062",
+  "hypothesis": "H045",
+  "scope": "Plaintext-autokey, no skipped symbols; all seed lengths 4..32 and four sign pairs. Existing E017 affine recurrence is reused, not claimed as a discovery. Arbitrary F skips and all-F skipping are deferred.",
+  "training": "Frozen Emerson chapters I,III-IX; all controls from excluded X,XI,XII. Source ranges are fresh for this experiment but these chapters are historically inspected, not an independent corpus.",
+  "initialization": "For every length/sign, sum unigram likelihood along affine chains. Eight initial prefixes: independent unigram ranks 0,1,2; remaining five sample ranks0..4 with Random(3303062+4*period+sign_index). Six cyclic coordinate sweeps on the exact E017 trigram factors, keep two. Separately E017-style beam width128, cuts0 and floor(period/2), keep2 per cut. These are different fixed computational budgets, not an equal-time algorithm contest.",
+  "refinement": "Pool both branches across all116 families, rank by full fourgram mean score, stable coordinate-first ties, retain12 distinct period/sign/prefix combinations. Six complete full-score coordinate sweeps over29 values; strict improvement threshold1e-12. Top3 unique full plaintexts. All parameters frozen before controls.",
+  "controls": "Indices0..2: chaptersX/XI/XII, rune range6800:7100, keys13/23/31. Indices3..5: same chapters,7300:7600, keys4/8/12. Indices6..8:12750:12950,keys13/23/31. Indices9..11:15000:15729,keys13/23/31. Key Random(3301062+index),uniform0..28; sign pairs cycle(+1,-1),(+1,+1),(-1,-1),(-1,+1). No plaintext/key/length supplied to search.",
+  "gate": "Always finish stageA controls0..5 plus one matched full-optimizer null of control2. Only if all six top-one plaintexts exact, run stageB6..11. All12 exact required before unknown experiment; independent source/re-encryption/score verification required. Equivalent recipes allowed only with exact full plaintext; exact injected key/sign also recorded separately.",
+  "null": "Control2 count/endpoints/adjacent-equality conditional shuffle, Random3302062, max100000 proposals. Repeat all116 families and final refinement. Diagnostic only, no significance inference from one null.",
+  "bounds": {"process_seconds":180,"watchdog_seconds":185,"family_seconds":1800,"phase_seconds":2400,"memory_ceiling_mib":768,"workers":1},
+  "resume": "Skip completed unchanged fingerprints; preserve logs and outputs. No unknown execution is included in this control plan. Any later unknown scan needs its own frozen plan, full optimizer nulls and selection correction.",
+  "limits": "Conditional coordinate maxima and finite beams do not prove global optimality. Synthetic successes do not establish the authentic cipher or eliminate transcription uncertainty. No unsupported community solution claims."
+}

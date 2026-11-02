@@ -1,0 +1,149 @@
+{
+  "created_at": "2026-10-19T12:37:30.387846+00:00",
+  "status": "fourth_batch_budget_checkpoint_E018_pending",
+  "summary": "results/phase4_summary.json",
+  "summary_sha256": "b6de28f266dca29cfc42bf9246471b74d52158ac60864838bb35660040edd16a",
+  "experiments": [
+    {
+      "id": "E016-external-language",
+      "fingerprint": "5426786c336fb7ebb4b60edd82093724187816e58e2b7a8028d6c314ddd7d086",
+      "output": "results/E016-external-language-5426786c336f.json",
+      "sha256": "9eaf949fb6691db850a8fa3640c8a94c043f4e5de4efe510f8c83222f5f94d1b"
+    },
+    {
+      "id": "E017-controls",
+      "fingerprint": "8f81c0858e35ea9c1218bd6a57b95fd0c38c12995951213e7a76889b1355e5d2",
+      "output": "results/E017-controls-8f81c0858e35.json",
+      "sha256": "d6f557e923c4f66537d6c22c1b70bbc0166b2c08ca5702ef0a8549af4f613ce9"
+    },
+    {
+      "id": "E017-pages-LP2-00_04",
+      "fingerprint": "57c4f0702dda2f5146896886882271dac6ccbef54dc404eb4c5001c6e4917d3a",
+      "output": "results/E017-pages-LP2-00_04-57c4f0702dda.json",
+      "sha256": "a37757430e24c281a37ce999d56f92f3fae0efa61530b22586220a83beead5f9"
+    },
+    {
+      "id": "E017-pages-LP2-05_09",
+      "fingerprint": "b94394d799702fd8cf85d1de707d11bd93d38be17f91f5460278e194502fbe6d",
+      "output": "results/E017-pages-LP2-05_09-b94394d79970.json",
+      "sha256": "20bb1df0060214a23bde70fbff413668c9cb86c6fd2353cf6e5e2849a272c324"
+    },
+    {
+      "id": "E017-pages-LP2-10_14",
+      "fingerprint": "c84f417021528b49ae22ba03bef10de9519db8a0ba8a77ab274033f8057398f2",
+      "output": "results/E017-pages-LP2-10_14-c84f41702152.json",
+      "sha256": "b8881f28163c607273ee2fad01a2796464688fb11c0b005ac2c2b26735c7b67c"
+    },
+    {
+      "id": "E017-pages-LP2-15_19",
+      "fingerprint": "c79bd8cdecfb619b1b7373a2ff3f2c00ad27d805851e1494f28f444f81c0de98",
+      "output": "results/E017-pages-LP2-15_19-c79bd8cdecfb.json",
+      "sha256": "c06b051cc8e78e12ca31aa3f95e8ef053c4af122089ea120192d973117209b4f"
+    },
+    {
+      "id": "E017-pages-LP2-20_24",
+      "fingerprint": "4787a127f38bf0c287cae056eeaf8b4f2adc8922c035f1874e63a9d258cd8487",
+      "output": "results/E017-pages-LP2-20_24-4787a127f38b.json",
+      "sha256": "e4174866e07e70fa55899066edc048650102b7bf9d373207180d20a34878980b"
+    },
+    {
+      "id": "E017-pages-LP2-25_29",
+      "fingerprint": "1773cce31683236dfad4f2a3b77fa19ea63e7adcabed4c6d1d7cb76337bfa4cd",
+      "output": "results/E017-pages-LP2-25_29-1773cce31683.json",
+      "sha256": "55793be8295d9a98cfc3c651935d06012d317ad1bc3ea6c6c484d275887917cf"
+    },
+    {
+      "id": "E017-pages-LP2-30_34",
+      "fingerprint": "b27361637650b94b495d71bc43a66372f4b6a3f5ef3cc18d401986596f6a7873",
+      "output": "results/E017-pages-LP2-30_34-b27361637650.json",
+      "sha256": "0933bd61148f6032670e092052466d7b13b8ba59342791b51f47f438933d1a07"
+    },
+    {
+      "id": "E017-pages-LP2-35_39",
+      "fingerprint": "fdd246b26e0138a18ce79d75a4ced0ac4666a248f92cffb506014d3f8113ec5c",
+      "output": "results/E017-pages-LP2-35_39-fdd246b26e01.json",
+      "sha256": "9a6025fead9a9b489ba3ffad8c8b72f076f5616cec50f4ed9986c0d490ae39e8"
+    },
+    {
+      "id": "E017-pages-LP2-40_44",
+      "fingerprint": "ddcbfc9995ae6bfb2b1e9d2fa01554452f269673d781a6616e82f459145ebeee",
+      "output": "results/E017-pages-LP2-40_44-ddcbfc9995ae.json",
+      "sha256": "13c04f56dcb9ad5730c3d07bfe750a4696a2e443d29c3547d78a5ddacb70b9db"
+    },
+    {
+      "id": "E017-pages-LP2-45_49",
+      "fingerprint": "bb1953891f8948da9bb1ca65bf5a8bf74a0b3ffbdda76ae7ff0d41b6fd8bfcc5",
+      "output": "results/E017-pages-LP2-45_49-bb1953891f89.json",
+      "sha256": "37cb2b174dcfdad16442006152078dbb624de79891b3a450abef2a463403d0ca"
+    },
+    {
+      "id": "E017-pages-LP2-50_54",
+      "fingerprint": "29ec0c64f274a5da1e31fb655bcef0511441ca45ac7c5e00e997c4c20ad1e387",
+      "output": "results/E017-pages-LP2-50_54-29ec0c64f274.json",
+      "sha256": "40054f5ca2e299afef0b285885af3b45f51035bd5948046d0f68dc1f82c798e0"
+    },
+    {
+      "id": "E017-pages-LP2-55_55",
+      "fingerprint": "7b3df2c0459593b2b7bf073f25d3890436f86527f56e705651468c6c9d895696",
+      "output": "results/E017-pages-LP2-55_55-7b3df2c04595.json",
+      "sha256": "812d76da03229e4140d0360ab3ef9756bf0e8e712d44d5e14ba3e3f82e2d3ce0"
+    },
+    {
+      "id": "E017-null-LP2-49_49",
+      "fingerprint": "5d08d87768975056550312e7c04d82b24bd3c6ba19d18e26888ee2be10cbce67",
+      "output": "results/E017-null-LP2-49_49-5d08d8776897.json",
+      "sha256": "fd500697bf122e4cb77474a125a0f046969756e26fd1c61a20082c9069fe9323"
+    },
+    {
+      "id": "E018-controls",
+      "fingerprint": "4024aa3c2d79af4a5be03ca677b9731e52721bdd52e37beb4eb4124848e06057",
+      "output": "results/E018-controls-4024aa3c2d79.json",
+      "sha256": "e5580816199a897db5fe6ae01f9df3a09fffbed0b16fffa4a3d67fd4b04c46ac"
+    },
+    {
+      "id": "E018-pages-LP2-00_04",
+      "fingerprint": "4f73d6644ddbf345bfe9058408b0db148506ce2eeca29116378e2d5a725ecf58",
+      "output": "results/E018-pages-LP2-00_04-4f73d6644ddb.json",
+      "sha256": "6cedf55a6beb9cc86d1426354b0558cdbfdb01d4b79ba7717e3efb4a92ad4619"
+    },
+    {
+      "id": "E018-pages-LP2-05_09",
+      "fingerprint": "dca3ac0e7f0ba6f1d280a51139b78998be39f64990a27afb1d9c55eda3d987ae",
+      "output": "results/E018-pages-LP2-05_09-dca3ac0e7f0b.json",
+      "sha256": "09f938c47f4a21b999c23c80baefd8925e5b27b9dabb7d819b41598b3de36e53"
+    },
+    {
+      "id": "E018-pages-LP2-10_14",
+      "fingerprint": "b22598cdb4dbd608a07d654220622690e8857ce5b4051b0b3d0ffd5f084c0fcb",
+      "output": "results/E018-pages-LP2-10_14-b22598cdb4db.json",
+      "sha256": "f822dee05a7f7f8254fd8c50fc7d4cbf26c6aa4e73e10e63692bc9d0c12b20f9"
+    },
+    {
+      "id": "E018-pages-LP2-15_19",
+      "fingerprint": "f198f0820eb7037f1f17a5819050b3702d74860bfd608517a1f5fbffad88846a",
+      "output": "results/E018-pages-LP2-15_19-f198f0820eb7.json",
+      "sha256": "5d84c6ded696bda3303f542e7e65d73a824d8470ca3e50fb815b10d1e02a7dd8"
+    },
+    {
+      "id": "E018-pages-LP2-20_24",
+      "fingerprint": "017684da206ed3e85bec7eb6e323a58376c90749b1db3bd5d4cbc2cd5526c42b",
+      "output": "results/E018-pages-LP2-20_24-017684da206e.json",
+      "sha256": "059240039419ecfced02cb601e97f614234b70398dcb85854fd9d5c30ef27c9a"
+    },
+    {
+      "id": "E018-pages-LP2-25_29",
+      "fingerprint": "967b5d15a8f42bf5d360d2322025a21729afaacd8bffa80001d93e24d4f17c4a",
+      "output": "results/E018-pages-LP2-25_29-967b5d15a8f4.json",
+      "sha256": "f4121d66f9d6bad8707061293a07e8c91140a1a361cb53cef11a468c96a9fa0b"
+    },
+    {
+      "id": "E018-pages-LP2-30_34",
+      "fingerprint": "daa75bede1e5ccfc753523c274db6badd17d4ba30733acbab5819d9704ee17ec",
+      "output": "results/E018-pages-LP2-30_34-daa75bede1e5.json",
+      "sha256": "6d106abd4517ea5921e6031335673bb91bb34a960a65bbbfc8384cea8a0db305"
+    }
+  ],
+  "tests": 61,
+  "new_decryptions": [],
+  "resume": "Read research_state.json and hypotheses.json; completed fingerprints must be skipped."
+}

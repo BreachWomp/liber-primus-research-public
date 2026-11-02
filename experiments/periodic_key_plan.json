@@ -1,0 +1,20 @@
+{
+  "experiment": "E038-periodic-key-controls",
+  "hypothesis_id": "H033",
+  "rule": "P_i=s*C_i+K_j mod29, j advances only at active positions. s in{1,-1}. Skip positions copy F=0 and consume no key.",
+  "periods": "1..16, with1 as affine baseline; candidate final key reduced to primitive period. No dictionary keys or plaintext cribs supplied.",
+  "unknown_policies": ["none","all_F"],
+  "historical_controls": "Actual source-anchored LP1-03_04_divinity and LP1-14_15_circumference ciphertexts, but supply their documented skip positions as an ORACLE. Recover key and plaintext; this does NOT test interruption discovery. Same signs and periods, only oracle policy.",
+  "external_controls": "First2 paragraphs in each of chaptersX,XI,XII with>=200 runes; take first200. Inject uniform independent keys of lengths5 and13 respectively using Random(3301038), signs+1 and-1 respectively, no skips. Search both unknown policies, both signs, all periods.",
+  "model": "Order4 BackoffModel alpha0.5 strength5. Training ONLY Emerson chaptersI,III,IV,V,VI,VII,VIII,IX, same source-rune encoding as E030. Order2 marginal from same fitted model for warmup. No LP training. Holdout chapters were seen historically, so not a fresh blind corpus.",
+  "objective": "(sum order4 log probabilities - primitive_key_length*log29)/full_rune_count. Fixed description-length criterion, not calibrated posterior probability. Uniform sign/period/policy constants omitted because common. During each fixed-period coordinate sweep optimize language likelihood only; rank final candidates with penalty.",
+  "optimizer": "For each sign/policy/period:4 starts (unigram column maximum; half-columns perturbed;2 uniform random). Each at most12 cyclic coordinate sweeps under order2 then12 under order4; all29 values per coordinate; accept gain>1e-12, stop after unchanged sweep. Every changed coordinate rescored using all affected conditional factors, including copied F context. No annealing or candidate tuning.",
+  "search_seed": 3303038,
+  "family_seed": "search_seed+1000*sign_index+100*policy_index+period; controls all use same search_seed.",
+  "null_diagnostic": "Three independent exact-count/doublet rejection shuffles of first external control, seeds3302038+k, max100000 proposals, full identical optimizer. No inferential p-value from this capability diagnostic.",
+  "gate": "All2 oracle historical controls AND all6 source-excluded external synthetic controls exact top1. Failure blocks unknown scan. Success permits a separately preregistered E039 with all55unknown pages,19 matched full-optimizer nulls of frozen maximum, plus-one p and Bonferroni55.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "memory": "One process; at most1024runes,16key positions,29coordinate-neighbor rows. Dense29^4 lookup;4starts; bounded24sweeps per start. Retain best candidate per sign/policy/period plus top3.",
+  "limits": "Heuristic29^period search, not exhaustive. None/all_F policies do not cover arbitrary interrupter subsets; oracle controls must not be described as recovery of those subsets. Negative result applies only to declared optimizer and policies."
+}

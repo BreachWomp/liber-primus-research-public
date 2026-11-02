@@ -1,0 +1,22 @@
+{
+  "experiment":"E065",
+  "hypothesis":"H046",
+  "control_validation":"results/phase23_controls_validation.json",
+  "required_gate":"All4 new3316-rune controls exact in plaintext/key/sign, all12 pinned shorter E062 controls intact and independent E064 validation passed before execution.",
+  "section_ids":["LP2-00_02","LP2-03_07","LP2-08_14","LP2-15_22","LP2-23_26","LP2-27_32","LP2-33_39","LP2-40_53","LP2-54_55","LP2-40_55"],
+  "scope":"All10 existing E012 groups,308..3316 runes, covering55 unknown rune pages and retaining numeric LP2-50. Overlapping alternative groupings remain distinct hypotheses, not authenticated cipher boundaries.",
+  "solver":"Frozen E062 autokey_extended_search.search over4..32 and four signs; no skipped symbols. Concatenate existing canonical rune streams in original page order. No key, feedback or language reset between pages. Retain source refs and empty spans. No parameters changed for observed or null ciphertexts.",
+  "selection":"Highest fourgram mean score across10groups; stable plan order breaks ties. Freeze selection and all observed output hashes before nulls.",
+  "null":"19 independent selected-group nulls. Each page separately preserves rune counts, endpoints and adjacent-equality count, including empty spans. Completely rerun both initializers, all116 families, candidate selection and full refinement.",
+  "null_seed":3302065,
+  "replicate_seed_stride":100,
+  "replicates":19,
+  "inference":"Plus-one p=(1+exceedances)/20; Bonferroni10 for group selection, irrespective of overlap. Minimum corrected p0.5, no significance claim. Zero exceedance requires a separately preregistered larger calibration before any promotion.",
+  "process_seconds":180,
+  "watchdog_seconds":185,
+  "family_seconds":1800,
+  "phase_seconds":3000,
+  "memory_ceiling_mib":768,
+  "workers":1,
+  "limits":"Only continuous no-skip plaintext-autokey with4..32 seed. Heuristic search and hypothetical boundaries; negative result cannot exclude other schedules, lengths or cipher families. No community solution claims."
+}

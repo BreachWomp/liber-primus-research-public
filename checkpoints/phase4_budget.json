@@ -1,0 +1,11 @@
+{
+  "phase_budget_seconds": 900,
+  "E016_E017_completed_seconds": 489.05164860002697,
+  "E018_orchestration_budget_seconds": 400,
+  "termination_allowance_seconds": 2,
+  "combined_conservative_seconds": 891.051648600027,
+  "interrupted_batch": "LP2-35_39",
+  "completed_E018_pages": 35,
+  "null_pending": true,
+  "note": "400 seconds includes all E018 successful subprocesses, startup overhead and interrupted batch; do not add it again to successful E018 runtimes. The two-second allowance is conservative accounting, not measured termination time."
+}

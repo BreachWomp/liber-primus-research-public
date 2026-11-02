@@ -1,0 +1,140 @@
+{
+  "created_at": "2026-10-20T14:42:20.534880+00:00",
+  "selected_page": "LP2-49",
+  "top": {
+    "score": -3.9816807535253598,
+    "language_score": -3.165366612922578,
+    "nominal_period": 16,
+    "key": [
+      20,
+      5,
+      28,
+      9,
+      7,
+      14,
+      11,
+      23,
+      23,
+      18,
+      2,
+      27,
+      9,
+      21,
+      20,
+      24
+    ],
+    "sign": 1,
+    "policy": "all_F",
+    "restart": 1,
+    "sweeps": 5,
+    "accepted_coordinates": 23,
+    "skip_positions": [
+      3,
+      33
+    ],
+    "plaintext_runes": "ᛖᛞᛁᚠᚠᚠᚪᛏᚱᛋᚪᚱᛒᚪᛒᚣᛗᛗᚪᚾᚣᚳᚢᛚᛋᛈᛚᛖᚪᚳᚩᚾᚩᚠᛋᚩᚳᚱᚣᚪᚳᚻᛁᛗᛚᚠᛖᛁᛋᚻᛡᚱᛗᚣᚻᛖᚾᛏᛖᛋᚪᛁᛏᚩᚱᛖ",
+    "transliteration": "EDIFFFATRSARBABYMMANYCULSPLEACONOFSOCRYACHIMLFEISHIARMYHENTESAITORE"
+  },
+  "unknown_pages": 55,
+  "families_per_page": 64,
+  "starts_per_family": 4,
+  "keys_exhaustively_enumerated": false,
+  "controls": [
+    {
+      "fixture": "LP1-03_04_divinity",
+      "exact": true,
+      "oracle_skips": true,
+      "recovered_key": [
+        6,
+        19,
+        28,
+        19,
+        20,
+        19,
+        13,
+        3
+      ]
+    },
+    {
+      "fixture": "LP1-14_15_circumference",
+      "exact": true,
+      "oracle_skips": true,
+      "recovered_key": [
+        0,
+        19,
+        25,
+        0,
+        28,
+        10,
+        0,
+        11,
+        25,
+        11,
+        20,
+        0,
+        11
+      ]
+    },
+    {
+      "chapter": "X",
+      "paragraph": 3,
+      "exact": true,
+      "injected_period": 5,
+      "injected_sign": 1,
+      "oracle_skips": false
+    },
+    {
+      "chapter": "X",
+      "paragraph": 4,
+      "exact": true,
+      "injected_period": 13,
+      "injected_sign": -1,
+      "oracle_skips": false
+    },
+    {
+      "chapter": "XI",
+      "paragraph": 3,
+      "exact": true,
+      "injected_period": 5,
+      "injected_sign": 1,
+      "oracle_skips": false
+    },
+    {
+      "chapter": "XI",
+      "paragraph": 4,
+      "exact": true,
+      "injected_period": 13,
+      "injected_sign": -1,
+      "oracle_skips": false
+    },
+    {
+      "chapter": "XII",
+      "paragraph": 1,
+      "exact": true,
+      "injected_period": 5,
+      "injected_sign": 1,
+      "oracle_skips": false
+    },
+    {
+      "chapter": "XII",
+      "paragraph": 3,
+      "exact": true,
+      "injected_period": 13,
+      "injected_sign": -1,
+      "oracle_skips": false
+    }
+  ],
+  "controls_exact": 8,
+  "raw_p": 0.3,
+  "bonferroni55": 1,
+  "null_exceedances": 5,
+  "null_replicates": 19,
+  "pending_larger_calibration": false,
+  "candidate_records_recomputed": 5631,
+  "search_outputs_recomputed": 85,
+  "tests_passed": 96,
+  "successful_tasks": 75,
+  "seconds": 192.48050900013186,
+  "family_accounted_seconds": 193.07501209998736,
+  "new_decryptions": []
+}

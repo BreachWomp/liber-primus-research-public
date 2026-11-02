@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-21T10:24:33.561076+00:00",
+  "status": "seventeenth_batch_controls_failed_search_bottleneck",
+  "summary": "results/phase17_summary.json",
+  "summary_sha256": "84c6c9add4f9aa224866596d98dc1a89a2613e3dce72756456550341290572cb",
+  "experiments": [
+    {
+      "id": "E049-long-key-controls",
+      "fingerprint": "74c0828cc750a1456f3500647982659dffe93e8fbbec4b358342c6e2f4340371",
+      "output": "results/E049-long-key-controls-74c0828cc750.json",
+      "sha256": "131d1234d483ba4d8d6b054932624d7fe54d89ceca46e9a03c6325a3624ebd6d"
+    },
+    {
+      "id": "E050-long-key-diagnostic",
+      "fingerprint": "320d399c7db960e79fbff489ff5423f2e4228251958bb844f16bc60c75548404",
+      "output": "results/E050-long-key-diagnostic-320d399c7db9.json",
+      "sha256": "174aaf058e5120f2fbbcf820d20f4b1eeada3e38e4dfcf584fd793153c4d2227"
+    },
+    {
+      "id": "E051-pooled-long-key-diagnostic",
+      "fingerprint": "b8f422535a3896d0a66e50767a2d63c2fd44812193ba8b89caeb9ef76b253ac0",
+      "output": "results/E051-pooled-long-key-diagnostic-b8f422535a38.json",
+      "sha256": "70cf0dcccafa0e313a8942015aeefe249d1647fb87bda0c32dd89f43bdeec7f3"
+    }
+  ]
+}

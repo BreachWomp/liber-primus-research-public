@@ -1,0 +1,470 @@
+{
+  "created_at": "2026-10-19T17:56:16.716925+00:00",
+  "status": "seventh_batch_complete_no_new_decryption",
+  "summary": "results/phase7_summary.json",
+  "summary_sha256": "3aeba49b146ea8a023d296d0d281b4b485427c1c0224867e997290ff7c02a670",
+  "experiments": [
+    {
+      "id": "E023-glyph-audit",
+      "fingerprint": "8315f5c684bb8c633ef20e70ac1858d71e4553b18ba0ab71c1177642ad85343a",
+      "output": "results/E023-glyph-audit-8315f5c684bb.json",
+      "sha256": "8e6d968c69b53a22eeb69cca6b738bf0a5264823b0164f7b209cf1ebd881b91e"
+    },
+    {
+      "id": "E024-numeric-structure",
+      "fingerprint": "7b64b0213147968674d2ced719aef5dee891d8f464591969cf2f713a8270499f",
+      "output": "results/E024-numeric-structure-7b64b0213147.json",
+      "sha256": "d5711cd08175a970073ecfe67ad1ced9000aa17e3707839485685fa0d62678da"
+    },
+    {
+      "id": "E025-controls",
+      "fingerprint": "900be766db55a441e4ba08a41e493f38f89b1dc7a0e47de372ba9e5a7fab3815",
+      "output": "results/E025-controls-900be766db55.json",
+      "sha256": "cc2fe4d4d8fd0c6b89129823749706907a51673093f35d578a0b6cc78804b4b8"
+    },
+    {
+      "id": "E025-pages-LP2-00_00",
+      "fingerprint": "57893e36fcc3b0d8c2c7951b56ff72db29a6ff5900feb37d64278f234df6b098",
+      "output": "results/E025-pages-LP2-00_00-57893e36fcc3.json",
+      "sha256": "ec8d7bf5c15d773ca277026fa7eac62e200033f0203c6480261eb4a49a1fdbd0"
+    },
+    {
+      "id": "E025-pages-LP2-01_01",
+      "fingerprint": "7fbf3ccd5f93f62f908dad9dd921a32b2568e85557fed8e176d8fb3da73f786b",
+      "output": "results/E025-pages-LP2-01_01-7fbf3ccd5f93.json",
+      "sha256": "519c1df1c730c358f33959089bce524b8b5b7d6bca295ab29f9868472a877d28"
+    },
+    {
+      "id": "E025-pages-LP2-02_02",
+      "fingerprint": "fb2016ca787eaaabbdad52aa9dbc2fb57c1205aa40750fa003db3be3140b9294",
+      "output": "results/E025-pages-LP2-02_02-fb2016ca787e.json",
+      "sha256": "b993d80ee33dcb33dbe18a399bdb5e9439d284de71f1e24053a1287dd35df7c9"
+    },
+    {
+      "id": "E025-pages-LP2-03_03",
+      "fingerprint": "8cc141acd578033fcabeeebc5a7e81dc898544a15e1bdbbe99bad19314d96fc7",
+      "output": "results/E025-pages-LP2-03_03-8cc141acd578.json",
+      "sha256": "aabe948e553c983bd1cc21681d523f7e3db8a1dfee6411348e87404d81432fce"
+    },
+    {
+      "id": "E025-pages-LP2-04_04",
+      "fingerprint": "a469ed8d9f900117c4080e432c5030bf64e3880c338021cb19b29c821bdccf53",
+      "output": "results/E025-pages-LP2-04_04-a469ed8d9f90.json",
+      "sha256": "2b3d3542f63b4f631c3e31083b7932d341ef61d9598a31733558e179806a4267"
+    },
+    {
+      "id": "E025-pages-LP2-05_05",
+      "fingerprint": "afa5e9fc01ba55dd326e16216be49d5f05457e8679926ce668c79e083181d7bd",
+      "output": "results/E025-pages-LP2-05_05-afa5e9fc01ba.json",
+      "sha256": "f9eea08e963ffefdeb736a343384f31cfa45ac7cb471c625dd8c3274adda50f2"
+    },
+    {
+      "id": "E025-pages-LP2-06_06",
+      "fingerprint": "fb04f7046877192e31b71ec6b6d85d1b894c9d31a231fa6d91aa4ab787c96750",
+      "output": "results/E025-pages-LP2-06_06-fb04f7046877.json",
+      "sha256": "d8cf061bdc3ab61cf5c9bed32658e5802ed723eb5e98e04a0f1c087897efdafb"
+    },
+    {
+      "id": "E025-pages-LP2-07_07",
+      "fingerprint": "803d8e506d9c67a7a5ec66658b48337d2d7e94d11466803a7458760339f9eecf",
+      "output": "results/E025-pages-LP2-07_07-803d8e506d9c.json",
+      "sha256": "65c014145ccb99b9272483eba98bd109f3dafc4a4ef19ed952b001cd89ca3535"
+    },
+    {
+      "id": "E025-pages-LP2-08_08",
+      "fingerprint": "9a19d8e7c6a99cdaca4f3e09116662c79158d4e58dd71ef9d686b8129403d209",
+      "output": "results/E025-pages-LP2-08_08-9a19d8e7c6a9.json",
+      "sha256": "bf6fca77e8978121ef200e2ac291fc214f0d2aefd898812730fe8ca541e89c07"
+    },
+    {
+      "id": "E025-pages-LP2-09_09",
+      "fingerprint": "e9b838a7474fb863f82631cc7ad108182f87b868c67da0676a44036371847559",
+      "output": "results/E025-pages-LP2-09_09-e9b838a7474f.json",
+      "sha256": "5c02e3e80ff8db644ae2b2744acf48c2f8ff1878888f27ba6f1e27fa4dc53ea9"
+    },
+    {
+      "id": "E025-pages-LP2-10_10",
+      "fingerprint": "c169b25ec38b58d72e9fedb8828da46f29364ea63b50877d3533122815510b6e",
+      "output": "results/E025-pages-LP2-10_10-c169b25ec38b.json",
+      "sha256": "83e4dc2edad3204ace398bb81d069502a43e0bdd58b23ce9a43cfb26814c8898"
+    },
+    {
+      "id": "E025-pages-LP2-11_11",
+      "fingerprint": "555085e47efa9254aaf158218e3bbeaf63bcdf9535ffc6f9f93021cd150a62f3",
+      "output": "results/E025-pages-LP2-11_11-555085e47efa.json",
+      "sha256": "e4da86274f05a62a55fc696c8e63ad9f537dd3c3592e043e319817f4b1ac47f7"
+    },
+    {
+      "id": "E025-pages-LP2-12_12",
+      "fingerprint": "71b5b796e547cbda62fdb1099f7b26e760e34ac69b7d346a3b46330093fd28d3",
+      "output": "results/E025-pages-LP2-12_12-71b5b796e547.json",
+      "sha256": "06cd3da2ca3b3d049403ae4715dac6a73b3c8bb0bd93ce08b6be72ab76a4b5d6"
+    },
+    {
+      "id": "E025-pages-LP2-13_13",
+      "fingerprint": "7899ad4a98b6062bfe3ff3b24956c06ad3ee67c160826bf4a30f16fda25a4d40",
+      "output": "results/E025-pages-LP2-13_13-7899ad4a98b6.json",
+      "sha256": "c1b599efca1b5b92394b1125968210536b4642bb8f6d0fea34944261489c135b"
+    },
+    {
+      "id": "E025-pages-LP2-14_14",
+      "fingerprint": "af634668d5cdc2dcfa79d1b280564bbb6d7b95495660395ca80783c16c61fde7",
+      "output": "results/E025-pages-LP2-14_14-af634668d5cd.json",
+      "sha256": "781e9d34dabe4c937b8b4c0af00d7c824087aefd2dce7c8c7a7f08eabbd3e317"
+    },
+    {
+      "id": "E025-pages-LP2-15_15",
+      "fingerprint": "ccab402297d46fc0e55dc426bf4c64e466360e2aae7006dfea8bc045fbc9dd6e",
+      "output": "results/E025-pages-LP2-15_15-ccab402297d4.json",
+      "sha256": "075767ef2f139d1247f67b7f393db3929a3a206e25b940ee3415faaa4c143b04"
+    },
+    {
+      "id": "E025-pages-LP2-16_16",
+      "fingerprint": "40704c174e9b2b9af6e2836bbd9f4d05e8176b5b6a7b7ffd6eaf400c1304eb97",
+      "output": "results/E025-pages-LP2-16_16-40704c174e9b.json",
+      "sha256": "c3564673deb5b8ad348b6f67adef897500be3096e247803fd046d67038b41a5e"
+    },
+    {
+      "id": "E025-pages-LP2-17_17",
+      "fingerprint": "2a1b8d4a98e3fa7660bcaed383d84da9cea40cc09c5fdc0cbcb3b8d98d7ecea4",
+      "output": "results/E025-pages-LP2-17_17-2a1b8d4a98e3.json",
+      "sha256": "ea94599f247d0f4467bc3ae8ee91792f2655f2e37d83e9e10f851dda214d4cce"
+    },
+    {
+      "id": "E025-pages-LP2-18_18",
+      "fingerprint": "2adc6f05940e3bf9408c656ef689417181464efae451d54fdfd3f8db455ebee2",
+      "output": "results/E025-pages-LP2-18_18-2adc6f05940e.json",
+      "sha256": "88f9b1e5eee483c3b95b08b4e950b79bb648768ef8d125e754ed5027715f32f6"
+    },
+    {
+      "id": "E025-pages-LP2-19_19",
+      "fingerprint": "34382be5b9a2b83151fdff15deca8b8a38f46b182a264fb62b8daef1bc4e2ad2",
+      "output": "results/E025-pages-LP2-19_19-34382be5b9a2.json",
+      "sha256": "51f4479469261eabaa20c7696abe3890ba0047c00aa559d948c3e69ac00e01ae"
+    },
+    {
+      "id": "E025-pages-LP2-20_20",
+      "fingerprint": "d54e993932ca19581982f4a9140f09f30a02f70ff1c859343204cd7b4da3d3cb",
+      "output": "results/E025-pages-LP2-20_20-d54e993932ca.json",
+      "sha256": "35fe681bcd9dade9c885c609be34cc4a95a1a0313bfc80997ca6c5577a1056d9"
+    },
+    {
+      "id": "E025-pages-LP2-21_21",
+      "fingerprint": "81b2a9bfc986deac234fced1bb2c47b76c008745cd9a8035d4a89bbcc2c6aec1",
+      "output": "results/E025-pages-LP2-21_21-81b2a9bfc986.json",
+      "sha256": "d7b28daa35aead7feffe836d8077521d633f0c3a514acaa8e1257f40312e11b2"
+    },
+    {
+      "id": "E025-pages-LP2-22_22",
+      "fingerprint": "0b7489b503c9f958ad106c2d43d86385ee22dca4b76da396b8138c69b60e6564",
+      "output": "results/E025-pages-LP2-22_22-0b7489b503c9.json",
+      "sha256": "f5edfe7cdb97349a37325cd5c88472be8210beaad6e56b37167b42ce50619b05"
+    },
+    {
+      "id": "E025-pages-LP2-23_23",
+      "fingerprint": "4d18408a004abece36fc7eaebf6b69f9d8d7d8d75da6f459de813c2b01fb476e",
+      "output": "results/E025-pages-LP2-23_23-4d18408a004a.json",
+      "sha256": "cb7817f96eb88a4eb5f66d6048422d7c34cbf97c21cdf133fd33a5ba2849c174"
+    },
+    {
+      "id": "E025-pages-LP2-24_24",
+      "fingerprint": "365353cf5013a088b60e0f8a2c8630a6746ba1916371f5aafee95ef7a662fa5e",
+      "output": "results/E025-pages-LP2-24_24-365353cf5013.json",
+      "sha256": "e38f38611bfd6ebe3f23a9fabc41edfa080d9706658bb807f2ab2b3264d8f1e5"
+    },
+    {
+      "id": "E025-pages-LP2-25_25",
+      "fingerprint": "62513f8dbdc44910f72f81f47e1b635f73591569ab64076f6c6a6a0fe589c901",
+      "output": "results/E025-pages-LP2-25_25-62513f8dbdc4.json",
+      "sha256": "8dec7514c340f8d102b23e5c33da2b0d38b9ffa5040037ee5fa9361ce1745bb3"
+    },
+    {
+      "id": "E025-pages-LP2-26_26",
+      "fingerprint": "77cd4a0f6476897533de47e05482cbe19a81a80acd1d666d69b65dd9d1773702",
+      "output": "results/E025-pages-LP2-26_26-77cd4a0f6476.json",
+      "sha256": "eed9225971a02ab70dae6c4caced084216226bcb264a69f9d46e6b01c5bc7bdc"
+    },
+    {
+      "id": "E025-pages-LP2-27_27",
+      "fingerprint": "fdc5f35ea360de5ec4cc9c11dbdeb50fa7356a87d85e8dbea116c3c9534973e9",
+      "output": "results/E025-pages-LP2-27_27-fdc5f35ea360.json",
+      "sha256": "1f8c0ee074d14aa8b646d4077ffda5c0307aaadd8c2329f13abc3a0b5e534991"
+    },
+    {
+      "id": "E025-pages-LP2-28_28",
+      "fingerprint": "468dd22a1fd71248a110b21c6919bdd415dab10ed6d9f95ca6bcd19fccd63807",
+      "output": "results/E025-pages-LP2-28_28-468dd22a1fd7.json",
+      "sha256": "3857cad41246e2a73ca6dc3dcad07b064f2bc1ca8f2fc6917e92eeac8b175e02"
+    },
+    {
+      "id": "E025-pages-LP2-29_29",
+      "fingerprint": "c27cfb71ad0441d88313a12a912acb5f02d97ba034865c4713da98467597b2ff",
+      "output": "results/E025-pages-LP2-29_29-c27cfb71ad04.json",
+      "sha256": "8b85d3d47b69c372f0982099983a2dc693c648a24507f375d42a580391796c76"
+    },
+    {
+      "id": "E025-pages-LP2-30_30",
+      "fingerprint": "72eae1d1bdabbf5a29edf76b54de47038d96c41f0b3347d9ec83e737ffbe6819",
+      "output": "results/E025-pages-LP2-30_30-72eae1d1bdab.json",
+      "sha256": "c640fc737bb6906f73387f8a6da567b21fa3477e612e7df33d728ac3da076888"
+    },
+    {
+      "id": "E025-pages-LP2-31_31",
+      "fingerprint": "1edca1864f0ec85aeaee02e43c8845200d2bd95b886aec4a7d31aec07ad8b161",
+      "output": "results/E025-pages-LP2-31_31-1edca1864f0e.json",
+      "sha256": "072155fd8b2534e906999447b03c04bf740d6c9b1c5137090d52d8e87d3ea4e5"
+    },
+    {
+      "id": "E025-pages-LP2-32_32",
+      "fingerprint": "9eaf928566a7c87e763b954346ed4626a8ae2be0277b4163a20df966b774e53b",
+      "output": "results/E025-pages-LP2-32_32-9eaf928566a7.json",
+      "sha256": "51018c4ca846d1a2958c30a229498ec1eebe861efc60fedbc4526086dfabc7b9"
+    },
+    {
+      "id": "E025-pages-LP2-33_33",
+      "fingerprint": "b040e4f9602406769e17f84aee1138e61427922e1ff78b7099aa52bd464438a4",
+      "output": "results/E025-pages-LP2-33_33-b040e4f96024.json",
+      "sha256": "dbc3f56dc316b4498e77b76f6fc8ea0a82a4b3cfe12fd88c8aff658bdfd74451"
+    },
+    {
+      "id": "E025-pages-LP2-34_34",
+      "fingerprint": "3e676f9b3d082c6b1296677f0a32c4ddcb78e70016dd24cfe05d9fbdee8a5b66",
+      "output": "results/E025-pages-LP2-34_34-3e676f9b3d08.json",
+      "sha256": "7d0c05d26dfe7df4cdc9063dd5967d02437c3f173a87e0c67f28515f4adfcd55"
+    },
+    {
+      "id": "E025-pages-LP2-35_35",
+      "fingerprint": "c9e2a2415937566bb89ce66a6f18ae92b66226f79c533f1e6f43180e0ff3a867",
+      "output": "results/E025-pages-LP2-35_35-c9e2a2415937.json",
+      "sha256": "b7f0659b4675468d5ba0ba2d3555cc1ed197ff7a9801c1c699315cb25d439c1d"
+    },
+    {
+      "id": "E025-pages-LP2-36_36",
+      "fingerprint": "16062059534608af824c0ab7d343a4a73e093e1e5ef0dc060d7385371707a262",
+      "output": "results/E025-pages-LP2-36_36-160620595346.json",
+      "sha256": "33b40424258ee7529657e61c4bbbaf6241bb96282b8913a3c24de6256b5c1a49"
+    },
+    {
+      "id": "E025-pages-LP2-37_37",
+      "fingerprint": "ef4c7610dd9189fac8203d78b872f5955b06322b3f61306fa2d4b73ea92d7061",
+      "output": "results/E025-pages-LP2-37_37-ef4c7610dd91.json",
+      "sha256": "397eedf860daf8f42cc2fa108a8909f108467c1d189dbaef4ed46e3ce4bc9f36"
+    },
+    {
+      "id": "E025-pages-LP2-38_38",
+      "fingerprint": "2ee46a78aafda08d255f10a0e2ce7ac9d66e1425353e92f23855d01c5358f37b",
+      "output": "results/E025-pages-LP2-38_38-2ee46a78aafd.json",
+      "sha256": "a9c42e3f8be3b2216779f03ff9b3ebf2539a1c33e7f50100976fbdadb74bd19f"
+    },
+    {
+      "id": "E025-pages-LP2-39_39",
+      "fingerprint": "f91003baf634b38981dc67eda5270805bbebb03b6024e9363539c84955125eca",
+      "output": "results/E025-pages-LP2-39_39-f91003baf634.json",
+      "sha256": "9ffc9ede61fcbe1877ab5b56916f851c4c0d1161d6b98bafdd6e9a3a367588fd"
+    },
+    {
+      "id": "E025-pages-LP2-40_40",
+      "fingerprint": "04ed1d42145cb1c526118d27d06d1111a0997d3426f58d2803adf59cde18bd8f",
+      "output": "results/E025-pages-LP2-40_40-04ed1d42145c.json",
+      "sha256": "4941a659920d48fbd07265b5d5f5a33164837962cb487203177d70fbd7db5ac5"
+    },
+    {
+      "id": "E025-pages-LP2-41_41",
+      "fingerprint": "c2ba4e119aa27b47fc3d6f74fba81d29b72cb1264dbe890eba6b06e30c14e903",
+      "output": "results/E025-pages-LP2-41_41-c2ba4e119aa2.json",
+      "sha256": "c7b6883f6f390eae6fad3b6778cc937dffb3ece6939a1c22be4d029e45043a49"
+    },
+    {
+      "id": "E025-pages-LP2-42_42",
+      "fingerprint": "cac1ea312840e98fe48bacf24eef1efc4dc55b0b42949ac570a53da8cedb3e72",
+      "output": "results/E025-pages-LP2-42_42-cac1ea312840.json",
+      "sha256": "03978ee646ef7bea043ecd41a716cd099ef8fe2c993836f5ec9b25ecaa4b77b6"
+    },
+    {
+      "id": "E025-pages-LP2-43_43",
+      "fingerprint": "d0f39a251c660d88647a95046bfed7af768694874b4fd50177c41fd9d6e2409c",
+      "output": "results/E025-pages-LP2-43_43-d0f39a251c66.json",
+      "sha256": "2a58a3d07548ac15ef342eb07932171234c00a374d5d733b7cdd21713f2ab6e3"
+    },
+    {
+      "id": "E025-pages-LP2-44_44",
+      "fingerprint": "412b9ae2beb368e5d2ceeaf1cac9d659fede38931c6a04275ec0a57b2c1cbfd7",
+      "output": "results/E025-pages-LP2-44_44-412b9ae2beb3.json",
+      "sha256": "85b47b7d9561f5c55fc8975d835f949ed8be705b1b930faae4ccbcbfe30f38a3"
+    },
+    {
+      "id": "E025-pages-LP2-45_45",
+      "fingerprint": "5d50d32f42a887b9fe588e8ec8ec800834c19d50db253f45f21722d05e16b0cf",
+      "output": "results/E025-pages-LP2-45_45-5d50d32f42a8.json",
+      "sha256": "47444e0fa774ac356908360d1dfed9b0148d01cdbf44ab86391a3a29506b8d94"
+    },
+    {
+      "id": "E025-pages-LP2-46_46",
+      "fingerprint": "5cdb1d88933392a11540ebaffe34208997c20110bd70d4dd02565924c4bab553",
+      "output": "results/E025-pages-LP2-46_46-5cdb1d889333.json",
+      "sha256": "cad4aaacd69808395a781504182d0cc092271948e9e2827d5643af112e97424e"
+    },
+    {
+      "id": "E025-pages-LP2-47_47",
+      "fingerprint": "4ec3a55be480ef13088b02eeed4aac6a2c9e78664361a0cb6d254625087b6ba9",
+      "output": "results/E025-pages-LP2-47_47-4ec3a55be480.json",
+      "sha256": "6be29e8b703f96818031c7cea0de4fdef56d14cba2ea2bea487a7a07f35e01fd"
+    },
+    {
+      "id": "E025-pages-LP2-48_48",
+      "fingerprint": "583959b8a6d0efc50216f700633fe21a9e585f908708c44383bdeecdf74cb145",
+      "output": "results/E025-pages-LP2-48_48-583959b8a6d0.json",
+      "sha256": "0028357d77fc46eeb200a644881360d8a86aca40e06647b9f96e772f49f90d65"
+    },
+    {
+      "id": "E025-pages-LP2-49_49",
+      "fingerprint": "929d280bb7b84efc44eb47a454207a680fa87e5ff1d52e88de73fa11a3813a34",
+      "output": "results/E025-pages-LP2-49_49-929d280bb7b8.json",
+      "sha256": "c178db645a685da47d32d254be0d764300583d2fd974e87511537b19c8d2c5f3"
+    },
+    {
+      "id": "E025-pages-LP2-51_51",
+      "fingerprint": "f9978cd238afb6f255dc572030867b83df7b8ca68e101de4fbaa7040c6558472",
+      "output": "results/E025-pages-LP2-51_51-f9978cd238af.json",
+      "sha256": "348603c96f2f0934ac92b7ee444d4adf5139a940717220a7e4529a7364338ef8"
+    },
+    {
+      "id": "E025-pages-LP2-52_52",
+      "fingerprint": "c564968da6be6bf366974afb974b5a90cd758718a68e420525c83aba9b6e1722",
+      "output": "results/E025-pages-LP2-52_52-c564968da6be.json",
+      "sha256": "9015fbccff0f0815505fc99750bdc840367c64626b094dec973fb5f92f9286fd"
+    },
+    {
+      "id": "E025-pages-LP2-53_53",
+      "fingerprint": "9f9ee0a0fda9393ac3cccc7d56377db1612e1d5cabd8e247dd34d43795bc4e35",
+      "output": "results/E025-pages-LP2-53_53-9f9ee0a0fda9.json",
+      "sha256": "590190c89ca860b6ff6bb251ab9b93f5be9ffe379e9b9b75e1b630d49873a939"
+    },
+    {
+      "id": "E025-pages-LP2-54_54",
+      "fingerprint": "700a096759b75ca70ac00928946ed49284164e4b2b7345ea5ce5fc9524504c25",
+      "output": "results/E025-pages-LP2-54_54-700a096759b7.json",
+      "sha256": "fd6868f05df03b3b6f01cc980b108dc7c622aaa786b6efa5d0047a673247326d"
+    },
+    {
+      "id": "E025-pages-LP2-55_55",
+      "fingerprint": "f45d567e060fb92b4b19e12abde7ce305dffce6ad77023407cf9505847243e26",
+      "output": "results/E025-pages-LP2-55_55-f45d567e060f.json",
+      "sha256": "5882e7f30761c60277ce6947992adc3351efad65845c8753cfa8e241c4cd0807"
+    },
+    {
+      "id": "E025-null-LP2-49_49-00",
+      "fingerprint": "018c333426883ea604c3d0681da806aa0f2a29b8dc43c47502c5e9d8bf6132ba",
+      "output": "results/E025-null-LP2-49_49-00-018c33342688.json",
+      "sha256": "288bb193990dbae0b5cf843e5d3541143a771fc2151e5e3bf071e944810f2908"
+    },
+    {
+      "id": "E025-null-LP2-49_49-01",
+      "fingerprint": "0e665e3cd3ea9f9c4f92524ba76d784ce90f797a165ca335d674ae5c1f55a237",
+      "output": "results/E025-null-LP2-49_49-01-0e665e3cd3ea.json",
+      "sha256": "c9601e15f430bb506d88608c44b8e50e27f6f86347637a622fec61beb2c19737"
+    },
+    {
+      "id": "E025-null-LP2-49_49-02",
+      "fingerprint": "ff05aec997316edfbe39fbad22281c6a3fbd9800b5ebaad11563c154f1c00d98",
+      "output": "results/E025-null-LP2-49_49-02-ff05aec99731.json",
+      "sha256": "0d5f6594dfcd324f594ea9b01209834713d9a30f6a331ccf07b7874d99bd3f7f"
+    },
+    {
+      "id": "E025-null-LP2-49_49-03",
+      "fingerprint": "60c6d049849aa92498a85e70a706cfedfa41d0ff0c63f61944c0a30e2c6ce66c",
+      "output": "results/E025-null-LP2-49_49-03-60c6d049849a.json",
+      "sha256": "2567e7a80f745a65738aeb43fac78e6b00ad793df71638184dab0db89f5c04a8"
+    },
+    {
+      "id": "E025-null-LP2-49_49-04",
+      "fingerprint": "d2edd1c515fb2bb643a94c1f7a2bbb21aaea705cd186698f56b4acfc65c7bb05",
+      "output": "results/E025-null-LP2-49_49-04-d2edd1c515fb.json",
+      "sha256": "2325fe878e48f5950a1992fac54f0309032e333cfc52747795173c97c1590caa"
+    },
+    {
+      "id": "E025-null-LP2-49_49-05",
+      "fingerprint": "949fad44bbe0f3bfb96a90b8358b98e5d29af45c01b3f2d7df20f926fc26c4c6",
+      "output": "results/E025-null-LP2-49_49-05-949fad44bbe0.json",
+      "sha256": "d06a46c5eaa57ca59ce2bc1de4a4bf182fc38c293eca3739589a03389224e051"
+    },
+    {
+      "id": "E025-null-LP2-49_49-06",
+      "fingerprint": "2a5cfeddadc6067653e96b7ab2a4776d24fe538ab0ee87d74e0aa25fe9a6ac99",
+      "output": "results/E025-null-LP2-49_49-06-2a5cfeddadc6.json",
+      "sha256": "5f87fb4ea8a4a93750bd14f93a8bbac8f164d9d6f7b03ee1cddc187f0c58a9a7"
+    },
+    {
+      "id": "E025-null-LP2-49_49-07",
+      "fingerprint": "699e27ff8d76bb0e37e41ae785c9ea7e387d57174dc3bd0558cb91a8b95bf9fb",
+      "output": "results/E025-null-LP2-49_49-07-699e27ff8d76.json",
+      "sha256": "55fdf4998b4e1561c835f703775107c555a25a5dc36eb710b5b57df1f81c6d73"
+    },
+    {
+      "id": "E025-null-LP2-49_49-08",
+      "fingerprint": "0f2caeb4d8e382576be63a823d4c1752ee52794ce284bb943502f8ab0b240fc3",
+      "output": "results/E025-null-LP2-49_49-08-0f2caeb4d8e3.json",
+      "sha256": "9a9bdf2324b771b0175e58290d4d468498bfb81729e8b9991b9753a8ff5409dc"
+    },
+    {
+      "id": "E025-null-LP2-49_49-09",
+      "fingerprint": "2b6adb008fc1a04ef454b433b495e253d6d5f9bb2a3bfee47af6de8d5a7cf3d6",
+      "output": "results/E025-null-LP2-49_49-09-2b6adb008fc1.json",
+      "sha256": "1b973c24f011aabdec4d29f51ebc88b0e56f933afae48cab81d7e421d0d917ac"
+    },
+    {
+      "id": "E025-null-LP2-49_49-10",
+      "fingerprint": "193389d56be362848c21c249ea192ec3c208ec47d04b256334f1ae85551b8577",
+      "output": "results/E025-null-LP2-49_49-10-193389d56be3.json",
+      "sha256": "e5b5714caf5508eb41085b2ac9ded8d1a1f0ed936162da8639e2a50682c51ae3"
+    },
+    {
+      "id": "E025-null-LP2-49_49-11",
+      "fingerprint": "5f04cb06b714a29dd806ff9d913d6c0996d3f52ef6c9ea287a4682a2f0782d8a",
+      "output": "results/E025-null-LP2-49_49-11-5f04cb06b714.json",
+      "sha256": "77d788889a82041e4a23b37aa494a44bfdff15dadc788a674f0e78011a07f15e"
+    },
+    {
+      "id": "E025-null-LP2-49_49-12",
+      "fingerprint": "ef25bb6a034a914e6a42db20773f5aca3e6f37d3bc5199ac336e651c9c201dfe",
+      "output": "results/E025-null-LP2-49_49-12-ef25bb6a034a.json",
+      "sha256": "959664afb637c1e1cf51c9f1de3213b98d2a3949c35dbdd6a60e0d60dc52f236"
+    },
+    {
+      "id": "E025-null-LP2-49_49-13",
+      "fingerprint": "4dc122dfafa90bcb6d3986c6a349235893654b3988fd948d9a9737f317197867",
+      "output": "results/E025-null-LP2-49_49-13-4dc122dfafa9.json",
+      "sha256": "53c9800eb36895390c02ff81ff37c5144867ed1b1afbf8147e440a39e501dba4"
+    },
+    {
+      "id": "E025-null-LP2-49_49-14",
+      "fingerprint": "26fcfca22ba081380dd8e3c00c2d58059b231d987bbcd8a0387165595b973186",
+      "output": "results/E025-null-LP2-49_49-14-26fcfca22ba0.json",
+      "sha256": "4e7cbf4f0fd53eda7afa73cedc0444dd9ea7d3df7c2493dabf257247950a9f0b"
+    },
+    {
+      "id": "E025-null-LP2-49_49-15",
+      "fingerprint": "799e9795c62775fa9ee6998fffdb394afd432bc61c6263436e235d0035011c4d",
+      "output": "results/E025-null-LP2-49_49-15-799e9795c627.json",
+      "sha256": "56fd4aafba0144d8fc27b8551df10be32c29bbe29f4f3268a74f199569fcd305"
+    },
+    {
+      "id": "E025-null-LP2-49_49-16",
+      "fingerprint": "52c97cb3cc66d260927d1088ccb586abf20fe151d8815e28804465b8cc5ac145",
+      "output": "results/E025-null-LP2-49_49-16-52c97cb3cc66.json",
+      "sha256": "4eb499131f9438e6084182e15782a4e0e06e49f2310f3a45d55207d271598c86"
+    },
+    {
+      "id": "E025-null-LP2-49_49-17",
+      "fingerprint": "893accc429af698d1eb1a4d2d6006c939f0ff5cb4d04557df650fdc5462962ee",
+      "output": "results/E025-null-LP2-49_49-17-893accc429af.json",
+      "sha256": "d1c20b8c0217c97251eee8d8604f7de4efd28181667d7a347fa9479bf8fd9b9a"
+    },
+    {
+      "id": "E025-null-LP2-49_49-18",
+      "fingerprint": "b5e05b425178f0e0a27e3b60a6c319c8c0d56d4740ffe8924e6716dd12fd76e1",
+      "output": "results/E025-null-LP2-49_49-18-b5e05b425178.json",
+      "sha256": "c178dcda506098411b09beec5c66c720d1f036c0d65a8528bc2987e5778f7e6b"
+    }
+  ]
+}

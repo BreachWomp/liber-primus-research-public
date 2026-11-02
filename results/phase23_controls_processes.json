@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "control",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 52.322246099996846,
+    "peak_sampled_bytes": 108810240,
+    "log": "results/E064-control-0-process.txt"
+  },
+  {
+    "kind": "control",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 52.32207550003659,
+    "peak_sampled_bytes": 108388352,
+    "log": "results/E064-control-1-process.txt"
+  },
+  {
+    "kind": "control",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 52.597224699973594,
+    "peak_sampled_bytes": 108752896,
+    "log": "results/E064-control-2-process.txt"
+  },
+  {
+    "kind": "control",
+    "index": 3,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 51.825024600024335,
+    "peak_sampled_bytes": 109076480,
+    "log": "results/E064-control-3-process.txt"
+  },
+  {
+    "kind": "null",
+    "index": 3,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 51.5715416999883,
+    "peak_sampled_bytes": 109191168,
+    "log": "results/E064-null-3-process.txt"
+  }
+]

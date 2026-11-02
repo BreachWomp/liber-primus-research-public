@@ -1,0 +1,14 @@
+{
+  "experiment":"E027-boundary-model-benchmark",
+  "source":"Same pinned Emerson volume and normalization as E016; chapterII excluded. No Liber Primus words added to training.",
+  "model":"P(word|length L)=(external_count(word)+20*Q(word))/(external_token_count_at_length_L+20), where Q is the frozen external4gram chain reset at the segment start. Score=sum(log P)/rune_count. Length is conditioned on, not inferred from candidate plaintext.",
+  "parameters":{"tau":20,"order":4,"alpha":0.5,"strength":5.0,"cache_words":100000},
+  "boundary_convention":"Explicit E026 lexical endpoints; no split at line/page wraps. Apostrophes split to match corpus tokenizer. LP2-35 exception is image-supported canonical punctuation, retained in a separate source decision.",
+  "benchmark":"All8 canonical-consistent known fixtures; 100 one-rune and100 five-rune mutations per fixture, Random(3301027). Compare fixed word-conditioned score with original4gram on identical mutations. Descriptive ranking counts only; mutations overlap and are correlated.",
+  "decode_controls":"DIVINITY, CIRCUMFERENCE andLP2-56 with actual known key family, all key phases/starts0..255 and all F-skip subsets. Unknown scan gate: all3 exact top1 plus >=1520/1600 strict mutation rankings. No parameter tuning after outputs.",
+  "optimizer":"Exact wordwise DP. Within a lexical segment retain (cursor,complete partial word), collapse to cursor only after adding its full word score. Never beam-prune; stop on deadline or200000 states.",
+  "seconds":180,
+  "seed":3301027,
+  "workers":1,
+  "limits":"Previously seen LP controls, not blind evaluation. New scoring rule, not a new cipher family. Passing controls does not validate unknown plaintext. No broad image audit claimed."
+}

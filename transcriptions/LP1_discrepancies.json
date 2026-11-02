@@ -1,0 +1,42 @@
+[
+  {
+    "fixture_id": "LP1-06_09_atbash_shift",
+    "page_ids": [
+      "LP1-06",
+      "LP1-07",
+      "LP1-08",
+      "LP1-09"
+    ],
+    "canonical_length": 778,
+    "fixture_length": 780,
+    "changes": [
+      {
+        "operation": "replace",
+        "canonical_range": [
+          142,
+          143
+        ],
+        "fixture_range": [
+          142,
+          144
+        ],
+        "canonical_runes": "ᛠ",
+        "fixture_runes": "ᚹᛋ"
+      },
+      {
+        "operation": "replace",
+        "canonical_range": [
+          278,
+          279
+        ],
+        "fixture_range": [
+          279,
+          281
+        ],
+        "canonical_runes": "ᛠ",
+        "fixture_runes": "ᚹᛋ"
+      }
+    ],
+    "policy": "Retain both sources; exclude disputed fixture from language-model training. See reports/transcription_discrepancy.md."
+  }
+]

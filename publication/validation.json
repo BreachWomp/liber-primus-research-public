@@ -1,0 +1,44 @@
+{
+  "publication_date_utc": "2026-11-02T21:47:47.788358+00:00",
+  "source_commit": "211378e8fbc8486222e97299bdeb70f791793cec",
+  "verification": {
+    "original_files_checked": 3822,
+    "original_bytes_checked": 2644068564,
+    "completed_output_hashes_checked": 1799,
+    "completed_experiment_groups": 84,
+    "state_completed_entries": 1797,
+    "new_decryptions": [],
+    "failures": []
+  },
+  "tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "working_directory": "repository root",
+    "PYTHONPATH": "src;experiments",
+    "platform": "Windows",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "tests_run": 145,
+    "duration_seconds": 8.415,
+    "result": "OK",
+    "blas_threads": 1
+  },
+  "publication_checks": {
+    "tracked_files_secret_pattern_scan": {
+      "files_scanned": 3822,
+      "findings": 0,
+      "scope": "Common credential formats, private-key headers, credential-like assignments, URL passwords, and known account email. Pattern scan, not a guarantee of absence."
+    },
+    "english_documents": 50,
+    "english_phase_editions": 31,
+    "broken_local_document_links": [],
+    "literal_candidate_blocks_verified": 27,
+    "english_document_whitespace_check": "passed",
+    "historical_whitespace": "Original archived source files contain existing trailing whitespace; preserved intentionally to retain exact SHA-256 values."
+  },
+  "notes": [
+    "No cryptanalysis rerun for publication.",
+    "Original root README preserved at publication/original/README.md; all other original paths unchanged.",
+    "Two historical state-list omissions preserved; append-only log used for completed-run count.",
+    "Separate implementation checks are project-internal, not external peer review."
+  ]
+}

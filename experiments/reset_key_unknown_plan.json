@@ -1,0 +1,20 @@
+{
+  "experiment": "E046-reset-key-unknown",
+  "hypothesis_id": "H036",
+  "control_output": "results/E045-reset-key-controls-c39747c7b7b3.json",
+  "gate": "E045 all3 source-excluded controls exact text,key and F mask. Frozen E045 optimizer and score; no truth input to unknown search.",
+  "unknown_scope": "All10 existing groups in experiments/section_plan.json. Source groupings remain unverified cipher-boundary hypotheses. One shared repeating key with identical initial phase at EVERY page; cursor and language context reset. Empty numeric LP2-50 spans preserved.",
+  "optimizer": "E045 two longest pages plus3 globally longest within-page non-F runs; E038 seed periods1..16,both signs,4starts;12deduplicated cyclic keys. Initial phase common to allpages, never fit separately. Three shared-coordinate/fixed-phase DP rounds. Every null reruns whole solver including seed selection.",
+  "search_seed": 3303045,
+  "selection": "Freeze maximum penalized score over10groups and all internal choices plus hashes of10outputs and E045 gate before null generation.",
+  "null_seed": 3301046,
+  "replicates": 19,
+  "null": "Frozen E043 endpoint-fixed perpage count/doublet conditional shuffle with independent uniform interior permutations and rejection<=100000. Seed3301046+100*replicate+page_index. Same optimizer and seed as observed.",
+  "correction": "Plus-one p,Bonferroni10. Exploratory family, not project-wide confirmation.19nulls cannot resolve corrected significance. Zero exceedances require separately preregistered larger fresh calibration.",
+  "process_seconds": 180,
+  "family_seconds": 650,
+  "phase_seconds": 900,
+  "workers": 1,
+  "memory": "4096runes,16pages,16keyslots,29coordinate rows,12seeds,<=128states per fixed-phase page DP.",
+  "limits": "Key search heuristic; exact masks conditional on oriented key. No general exclusion of keys, boundaries, or other interrupters. No community solution claims."
+}

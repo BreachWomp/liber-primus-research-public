@@ -1,0 +1,21 @@
+{
+  "experiment": "E052-fragment-initialization",
+  "hypothesis": "H039",
+  "purpose": "New pooled phase-aware initialization, evaluated on fresh source-excluded ranges and all three E049 long-key regressions. No unknown scans in this calibration batch.",
+  "periods": [17, 32],
+  "signs": [1, -1],
+  "search_seed": 3303052,
+  "pool": "E051 twelve longest maximal non-F runs >=16, each capped256. Independent fragment phases, reset language context, first fragment phase zero gauge.",
+  "initializations": "16 per nominal period/sign. First phases allzero; second source offsets modulo period; third (source offset - floor(number of preceding ciphertext Fs/2)) modulo period; other13 uniform phases with Random(search_seed+1000*sign_index+period). All initialize key by exact pooled unigram coordinates.",
+  "schedule": "Up to20 alternating exact unigram key/phase steps per start, stop fixedpoint. Retain two highest unigram starts per period/sign, cyclic-deduplicated. Each gets three bigram and three fourgram rounds: at most6 key coordinate sweeps then exact independent fragment phase optimization. No plaintext, key, period or mask oracle.",
+  "selection": "Best fourgram pool candidate per nominal period/sign. Retain best sign per nominal period (16) plus top4 remaining opposite-sign candidates. Full-stream exact F-schedule optimization and up to3 rounds of6 key coordinate sweeps and schedule optimization. Final ranking uses full-stream score only. Top3 distinct plaintexts.",
+  "score": "Full mean(logp4)-(primitive_key_length*ln29+ciphertext_F_count*ln2)/N. Pool (sum logp_order - m*ln29 - (fragment_count-1)*ln(m))/pool_N.",
+  "fresh_controls": "Chapters X,XI,XII concatenated rune offsets4000:5200; keys17,23,31 from Random(3301052) sequential uniform1..28; signs+1,-1,+1; everyother plaintextF copied startingfirst. Spans197,263,311,429. Training I,III-IX unchanged. These are fresh ranges for this long-key calibration, not historically blind chapters.",
+  "regressions": "All three E049 controls unchanged, including3316-rune X,1200-rune XI and XII. New solver counts as changed parameters.",
+  "null": "One complete rerun on matched perpage conditional null of fresh XII with seed3302052+page_index. Preserve endpoints, histograms and adjacent equal pairs. Diagnostic score only; no p-value from one null. Same selection over all periods, signs and starts.",
+  "gate": "All six controls must recover exact plaintext,key,sign and Fmask. Any failed control blocks unknown escalation. No unknown input is scanned in this batch even if gate passes; unknown-scope null plan must be separately frozen.",
+  "bounds": "512..4096 inputrunes, <=12 fragments, <=3072 pooledrunes,32 slots, <=256 fullDP states,29 coordinate rows,16 starts per32 families,64 retained pool candidates,20 fullstream candidates; estimated array working set <128MiB, process ceiling768MiB monitored by runner; one worker.",
+  "process_seconds": 180,
+  "phase_seconds": 1260,
+  "limits": "Method motivated by earlier31-key failure. Fresh success is a synthetic control result, never a new Liber Primus decryption. No inference that failed heuristics exclude a cipher. No tuning after observing this batch."
+}

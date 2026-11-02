@@ -1,0 +1,188 @@
+{
+  "experiment": "E056",
+  "oracle_gate_passed": true,
+  "blind_gate_passed": false,
+  "controls": [
+    {
+      "kind": "regression",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "reset_exact": false,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 1,
+      "dp_max_states": 578
+    },
+    {
+      "kind": "regression",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 0,
+      "dp_max_states": 1058
+    },
+    {
+      "kind": "regression",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 0,
+      "dp_max_states": 961
+    },
+    {
+      "kind": "regression",
+      "index": 3,
+      "runes": 3316,
+      "key_length": 17,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 3316,
+      "alternatives": 1,
+      "dp_max_states": 578
+    },
+    {
+      "kind": "regression",
+      "index": 4,
+      "runes": 3316,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 3316,
+      "alternatives": 0,
+      "dp_max_states": 1035
+    },
+    {
+      "kind": "regression",
+      "index": 5,
+      "runes": 3316,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 3316,
+      "alternatives": 0,
+      "dp_max_states": 1922
+    },
+    {
+      "kind": "regression",
+      "index": 6,
+      "runes": 1200,
+      "key_length": 17,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 289
+    },
+    {
+      "kind": "regression",
+      "index": 7,
+      "runes": 1200,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 1035
+    },
+    {
+      "kind": "regression",
+      "index": 8,
+      "runes": 1200,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 1922
+    },
+    {
+      "kind": "regression",
+      "index": 9,
+      "runes": 3316,
+      "key_length": 17,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 3316,
+      "alternatives": 0,
+      "dp_max_states": 578
+    },
+    {
+      "kind": "regression",
+      "index": 10,
+      "runes": 1200,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 828
+    },
+    {
+      "kind": "regression",
+      "index": 11,
+      "runes": 1200,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 1922
+    },
+    {
+      "kind": "fresh",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 1,
+      "dp_max_states": 578
+    },
+    {
+      "kind": "fresh",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 1,
+      "dp_max_states": 1058
+    },
+    {
+      "kind": "fresh",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 1,
+      "dp_max_states": 3038
+    }
+  ],
+  "validation": {
+    "stream_records_recomputed": 16,
+    "independent_coupled_optima": 16,
+    "coupled_records_recomputed": 16,
+    "alternative_pairs_recomputed": 5
+  },
+  "seconds": 10.265603799954988,
+  "peak_sampled_bytes": 118743040,
+  "entry": {
+    "id": "E056-context-coupled-calibration",
+    "fingerprint": "1e7c7add4bfc14e4ff613409c6959ff18e1aa6ff6ec806b0ef1dee411ac31c67",
+    "output": "results/E056-context-coupled-calibration-1e7c7add4bfc.json",
+    "sha256": "aad302d69f8496f65bc65c43b7b0f4e0509fddd744f39fd8c9f6a02cff1260b6"
+  },
+  "unknown_sections_searched": 0,
+  "new_decryptions": []
+}

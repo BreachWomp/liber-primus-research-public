@@ -1,0 +1,6 @@
+{'stage': 'pool', 'sign': 1, 'through_period': 24}
+{'stage': 'pool', 'sign': 1, 'through_period': 32}
+{'stage': 'pool', 'sign': -1, 'through_period': 24}
+{'stage': 'pool', 'sign': -1, 'through_period': 32}
+{'experiment': 'E052-fresh-2', 'wall_seconds': 14.971120700007305, 'checks': {'plaintext_exact': True, 'key_exact': True, 'mask_exact': True}, 'correct_runes': 1200}
+{"status": "completed", "output": "results/E052-fresh-2-39f10f15775d.json", "seconds": 15.021662499988452}

@@ -1,0 +1,81 @@
+{
+  "experiment": "E025-periodic-feedback",
+  "status": "completed",
+  "parameters": {
+    "mode": "pages",
+    "first": 32,
+    "last": 32,
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "pages": [
+    {
+      "page": "LP2-32",
+      "ciphertext_runes": "ᛚᚦᚫᚹᚫᚢᛈᛡᚳᚹᛝᚻᚹᛒᛗᛋᛟᛖᛁᛡᛟᚹᚦᚻᛒᛡᚱᛏᚦᚠᚠᚩᚦᚻᚩᛗᛖᛉᚹᛞᛋᛚᚠᛞᛝᛒᛇᛡᛚᚪᚹᛞᚾᚫᛉᛏᚣᛗᚷᚦᚹᛉᛡᚦᚹᛒᛋᚱᛉᛡᛉᚪᚢᛒᚻᛠᚹᛝᚢᚻᛇᛝᛡᛠᛄᛋᛈᚦᛏᛟᛝᚩᛗᛒᚢᛞᛋᛒᛄᛠᚱᛟᛖᚾᚾᚹᚷᚢᛚᚪᚩᚣᚢᛏᚠᛄᛏᚪᚷᛒᛇ",
+      "top": [
+        {
+          "score": -5.512017288499845,
+          "plaintext_runes": "ᛗᛖᛄᚢᚷᚾᛟᚹᛞᚳᚾᛞᛠᛗᛠᚹᚷᛝᛋᚠᛏᚣᚳᛖᛋᚾᚩᛚᛋᛡᛈᛈᛉᛠᛞᛠᚦᚣᛚᚪᚱᛞᛒᚱᛡᛖᚳᚾᛟᚠᛖᛋᚫᛞᚷᚹᚱᚱᚦᛇᛚᛏᚩᚳᛒᛋᛈᚩᛈᚫᛈᛁᚦᚠᚩᛒᛒᛡᛗᛋᚠᚱᚳᚳᚢᛚᚻᛟᛞᚪᚾᛟᛡᛟᛖᚹᛁᚾᛋᛗᚩᚱᚱᚾᚾᛠᛏᛋᛖᛄᛄᛖᚻᛟᚳᚻᚩᚩᚳᛝᛈ",
+          "transliteration": "MEJUGNOEWDCNDEAMEAWGNGSFTYCESNOLSIAPPXEADEATHYLARDBRIAECNOEFESAEDGWRRTHEOLTOCBSPOPAEPITHFOBBIAMSFRCCULHOEDANOEIAOEEWINSMORRNNEATSEJJEHOECHOOCNGP",
+          "recipe": {
+            "delay": 2,
+            "a": 12,
+            "b": 26,
+            "initial_key": [
+              6,
+              2
+            ],
+            "initial_plaintext": [
+              19,
+              18
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.6911808484592195,
+          "plaintext_runes": "ᚠᛈᚱᛁᚹᛝᛉᚫᛚᛗᛞᛠᚩᚱᚳᛒᛖᚦᛖᛖᚷᛝᛒᛋᚩᚷᛚᚩᛈᚪᛒᛋᛖᚫᚫᚹᚻᛈᛠᛞᚷᛗᛗᛈᛋᚠᛝᚦᚩᛝᛒᚠᛄᚱᛏᛏᛋᛟᛡᚠᚷᛋᛝᚦᛏᛠᚣᛒᛚᛟᚢᚹᚹᛁᛗᛞᚠᛖᛠᛚᚾᛞᛏᛄᚢᛋᚪᚦᚦᛞᚪᚹᛠᛁᛚᛠᚠᚱᛖᚱᚪᛁᚠᛈᛚᛁᚾᛝᛞᛠᚹᚪᚣᚦᚳᚳᚪᛏᛇᚪᚣ",
+          "transliteration": "FPRIWNGXAELMDEAORCBETHEEGNGBSOGLOPABSEAEAEWHPEADGMMPSFNGTHONGBFJRTTSOEIAFGSNGTHTEAYBLOEUWWIMDFEEALNDTJUSATHTHDAWEAILEAFRERAIFPLINNGDEAWAYTHCCATEOAY",
+          "recipe": {
+            "delay": 2,
+            "a": 28,
+            "b": 8,
+            "initial_key": [
+              17,
+              20
+            ],
+            "initial_plaintext": [
+              0,
+              13
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.706152258265059,
+          "plaintext_runes": "ᚠᛉᚣᛒᚪᚠᚱᛈᚱᚣᛏᚱᛠᛈᛏᚩᚩᚢᚪᚱᛖᛚᛠᚠᚠᛈᚩᛄᛖᛒᛇᛏᚪᚹᛄᚦᛏᚹᛠᚳᛈᛠᛠᛗᚩᛞᛄᚾᚩᚪᚠᚣᛉᚪᛋᛠᛋᛏᚠᛒᛡᛒᚦᚻᚾᚷᛁᚹᛟᚻᚢᚱᛠᛈᛋᛚᚻᛒᛞᛡᚳᛇᚣᚠᛠᚱᚣᚾᛁᚻᛚᛁᚢᛒᛠᚦᛈᚦᚠᚩᚩᚱᚢᚹᚳᛟᚩᛈᛒᛒᛏᚣᚾᛁᚷᛡᛏᚹᛚᛋᚩ",
+          "transliteration": "FXYBAFRPRYTREAPTOOUARELEAFFPOJEBEOTAWJTHTWEACPEAEAMODJNOAFYXASEASTFBIABTHHNGIWOEHUREAPSLHBDIACEOYFEARYNIHLIUBEATHPTHFOORUWCOEOPBBTYNIGIATWLSO",
+          "recipe": {
+            "delay": 2,
+            "a": 8,
+            "b": 20,
+            "initial_key": [
+              21,
+              26
+            ],
+            "initial_plaintext": [
+              0,
+              14
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "recipes": 655980
+    }
+  ],
+  "wall_seconds": 2.962222300004214
+}

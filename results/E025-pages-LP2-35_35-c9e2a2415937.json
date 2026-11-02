@@ -1,0 +1,81 @@
+{
+  "experiment": "E025-periodic-feedback",
+  "status": "completed",
+  "parameters": {
+    "mode": "pages",
+    "first": 35,
+    "last": 35,
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "pages": [
+    {
+      "page": "LP2-35",
+      "ciphertext_runes": "ᛝᛏᚳᚪᛠᚣᚷᚳᚦᛖᚾᚢᛁᚫᛁᚢᛡᚹᛚᚳᚻᛈᛞᛄᚳᛗᛒᛗᚪᛄᚩᚪᛞᛁᚩᚱᛟᚠᛖᚣᛟᛁᛇᛟᛁᛈᚣᛚᚪᛡᚳᛏᛠᛋᛖᛒᛝᚫᛟᚫᛞᛖᛞᚣᛡᛠᚪᛖᚦᛚᚫᚳᛋᚪᚩᚷᚹᛚᛈᛖᛏᛄᛉᛝᛚᛏᛉᚩᚣᛝᚠᚩᚣᛁᚻᛟᚫᚷᛄᛝᛡᚾᛗᚣᛟᛡᛝᚷᛖᛉᛟᛉᛈᛚᛋᛉᛠᛚᛡᚱᚪᛞᛠᚷᚱᚳᛇᚻᛗᚪᛟᚷᛞᚪᛋᛡᚻᛈᚷᛖᚳᛟᚱᛟᚢᛁᚫᛟᚦᛄᚱᛡᚱᛖᚦᚣᛏᛝᛡᚩᛒᛏᚦᚳᛉᚳᛋᚪᚫᛗᚠᛄᚱᛖᛡᛇᛁᛇᛟᛉᚳᚹᚪᛖᛋᚢᛉᛋᛟᛚᛄᚾᛈᛇᛒᚦᚦᛁᚫᛚᛋᛝᛄᛄᛡᛟᚻᛇᚢᛚᛁᚱᛡᚻᛚᛏᚹᛉᛇᚱᛏᛠᛁᚫᛚᛗᛁᚱᚷᛏᛠᛇᛟᚻᛟᚳᛋᛏᚾᚩᛁᚱᚷᚹᛞᚢᚣᛚᛁᛗᛒᚢᛚᚱᛏᛁᚢᚷᚳᚠᛇᛚᛇᚣᛏᛏᚫᚢᚫᛠᛇ",
+      "top": [
+        {
+          "score": -6.122605585248567,
+          "plaintext_runes": "ᚷᚢᚩᚱᛝᚠᚠᚣᛟᛝᚳᚩᛠᛒᛟᛠᚠᛖᛒᛋᛖᛈᛁᛖᚹᚪᛚᚢᛞᚷᛡᚾᛗᚩᛞᛖᚱᛖᛠᛉᚾᚻᚫᛖᛗᛏᛋᚱᛖᛄᛋᛈᚱᚱᛠᛒᛡᚦᚻᛏᚠᛄᛝᚹᛠᚫᚦᛚᚪᚻᚾᚳᚠᚻᚱᛏᛞᚱᛝᛠᛞᚱᚩᚩᛚᚳᚠᚾᚫᚻᚫᛇᛝᚷᛟᛏᚹᚪᛇᛞᛗᚷᚫᚦᚷᚾᚳᛒᚠᚣᛁᚷᚻᛞᛠᚩᛒᛚᚪᚷᛡᛡᛏᚷᚦᚩᛖᚱᚪᚹᚳᛋᚣᛖᛒᚫᛖᛞᚣᛖᛞᛠᚾᚾᛚᚩᚳᛈᛡᛖᛈᚫᛠᛚᛝᛏᛞᛋᚢᛗᛉᛝᚹᛖᛏᛋᚹᛖᛝᚪᛝᚠᚹᚪᛉᛄᚻᛡᛖᚹᛋᚣᛖᛝᚾᚩᛖᛞᛠᛄᚱᛞᚦᛁᛋᚩᚻᚣᛟᛉᛈᛈᛖᛖᚫᛠᚣᛋᚻᚩᚦᛖᚾᛗᚣᛝᛏᚢᚩᛏᚳᚳᛠᛗᛏᚫᛁᛄᛖᛈᚹᚠᛒᚢᛡᛡᛖᚠᚢᚱᚪᛗᚩᚾᚪᛚᛚᚻᛉᛉᛡᚫᛋᛄᛒᚳᛠᛈᚫᛈᛇᚢᛠᚣᚢᛠᛋᛁᚠᛠᛏ",
+          "transliteration": "GUORNGFFYOENGCOEABOEEAFEBSEPIEWALUDGIANMODEREEAXNHAEEMTSREJSPRREABIATHHTFJNGWEAAETHLAHNCFHRTDRNGEADROOLCFNAEHAEEONGGOETWAEODMGAETHGNCBFYIGHDEAOBLAGIAIATGTHOERAWCSYEBAEEDYEDEANNLOCPIAEPAEEALNGTDSUMXNGWETSWENGANGFWAXJHIAEWSYENGNOEDEAJRDTHISOHYOEXPPEEAEEAYSHOTHENMYNGTUOTCCEAMTAEIJEPWFBUIAIAEFURAMONALLHXXIAAESJBCEAPAEPEOUEAYUEASIFEAT",
+          "recipe": {
+            "delay": 2,
+            "a": 11,
+            "b": 1,
+            "initial_key": [
+              7,
+              28
+            ],
+            "initial_plaintext": [
+              6,
+              1
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -6.154251595199198,
+          "plaintext_runes": "ᚳᚻᚣᛄᛗᛖᛏᚳᛋᛏᚾᛖᚾᚩᚾᛁᛏᚩᛗᛡᛁᛚᛈᛋᛟᚻᚫᚣᛒᛇᚣᚾᚳᚾᚩᛡᚳᚢᛏᛞᛈᚦᚢᛚᛈᚾᛒᚻᛝᚦᛖᚾᛞᛞᚹᛁᚷᚹᛖᛞᚾᚹᛠᛚᛝᛟᛗᛟᛠᛏᛡᚷᛉᛇᛈᚳᛏᛁᛄᛠᛗᛄᛝᚱᚦᚻᛋᛏᛏᛏᛝᛇᛈᛟᛈᛁᛚᚷᛋᛝᛈᚷᚾᚷᚦᚩᛞᚪᚹᚱᚩᛉᚩᛚᚣᚷᛗᚪᛄᚳᚪᚢᛚᚫᚹᛏᚱᚣᛠᚦᚹᛁᚠᛁᛈᚢᛈᚱᛗᚦᛗᛚᛟᛄᛋᚻᛗᛒᛠᚦᚩᚳᚢᛏᚻᚢᚷᚾᚩᚢᛚᚪᛈᚦᚪᛈᚢᛞᚣᚱᛏᛞᚾᚹᛏᚱᛚᛚᛄᚷᛞᚳᛖᛏᚱᛖᛉᚱᛉᚫᛖᚱᛁᛚᚦᛈᛟᚹᚢᚾᛡᚳᚣᚻᛟᛒᛞᛠᚠᛈᛠᚫᛝᚹᚦᛝᚹᛚᚱᚹᚻᛉᚪᚳᛋᛈᚷᚫᚻᛇᛠᛏᚹᚣᚩᚢᚣᚪᛖᚻᛗᛈᛏᛏᛁᛖᚱᛖᚣᛝᛞᚢᚢᚦᚪᛡᛉᛇᚹᛞᚱᚢᛚᛞᚠᛈᛇᚳᚷᛋᛗ",
+          "transliteration": "CHYJMETCSTNENONITOMIAILPSOEHAEYBEOYNCNOIACUTDPTHULPNBHNGTHENDDWIGWEDNWEALNGOEMOEEATIAGXEOPCTIJEAMJNGRTHHSTTTNGEOPOEPILGSNGPGNGTHODAWROXOLYGMAJCAULAEWTRYEATHWIFIPUPRMTHMLOEJSHMBEATHOCUTHUGNOULAPTHAPUDYRTDNWTRLLJGDCETREXRXAEERILTHPOEWUNIACYHOEBDEAFPEAAENGWTHNGWLRWHXACSPGAEHEOEATWYOUYAEHMPTTIEREYNGDUUTHAIAXEOWDRULDFPEOCGSM",
+          "recipe": {
+            "delay": 2,
+            "a": 26,
+            "b": 14,
+            "initial_key": [
+              9,
+              4
+            ],
+            "initial_plaintext": [
+              5,
+              8
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -6.175521303813742,
+          "plaintext_runes": "ᚳᚦᛞᚩᚳᚷᚱᚷᛁᛚᚹᛖᛁᚦᛒᚳᛁᛉᚢᛋᚳᛚᚠᚦᛝᛄᛏᚩᚣᚢᛞᛚᛈᛝᛇᚦᛏᚪᚪᚣᛋᚷᛁᚦᛒᚾᚠᛖᚻᛟᚢᛖᚦᛖᚢᚾᛗᛁᛈᛟᚾᚾᛗᛚᚳᛡᛁᛄᚪᛈᛏᚩᛞᛋᛏᚻᚢᚷᚣᛚᚻᚦᚱᚦᛏᛁᛈᚳᛁᚾᚱᛟᛖᛏᚷᚷᚩᛏᚢᚫᛝᛈᚹᛁᛉᛈᚢᛈᛖᚷᚢᚾᚣᛖᛡᚻᚪᚷᚹᚫᚳᚻᛝᛄᚦᚻᛠᚦᚱᚩᚹᚾᚪᚠᚩᚾᚠᚷᚦᛚᛏᚫᚠᛡᛁᛖᛟᚢᛞᚷᚣᛞᚱᛝᛁᛗᛗᚩᚳᚻᛡᚪᚫᛗᚳᛒᚹᚾᛋᚻᚷᚩᚫᛈᛗᛋᚾᛁᚾᛠᛈᚠᛗᚷᚢᚪᚹᚩᛉᚱᛒᛟᛋᚹᚦᛒᛋᛉᚪᛚᚩᛋᚢᚠᛝᛒᛈᚳᛝᛠᚱᛠᛠᛁᛉᛗᚷᛚᛖᛗᛠᛋᚢᚪᚾᛉᚳᚳᚱᛒᚾᚳᚾᚪᚾᛗᚣᛄᚫᛒᛞᛇᛒᛄᛠᚣᛏᛗᚦᛇᛚᚾᚳᚩᛒᛚᛄᛁᚻᚱᛈᛏᛋᛒᛝᛏᚾᛠᛁᚹᚻ",
+          "transliteration": "CTHDOCGRGILWEITHBCIXUSCLFTHNGJTOYUDLPNGEOTHTAAYSGITHBNFEHOEUETHEUNMIPOENNMLCIAIJAPTODSTHUGYLHTHRTHTIPCINROEETGGOTUAENGPWIXPUPEGUNYEIAHAGWAECHNGJTHHEATHROWNAFONFGTHLTAEFIAIEOEUDGYDRNGIMMOCHIAAAEMCBWNSHGOAEPMSNINEAPFMGUAWOXRBOESWTHBSXALOSUFNGBPCNGEAREAEAIXMGLEMEASUANXCCRBNCNANMYJAEBDEOBJEAYTMTHEOLNCOBLJIHRPTSBNGTNEAIWH",
+          "recipe": {
+            "delay": 2,
+            "a": 10,
+            "b": 12,
+            "initial_key": [
+              24,
+              11
+            ],
+            "initial_plaintext": [
+              5,
+              2
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "recipes": 655980
+    }
+  ],
+  "wall_seconds": 5.3261812000127975
+}

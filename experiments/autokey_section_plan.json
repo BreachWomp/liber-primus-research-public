@@ -1,0 +1,11 @@
+{
+  "experiment":"E064",
+  "hypothesis":"H046",
+  "mechanism":"Unchanged E062 search4..32, all four signs, no omitted runes. One continuous plaintext-autokey stream across original page boundaries, without key or language reset. Original empty numeric page remains a zero-length span.",
+  "controls":"Four fresh-key3316-rune controls. Indices0..2: Emerson X/XI/XII rune range1000:4316, key lengths13/23/31; index3: X5400:8716,key32. Signs(+1,-1),(+1,+1),(-1,-1),(-1,+1). Random3301064+index uniform0..28 key. Texts are previously inspected excluded-chapter ranges, not claimed as fresh unseen prose. Synthetic page lengths copy LP2-40_55, including LP2-50 empty span. Encrypt one continuous plaintext stream; solver receives ciphertext only.",
+  "regressions":"Reuse all12 independently validated E062 controls200/300/729 runes through pinned validation/output/code dependency hashes. Never rerun completed unchanged searches. Report4new+12reused, not16new successes.",
+  "null":"One full optimizer null of newcontrol3; independently shuffle inside each synthetic page with Random3302064+pageindex. Preserve per-page counts,endpoints,adjacent equality and empty spans. At most100000 proposals per page. Existing section_key_support.page_null implements this exact rule. Diagnostic only, no pvalue.",
+  "gate":"Finish all4new controls and null. Require exact full plaintext and injected key/sign on all4, plus intact12 prior exact controls, and independent source/queue/score/null verification before unknown sections.",
+  "bounds":{"process_seconds":180,"watchdog_seconds":185,"family_seconds":900,"phase_seconds":3000,"memory_ceiling_mib":768,"workers":1},
+  "limits":"Grouping is an unauthenticated hypothesis. No arbitrary F omission, perpage reset, guessed crib or claim of globally exhaustive search. A new unknown plan is required after successful calibration."
+}

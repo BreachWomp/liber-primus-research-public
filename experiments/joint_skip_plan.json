@@ -1,0 +1,18 @@
+{
+  "experiment": "E040-joint-key-skip-controls",
+  "hypothesis_id": "H034",
+  "seed": 3303040,
+  "training": "Frozen E038 character model: Emerson I,III-IX only,207030runes; no LP or X/XI/XII training.",
+  "seed_sources": "Whole ciphertext with E038 none/all_F search; plus longest3 maximal non-F runs of length>=32, ordered decreasing length then increasing source offset, each truncated to first256runes. No plaintext or oracle masks supplied. Run E038 on each segment with fixed empty skips; both signs,periods1..16,4starts. Segment initial key phase is unknown.",
+  "seed_selection": "Canonicalize primitive keys under cyclic rotation, deduplicate by(sign,canonical key). Rank by E038 source-segment mean language score minus primitive_length*ln29/segment_length, ties stable. Keep12. Whole-page and segment seeds compete; cross-window selection is repeated in every null.",
+  "joint_search": "For each of12 seeds: exact order4 selective_decode over every key start phase and every F-skip subset; rotate chosen key phase to index0. Then at most3 rounds of6 fixed-schedule order4 coordinate sweeps, all29values per slot, followed by exact selective_decode over all phases. Stop when key and skip tuple unchanged. No beam pruning in fixed-key schedule optimization; key optimization and seed truncation are heuristic.",
+  "score": "Mean order4 logp minus [primitive_key_length*ln29 + number_of_cipher_F*ln2]/full_rune_count. The F-mask cost is constant perpage and represents1bit per available binary choice. No fitted skip probability. Score is description length, not probability of correctness.",
+  "controls": ["LP1-03_04_divinity","LP1-14_15_circumference"],
+  "gate": "Both actual historical ciphertexts recover EXACT plaintext, canonical cyclic key and documented skip mask without oracle. If passed, separately preregister source-excluded external injected selective-skip controls before unknown scanning. Failure blocks scan.",
+  "null": "One full-optimizer diagnostic null for each historical control: exact counts and adjacent equality count, rejection at most100000proposals, Random(3302040+control_index). Capability diagnostic only, no inferential p-value.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "workers": 1,
+  "memory": "At most1024runes,16key slots,29coordinate rows,12seeds. Fixed-key order4 DP has at most8*period states: current cursor and last3 binary F choices determine context. Assert recorded maximum against bound. Existing100000-entry language cache.",
+  "limits": "Control texts previously used; not blind historical novelty. F-free seeds can be too short; unknown key learning remains heuristic. Recovered text alone is not an unknown-page decryption without source replay and matched full-optimizer null calibration."
+}

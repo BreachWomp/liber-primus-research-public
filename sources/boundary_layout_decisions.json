@@ -1,0 +1,19 @@
+{
+  "page_id": "LP2-35",
+  "decision": "Use canonical lexical cut at rune offset80 in the initial scorer; preserve alternate no-cut transcription in E026.",
+  "rune_offset": 80,
+  "source_snippet": "ᛈᛖ'ᛏ",
+  "image_path": "data/raw/scream314/assets/2014/liber-primus-complete/52.jpg",
+  "image_sha256": "d713dd913d9b835ac61f298e8c0855f5093599e348edaedef964710db8664afa",
+  "crop_path": "sources/LP2-35-boundary-crop.png",
+  "crop_sha256": "d4744470972d160870e746ede1fb359178658e6dcb6dc095124820cf88c2bacf",
+  "crop_box": [
+    1020,
+    1215,
+    1320,
+    1380
+  ],
+  "coordinate_convention": "Native pixels, exclusive right/bottom; no resampling.",
+  "observation": "A short elevated vertical punctuation mark is visible between E and T on the fourth rune row, supporting the retained apostrophe in relikd.",
+  "modeling_limit": "Apostrophe is split into lexical segments to match external tokenizer; not asserted to be a word boundary. Single visual reader; cuneiform heading retained in source image, not interpreted."
+}

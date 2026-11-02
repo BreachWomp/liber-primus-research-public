@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-10-18T20:00:22.092727+00:00",
+  "records": [
+    {
+      "experiment": "E006-selective-control-benchmark",
+      "fingerprint": "cfefd5fb3c625292f2d15fb25c2e4ca77b8c31a6c9bd82cada1925da27c4d071",
+      "input_dependencies": {
+        "experiments/selective_attack.py": "909d7754c397b0fd1fb6f260b7cbf2e06978df8a1517f70cf7b9d8fb4db2edbb",
+        "experiments/attack_support.py": "9ae72044e749163449ea1cd9fa6136f8ac1528c993da7f6a804be3c9cb27c38a",
+        "experiments/phase2_plan.json": "cb437d6506f5d111ed6a8de9441d934b70e863787a11bcf1a08de788a7303de5",
+        "src/liberprimus/decoding.py": "7fd63b3a2dc9b5974beb22f9b4adbe59676508750565e99649bc64d292ff6daa",
+        "src/liberprimus/alphabet.py": "d44733f137dd3b92d4073a71f9edcb1d8cea22095c0e2a8d366dc48a299cacc2",
+        "src/liberprimus/ciphers.py": "a4c75e52fdad251eb292ae5261860c59896f24b350501d71ecb5fddc6075d124",
+        "known_solutions/fixtures.json": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+        "transcriptions/pages.json": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67",
+        "data/raw/relikd/pages/solved_0_koan_1.txt": "5aaae7ee19dfb46a41d5e10f975b5a252b82b6e18b49116a9f99b31a2fbee06c",
+        "data/raw/relikd/pages/solved_0_loss_of_divinity.txt": "10954c8d61744ceb453e9b553e52cd3e01289d12b727c521e21bc0594f0e0c91",
+        "data/raw/relikd/pages/solved_0_warning.txt": "c6ca9c1952307bd55866e22b9f868163bca493893162baefdba71cb9e1a206d9",
+        "data/raw/relikd/pages/solved_0_welcome.txt": "95caaffb0ae764801bb023ba8eda15b49366cb3258aab9e26922e89e884c7b73",
+        "data/raw/relikd/pages/solved_0_wisdom.txt": "4363dc279d01ac8866011988d0422a31bf608940abccaa37368c689099f52efe",
+        "data/raw/relikd/pages/solved_jpg107-167.txt": "2dd885e1785ffee22692901167edb1a37a0fae87c7d765bf53f799b108663b6c",
+        "data/raw/relikd/pages/solved_jpg229.txt": "67635c556f84b1fe8319f0300d4378d8f1dc664d779c1f0f69c4cb272c87c181",
+        "data/raw/relikd/pages/solved_p56_an_end.txt": "3b82bf89e740dde1d1f8261ddf17e028f7d4bbc8933a1e972a564822f4e4d511",
+        "data/raw/relikd/pages/solved_p57_parable.txt": "63c685205fcc753364d12ea72f7e120c6eba4031ab658cdf6fbf3da1d8749f25"
+      },
+      "parameters": [
+        "--mode",
+        "controls"
+      ],
+      "started_at": "2026-10-18T20:00:21.744933+00:00",
+      "status": "completed",
+      "output": "results/E006-selective-control-benchmark-cfefd5fb3c62.json",
+      "command": [
+        "python",
+        "experiments/selective_attack.py",
+        "--mode",
+        "controls",
+        "--timeout-seconds",
+        "180",
+        "--output",
+        "C:\\Users\\neoro\\Documents\\ChatGPT\\Cicada\\results\\E006-selective-control-benchmark-cfefd5fb3c62.json"
+      ],
+      "returncode": 0,
+      "console_log": "results/E006-selective-control-benchmark-cfefd5fb3c62.log",
+      "output_sha256": "501d7c82d6dee761fc85a7a4175115fd6ef734b3747e4a2be209dfbd21825913",
+      "finished_at": "2026-10-18T20:00:22.091511+00:00",
+      "wall_seconds": 0.3463637000095332
+    }
+  ],
+  "wall_seconds": 0.6744425000069896,
+  "requested_tasks": 1,
+  "completed_tasks": 1,
+  "budget_seconds": 60.0
+}

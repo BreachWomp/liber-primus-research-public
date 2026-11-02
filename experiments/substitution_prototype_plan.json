@@ -1,0 +1,18 @@
+{
+  "experiment": "E035-substitution-prototype",
+  "hypothesis_id": "H031",
+  "scope": "Capability prototype on three synthetic known controls only. No unknown page or unknown candidate is scored.",
+  "seconds": 180,
+  "seed": 3301035,
+  "dictionary": "Unchanged external Emerson corpus excluding essayII, greedy per-word GP encoding, split apostrophes, all8182 rune-word types. No LP text.",
+  "score": "Frozen E016 external4gram, unchanged. Dictionary word patterns seed the search; they are not hard plaintext assertions.",
+  "initializations": "Up to4 distinct cipher segments length4..14 with smallest nonempty dictionary equality-pattern bucket; ties decreasing length then first offset. Up to4 most frequent matching rune words per anchor, ties lexicographic. Complete bijection by cipher/English unigram ranks. Plus frequency-only start and7 perturbed starts with exactly8 random swaps each. Deduplicate maps, at most24 restarts.",
+  "optimization": "Up to40 steepest-ascent sweeps per restart, exhaust all406 two-symbol key swaps each sweep, deterministic lexicographic ties. Stop a restart when improvement<=1e-12. No random acceptance, no exhaustive29! claim. No parameter tuning after results.",
+  "controls": ["LP1-03_04_divinity","LP1-14_15_circumference","LP2-57_direct"],
+  "encryption": "Random(3301035) creates one uniformly shuffled29-rune plaintext-to-cipher permutation per fixture in listed order. Source boundaries carried through substitution.",
+  "gate": "All3 full plaintexts exactly recovered as top1 before any unknown-page escalation. Dictionary coverage recorded descriptively. Controls are previously seen texts, not blind historical validation.",
+  "null": "Three independent uniform exact-count shuffles per synthetic cipher with segment endpoints fixed, seed3302035+100*fixture_index+replicate. Doublet count is NOT conditioned in these capability diagnostics. Rebuild pattern seeds and optimize identical budget each time; search RNG=3303035+100*fixture_index for both truth and its nulls. No discovery p-value. A future unknown-page scan needs separately specified stronger matched nulls.",
+  "selection": "Report all controls, all null maxima, all restarts and exact recovery. No winner selection or inferential significance. Future unknown scan requires its own fixed full-optimizer null plan.",
+  "memory": "One process; max1024 cipher runes,24 starts,406 key-neighbor rows,29^4 score table and8182 dictionary words. No candidate ensemble retained.",
+  "limits": "Heuristic local optimization with finite initializations; may miss a correct substitution. Unknown spellings/dictionary gaps not evidence against substitution. Partial/near recovery does not pass the exact gate."
+}

@@ -1,0 +1,483 @@
+{
+  "experiment": "E018-external-selective-controls",
+  "status": "completed",
+  "source": {
+    "source_sha256": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278",
+    "excluded_chapter": "II.Self-Reliance",
+    "sections": [
+      {
+        "roman": "I",
+        "title": "HISTORY",
+        "source_character_range": [
+          1204,
+          48452
+        ],
+        "runes": 34859
+      },
+      {
+        "roman": "III",
+        "title": "COMPENSATION",
+        "source_character_range": [
+          105038,
+          148548
+        ],
+        "runes": 31693
+      },
+      {
+        "roman": "IV",
+        "title": "SPIRITUAL LAWS",
+        "source_character_range": [
+          148568,
+          192880
+        ],
+        "runes": 32454
+      },
+      {
+        "roman": "V",
+        "title": "LOVE",
+        "source_character_range": [
+          192889,
+          218073
+        ],
+        "runes": 18408
+      },
+      {
+        "roman": "VI",
+        "title": "FRIENDSHIP",
+        "source_character_range": [
+          218089,
+          251419
+        ],
+        "runes": 24523
+      },
+      {
+        "roman": "VII",
+        "title": "PRUDENCE",
+        "source_character_range": [
+          251434,
+          276868
+        ],
+        "runes": 18721
+      },
+      {
+        "roman": "VIII",
+        "title": "HEROISM",
+        "source_character_range": [
+          276883,
+          301411
+        ],
+        "runes": 17965
+      },
+      {
+        "roman": "IX",
+        "title": "THE OVER-SOUL",
+        "source_character_range": [
+          301430,
+          340292
+        ],
+        "runes": 28407
+      },
+      {
+        "roman": "X",
+        "title": "CIRCLES",
+        "source_character_range": [
+          340304,
+          367105
+        ],
+        "runes": 19707
+      },
+      {
+        "roman": "XI",
+        "title": "INTELLECT",
+        "source_character_range": [
+          367120,
+          395164
+        ],
+        "runes": 20713
+      },
+      {
+        "roman": "XII",
+        "title": "ART",
+        "source_character_range": [
+          395174,
+          419196
+        ],
+        "runes": 17679
+      }
+    ],
+    "paragraphs": 393,
+    "runes": 265129,
+    "word_tokens": 64574,
+    "distinct_rune_words": 8182,
+    "non_ascii_letters": {
+      "æ": 9,
+      "Æ": 4,
+      "œ": 1,
+      "Ἀ": 1,
+      "ε": 2,
+      "ὶ": 1,
+      "γ": 1,
+      "ὰ": 1,
+      "ρ": 1,
+      "ὖ": 1,
+      "π": 2,
+      "ί": 1,
+      "τ": 1,
+      "ο": 3,
+      "υ": 1,
+      "σ": 1,
+      "ι": 3,
+      "ν": 1,
+      "ἱ": 1,
+      "Δ": 1,
+      "ὸ": 1,
+      "ς": 1,
+      "κ": 1,
+      "ύ": 1,
+      "β": 1,
+      "é": 2,
+      "ë": 1
+    },
+    "normalization": "Explicit ae/oe ligature expansion; NFKD and combining-mark removal; ASCII words; QU->CW, remainingQ->C; greedyGP within words; no ngrams across paragraphs.",
+    "training_data": "No Liber Primus plaintext or ciphertext, and no Self-Reliance text is used."
+  },
+  "parameters": {
+    "mode": "controls",
+    "first": 0,
+    "last": 55,
+    "seconds": 180.0,
+    "replicates": 19,
+    "seed": 3301018,
+    "key_cycles": 381,
+    "number_streams": 3,
+    "number_stream_offsets": [
+      0,
+      255
+    ],
+    "signs": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "F_masks": "all subsets via exactDP",
+    "language_order": 4,
+    "alpha": 0.5,
+    "strength": 5.0
+  },
+  "new_decryptions": [],
+  "controls": [
+    {
+      "fixture": "LP1-03_04_divinity",
+      "exact": true,
+      "top": [
+        {
+          "score": -2.0596959919660818,
+          "plaintext_runes": "ᚹᛖᛚᚳᚩᛗᛖᚹᛖᛚᚳᚩᛗᛖᛈᛁᛚᚷᚱᛁᛗᛏᚩᚦᛖᚷᚱᛠᛏᛄᚩᚢᚱᚾᛖᚣᛏᚩᚹᚪᚱᛞᚦᛖᛖᚾᛞᚩᚠᚪᛚᛚᚦᛝᛋᛁᛏᛁᛋᚾᚩᛏᚪᚾᛠᛋᚣᛏᚱᛁᛈᛒᚢᛏᚠᚩᚱᚦᚩᛋᛖᚹᚻᚩᚠᛁᚾᛞᚦᛖᛁᚱᚹᚪᚣᚻᛖᚱᛖᛁᛏᛁᛋᚪᚾᛖᚳᛖᛋᛋᚪᚱᚣᚩᚾᛖᚪᛚᚩᛝᚦᛖᚹᚪᚣᚣᚩᚢᚹᛁᛚᛚᚠᛁᚾᛞᚪᚾᛖᚾᛞᛏᚩᚪᛚᛚᛋᛏᚱᚢᚷᚷᛚᛖᚪᚾᛞᛋᚢᚠᚠᛖᚱᛝᚣᚩᚢᚱᛁᚾᚾᚩᚳᛖᚾᚳᛖᚣᚩᚢᚱᛁᛚᛚᚢᛋᛡᚾᛋᚣᚩᚢᚱᚳᛖᚱᛏᚪᛁᚾᛏᚣᚪᚾᛞᚣᚩᚢᚱᚱᛠᛚᛁᛏᚣᚢᛚᛏᛁᛗᚪᛏᛖᛚᚣᚣᚩᚢᚹᛁᛚᛚᛞᛁᛋᚳᚩᚢᛖᚱᚪᚾᛖᚾᛞᛏᚩᛋᛖᛚᚠᛁᛏᛁᛋᚦᚱᚩᚢᚷᚻᚦᛁᛋᛈᛁᛚᚷᚱᛁᛗᚪᚷᛖᚦᚪᛏᚹᛖᛋᚻᚪᛈᛖᚩᚢᚱᛋᛖᛚᚢᛖᛋᚪᚾᛞᚩᚢᚱᚱᛠᛚᛁᛏᛁᛖᛋᛄᚩᚢᚱᚾᛖᚣᛞᛖᛖᛈᚹᛁᚦᛁᚾᚪᚾᛞᚣᚩᚢᚹᛁᛚᛚᚪᚱᚱᛁᚢᛖᚩᚢᛏᛋᛁᛞᛖᛚᛁᚳᛖᚦᛖᛁᚾᛋᛏᚪᚱᛁᛏᛁᛋᚩᚾᛚᚣᚦᚱᚩᚢᚷᚻᚷᚩᛝᚹᛁᚦᛁᚾᚦᚪᛏᚹᛖᛗᚪᚣᛖᛗᛖᚱᚷᛖᚹᛁᛞᛋᚩᛗᚣᚩᚢᚪᚱᛖᚪᛒᛖᛝᚢᚾᛏᚩᚣᚩᚢᚱᛋᛖᛚᚠᚣᚩᚢᚪᚱᛖᚪᛚᚪᚹᚢᚾᛏᚩᚣᚩᚢᚱᛋᛖᛚᚠᛠᚳᚻᛁᚾᛏᛖᛚᛚᛁᚷᛖᚾᚳᛖᛁᛋᚻᚩᛚᚣᚠᚩᚱᚪᛚᛚᚦᚪᛏᛚᛁᚢᛖᛋᛁᛋᚻᚩᛚᚣᚪᚾᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾᚳᚩᛗᛗᚪᚾᛞᚣᚩᚢᚱᚩᚹᚾᛋᛖᛚᚠ",
+          "transliteration": "WELCOMEWELCOMEPILGRIMTOTHEGREATJOURNEYTOWARDTHEENDOFALLTHNGSITISNOTANEASYTRIPBUTFORTHOSEWHOFINDTHEIRWAYHEREITISANECESSARYONEALONGTHEWAYYOUWILLFINDANENDTOALLSTRUGGLEANDSUFFERNGYOURINNOCENCEYOURILLUSIANSYOURCERTAINTYANDYOURREALITYULTIMATELYYOUWILLDISCOUERANENDTOSELFITISTHROUGHTHISPILGRIMAGETHATWESHAPEOURSELUESANDOURREALITIESJOURNEYDEEPWITHINANDYOUWILLARRIUEOUTSIDELICETHEINSTARITISONLYTHROUGHGONGWITHINTHATWEMAYEMERGEWIDSOMYOUAREABENGUNTOYOURSELFYOUAREALAWUNTOYOURSELFEACHINTELLIGENCEISHOLYFORALLTHATLIUESISHOLYANINSTRUCTIANCOMMANDYOUROWNSELF",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              1,
+              10,
+              9,
+              10,
+              16,
+              26,
+              23,
+              10
+            ],
+            "start": 6,
+            "skip_positions": [
+              48,
+              74,
+              84,
+              132,
+              159,
+              160,
+              250,
+              421,
+              443,
+              465,
+              514
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 4960,
+          "max_states": 32
+        },
+        {
+          "score": -5.4112357233460555,
+          "plaintext_runes": "ᚹᛖᚳᚣᛖᛗᛖᛋᛖᛚᛗᚪᚳᛖᛈᛖᛚᚷᛖᚦᚳᛏᚩᛁᛖᚷᛖᛚᚦᛄᚩᚾᚱᚾᚩᛖᚦᚩᚹᚩᚱᛞᛏᛁᚱᚾᛞᚠᛄᚪᛚᚳᛞᚹᛋᛁᚪᛁᛋᛞᚪᚦᚪᚾᚹᛋᚣᚢᚫᚫᛈᛒᚾᛏᚠᚩᛖᛞᛖᛋᛖᛋᚻᚩᚠᚪᚢᚾᚦᛖᛖᚱᚹᚾᛖᛞᛖᚱᚣᛁᛏᚪᚹᛁᚾᛖᛈᛖᛋᚠᛏᛗᚣᚩᛒᛖᚪᚳᚪᚹᚦᛖᛋᚪᚣᛄᚪᛏᚹᛁᛠᛚᚠᛁᛞᛋᛁᚾᛖᛒᛞᛏᛒᛏᚷᛚᛋᚪᚱᚢᛚᛡᚷᛖᚪᛒᛞᛋᛋᚠᚠᛁᛗᛝᚣᛄᚢᚱᚪᚢᚪᚩᚳᚣᚾᚳᚩᛖᛖᚢᚱᛖᛚᛚᛋᚹᛈᚾᛋᚳᚩᚢᛖᚣᚱᚱᛏᚩᛁᚾᚢᛖᛁᚾᛞᚳᚩᚢᛖᚫᛉᛚᛁᚪᚣᚢᚳᚻᚫᛗᚪᚪᛖᛚᛄᛖᛖᚢᚹᛖᛚᛚᚻᚦᚢᚳᚩᚾᛖᚱᚾᚢᚱᚾᛞᚪᚩᛋᚩᛇᚠᚫᛏᛁᛞᚦᚱᛒᛟᛝᚻᚦᛖᛋᛈᚪᛇᛝᚱᛁᛡᚪᚷᚩᛞᛁᛏᚹᚣᛋᚻᚾᚳᚱᚩᚢᛇᛋᛖᚳᛟᚱᛋᚪᛒᛞᚩᛋᚫᛗᛠᛚᛖᛏᛁᚩᚹᚣᚩᚢᛇᚾᛖᛄᛋᚱᛖᛈᛋᛁᚦᚪᚢᛁᚾᛞᚳᚩᚢᛝᚦᚷᛚᚪᛇᚱᛁᛋᛁᛖᚢᛏᛞᛁᛞᚩᛇᚫᚳᛖᛁᛖᛁᛞᚹᚦᚪᚱᛖᛏᛁᚠᚪᚪᛚᚣᛁᚱᚩᛋᛡᛞᚷᚩᚠᚹᛁᛏᚦᚪᚦᚪᚪᚹᛖᚱᛏᛇᛖᛗᚣᚱᚷᚩᛠᚫᛞᛋᛄᛗᚣᛒᛟᛁᚱᛖᚩᛒᛖᚷᛟᚪᛏᚩᚳᚩᚢᛖᚹᚱᛚᛈᚪᚠᚢᚪᛖᛁᛁᛚᚪᛋᚢᚾᚢᚪᛇᚩᚢᛇᛋᛖᚳᚠᛚᛚᚻᛁᛒᛏᛖᚳᛇᚫᚷᛖᛒᚳᛖᚪᚹᛞᚩᛚᚳᚠᚩᚱᚾᛇᚷᚦᚪᚪᛚᛁᛋᛁᚢᛁᛋᛏᚩᛚᛄᛏᚪᛁᚾᛞᛏᚱᛋᚣᚦᛡᚾᛈᚩᛗᚱᛏᚪᛞᚣᛄᚢᚱᛒᛠᚪᛋᛖᛠᚠ",
+          "transliteration": "WECYEMESELMACEPELGETHCTOIEGELTHJONRNOETHOWORDTIRNDFJALCDWSIAISDATHANWSYUAEAEPBNTFOEDESESHOFAUNTHEERWNEDERYITAWINEPESFTMYOBEACAWTHESAYJATWIEALFIDSINEBDTBTGLSARULIAGEABDSSFFIMNGYJURAUAOCYNCOEEURELLSWPNSCOUEYRRTOINUEINDCOUEAEXLIAYUCHAEMAAELJEEUWELLHTHUCONERNURNDAOSOEOFAETIDTHRBOENGHTHESPAEONGRIIAAGODITWYSHNCROUEOSECOERSABDOSAEMEALETIOWYOUEONEJSREPSITHAUINDCOUNGTHGLAEORISIEUTDIDOEOAECEIEIDWTHARETIFAALYIROSIADGOFWITTHATHAAWERTEOEMYRGOEAAEDSJMYBOEIREOBEGOEATOCOUEWRLPAFUAEIILASUNUAEOOUEOSECFLLHIBTECEOAEGEBCEAWDOLCFORNEOGTHAALISIUISTOLJTAINDTRSYTHIANPOMRTADYJURBEAASEEAF",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              10,
+              16,
+              18,
+              23
+            ],
+            "start": 3,
+            "skip_positions": [
+              47,
+              74,
+              84,
+              132,
+              159,
+              160,
+              250,
+              423,
+              443,
+              465,
+              514
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 2480,
+          "max_states": 16
+        },
+        {
+          "score": -5.508584751846499,
+          "plaintext_runes": "ᛝᛖᛚᚳᛖᚩᛖᛞᚩᛚᚳᚩᚳᚦᛈᚣᚳᚷᚱᛁᚳᚠᚩᛖᚩᚷᚱᛠᚦᚪᚩᛒᛖᚾᛖᚣᚦᛏᚹᛄᛖᛞᚦᛖᚱᛟᛞᚠᛗᚾᛚᛚᚦᚹᛠᛁᚩᚪᛋᚾᚩᚦᚻᚾᛋᚠᚣᛏᚱᚫᚣᛒᛒᚢᚠᚩᚱᚦᛖᛠᛖᛞᛟᚩᚠᛁᚾᚾᛋᛖᚣᛖᚹᚪᚣᛞᚦᚱᚳᚪᛏᛁᛋᛁᛟᛖᛝᚩᛋᛋᚪᛗᛁᚩᚫᚩᚪᛚᚩᚹᛋᛖᛞᚾᚣᚣᚩᛏᛚᛁᚹᚳᚠᛁᚾᛞᛁᛟᛖᚫᚻᛏᚩᚪᚷᚱᛋᚩᛖᚢᚷᚷᚷᚦᚪᚫᚻᛋᚢᚠᚠᛖᛗᚳᚣᛗᛋᚱᛁᚾᚪᛏᚳᚳᛞᚳᛖᚣᛖᛉᚱᚣᚳᛚᚢᛋᛈᛟᛋᛈᛒᚢᚱᚳᚱᛒᛏᛄᚪᚾᛏᚣᛁᛟᛞᛈᛒᚢᚱᚱᛉᚱᛁᚩᛄᚢᛚᛏᚫᚩᚪᚩᚩᛚᚣᚣᛖᛉᚹᚣᚳᛚᛞᛁᚢᛖᚩᛒᚩᚱᚪᚾᚱᛟᛞᚩᛒᛋᛖᛚᚠᚫᚠᛁᚦᛏᚱᚩᚢᛝᛝᚦᚣᚠᛈᛁᛚᛝᛒᛁᚷᚾᚷᛖᚦᛁᚠᚹᚳᚠᚻᚪᛈᚱᛏᚢᛚᚠᛖᛚᚢᚱᛠᚪᚫᚻᚩᚢᚱᛗᛇᛚᚣᚢᛁᛖᛋᚣᛏᚢᛚᛞᛖᚣᛞᚱᚦᛈᛞᚪᚦᛁᚾᛁᛟᛞᛈᛒᚢᚹᛁᚷᚱᚪᛚᛖᛁᚢᛖᛖᛉᛏᚦᚪᛞᛖᛚᚫᛖᛖᛖᚩᛁᚾᛋᚦᚻᚱᚣᚢᛁᛋᚩᚪᚱᚣᛖᛖᚩᚢᚷᛞᛗᚩᚻᛝᛁᚦᛁᚪᛋᚪᚩᛝᛖᛗᚪᛇᚦᛗᚳᛖᚷᛖᚹᚫᚹᛋᛗᚱᚣᚩᚢᛁᛒᛖᛄᚦᛖᛝᚢᚪᚠᚩᛈᛒᚢᚱᛋᚱᚱᛈᚩᚠᛋᚪᚱᛖᛁᚱᚪᛞᛋᚾᛏᚩᛇᛏᚢᛚᚠᛖᛚᚠᛠᛚᛝᛁᚫᚢᛖᛚᛚᚫᛗᛖᚫᛗᛖᛁᛋᛞᛏᛚᛈᚠᛒᚱᚪᛚᚷᛋᚪᚩᚳᛁᚢᛖᚢᛞᛋᚪᛒᛚᚣᚪᚪᛞᚾᚦᚢᚱᚢᚳᚦᛄᚾᛝᛒᚠᛁᚱᚻᛁᛏᚠᚻᚱᚪᚹᛒᛋᛄᛚᚠ",
+          "transliteration": "NGELCEOEDOLCOCTHPYCGRICFOEOGREATHAOBENEYTHTWJEDTHEROEDFMNLLTHWEAIOASNOTHHNSFYTRAEYBBUFORTHEEAEDOEOFINNSEYEWAYDTHRCATISIOEENGOSSAMIOAEOALOWSEDNYYOTLIWCFINDIOEEAEHTOAGRSOEUGGGTHAAEHSUFFEMCYMSRINATCCDCEYEXRYCLUSPOESPBURCRBTJANTYIOEDPBURRXRIOJULTAEOAOOLYYEXWYCLDIUEOBORANROEDOBSELFAEFITHTROUNGNGTHYFPILNGBIGNGETHIFWCFHAPRTULFELUREAAAEHOURMEOLYUIESYTULDEYDRTHPDATHINIOEDPBUWIGRALEIUEEXTTHADELAEEEEOINSTHHRYUISOARYEEOUGDMOHNGITHIASAONGEMAEOTHMCEGEWAEWSMRYOUIBEJTHENGUAFOPBURSRRPOFSAREIRADSNTOEOTULFELFEALNGIAEUELLAEMEAEMEISDTLPFBRALGSAOCIUEUDSABLYAADNTHURUCTHJNNGBFIRHITFHRAWBSJLF",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              1,
+              10,
+              23,
+              26,
+              16,
+              10,
+              9,
+              10
+            ],
+            "start": 6,
+            "skip_positions": [
+              47,
+              74,
+              84,
+              132,
+              159,
+              160,
+              250,
+              423,
+              443,
+              465,
+              499,
+              505,
+              514
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 4960,
+          "max_states": 32
+        }
+      ],
+      "key_sign_tasks": 1536
+    },
+    {
+      "fixture": "LP1-14_15_circumference",
+      "exact": true,
+      "top": [
+        {
+          "score": -2.1255352631654865,
+          "plaintext_runes": "ᚪᚳᚩᚪᚾᛞᚢᚱᛝᚪᛚᛖᛋᛋᚩᚾᚦᛖᛗᚪᛋᛏᛖᚱᛖᛉᛈᛚᚪᛁᚾᛖᛞᚦᛖᛁᚦᛖᛁᛁᛋᚦᛖᚢᚩᛁᚳᛖᚩᚠᚦᛖᚳᛁᚱᚳᚢᛗᚠᛖᚱᛖᚾᚳᛖᚻᛖᛋᚪᛁᛞᚹᚻᛖᚾᚪᛋᚳᛖᛞᛒᚣᚪᛋᛏᚢᛞᛖᚾᛏᛏᚩᛖᛉᛈᛚᚪᛁᚾᚹᚻᚪᛏᚦᚪᛏᛗᛠᚾᛏᚦᛖᛗᚪᛋᛏᛖᚱᛋᚪᛁᛞᛁᛏᛁᛋᚪᚢᚩᛁᚳᛖᛁᚾᛋᛁᛞᛖᚣᚩᚢᚱᚻᛠᛞᛁᛞᚩᚾᛏᚻᚪᚢᛖᚪᚢᚩᛁᚳᛖᛁᚾᛗᚣᚻᛠᛞᚦᚩᚢᚷᚻᛏᚦᛖᛋᛏᚢᛞᛖᚾᛏᚪᚾᛞᚻᛖᚱᚪᛁᛋᛖᛞᚻᛁᛋᚻᚪᚾᛞᛏᚩᛏᛖᛚᛚᚦᛖᛗᚪᛋᛏᛖᚱᚦᛖᛗᚪᛋᛏᛖᚱᛋᛏᚩᛈᛈᛖᛞᚦᛖᛋᛏᚢᛞᛖᚾᛏᚪᚾᛞᛋᚪᛁᛞᚦᛖᚢᚩᛁᚳᛖᚦᚪᛏᛄᚢᛋᛏᛋᚪᛁᛞᚣᚩᚢᚻᚪᚢᛖᚾᚩᚢᚩᛁᚳᛖᛁᚾᚣᚩᚢᚱᚻᛠᛞᛁᛋᚦᛖᛁᚪᚾᛞᚦᛖᛋᛏᚢᛞᛖᚾᛏᛋᚹᛖᚱᛖᛖᚾᛚᛁᚷᚻᛏᛖᚾᛖᛞ",
+          "transliteration": "ACOANDURNGALESSONTHEMASTEREXPLAINEDTHEITHEIISTHEUOICEOFTHECIRCUMFERENCEHESAIDWHENASCEDBYASTUDENTTOEXPLAINWHATTHATMEANTTHEMASTERSAIDITISAUOICEINSIDEYOURHEADIDONTHAUEAUOICEINMYHEADTHOUGHTTHESTUDENTANDHERAISEDHISHANDTOTELLTHEMASTERTHEMASTERSTOPPEDTHESTUDENTANDSAIDTHEUOICETHATJUSTSAIDYOUHAUENOUOICEINYOURHEADISTHEIANDTHESTUDENTSWEREENLIGHTENED",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              0,
+              1,
+              19,
+              0,
+              18,
+              4,
+              18,
+              9,
+              0,
+              18,
+              0,
+              10,
+              4
+            ],
+            "start": 10,
+            "skip_positions": [
+              49,
+              58
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 4387,
+          "max_states": 26
+        },
+        {
+          "score": -4.345864025843002,
+          "plaintext_runes": "ᛗᚳᚩᛗᚾᛞᚢᚱᛝᚪᛚᛈᛋᛁᚩᚾᚣᛖᛗᚪᛋᛏᛖᚱᛈᛉᚻᛚᚪᚳᚾᛖᛞᚦᛖᛁᚦᛈᛁᚳᛋᚦᛈᚢᚩᛁᚳᛖᚩᚠᚦᛈᚳᚳᚱᚳᚫᛗᚠᛖᚱᛖᚾᚳᛖᚩᛖᛁᚪᛁᛖᚹᚻᛖᚾᚪᛋᚳᛈᛞᛇᚣᚪᛁᛏᚢᛞᛖᚾᛏᛏᛡᛖᚾᛈᛚᛗᛁᚾᚹᚻᚪᛏᚦᛗᛏᛉᛠᚾᛄᚦᛖᛗᚪᛋᛏᛖᛠᛋᛗᛁᛞᚳᛏᛁᛋᚪᚢᚩᛁᚠᛖᚳᚾᛋᚳᛞᛖᚣᚩᚢᚱᚻᛞᛞᚳᛞᚩᚱᛏᚻᚪᚢᛖᚪᚢᛡᛁᚠᛖᛁᚱᛗᚣᚻᛠᛞᚦᚩᚫᚷᚩᛏᚦᛈᛋᛏᚢᛞᛖᚾᛏᛗᚾᛖᚻᛖᛠᚪᛁᛋᛖᛞᚻᛁᛁᚻᛗᚾᛞᛄᚩᛏᛖᛚᛚᚦᛖᛉᚪᛁᛏᛖᛠᚦᛖᛗᚪᛋᛏᛖᛠᛋᛄᚩᛈᚻᛖᛞᚦᛖᛋᛏᚢᛖᛖᚱᛏᚪᚱᛞᛋᚪᛁᛞᚦᛖᚫᚩᚳᚳᛖᚣᚪᛏᛄᚢᛋᛏᛋᛗᛁᛖᚣᚩᚫᚻᚪᚢᛖᚾᚩᚢᛡᛁᚠᛖᛁᚱᚣᚩᚢᚱᚻᛠᛞᚳᛋᚣᛖᛁᛗᚾᛞᚦᛖᛋᛏᚢᛖᛖᚱᛏᛋᚦᛖᚱᛖᛖᚾᛚᛁᚢᚻᛄᛖᚾᛈᛞ",
+          "transliteration": "MCOMNDURNGALPSIONYEMASTERPXHLACNEDTHEITHPICSTHPUOICEOFTHPCCRCAEMFERENCEOEIAIEWHENASCPDEOYAITUDENTTIAENPLMINWHATTHMTXEANJTHEMASTEEASMIDCTISAUOIFECNSCDEYOURHDDCDORTHAUEAUIAIFEIRMYHEADTHOAEGOTTHPSTUDENTMNEHEEAAISEDHIIHMNDJOTELLTHEXAITEEATHEMASTEEASJOPHEDTHESTUEERTARDSAIDTHEAEOCCEYATJUSTSMIEYOAEHAUENOUIAIFEIRYOURHEADCSYEIMNDTHESTUEERTSTHEREENLIUHJENPD",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              0,
+              18,
+              4,
+              18,
+              9,
+              5,
+              18,
+              5,
+              10,
+              4,
+              5,
+              1,
+              19
+            ],
+            "start": 7,
+            "skip_positions": [
+              49,
+              58
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 4402,
+          "max_states": 26
+        },
+        {
+          "score": -6.15172415124842,
+          "plaintext_runes": "ᛖᚣᛖᚳᛝᚾᚪᚱᚹᛞᛄᛉᛡᚣᚪᛞᛈᛋᚩᚷᛋᚢᛖᚾᛇᛉᚪᛄᛁᚷᚱᛗᚳᚢᚱᚪᚳᚠᛁᛚᚹᚦᛇᛈᚱᛚᚳᛖᛋᛄᛟᛠᚳᚷᚻᛚᛇᚢᚠᛗᚠᚢᚪᚳᚻᛗᚩᚾᛏᚫᚱᛗᛞᛇᚾᛁᛉᚫᛉᚷᛠᛖᚾᚣᛈᛉᚳᛖᛞᛏᛝᚣᛖᚫᚱᚷᛚᚳᛁᛖᚹᛁᚢᚳᚷᛏᚠᛚᚾᛁᛉᛗᚠᚪᛋᛠᚾᛋᛉᚷᛏᛝᛝᛠᛁᚣᚾᛠᚩᚢᛋᛖᚷᛈᚢᛝᚳᛗᛟᛋᛏᚱᛡᛁᚻᚱᛋᛖᛗᛠᛞᛖᚢᚱᛞᛝᛠᛟᛏᛁᚪᛚᛏᛁᛗᛠᚻᚦᚻᚪᚷᛗᚹᛒᛉᛁᛒᛇᛟᚱᛞᛗᚷᚾᚱᚠᛖᛡᚹᚠᚣᛒᚾᛟᛈᚣᚻᚳᚢᛞᛁᛋᛒᛠᛚᛚᛉᚾᚢᛞᚣᛟᛏᛋᛉᛖᚢᚾᛈᛏᚾᛉᛋᛇᚹᛠᚪᚠᚪᛡᚢᚢᛏᛚᚳᚩᚩᚻᛁᛗᚷᚢᛖᛁᚾᚢᚾᚣᛋᛝᚣᚩᛈᛝᚠᛟᚢᚠᛏᛚᛖᛁᚳᛒᛖᚣᚩᚫᛇᛒᚪᛒᚱᛉᛁᛋᛁᛁᚩᚾᚱᛄᚱᚻᛄᛉᛝᛉᛈᚪᚻᚷᛝᛞᛈᚩᛈᛏᛝᚱᛖᚳᛚᚢᛖᚠᚳᛉᚢᚪᛚᚠᛒᛟᛁᛁᚪᛠᚷ",
+          "transliteration": "EYECNGNARWDJXIAYADPSOGSUENEOXAJIGRMCURACFILWTHEOPRLCESJOEEACGHLEOUFMFUACHMONTAERMDEONIXAEXGEAENYPXCEDTNGYEAERGLCIEWIUCGTFLNIXMFASEANSXGTNGNGEAIYNEAOUSEGPUNGCMOESTRIAIHRSEMEADEURDNGEAOETIALTIMEAHTHHAGMWBXIBEOOERDMGNRFEIAWFYBNOEPYHCUDISBEALLXNUDYOETSXEUNPTNXSEOWEAAFAIAUUTLCOOHIMGUEINUNYSNGYOPNGFOEUFTLEICBEYOAEEOBABRXISIIONRJRHJXNGXPAHGNGDPOPTNGRECLUEFCXUALFBOEIIAEAG",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              4,
+              6,
+              18,
+              18,
+              19,
+              18
+            ],
+            "start": 1,
+            "skip_positions": [
+              58,
+              189
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 2034,
+          "max_states": 12
+        }
+      ],
+      "key_sign_tasks": 1536
+    },
+    {
+      "fixture": "LP2-56_totient_primes",
+      "exact": true,
+      "top": [
+        {
+          "score": -2.0487039647166703,
+          "plaintext_runes": "ᚪᚾᛖᚾᛞᚹᛁᚦᛁᚾᚦᛖᛞᛖᛖᛈᚹᛖᛒᚦᛖᚱᛖᛖᛉᛁᛋᛏᛋᚪᛈᚪᚷᛖᚦᚪᛏᚻᚪᛋᚻᛖᛋᛏᚩᛁᛏᛁᛋᚦᛖᛞᚢᛏᚣᚩᚠᛖᚢᛖᚱᚣᛈᛁᛚᚷᚱᛁᛗᛏᚩᛋᛖᛖᚳᚩᚢᛏᚦᛁᛋᛈᚪᚷᛖ",
+          "transliteration": "ANENDWITHINTHEDEEPWEBTHEREEXISTSAPAGETHATHASHESTOITISTHEDUTYOFEUERYPILGRIMTOSEECOUTTHISPAGE",
+          "recipe": {
+            "family": "prime_totient",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "start": 0,
+            "skip_positions": [
+              56
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 27015,
+          "max_states": 520
+        },
+        {
+          "score": -5.514397933621837,
+          "plaintext_runes": "ᚪᚷᛖᚳᛠᚢᛝᛄᛉᚱᛉᚫᛋᚢᚢᚩᚣᛋᚹᚾᛞᚷᚾᚢᛞᚱᚠᚢᚩᛁᛖᛚᛝᚦᛏᚠᛞᚹᛏᛞᛄᛗᛡᚪᛚᛏᛖᛚᛚᛞᚠᚠᚾᛋᛚᛠᚠᛝᚠᛠᚳᛈᚷᚻᚹᛁᚢᚦᚷᚾᛠᚾᛞᛖᚪᚪᛒᛞᚩᚱᛡᚪᚱᚣᚳ",
+          "transliteration": "AGECEAUNGJXRXAESUUOYSWNDGNUDRFUOIELNGTHTFDWTDJMIAALTELLDFFNSLEAFNGFEACPGHWIUTHGNEANDEAABDORIAARYC",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              0,
+              19,
+              1,
+              5,
+              4,
+              10,
+              5,
+              18,
+              5,
+              9,
+              18,
+              4,
+              18
+            ],
+            "start": 2,
+            "skip_positions": [
+              35,
+              51,
+              56
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 1360,
+          "max_states": 26
+        },
+        {
+          "score": -5.515926361569092,
+          "plaintext_runes": "ᛏᛉᚻᚾᛁᚦᛈᛈᚱᛈᛏᛈᚹᚻᛖᛝᚫᛋᛟᛒᛏᛠᛞᚱᛁᚳᛏᛞᚳᚢᚷᚦᛡᛖᛖᛗᚷᛁᚳᚱᛋᚻᛡᚾᛏᛁᚳᚠᚪᛋᛁᚠᚩᚾᚻᚣᚠᚪᛡᛞᚠᚣᛏᚱᚣᛚᚣᛗᚾᚪᛗᛏᛡᛏᛞᚻᛏᛚᛏᚩᛖᚹᚩᚣᛡ",
+          "transliteration": "TXHNITHPPRPTPWHENGAESOEBTEADRICTDCUGTHIAEEMGICRSHIANTICFASIFONHYFAIADFYTRYLYMNAMTIATDHTLTOEWOYIA",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 238,
+            "skip_positions": [
+              47,
+              51,
+              56
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 27062,
+          "max_states": 520
+        }
+      ],
+      "key_sign_tasks": 1536
+    }
+  ],
+  "gate_passed": true,
+  "limits": [
+    "This is a changed-score rescan of E007/E008, not a new cipher family or independent discovery.",
+    "External model fixed using previously seen controls; source-independent training is not independent historical validation.",
+    "AllFsubsets covered only in these finite known-key streams; no arbitrary keys, transpositions or across-page continuation.",
+    "B19cannot resolve corrected significance; null calibration is a screen for chance maxima."
+  ],
+  "wall_seconds": 38.80677190001006
+}

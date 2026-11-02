@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-10-31T11:38:56.423931+00:00",
+  "base_commit": "e00e75d907825377dc7e35e0a3536fa76238bf23",
+  "reason": "E072 plan and new test filename collided with historical E019 files. Tests restored before E072 completion; historical plan restored after the active batch finished. No E072 output or log entry rewritten.",
+  "archived_inputs": {
+    "experiments/affine_feedback_plan.json": {
+      "archive": "checkpoints/phase26_input_snapshot/experiments/affine_feedback_plan.json",
+      "sha256": "368b6dc93e4d203787d6c8b026d127b3ba50287d4782783ec323673812de7b53"
+    },
+    "experiments/affine_feedback_controls.py": {
+      "archive": "checkpoints/phase26_input_snapshot/experiments/affine_feedback_controls.py",
+      "sha256": "04376c10450fecf3464740d1e13d320c32f3ec5f568d99a26703c7645209825b"
+    },
+    "scripts/run_affine_feedback_controls.py": {
+      "archive": "checkpoints/phase26_input_snapshot/scripts/run_affine_feedback_controls.py",
+      "sha256": "c9d424dfce16eb110e415cad1ed6f67b51d51a5e9d327003dd47d4325e64b931"
+    }
+  },
+  "current_plan": "experiments/delayed_affine_feedback_plan.json",
+  "current_tests": "tests/test_delayed_affine_feedback.py",
+  "reproduction": "For the original fingerprints reconstruct an isolated checkout at base_commit, add the new unchanged dependencies from this checkpoint, and overlay each archive at its original relative path. Never overlay historical files in the research working tree. Current runner uses the uniquely named identical plan; supervisor skips completed E072 tasks by verifying archived bytes.",
+  "new_decryptions": []
+}

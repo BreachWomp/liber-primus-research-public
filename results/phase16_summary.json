@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-10-20T20:52:45.789129+00:00",
+  "selected_section": "LP2-54_55",
+  "top": {
+    "key": [
+      27,
+      22,
+      5,
+      18,
+      5,
+      26,
+      23,
+      15,
+      8,
+      0,
+      22,
+      14,
+      1,
+      20
+    ],
+    "sign": -1,
+    "skip_positions": [
+      247,
+      257,
+      273
+    ],
+    "page_phases": [
+      0,
+      2
+    ],
+    "language_score": -5.392394364212792,
+    "score": -5.567524500682874,
+    "phase_cost": 2.6390573296152584,
+    "rotation": 0,
+    "input_period": 14,
+    "dp_max_states": 28,
+    "dp_transitions": 4642,
+    "coordinate_changes": 0,
+    "seed_index": 7,
+    "plaintext_runes": "ᚩᚩᛈᚪᚹᚪᚾᚳᛖᚦᛠᚢᚾᛗᛚᛡᛋᚦᛁᚳᚦᛈᛁᛟᚹᚷᛚᛋᚦᚾᚾᛇᚦᚹᛈᛚᛗᚣᚷᚹᛡᛚᚢᛝᛖᚹᚩᛋᚪᚣᚩᛚᛞᚾᚦᚦᛞᛗᚱᚱᛄᛗᛋᛡᛏᚠᛡᚾᛗᛗᚪᛄᚹᛗᚪᚷᛒᚹᛚᛠᛄᚠᚷᛋᛚᚪᛋᛋᛝᚠᚠᛒᛒᛏᛁᚱᛠᛏᚢᛏᛋᚱᛇᛚᚻᚫᚪᛖᚠᛚᚻᚱᚠᚠᛖᚣᚪᚹᚦᛖᛈᚱᚢᛁᚱᚾᛖᚦᚱᚱᛒᛖᛁᚱᚳᚢᛏᛖᛞᚷᛇᛠᚠᛒᛖᚱᛋᚩᛠᛏᚷᛋᚱᚩᚣᛏᛠᛞᛟᛒᛒᛇᛗᚾᚩᚣᛠᛞᚠᚠᛟᛝᛋᛝᚢᛈᛗᚾᛖᚦᛒᛏᚱᚫᛚᚪᛈᚠᛁᚠᛗᛋᛋᚾᚪᛚᚱᛖᛏᚪᛏᛗᛚᚩᛋᛝᛗᛝᛈᚳᛗᛞᛁᛈᚪᚹᚾᚱᛖᛄᚩᛞᚪᛒᛄᛚᛚᚠᚷᛟᛒᛖᛈᛟᛋᛏᛏᚠᛚᛋᚩᛠᛖᛉᚱᛚᚾᚠᛚᛁᚾᛖᛉᚢᚫᚳᛋᚠᛏᛁᚻᛝᚠᚳᚣᚳᚩᚩᛖᛉᛠᛏᛒᚠᚩᛗᛁᚠᚷᛏᛡᚳᚳᚦᛋᛏᛠᛇᚳᛋᛚᚩᚠᛗᚪᚢᛁᚾᛗᚩᚾᛏᚣᛏᛝᛒᚠᚪ",
+    "transliteration": "OOPAWANCETHEAUNMLIASTHICTHPIOEWGLSTHNNEOTHWPLMYGWIALUNGEWOSAYOLDNTHTHDMRRJMSIATFIANMMAJWMAGBWLEAJFGSLASSNGFFBBTIREATUTSREOLHAEAEFLHRFFEYAWTHEPRUIRNETHRRBEIRCUTEDGEOEAFBERSOEATGSROYTEADOEBBEOMNOYEADFFOENGSNGUPMNETHBTRAELAPFIFMSSNALRETATMLOSNGMNGPCMDIPAWNREJODABJLLFGOEBEPOESTTFLSOEAEXRLNFLINEXUAECSFTIHNGFCYCOOEXEATBFOMIFGTIACCTHSTEAEOCSLOFMAUINMONTYTNGBFA"
+  },
+  "unknown_groups": 10,
+  "controls_exact": 3,
+  "new_controls": 3,
+  "page_spans": [
+    {
+      "page_id": "LP2-54",
+      "start": 0,
+      "end": 232,
+      "runes": 232,
+      "source_refs": [
+        "relikd:pages/p54-55.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "zero_rune_page": false
+    },
+    {
+      "page_id": "LP2-55",
+      "start": 232,
+      "end": 308,
+      "runes": 76,
+      "source_refs": [
+        "relikd:pages/p54-55.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "zero_rune_page": false
+    }
+  ],
+  "raw_p": 0.95,
+  "bonferroni10": 1,
+  "null_exceedances": 18,
+  "null_replicates": 19,
+  "pending_larger_calibration": false,
+  "candidate_records_recomputed": 1676,
+  "seed_records_recomputed": 396,
+  "restart_traces_checked": 396,
+  "independent_schedule_optima": 33,
+  "tests_passed": 106,
+  "successful_tasks": 30,
+  "seconds": 234.44142730004387,
+  "family_accounted_seconds": 209.47018460003892,
+  "section_scores": [
+    {
+      "section": "LP2-00_02",
+      "runes": 729,
+      "score": -5.884704625371403
+    },
+    {
+      "section": "LP2-03_07",
+      "runes": 1145,
+      "score": -6.0757984313574624
+    },
+    {
+      "section": "LP2-08_14",
+      "runes": 1729,
+      "score": -6.1150332134931755
+    },
+    {
+      "section": "LP2-15_22",
+      "runes": 1903,
+      "score": -6.130898315401932
+    },
+    {
+      "section": "LP2-23_26",
+      "runes": 1021,
+      "score": -5.975087980926992
+    },
+    {
+      "section": "LP2-27_32",
+      "runes": 1433,
+      "score": -6.079706722074558
+    },
+    {
+      "section": "LP2-33_39",
+      "runes": 1680,
+      "score": -6.098128035632303
+    },
+    {
+      "section": "LP2-40_53",
+      "runes": 3008,
+      "score": -6.2622516907510395
+    },
+    {
+      "section": "LP2-54_55",
+      "runes": 308,
+      "score": -5.567524500682874
+    },
+    {
+      "section": "LP2-40_55",
+      "runes": 3316,
+      "score": -6.281566553916567
+    }
+  ],
+  "new_decryptions": []
+}

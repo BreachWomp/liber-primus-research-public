@@ -1,0 +1,6 @@
+{'stage': 'pool', 'sign': 1, 'through_period': 24}
+{'stage': 'pool', 'sign': 1, 'through_period': 32}
+{'stage': 'pool', 'sign': -1, 'through_period': 24}
+{'stage': 'pool', 'sign': -1, 'through_period': 32}
+{'experiment': 'E052-regression-0', 'wall_seconds': 28.88127600000007, 'checks': {'plaintext_exact': True, 'key_exact': True, 'mask_exact': True}, 'correct_runes': 3316}
+{"status": "completed", "output": "results/E052-regression-0-1118cd6014bf.json", "seconds": 28.934286599978805}

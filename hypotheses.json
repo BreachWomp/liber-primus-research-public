@@ -1,0 +1,5382 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-18T08:40:00Z",
+  "status": "thirtyfirst_batch_difference_substitution_no_supported_decryption",
+  "hypotheses": [
+    {
+      "id": "H001",
+      "priority": 1,
+      "claim": "Unsolved LP2 has fewer adjacent equal runes than independent page-wise count-preserving permutations predict.",
+      "basis": "Published prior art; independently replicate before using as a premise.",
+      "mechanism": "A statistical departure from exchangeability, not a cipher identification.",
+      "parameters": "LP2 0..55 including empty numeric page; 9999 permutations; stream, within-word, within-line fixed edge masks.",
+      "cost": "120 seconds maximum, bounded vector batches, one process.",
+      "success_criterion": "Lower-tail Monte Carlo p with plus-one correction, Holm adjustment across 59 tests <= 0.05.",
+      "rejection_criterion": "No corrected significance: no support from this test. Significance does not eliminate named cipher families.",
+      "experiment": "E001-adjacency",
+      "status": "replicated_prior_art",
+      "result": "86 observed stream doubles versus 439.165924 expected; within-family Holm p=0.0059."
+    },
+    {
+      "id": "H002",
+      "priority": 2,
+      "claim": "A symmetric first-order Markov model fitted on preassigned training pages may explain higher-lag equality rates on heldout pages.",
+      "basis": "Reduced repeats mechanically change lag statistics and can confound periodicity claims.",
+      "mechanism": "Taa=q and Tab=(1-q)/28; fit q on page%4!=0; evaluate page%4==0.",
+      "parameters": "LP2 0..55; heldout aggregate lags 2..16; 9999 simulations; maxT; lag1 calibration separate.",
+      "cost": "120 seconds maximum, one process.",
+      "success_criterion": "Non-rejection means compatibility with this limited diagnostic only; no inferred encryption mechanism.",
+      "rejection_criterion": "maxT p <= 0.05 indicates residual structure under a plug-in uniform-marginal model; q uncertainty is not propagated.",
+      "experiment": "E002-markov-heldout",
+      "status": "not_rejected_limited_model",
+      "result": "Heldout lag2..16 global plug-in maxT p=0.6465; not cipher identification."
+    },
+    {
+      "id": "H003",
+      "priority": 3,
+      "claim": "A small declared affine or prime-totient family may recover a whole page with a reproducible rule.",
+      "basis": "Known LP methods include Atbash and prime-totient shifts.",
+      "mechanism": "All affine substitutions plus prime-totient offsets 0..28 with explicit signs and none/all-F/each-single-F interrupter masks.",
+      "parameters": "Frozen LP1 training controls; LP2-56 and LP2-57 positive controls held out; exact scan grid preserved in output.",
+      "cost": "180 seconds maximum; deterministic enumeration, no adaptive prompt-based scoring.",
+      "success_criterion": "Exact positive-control recovery is required. An unknown result requires preserved full plaintext and separate independent validation before any success claim.",
+      "rejection_criterion": "Low scores are only a negative screening result for this exact grid and model; no broad cipher-family exclusion.",
+      "experiment": "E003-bounded-cipher-screen",
+      "status": "screen_completed_scoring_gate_failed",
+      "pre_run_design_note": "Before running E003, added each-single-F masks: the published LP2-56 control skips only F at rune offset 56, not every F. None/all-F alone would exclude the known solution. This control-driven scope decision is not evidence of novelty.",
+      "result": "113448 recipes; no unknown page exceeds diagnostic control floor. Correct LP2-56 ranks second; no broad exclusion."
+    },
+    {
+      "id": "H004",
+      "priority": 2,
+      "claim": "Stopping a symmetric constrained-swap sampler after accepted moves biases the sampled state distribution.",
+      "basis": "Source-code review of a public Liber Primus conditional-null sampler.",
+      "mechanism": "Removing rejection self-loops creates a jump chain with stationary weight proportional to admissible degree.",
+      "parameters": "Exhaustive small multiset example with fixed adjacent-double count.",
+      "cost": "Seconds, exhaustive enumeration.",
+      "success_criterion": "Explicit finite state transitions and stationary distribution show nonuniformity while preserving counts and doublets.",
+      "rejection_criterion": "If eligible degrees are constant or cited implementation counts every proposal, the proposed criticism does not apply.",
+      "experiment": "E004-sampler-audit",
+      "status": "exact_counterexample_verified",
+      "result": "12-state example; accepted chain biased; stationary total variation 5/21 from uniform."
+    },
+    {
+      "id": "H005",
+      "priority": 4,
+      "claim": "An unskipped repeating-key stream may produce elevated within-residue coincidence for periods 2..32 on heldout pages.",
+      "basis": "E002 shows no heldout lag anomaly under the limited repeat-suppression null; now test page-local period pooling.",
+      "mechanism": "Pooled periodic IC, page%4==0, >=100 ordered within-column pairs; fitted q from other pages.",
+      "parameters": "9999 stationary Markov replicates, seed3301005, two-sided maxT across all page/period features.",
+      "cost": "180 seconds max; numpy batches128.",
+      "success_criterion": "Injected no-interrupt period8 Vigenere control p<=0.01; unknown period test maxT<=0.05 with E002/global multiplicity accounted.",
+      "rejection_criterion": "No significant feature means only no detected deviation under this null; does not exclude Vigenere with interruptions.",
+      "experiment": "E005-heldout-period-scan",
+      "status": "not_rejected_limited_model",
+      "registered_at": "2026-10-18T19:48:45.888775+00:00",
+      "notes": "Registered after E001-E004 inspection and before E005 execution; exploratory sequential research, not prospective blind replication.",
+      "result": "434 heldout page/period cells; maxT p=0.3012; injected period8 detected."
+    },
+    {
+      "id": "H007",
+      "priority": 2,
+      "claim": "A normalized backoff score can rank true text above mutations and choose correct F interruptions.",
+      "experiments": [
+        "E006"
+      ],
+      "status": "partial_control_pass_scoring_gate_failed",
+      "result": "1105/1200 corruption comparisons; exact CIRCUMFERENCE known-key recovery; DIVINITY98.835% and LP2-56 not exact.",
+      "scope": "Leave-one-section-out controls; mutation comparisons correlated; no significance claim."
+    },
+    {
+      "id": "H008",
+      "priority": 3,
+      "claim": "Uniform rejection shuffles conditional on counts and doublets provide a correct short-page null.",
+      "experiments": [
+        "E009"
+      ],
+      "status": "exact_sampler_used_for_short_pages",
+      "result": "Exhaustive12-state multiplicity control passed; independent rejection shuffles avoid accepted-move chain bias.",
+      "scope": "No claim of efficient sampling on long pages; original proposal-count MCMC remains unimplemented."
+    },
+    {
+      "id": "H009",
+      "priority": 1,
+      "claim": "Known-word cyclic keys or number streams with arbitrary F interruptions recover unknown pages.",
+      "experiments": [
+        "E007",
+        "E008",
+        "E009"
+      ],
+      "status": "bounded_screen_no_supported_candidate",
+      "result": "381keycycles,allphases,4signs;3numberstreams,256starts,4signs;allFsubsets exact DP; conditional null p0.25/0.95, page-adjusted1.",
+      "scope": "Scorer limits preclude eliminating the whole cipher families; section alignment not yet tested."
+    },
+    {
+      "id": "H010",
+      "priority": 2,
+      "claim": "Ciphertext-autokey exposes readable suffixes without knowing the seed.",
+      "experiments": [
+        "E010"
+      ],
+      "status": "bounded_screen_no_supported_candidate",
+      "result": "13516page/period/sign tasks; global plug-in p=0.464; exact synthetic control recovery.",
+      "scope": "Periods1..64,min60suffixrunes,nointerruptions; null does not fix marginal counts."
+    },
+    {
+      "id": "H011",
+      "priority": 2,
+      "claim": "Literal LP1-word seeds decrypt a plaintext-autokey page.",
+      "experiments": [
+        "E011"
+      ],
+      "status": "bounded_screen_no_supported_candidate",
+      "result": "390seeds,171600recipes; strongest page null p0.15/0.375, adjusted1; exact synthetic full-grid control.",
+      "scope": "Only none/all-F policies, no seed rotations, arbitrary-key search or continuation across pages."
+    },
+    {
+      "id": "H012",
+      "claim": "Prime/totient streams continue across source-defined LP2 sections.",
+      "experiments": [
+        "E012"
+      ],
+      "status": "bounded_screen_no_supported_candidate",
+      "result": "10unique sections from2source partitions; allFsubsets and0..255starts; selected Markovnull p0.1, section-adjusted1.",
+      "limits": "LP2-50 preserved with zero key consumption by hypothesis; known continuation exact, score-optimal interruption not exact."
+    },
+    {
+      "id": "H013",
+      "claim": "Emerson Self-Reliance is a forward running key under one of2explicit GP conventions.",
+      "experiments": [
+        "E013"
+      ],
+      "status": "bounded_screen_no_supported_candidate",
+      "result": "36336608recipes; null p0.125,page-adjusted1; exact synthetic recovery.",
+      "limits": "One edition/essay; no all-subsetF or backwardkey; no historical key claim."
+    },
+    {
+      "id": "H014",
+      "claim": "A1..3rune arbitrary seed recovers a plaintext-autokey page.",
+      "experiments": [
+        "E014"
+      ],
+      "status": "bounded_screen_no_supported_candidate",
+      "result": "11113960recipes; null p0.375,page-adjusted1; exact synthetic recovery.",
+      "limits": "None/allF only; longerseeds and cross-pagefeedback untested."
+    },
+    {
+      "id": "H015",
+      "claim": "Affine substitution of first modular differences exposes plaintext and explains low ciphertext repeats.",
+      "experiments": [
+        "E015"
+      ],
+      "status": "bounded_screen_no_supported_candidate",
+      "result": "44660recipes; global plug-in p0.48; exact synthetic recovery=True.",
+      "limits": "No arbitrary substitution, higher-order difference, skips, or cross-page IV."
+    },
+    {
+      "id": "H016",
+      "claim": "External-only language training resolves previously ambiguous F interruptions.",
+      "experiments": [
+        "E016"
+      ],
+      "status": "known_control_gate_passed",
+      "result": "Both fixed models exactly recover all three known-key controls; order3 1542/1600, order4 1563/1600 mutation rankings.",
+      "limits": "Previously seen fixtures, correlated mutations; data-independent training is not blind validation. No word-boundary scorer implemented."
+    },
+    {
+      "id": "H017",
+      "claim": "Bounded search can recover unknown plaintext-autokey seeds of length4..12.",
+      "experiments": [
+        "E017"
+      ],
+      "status": "controls_passed_no_supported_unknown_candidate",
+      "result": {
+        "pages": 55,
+        "exact_controls": 6,
+        "selected": "LP2-49",
+        "score": -3.3032488658874044,
+        "transliteration": "EANOFEREWROWDSTTOGAUOPANSGOSPLUISAFFELETAIDSLOWNFRALRIDSPASSYEBTWOF",
+        "p": 0.2,
+        "page_adjusted_p": 1,
+        "phase_adjusted_p": 1
+      },
+      "limits": "Six unskipped synthetic controls; beam heuristic with none/allF only. No exhaustive family exclusion."
+    },
+    {
+      "id": "H019",
+      "claim": "External4gram scoring finds a supported unknown result in the prior selective-F word/number grids.",
+      "experiments": [
+        "E018"
+      ],
+      "status": "bounded_screen_no_supported_candidate",
+      "result": {
+        "status": "screen_complete",
+        "pages": 55,
+        "exact_controls": 3,
+        "selected": "LP2-49",
+        "top": {
+          "score": -5.305280173408523,
+          "plaintext_runes": "ᚱᚻᚱᛁᛒᚹᛏᚪᚩᚦᚩᛏᚫᚳᛖᛏᛝᛈᚫᚠᛁᚻᛈᛞᛡᚾᚪᚣᛞᛁᛒᚻᚢᚠᚳᚪᛚᚢᚾᚩᚱᛄᚢᚹᚻᚪᛗᛋᚾᛗᚣᛝᚢᛉᛋᛁᛒᛋᚳᛞᚹᛖᚣᚱᛞᛚ",
+          "transliteration": "RHRIBWTAOTHOTAECETNGPAEFIHPDIANAYDIBHUFCALUNORJUWHAMSNMYNGUXSIBSCDWEYRDL",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "key_indices": [
+              3,
+              15,
+              23,
+              10,
+              7,
+              19
+            ],
+            "start": 2,
+            "skip_positions": [
+              33
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 444,
+          "max_states": 12
+        },
+        "exceedances": 9,
+        "replicates": 19,
+        "raw_p": 0.5,
+        "page_adjusted_p": 1,
+        "phase_adjusted_p": 1
+      },
+      "limits": "Changed-score rescan of E007/E008, complete finite grid with exact F-subset optimization; no arbitrary keys or cross-page continuation."
+    },
+    {
+      "id": "H020",
+      "claim": "A one-rune plaintext feedback with general invertible multipliers recovers an unknown page.",
+      "experiments": [
+        "E019",
+        "E020"
+      ],
+      "status": "screen_complete",
+      "result": {
+        "status": "screen_complete",
+        "pages": 55,
+        "exact_controls": 3,
+        "selected": "LP2-55",
+        "top": {
+          "score": -5.225325413318316,
+          "plaintext_runes": "ᛒᚢᛠᚢᚣᛋᚻᛡᚣᛋᛇᚾᚳᛞᚳᛈᛖᛏᛠᚳᛖᛖᚩᚠᚪᛏᛈᛚᚦᛏᚣᚳᚪᚳᚣᚠᚻᚩᚢᛁᚱᛟᚩᛈᚢᛏᚩᚳᚻᛖᚱᛞᚻᛏᛖᛋᛡᛚᚱᚩᚳᚢᚢᛉᛋᚳᚳᛝᛁᚾᚳᛁᚦᚾᚾᛡ",
+          "transliteration": "BUEAUYSHIAYSEONCDCPETEACEEOFATPLTHTYCACYFHOUIROEOPUTOCHERDHTESIALROCUUXSCCNGINCITHNNIA",
+          "recipe": {
+            "a": 5,
+            "b": 20,
+            "initial_key": 13,
+            "initial_plaintext": 17,
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        "exceedances": 115,
+        "replicates": 4000,
+        "raw_p": 0.02899275181204699,
+        "page_adjusted_p": 1,
+        "phase_adjusted_p": 1,
+        "initial_raw_p": 0.05,
+        "initial_exceedances": 0,
+        "initial_replicates": 19,
+        "calibration": "E020 fresh fixed4000-replicate follow-up; initial19 excluded from inference"
+      },
+      "limits": "Only seed length1, no additive constant or skips; four old sign pairs excluded. No broad family elimination."
+    },
+    {
+      "id": "H021",
+      "claim": "Alternate image-anchored row reading order exposes a page under a small known cipher family.",
+      "experiments": [
+        "E021"
+      ],
+      "status": "screen_no_supported_candidate",
+      "result": {
+        "created_at": "2026-10-19T17:40:46.443777+00:00",
+        "selected_page": "LP2-49",
+        "top": {
+          "score": -5.304834651342594,
+          "plaintext_runes": "ᛟᚠᚳᛝᛚᛡᛗᚪᚷᛗᛒᚫᛞᚢᛋᚦᚣᚹᚪᚦᚹᛁᛈᛏᚪᛚᛠᚢᚩᛡᚳᚻᛝᚠᚫᚣᛏᛠᛈᛡᚳᛞᛗᛞᚳᚱᛝᛈᚩᚱᛇᚱᛝᛒᛖᛖᚾᛞᛉᛖᛚᛖᛗᚳᛋᚠ",
+          "transliteration": "OEFCNGLIAMAGMBAEDUSTHYWATHWIPTALEAUOIACHNGFAEYTEAPIACDMDCRNGPOREORNGBEENDXELEMCSF",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "route": {
+              "name": "top_snake_right",
+              "indices": [
+                22,
+                21,
+                20,
+                19,
+                18,
+                17,
+                16,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                65,
+                64,
+                63,
+                62,
+                61,
+                60,
+                59,
+                58,
+                57,
+                56,
+                55,
+                54,
+                53,
+                52,
+                51,
+                50,
+                49,
+                48,
+                47,
+                46,
+                45
+              ]
+            },
+            "start": 64,
+            "skip_positions": [
+              33
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 19020,
+          "max_states": 514
+        },
+        "raw_p": 0.7,
+        "null_exceedances": 13,
+        "null_replicates": 19,
+        "page_adjusted_p": 1,
+        "pending_larger_calibration": false,
+        "unknown_pages": 4,
+        "routes_per_page": 8,
+        "exact_controls": 9,
+        "image_pages_inspected": 7,
+        "numeric_cells_per_source": 256,
+        "numeric_token_disagreements": 5,
+        "numeric_decimal_inconsistencies": 9,
+        "candidate_records_recomputed": 39,
+        "tests_passed": 67,
+        "new_completed_processes": 25,
+        "seconds": 272.8142835999315,
+        "orchestration_seconds": 284.9290047000104,
+        "budget_seconds": 900,
+        "new_decryptions": []
+      },
+      "limits": "Four selected pages only; eight row orders, no column alignment, no arbitrary key, no numeric-table decryption."
+    },
+    {
+      "id": "H024",
+      "claim": "The alphanumeric tables require a separate source/glyph audit before treating them as bytes.",
+      "experiments": [
+        "E022",
+        "E023"
+      ],
+      "status": "five_conflicts_image_supported_overlay_preserved",
+      "result": {
+        "image_supported_cells": 5,
+        "unresolved_among_original_five": 0,
+        "inspected_crops": 16
+      },
+      "limits": "Single visual reader, five disputed cells only. No full independent table transcription or decryption; old source variants retained."
+    },
+    {
+      "id": "H025",
+      "claim": "The source-aligned256-byte stream departs from IID uniform bytes under four fixed diagnostics.",
+      "experiments": [
+        "E024"
+      ],
+      "status": "limited_diagnostics_complete",
+      "result": {
+        "collision_deviation": {
+          "statistic": 1,
+          "exceedances": 9999,
+          "raw_p": 1.0,
+          "adjusted_p": 1
+        },
+        "adjacent_repeat_deviation": {
+          "statistic": 255,
+          "exceedances": 6361,
+          "raw_p": 0.6362,
+          "adjusted_p": 1
+        },
+        "max_bit_imbalance": {
+          "statistic": 16,
+          "exceedances": 9662,
+          "raw_p": 0.9663,
+          "adjusted_p": 1
+        },
+        "column_sum_dispersion": {
+          "statistic": 94635232,
+          "exceedances": 2878,
+          "raw_p": 0.2879,
+          "adjusted_p": 1
+        }
+      },
+      "limits": "No rejection does not prove randomness or encryption; no cipher or key inferred."
+    },
+    {
+      "id": "H023",
+      "claim": "General affine plaintext feedback with delay2 or3 can expose an unknown page.",
+      "experiments": [
+        "E025",
+        "E074",
+        "E075",
+        "E076"
+      ],
+      "status": "delay3_controls_passed_unknown_screen_negative",
+      "result": {
+        "created_at": "2026-10-19T17:56:16.716925+00:00",
+        "image_supported_cells": 5,
+        "inspected_crops": 16,
+        "numeric_byte_sha256": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+        "numeric_rejected_statistics": [],
+        "numeric_controls_passed": 4,
+        "feedback_pages": 55,
+        "feedback_recipes": 36078900,
+        "feedback_exact_controls": 3,
+        "selected_page": "LP2-49",
+        "top": {
+          "score": -5.0251404655748395,
+          "plaintext_runes": "ᛄᛏᛋᛏᛒᚪᛖᛁᛗᛋᚻᛝᚹᚻᚪᚣᚾᛞᚻᚪᚢᛖᛚᛏᚫᛋᚦᚳᛟᛟᚣᛖᛝᛖᚷᛇᚪᚣᛞᛡᚳᛄᚪᛉᛚᛚᛖᛏᚩᚣᚪᛞᚣᛏᚠᛠᛞᚹᚻᛡᛏᚳᚻᚾᛖᛚ",
+          "transliteration": "JTSTBAEIMSHNGWHAYNDHAUELTAESTHCOEOEYENGEGEOAYDIACJAXLLETOYADYTFEADWHIATCHNEL",
+          "recipe": {
+            "delay": 2,
+            "a": 3,
+            "b": 1,
+            "initial_key": [
+              17,
+              20
+            ],
+            "initial_plaintext": [
+              11,
+              16
+            ],
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        "raw_p": 0.4,
+        "page_adjusted_p": 1,
+        "null_exceedances": 7,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 174,
+        "tests_passed": 73,
+        "new_completed_processes": 77,
+        "seconds": 320.63428039988503,
+        "feedback_seconds": 318.78517239991925,
+        "feedback_orchestration_seconds": 319.4310204999929,
+        "phase_budget_seconds": 900,
+        "period3_searched": false,
+        "new_decryptions": []
+      },
+      "limits": "E025 exhaustive delay2 at c0 remains historical. E076 delay3,c0..28 retains16 coefficient families and enumerates their prefix space exactly; no all-family/key exclusion or skipped-rune test.",
+      "prior_period2_limits": "Only period2, no F skips or additive constant; period3 has29 times as many recipes and was not searched.",
+      "delay3_result": {
+        "controls_exact": 16,
+        "unknown_pages": 55,
+        "exceedances": 1,
+        "nulls": 19,
+        "raw_p": 0.1,
+        "bonferroni55": 1,
+        "summary": "results/phase27_summary.json"
+      }
+    },
+    {
+      "id": "H026",
+      "claim": "Source lexical boundaries and an externally trained word-conditioned model improve finite-key decoding.",
+      "experiments": [
+        "E026",
+        "E027",
+        "E028"
+      ],
+      "status": "control_gate_passed_unknown_screen_complete",
+      "result": {
+        "created_at": "2026-10-19T22:49:29.345701+00:00",
+        "pages_audited": 75,
+        "source_agreeing_unknown_boundaries": 54,
+        "image_supported_boundary_exception": "LP2-35 rune offset80",
+        "word_strict_wins": 1582,
+        "baseline_strict_wins": 1568,
+        "comparisons": 1600,
+        "known_key_controls": 3,
+        "full_union_controls": 4,
+        "unknown_pages": 55,
+        "selected_page": "LP2-55",
+        "top": {
+          "score": -5.6969447963397855,
+          "plaintext_runes": "ᛁᚷᚾᛞᛁᚢᚷᚪᚾᛠᛋᛝᛇᛇᛋᛈᚢᛁᚷᛋᛚᛚᚹᚩᛒᚠᚪᚠᚩᚱᛚᚦᛖᛄᚱᛋᚳᚱᚱᛒᚣᚠᛚᛞᚢᛋᚦᚦᚦᚱᛠᛏᚱᛗᛖᚱᚱᛟᛝᛋᛝᚢᛚᚩᚪᛇᛈᚳᛞᚪᛈᚪᚱᚩᚹᛚ",
+          "transliteration": "IGNDIUGANEASNGEOEOSPUIGSLLWOBFAFORLTHEJRSCRRBYFLDUSTHTHTHREATRMERROENGSNGULOAEOPCDAPAROWL",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "key_indices": [
+              3,
+              15,
+              18,
+              10,
+              19,
+              13
+            ],
+            "start": 2,
+            "skip_positions": [
+              25,
+              41
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 564,
+          "max_states": 12
+        },
+        "segmented_transliteration": "I GNDI UG AN EASNGEOEOS PUIGSL LW OBFAFORLTHEJRS CRRBYF LDUS THTH THREATRME RROENGSNGU LO AEOPCDA PAR OWL",
+        "raw_p": 0.2,
+        "page_adjusted_p": 1,
+        "null_exceedances": 3,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 180,
+        "tests_passed": 77,
+        "new_completed_processes": 78,
+        "seconds": 674.7702466000046,
+        "attack_seconds": 672.9997196000186,
+        "attack_orchestration_seconds": 660.7959397999803,
+        "phase_budget_seconds": 900,
+        "new_decryptions": [],
+        "community_claim_triage": {
+          "matching_prior_byte_digest": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+          "arithmetic_facts_reproduced": 2,
+          "new_decryptions_confirmed": 0,
+          "alternate_binary_provenance": "unverified"
+        }
+      },
+      "limits": "Previously seen controls; modest descriptive ranking gain; page-edge fragments treated as words, no unknown-key/section search or broad family exclusion."
+    },
+    {
+      "id": "H028",
+      "claim": "A published purported authoritative binary may provide verifiable data beyond the image-derived table.",
+      "experiments": [
+        "E029",
+        "E031",
+        "E032"
+      ],
+      "status": "deferred_by_user_focus_direct_solving",
+      "result": {
+        "alternate_digest_matches": false,
+        "historical_binary_provenance": "unverified",
+        "snapshot_commit": "f71dadd835c4d2b71dba80ed555494013a35c843",
+        "further_claim_review": "not scheduled; explicit user direction"
+      },
+      "limits": "Only scoped published statements checked; no new plaintext verified, no remote code executed, no historical authentication of the alternate digest."
+    },
+    {
+      "id": "H027",
+      "claim": "A fixed edge fallback improves fragment scoring without unacceptable loss on complete words.",
+      "experiments": [
+        "E030"
+      ],
+      "status": "blanket_edge_fallback_rejected",
+      "result": {
+        "aggregate": [
+          {
+            "origin": "heldout",
+            "condition": "apostrophe",
+            "region": "apostrophe_word",
+            "chapter": "all",
+            "comparisons": 460,
+            "wins": [
+              448,
+              452
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9739130434782609,
+              0.9826086956521739
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "apostrophe",
+            "region": "other",
+            "chapter": "all",
+            "comparisons": 460,
+            "wins": [
+              450,
+              450
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9782608695652174,
+              0.9782608695652174
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "clipped",
+            "region": "edge",
+            "chapter": "all",
+            "comparisons": 1240,
+            "wins": [
+              995,
+              1030
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.8024193548387096,
+              0.8306451612903226
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "clipped",
+            "region": "interior",
+            "chapter": "all",
+            "comparisons": 1240,
+            "wins": [
+              1222,
+              1222
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9854838709677419,
+              0.9854838709677419
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "intact",
+            "region": "edge",
+            "chapter": "all",
+            "comparisons": 1240,
+            "wins": [
+              1229,
+              1203
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9911290322580645,
+              0.9701612903225807
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "intact",
+            "region": "interior",
+            "chapter": "all",
+            "comparisons": 1240,
+            "wins": [
+              1221,
+              1221
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9846774193548387,
+              0.9846774193548387
+            ]
+          },
+          {
+            "origin": "known_control",
+            "condition": "clipped",
+            "region": "edge",
+            "chapter": "all",
+            "comparisons": 120,
+            "wins": [
+              92,
+              95
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.7666666666666667,
+              0.7916666666666666
+            ]
+          },
+          {
+            "origin": "known_control",
+            "condition": "clipped",
+            "region": "interior",
+            "chapter": "all",
+            "comparisons": 120,
+            "wins": [
+              120,
+              120
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "origin": "known_control",
+            "condition": "intact",
+            "region": "edge",
+            "chapter": "all",
+            "comparisons": 160,
+            "wins": [
+              153,
+              149
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.95625,
+              0.93125
+            ]
+          },
+          {
+            "origin": "known_control",
+            "condition": "intact",
+            "region": "interior",
+            "chapter": "all",
+            "comparisons": 160,
+            "wins": [
+              158,
+              158
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9875,
+              0.9875
+            ]
+          }
+        ],
+        "checks": {
+          "clipped_edge_gain_at_least_002": true,
+          "intact_edge_loss_at_most_001": false,
+          "both_interior_losses_at_most_001": true,
+          "known_control_rate_at_least_095": false
+        }
+      },
+      "limits": "Paired descriptive diagnostics on3 previously seen external chapters withheld from current training; no statistical discovery or cipher inference."
+    },
+    {
+      "id": "H029",
+      "claim": "A reversible two-lag linear ciphertext filter may reveal plaintext.",
+      "experiments": [
+        "E033"
+      ],
+      "status": "finite_screen_complete",
+      "result": {
+        "created_at": "2026-10-20T09:17:01.804533+00:00",
+        "selected_page": "LP2-49",
+        "top": {
+          "score": -5.015058390620593,
+          "plaintext_runes": "ᛏᚩᚩᛚᚻᛠᛚᛋᚪᚾᛁᛈᚠᛖᛒᚢᚠᛁᚻᚩᛞᛖᚫᛖᚾᚾᚦᛝᛞᛞᛋᚩᛚᛋᛈᚩᛁᚾᚦᛏᛁᚢᛠᚱᛞᛁᛈᛗᛇᛁᚦᚩᛒᚷᚻᛝᚩᚹᚣᛟᚣᚳᚾᚠ",
+          "transliteration": "TOOLHEALSANIPFEBUFIHODEAEENNTHNGDDSOLSPOINTHTIUEARDIPMEOITHOBGHNGOWYOEYCNF",
+          "recipe": {
+            "a": 28,
+            "b": 0,
+            "c": 22,
+            "d": 13,
+            "iv": [
+              27,
+              18
+            ],
+            "unrecovered_prefix_runes": 2,
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        "unknown_pages": 55,
+        "rules_per_page": 659340,
+        "unknown_rules_evaluated": 36263700,
+        "raw_p": 0.35,
+        "bonferroni55": 1,
+        "null_exceedances": 6,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "controls_exact": 3,
+        "candidate_records_recomputed": 193,
+        "benchmark_scores_recomputed": 19320,
+        "edge_gate_passed": false,
+        "benchmark_aggregates": [
+          {
+            "origin": "heldout",
+            "condition": "apostrophe",
+            "region": "apostrophe_word",
+            "chapter": "all",
+            "comparisons": 460,
+            "wins": [
+              448,
+              452
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9739130434782609,
+              0.9826086956521739
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "apostrophe",
+            "region": "other",
+            "chapter": "all",
+            "comparisons": 460,
+            "wins": [
+              450,
+              450
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9782608695652174,
+              0.9782608695652174
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "clipped",
+            "region": "edge",
+            "chapter": "all",
+            "comparisons": 1240,
+            "wins": [
+              995,
+              1030
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.8024193548387096,
+              0.8306451612903226
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "clipped",
+            "region": "interior",
+            "chapter": "all",
+            "comparisons": 1240,
+            "wins": [
+              1222,
+              1222
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9854838709677419,
+              0.9854838709677419
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "intact",
+            "region": "edge",
+            "chapter": "all",
+            "comparisons": 1240,
+            "wins": [
+              1229,
+              1203
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9911290322580645,
+              0.9701612903225807
+            ]
+          },
+          {
+            "origin": "heldout",
+            "condition": "intact",
+            "region": "interior",
+            "chapter": "all",
+            "comparisons": 1240,
+            "wins": [
+              1221,
+              1221
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9846774193548387,
+              0.9846774193548387
+            ]
+          },
+          {
+            "origin": "known_control",
+            "condition": "clipped",
+            "region": "edge",
+            "chapter": "all",
+            "comparisons": 120,
+            "wins": [
+              92,
+              95
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.7666666666666667,
+              0.7916666666666666
+            ]
+          },
+          {
+            "origin": "known_control",
+            "condition": "clipped",
+            "region": "interior",
+            "chapter": "all",
+            "comparisons": 120,
+            "wins": [
+              120,
+              120
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "origin": "known_control",
+            "condition": "intact",
+            "region": "edge",
+            "chapter": "all",
+            "comparisons": 160,
+            "wins": [
+              153,
+              149
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.95625,
+              0.93125
+            ]
+          },
+          {
+            "origin": "known_control",
+            "condition": "intact",
+            "region": "interior",
+            "chapter": "all",
+            "comparisons": 160,
+            "wins": [
+              158,
+              158
+            ],
+            "ties": [
+              0,
+              0
+            ],
+            "win_rates": [
+              0.9875,
+              0.9875
+            ]
+          }
+        ],
+        "tests_passed": 84,
+        "successful_tasks": 78,
+        "seconds": 347.3776854002208,
+        "attack_seconds": 343.8444223002589,
+        "provenance_followup": "Deferred at explicit user request: focus direct cryptanalysis; existing source audit retained.",
+        "new_decryptions": []
+      },
+      "limits": "Synthetic controls; no historical key clue, first2 positions unrecovered, no F-skip/nonlinear search; no broad family exclusion."
+    },
+    {
+      "id": "H030",
+      "claim": "One-step affine plaintext feedback with a nonzero constant may recover an unknown page.",
+      "experiments": [
+        "E034"
+      ],
+      "status": "finite_screen_complete",
+      "result": {
+        "created_at": "2026-10-20T09:32:00.344537+00:00",
+        "selected_page": "LP2-49",
+        "top": {
+          "score": -5.051735118074448,
+          "plaintext_runes": "ᚦᛈᛏᛋᚹᛁᚩᚳᚢᛗᚠᚾᛏᛖᛋᛁᚠᛚᚩᚷᚣᚹᚩᚠᚹᛝᚠᚷᛟᚳᚹᛋᛟᚠᚫᚪᚦᛚᚩᚷᚱᛈᛒᚱᚻᛖᚷᚩᚩᚪᚻᚠᚢᚪᚢᚱᚱᚩᚩᛋᛗᚹᚹᚦᛇᛖ",
+          "transliteration": "THPTSWIOCUMFNTESIFLOGYWOFWNGFGOECWSOEFAEATHLOGRPBRHEGOOAHFUAURROOSMWWTHEOE",
+          "recipe": {
+            "a": 6,
+            "b": 12,
+            "d": 26,
+            "initial_key": 28,
+            "initial_plaintext": 2,
+            "F_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        "unknown_pages": 55,
+        "rules_per_page": 636608,
+        "unknown_rules_evaluated": 35013440,
+        "controls_exact": 3,
+        "raw_p": 0.4,
+        "bonferroni55": 1,
+        "null_exceedances": 7,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 193,
+        "tests_passed": 89,
+        "successful_tasks": 76,
+        "seconds": 334.77297870008624,
+        "attack_seconds": 327.67377940006554,
+        "substitution_candidate_records_recomputed": 225,
+        "substitution_controls": [
+          {
+            "fixture": "LP1-03_04_divinity",
+            "exact": true,
+            "runes": 515,
+            "correct_positions": 515,
+            "truth_score": -2.059695991966081,
+            "best_score": -2.059695991966082,
+            "wrong_plaintext_outscores_truth": false,
+            "mismatches": []
+          },
+          {
+            "fixture": "LP1-14_15_circumference",
+            "exact": true,
+            "runes": 319,
+            "correct_positions": 319,
+            "truth_score": -2.125535263165486,
+            "best_score": -2.125535263165487,
+            "wrong_plaintext_outscores_truth": false,
+            "mismatches": []
+          },
+          {
+            "fixture": "LP2-57_direct",
+            "exact": false,
+            "runes": 95,
+            "correct_positions": 93,
+            "truth_score": -1.9317617635570845,
+            "best_score": -1.9064610795195869,
+            "wrong_plaintext_outscores_truth": true,
+            "mismatches": [
+              {
+                "offset": 25,
+                "truth_index": 21,
+                "found_index": 26
+              },
+              {
+                "offset": 80,
+                "truth_index": 26,
+                "found_index": 27
+              }
+            ]
+          }
+        ],
+        "substitution_gate_passed": false,
+        "substitution_unknown_pages_searched": 0,
+        "orchestration_seconds": 328.5423223999969,
+        "preexisting_seconds": 16.475916700001108,
+        "family_budget_seconds": 750,
+        "new_decryptions": []
+      },
+      "limits": "Finite exploratory family, not fresh blind historical validation; no nonlinear or interrupted updates; no broad feedback exclusion."
+    },
+    {
+      "id": "H031",
+      "claim": "A non-affine rune substitution consistent with observed lexical equality patterns may reveal plaintext.",
+      "experiments": [
+        "E035",
+        "E036",
+        "E080",
+        "E081"
+      ],
+      "status": "word_end_regression_repaired_new_short_control_gate_failed",
+      "result": [
+        {
+          "fixture": "LP1-03_04_divinity",
+          "exact": true,
+          "runes": 515,
+          "correct_positions": 515,
+          "truth_score": -2.059695991966081,
+          "best_score": -2.059695991966082,
+          "wrong_plaintext_outscores_truth": false,
+          "mismatches": []
+        },
+        {
+          "fixture": "LP1-14_15_circumference",
+          "exact": true,
+          "runes": 319,
+          "correct_positions": 319,
+          "truth_score": -2.125535263165486,
+          "best_score": -2.125535263165487,
+          "wrong_plaintext_outscores_truth": false,
+          "mismatches": []
+        },
+        {
+          "fixture": "LP2-57_direct",
+          "exact": false,
+          "runes": 95,
+          "correct_positions": 93,
+          "truth_score": -1.9317617635570845,
+          "best_score": -1.9064610795195869,
+          "wrong_plaintext_outscores_truth": true,
+          "mismatches": [
+            {
+              "offset": 25,
+              "truth_index": 21,
+              "found_index": 26
+            },
+            {
+              "offset": 80,
+              "truth_index": 26,
+              "found_index": 27
+            }
+          ]
+        }
+      ],
+      "basis": "Affine scans cover only a small subset of bijections; preserved repeated-rune word patterns constrain general substitutions.",
+      "mechanism": "Single29-symbol bijection, source lexical endpoints fixed; external word patterns constrain admissible mappings.",
+      "parameters": "E035 fixed dictionary pattern seeds, up to24 starts,40 exhaustive406-swap sweeps. No unknown-candidate tuning.",
+      "cost": "Completed prototype within180seconds; no unknown-page scan.",
+      "success_criterion": "Exact control recovery before unknown scan; any candidate needs reversible mapping, source replay and selection-corrected null evidence.",
+      "rejection_criterion": "Failed control or infeasible calibration prevents escalation; dictionary incompatibility alone cannot rule out unseen words or a different language.",
+      "limits": "E035/E036 historical results unchanged. E080 fixed BOS/EOS model passes local/mutation diagnostics; E0818/9 exact, new67-rune wrong output outscores truth. No unknown general-substitution scan. Word-frequency bias and short ambiguity remain.",
+      "boundary_result": {
+        "controls": [
+          {
+            "fixture": "LP1-03_04_divinity",
+            "exact": true,
+            "runes": 515,
+            "correct_positions": 515,
+            "truth_score": -1.3375796025563007,
+            "best_score": -1.3375796025563007,
+            "wrong_plaintext_outscores_truth": false,
+            "mismatches": []
+          },
+          {
+            "fixture": "LP1-14_15_circumference",
+            "exact": true,
+            "runes": 319,
+            "correct_positions": 319,
+            "truth_score": -1.4060797759177588,
+            "best_score": -1.406079775917759,
+            "wrong_plaintext_outscores_truth": false,
+            "mismatches": []
+          },
+          {
+            "fixture": "LP2-57_direct",
+            "exact": false,
+            "runes": 95,
+            "correct_positions": 94,
+            "truth_score": -1.7942982303264914,
+            "best_score": -1.7556538432721744,
+            "wrong_plaintext_outscores_truth": true,
+            "mismatches": [
+              {
+                "offset": 25,
+                "truth_index": 21,
+                "found_index": 28
+              }
+            ]
+          }
+        ],
+        "heldout_wins_character_word": [
+          349,
+          355
+        ],
+        "heldout_comparisons": 360
+      },
+      "prior_E036_limits": "E036 training excludes chaptersX/XI/XII for both objectives.355/360 mutation wins, but short LP control94/95 and wrong output outranks truth. No unknown substitution scan; no control-specific tuning.",
+      "terminated_word_result": {
+        "controls_exact": 8,
+        "controls_total": 9,
+        "old_LP2_57_regression_exact": true,
+        "failed_control": 5,
+        "failed_correct_positions": 65,
+        "failed_runes": 67,
+        "unknown_pages_searched": 0,
+        "summary": "results/phase29_summary.json"
+      }
+    },
+    {
+      "id": "H032",
+      "claim": "A degree<=2 polynomial additive key modulo29 with nonzero affine rune multiplier can reveal unknown plaintext.",
+      "experiments": [
+        "E037"
+      ],
+      "status": "finite_screen_complete",
+      "result": {
+        "created_at": "2026-10-20T09:51:13.593977+00:00",
+        "selected_page": "LP2-49",
+        "top": {
+          "score": -5.071744252327811,
+          "plaintext_runes": "ᚱᚱᛖᛝᚾᚳᛏᛠᛁᛈᛁᛋᚦᛠᚦᚢᛁᚳᚪᛁᛚᚪᚾᚣᚹᚩᚳᛝᚣᛋᛠᛞᚷᚩᛞᚪᚻᛚᚪᛒᚢᛋᚻᛖᛟᛋᚻᛋᛚᛈᛖᚢᚾᚠᛋᛞᚱᛗᚷᛖᚢᛈᚻᛟᛉᛏ",
+          "transliteration": "RRENGNCTEAIPISTHEATHUICAILANYWOCNGYSEADGODAHLABUSHEOESHSLPEUNFSDRMGEUPHOEXT",
+          "recipe": {
+            "a": 9,
+            "b": 27,
+            "c": 25,
+            "d": 22
+          },
+          "reencryption_verified": true
+        },
+        "unknown_pages": 55,
+        "rules_per_page": 682080,
+        "unknown_rules_evaluated": 37514400,
+        "controls_exact": 3,
+        "raw_p": 0.5,
+        "bonferroni55": 1,
+        "null_exceedances": 9,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 193,
+        "substitution_candidate_records_recomputed": 452,
+        "substitution_controls": [
+          {
+            "fixture": "LP1-03_04_divinity",
+            "exact": true,
+            "runes": 515,
+            "correct_positions": 515,
+            "truth_score": -1.3375796025563007,
+            "best_score": -1.3375796025563007,
+            "wrong_plaintext_outscores_truth": false,
+            "mismatches": []
+          },
+          {
+            "fixture": "LP1-14_15_circumference",
+            "exact": true,
+            "runes": 319,
+            "correct_positions": 319,
+            "truth_score": -1.4060797759177588,
+            "best_score": -1.406079775917759,
+            "wrong_plaintext_outscores_truth": false,
+            "mismatches": []
+          },
+          {
+            "fixture": "LP2-57_direct",
+            "exact": false,
+            "runes": 95,
+            "correct_positions": 94,
+            "truth_score": -1.7942982303264914,
+            "best_score": -1.7556538432721744,
+            "wrong_plaintext_outscores_truth": true,
+            "mismatches": [
+              {
+                "offset": 25,
+                "truth_index": 21,
+                "found_index": 28
+              }
+            ]
+          }
+        ],
+        "substitution_gate_passed": false,
+        "substitution_unknown_pages_searched": 0,
+        "heldout_wins_character_word": [
+          349,
+          355
+        ],
+        "heldout_comparisons": 360,
+        "tests_passed": 94,
+        "successful_tasks": 76,
+        "seconds": 365.3408134000492,
+        "orchestration_seconds": 76.62337669997942,
+        "preexisting_seconds_including_reserve": 349.2216759000148,
+        "family_accounted_seconds": 425.84505259999423,
+        "family_budget_seconds": 650,
+        "new_decryptions": []
+      },
+      "basis": "Low-complexity progressive-key family not exhausted by named numerical streams. No specific historical clue asserted.",
+      "limits": "All682080declared rules per page; no broad exclusion of arbitrary periodic or nonpolynomial keys. Exploratory selection; nineteen nulls cannot resolve corrected significance."
+    },
+    {
+      "id": "H033",
+      "claim": "Unknown repeating rune keys outside the381literal-key catalogue may recover unknown pages.",
+      "status": "bounded_heuristic_screen_complete",
+      "basis": "Historically reproduced DIVINITY and CIRCUMFERENCE solutions establish repeating-key mechanisms; earlier literal searches do not cover arbitrary key material.",
+      "mechanism": "Repeating modular additive key with source-order runes; separately specify signs and interruption policies before execution.",
+      "parameters": "Periods1..16, signs+/-1, none/all_F,4starts,12bigram then12fourgram coordinate sweeps. Primitive-key description-length penalty.",
+      "cost": "Benchmark first; full55page and matched-null optimization must fit a separately declared family budget.",
+      "success_criterion": "Exact known controls plus external source-excluded synthetic recovery; source-reversible unknown candidate survives full optimizer null comparison and selection correction.",
+      "rejection_criterion": "Failed positive controls or infeasible matched-null runtime prevents broad escalation.",
+      "limits": "Heuristic finite-budget search, not exhaustive29^period. All8controls exact, but2historical controls use oracle skip positions. None/all_F unknown policies do not test selective interruptions. Selection-corrected matched nulls, no new historical plaintext.",
+      "experiments": [
+        "E038",
+        "E039"
+      ],
+      "result": {
+        "created_at": "2026-10-20T14:42:20.534880+00:00",
+        "selected_page": "LP2-49",
+        "top": {
+          "score": -3.9816807535253598,
+          "language_score": -3.165366612922578,
+          "nominal_period": 16,
+          "key": [
+            20,
+            5,
+            28,
+            9,
+            7,
+            14,
+            11,
+            23,
+            23,
+            18,
+            2,
+            27,
+            9,
+            21,
+            20,
+            24
+          ],
+          "sign": 1,
+          "policy": "all_F",
+          "restart": 1,
+          "sweeps": 5,
+          "accepted_coordinates": 23,
+          "skip_positions": [
+            3,
+            33
+          ],
+          "plaintext_runes": "ᛖᛞᛁᚠᚠᚠᚪᛏᚱᛋᚪᚱᛒᚪᛒᚣᛗᛗᚪᚾᚣᚳᚢᛚᛋᛈᛚᛖᚪᚳᚩᚾᚩᚠᛋᚩᚳᚱᚣᚪᚳᚻᛁᛗᛚᚠᛖᛁᛋᚻᛡᚱᛗᚣᚻᛖᚾᛏᛖᛋᚪᛁᛏᚩᚱᛖ",
+          "transliteration": "EDIFFFATRSARBABYMMANYCULSPLEACONOFSOCRYACHIMLFEISHIARMYHENTESAITORE"
+        },
+        "unknown_pages": 55,
+        "families_per_page": 64,
+        "starts_per_family": 4,
+        "keys_exhaustively_enumerated": false,
+        "controls": [
+          {
+            "fixture": "LP1-03_04_divinity",
+            "exact": true,
+            "oracle_skips": true,
+            "recovered_key": [
+              6,
+              19,
+              28,
+              19,
+              20,
+              19,
+              13,
+              3
+            ]
+          },
+          {
+            "fixture": "LP1-14_15_circumference",
+            "exact": true,
+            "oracle_skips": true,
+            "recovered_key": [
+              0,
+              19,
+              25,
+              0,
+              28,
+              10,
+              0,
+              11,
+              25,
+              11,
+              20,
+              0,
+              11
+            ]
+          },
+          {
+            "chapter": "X",
+            "paragraph": 3,
+            "exact": true,
+            "injected_period": 5,
+            "injected_sign": 1,
+            "oracle_skips": false
+          },
+          {
+            "chapter": "X",
+            "paragraph": 4,
+            "exact": true,
+            "injected_period": 13,
+            "injected_sign": -1,
+            "oracle_skips": false
+          },
+          {
+            "chapter": "XI",
+            "paragraph": 3,
+            "exact": true,
+            "injected_period": 5,
+            "injected_sign": 1,
+            "oracle_skips": false
+          },
+          {
+            "chapter": "XI",
+            "paragraph": 4,
+            "exact": true,
+            "injected_period": 13,
+            "injected_sign": -1,
+            "oracle_skips": false
+          },
+          {
+            "chapter": "XII",
+            "paragraph": 1,
+            "exact": true,
+            "injected_period": 5,
+            "injected_sign": 1,
+            "oracle_skips": false
+          },
+          {
+            "chapter": "XII",
+            "paragraph": 3,
+            "exact": true,
+            "injected_period": 13,
+            "injected_sign": -1,
+            "oracle_skips": false
+          }
+        ],
+        "controls_exact": 8,
+        "raw_p": 0.3,
+        "bonferroni55": 1,
+        "null_exceedances": 5,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 5631,
+        "search_outputs_recomputed": 85,
+        "tests_passed": 96,
+        "successful_tasks": 75,
+        "seconds": 192.48050900013186,
+        "family_accounted_seconds": 193.07501209998736,
+        "new_decryptions": []
+      }
+    },
+    {
+      "id": "H034",
+      "claim": "Joint inference of unknown repeating keys and selective F interruptions may recover an unknown page.",
+      "status": "bounded_heuristic_screen_complete",
+      "basis": "Both actual historical cyclic-key controls contain F symbols that are skipped and F symbols that consume a key; E038 recovered their keys only with oracle skip schedules.",
+      "mechanism": "At each sourceF choose copied0/no cursor advance or normal keyed symbol/advance, while learning the cyclic key.",
+      "parameters": "Longest3non-F runs plus whole-page fixed-schedule seeds;12deduplicated cyclic keys; exact all-phase schedule DP and up to3coordinate/schedule alternations.",
+      "cost": "Prototype within180seconds; require full matched-optimizer null budget before broad scan.",
+      "success_criterion": "Recover both historical plaintexts, keys and skip masks without oracle plus source-excluded external synthetic controls. Unknown candidates need source replay and corrected full-search null evidence.",
+      "rejection_criterion": "Failed no-oracle controls or infeasible full null calibration prevents escalation.",
+      "limits": "All8controls recover text,key and mask without oracle. Key search remains heuristic; exactness applies only to schedules conditional on key. No unknown plaintext validated by selection-corrected matched nulls.",
+      "experiments": [
+        "E040",
+        "E041",
+        "E042"
+      ],
+      "result": {
+        "created_at": "2026-10-20T14:59:36.073719+00:00",
+        "selected_page": "LP2-49",
+        "top": {
+          "key": [
+            11,
+            14,
+            3,
+            15,
+            15,
+            14,
+            11,
+            25,
+            28,
+            18,
+            2,
+            26,
+            11,
+            21,
+            20,
+            24
+          ],
+          "sign": 1,
+          "skip_positions": [
+            3,
+            33
+          ],
+          "language_score": -3.1092993595519944,
+          "score": -3.946617960171744,
+          "selected_phase": 0,
+          "dp_transitions": 1184,
+          "dp_max_states": 32,
+          "input_period": 16,
+          "coordinate_changes": 0,
+          "seed_index": 2,
+          "plaintext_runes": "ᚾᚩᛉᚠᚷᚻᚪᛏᚷᛚᚪᚱᛏᚣᛒᚣᛗᛁᚱᛈᚩᛈᚢᛚᛒᛖᛚᛖᛞᚹᚩᚾᚩᚠᚷᛇᚾᛁᚳᚪᚳᛁᛋᛗᛚᛠᛚᛁᛋᚻᛖᛈᛞᚩᛏᛖᚾᛖᛞᛋᚪᚾᛖᚩᚱᛖ",
+          "transliteration": "NOXFGHATGLARTYBYMIRPOPULBELEDWONOFGEONICACISMLEALISHEPDOTENEDSANEORE"
+        },
+        "unknown_pages": 55,
+        "controls_exact": 8,
+        "oracle_used": false,
+        "controls": [
+          {
+            "fixture": "LP1-03_04_divinity",
+            "exact": true,
+            "key_length": 8,
+            "skips": 11,
+            "oracle_used": false
+          },
+          {
+            "fixture": "LP1-14_15_circumference",
+            "exact": true,
+            "key_length": 13,
+            "skips": 2,
+            "oracle_used": false
+          },
+          {
+            "chapter": "X",
+            "paragraph": 3,
+            "exact": true,
+            "key_length": 5,
+            "skips": 6,
+            "oracle_used": false
+          },
+          {
+            "chapter": "X",
+            "paragraph": 5,
+            "exact": true,
+            "key_length": 13,
+            "skips": 6,
+            "oracle_used": false
+          },
+          {
+            "chapter": "XI",
+            "paragraph": 3,
+            "exact": true,
+            "key_length": 5,
+            "skips": 2,
+            "oracle_used": false
+          },
+          {
+            "chapter": "XI",
+            "paragraph": 4,
+            "exact": true,
+            "key_length": 13,
+            "skips": 9,
+            "oracle_used": false
+          },
+          {
+            "chapter": "XII",
+            "paragraph": 1,
+            "exact": true,
+            "key_length": 5,
+            "skips": 4,
+            "oracle_used": false
+          },
+          {
+            "chapter": "XII",
+            "paragraph": 3,
+            "exact": true,
+            "key_length": 13,
+            "skips": 6,
+            "oracle_used": false
+          }
+        ],
+        "raw_p": 0.2,
+        "bonferroni55": 1,
+        "null_exceedances": 3,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 4226,
+        "seed_records_recomputed": 1044,
+        "restart_traces_checked": 1044,
+        "independent_schedule_optima": 87,
+        "tests_passed": 98,
+        "successful_tasks": 76,
+        "seconds": 359.5731512000784,
+        "family_accounted_seconds": 319.06591970002046,
+        "new_decryptions": []
+      }
+    },
+    {
+      "id": "H035",
+      "claim": "A repeating key and selective F schedule may continue across multiple LP2 pages within a pinned source grouping.",
+      "status": "bounded_heuristic_screen_complete",
+      "basis": "Historical DIVINITY/CIRCUMFERENCE fixtures span multiple pages. E042 assumes a separate page-local key and ranks short-page maxima; continuity provides additional shared-key constraints. E012 tested only named numerical streams across its groups.",
+      "mechanism": "Concatenate rune streams in explicit page order; one periodic key and cursor with selective F skips across joins. Preserve all page boundaries and offsets.",
+      "parameters": "Continuous stream up to4096runes;prefix/suffix1024 and longest3 non-F seeds;12keys;periods1..16; exact fixed-key selective F DP;3coordinate/schedule rounds.",
+      "cost": "Benchmark longer inputs before unknown groups; require complete shared-key optimization in every null within a fixed budget.",
+      "success_criterion": "Source-aligned historical and external controls recover exact key/masks; unknown candidate reproduces across page boundaries and survives selection-corrected matched nulls.",
+      "rejection_criterion": "Failed controls, unsupported boundary assumptions or unaffordable calibration prevents escalation.",
+      "limits": "Only specified source groupings and heuristic key search tested. No arbitrary key or cipher-boundary exclusion. No unknown plaintext validated.",
+      "experiments": [
+        "E043",
+        "E044"
+      ],
+      "result": {
+        "created_at": "2026-10-20T20:36:36.732511+00:00",
+        "selected_section": "LP2-54_55",
+        "top": {
+          "key": [
+            14,
+            18,
+            0,
+            25,
+            8,
+            21,
+            18,
+            25,
+            13,
+            12,
+            11,
+            19,
+            17,
+            18,
+            2,
+            18
+          ],
+          "sign": 1,
+          "skip_positions": [
+            41,
+            65,
+            257,
+            273
+          ],
+          "language_score": -5.145596761058529,
+          "score": -5.3340240869128905,
+          "selected_phase": 0,
+          "dp_transitions": 5306,
+          "dp_max_states": 32,
+          "input_period": 16,
+          "coordinate_changes": 0,
+          "seed_index": 7,
+          "plaintext_runes": "ᚾᚻᛝᛗᚷᛞᚩᚷᚩᛁᚳᚩᚾᛗᚾᛈᚱᚳᚪᛒᚠᛞᛏᚩᛠᛚᛝᚪᛈᚦᛡᚪᛒᚻᛁᛚᚣᚪᚳᚩᛏᚠᚾᛇᚷᛠᛚᛈᛒᚩᛞᚾᚪᛈᛚᚹᚠᛏᛈᚫᛈᚪᚣᛗᛁᚠᚾᛞᛄᚣᛄᚩᛏᚪᛞᚩᛒᛡᚳᛗᛈᚩᚾᛞᚹᛞᛡᚪᚦᛟᚹᛁᚦᚩᚠᛠᚱᛟᛄᚪᛗᛁᚢᛡᚱᛋᚣᛞᚱᛈᛁᚳᚠᛄᚢᛁᛁᛋᚠᛖᛈᛝᚳᛏᚻᚢᚣᚾᚩᚩᚦᚣᛈᚹᛄᛚᚪᛝᛚᚣᚣᛈᛟᛗᛖᛄᛟᚢᚾᚾᚪᛚᛋᛈᛉᛖᛒᛉᚠᛡᚻᛝᚩᚾᛗᛈᛁᛖᛏᛖᚫᚾᚢᚪᛁᛚᛚᚾᛖᚢᛈᚠᚦᛖᚩᛗᚳᚾᚪᚳᚷᚩᚾᛞᛚᛖᛞᚠᚣᛋᚹᚩᛏᚪᚱᛡᛚᛄᛗᚱᛟᛒᚪᚢᛖᛄᚩᚹᚩᚢᚢᛁᛞᛝᛖᛚᛠᚹᛠᚠᛉᛖᛁᛝᚩᛟᛖᚳᚳᚩᛝᚱᚣᚪᛞᛡᚱᛝᛏᛚᚢᛒᛇᚣᛝᚷᚢᚠᚩᚪᚻᚢᚢᛝᚠᛁᛏᚫᚦᚣᛈᛋᚦᚠᛗᚣᚣᛞᛇᛉᚹᛁᛠᚦᛡᛖᚣᚻᚩᚢᚱᛚᚩᚱᚦᛖᛈᛚᛠᛋᛖᚣᚳᚢᛖᚷᛚᛠ",
+          "transliteration": "NHNGMGDOGOICONMNPRCABFDTOEALNGAPTHIAABHILYACOTFNEOGEALPBODNAPLWFTPAEPAYMIFNDJYJOTADOBIACMPONDWDIAATHOEWITHOFEAROEJAMIUIARSYDRPICFJUIISFEPNGCTHUYNOOTHYPWJLANGLYYPOEMEJOEUNNALSPXEBXFIAHNGONMPIETEAENUAILLNEUPFTHEOMCNACGONDLEDFYSWOTARIALJMROEBAUEJOWOUUIDNGELEAWEAFXEINGOOEECCONGRYADIARNGTLUBEOYNGGUFOAHUUNGFITAETHYPSTHFMYYDEOXWIEATHIAEYHOURLORTHEPLEASEYCUEGLEA"
+        },
+        "unknown_groups": 10,
+        "controls_exact": 5,
+        "new_controls": 3,
+        "reused_historical_controls": 2,
+        "raw_p": 0.1,
+        "bonferroni10": 1,
+        "null_exceedances": 1,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 1764,
+        "seed_records_recomputed": 420,
+        "restart_traces_checked": 420,
+        "independent_schedule_optima": 35,
+        "tests_passed": 100,
+        "successful_tasks": 30,
+        "seconds": 261.9614447001368,
+        "family_accounted_seconds": 219.69528829999035,
+        "section_scores": [
+          {
+            "section": "LP2-00_02",
+            "runes": 729,
+            "score": -5.959598854946343
+          },
+          {
+            "section": "LP2-03_07",
+            "runes": 1145,
+            "score": -6.157622562756677
+          },
+          {
+            "section": "LP2-08_14",
+            "runes": 1729,
+            "score": -6.250240379368999
+          },
+          {
+            "section": "LP2-15_22",
+            "runes": 1903,
+            "score": -6.24708146147829
+          },
+          {
+            "section": "LP2-23_26",
+            "runes": 1021,
+            "score": -6.0758233037172324
+          },
+          {
+            "section": "LP2-27_32",
+            "runes": 1433,
+            "score": -6.15825023997068
+          },
+          {
+            "section": "LP2-33_39",
+            "runes": 1680,
+            "score": -6.234421571742111
+          },
+          {
+            "section": "LP2-40_53",
+            "runes": 3008,
+            "score": -6.348909388214709
+          },
+          {
+            "section": "LP2-54_55",
+            "runes": 308,
+            "score": -5.3340240869128905
+          },
+          {
+            "section": "LP2-40_55",
+            "runes": 3316,
+            "score": -6.377496036751759
+          }
+        ],
+        "new_decryptions": []
+      }
+    },
+    {
+      "id": "H036",
+      "claim": "A shared repeating key may reset to its initial phase at each LP2 page boundary.",
+      "status": "bounded_heuristic_screen_complete",
+      "basis": "Page-local E042 and continuous E044 impose different constraints; neither enforces one shared key with perpage reset. This is a distinct testable mechanism, not evidence it was used.",
+      "mechanism": "One key, both signs, same initial phase at every page; selective F copies without cursor advance; language contexts reset at each page.",
+      "parameters": "Two longest pages plus3 longest within-page non-F runs;12cyclic seeds,periods1..16; common initial phase and exact phase0 page DP after shared-coordinate updates.",
+      "success_criterion": "External reset controls recover exact text,key,masks; unknown result survives full-search matched nulls and source-anchored independent validation.",
+      "rejection_criterion": "Failed controls block unknown scan; null-typical output provides no support.",
+      "limits": "No general exclusion of repeating keys or cipher boundaries. All3 controls exact; unknown candidate not validated. No independent perpage phases were fitted.",
+      "experiments": [
+        "E045",
+        "E046"
+      ],
+      "result": {
+        "created_at": "2026-10-20T20:44:45.264242+00:00",
+        "selected_section": "LP2-54_55",
+        "top": {
+          "key": [
+            9,
+            25,
+            7,
+            14,
+            8,
+            10,
+            3,
+            1,
+            27,
+            7,
+            14,
+            10,
+            26,
+            3,
+            11,
+            19
+          ],
+          "sign": -1,
+          "skip_positions": [
+            41,
+            195,
+            273
+          ],
+          "language_score": -5.205930599205425,
+          "score": -5.394357925059786,
+          "selected_phase": 0,
+          "input_period": 16,
+          "all_phases": false,
+          "dp_max_states": 6,
+          "dp_transitions": 874,
+          "coordinate_changes": 0,
+          "seed_index": 11,
+          "plaintext_runes": "ᛉᚷᛋᛚᛁᚻᛖᛚᚻᚾᛚᚣᚳᚦᚱᚪᛗᚾᛇᛟᛏᚻᚳᛞᛇᛠᚱᚳᚢᛗᛋᛈᚷᚷᚣᛗᛗᚹᛏᛞᚪᚠᛁᛈᛞᛋᚢᚠᛚᛚᛚᛡᛋᚩᛄᛉᚣᚪᚷᚠᛏᛗᚪᛞᛡᚾᚢᚦᚩᚹᚹᛝᚩᛠᚣᛞᚱᛖᛋᛁᚻᚪᚢᚦᚹᛁᛚᚠᛒᚢᛈᛏᛗᛈᛚᚢᛒᚳᛠᚢᚪᛞᛒᚣᛋᚻᛞᚩᛒᚩᛁᚪᛝᛏᚾᛋᚱᛖᛖᚷᚷᚦᛋᛁᛈᛋᛞᛚᛖᚪᚻᛠᚢᚣᚹᚱᚪᚦᚠᚠᚪᚩᛡᛁᚩᛏᛒᚪᚳᚪᛞᚱᚱᛁᚷᚻᚱᚦᛚᚦᛈᚷᚹᛏᚪᛚᚻᚷᚩᚳᚪᛒᛚᛝᛁᚾᚢᛖᛝᚪᚢᚱᛏᚷᛏᚱᛋᛒᚣᛄᛉᚣᛇᚱᛗᚠᛈᛁᛗᛏᛉᛞᚪᚪᛝᚦᛞᛁᛞᚱᚢᚣᛇᚾᛡᛚᛖᛗᚻᛖᚪᛗᛚᚠᚪᛒᚪᚹᚻᛁᚦᛈᛒᚠᛒᚱᚢᚪᛋᛏᚻᛝᚦᚱᚩᚢᛋᛗᛄᚢᛗᚾᚹᚩᛠᛈᛠᚹᚠᚠᚹᚦᚷᚷᚢᚱᛏᚦᛖᚪᚾᚩᛉᚠᛗᚷᛡᛝᛚᛟᛚᛚᛋᚢᚠᚦᚪᛉᛋᛋᚳᛇᛝᛄᚢᛖᛉᛁᛋᛒᚾᛞᛏᛝᚠᛁᛖᚱ",
+          "transliteration": "XGSLIHELHNLYCTHRAMNEOOETHCDEOEARCUMSPGGYMMWTDAFIPDSUFLLLIASOJXYAGFTMADIANUTHOWWNGOEAYDRESIHAUTHWILFBUPTMPLUBCEAUADBYSHDOBOIANGTNSREEGGTHSIPSDLEAHEAUYWRATHFFAOIAIOTBACADRRIGHRTHLTHPGWTALHGOCABLNGINUENGAURTGTRSBYJXYEORMFPIMTXDAANGTHDIDRUYEONIALEMHEAMLFABAWHITHPBFBRUASTHNGTHROUSMJUMNWOEAPEAWFFWTHGGURTTHEANOXFMGIANGLOELLSUFTHAXSSCEONGJUEXISBNDTNGFIER"
+        },
+        "unknown_groups": 10,
+        "controls_exact": 3,
+        "new_controls": 3,
+        "raw_p": 0.1,
+        "bonferroni10": 1,
+        "null_exceedances": 1,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 1680,
+        "seed_records_recomputed": 396,
+        "restart_traces_checked": 396,
+        "independent_schedule_optima": 33,
+        "tests_passed": 103,
+        "successful_tasks": 30,
+        "seconds": 254.22615869983565,
+        "family_accounted_seconds": 220.7505950999912,
+        "section_scores": [
+          {
+            "section": "LP2-00_02",
+            "runes": 729,
+            "score": -5.9121845793409395
+          },
+          {
+            "section": "LP2-03_07",
+            "runes": 1145,
+            "score": -6.027666366175423
+          },
+          {
+            "section": "LP2-08_14",
+            "runes": 1729,
+            "score": -6.156642827751124
+          },
+          {
+            "section": "LP2-15_22",
+            "runes": 1903,
+            "score": -6.24387783693036
+          },
+          {
+            "section": "LP2-23_26",
+            "runes": 1021,
+            "score": -6.047754677706382
+          },
+          {
+            "section": "LP2-27_32",
+            "runes": 1433,
+            "score": -6.14172637762043
+          },
+          {
+            "section": "LP2-33_39",
+            "runes": 1680,
+            "score": -6.228457128356675
+          },
+          {
+            "section": "LP2-40_53",
+            "runes": 3008,
+            "score": -6.319841280707072
+          },
+          {
+            "section": "LP2-54_55",
+            "runes": 308,
+            "score": -5.394357925059786
+          },
+          {
+            "section": "LP2-40_55",
+            "runes": 3316,
+            "score": -6.297573314784107
+          }
+        ],
+        "new_decryptions": []
+      }
+    },
+    {
+      "id": "H037",
+      "claim": "Pages may share a repeating key while beginning at different unknown positions within that key.",
+      "status": "bounded_heuristic_screen_complete",
+      "basis": "E044 constrains phases by previous page lengths and skips; E046 forces identical resets. Neither searches arbitrary phase per page. This is a testable relaxation, not evidence of the actual mechanism.",
+      "mechanism": "Shared periodic key, perpage phase and selective F masks; context reset perpage. Canonical global key rotation removes one redundant phase degree of freedom.",
+      "parameters": "E045 seeds,12keys,periods1..16,all perpage phases/F masks;3shared-coordinate/DP rounds;phase penalty (G-1)ln(m).",
+      "success_criterion": "Source-excluded controls recover key,phases,masks; candidate survives corrected full-search nulls and independent source-anchored replay.",
+      "rejection_criterion": "Failed controls block unknown groups; null-typical candidate provides no solution evidence.",
+      "limits": "All3 controls exact; no unknown plaintext validated. Negative bounded heuristic screen does not exclude all repeating keys or different groups.",
+      "experiments": [
+        "E047",
+        "E048"
+      ],
+      "result": {
+        "created_at": "2026-10-20T20:52:45.789129+00:00",
+        "selected_section": "LP2-54_55",
+        "top": {
+          "key": [
+            27,
+            22,
+            5,
+            18,
+            5,
+            26,
+            23,
+            15,
+            8,
+            0,
+            22,
+            14,
+            1,
+            20
+          ],
+          "sign": -1,
+          "skip_positions": [
+            247,
+            257,
+            273
+          ],
+          "page_phases": [
+            0,
+            2
+          ],
+          "language_score": -5.392394364212792,
+          "score": -5.567524500682874,
+          "phase_cost": 2.6390573296152584,
+          "rotation": 0,
+          "input_period": 14,
+          "dp_max_states": 28,
+          "dp_transitions": 4642,
+          "coordinate_changes": 0,
+          "seed_index": 7,
+          "plaintext_runes": "ᚩᚩᛈᚪᚹᚪᚾᚳᛖᚦᛠᚢᚾᛗᛚᛡᛋᚦᛁᚳᚦᛈᛁᛟᚹᚷᛚᛋᚦᚾᚾᛇᚦᚹᛈᛚᛗᚣᚷᚹᛡᛚᚢᛝᛖᚹᚩᛋᚪᚣᚩᛚᛞᚾᚦᚦᛞᛗᚱᚱᛄᛗᛋᛡᛏᚠᛡᚾᛗᛗᚪᛄᚹᛗᚪᚷᛒᚹᛚᛠᛄᚠᚷᛋᛚᚪᛋᛋᛝᚠᚠᛒᛒᛏᛁᚱᛠᛏᚢᛏᛋᚱᛇᛚᚻᚫᚪᛖᚠᛚᚻᚱᚠᚠᛖᚣᚪᚹᚦᛖᛈᚱᚢᛁᚱᚾᛖᚦᚱᚱᛒᛖᛁᚱᚳᚢᛏᛖᛞᚷᛇᛠᚠᛒᛖᚱᛋᚩᛠᛏᚷᛋᚱᚩᚣᛏᛠᛞᛟᛒᛒᛇᛗᚾᚩᚣᛠᛞᚠᚠᛟᛝᛋᛝᚢᛈᛗᚾᛖᚦᛒᛏᚱᚫᛚᚪᛈᚠᛁᚠᛗᛋᛋᚾᚪᛚᚱᛖᛏᚪᛏᛗᛚᚩᛋᛝᛗᛝᛈᚳᛗᛞᛁᛈᚪᚹᚾᚱᛖᛄᚩᛞᚪᛒᛄᛚᛚᚠᚷᛟᛒᛖᛈᛟᛋᛏᛏᚠᛚᛋᚩᛠᛖᛉᚱᛚᚾᚠᛚᛁᚾᛖᛉᚢᚫᚳᛋᚠᛏᛁᚻᛝᚠᚳᚣᚳᚩᚩᛖᛉᛠᛏᛒᚠᚩᛗᛁᚠᚷᛏᛡᚳᚳᚦᛋᛏᛠᛇᚳᛋᛚᚩᚠᛗᚪᚢᛁᚾᛗᚩᚾᛏᚣᛏᛝᛒᚠᚪ",
+          "transliteration": "OOPAWANCETHEAUNMLIASTHICTHPIOEWGLSTHNNEOTHWPLMYGWIALUNGEWOSAYOLDNTHTHDMRRJMSIATFIANMMAJWMAGBWLEAJFGSLASSNGFFBBTIREATUTSREOLHAEAEFLHRFFEYAWTHEPRUIRNETHRRBEIRCUTEDGEOEAFBERSOEATGSROYTEADOEBBEOMNOYEADFFOENGSNGUPMNETHBTRAELAPFIFMSSNALRETATMLOSNGMNGPCMDIPAWNREJODABJLLFGOEBEPOESTTFLSOEAEXRLNFLINEXUAECSFTIHNGFCYCOOEXEATBFOMIFGTIACCTHSTEAEOCSLOFMAUINMONTYTNGBFA"
+        },
+        "unknown_groups": 10,
+        "controls_exact": 3,
+        "new_controls": 3,
+        "page_spans": [
+          {
+            "page_id": "LP2-54",
+            "start": 0,
+            "end": 232,
+            "runes": 232,
+            "source_refs": [
+              "relikd:pages/p54-55.txt",
+              "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+            ],
+            "zero_rune_page": false
+          },
+          {
+            "page_id": "LP2-55",
+            "start": 232,
+            "end": 308,
+            "runes": 76,
+            "source_refs": [
+              "relikd:pages/p54-55.txt",
+              "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+            ],
+            "zero_rune_page": false
+          }
+        ],
+        "raw_p": 0.95,
+        "bonferroni10": 1,
+        "null_exceedances": 18,
+        "null_replicates": 19,
+        "pending_larger_calibration": false,
+        "candidate_records_recomputed": 1676,
+        "seed_records_recomputed": 396,
+        "restart_traces_checked": 396,
+        "independent_schedule_optima": 33,
+        "tests_passed": 106,
+        "successful_tasks": 30,
+        "seconds": 234.44142730004387,
+        "family_accounted_seconds": 209.47018460003892,
+        "section_scores": [
+          {
+            "section": "LP2-00_02",
+            "runes": 729,
+            "score": -5.884704625371403
+          },
+          {
+            "section": "LP2-03_07",
+            "runes": 1145,
+            "score": -6.0757984313574624
+          },
+          {
+            "section": "LP2-08_14",
+            "runes": 1729,
+            "score": -6.1150332134931755
+          },
+          {
+            "section": "LP2-15_22",
+            "runes": 1903,
+            "score": -6.130898315401932
+          },
+          {
+            "section": "LP2-23_26",
+            "runes": 1021,
+            "score": -5.975087980926992
+          },
+          {
+            "section": "LP2-27_32",
+            "runes": 1433,
+            "score": -6.079706722074558
+          },
+          {
+            "section": "LP2-33_39",
+            "runes": 1680,
+            "score": -6.098128035632303
+          },
+          {
+            "section": "LP2-40_53",
+            "runes": 3008,
+            "score": -6.2622516907510395
+          },
+          {
+            "section": "LP2-54_55",
+            "runes": 308,
+            "score": -5.567524500682874
+          },
+          {
+            "section": "LP2-40_55",
+            "runes": 3316,
+            "score": -6.281566553916567
+          }
+        ],
+        "new_decryptions": []
+      }
+    },
+    {
+      "id": "H038",
+      "claim": "An unknown repeating key may have primitive period17..32, outside the completed arbitrary-key range.",
+      "status": "control_gate_failed_search_bottleneck",
+      "basis": "E038-E048 arbitrary-key solvers cap period at16; their negative findings do not test longer keys. This identifies an untested range, not positive evidence for it.",
+      "mechanism": "Modulo29 repeating key with selective F interruptions, initially bounded to long enough streams for identifiable key recovery.",
+      "parameters": "Preregister source-excluded controls, exact periods, stream scope,seed strategy,penalty and budgets before any unknown run.",
+      "success_criterion": "Long controls recover exact key,text,F masks; unknown candidates survive fully optimized selection-corrected nulls and independent source replay.",
+      "rejection_criterion": "Failed control recovery or infeasible calibration blocks escalation. No brute-force exponential key enumeration.",
+      "limits": "No evidence against long-key encryption from a failed heuristic control. Oracle diagnoses do not count as blind recovery. No unknown ciphertext tested.",
+      "experiments": [
+        "E049",
+        "E050",
+        "E051"
+      ],
+      "result": {
+        "created_at": "2026-10-21T10:24:33.561076+00:00",
+        "unknown_sections": 0,
+        "control_gate_passed": false,
+        "original_controls": [
+          {
+            "chapter": "X",
+            "key_length": 17,
+            "runes": 3316,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true
+            }
+          },
+          {
+            "chapter": "XI",
+            "key_length": 23,
+            "runes": 1200,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true
+            }
+          },
+          {
+            "chapter": "XII",
+            "key_length": 31,
+            "runes": 1200,
+            "exact": false,
+            "checks": {
+              "plaintext_exact": false,
+              "key_exact": false,
+              "mask_exact": false
+            }
+          }
+        ],
+        "diagnosis": [
+          {
+            "chapter": "X",
+            "key_length": 17,
+            "original_exact": true,
+            "runes": 3316,
+            "correct_runes": 3316,
+            "truth_language_score": -2.0573392431361057,
+            "truth_score": -2.1093013845965163,
+            "found_score": -2.109301384596514,
+            "truth_minus_found": -2.220446049250313e-15,
+            "true_initial_seed_indices": [],
+            "true_final_key_indices": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "chapter": "XI",
+            "key_length": 23,
+            "original_exact": true,
+            "runes": 1200,
+            "correct_runes": 1200,
+            "truth_language_score": -1.9499422701953912,
+            "truth_score": -2.0462513527124626,
+            "found_score": -2.0462513527124586,
+            "truth_minus_found": -3.9968028886505635e-15,
+            "true_initial_seed_indices": [],
+            "true_final_key_indices": [
+              0,
+              1
+            ]
+          },
+          {
+            "chapter": "XII",
+            "key_length": 31,
+            "original_exact": false,
+            "runes": 1200,
+            "correct_runes": 59,
+            "truth_language_score": -2.1870232209300777,
+            "truth_score": -2.309824300866992,
+            "found_score": -5.810930730168819,
+            "truth_minus_found": 3.5011064293018266,
+            "true_initial_seed_indices": [],
+            "true_final_key_indices": [],
+            "known_key_oracle": {
+              "truth_inputs": [
+                "injected_key",
+                "injected_sign"
+              ],
+              "mask_exact": true,
+              "key_exact": true
+            },
+            "known_period_mask_oracle": {
+              "truth_inputs": [
+                "injected_period",
+                "injected_prefix_mask"
+              ],
+              "range": [
+                0,
+                1024
+              ],
+              "period": 31,
+              "key_exact": true,
+              "plaintext_exact": true
+            }
+          }
+        ],
+        "adaptive_repair_exact": false,
+        "repair_correct_runes": 78,
+        "repair_score": -5.870171640883411,
+        "repair_null_score": -5.770010472365931,
+        "pool_fragments": 12,
+        "pool_runes": 512,
+        "candidate_records_recomputed": 342,
+        "seed_records_recomputed": 72,
+        "restart_traces_checked": 72,
+        "pool_records_recomputed": 72,
+        "independent_schedule_optima": 6,
+        "tests_passed": 108,
+        "successful_tasks": 3,
+        "seconds": 162.74954809999326,
+        "new_decryptions": []
+      }
+    },
+    {
+      "id": "H039",
+      "claim": "Long-key initialization may improve by jointly inferring phases across F-free fragments before full-stream schedule refinement.",
+      "status": "initialization_validated_unknown_scan_no_decryption",
+      "basis": "E04931-key initialization misses truth; supplied key or mask/period permits exact recovery. All12 retained seeds originate in one65-rune fragment. E051 pooling those same seeds still fails, so new initialization requires separate calibration.",
+      "mechanism": "Several deterministic initializations per nominal period; pool fragment unigram likelihood with unknown phases, then higher-order refinement, then full-stream exact F schedules.",
+      "parameters": "Preregister starts, phase optimization, score schedule, caps and fresh source ranges before execution. No truth-dependent key or mask in candidate search.",
+      "success_criterion": "Fresh source-excluded controls and all prior regressions recover exact keys,text and masks; only then unknown attack with matched nulls.",
+      "rejection_criterion": "Further failed controls or uncontrolled cost blocks unknown escalation.",
+      "limits": "All six controlled long-key cases recovered; this validates those cases, not every key/mask. Unknown scan has a coarse, selection-corrected null comparison, not a decryption.",
+      "experiments": [
+        "E052",
+        "E053"
+      ],
+      "result": {
+        "controls": [
+          {
+            "kind": "fresh",
+            "chapter": "X",
+            "key_length": 17,
+            "runes": 1200,
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.10464053934792,
+            "truth_score": -2.104640539347919
+          },
+          {
+            "kind": "fresh",
+            "chapter": "XI",
+            "key_length": 23,
+            "runes": 1200,
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.075758079910419,
+            "truth_score": -2.0757580799104183
+          },
+          {
+            "kind": "fresh",
+            "chapter": "XII",
+            "key_length": 31,
+            "runes": 1200,
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.1192074572298853,
+            "truth_score": -2.119207457229886
+          },
+          {
+            "kind": "regression",
+            "chapter": "X",
+            "key_length": 17,
+            "runes": 3316,
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -2.109301384596514,
+            "truth_score": -2.1093013845965163
+          },
+          {
+            "kind": "regression",
+            "chapter": "XI",
+            "key_length": 23,
+            "runes": 1200,
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.0462513527124586,
+            "truth_score": -2.0462513527124626
+          },
+          {
+            "kind": "regression",
+            "chapter": "XII",
+            "key_length": 31,
+            "runes": 1200,
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.3098243008669916,
+            "truth_score": -2.309824300866992
+          }
+        ],
+        "control_gate_passed": true,
+        "control_key_stage_audit": [
+          {
+            "kind": "fresh",
+            "chapter": "X",
+            "exact_unigram_start_indices": [
+              1,
+              2,
+              3,
+              6,
+              7,
+              9,
+              13,
+              14,
+              15
+            ],
+            "exact_bigram_pool_states": 5,
+            "exact_fourgram_pool_states": 8,
+            "exact_final_key_count": 1
+          },
+          {
+            "kind": "fresh",
+            "chapter": "XI",
+            "exact_unigram_start_indices": [],
+            "exact_bigram_pool_states": 3,
+            "exact_fourgram_pool_states": 4,
+            "exact_final_key_count": 1
+          },
+          {
+            "kind": "fresh",
+            "chapter": "XII",
+            "exact_unigram_start_indices": [],
+            "exact_bigram_pool_states": 1,
+            "exact_fourgram_pool_states": 4,
+            "exact_final_key_count": 1
+          },
+          {
+            "kind": "regression",
+            "chapter": "X",
+            "exact_unigram_start_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              11,
+              12,
+              13,
+              15
+            ],
+            "exact_bigram_pool_states": 7,
+            "exact_fourgram_pool_states": 8,
+            "exact_final_key_count": 1
+          },
+          {
+            "kind": "regression",
+            "chapter": "XI",
+            "exact_unigram_start_indices": [
+              1,
+              6,
+              10,
+              11,
+              14
+            ],
+            "exact_bigram_pool_states": 4,
+            "exact_fourgram_pool_states": 6,
+            "exact_final_key_count": 1
+          },
+          {
+            "kind": "regression",
+            "chapter": "XII",
+            "exact_unigram_start_indices": [],
+            "exact_bigram_pool_states": 0,
+            "exact_fourgram_pool_states": 0,
+            "exact_final_key_count": 1
+          }
+        ],
+        "control_diagnostic_null_score": -5.8426284471777485,
+        "unknown": {
+          "experiment": "E053",
+          "sections": [
+            {
+              "section": "LP2-00_02",
+              "score": -5.629977549487197,
+              "runes": 729,
+              "output": "results/E053-section-LP2-00_02-d2654871c711.json",
+              "key_length": 29,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-03_07",
+              "score": -5.795489735354985,
+              "runes": 1145,
+              "output": "results/E053-section-LP2-03_07-8a3d55575ea7.json",
+              "key_length": 32,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-08_14",
+              "score": -6.04612902429375,
+              "runes": 1729,
+              "output": "results/E053-section-LP2-08_14-a0a6fe00a103.json",
+              "key_length": 26,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-15_22",
+              "score": -6.041130079468119,
+              "runes": 1903,
+              "output": "results/E053-section-LP2-15_22-fccc9359adc3.json",
+              "key_length": 31,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-23_26",
+              "score": -5.811430177949721,
+              "runes": 1021,
+              "output": "results/E053-section-LP2-23_26-d328b724535e.json",
+              "key_length": 30,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-27_32",
+              "score": -5.93318055111166,
+              "runes": 1433,
+              "output": "results/E053-section-LP2-27_32-8d7e34720b87.json",
+              "key_length": 31,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-33_39",
+              "score": -6.001530451823738,
+              "runes": 1680,
+              "output": "results/E053-section-LP2-33_39-b009169a9729.json",
+              "key_length": 32,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-40_53",
+              "score": -6.186528366887316,
+              "runes": 3008,
+              "output": "results/E053-section-LP2-40_53-7be939bcc1fa.json",
+              "key_length": 27,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-40_55",
+              "score": -6.199600935588203,
+              "runes": 3316,
+              "output": "results/E053-section-LP2-40_55-b80831e1f6f1.json",
+              "key_length": 31,
+              "replicate": 0
+            }
+          ],
+          "nulls": [
+            {
+              "section": "LP2-00_02",
+              "score": -5.602585252566434,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-00-45a2420aac47.json",
+              "key_length": 32,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.621097987651064,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-01-be08917844ba.json",
+              "key_length": 32,
+              "replicate": 1
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.555280509437416,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-02-3469f0708e0f.json",
+              "key_length": 30,
+              "replicate": 2
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.592432820880534,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-03-8254b7d340dd.json",
+              "key_length": 28,
+              "replicate": 3
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.624879649942079,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-04-8e9c2907b175.json",
+              "key_length": 32,
+              "replicate": 4
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.630537560042975,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-05-d584401198fa.json",
+              "key_length": 32,
+              "replicate": 5
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.578471144294574,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-06-317480fab8f1.json",
+              "key_length": 31,
+              "replicate": 6
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.68251178584492,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-07-c5065fd78675.json",
+              "key_length": 31,
+              "replicate": 7
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.606672630316343,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-08-978b58d51239.json",
+              "key_length": 32,
+              "replicate": 8
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.630048202511448,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-09-7312dc99ce2e.json",
+              "key_length": 32,
+              "replicate": 9
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.67172945892514,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-10-642548306089.json",
+              "key_length": 30,
+              "replicate": 10
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.631699376338379,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-11-5252bd728138.json",
+              "key_length": 28,
+              "replicate": 11
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.623820228456464,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-12-edc4842585d8.json",
+              "key_length": 31,
+              "replicate": 12
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.6504619105812255,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-13-05f822bb5b91.json",
+              "key_length": 31,
+              "replicate": 13
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.6888337538800045,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-14-e3189fad9f63.json",
+              "key_length": 32,
+              "replicate": 14
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.629274030761408,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-15-7d1b6e740ab3.json",
+              "key_length": 32,
+              "replicate": 15
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.680984809429882,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-16-7ecea696e74a.json",
+              "key_length": 26,
+              "replicate": 16
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.61419196618039,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-17-09dea31d184f.json",
+              "key_length": 31,
+              "replicate": 17
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.585377881972242,
+              "runes": 729,
+              "output": "results/E053-null-LP2-00_02-18-1b58bee02a8c.json",
+              "key_length": 30,
+              "replicate": 18
+            }
+          ],
+          "selected_section": "LP2-00_02",
+          "observed_score": -5.629977549487197,
+          "exceedances": 11,
+          "raw_p": 0.6,
+          "bonferroni9": 1,
+          "pending_larger_calibration": false,
+          "unique_unknown_rune_pages": 55,
+          "empty_pages_preserved": [
+            "LP2-50"
+          ],
+          "seconds": 377.18333490006626,
+          "successful_tasks": 28,
+          "peak_sampled_bytes": 123273216,
+          "validation_seconds": 59.23618140001781
+        },
+        "validation": {
+          "pool_records_recomputed": 36960,
+          "independent_pool_phase_optima": 1120,
+          "stream_records_recomputed": 3266,
+          "independent_stream_optima": 35
+        },
+        "tests_passed": 111,
+        "successful_tasks": 35,
+        "seconds": 494.1289425000432,
+        "peak_sampled_bytes": 123572224,
+        "control_validation_sha256": "22bbe79b72e32a3c4838a0c90f6ac0c10467c9e0d7e57cd228b7fd95ed98340d",
+        "unknown_validation_sha256": "acfdfc587aa291303d8cd8591ed80278becd807931cb05aa0faf7f2392e77df8",
+        "new_decryptions": []
+      }
+    },
+    {
+      "id": "H040",
+      "status": "control_gate_failed_boundary_and_short_key",
+      "claim": "A long shared key with page-local initial phases may be testable using the repaired pooled initialization.",
+      "basis": "E052 resolves the31-key initialization failure; E053 tests continuous stream alignment only. E047 previously calibrated page-local phases only for nominal periods1..16.",
+      "mechanism": "Pool F-free fragments for key initialization, then joint shared-key coordinates and exact perpage phase/F-schedule optimization for periods17..32.",
+      "success_criterion": "Preregister fresh source-excluded controls at short and long target lengths, synthetic phase vectors and several copied-F distributions plus E052 regressions. Exact independent reproduction before unknown scan; full optimizer nulls and group selection correction.",
+      "rejection_criterion": "Failed controls or bounded-cost failure blocks unknown escalation; no unbounded key brute force.",
+      "limits": "Synthetic successes do not validate all short inputs. Free page phases and optional initialF copying permit distinct plaintexts with identical ciphertext; language ranking is not unique cryptographic identification.",
+      "experiments": [
+        "E054",
+        "E055"
+      ],
+      "result": {
+        "controls": [
+          {
+            "kind": "fresh",
+            "index": 0,
+            "chapter": "X",
+            "key_length": 17,
+            "runes": 729,
+            "exact": false,
+            "checks": {
+              "plaintext_exact": false,
+              "key_exact": true,
+              "mask_exact": false,
+              "phases_exact": false
+            },
+            "correct_runes": 728,
+            "found_score": -2.1931703665138516,
+            "truth_score": -2.1937045195642115,
+            "truth_minus_found": -0.0005341530503599756,
+            "error_positions": [
+              262
+            ],
+            "page_start_errors": [
+              262
+            ],
+            "output": "results/E054-fresh-0-bf32322bf3c9.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 1,
+            "chapter": "XI",
+            "key_length": 23,
+            "runes": 729,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.152196452290002,
+            "truth_score": -2.1521964522900023,
+            "truth_minus_found": -4.440892098500626e-16,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-fresh-1-354cc2d66821.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 2,
+            "chapter": "XII",
+            "key_length": 31,
+            "runes": 729,
+            "exact": false,
+            "checks": {
+              "plaintext_exact": false,
+              "key_exact": false,
+              "mask_exact": false,
+              "phases_exact": false
+            },
+            "correct_runes": 30,
+            "found_score": -5.55448592888915,
+            "truth_score": -2.32779445970901,
+            "truth_minus_found": 3.2266914691801403,
+            "error_positions": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84,
+              85,
+              86,
+              87,
+              88,
+              89,
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              128,
+              129,
+              130,
+              132,
+              133,
+              134,
+              135,
+              136,
+              137,
+              138,
+              139,
+              140,
+              141,
+              142,
+              143,
+              144,
+              145,
+              146,
+              147,
+              148,
+              149,
+              150,
+              151,
+              152,
+              153,
+              154,
+              155,
+              156,
+              157,
+              158,
+              159,
+              160,
+              161,
+              162,
+              165,
+              166,
+              167,
+              168,
+              169,
+              170,
+              172,
+              173,
+              174,
+              175,
+              176,
+              177,
+              178,
+              179,
+              180,
+              181,
+              182,
+              183,
+              184,
+              185,
+              186,
+              187,
+              188,
+              189,
+              190,
+              191,
+              192,
+              193,
+              194,
+              195,
+              196,
+              197,
+              198,
+              199,
+              200,
+              201,
+              202,
+              203,
+              204,
+              205,
+              206,
+              207,
+              208,
+              209,
+              210,
+              211,
+              212,
+              213,
+              214,
+              215,
+              216,
+              217,
+              218,
+              221,
+              222,
+              223,
+              224,
+              226,
+              227,
+              228,
+              229,
+              230,
+              231,
+              232,
+              233,
+              234,
+              235,
+              236,
+              237,
+              238,
+              239,
+              240,
+              241,
+              242,
+              243,
+              244,
+              245,
+              246,
+              247,
+              248,
+              249,
+              250,
+              251,
+              252,
+              253,
+              255,
+              256,
+              257,
+              258,
+              259,
+              260,
+              261,
+              262,
+              263,
+              264,
+              265,
+              266,
+              267,
+              268,
+              269,
+              270,
+              271,
+              272,
+              273,
+              274,
+              275,
+              276,
+              277,
+              278,
+              279,
+              280,
+              281,
+              282,
+              283,
+              284,
+              285,
+              286,
+              287,
+              288,
+              290,
+              291,
+              292,
+              293,
+              294,
+              295,
+              296,
+              297,
+              298,
+              299,
+              300,
+              301,
+              302,
+              303,
+              304,
+              305,
+              307,
+              308,
+              309,
+              310,
+              311,
+              312,
+              313,
+              314,
+              315,
+              316,
+              317,
+              318,
+              319,
+              320,
+              321,
+              322,
+              323,
+              325,
+              326,
+              327,
+              328,
+              329,
+              330,
+              331,
+              332,
+              333,
+              334,
+              335,
+              336,
+              337,
+              338,
+              339,
+              340,
+              341,
+              342,
+              343,
+              344,
+              345,
+              346,
+              347,
+              348,
+              349,
+              350,
+              351,
+              352,
+              353,
+              354,
+              355,
+              356,
+              357,
+              358,
+              359,
+              360,
+              361,
+              362,
+              363,
+              364,
+              365,
+              366,
+              367,
+              368,
+              369,
+              370,
+              371,
+              372,
+              373,
+              374,
+              375,
+              376,
+              377,
+              378,
+              379,
+              380,
+              381,
+              382,
+              383,
+              385,
+              387,
+              388,
+              389,
+              390,
+              391,
+              392,
+              393,
+              394,
+              395,
+              396,
+              397,
+              398,
+              399,
+              400,
+              401,
+              402,
+              403,
+              404,
+              405,
+              406,
+              407,
+              408,
+              409,
+              410,
+              411,
+              412,
+              413,
+              414,
+              415,
+              416,
+              417,
+              418,
+              419,
+              420,
+              421,
+              422,
+              423,
+              424,
+              425,
+              426,
+              427,
+              428,
+              429,
+              430,
+              431,
+              432,
+              433,
+              434,
+              435,
+              436,
+              437,
+              438,
+              439,
+              440,
+              441,
+              443,
+              444,
+              445,
+              446,
+              447,
+              448,
+              449,
+              450,
+              451,
+              452,
+              453,
+              454,
+              455,
+              456,
+              457,
+              458,
+              459,
+              460,
+              461,
+              462,
+              463,
+              464,
+              465,
+              466,
+              467,
+              468,
+              469,
+              470,
+              471,
+              472,
+              473,
+              474,
+              475,
+              476,
+              477,
+              478,
+              479,
+              480,
+              481,
+              482,
+              483,
+              484,
+              485,
+              486,
+              487,
+              488,
+              489,
+              490,
+              492,
+              493,
+              494,
+              495,
+              496,
+              497,
+              498,
+              499,
+              500,
+              501,
+              502,
+              503,
+              504,
+              505,
+              506,
+              507,
+              508,
+              509,
+              510,
+              512,
+              513,
+              514,
+              515,
+              516,
+              517,
+              518,
+              519,
+              520,
+              521,
+              522,
+              523,
+              524,
+              525,
+              526,
+              527,
+              528,
+              529,
+              530,
+              531,
+              532,
+              533,
+              534,
+              535,
+              536,
+              537,
+              538,
+              539,
+              540,
+              541,
+              542,
+              543,
+              544,
+              545,
+              546,
+              547,
+              548,
+              549,
+              550,
+              551,
+              552,
+              553,
+              554,
+              555,
+              556,
+              557,
+              558,
+              559,
+              560,
+              561,
+              562,
+              563,
+              564,
+              565,
+              566,
+              568,
+              569,
+              570,
+              571,
+              572,
+              573,
+              574,
+              575,
+              576,
+              577,
+              578,
+              579,
+              580,
+              581,
+              582,
+              583,
+              585,
+              586,
+              587,
+              588,
+              589,
+              590,
+              591,
+              592,
+              593,
+              594,
+              595,
+              596,
+              597,
+              598,
+              599,
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619,
+              620,
+              621,
+              622,
+              623,
+              624,
+              625,
+              626,
+              627,
+              628,
+              629,
+              630,
+              631,
+              632,
+              633,
+              634,
+              635,
+              636,
+              637,
+              638,
+              639,
+              640,
+              641,
+              642,
+              643,
+              644,
+              645,
+              646,
+              647,
+              648,
+              649,
+              650,
+              652,
+              653,
+              654,
+              655,
+              656,
+              657,
+              658,
+              659,
+              660,
+              661,
+              663,
+              664,
+              665,
+              666,
+              667,
+              668,
+              669,
+              670,
+              671,
+              672,
+              673,
+              674,
+              675,
+              676,
+              678,
+              679,
+              680,
+              682,
+              683,
+              684,
+              685,
+              686,
+              688,
+              689,
+              690,
+              691,
+              692,
+              693,
+              694,
+              695,
+              696,
+              697,
+              698,
+              699,
+              700,
+              701,
+              702,
+              703,
+              704,
+              705,
+              706,
+              707,
+              708,
+              709,
+              710,
+              711,
+              712,
+              713,
+              714,
+              715,
+              716,
+              717,
+              718,
+              719,
+              720,
+              721,
+              722,
+              723,
+              724,
+              725,
+              727,
+              728
+            ],
+            "page_start_errors": [
+              0,
+              262,
+              528
+            ],
+            "output": "results/E054-fresh-2-c90561adbecf.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 3,
+            "chapter": "X",
+            "key_length": 17,
+            "runes": 3316,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 3316,
+            "found_score": -2.0922512897004046,
+            "truth_score": -2.092251289700404,
+            "truth_minus_found": 4.440892098500626e-16,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-fresh-3-2d3dc7b2ff9d.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 4,
+            "chapter": "XI",
+            "key_length": 23,
+            "runes": 3316,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 3316,
+            "found_score": -1.9948678428031619,
+            "truth_score": -1.9948678428031617,
+            "truth_minus_found": 2.220446049250313e-16,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-fresh-4-3b33bcef9ca3.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 5,
+            "chapter": "XII",
+            "key_length": 31,
+            "runes": 3316,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 3316,
+            "found_score": -2.131938368304367,
+            "truth_score": -2.1319383683043664,
+            "truth_minus_found": 4.440892098500626e-16,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-fresh-5-e71c3ab0db8a.json"
+          },
+          {
+            "kind": "regression",
+            "index": 0,
+            "chapter": "X",
+            "key_length": 17,
+            "runes": 1200,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.1173037609472543,
+            "truth_score": -2.117303760947254,
+            "truth_minus_found": 4.440892098500626e-16,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-regression-0-2a92474d6325.json"
+          },
+          {
+            "kind": "regression",
+            "index": 1,
+            "chapter": "XI",
+            "key_length": 23,
+            "runes": 1200,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.0890671693382896,
+            "truth_score": -2.08906716933829,
+            "truth_minus_found": -4.440892098500626e-16,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-regression-1-5e55fe70cc29.json"
+          },
+          {
+            "kind": "regression",
+            "index": 2,
+            "chapter": "XII",
+            "key_length": 31,
+            "runes": 1200,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.128006254141646,
+            "truth_score": -2.1280062541416456,
+            "truth_minus_found": 4.440892098500626e-16,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-regression-2-25d6926f6e14.json"
+          },
+          {
+            "kind": "regression",
+            "index": 3,
+            "chapter": "X",
+            "key_length": 17,
+            "runes": 3316,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 3316,
+            "found_score": -2.124851535505911,
+            "truth_score": -2.124851535505911,
+            "truth_minus_found": 0.0,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-regression-3-b0c5c3de2863.json"
+          },
+          {
+            "kind": "regression",
+            "index": 4,
+            "chapter": "XI",
+            "key_length": 23,
+            "runes": 1200,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.058856435233408,
+            "truth_score": -2.0588564352334076,
+            "truth_minus_found": 4.440892098500626e-16,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-regression-4-ab8d935b5620.json"
+          },
+          {
+            "kind": "regression",
+            "index": 5,
+            "chapter": "XII",
+            "key_length": 31,
+            "runes": 1200,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.3224992368630453,
+            "truth_score": -2.3224992368630453,
+            "truth_minus_found": 0.0,
+            "error_positions": [],
+            "page_start_errors": [],
+            "output": "results/E054-regression-5-77a9d7bcd576.json"
+          }
+        ],
+        "gate_passed": false,
+        "exact_controls": 10,
+        "diagnostic_null_score": -5.555360694635766,
+        "known_key_oracles": [
+          {
+            "kind": "fresh",
+            "index": 0,
+            "runes": 729,
+            "oracle_exact": false,
+            "oracle_correct_runes": 728,
+            "error_positions": [
+              262
+            ],
+            "truth_score": -2.1937045195642115,
+            "found_score": -2.1931703665138516,
+            "oracle_score": -2.1931703665138516,
+            "oracle_minus_truth": 0.0005341530503599756
+          },
+          {
+            "kind": "fresh",
+            "index": 2,
+            "runes": 729,
+            "oracle_exact": true,
+            "oracle_correct_runes": 729,
+            "error_positions": [],
+            "truth_score": -2.32779445970901,
+            "found_score": -5.55448592888915,
+            "oracle_score": -2.3277944597090094,
+            "oracle_minus_truth": 4.440892098500626e-16
+          }
+        ],
+        "boundary_collisions": [
+          {
+            "control_output": "results/E054-fresh-0-bf32322bf3c9.json",
+            "page_index": 1,
+            "ciphertext_position": 262,
+            "original_copied": false,
+            "original_phase": 5,
+            "alternative_phase": 6,
+            "original_symbol": 6,
+            "alternative_symbol": 0,
+            "truth_score": -2.1937045195642115,
+            "alternative_score": -2.193170366513851
+          },
+          {
+            "control_output": "results/E054-fresh-3-2d3dc7b2ff9d.json",
+            "page_index": 2,
+            "ciphertext_position": 504,
+            "original_copied": false,
+            "original_phase": 8,
+            "alternative_phase": 9,
+            "original_symbol": 15,
+            "alternative_symbol": 0,
+            "truth_score": -2.092251289700404,
+            "alternative_score": -2.0930962920033545
+          }
+        ],
+        "validation": {
+          "pool_records_recomputed": 13728,
+          "independent_pool_phase_optima": 416,
+          "stream_records_recomputed": 1172,
+          "independent_stream_optima": 13
+        },
+        "independent_oracle_optima": 2,
+        "independent_collision_replays": 2,
+        "tests_passed": 114,
+        "successful_tasks": 14,
+        "seconds": 395.4941546000191,
+        "peak_sampled_control_bytes": 133472256,
+        "unknown_sections_searched": 0,
+        "new_decryptions": []
+      },
+      "follow_up": {
+        "experiments": [
+          "E060",
+          "E061"
+        ],
+        "result": "E060 all21 exact with hybrid initialization; prior outcomes unchanged. See phase21 report for unknown scan."
+      }
+    },
+    {
+      "id": "H041",
+      "status": "oracle_calibrated_partial_blind_full_gate_blocked",
+      "claim": "Retaining language context across key-phase page boundaries may reduce boundary misranking while preserving explicit equivalent alternatives.",
+      "basis": "E054 fresh0 finds true key but misranks one page-initialF; E055 supplies a reversible ambiguity proof.",
+      "mechanism": "Exact finite-context DP across boundaries, with key-phase choice at each page and separately reported leading-F alternatives.",
+      "success_criterion": "Preregister fresh paired controls with preserved context plus old E054 regressions; exact objective replay and honest ambiguity labels. No unknown scan on failed gate.",
+      "limits": "No language model can make a non-injective rule uniquely invertible for all plaintexts. This is a ranking/representation change, not proof of the LP cipher.",
+      "experiments": [
+        "E056",
+        "E057"
+      ],
+      "result": {
+        "oracle_exact": 15,
+        "oracle_total": 15,
+        "blind_exact": 3,
+        "blind_total_executed": 4,
+        "full_gate_passed": false,
+        "summary": "results/phase20_summary.json"
+      },
+      "follow_up": {
+        "experiments": [
+          "E060",
+          "E061"
+        ],
+        "result": "E060 all21 exact with hybrid initialization; prior outcomes unchanged. See phase21 report for unknown scan."
+      }
+    },
+    {
+      "id": "H042",
+      "status": "expanded_starts_insufficient_on_hard_regression",
+      "claim": "Short long-key searches may need a different bounded initialization than the validated long-input solver.",
+      "basis": "E054 fresh2 has729runes,key31 and copiedF probability.75; only30runes correct despite long31-key cases succeeding.",
+      "mechanism": "Preregister a limited multistart or fragment-selection change without target plaintext access, test fresh short controls and previous regressions.",
+      "success_criterion": "Exact non-oracle recovery on new short/long varied-F cases; retain boundary ambiguities and matched full-optimizer nulls before unknown claims.",
+      "limits": "Hypothesis motivated by a failed control; avoid tuning to its known key or reporting oracle diagnostics as success.",
+      "experiments": [
+        "E057"
+      ],
+      "result": {
+        "fresh_exact": 3,
+        "fresh_total": 3,
+        "hard_regression_correct_runes": 43,
+        "hard_regression_runes": 729,
+        "full_gate_passed": false,
+        "summary": "results/phase20_summary.json"
+      },
+      "follow_up": {
+        "experiments": [
+          "E060",
+          "E061"
+        ],
+        "result": "E060 all21 exact with hybrid initialization; prior outcomes unchanged. See phase21 report for unknown scan."
+      }
+    },
+    {
+      "id": "H043",
+      "status": "constrained_only_gate_failed17of18",
+      "claim": "Preserving known within-page cursor constraints during initialization may improve short long-key recovery.",
+      "basis": "E057 expanded starts fail the old short31 case while known-key conditional optimization succeeds.",
+      "mechanism": "For fragment starts a<b in one page, phase_b-phase_a = (b-a)-s mod m, with 0<=s<=count(ciphertext F in [a,b)). Joint whole-page unigram DP or constrained fragment alignment could preserve this ciphertext-derived bound.",
+      "success_criterion": "Freeze parameters, seeds and budgets before execution. Exact blind hard-regression and fresh-control recovery followed by all deferred regressions/stress controls; matched full-solver nulls and independent validation before unknown escalation.",
+      "limits": "Repairs old729-key31 but fails old1200-key31; E059 blocked. Hybrid continuation recorded separately under H044.",
+      "experiments": [
+        "E058"
+      ],
+      "result": {
+        "experiment": "E058",
+        "stage_A_passed": true,
+        "stage_B_executed": true,
+        "full_gate_passed": false,
+        "controls": [
+          {
+            "kind": "regression",
+            "index": 2,
+            "runes": 729,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.3256776727900625,
+            "truth_score": -2.325677672790065,
+            "output": "results/E058-regression-2-adb6b4c06b9d.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 0,
+            "runes": 729,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.062583069766143,
+            "truth_score": -2.0625830697661423,
+            "output": "results/E058-fresh-0-26c50166af69.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 1,
+            "runes": 729,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.125670723804504,
+            "truth_score": -2.125670723804503,
+            "output": "results/E058-fresh-1-eb72b0565ff3.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 2,
+            "runes": 729,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.2065192380721053,
+            "truth_score": -2.2065192380721093,
+            "output": "results/E058-fresh-2-f15791d6e4b9.json"
+          },
+          {
+            "kind": "regression",
+            "index": 0,
+            "runes": 729,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.186506624485005,
+            "truth_score": -2.186506624485009,
+            "output": "results/E058-regression-0-039d9b9c728e.json"
+          },
+          {
+            "kind": "regression",
+            "index": 1,
+            "runes": 729,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.139828875626344,
+            "truth_score": -2.139828875626345,
+            "output": "results/E058-regression-1-8f476110f700.json"
+          },
+          {
+            "kind": "regression",
+            "index": 3,
+            "runes": 3316,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -2.0847682012053,
+            "truth_score": -2.084768201205296,
+            "output": "results/E058-regression-3-a8944f9f010d.json"
+          },
+          {
+            "kind": "regression",
+            "index": 4,
+            "runes": 3316,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -1.9822432923367723,
+            "truth_score": -1.982243292336776,
+            "output": "results/E058-regression-4-47ae9c77e849.json"
+          },
+          {
+            "kind": "regression",
+            "index": 5,
+            "runes": 3316,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -2.126283587314844,
+            "truth_score": -2.126283587314842,
+            "output": "results/E058-regression-5-d92bf6795400.json"
+          },
+          {
+            "kind": "regression",
+            "index": 6,
+            "runes": 1200,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.1117235727080605,
+            "truth_score": -2.1117235727080597,
+            "output": "results/E058-regression-6-48a29fe2fd5f.json"
+          },
+          {
+            "kind": "regression",
+            "index": 7,
+            "runes": 1200,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.083596815450242,
+            "truth_score": -2.083596815450241,
+            "output": "results/E058-regression-7-d757fd85f975.json"
+          },
+          {
+            "kind": "regression",
+            "index": 8,
+            "runes": 1200,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.1277924252410982,
+            "truth_score": -2.1277924252410982,
+            "output": "results/E058-regression-8-bfbc02e0dce2.json"
+          },
+          {
+            "kind": "regression",
+            "index": 9,
+            "runes": 3316,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -2.1212630814652673,
+            "truth_score": -2.12126308146527,
+            "output": "results/E058-regression-9-76232f14bbd7.json"
+          },
+          {
+            "kind": "regression",
+            "index": 10,
+            "runes": 1200,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.0540900882522815,
+            "truth_score": -2.054090088252286,
+            "output": "results/E058-regression-10-21688ee63139.json"
+          },
+          {
+            "kind": "regression",
+            "index": 11,
+            "runes": 1200,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": false,
+              "key_exact": false,
+              "mask_exact": false,
+              "phases_exact": false
+            },
+            "exact": false,
+            "correct_runes": 49,
+            "found_score": -5.742914505431843,
+            "truth_score": -2.318409268878205,
+            "output": "results/E058-regression-11-1f5dc49e640b.json"
+          },
+          {
+            "kind": "stress",
+            "index": 0,
+            "runes": 729,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.0579602994196784,
+            "truth_score": -2.057960299419682,
+            "output": "results/E058-stress-0-c2501266c67d.json"
+          },
+          {
+            "kind": "stress",
+            "index": 1,
+            "runes": 729,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.1399464481389243,
+            "truth_score": -2.1399464481389243,
+            "output": "results/E058-stress-1-85ae3eaa704c.json"
+          },
+          {
+            "kind": "stress",
+            "index": 2,
+            "runes": 729,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.1377230240746523,
+            "truth_score": -2.1377230240746505,
+            "output": "results/E058-stress-2-0bab863ec29e.json"
+          }
+        ],
+        "null_score": -5.494805926134932,
+        "validation": {
+          "pool_records_recomputed": 40544,
+          "constraint_feasibility_checks": 40544,
+          "independent_constrained_phase_optima": 608,
+          "coupled_records_recomputed": 1622,
+          "independent_coupled_optima": 19,
+          "alternative_pairs_recomputed": 5
+        },
+        "seconds": 366.7707762999926,
+        "successful_tasks": 19,
+        "peak_sampled_bytes": 138993664,
+        "entries": [
+          {
+            "id": "E058-regression-2",
+            "fingerprint": "adb6b4c06b9d432cf2a6bc34006d8e0c389307691947130d518df13801cace85",
+            "output": "results/E058-regression-2-adb6b4c06b9d.json",
+            "sha256": "472b0f28d7e283bc05090c023d20f69a0390d0dd4cce7614e0991cc965ec62cf"
+          },
+          {
+            "id": "E058-fresh-0",
+            "fingerprint": "26c50166af69f5de89677b55c757b5e2764691200bd570255a306f8cca65ef46",
+            "output": "results/E058-fresh-0-26c50166af69.json",
+            "sha256": "7ee8dbfb2190b220656e54efbcb2a20c2661fd33eb18ef77b985f20bac303aa4"
+          },
+          {
+            "id": "E058-fresh-1",
+            "fingerprint": "eb72b0565ff36cb3526fc79629e3c5c08e083929a074b723eb12ea86dd4cad2b",
+            "output": "results/E058-fresh-1-eb72b0565ff3.json",
+            "sha256": "ba78118a68838995c7b4f91be22e76431fd8cb2c335a2f42767a394ef4c6d2c8"
+          },
+          {
+            "id": "E058-fresh-2",
+            "fingerprint": "f15791d6e4b929b13f1e545d8d385af12cbd020fcc65ddcab01c0344ed1557db",
+            "output": "results/E058-fresh-2-f15791d6e4b9.json",
+            "sha256": "a77571b69531f5d05f69ec58c39f04b2af12d0c4bf40dd87805353b8e4097d6f"
+          },
+          {
+            "id": "E058-null-2",
+            "fingerprint": "ad98d39a69ddae07f1f9af92da68e22720525a705f2fbeb3eb3ec293f0a70565",
+            "output": "results/E058-null-2-ad98d39a69dd.json",
+            "sha256": "de514b6e085d2cce73f27f00bcbf1dcb8db15a4997238e6022b110c9c9e741f8"
+          },
+          {
+            "id": "E058-regression-0",
+            "fingerprint": "039d9b9c728e995b2cbe310e3b2886e97427f50810e5949180e5a3a00f685e22",
+            "output": "results/E058-regression-0-039d9b9c728e.json",
+            "sha256": "12496ce4c8ccde961f382affd33dffa7352459ea43a8dded95edda8c94264c74"
+          },
+          {
+            "id": "E058-regression-1",
+            "fingerprint": "8f476110f70052588bce5cd8de6de003ddcfc08036bb52db53c05b0dace321a1",
+            "output": "results/E058-regression-1-8f476110f700.json",
+            "sha256": "5ccd4950376a77c823cd6683bb98172ffe9a1e3c33eaf485715035b887337085"
+          },
+          {
+            "id": "E058-regression-3",
+            "fingerprint": "a8944f9f010d90d7473f3c408447c54d61621a745f83746237789e2dbd716fbb",
+            "output": "results/E058-regression-3-a8944f9f010d.json",
+            "sha256": "2870df8df865c93db9acc6384fb5a1a8ff931e5acc61418b7b7ae3f27142d1bb"
+          },
+          {
+            "id": "E058-regression-4",
+            "fingerprint": "47ae9c77e84982912e1c5ac6e8501f8bf2588fb0374421bca842d3ca0fb290b6",
+            "output": "results/E058-regression-4-47ae9c77e849.json",
+            "sha256": "dd6ef97c202bc21689cf74f7620b08b97a173da4c5e6c4596b7bcd6b46ccadb3"
+          },
+          {
+            "id": "E058-regression-5",
+            "fingerprint": "d92bf6795400f23f9d21970d6612597d4c10f82837c8d43158b37f27204ca629",
+            "output": "results/E058-regression-5-d92bf6795400.json",
+            "sha256": "82ca50a43da52ecc5e4cd4ec6a11079bdaea4f34e0b021e85312371fe29d0dac"
+          },
+          {
+            "id": "E058-regression-6",
+            "fingerprint": "48a29fe2fd5f7497400fc374237bf57ac553e0f509dc6bcbacbcb2fc1c48bfe9",
+            "output": "results/E058-regression-6-48a29fe2fd5f.json",
+            "sha256": "687f920d26c43be209848d816c1c014994caf17bce06ab05421be32d6bd5781a"
+          },
+          {
+            "id": "E058-regression-7",
+            "fingerprint": "d757fd85f975dbd0d6bf212be093c9a3daddd02bca49ed97df8a289d320647ef",
+            "output": "results/E058-regression-7-d757fd85f975.json",
+            "sha256": "2068596505e46b28b90d51840592a25e565e7a3a4c075081ad571cc0b9314570"
+          },
+          {
+            "id": "E058-regression-8",
+            "fingerprint": "bfbc02e0dce29956c28965ad6a8a62fce824cae44fe1ffb13b8b8402397765ac",
+            "output": "results/E058-regression-8-bfbc02e0dce2.json",
+            "sha256": "c48cabe19c43697928083e7ec99c1e75d30cd91073ffd568780e333123f18143"
+          },
+          {
+            "id": "E058-regression-9",
+            "fingerprint": "76232f14bbd70d1c6f98c7cc294a63d34974c9c37c3000e2dcab84a1f9e6f775",
+            "output": "results/E058-regression-9-76232f14bbd7.json",
+            "sha256": "8171c3551a0831ed914868fb156aa5723d9777e3ca39ca273ffa9e72a8964d9e"
+          },
+          {
+            "id": "E058-regression-10",
+            "fingerprint": "21688ee6313950f4d0c1dd760ccea97370a766ee4f61a7b0fdf785a82fdc3b6f",
+            "output": "results/E058-regression-10-21688ee63139.json",
+            "sha256": "10c692be95b6fc8fc9b92cbdafae3b0e3e9173f52ecc59da722f1b3be2622f93"
+          },
+          {
+            "id": "E058-regression-11",
+            "fingerprint": "1f5dc49e640bb299ccd2209998d155eb7a146433d7701bfd225ff02a2ee16a0e",
+            "output": "results/E058-regression-11-1f5dc49e640b.json",
+            "sha256": "feadd27a25c8eb443c1b5bf4eb4e22dd3482ed247e7cd4ba4a832c01ca235d2c"
+          },
+          {
+            "id": "E058-stress-0",
+            "fingerprint": "c2501266c67dfff7a611f81f5957d6639557d232c3932f126f163c6cccb93fe3",
+            "output": "results/E058-stress-0-c2501266c67d.json",
+            "sha256": "c3ef1ccbd07f21c4bc9283a6582959d43e1bd85e16846b706dee59d4c3751130"
+          },
+          {
+            "id": "E058-stress-1",
+            "fingerprint": "85ae3eaa704c8908a6237cc94949b80e9cea247c1cd24d035ea00a580f11b1aa",
+            "output": "results/E058-stress-1-85ae3eaa704c.json",
+            "sha256": "a0b024a85ae0e1b3bf3ee39b5e4af26920027b83816d909fb09d9caae76279ba"
+          },
+          {
+            "id": "E058-stress-2",
+            "fingerprint": "0bab863ec29eb195c4aaa4522ba65ca0cba5852721626e266ca0d3d4955e9b8c",
+            "output": "results/E058-stress-2-0bab863ec29e.json",
+            "sha256": "82872e8e251e46d14fe7afcbd6b7e9bdc6e00e66e432670efa6039bd7bba9fd6"
+          }
+        ],
+        "unknown_sections_searched": 0,
+        "new_decryptions": []
+      }
+    },
+    {
+      "id": "H044",
+      "status": "hybrid_controls_passed_unknown_screen_no_supported_candidate",
+      "claim": "Preserving both independent and constrained fragment-initializer candidates may recover complementary difficult cases.",
+      "basis": "E05817/18 exact with a new regression; E057 and E058 have different failures.",
+      "mechanism": "Frozen full E057 and E058 searches; stable union ranked by unchanged full-text score, explicit leading-F alternatives.",
+      "experiments": [
+        "E060",
+        "E061"
+      ],
+      "result": {
+        "E058_control_gate_passed": false,
+        "E058_controls": [
+          {
+            "kind": "regression",
+            "index": 2,
+            "runes": 729,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.3256776727900625,
+            "truth_score": -2.325677672790065,
+            "output": "results/E058-regression-2-adb6b4c06b9d.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 0,
+            "runes": 729,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.062583069766143,
+            "truth_score": -2.0625830697661423,
+            "output": "results/E058-fresh-0-26c50166af69.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 1,
+            "runes": 729,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.125670723804504,
+            "truth_score": -2.125670723804503,
+            "output": "results/E058-fresh-1-eb72b0565ff3.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 2,
+            "runes": 729,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.2065192380721053,
+            "truth_score": -2.2065192380721093,
+            "output": "results/E058-fresh-2-f15791d6e4b9.json"
+          },
+          {
+            "kind": "regression",
+            "index": 0,
+            "runes": 729,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.186506624485005,
+            "truth_score": -2.186506624485009,
+            "output": "results/E058-regression-0-039d9b9c728e.json"
+          },
+          {
+            "kind": "regression",
+            "index": 1,
+            "runes": 729,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.139828875626344,
+            "truth_score": -2.139828875626345,
+            "output": "results/E058-regression-1-8f476110f700.json"
+          },
+          {
+            "kind": "regression",
+            "index": 3,
+            "runes": 3316,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -2.0847682012053,
+            "truth_score": -2.084768201205296,
+            "output": "results/E058-regression-3-a8944f9f010d.json"
+          },
+          {
+            "kind": "regression",
+            "index": 4,
+            "runes": 3316,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -1.9822432923367723,
+            "truth_score": -1.982243292336776,
+            "output": "results/E058-regression-4-47ae9c77e849.json"
+          },
+          {
+            "kind": "regression",
+            "index": 5,
+            "runes": 3316,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -2.126283587314844,
+            "truth_score": -2.126283587314842,
+            "output": "results/E058-regression-5-d92bf6795400.json"
+          },
+          {
+            "kind": "regression",
+            "index": 6,
+            "runes": 1200,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.1117235727080605,
+            "truth_score": -2.1117235727080597,
+            "output": "results/E058-regression-6-48a29fe2fd5f.json"
+          },
+          {
+            "kind": "regression",
+            "index": 7,
+            "runes": 1200,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.083596815450242,
+            "truth_score": -2.083596815450241,
+            "output": "results/E058-regression-7-d757fd85f975.json"
+          },
+          {
+            "kind": "regression",
+            "index": 8,
+            "runes": 1200,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.1277924252410982,
+            "truth_score": -2.1277924252410982,
+            "output": "results/E058-regression-8-bfbc02e0dce2.json"
+          },
+          {
+            "kind": "regression",
+            "index": 9,
+            "runes": 3316,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 3316,
+            "found_score": -2.1212630814652673,
+            "truth_score": -2.12126308146527,
+            "output": "results/E058-regression-9-76232f14bbd7.json"
+          },
+          {
+            "kind": "regression",
+            "index": 10,
+            "runes": 1200,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 1200,
+            "found_score": -2.0540900882522815,
+            "truth_score": -2.054090088252286,
+            "output": "results/E058-regression-10-21688ee63139.json"
+          },
+          {
+            "kind": "regression",
+            "index": 11,
+            "runes": 1200,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": false,
+              "key_exact": false,
+              "mask_exact": false,
+              "phases_exact": false
+            },
+            "exact": false,
+            "correct_runes": 49,
+            "found_score": -5.742914505431843,
+            "truth_score": -2.318409268878205,
+            "output": "results/E058-regression-11-1f5dc49e640b.json"
+          },
+          {
+            "kind": "stress",
+            "index": 0,
+            "runes": 729,
+            "key_length": 17,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.0579602994196784,
+            "truth_score": -2.057960299419682,
+            "output": "results/E058-stress-0-c2501266c67d.json"
+          },
+          {
+            "kind": "stress",
+            "index": 1,
+            "runes": 729,
+            "key_length": 23,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.1399464481389243,
+            "truth_score": -2.1399464481389243,
+            "output": "results/E058-stress-1-85ae3eaa704c.json"
+          },
+          {
+            "kind": "stress",
+            "index": 2,
+            "runes": 729,
+            "key_length": 31,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "exact": true,
+            "correct_runes": 729,
+            "found_score": -2.1377230240746523,
+            "truth_score": -2.1377230240746505,
+            "output": "results/E058-stress-2-0bab863ec29e.json"
+          }
+        ],
+        "control_gate_passed": true,
+        "controls": [
+          {
+            "kind": "regression",
+            "index": 0,
+            "runes": 729,
+            "key_length": 31,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.3256776727900625,
+            "truth_score": -2.325677672790065,
+            "output": "results/E060-regression-0-780f0ee6fb88.json"
+          },
+          {
+            "kind": "regression",
+            "index": 14,
+            "runes": 1200,
+            "key_length": 31,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.318409268878204,
+            "truth_score": -2.318409268878205,
+            "output": "results/E060-regression-14-9410b7f8d90c.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 0,
+            "runes": 729,
+            "key_length": 17,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.1965645749579252,
+            "truth_score": -2.1965645749579252,
+            "output": "results/E060-fresh-0-7e3bdb6ea67e.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 1,
+            "runes": 729,
+            "key_length": 23,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.188739117721666,
+            "truth_score": -2.188739117721664,
+            "output": "results/E060-fresh-1-9403d7df2681.json"
+          },
+          {
+            "kind": "fresh",
+            "index": 2,
+            "runes": 729,
+            "key_length": 31,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.3190324735052643,
+            "truth_score": -2.3190324735052625,
+            "output": "results/E060-fresh-2-b963882ff223.json"
+          },
+          {
+            "kind": "regression",
+            "index": 1,
+            "runes": 729,
+            "key_length": 17,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.062583069766143,
+            "truth_score": -2.0625830697661423,
+            "output": "results/E060-regression-1-8490e80a315c.json"
+          },
+          {
+            "kind": "regression",
+            "index": 2,
+            "runes": 729,
+            "key_length": 23,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.125670723804504,
+            "truth_score": -2.125670723804503,
+            "output": "results/E060-regression-2-dec4ae225c08.json"
+          },
+          {
+            "kind": "regression",
+            "index": 3,
+            "runes": 729,
+            "key_length": 31,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.2065192380721053,
+            "truth_score": -2.2065192380721093,
+            "output": "results/E060-regression-3-7ca19507743d.json"
+          },
+          {
+            "kind": "regression",
+            "index": 4,
+            "runes": 729,
+            "key_length": 17,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.186506624485005,
+            "truth_score": -2.186506624485009,
+            "output": "results/E060-regression-4-b0e99926ba11.json"
+          },
+          {
+            "kind": "regression",
+            "index": 5,
+            "runes": 729,
+            "key_length": 23,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.139828875626344,
+            "truth_score": -2.139828875626345,
+            "output": "results/E060-regression-5-cd129cf51394.json"
+          },
+          {
+            "kind": "regression",
+            "index": 6,
+            "runes": 3316,
+            "key_length": 17,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 3316,
+            "found_score": -2.0847682012053,
+            "truth_score": -2.084768201205296,
+            "output": "results/E060-regression-6-16c780d24123.json"
+          },
+          {
+            "kind": "regression",
+            "index": 7,
+            "runes": 3316,
+            "key_length": 23,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 3316,
+            "found_score": -1.9822432923367723,
+            "truth_score": -1.982243292336776,
+            "output": "results/E060-regression-7-0450f14bbf47.json"
+          },
+          {
+            "kind": "regression",
+            "index": 8,
+            "runes": 3316,
+            "key_length": 31,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 3316,
+            "found_score": -2.126283587314844,
+            "truth_score": -2.126283587314842,
+            "output": "results/E060-regression-8-63240401ad9b.json"
+          },
+          {
+            "kind": "regression",
+            "index": 9,
+            "runes": 1200,
+            "key_length": 17,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.1117235727080605,
+            "truth_score": -2.1117235727080597,
+            "output": "results/E060-regression-9-8153c2777cc2.json"
+          },
+          {
+            "kind": "regression",
+            "index": 10,
+            "runes": 1200,
+            "key_length": 23,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.083596815450242,
+            "truth_score": -2.083596815450241,
+            "output": "results/E060-regression-10-c98c14c9ecde.json"
+          },
+          {
+            "kind": "regression",
+            "index": 11,
+            "runes": 1200,
+            "key_length": 31,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.1277924252410982,
+            "truth_score": -2.1277924252410982,
+            "output": "results/E060-regression-11-4f834ce7f84a.json"
+          },
+          {
+            "kind": "regression",
+            "index": 12,
+            "runes": 3316,
+            "key_length": 17,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 3316,
+            "found_score": -2.1212630814652673,
+            "truth_score": -2.12126308146527,
+            "output": "results/E060-regression-12-35c763484520.json"
+          },
+          {
+            "kind": "regression",
+            "index": 13,
+            "runes": 1200,
+            "key_length": 23,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 1200,
+            "found_score": -2.0540900882522815,
+            "truth_score": -2.054090088252286,
+            "output": "results/E060-regression-13-3d03abb9f6b2.json"
+          },
+          {
+            "kind": "regression",
+            "index": 15,
+            "runes": 729,
+            "key_length": 17,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.0579602994196784,
+            "truth_score": -2.057960299419682,
+            "output": "results/E060-regression-15-a4b792384822.json"
+          },
+          {
+            "kind": "regression",
+            "index": 16,
+            "runes": 729,
+            "key_length": 23,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.1399464481389243,
+            "truth_score": -2.1399464481389243,
+            "output": "results/E060-regression-16-df79128491b8.json"
+          },
+          {
+            "kind": "regression",
+            "index": 17,
+            "runes": 729,
+            "key_length": 31,
+            "exact": true,
+            "checks": {
+              "plaintext_exact": true,
+              "key_exact": true,
+              "mask_exact": true,
+              "phases_exact": true
+            },
+            "correct_runes": 729,
+            "found_score": -2.1377230240746523,
+            "truth_score": -2.1377230240746505,
+            "output": "results/E060-regression-17-d1b80a4bff2b.json"
+          }
+        ],
+        "hard_control_audit": {
+          "control": "E058-regression-2",
+          "period": 31,
+          "fragments": 12,
+          "page_chains": 3,
+          "interval_F_counts": [
+            3,
+            7,
+            5,
+            1,
+            1,
+            2,
+            7,
+            5,
+            1
+          ],
+          "phase_assignment_reduction_numerator": 26439622160671,
+          "phase_assignment_reduction_denominator": 221184,
+          "phase_assignment_reduction_factor": 119536775.5383346,
+          "exact_unigram_start_count": 0,
+          "exact_bigram_states": 0,
+          "exact_fourgram_states": 0,
+          "exact_final_key_count": 1,
+          "limits": "Descriptive phase-space count at evaluated true period, not a measured runtime speedup or proof of global key search."
+        },
+        "interrupted_budget_charge_seconds": 185.0,
+        "budget_accounted_seconds": 2226.6518867003033,
+        "control_diagnostic_null_score": -5.476413015977107,
+        "unknown": {
+          "interrupted_budget_charge_seconds": 185.0,
+          "experiment": "E061",
+          "sections": [
+            {
+              "section": "LP2-00_02",
+              "score": -5.538401914856178,
+              "runes": 729,
+              "output": "results/E061-section-LP2-00_02-65b1c506145c.json",
+              "key_length": 31,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-03_07",
+              "score": -5.7593270489222395,
+              "runes": 1145,
+              "output": "results/E061-section-LP2-03_07-b2db89ed58ce.json",
+              "key_length": 31,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-08_14",
+              "score": -5.929138366474318,
+              "runes": 1729,
+              "output": "results/E061-section-LP2-08_14-52c70207a292.json",
+              "key_length": 32,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-15_22",
+              "score": -5.961106331987059,
+              "runes": 1903,
+              "output": "results/E061-section-LP2-15_22-3b05e20811bf.json",
+              "key_length": 31,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-23_26",
+              "score": -5.6388261315446,
+              "runes": 1021,
+              "output": "results/E061-section-LP2-23_26-f4c712b9aa79.json",
+              "key_length": 30,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-27_32",
+              "score": -5.843718551882492,
+              "runes": 1433,
+              "output": "results/E061-section-LP2-27_32-93d562aa6775.json",
+              "key_length": 28,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-33_39",
+              "score": -5.940863546738655,
+              "runes": 1680,
+              "output": "results/E061-section-LP2-33_39-624797b8786a.json",
+              "key_length": 31,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-40_53",
+              "score": -6.072220305001499,
+              "runes": 3008,
+              "output": "results/E061-section-LP2-40_53-2b2b9436fcea.json",
+              "key_length": 25,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-40_55",
+              "score": -6.103819581685825,
+              "runes": 3316,
+              "output": "results/E061-section-LP2-40_55-1df3365ba148.json",
+              "key_length": 32,
+              "replicate": 0
+            }
+          ],
+          "nulls": [
+            {
+              "section": "LP2-00_02",
+              "score": -5.497525298572585,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-00-2a30c010bde3.json",
+              "key_length": 30,
+              "replicate": 0
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.545453208819085,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-01-87d532cf127c.json",
+              "key_length": 32,
+              "replicate": 1
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.4565922333553925,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-02-f20ae7ed1b03.json",
+              "key_length": 31,
+              "replicate": 2
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.474330925836879,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-03-2474b962513d.json",
+              "key_length": 31,
+              "replicate": 3
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.555019922378069,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-04-ad459eff8290.json",
+              "key_length": 27,
+              "replicate": 4
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.547850232230694,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-05-778ed652cf45.json",
+              "key_length": 31,
+              "replicate": 5
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.46202637441341,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-06-14e64121ce1b.json",
+              "key_length": 32,
+              "replicate": 6
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.5317946497597505,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-07-19ed9700a6ae.json",
+              "key_length": 31,
+              "replicate": 7
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.514654063282591,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-08-4ebf6b4e7973.json",
+              "key_length": 30,
+              "replicate": 8
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.491604031008272,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-09-338e342dddaa.json",
+              "key_length": 31,
+              "replicate": 9
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.547084045506568,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-10-bb02f8aa37d8.json",
+              "key_length": 32,
+              "replicate": 10
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.474442429240254,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-11-3cbff8b91d32.json",
+              "key_length": 31,
+              "replicate": 11
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.462972554869205,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-12-031f9d1905a1.json",
+              "key_length": 31,
+              "replicate": 12
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.570996610789683,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-13-8659ecc426c5.json",
+              "key_length": 32,
+              "replicate": 13
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.481063621565733,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-14-3d10c9cba2a4.json",
+              "key_length": 32,
+              "replicate": 14
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.530244316648783,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-15-d4593e41a957.json",
+              "key_length": 26,
+              "replicate": 15
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.566899915323776,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-16-9bf42121c731.json",
+              "key_length": 32,
+              "replicate": 16
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.457640126204072,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-17-22054345fb40.json",
+              "key_length": 29,
+              "replicate": 17
+            },
+            {
+              "section": "LP2-00_02",
+              "score": -5.446547635847673,
+              "runes": 729,
+              "output": "results/E061-null-LP2-00_02-18-ae47fe30eb12.json",
+              "key_length": 32,
+              "replicate": 18
+            }
+          ],
+          "selected_section": "LP2-00_02",
+          "observed_score": -5.538401914856178,
+          "exceedances": 13,
+          "raw_p": 0.7,
+          "bonferroni9": 1,
+          "pending_larger_calibration": false,
+          "unique_unknown_rune_pages": 55,
+          "empty_pages_preserved": [
+            "LP2-50"
+          ],
+          "seconds": 1126.543870900292,
+          "successful_tasks": 28,
+          "peak_sampled_bytes": 170770432,
+          "validation_seconds": 173.11329120001756
+        },
+        "validation": {
+          "pool_records_recomputed": 244864,
+          "constraint_feasibility_checks": 125536,
+          "independent_constrained_phase_optima": 1632,
+          "coupled_records_recomputed": 9134,
+          "independent_coupled_optima": 100,
+          "alternative_pairs_recomputed": 15,
+          "independent_pool_phase_optima": 1568,
+          "pinned_previously_validated_branches": 19,
+          "hybrid_union_checks": 28
+        },
+        "tests_passed": 124,
+        "successful_tasks": 69,
+        "seconds": 2041.6518867003033,
+        "peak_sampled_bytes": 170770432,
+        "control_validation_sha256": "9b0ea2c65ffefa825933ff00d524d3346145718266c0c8249d75029397210d83",
+        "unknown_validation_sha256": "6219550231cfbf268d3f4f91c8b911f2c64897010dc46e0cbbe067bdf3cce29b",
+        "new_decryptions": []
+      },
+      "limits": "21 tested blind controls exact; no guarantee for every key/mask. Coarse selected-group null screening is not a decryption."
+    },
+    {
+      "id": "H045",
+      "status": "controls_passed_page_local_unknown_screen_negative",
+      "claim": "Plaintext-autokey seeds longer than the tested4..12 range may be recoverable using recurrence-constrained language initialization.",
+      "basis": "E017 already implements affine-chain trigram factors and cyclic beam search for4..12-rune seeds. The13..32 range remains outside that completed search; the affine recurrence itself is not a new discovery.",
+      "mechanism": "Reuse and independently check E017 affine_chain; benchmark a bounded unary initialization with coupled-factor refinement versus a fixed budget of existing cyclic-beam starts for13..32 seeds. Treat arbitrary F omissions as a separately calibrated extension.",
+      "success_criterion": "Fixed seeds, finite length/sign families, fresh blind controls and shorter regressions; independent scalar recurrence/re-encryption and full null optimizer before unknown claims.",
+      "limits": "Finite heuristic search, only no-skip page-local rule and200..729 rune control lengths. Null-generator endpoint mismatch recorded and corrected in a separate preserved run. Original E017 recurrence is reused, not novel.",
+      "experiments": [
+        "E062",
+        "E063"
+      ],
+      "result": {
+        "controls_exact": 12,
+        "controls_total": 12,
+        "unknown_pages": 46,
+        "exceedances": 6,
+        "raw_p": 0.35,
+        "bonferroni46": 1,
+        "summary": "results/phase22_summary.json"
+      }
+    },
+    {
+      "id": "H046",
+      "status": "long_controls_passed_continuous_unknown_screen_negative",
+      "claim": "A plaintext-feedback stream might continue across original page boundaries rather than restarting on each page.",
+      "basis": "E063 validates and screens page-local4..32 seeds; it does not test cross-page continuation. Existing section groupings are unverified cipher-boundary hypotheses.",
+      "mechanism": "Apply unchanged autokey recurrence to concatenated existing section rune streams, preserve source page spans and empty LP2-50. No language or key reset between pages.",
+      "success_criterion": "Prospective bounds, fresh-key long controls and shorter regressions, independent original-source and queue replay; exact controls before unknown scan, full optimizer nulls and correction across groups.",
+      "limits": "Continuous no-skip stream,4..32 seed, four sign pairs,10 unauthenticated overlapping groupings. Heuristic screen only; numeric LP2-50 is preserved, not decrypted.",
+      "experiments": [
+        "E064",
+        "E065"
+      ],
+      "result": {
+        "new_controls_exact": 4,
+        "new_controls_total": 4,
+        "prior_exact_controls_reused": 12,
+        "unknown_sections": 10,
+        "unknown_rune_pages": 55,
+        "exceedances": 14,
+        "raw_p": 0.75,
+        "bonferroni10": 1,
+        "summary": "results/phase23_summary.json"
+      }
+    },
+    {
+      "id": "H047",
+      "status": "controls_passed_unknown_screen_negative",
+      "claim": "Plaintext feedback at delays4..32 might use a nonzero coefficient other than+1/-1.",
+      "basis": "E062/E065 use feedback coefficient+1/-1. E020 covers general multipliers at delay1; E023 addresses shorter delays. Those prior results and affine-chain algebra are not new discoveries.",
+      "mechanism": "P_i=a*C_i+b*P_(i-m) modulo29 with a in{+1,-1}, b in1..28, m4..32; no skipped runes. Compute modular residue coefficients and test a fixed bounded family-ranking stage before expensive refinement.",
+      "success_criterion": "Prospective parameters/seeds/budget; source-excluded fresh-key controls with b outside{1,28}, old-sign regressions reused where identical, independent queue/re-encryption checks and full optimizer nulls before unknown claims.",
+      "limits": "Heuristic top4 of56 coefficient pairs per period. Controls cover b2/7/14/27 and1/28, not all possible keys or texts. Cipher multiplier remains+1/-1; no skips or unknown boundary search.",
+      "experiments": [
+        "E066",
+        "E067"
+      ],
+      "result": {
+        "controls_exact": 16,
+        "controls_total": 16,
+        "fresh_keys_general_coefficients": 12,
+        "old_control_inputs_rerun_changed_search": 4,
+        "unknown_page_hypotheses": 46,
+        "unknown_group_hypotheses": 10,
+        "unknown_rune_pages": 55,
+        "exceedances": 2,
+        "raw_p": 0.15,
+        "bonferroni56": 1,
+        "summary": "results/phase24_summary.json"
+      }
+    },
+    {
+      "id": "H048",
+      "status": "controls_passed_unknown_screen_negative",
+      "claim": "The ciphertext coefficient may also differ from+1/-1 in a delayed plaintext-feedback recurrence.",
+      "basis": "E066/E067 generalize only feedback b; E020 short-delay general multipliers remain prior work.",
+      "mechanism": "P_i=a*C_i+b*P_(i-m) mod29, a,b1..28, delays4..32. Each delay has784 coefficient pairs; bounded screened search needs new calibration.",
+      "success_criterion": "Preregister finite runtime, memory, seeds and family retention; fresh-key controls with a outside1/28 and old-pair regression; independent modular queue and full-null verification before unknown claims.",
+      "limits": "Top8 of784 coefficient pairs per period; no guarantee for every key/text. No affine constant, omitted symbols or unknown boundary search. Coarse19-null screen followed by99 fresh nulls, separately evaluated.",
+      "experiments": [
+        "E068",
+        "E069",
+        "E070"
+      ],
+      "interim_result": {
+        "controls_exact": 16,
+        "unknown_inputs": 56,
+        "initial_nulls": 19,
+        "initial_exceedances": 0,
+        "checkpoint": "checkpoints/phase25_interim_01.json"
+      },
+      "result": {
+        "controls_exact": 16,
+        "controls_total": 16,
+        "fresh_general_keys": 12,
+        "old_inputs_changed_search": 4,
+        "unknown_page_hypotheses": 46,
+        "unknown_group_hypotheses": 10,
+        "unknown_rune_pages": 55,
+        "initial_exceedances": 0,
+        "initial_nulls": 19,
+        "fresh_exceedances": 5,
+        "fresh_nulls": 99,
+        "raw_p": 0.06,
+        "bonferroni56": 1,
+        "summary": "results/phase25_summary.json"
+      }
+    },
+    {
+      "id": "H049",
+      "status": "controls_passed_unknown_screen_negative",
+      "claim": "A nonzero additive constant may occur in delayed affine plaintext feedback.",
+      "basis": "E068/E069 have a,b arbitrary units but c=0; H030 tested a constant only at delay1. Affine shift algebra is not a new discovery.",
+      "mechanism": "P_i=a*C_i+b*P_(i-m)+c mod29, a,b1..28,c0..28,m4..32. For b!=1 a uniform plaintext shift can remove c; b=1 requires separate handling.",
+      "success_criterion": "Prove and independently test reduction, bound runtime/memory and freeze screening before fresh-key/constant controls, b=1 edge cases, old-pair regressions and full nulls.",
+      "limits": "Top8 of22736 families per period; finite heuristic, no exclusions of all keys or texts. No omissions or hidden boundaries. Coarse19-null screen cannot establish selection-corrected significance.",
+      "experiments": [
+        "E071",
+        "E072",
+        "E073"
+      ],
+      "result": {
+        "controls_exact": 16,
+        "controls_total": 16,
+        "unknown_inputs": 56,
+        "exceedances": 3,
+        "nulls": 19,
+        "raw_p": 0.2,
+        "bonferroni56": 1,
+        "summary": "results/phase26_summary.json"
+      }
+    },
+    {
+      "id": "H050",
+      "status": "controls_passed_unknown_screen_negative",
+      "claim": "Delay2 plaintext feedback may include a nonzero additive constant.",
+      "basis": "E025 covers delay2,c0; E034 covers delay1; E072/E073 and E075/E076 cover delays4..32 and3 with constants. This is an untested gap, not positive cipher evidence.",
+      "mechanism": "P_i=a*C_i+b*P_(i-2)+c mod29,a,b1..28,c1..28. Benchmark bounded coefficient screening plus exact841 plaintext prefixes.",
+      "success_criterion": "Prospective bounds/seeds, fresh short/long controls and c0 regressions; independent full-prefix and source verification, then matched full-search nulls.",
+      "limits": "Top128 of22736 families, exact841 prefixes only within retained families. c0 included for matched regressions; c1..28 is new target. No omitted symbols/hidden boundaries. Negative result does not exclude full cipher class.",
+      "experiments": [
+        "E077",
+        "E078",
+        "E079"
+      ],
+      "result": {
+        "controls_exact": 16,
+        "unknown_pages": 55,
+        "exceedances": 10,
+        "nulls": 19,
+        "raw_p": 0.55,
+        "bonferroni55": 1,
+        "summary": "results/phase28_summary.json"
+      }
+    },
+    {
+      "id": "H051",
+      "status": "controls_passed_unknown_screen_negative",
+      "claim": "The fixed terminated-word substitution objective may permit direct solving on inputs of at least200runes.",
+      "basis": "E081 all5 controls>=200runes exact; one67-rune rare-word error remains. This post-result observation motivates a separate prospective test, not a passed gate or cipher evidence.",
+      "mechanism": "Same general29-symbol bijection and E081 frozen search/model; original lexical boundaries, restricted minimum length200.",
+      "success_criterion": "Preregister12 fresh-key/source-window controls across200/300/500/729runes; require every plaintext exact before separately registering unknown long-page search with matched optimizer nulls and correction.",
+      "limits": "All12 fresh-window controls exact;46pages>=200runes searched under fixed heuristic,19 full-search nulls. No exhaustive29! exclusion, no short-page inference; E081 failure not relabeled.",
+      "experiments": [
+        "E083",
+        "E084"
+      ],
+      "result": {
+        "controls_exact": 12,
+        "unknown_pages": 46,
+        "exceedances": 15,
+        "nulls": 19,
+        "raw_p": 0.8,
+        "bonferroni46": 1,
+        "summary": "results/phase30_summary.json"
+      }
+    },
+    {
+      "id": "H052",
+      "status": "fixed_iv_controls_transported_unknown_screen_negative",
+      "claim": "A general rune substitution of modular ciphertext differences may expose plaintext.",
+      "basis": "E015 tested affine substitutions of first differences only and explicitly excluded arbitrary substitutions. E083 supplies a prospective long-text capability check for a general substitution solver. Neither observation is evidence of an actual LP cipher.",
+      "mechanism": "P_i=S((C_i-C_(i-1)) mod29), S a29-symbol bijection. Initial-value/page-edge policy must be fixed before experiment. Inverse is modular cumulative addition after S inverse.",
+      "success_criterion": "Source-preserving initial-value policy, reversible positive controls, independent score/map/integration audit, bounded search and full matched nulls corrected for page/model selection.",
+      "limits": "IV0 only; exact transport of prior E083 capability, not new independent controls.46pages>=200runes,19 original-C-space full-search nulls. Finite heuristic, no29! exclusion, unknown nonzero IVs and short pages remain untested.",
+      "experiments": [
+        "E085",
+        "E086"
+      ],
+      "result": {
+        "reused_controls_exact": 12,
+        "new_control_optimizer_runs": 0,
+        "unknown_pages": 46,
+        "exceedances": 9,
+        "nulls": 19,
+        "raw_p": 0.5,
+        "bonferroni46": 1,
+        "summary": "results/phase31_summary.json"
+      }
+    },
+    {
+      "id": "H053",
+      "status": "queued_untested",
+      "claim": "An unknown page-initial value may affect difference-substitution inference through the first plaintext rune.",
+      "basis": "E086 fixedIV0. For fixed S, changingIV changes only D0 and therefore only P0; all29 first-rune values are possible. This algebraic gap is not evidence of a cipher.",
+      "mechanism": "P_i=S((C_i-C_(i-1))mod29), C_-1=IV in0..28. Profile all29 IVs per candidate S with explicit first-word scoring and source-preserving output.",
+      "success_criterion": "Independent literal29-IV score checks, bounded benchmark, prospectively frozen fresh control criteria including first-rune identifiability/ambiguity, then matched full-search nulls and correction.",
+      "limits": "Untested optimizer; no discarded first rune, no retrospective loosening of E086. Do not equate best first-letter likelihood with cryptographic identification."
+    }
+  ],
+  "updated_at": "2026-11-02T16:57:03.709216+00:00",
+  "next_queue": [
+    {
+      "id": "H053",
+      "priority": 1,
+      "task": "Benchmark exact profiling of all29 unknown initial values per candidate permutation: only first plaintext rune changes. Freeze model/initializer and fresh control criteria before testing unknown pages; explicitly retain first-rune ambiguity and no omitted source rune. Do not claim E086 covered nonzero IVs."
+    },
+    {
+      "id": "H031",
+      "priority": 2,
+      "task": "Short-page word-frequency counterexample remains unresolved; do not extrapolate long-page capability."
+    }
+  ]
+}

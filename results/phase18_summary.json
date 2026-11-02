@@ -1,0 +1,404 @@
+{
+  "controls": [
+    {
+      "kind": "fresh",
+      "chapter": "X",
+      "key_length": 17,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.10464053934792,
+      "truth_score": -2.104640539347919
+    },
+    {
+      "kind": "fresh",
+      "chapter": "XI",
+      "key_length": 23,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.075758079910419,
+      "truth_score": -2.0757580799104183
+    },
+    {
+      "kind": "fresh",
+      "chapter": "XII",
+      "key_length": 31,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.1192074572298853,
+      "truth_score": -2.119207457229886
+    },
+    {
+      "kind": "regression",
+      "chapter": "X",
+      "key_length": 17,
+      "runes": 3316,
+      "exact": true,
+      "correct_runes": 3316,
+      "found_score": -2.109301384596514,
+      "truth_score": -2.1093013845965163
+    },
+    {
+      "kind": "regression",
+      "chapter": "XI",
+      "key_length": 23,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.0462513527124586,
+      "truth_score": -2.0462513527124626
+    },
+    {
+      "kind": "regression",
+      "chapter": "XII",
+      "key_length": 31,
+      "runes": 1200,
+      "exact": true,
+      "correct_runes": 1200,
+      "found_score": -2.3098243008669916,
+      "truth_score": -2.309824300866992
+    }
+  ],
+  "control_gate_passed": true,
+  "control_key_stage_audit": [
+    {
+      "kind": "fresh",
+      "chapter": "X",
+      "exact_unigram_start_indices": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        9,
+        13,
+        14,
+        15
+      ],
+      "exact_bigram_pool_states": 5,
+      "exact_fourgram_pool_states": 8,
+      "exact_final_key_count": 1
+    },
+    {
+      "kind": "fresh",
+      "chapter": "XI",
+      "exact_unigram_start_indices": [],
+      "exact_bigram_pool_states": 3,
+      "exact_fourgram_pool_states": 4,
+      "exact_final_key_count": 1
+    },
+    {
+      "kind": "fresh",
+      "chapter": "XII",
+      "exact_unigram_start_indices": [],
+      "exact_bigram_pool_states": 1,
+      "exact_fourgram_pool_states": 4,
+      "exact_final_key_count": 1
+    },
+    {
+      "kind": "regression",
+      "chapter": "X",
+      "exact_unigram_start_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15
+      ],
+      "exact_bigram_pool_states": 7,
+      "exact_fourgram_pool_states": 8,
+      "exact_final_key_count": 1
+    },
+    {
+      "kind": "regression",
+      "chapter": "XI",
+      "exact_unigram_start_indices": [
+        1,
+        6,
+        10,
+        11,
+        14
+      ],
+      "exact_bigram_pool_states": 4,
+      "exact_fourgram_pool_states": 6,
+      "exact_final_key_count": 1
+    },
+    {
+      "kind": "regression",
+      "chapter": "XII",
+      "exact_unigram_start_indices": [],
+      "exact_bigram_pool_states": 0,
+      "exact_fourgram_pool_states": 0,
+      "exact_final_key_count": 1
+    }
+  ],
+  "control_diagnostic_null_score": -5.8426284471777485,
+  "unknown": {
+    "experiment": "E053",
+    "sections": [
+      {
+        "section": "LP2-00_02",
+        "score": -5.629977549487197,
+        "runes": 729,
+        "output": "results/E053-section-LP2-00_02-d2654871c711.json",
+        "key_length": 29,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-03_07",
+        "score": -5.795489735354985,
+        "runes": 1145,
+        "output": "results/E053-section-LP2-03_07-8a3d55575ea7.json",
+        "key_length": 32,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-08_14",
+        "score": -6.04612902429375,
+        "runes": 1729,
+        "output": "results/E053-section-LP2-08_14-a0a6fe00a103.json",
+        "key_length": 26,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-15_22",
+        "score": -6.041130079468119,
+        "runes": 1903,
+        "output": "results/E053-section-LP2-15_22-fccc9359adc3.json",
+        "key_length": 31,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-23_26",
+        "score": -5.811430177949721,
+        "runes": 1021,
+        "output": "results/E053-section-LP2-23_26-d328b724535e.json",
+        "key_length": 30,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-27_32",
+        "score": -5.93318055111166,
+        "runes": 1433,
+        "output": "results/E053-section-LP2-27_32-8d7e34720b87.json",
+        "key_length": 31,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-33_39",
+        "score": -6.001530451823738,
+        "runes": 1680,
+        "output": "results/E053-section-LP2-33_39-b009169a9729.json",
+        "key_length": 32,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-40_53",
+        "score": -6.186528366887316,
+        "runes": 3008,
+        "output": "results/E053-section-LP2-40_53-7be939bcc1fa.json",
+        "key_length": 27,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-40_55",
+        "score": -6.199600935588203,
+        "runes": 3316,
+        "output": "results/E053-section-LP2-40_55-b80831e1f6f1.json",
+        "key_length": 31,
+        "replicate": 0
+      }
+    ],
+    "nulls": [
+      {
+        "section": "LP2-00_02",
+        "score": -5.602585252566434,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-00-45a2420aac47.json",
+        "key_length": 32,
+        "replicate": 0
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.621097987651064,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-01-be08917844ba.json",
+        "key_length": 32,
+        "replicate": 1
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.555280509437416,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-02-3469f0708e0f.json",
+        "key_length": 30,
+        "replicate": 2
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.592432820880534,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-03-8254b7d340dd.json",
+        "key_length": 28,
+        "replicate": 3
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.624879649942079,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-04-8e9c2907b175.json",
+        "key_length": 32,
+        "replicate": 4
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.630537560042975,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-05-d584401198fa.json",
+        "key_length": 32,
+        "replicate": 5
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.578471144294574,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-06-317480fab8f1.json",
+        "key_length": 31,
+        "replicate": 6
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.68251178584492,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-07-c5065fd78675.json",
+        "key_length": 31,
+        "replicate": 7
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.606672630316343,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-08-978b58d51239.json",
+        "key_length": 32,
+        "replicate": 8
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.630048202511448,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-09-7312dc99ce2e.json",
+        "key_length": 32,
+        "replicate": 9
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.67172945892514,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-10-642548306089.json",
+        "key_length": 30,
+        "replicate": 10
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.631699376338379,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-11-5252bd728138.json",
+        "key_length": 28,
+        "replicate": 11
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.623820228456464,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-12-edc4842585d8.json",
+        "key_length": 31,
+        "replicate": 12
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.6504619105812255,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-13-05f822bb5b91.json",
+        "key_length": 31,
+        "replicate": 13
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.6888337538800045,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-14-e3189fad9f63.json",
+        "key_length": 32,
+        "replicate": 14
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.629274030761408,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-15-7d1b6e740ab3.json",
+        "key_length": 32,
+        "replicate": 15
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.680984809429882,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-16-7ecea696e74a.json",
+        "key_length": 26,
+        "replicate": 16
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.61419196618039,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-17-09dea31d184f.json",
+        "key_length": 31,
+        "replicate": 17
+      },
+      {
+        "section": "LP2-00_02",
+        "score": -5.585377881972242,
+        "runes": 729,
+        "output": "results/E053-null-LP2-00_02-18-1b58bee02a8c.json",
+        "key_length": 30,
+        "replicate": 18
+      }
+    ],
+    "selected_section": "LP2-00_02",
+    "observed_score": -5.629977549487197,
+    "exceedances": 11,
+    "raw_p": 0.6,
+    "bonferroni9": 1,
+    "pending_larger_calibration": false,
+    "unique_unknown_rune_pages": 55,
+    "empty_pages_preserved": [
+      "LP2-50"
+    ],
+    "seconds": 377.18333490006626,
+    "successful_tasks": 28,
+    "peak_sampled_bytes": 123273216,
+    "validation_seconds": 59.23618140001781
+  },
+  "validation": {
+    "pool_records_recomputed": 36960,
+    "independent_pool_phase_optima": 1120,
+    "stream_records_recomputed": 3266,
+    "independent_stream_optima": 35
+  },
+  "tests_passed": 111,
+  "successful_tasks": 35,
+  "seconds": 494.1289425000432,
+  "peak_sampled_bytes": 123572224,
+  "control_validation_sha256": "22bbe79b72e32a3c4838a0c90f6ac0c10467c9e0d7e57cd228b7fd95ed98340d",
+  "unknown_validation_sha256": "acfdfc587aa291303d8cd8591ed80278becd807931cb05aa0faf7f2392e77df8",
+  "new_decryptions": []
+}

@@ -1,0 +1,33 @@
+{
+  "registered_at": "2026-10-19T17:37:59.080176+00:00",
+  "experiment": "E022",
+  "purpose": "Reproduce the pinned source base60 interpretation and identify exact token/value discrepancies; no decryption claim.",
+  "pages": [
+    "LP2-49",
+    "LP2-50",
+    "LP2-51"
+  ],
+  "expected_rows": [
+    10,
+    13,
+    9
+  ],
+  "columns": 8,
+  "sources": [
+    "relikd canonical preserved layout",
+    "iddqd master",
+    "scream314 markdown base60 and decimal blocks"
+  ],
+  "alphabet": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwx",
+  "uncertainty_policy": "Retain all token alternatives and values, no canonical correction without per-glyph source review.",
+  "positive_controls": [
+    "00=0",
+    "0x=59",
+    "10=60",
+    "4F=255"
+  ],
+  "null": "Not applicable to exact deterministic data comparison.",
+  "budget_seconds": 30,
+  "memory": "three256-cell tables",
+  "phase_budget_seconds": 900
+}

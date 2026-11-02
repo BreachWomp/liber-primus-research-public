@@ -1,0 +1,232 @@
+{
+  "created_at": "2026-10-20T09:17:01.804533+00:00",
+  "selected_page": "LP2-49",
+  "top": {
+    "score": -5.015058390620593,
+    "plaintext_runes": "ᛏᚩᚩᛚᚻᛠᛚᛋᚪᚾᛁᛈᚠᛖᛒᚢᚠᛁᚻᚩᛞᛖᚫᛖᚾᚾᚦᛝᛞᛞᛋᚩᛚᛋᛈᚩᛁᚾᚦᛏᛁᚢᛠᚱᛞᛁᛈᛗᛇᛁᚦᚩᛒᚷᚻᛝᚩᚹᚣᛟᚣᚳᚾᚠ",
+    "transliteration": "TOOLHEALSANIPFEBUFIHODEAEENNTHNGDDSOLSPOINTHTIUEARDIPMEOITHOBGHNGOWYOEYCNF",
+    "recipe": {
+      "a": 28,
+      "b": 0,
+      "c": 22,
+      "d": 13,
+      "iv": [
+        27,
+        18
+      ],
+      "unrecovered_prefix_runes": 2,
+      "F_policy": "none"
+    },
+    "reencryption_verified": true
+  },
+  "unknown_pages": 55,
+  "rules_per_page": 659340,
+  "unknown_rules_evaluated": 36263700,
+  "raw_p": 0.35,
+  "bonferroni55": 1,
+  "null_exceedances": 6,
+  "null_replicates": 19,
+  "pending_larger_calibration": false,
+  "controls_exact": 3,
+  "candidate_records_recomputed": 193,
+  "benchmark_scores_recomputed": 19320,
+  "edge_gate_passed": false,
+  "benchmark_aggregates": [
+    {
+      "origin": "heldout",
+      "condition": "apostrophe",
+      "region": "apostrophe_word",
+      "chapter": "all",
+      "comparisons": 460,
+      "wins": [
+        448,
+        452
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.9739130434782609,
+        0.9826086956521739
+      ]
+    },
+    {
+      "origin": "heldout",
+      "condition": "apostrophe",
+      "region": "other",
+      "chapter": "all",
+      "comparisons": 460,
+      "wins": [
+        450,
+        450
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.9782608695652174,
+        0.9782608695652174
+      ]
+    },
+    {
+      "origin": "heldout",
+      "condition": "clipped",
+      "region": "edge",
+      "chapter": "all",
+      "comparisons": 1240,
+      "wins": [
+        995,
+        1030
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.8024193548387096,
+        0.8306451612903226
+      ]
+    },
+    {
+      "origin": "heldout",
+      "condition": "clipped",
+      "region": "interior",
+      "chapter": "all",
+      "comparisons": 1240,
+      "wins": [
+        1222,
+        1222
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.9854838709677419,
+        0.9854838709677419
+      ]
+    },
+    {
+      "origin": "heldout",
+      "condition": "intact",
+      "region": "edge",
+      "chapter": "all",
+      "comparisons": 1240,
+      "wins": [
+        1229,
+        1203
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.9911290322580645,
+        0.9701612903225807
+      ]
+    },
+    {
+      "origin": "heldout",
+      "condition": "intact",
+      "region": "interior",
+      "chapter": "all",
+      "comparisons": 1240,
+      "wins": [
+        1221,
+        1221
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.9846774193548387,
+        0.9846774193548387
+      ]
+    },
+    {
+      "origin": "known_control",
+      "condition": "clipped",
+      "region": "edge",
+      "chapter": "all",
+      "comparisons": 120,
+      "wins": [
+        92,
+        95
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.7666666666666667,
+        0.7916666666666666
+      ]
+    },
+    {
+      "origin": "known_control",
+      "condition": "clipped",
+      "region": "interior",
+      "chapter": "all",
+      "comparisons": 120,
+      "wins": [
+        120,
+        120
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "origin": "known_control",
+      "condition": "intact",
+      "region": "edge",
+      "chapter": "all",
+      "comparisons": 160,
+      "wins": [
+        153,
+        149
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.95625,
+        0.93125
+      ]
+    },
+    {
+      "origin": "known_control",
+      "condition": "intact",
+      "region": "interior",
+      "chapter": "all",
+      "comparisons": 160,
+      "wins": [
+        158,
+        158
+      ],
+      "ties": [
+        0,
+        0
+      ],
+      "win_rates": [
+        0.9875,
+        0.9875
+      ]
+    }
+  ],
+  "tests_passed": 84,
+  "successful_tasks": 78,
+  "seconds": 347.3776854002208,
+  "attack_seconds": 343.8444223002589,
+  "provenance_followup": "Deferred at explicit user request: focus direct cryptanalysis; existing source audit retained.",
+  "new_decryptions": []
+}

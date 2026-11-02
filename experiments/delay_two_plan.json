@@ -1,0 +1,22 @@
+{
+  "hypothesis": "H050",
+  "mechanism": "P_i=a*C_i+b*P_(i-2)+c mod29; a,b1..28,c0..28, no skips or resets. Primary new target is c1..28; c0 retained for regression and identical search across controls and unknowns. E025 c0 used a different model/domain, so this is not an unchanged rerun.",
+  "screen": "Rank all22736 a,b,c families by rounded9-decimal unigram maxima, stable lexicographic ties; retain128. Heuristic coefficient screening. No adapting retention after controls.",
+  "exact_stage": "All841 plaintext prefixes per retained family, unchanged external fourgram model, streaming affine chain. Stable raw score ties, top3 per family then top3 distinct plaintexts. Store complete score-vector SHA256.107648 prefixes per input.",
+  "benchmark": {
+    "experiment": "E077",
+    "validation": "Random13-rune cipher Random3301077; independent literal scalar scores of all841 prefixes for families(7,1,19),(14,28,0),(2,15,9); default_rng3301077 normal score tables, max error<1e-9.",
+    "pilot": "Uniform277-rune cipher Random3303077, real model; lexicographically first256 families, all841 prefixes. Report linear estimate of22736 families and55 pages, explicitly not a full-grid run. This pilot does not alter the frozen128-family search.",
+    "throughput": "Uniform3316-rune cipher Random3302077, complete128-family search. Gate<120seconds and scalar audit passes."
+  },
+  "controls": {
+    "experiment": "E078",
+    "fresh": "12 fresh length2 keys Random3301078+index. E068 source index%3 for indices0..8,3+index%3 for9..11; truncate to66,95,200,300 by index//3. a=(2,7,14,27)[index%4],b=(1,3,15,28)[index%4],c=(5*index+1)%28+1.",
+    "regression": "Four fresh length2 keys on E068 plaintext inputs0,3,6,11, lengths200,300,729,3316; sign pairs(1,1),(1,28),(28,1),(28,28),c0. Text previously inspected, excluded from training, partly overlapping; not16 independent unseen texts.",
+    "null": "One diagnostic matched interior shuffle of control5, Random3302078, preserve endpoints/counts/doublets,100000 proposal cap; no p-value.",
+    "gate": "All16 exact plaintext,key,a,b,c and retained true family; separate queue implementation verifies every prefix score and source before unknown scan. Run all controls even on failure."
+  },
+  "unknown": "E079 preregister only after independently passing controls:55 individual rune pages, preserve numericLP2-50; selected-page19 matched full-search nulls and Bonferroni55. Zero exceedances requires separately registered larger calibration.",
+  "bounds": {"process_seconds":180,"watchdog_seconds":185,"memory_ceiling_mib":768,"workers":1,"phase_seconds":1800},
+  "limits": "128 of22736 families only; exact prefixes do not exclude discarded22608 families. English prose model, no omissions or hidden boundaries, no community claims."
+}

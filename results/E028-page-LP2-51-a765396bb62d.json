@@ -1,0 +1,99 @@
+{
+  "experiment": "E028-boundary-selective",
+  "status": "completed",
+  "parameters": {
+    "mode": "page",
+    "page": "LP2-51",
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "page": "LP2-51",
+  "ciphertext_runes": "ᚹᚹᛈᚠᛡᛚᛉᛒᚾᚳᛗᚾᚱᛗᚻᚦᚫᛞᛄᛒᛡᚫᛇᚹᛗᚢᚪᛈᛡᛈᛁᛄᚪᚢᚾᛠᛖᛞᛗᚪᛏᛟᛗᛋᛞᛝᚷᛚᛋᛞᛝᛟᛋᛄᛞᛚᛟᚠᛄᚫᚠᚪᛝᛟᚣᛈᚣᚩᛒᚷᚳᛖᛏᚹᚪᛋᛒᛗᛠᚣᛇᛗᚫᛚᚱᚹᛇᛄᛒᛈᛚᚠ",
+  "segment_ends": [
+    3,
+    9,
+    14,
+    19,
+    22,
+    26,
+    29,
+    32,
+    40,
+    43,
+    51,
+    52,
+    55,
+    62,
+    66,
+    74,
+    77,
+    85,
+    89,
+    92
+  ],
+  "top": [
+    {
+      "score": -5.8996303499696685,
+      "plaintext_runes": "ᚱᛡᚠᛖᛗᚫᚪᛒᛡᚹᛞᚹᚳᚹᚣᚱᛋᚪᛞᚳᚩᚱᚢᛚᚾᛝᚦᚣᛄᚻᛏᚩᛁᛏᚫᛏᚱᚪᚩᚩᛖᛏᚹᛖᚪᛈᛠᚩᚢᚻᚣᚷᛗᚱᛚᚹᛗᛋᛋᚪᛏᚩᚣᛞᚠᚢᛈᚹᛖᚱᛒᛗᚦᚻᛋᛖᚳᚾᚩᛖᛒᚢᚢᛋᛞᚠᛋᚳᚳᚷᚩᚩ",
+      "transliteration": "RIAFEMAEABIAWDWCWYRSADCORULNNGTHYJHTOITAETRAOOETWEAPEAOUHYGMRLWMSSATOYDFUPWERBMTHHSECNOEBUUSDFSCCGOO",
+      "recipe": {
+        "family": "integer_totient",
+        "cipher_sign": -1,
+        "key_sign": -1,
+        "start": 37,
+        "skip_positions": []
+      },
+      "replay_verified": true,
+      "transitions": 27778,
+      "max_states": 1028
+    },
+    {
+      "score": -5.957391459999132,
+      "plaintext_runes": "ᚢᛚᚪᚠᚩᚹᚣᛡᛋᚳᛈᚪᛈᛟᛖᛁᛞᛈᛚᛚᚪᛉᛖᚾᛋᛚᛇᚪᚣᚦᛁᚾᛖᛖᚪᚻᛞᚣᛖᛄᚢᚢᛟᛇᛉᚱᚠᚱᛉᛖᛉᛄᛡᛋᛞᛖᛉᚠᛚᚪᚠᛝᛉᛈᛈᛞᚪᛖᚪᚢᛞᚩᚪᚹᛚᚩᚢᛖᛞᛋᛠᚦᚦᚪᚦᚪᚾᚦᚱᛡᛁᛋ",
+      "transliteration": "ULAFOWYIASCPAPOEEIDPLLAXENSLEOAYTHINEEAHDYEJUUOEEOXRFRXEXJIASDEXFLAFNGXPPDAEAUDOAWLOUEDSEATHTHATHANTHRIAIS",
+      "recipe": {
+        "family": "prime_totient",
+        "cipher_sign": 1,
+        "key_sign": -1,
+        "start": 176,
+        "skip_positions": [
+          3,
+          57,
+          60
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 27758,
+      "max_states": 1028
+    },
+    {
+      "score": -6.032422395543448,
+      "plaintext_runes": "ᛖᚦᛖᚠᚣᚳᚫᚠᛚᚠᚪᚻᛖᚢᛚᛈᛚᛠᛁᚦᚾᚻᛞᚦᚪᚠᚾᚪᛁᚪᚳᛏᛞᛋᛚᛄᚠᛖᚪᛞᚢᚱᚦᚣᛖᚣᚳᚳᚣᚷᚩᛒᛚᛁᚻᚦᚳᛄᚷᚢᛠᚾᚩᚳᚻᚻᚦᚦᚦᛒᛒᚠᛄᛇᛞᚠᛠᚦᛁᛝᛒᛖᛁᚦᛏᛖᚹᛏᛏᛡᚦᚠ",
+      "transliteration": "ETHEFYCAEFLFAHEULPLEAITHNHDTHAFNAIACTDSLJFEADURTHYEYCCYGOBLIHTHCJGUEANOCHHTHTHTHBBFJEODFEATHINGBEITHTEWTTIATHF",
+      "recipe": {
+        "family": "vigenere",
+        "cipher_sign": 1,
+        "key_sign": -1,
+        "key_indices": [
+          1,
+          15,
+          18,
+          17,
+          18,
+          5,
+          24
+        ],
+        "start": 4,
+        "skip_positions": [
+          3,
+          91
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 756,
+      "max_states": 28
+    }
+  ],
+  "key_sign_tasks": 1536,
+  "wall_seconds": 4.762716500001261
+}

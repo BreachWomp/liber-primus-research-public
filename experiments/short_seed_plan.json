@@ -1,0 +1,17 @@
+{
+  "registered_at": "2026-10-19T09:33:44.781274+00:00",
+  "experiment": "E014",
+  "hypothesis": "Unknown short1..3rune plaintext-autokey seeds can decrypt a page even when absent from the word catalog.",
+  "grid": "All29+841+24389seeds, all55pages, foursigns, none/allFinterruptions; forward feedback",
+  "null": {
+    "replicates": 39,
+    "seed": 3301014,
+    "selection": "highest scoring page after full search",
+    "model": "exact counts and doublets conditional shuffle",
+    "correction": "full search each replicate, Bonferroni55"
+  },
+  "control": "LP1circumference reencrypted using hiddenseed[7,11,23]; excluded from model; require exact winning text for a recovery gate.",
+  "timeout_seconds": 180,
+  "memory": "1024 plaintext rows per chunk; fixed29^3scoretable",
+  "enumeration": "All initial plaintext tuples map bijectively to seed keys; derive affine residue chains to evaluate in bounded arrays."
+}

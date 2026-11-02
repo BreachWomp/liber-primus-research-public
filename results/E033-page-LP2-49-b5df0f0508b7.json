@@ -1,0 +1,138 @@
+{
+  "experiment": "E033-cipher-filter",
+  "parameters": {
+    "mode": "page",
+    "page": "LP2-49",
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "page": "LP2-49",
+  "ciphertext_indices": [
+    27,
+    18,
+    11,
+    0,
+    20,
+    22,
+    10,
+    5,
+    10,
+    21,
+    6,
+    2,
+    19,
+    15,
+    25,
+    6,
+    24,
+    28,
+    19,
+    10,
+    17,
+    27,
+    16,
+    9,
+    21,
+    19,
+    2,
+    16,
+    26,
+    25,
+    11,
+    18,
+    8,
+    0,
+    24,
+    27,
+    6,
+    24,
+    19,
+    10,
+    23,
+    14,
+    16,
+    1,
+    18,
+    2,
+    9,
+    18,
+    24,
+    13,
+    7,
+    28,
+    20,
+    17,
+    1,
+    4,
+    27,
+    22,
+    24,
+    26,
+    22,
+    12,
+    7,
+    11,
+    13,
+    23
+  ],
+  "top": [
+    {
+      "score": -5.015058390620593,
+      "plaintext_runes": "ᛏᚩᚩᛚᚻᛠᛚᛋᚪᚾᛁᛈᚠᛖᛒᚢᚠᛁᚻᚩᛞᛖᚫᛖᚾᚾᚦᛝᛞᛞᛋᚩᛚᛋᛈᚩᛁᚾᚦᛏᛁᚢᛠᚱᛞᛁᛈᛗᛇᛁᚦᚩᛒᚷᚻᛝᚩᚹᚣᛟᚣᚳᚾᚠ",
+      "transliteration": "TOOLHEALSANIPFEBUFIHODEAEENNTHNGDDSOLSPOINTHTIUEARDIPMEOITHOBGHNGOWYOEYCNF",
+      "recipe": {
+        "a": 28,
+        "b": 0,
+        "c": 22,
+        "d": 13,
+        "iv": [
+          27,
+          18
+        ],
+        "unrecovered_prefix_runes": 2,
+        "F_policy": "none"
+      },
+      "reencryption_verified": true
+    },
+    {
+      "score": -5.046186167631994,
+      "plaintext_runes": "ᛄᛈᚹᚪᛉᚻᛈᚣᛒᚱᚻᛖᚱᚷᛞᛠᚾᛟᛡᛚᛈᛁᛖᚠᚳᚹᛠᛝᚻᚩᛁᛋᚹᚩᚾᛁᚩᛗᚳᚫᚦᚩᛋᛁᛋᚱᚩᚳᚳᛖᚪᛋᚦᚣᚳᚩᚾᛠᚾᛏᚾᚪᚩᚣ",
+      "transliteration": "JPWAXHPYBRHERGDEANOEIALPIEFCWEANGHOISWONIOMCAETHOSISROCCEASTHYCONEANTNAOY",
+      "recipe": {
+        "a": 6,
+        "b": 9,
+        "c": 8,
+        "d": 2,
+        "iv": [
+          27,
+          18
+        ],
+        "unrecovered_prefix_runes": 2,
+        "F_policy": "none"
+      },
+      "reencryption_verified": true
+    },
+    {
+      "score": -5.205191464235564,
+      "plaintext_runes": "ᚳᛝᚣᛞᛁᚠᛞᚩᚠᚱᛗᛖᚱᚳᛖᛚᚻᚱᚢᛒᛒᛄᛝᚷᚩᚾᚪᚻᛋᚪᚪᛗᚻᛒᚣᛒᚪᚷᚻᚢᛋᛈᛒᛟᛄᛁᚳᛄᛈᛁᚻᚻᚢᚳᚻᛏᛖᚠᛋᛗᛞᛁᚩᛉ",
+      "transliteration": "CNGYDIFDOFRMERCELHRUBBJNGGONAHSAAMHBYBAGHUSPBOEJICJPIHHUCHTEFSMDIOX",
+      "recipe": {
+        "a": 6,
+        "b": 20,
+        "c": 14,
+        "d": 13,
+        "iv": [
+          27,
+          18
+        ],
+        "unrecovered_prefix_runes": 2,
+        "F_policy": "none"
+      },
+      "reencryption_verified": true
+    }
+  ],
+  "score": -5.015058390620593,
+  "recipes": 659340,
+  "shuffle_proposals": null,
+  "wall_seconds": 2.217779300000984
+}

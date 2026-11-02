@@ -1,0 +1,199 @@
+{
+  "experiment": "E031-numeric-digest-comparison",
+  "parameters": {
+    "experiment": "E031-numeric-digest-comparison",
+    "seconds": 30,
+    "seed": null,
+    "inputs": [
+      "E022 preserved relikd, iddqd and scream314 base60 grids",
+      "E022 separately published scream314 decimal array",
+      "E023 explicit five-cell image overlay"
+    ],
+    "enumeration": "Exactly five source-anchored 256-byte sequences, LP2-49 then50 then51 row-major. No case permutations or hash-guided correction.",
+    "targets": [
+      "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+      "8db2a93497bc02bbf0ab07ac3cf96edd227fec630232c04ea35493d3a7d7b65e"
+    ],
+    "validation": "Compute bytes independently from base60 token indices. Compare to E022 values and E023 overlay. Identify every difference to the image-supported baseline with LP2 row/column coordinates.",
+    "null_model": "Not applicable: deterministic byte equality, no statistical cipher claim.",
+    "limits": "A matching digest identifies a sequence, not its historical provenance or image correctness. No new correction or canonical edit allowed. No network or remote-code execution.",
+    "memory": "Five 256-byte arrays and prior JSON files below1MB, single process."
+  },
+  "variants": [
+    {
+      "source": "relikd_canonical",
+      "byte_hex": "cbe7a7ba61ed7eb75cf99cdef704b7d479ca0f2166893b576dc6ad1996428d857372c5273650850550541c49e651c74cfd10153b56ab9c50fe7692456ac47c337aff19c0c749a96ca44fcdb172902e528e3ac9c1ad1c6f41d3dcc631ec543823de96482253e520ce7a3f1fda0eb82073498fc5f736ab23b82aed56360d14a3c1c9b35678a98d48ab0a81e90df52ea0987dd25cadf6ae99bde7210e7034fbf9f8e9d9c052692ffaf8f0e4fe36ae75d112eb83a6af9028a751809c135126c0aa21009b9f59b073692f6e4ad144c24c7f1539af063d4696fb548edb943b3a343397443449f9900075af6aeac479ee2081ad908d2ad61638e0c0719eace6b424bd50",
+      "sha256": "2a388f2949e9696d3124c90c0eb48f02c42d553ca6e6560ab9bcd28402380aab",
+      "matches_targets": [],
+      "differences_from_image_overlay": [
+        {
+          "offset": 45,
+          "page": "LP2-49",
+          "row": 6,
+          "column": 6,
+          "baseline": 107,
+          "value": 81,
+          "delta": -26
+        },
+        {
+          "offset": 50,
+          "page": "LP2-49",
+          "row": 7,
+          "column": 3,
+          "baseline": 47,
+          "value": 21,
+          "delta": -26
+        },
+        {
+          "offset": 165,
+          "page": "LP2-50",
+          "row": 11,
+          "column": 6,
+          "baseline": 18,
+          "value": 47,
+          "delta": 29
+        },
+        {
+          "offset": 172,
+          "page": "LP2-50",
+          "row": 12,
+          "column": 5,
+          "baseline": 148,
+          "value": 174,
+          "delta": 26
+        },
+        {
+          "offset": 246,
+          "page": "LP2-51",
+          "row": 8,
+          "column": 7,
+          "baseline": 198,
+          "value": 224,
+          "delta": 26
+        }
+      ]
+    },
+    {
+      "source": "iddqd",
+      "byte_hex": "cbe7a7ba61ed7eb75cf99cdef704b7d479ca0f2166893b576dc6ad1996428d857372c5273650850550541c49e66bc74cfd102f3b56ab9c50fe7692456ac47c337aff19c0c749a96ca44fcdb172902e528e3ac9c1ad1c6f41d3dcc631ec543823de96482253e520ce7a3f1fda0eb82073498fc5f736ab23b82aed56360d14a3c1c9b35678a98d48ab0a81e90df52ea0987dd25cadf6ae99bde7210e7034fbf9f8e9d9c0526912faf8f0e4fe369475d112eb83a6af9028a751809c135126c0aa21009b9f59b073692f6e4ad144c24c7f1539af063d4696fb548edb943b3a343397443449f9900075af6aeac479ee2081ad908d2ad61638c6c0719eace6b424bd50",
+      "sha256": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+      "matches_targets": [
+        "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290"
+      ],
+      "differences_from_image_overlay": []
+    },
+    {
+      "source": "scream314",
+      "byte_hex": "cbe7a7ba61ed7eb75cf99cdef704b7d479ca0f2166893b576dc6ad1996428d857372c5273650850550541c49e66bc74cfd102f3b56ab9c50fe7692456ac47c337aff19c0c749a96ca44fcdb172902e528e3ac9c1ad1c6f41d3dcc631ec543823de96482253e520ce7a3f1fda0eb82073498fc5f736ab23b82aed56360d14a3c1c9b35678a98d48ab0a81e90df52ea0987dd25cadf6ae99bde7210e7034fbf9f8e9d9c0526912faf8f0e4fe369475d112eb83a6af9028a751809c135126c0aa21009b9f59b073692f6e4ad144c24c7f1539af063d4696fb548edb943b3a343397443449f9900075af6aeac479ee2081ad908d2ad61638c6c0719eace6b424bd50",
+      "sha256": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+      "matches_targets": [
+        "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290"
+      ],
+      "differences_from_image_overlay": []
+    },
+    {
+      "source": "scream314_published_decimal",
+      "byte_hex": "cbe7a7ba61ed7eb75cf99cdef704b7d479ca0f2166893b576de0ad1996428d857372c5273650850550541c49e651c74cfd10153b56ab9c50fe7692456ac47c337aff19c0c749a96ca44fcdb172902e528e3ac9c1ad1c6f41d3dcc631ec543823de96482253e520ce7a3f1fda0eb82073498fc5f736ab23b82aed56360d14a3c1c9b35678a98d48ab0a81e90df52ea0987dd25cadf6ae99bde7210e7034fbf9f8e9d9c0526912faf8f0e4fe369475d12ceb83a6af90288d51809c135126c0aa21009b9f59b07369156e4ad144c24c7f1539af063d4696fb058edb943b3a343397443449f9900075af6aeac479ee3a81ad908d2ad61638e0c0719eace6b424bd50",
+      "sha256": "0a3aa3c813eddcf7f99ef9794c0e790f2a3fd86ea810a100d7113eb1beebacbd",
+      "matches_targets": [],
+      "differences_from_image_overlay": [
+        {
+          "offset": 25,
+          "page": "LP2-49",
+          "row": 4,
+          "column": 2,
+          "baseline": 198,
+          "value": 224,
+          "delta": 26
+        },
+        {
+          "offset": 45,
+          "page": "LP2-49",
+          "row": 6,
+          "column": 6,
+          "baseline": 107,
+          "value": 81,
+          "delta": -26
+        },
+        {
+          "offset": 50,
+          "page": "LP2-49",
+          "row": 7,
+          "column": 3,
+          "baseline": 47,
+          "value": 21,
+          "delta": -26
+        },
+        {
+          "offset": 175,
+          "page": "LP2-50",
+          "row": 12,
+          "column": 8,
+          "baseline": 18,
+          "value": 44,
+          "delta": 26
+        },
+        {
+          "offset": 182,
+          "page": "LP2-50",
+          "row": 13,
+          "column": 7,
+          "baseline": 167,
+          "value": 141,
+          "delta": -26
+        },
+        {
+          "offset": 199,
+          "page": "LP2-51",
+          "row": 2,
+          "column": 8,
+          "baseline": 47,
+          "value": 21,
+          "delta": -26
+        },
+        {
+          "offset": 215,
+          "page": "LP2-51",
+          "row": 4,
+          "column": 8,
+          "baseline": 84,
+          "value": 5,
+          "delta": -79
+        },
+        {
+          "offset": 237,
+          "page": "LP2-51",
+          "row": 7,
+          "column": 6,
+          "baseline": 32,
+          "value": 58,
+          "delta": 26
+        },
+        {
+          "offset": 246,
+          "page": "LP2-51",
+          "row": 8,
+          "column": 7,
+          "baseline": 198,
+          "value": 224,
+          "delta": 26
+        }
+      ]
+    },
+    {
+      "source": "image_overlay_E023",
+      "byte_hex": "cbe7a7ba61ed7eb75cf99cdef704b7d479ca0f2166893b576dc6ad1996428d857372c5273650850550541c49e66bc74cfd102f3b56ab9c50fe7692456ac47c337aff19c0c749a96ca44fcdb172902e528e3ac9c1ad1c6f41d3dcc631ec543823de96482253e520ce7a3f1fda0eb82073498fc5f736ab23b82aed56360d14a3c1c9b35678a98d48ab0a81e90df52ea0987dd25cadf6ae99bde7210e7034fbf9f8e9d9c0526912faf8f0e4fe369475d112eb83a6af9028a751809c135126c0aa21009b9f59b073692f6e4ad144c24c7f1539af063d4696fb548edb943b3a343397443449f9900075af6aeac479ee2081ad908d2ad61638c6c0719eace6b424bd50",
+      "sha256": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+      "matches_targets": [
+        "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290"
+      ],
+      "differences_from_image_overlay": []
+    }
+  ],
+  "unmatched_targets": [
+    "8db2a93497bc02bbf0ab07ac3cf96edd227fec630232c04ea35493d3a7d7b65e"
+  ],
+  "wall_seconds": 0.0019404999911785126,
+  "canonical_changed": false,
+  "new_decryptions": []
+}

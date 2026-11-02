@@ -1,0 +1,2286 @@
+{
+  "experiment": "E023-glyph-audit",
+  "status": "completed",
+  "image_supported_cells": 5,
+  "unresolved_among_original_five": 0,
+  "inspected_crops": 16,
+  "observations": {
+    "experiment": "E023-glyph-audit",
+    "review_type": "Single analyst visual review with reproducible ink-height measurements; no second independent reader.",
+    "measurement_status": "Thresholds 32,128,224 selected after initial visual inspection as a sensitivity check, not a preregistered statistical classifier.",
+    "observations": [
+      {
+        "page_id": "LP2-49",
+        "row_1based": 6,
+        "column_1based": 6,
+        "selected_token": "1l",
+        "historical_alternatives": [
+          "1L",
+          "1l"
+        ],
+        "status": "image_supported",
+        "reason": "No L foot. Second glyph has height 73/74/74 at thresholds 32/128/224, matching same-page lowercase l (r1c3), rather than the 67-pixel I (r4c2).",
+        "comparison_cells": [
+          [
+            "LP2-49",
+            1,
+            3
+          ],
+          [
+            "LP2-49",
+            4,
+            2
+          ],
+          [
+            "LP2-49",
+            4,
+            7
+          ]
+        ]
+      },
+      {
+        "page_id": "LP2-49",
+        "row_1based": 7,
+        "column_1based": 3,
+        "selected_token": "0l",
+        "historical_alternatives": [
+          "0L",
+          "0l"
+        ],
+        "status": "image_supported",
+        "reason": "No L foot. Second glyph height 73/74/74 matches lowercase l; uppercase I is 67 pixels.",
+        "comparison_cells": [
+          [
+            "LP2-49",
+            1,
+            3
+          ],
+          [
+            "LP2-49",
+            4,
+            2
+          ],
+          [
+            "LP2-49",
+            4,
+            7
+          ]
+        ]
+      },
+      {
+        "page_id": "LP2-50",
+        "row_1based": 11,
+        "column_1based": 6,
+        "selected_token": "0I",
+        "historical_alternatives": [
+          "0l",
+          "0I"
+        ],
+        "status": "image_supported",
+        "reason": "Second glyph height 67/67/67 matches the same-page I in r2c3 and r12c8; lowercase l in r13c7 is 73/74/74.",
+        "comparison_cells": [
+          [
+            "LP2-50",
+            2,
+            3
+          ],
+          [
+            "LP2-50",
+            12,
+            8
+          ],
+          [
+            "LP2-50",
+            13,
+            7
+          ]
+        ]
+      },
+      {
+        "page_id": "LP2-50",
+        "row_1based": 12,
+        "column_1based": 5,
+        "selected_token": "2S",
+        "historical_alternatives": [
+          "2s",
+          "2S"
+        ],
+        "status": "image_supported",
+        "reason": "Capital-height S measures 69/69/71, matching r1c6. Lowercase s in r9c6 measures 44/44/45.",
+        "comparison_cells": [
+          [
+            "LP2-50",
+            1,
+            6
+          ],
+          [
+            "LP2-50",
+            9,
+            6
+          ]
+        ]
+      },
+      {
+        "page_id": "LP2-51",
+        "row_1based": 8,
+        "column_1based": 7,
+        "selected_token": "3I",
+        "historical_alternatives": [
+          "3i",
+          "3I"
+        ],
+        "status": "image_supported",
+        "reason": "Continuous 67-pixel stem, no dot. Same-page lowercase l is 73/74/74. Dotted i comparison from LP2-49 is contextual cross-page evidence; crop directly shows absence of a dot.",
+        "comparison_cells": [
+          [
+            "LP2-51",
+            2,
+            8
+          ],
+          [
+            "LP2-49",
+            10,
+            1
+          ]
+        ]
+      }
+    ],
+    "limits": [
+      "Five disputed cells reviewed, not all 256 cells independently transcribed.",
+      "Source images are pinned repository copies; historical authenticity not independently established.",
+      "All old alternatives remain preserved, and canonical transcriptions/pages.json is unchanged.",
+      "The supported readings match iddqd/scream314 tokens for these cells; no novelty claim about those transcriptions."
+    ]
+  },
+  "overlay_grids": {
+    "LP2-49": [
+      [
+        "3N",
+        "3p",
+        "2l",
+        "36",
+        "1b",
+        "3v",
+        "26",
+        "33"
+      ],
+      [
+        "1W",
+        "49",
+        "2a",
+        "3g",
+        "47",
+        "04",
+        "33",
+        "3W"
+      ],
+      [
+        "21",
+        "3M",
+        "0F",
+        "0X",
+        "1g",
+        "2H",
+        "0x",
+        "1R"
+      ],
+      [
+        "1n",
+        "3I",
+        "2r",
+        "0P",
+        "2U",
+        "16",
+        "2L",
+        "2D"
+      ],
+      [
+        "1t",
+        "1s",
+        "3H",
+        "0d",
+        "0s",
+        "1K",
+        "2D",
+        "05"
+      ],
+      [
+        "1K",
+        "1O",
+        "0S",
+        "1D",
+        "3o",
+        "1l",
+        "3J",
+        "1G"
+      ],
+      [
+        "4D",
+        "0G",
+        "0l",
+        "0x",
+        "1Q",
+        "2p",
+        "2a",
+        "1K"
+      ],
+      [
+        "4E",
+        "1w",
+        "2Q",
+        "19",
+        "1k",
+        "3G",
+        "24",
+        "0p"
+      ],
+      [
+        "22",
+        "4F",
+        "0P",
+        "3C",
+        "3J",
+        "1D",
+        "2n",
+        "1m"
+      ],
+      [
+        "2i",
+        "1J",
+        "3P",
+        "2v",
+        "1s",
+        "2O",
+        "0k",
+        "1M"
+      ]
+    ],
+    "LP2-50": [
+      [
+        "2M",
+        "0w",
+        "3L",
+        "3D",
+        "2r",
+        "0S",
+        "1p",
+        "15"
+      ],
+      [
+        "3V",
+        "3e",
+        "3I",
+        "0n",
+        "3u",
+        "1O",
+        "0u",
+        "0Z"
+      ],
+      [
+        "3g",
+        "2U",
+        "1C",
+        "0Y",
+        "1N",
+        "3n",
+        "0W",
+        "3Q"
+      ],
+      [
+        "22",
+        "13",
+        "0V",
+        "3c",
+        "0E",
+        "34",
+        "0W",
+        "1t"
+      ],
+      [
+        "1D",
+        "2N",
+        "3H",
+        "47",
+        "0s",
+        "2p",
+        "0Z",
+        "34"
+      ],
+      [
+        "0g",
+        "3v",
+        "1Q",
+        "0s",
+        "0D",
+        "0K",
+        "2h",
+        "3D"
+      ],
+      [
+        "3L",
+        "2x",
+        "1Q",
+        "20",
+        "2n",
+        "2L",
+        "1C",
+        "2p"
+      ],
+      [
+        "0A",
+        "29",
+        "3r",
+        "0D",
+        "45",
+        "0k",
+        "2e",
+        "2W"
+      ],
+      [
+        "25",
+        "3U",
+        "1W",
+        "2r",
+        "46",
+        "2s",
+        "2X",
+        "39"
+      ],
+      [
+        "3p",
+        "0X",
+        "0E",
+        "1q",
+        "0q",
+        "4B",
+        "49",
+        "48"
+      ],
+      [
+        "3r",
+        "3b",
+        "3C",
+        "1M",
+        "1j",
+        "0I",
+        "4A",
+        "48"
+      ],
+      [
+        "40",
+        "3m",
+        "4E",
+        "0s",
+        "2S",
+        "1v",
+        "3T",
+        "0I"
+      ],
+      [
+        "3t",
+        "2B",
+        "2k",
+        "2t",
+        "2O",
+        "0e",
+        "2l",
+        "1L"
+      ]
+    ],
+    "LP2-51": [
+      [
+        "28",
+        "2a",
+        "0J",
+        "1L",
+        "0c",
+        "3C",
+        "2o",
+        "0X"
+      ],
+      [
+        "00",
+        "2Z",
+        "2d",
+        "1T",
+        "2u",
+        "1t",
+        "1j",
+        "0l"
+      ],
+      [
+        "1o",
+        "1E",
+        "3T",
+        "18",
+        "3E",
+        "1G",
+        "27",
+        "0L"
+      ],
+      [
+        "0v",
+        "2t",
+        "06",
+        "11",
+        "1A",
+        "2U",
+        "4B",
+        "1O"
+      ],
+      [
+        "2M",
+        "3d",
+        "2S",
+        "0x",
+        "0w",
+        "0q",
+        "0p",
+        "2V"
+      ],
+      [
+        "18",
+        "0q",
+        "1D",
+        "49",
+        "2O",
+        "00",
+        "1v",
+        "2t"
+      ],
+      [
+        "1k",
+        "3s",
+        "3G",
+        "21",
+        "3w",
+        "0W",
+        "29",
+        "2r"
+      ],
+      [
+        "2O",
+        "2L",
+        "0g",
+        "3Y",
+        "0M",
+        "0u",
+        "3I",
+        "3C"
+      ],
+      [
+        "1r",
+        "2c",
+        "2q",
+        "3o",
+        "30",
+        "0a",
+        "39",
+        "1K"
+      ]
+    ]
+  },
+  "cells": [
+    {
+      "page_id": "LP2-49",
+      "row_1based": 1,
+      "column_1based": 1,
+      "token": "3N",
+      "value": 203
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 1,
+      "column_1based": 2,
+      "token": "3p",
+      "value": 231
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 1,
+      "column_1based": 3,
+      "token": "2l",
+      "value": 167
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 1,
+      "column_1based": 4,
+      "token": "36",
+      "value": 186
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 1,
+      "column_1based": 5,
+      "token": "1b",
+      "value": 97
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 1,
+      "column_1based": 6,
+      "token": "3v",
+      "value": 237
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 1,
+      "column_1based": 7,
+      "token": "26",
+      "value": 126
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 1,
+      "column_1based": 8,
+      "token": "33",
+      "value": 183
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 2,
+      "column_1based": 1,
+      "token": "1W",
+      "value": 92
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 2,
+      "column_1based": 2,
+      "token": "49",
+      "value": 249
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 2,
+      "column_1based": 3,
+      "token": "2a",
+      "value": 156
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 2,
+      "column_1based": 4,
+      "token": "3g",
+      "value": 222
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 2,
+      "column_1based": 5,
+      "token": "47",
+      "value": 247
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 2,
+      "column_1based": 6,
+      "token": "04",
+      "value": 4
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 2,
+      "column_1based": 7,
+      "token": "33",
+      "value": 183
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 2,
+      "column_1based": 8,
+      "token": "3W",
+      "value": 212
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 3,
+      "column_1based": 1,
+      "token": "21",
+      "value": 121
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 3,
+      "column_1based": 2,
+      "token": "3M",
+      "value": 202
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 3,
+      "column_1based": 3,
+      "token": "0F",
+      "value": 15
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 3,
+      "column_1based": 4,
+      "token": "0X",
+      "value": 33
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 3,
+      "column_1based": 5,
+      "token": "1g",
+      "value": 102
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 3,
+      "column_1based": 6,
+      "token": "2H",
+      "value": 137
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 3,
+      "column_1based": 7,
+      "token": "0x",
+      "value": 59
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 3,
+      "column_1based": 8,
+      "token": "1R",
+      "value": 87
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 4,
+      "column_1based": 1,
+      "token": "1n",
+      "value": 109
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 4,
+      "column_1based": 2,
+      "token": "3I",
+      "value": 198
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 4,
+      "column_1based": 3,
+      "token": "2r",
+      "value": 173
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 4,
+      "column_1based": 4,
+      "token": "0P",
+      "value": 25
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 4,
+      "column_1based": 5,
+      "token": "2U",
+      "value": 150
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 4,
+      "column_1based": 6,
+      "token": "16",
+      "value": 66
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 4,
+      "column_1based": 7,
+      "token": "2L",
+      "value": 141
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 4,
+      "column_1based": 8,
+      "token": "2D",
+      "value": 133
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 5,
+      "column_1based": 1,
+      "token": "1t",
+      "value": 115
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 5,
+      "column_1based": 2,
+      "token": "1s",
+      "value": 114
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 5,
+      "column_1based": 3,
+      "token": "3H",
+      "value": 197
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 5,
+      "column_1based": 4,
+      "token": "0d",
+      "value": 39
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 5,
+      "column_1based": 5,
+      "token": "0s",
+      "value": 54
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 5,
+      "column_1based": 6,
+      "token": "1K",
+      "value": 80
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 5,
+      "column_1based": 7,
+      "token": "2D",
+      "value": 133
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 5,
+      "column_1based": 8,
+      "token": "05",
+      "value": 5
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 6,
+      "column_1based": 1,
+      "token": "1K",
+      "value": 80
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 6,
+      "column_1based": 2,
+      "token": "1O",
+      "value": 84
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 6,
+      "column_1based": 3,
+      "token": "0S",
+      "value": 28
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 6,
+      "column_1based": 4,
+      "token": "1D",
+      "value": 73
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 6,
+      "column_1based": 5,
+      "token": "3o",
+      "value": 230
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 6,
+      "column_1based": 6,
+      "token": "1l",
+      "value": 107
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 6,
+      "column_1based": 7,
+      "token": "3J",
+      "value": 199
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 6,
+      "column_1based": 8,
+      "token": "1G",
+      "value": 76
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 7,
+      "column_1based": 1,
+      "token": "4D",
+      "value": 253
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 7,
+      "column_1based": 2,
+      "token": "0G",
+      "value": 16
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 7,
+      "column_1based": 3,
+      "token": "0l",
+      "value": 47
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 7,
+      "column_1based": 4,
+      "token": "0x",
+      "value": 59
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 7,
+      "column_1based": 5,
+      "token": "1Q",
+      "value": 86
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 7,
+      "column_1based": 6,
+      "token": "2p",
+      "value": 171
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 7,
+      "column_1based": 7,
+      "token": "2a",
+      "value": 156
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 7,
+      "column_1based": 8,
+      "token": "1K",
+      "value": 80
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 8,
+      "column_1based": 1,
+      "token": "4E",
+      "value": 254
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 8,
+      "column_1based": 2,
+      "token": "1w",
+      "value": 118
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 8,
+      "column_1based": 3,
+      "token": "2Q",
+      "value": 146
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 8,
+      "column_1based": 4,
+      "token": "19",
+      "value": 69
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 8,
+      "column_1based": 5,
+      "token": "1k",
+      "value": 106
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 8,
+      "column_1based": 6,
+      "token": "3G",
+      "value": 196
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 8,
+      "column_1based": 7,
+      "token": "24",
+      "value": 124
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 8,
+      "column_1based": 8,
+      "token": "0p",
+      "value": 51
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 9,
+      "column_1based": 1,
+      "token": "22",
+      "value": 122
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 9,
+      "column_1based": 2,
+      "token": "4F",
+      "value": 255
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 9,
+      "column_1based": 3,
+      "token": "0P",
+      "value": 25
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 9,
+      "column_1based": 4,
+      "token": "3C",
+      "value": 192
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 9,
+      "column_1based": 5,
+      "token": "3J",
+      "value": 199
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 9,
+      "column_1based": 6,
+      "token": "1D",
+      "value": 73
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 9,
+      "column_1based": 7,
+      "token": "2n",
+      "value": 169
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 9,
+      "column_1based": 8,
+      "token": "1m",
+      "value": 108
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 10,
+      "column_1based": 1,
+      "token": "2i",
+      "value": 164
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 10,
+      "column_1based": 2,
+      "token": "1J",
+      "value": 79
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 10,
+      "column_1based": 3,
+      "token": "3P",
+      "value": 205
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 10,
+      "column_1based": 4,
+      "token": "2v",
+      "value": 177
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 10,
+      "column_1based": 5,
+      "token": "1s",
+      "value": 114
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 10,
+      "column_1based": 6,
+      "token": "2O",
+      "value": 144
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 10,
+      "column_1based": 7,
+      "token": "0k",
+      "value": 46
+    },
+    {
+      "page_id": "LP2-49",
+      "row_1based": 10,
+      "column_1based": 8,
+      "token": "1M",
+      "value": 82
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 1,
+      "column_1based": 1,
+      "token": "2M",
+      "value": 142
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 1,
+      "column_1based": 2,
+      "token": "0w",
+      "value": 58
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 1,
+      "column_1based": 3,
+      "token": "3L",
+      "value": 201
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 1,
+      "column_1based": 4,
+      "token": "3D",
+      "value": 193
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 1,
+      "column_1based": 5,
+      "token": "2r",
+      "value": 173
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 1,
+      "column_1based": 6,
+      "token": "0S",
+      "value": 28
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 1,
+      "column_1based": 7,
+      "token": "1p",
+      "value": 111
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 1,
+      "column_1based": 8,
+      "token": "15",
+      "value": 65
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 2,
+      "column_1based": 1,
+      "token": "3V",
+      "value": 211
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 2,
+      "column_1based": 2,
+      "token": "3e",
+      "value": 220
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 2,
+      "column_1based": 3,
+      "token": "3I",
+      "value": 198
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 2,
+      "column_1based": 4,
+      "token": "0n",
+      "value": 49
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 2,
+      "column_1based": 5,
+      "token": "3u",
+      "value": 236
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 2,
+      "column_1based": 6,
+      "token": "1O",
+      "value": 84
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 2,
+      "column_1based": 7,
+      "token": "0u",
+      "value": 56
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 2,
+      "column_1based": 8,
+      "token": "0Z",
+      "value": 35
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 3,
+      "column_1based": 1,
+      "token": "3g",
+      "value": 222
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 3,
+      "column_1based": 2,
+      "token": "2U",
+      "value": 150
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 3,
+      "column_1based": 3,
+      "token": "1C",
+      "value": 72
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 3,
+      "column_1based": 4,
+      "token": "0Y",
+      "value": 34
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 3,
+      "column_1based": 5,
+      "token": "1N",
+      "value": 83
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 3,
+      "column_1based": 6,
+      "token": "3n",
+      "value": 229
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 3,
+      "column_1based": 7,
+      "token": "0W",
+      "value": 32
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 3,
+      "column_1based": 8,
+      "token": "3Q",
+      "value": 206
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 4,
+      "column_1based": 1,
+      "token": "22",
+      "value": 122
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 4,
+      "column_1based": 2,
+      "token": "13",
+      "value": 63
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 4,
+      "column_1based": 3,
+      "token": "0V",
+      "value": 31
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 4,
+      "column_1based": 4,
+      "token": "3c",
+      "value": 218
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 4,
+      "column_1based": 5,
+      "token": "0E",
+      "value": 14
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 4,
+      "column_1based": 6,
+      "token": "34",
+      "value": 184
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 4,
+      "column_1based": 7,
+      "token": "0W",
+      "value": 32
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 4,
+      "column_1based": 8,
+      "token": "1t",
+      "value": 115
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 5,
+      "column_1based": 1,
+      "token": "1D",
+      "value": 73
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 5,
+      "column_1based": 2,
+      "token": "2N",
+      "value": 143
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 5,
+      "column_1based": 3,
+      "token": "3H",
+      "value": 197
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 5,
+      "column_1based": 4,
+      "token": "47",
+      "value": 247
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 5,
+      "column_1based": 5,
+      "token": "0s",
+      "value": 54
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 5,
+      "column_1based": 6,
+      "token": "2p",
+      "value": 171
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 5,
+      "column_1based": 7,
+      "token": "0Z",
+      "value": 35
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 5,
+      "column_1based": 8,
+      "token": "34",
+      "value": 184
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 6,
+      "column_1based": 1,
+      "token": "0g",
+      "value": 42
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 6,
+      "column_1based": 2,
+      "token": "3v",
+      "value": 237
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 6,
+      "column_1based": 3,
+      "token": "1Q",
+      "value": 86
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 6,
+      "column_1based": 4,
+      "token": "0s",
+      "value": 54
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 6,
+      "column_1based": 5,
+      "token": "0D",
+      "value": 13
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 6,
+      "column_1based": 6,
+      "token": "0K",
+      "value": 20
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 6,
+      "column_1based": 7,
+      "token": "2h",
+      "value": 163
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 6,
+      "column_1based": 8,
+      "token": "3D",
+      "value": 193
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 7,
+      "column_1based": 1,
+      "token": "3L",
+      "value": 201
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 7,
+      "column_1based": 2,
+      "token": "2x",
+      "value": 179
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 7,
+      "column_1based": 3,
+      "token": "1Q",
+      "value": 86
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 7,
+      "column_1based": 4,
+      "token": "20",
+      "value": 120
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 7,
+      "column_1based": 5,
+      "token": "2n",
+      "value": 169
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 7,
+      "column_1based": 6,
+      "token": "2L",
+      "value": 141
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 7,
+      "column_1based": 7,
+      "token": "1C",
+      "value": 72
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 7,
+      "column_1based": 8,
+      "token": "2p",
+      "value": 171
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 8,
+      "column_1based": 1,
+      "token": "0A",
+      "value": 10
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 8,
+      "column_1based": 2,
+      "token": "29",
+      "value": 129
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 8,
+      "column_1based": 3,
+      "token": "3r",
+      "value": 233
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 8,
+      "column_1based": 4,
+      "token": "0D",
+      "value": 13
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 8,
+      "column_1based": 5,
+      "token": "45",
+      "value": 245
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 8,
+      "column_1based": 6,
+      "token": "0k",
+      "value": 46
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 8,
+      "column_1based": 7,
+      "token": "2e",
+      "value": 160
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 8,
+      "column_1based": 8,
+      "token": "2W",
+      "value": 152
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 9,
+      "column_1based": 1,
+      "token": "25",
+      "value": 125
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 9,
+      "column_1based": 2,
+      "token": "3U",
+      "value": 210
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 9,
+      "column_1based": 3,
+      "token": "1W",
+      "value": 92
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 9,
+      "column_1based": 4,
+      "token": "2r",
+      "value": 173
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 9,
+      "column_1based": 5,
+      "token": "46",
+      "value": 246
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 9,
+      "column_1based": 6,
+      "token": "2s",
+      "value": 174
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 9,
+      "column_1based": 7,
+      "token": "2X",
+      "value": 153
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 9,
+      "column_1based": 8,
+      "token": "39",
+      "value": 189
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 10,
+      "column_1based": 1,
+      "token": "3p",
+      "value": 231
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 10,
+      "column_1based": 2,
+      "token": "0X",
+      "value": 33
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 10,
+      "column_1based": 3,
+      "token": "0E",
+      "value": 14
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 10,
+      "column_1based": 4,
+      "token": "1q",
+      "value": 112
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 10,
+      "column_1based": 5,
+      "token": "0q",
+      "value": 52
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 10,
+      "column_1based": 6,
+      "token": "4B",
+      "value": 251
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 10,
+      "column_1based": 7,
+      "token": "49",
+      "value": 249
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 10,
+      "column_1based": 8,
+      "token": "48",
+      "value": 248
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 11,
+      "column_1based": 1,
+      "token": "3r",
+      "value": 233
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 11,
+      "column_1based": 2,
+      "token": "3b",
+      "value": 217
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 11,
+      "column_1based": 3,
+      "token": "3C",
+      "value": 192
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 11,
+      "column_1based": 4,
+      "token": "1M",
+      "value": 82
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 11,
+      "column_1based": 5,
+      "token": "1j",
+      "value": 105
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 11,
+      "column_1based": 6,
+      "token": "0I",
+      "value": 18
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 11,
+      "column_1based": 7,
+      "token": "4A",
+      "value": 250
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 11,
+      "column_1based": 8,
+      "token": "48",
+      "value": 248
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 12,
+      "column_1based": 1,
+      "token": "40",
+      "value": 240
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 12,
+      "column_1based": 2,
+      "token": "3m",
+      "value": 228
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 12,
+      "column_1based": 3,
+      "token": "4E",
+      "value": 254
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 12,
+      "column_1based": 4,
+      "token": "0s",
+      "value": 54
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 12,
+      "column_1based": 5,
+      "token": "2S",
+      "value": 148
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 12,
+      "column_1based": 6,
+      "token": "1v",
+      "value": 117
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 12,
+      "column_1based": 7,
+      "token": "3T",
+      "value": 209
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 12,
+      "column_1based": 8,
+      "token": "0I",
+      "value": 18
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 13,
+      "column_1based": 1,
+      "token": "3t",
+      "value": 235
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 13,
+      "column_1based": 2,
+      "token": "2B",
+      "value": 131
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 13,
+      "column_1based": 3,
+      "token": "2k",
+      "value": 166
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 13,
+      "column_1based": 4,
+      "token": "2t",
+      "value": 175
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 13,
+      "column_1based": 5,
+      "token": "2O",
+      "value": 144
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 13,
+      "column_1based": 6,
+      "token": "0e",
+      "value": 40
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 13,
+      "column_1based": 7,
+      "token": "2l",
+      "value": 167
+    },
+    {
+      "page_id": "LP2-50",
+      "row_1based": 13,
+      "column_1based": 8,
+      "token": "1L",
+      "value": 81
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 1,
+      "column_1based": 1,
+      "token": "28",
+      "value": 128
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 1,
+      "column_1based": 2,
+      "token": "2a",
+      "value": 156
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 1,
+      "column_1based": 3,
+      "token": "0J",
+      "value": 19
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 1,
+      "column_1based": 4,
+      "token": "1L",
+      "value": 81
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 1,
+      "column_1based": 5,
+      "token": "0c",
+      "value": 38
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 1,
+      "column_1based": 6,
+      "token": "3C",
+      "value": 192
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 1,
+      "column_1based": 7,
+      "token": "2o",
+      "value": 170
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 1,
+      "column_1based": 8,
+      "token": "0X",
+      "value": 33
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 2,
+      "column_1based": 1,
+      "token": "00",
+      "value": 0
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 2,
+      "column_1based": 2,
+      "token": "2Z",
+      "value": 155
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 2,
+      "column_1based": 3,
+      "token": "2d",
+      "value": 159
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 2,
+      "column_1based": 4,
+      "token": "1T",
+      "value": 89
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 2,
+      "column_1based": 5,
+      "token": "2u",
+      "value": 176
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 2,
+      "column_1based": 6,
+      "token": "1t",
+      "value": 115
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 2,
+      "column_1based": 7,
+      "token": "1j",
+      "value": 105
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 2,
+      "column_1based": 8,
+      "token": "0l",
+      "value": 47
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 3,
+      "column_1based": 1,
+      "token": "1o",
+      "value": 110
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 3,
+      "column_1based": 2,
+      "token": "1E",
+      "value": 74
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 3,
+      "column_1based": 3,
+      "token": "3T",
+      "value": 209
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 3,
+      "column_1based": 4,
+      "token": "18",
+      "value": 68
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 3,
+      "column_1based": 5,
+      "token": "3E",
+      "value": 194
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 3,
+      "column_1based": 6,
+      "token": "1G",
+      "value": 76
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 3,
+      "column_1based": 7,
+      "token": "27",
+      "value": 127
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 3,
+      "column_1based": 8,
+      "token": "0L",
+      "value": 21
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 4,
+      "column_1based": 1,
+      "token": "0v",
+      "value": 57
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 4,
+      "column_1based": 2,
+      "token": "2t",
+      "value": 175
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 4,
+      "column_1based": 3,
+      "token": "06",
+      "value": 6
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 4,
+      "column_1based": 4,
+      "token": "11",
+      "value": 61
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 4,
+      "column_1based": 5,
+      "token": "1A",
+      "value": 70
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 4,
+      "column_1based": 6,
+      "token": "2U",
+      "value": 150
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 4,
+      "column_1based": 7,
+      "token": "4B",
+      "value": 251
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 4,
+      "column_1based": 8,
+      "token": "1O",
+      "value": 84
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 5,
+      "column_1based": 1,
+      "token": "2M",
+      "value": 142
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 5,
+      "column_1based": 2,
+      "token": "3d",
+      "value": 219
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 5,
+      "column_1based": 3,
+      "token": "2S",
+      "value": 148
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 5,
+      "column_1based": 4,
+      "token": "0x",
+      "value": 59
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 5,
+      "column_1based": 5,
+      "token": "0w",
+      "value": 58
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 5,
+      "column_1based": 6,
+      "token": "0q",
+      "value": 52
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 5,
+      "column_1based": 7,
+      "token": "0p",
+      "value": 51
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 5,
+      "column_1based": 8,
+      "token": "2V",
+      "value": 151
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 6,
+      "column_1based": 1,
+      "token": "18",
+      "value": 68
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 6,
+      "column_1based": 2,
+      "token": "0q",
+      "value": 52
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 6,
+      "column_1based": 3,
+      "token": "1D",
+      "value": 73
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 6,
+      "column_1based": 4,
+      "token": "49",
+      "value": 249
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 6,
+      "column_1based": 5,
+      "token": "2O",
+      "value": 144
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 6,
+      "column_1based": 6,
+      "token": "00",
+      "value": 0
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 6,
+      "column_1based": 7,
+      "token": "1v",
+      "value": 117
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 6,
+      "column_1based": 8,
+      "token": "2t",
+      "value": 175
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 7,
+      "column_1based": 1,
+      "token": "1k",
+      "value": 106
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 7,
+      "column_1based": 2,
+      "token": "3s",
+      "value": 234
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 7,
+      "column_1based": 3,
+      "token": "3G",
+      "value": 196
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 7,
+      "column_1based": 4,
+      "token": "21",
+      "value": 121
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 7,
+      "column_1based": 5,
+      "token": "3w",
+      "value": 238
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 7,
+      "column_1based": 6,
+      "token": "0W",
+      "value": 32
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 7,
+      "column_1based": 7,
+      "token": "29",
+      "value": 129
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 7,
+      "column_1based": 8,
+      "token": "2r",
+      "value": 173
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 8,
+      "column_1based": 1,
+      "token": "2O",
+      "value": 144
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 8,
+      "column_1based": 2,
+      "token": "2L",
+      "value": 141
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 8,
+      "column_1based": 3,
+      "token": "0g",
+      "value": 42
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 8,
+      "column_1based": 4,
+      "token": "3Y",
+      "value": 214
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 8,
+      "column_1based": 5,
+      "token": "0M",
+      "value": 22
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 8,
+      "column_1based": 6,
+      "token": "0u",
+      "value": 56
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 8,
+      "column_1based": 7,
+      "token": "3I",
+      "value": 198
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 8,
+      "column_1based": 8,
+      "token": "3C",
+      "value": 192
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 9,
+      "column_1based": 1,
+      "token": "1r",
+      "value": 113
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 9,
+      "column_1based": 2,
+      "token": "2c",
+      "value": 158
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 9,
+      "column_1based": 3,
+      "token": "2q",
+      "value": 172
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 9,
+      "column_1based": 4,
+      "token": "3o",
+      "value": 230
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 9,
+      "column_1based": 5,
+      "token": "30",
+      "value": 180
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 9,
+      "column_1based": 6,
+      "token": "0a",
+      "value": 36
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 9,
+      "column_1based": 7,
+      "token": "39",
+      "value": 189
+    },
+    {
+      "page_id": "LP2-51",
+      "row_1based": 9,
+      "column_1based": 8,
+      "token": "1K",
+      "value": 80
+    }
+  ],
+  "byte_order": "LP2-49, LP2-50, LP2-51; table rows top to bottom, cells left to right",
+  "byte_hex": "cbe7a7ba61ed7eb75cf99cdef704b7d479ca0f2166893b576dc6ad1996428d857372c5273650850550541c49e66bc74cfd102f3b56ab9c50fe7692456ac47c337aff19c0c749a96ca44fcdb172902e528e3ac9c1ad1c6f41d3dcc631ec543823de96482253e520ce7a3f1fda0eb82073498fc5f736ab23b82aed56360d14a3c1c9b35678a98d48ab0a81e90df52ea0987dd25cadf6ae99bde7210e7034fbf9f8e9d9c0526912faf8f0e4fe369475d112eb83a6af9028a751809c135126c0aa21009b9f59b073692f6e4ad144c24c7f1539af063d4696fb548edb943b3a343397443449f9900075af6aeac479ee2081ad908d2ad61638c6c0719eace6b424bd50",
+  "byte_sha256": "3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290",
+  "canonical_changed": false,
+  "matches_prior_iddqd_tokens": true,
+  "inference": "Source transcription refinement and prior-art Base60 replication; no decryption.",
+  "null_model": "Not applicable: deterministic source/measurement audit.",
+  "wall_seconds": 0.02549270002054982,
+  "new_decryptions": []
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "kind": "fresh",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 23.379788499965798,
+    "peak_sampled_bytes": 121552896,
+    "log": "results\\E054-fresh-0-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 22.33720759995049,
+    "peak_sampled_bytes": 121720832,
+    "log": "results\\E054-fresh-1-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 21.32437360001495,
+    "peak_sampled_bytes": 122511360,
+    "log": "results\\E054-fresh-2-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 3,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 51.14902399998391,
+    "peak_sampled_bytes": 125337600,
+    "log": "results\\E054-fresh-3-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 4,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 44.37642380001489,
+    "peak_sampled_bytes": 124854272,
+    "log": "results\\E054-fresh-4-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 5,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 45.61760220001452,
+    "peak_sampled_bytes": 132644864,
+    "log": "results\\E054-fresh-5-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 26.840140699991025,
+    "peak_sampled_bytes": 123166720,
+    "log": "results\\E054-regression-0-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 25.08719300001394,
+    "peak_sampled_bytes": 122609664,
+    "log": "results\\E054-regression-1-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 24.59037490002811,
+    "peak_sampled_bytes": 122810368,
+    "log": "results\\E054-regression-2-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 3,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 46.61594680004055,
+    "peak_sampled_bytes": 133472256,
+    "log": "results\\E054-regression-3-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 4,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 26.839591399999335,
+    "peak_sampled_bytes": 122146816,
+    "log": "results\\E054-regression-4-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 5,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 26.832667300011963,
+    "peak_sampled_bytes": 123039744,
+    "log": "results\\E054-regression-5-process.txt"
+  },
+  {
+    "kind": "null",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 21.34952849999536,
+    "peak_sampled_bytes": 121860096,
+    "log": "results\\E054-null-2-process.txt"
+  }
+]

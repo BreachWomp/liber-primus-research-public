@@ -1,0 +1,22 @@
+{
+  "experiment": "E033-cipher-filter",
+  "hypothesis_id": "H029",
+  "rule": "P_(i-2) = a*C_i + b*C_(i-1) + c*C_(i-2) + d mod29, i>=2. Source first2 cipher runes retained as IV; no plaintext claimed for them.",
+  "grid": "a,c=1..28; b,d=0..28. Exclude four a,c in{1,28}, b=d=0 sign-only lag2 cases already covered by E010. Exactly659340 recipes/page.",
+  "motivation": "Observed repeat deficit motivates feedback families. This tests a reversible two-lag linear ciphertext filter, extending E015 first differences. No historical coefficient clue; exploratory finite family only.",
+  "model": "Frozen external4gram of E016, all eleven external essays, no LP plaintext in training. E030 edge fallback rejected; no candidate-specific score tuning.",
+  "controls": [["LP1-03_04_divinity",5,11,7,3],["LP1-14_15_circumference",13,0,9,17],["LP2-57_direct",28,16,3,0]],
+  "control_seed": 3301033,
+  "control_gate": "Every synthetic known plaintext recovered exactly as top1 through full grid. Synthetic encryption tests capability, not historical validity.",
+  "unknown_scope": "All55 LP2 rune pages 00..55 except numeric50, one page at a time, normal order, no F skips, no page continuation.",
+  "selection": "Highest mean language score across all55 pages, freeze all source output hashes before nulls.",
+  "null": "19 independent exact rune-count AND adjacent-equality conditional rejection shuffles of the selected complete cipher page. Include first2 positions in the same shuffle and discard exactly2 plaintext positions in every scan. Full659340-rule grid per null.",
+  "null_seed": 3301033,
+  "replicates": 19,
+  "correction": "Plus-one p and Bonferroni55. Zero exceedances require larger preregistered independent calibration; no significance/decryption claim from 19 nulls.",
+  "process_seconds": 180,
+  "family_seconds": 750,
+  "workers": 1,
+  "memory": "At most2048x1024 int32 arithmetic rows, temporary score arrays and29^4 dense table. One process, <=1024 cipher runes/page. No full ensemble retained.",
+  "limits": "Only this finite linear filter; two unrecovered prefix positions, no arbitrary substitution, nonlinear update, unknown permutations or interruption search. Does not establish absence of ciphertext feedback."
+}

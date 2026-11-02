@@ -1,0 +1,262 @@
+{
+  "oracle_controls": [
+    {
+      "kind": "regression",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "reset_exact": false,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 1,
+      "dp_max_states": 578
+    },
+    {
+      "kind": "regression",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 0,
+      "dp_max_states": 1058
+    },
+    {
+      "kind": "regression",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 0,
+      "dp_max_states": 961
+    },
+    {
+      "kind": "regression",
+      "index": 3,
+      "runes": 3316,
+      "key_length": 17,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 3316,
+      "alternatives": 1,
+      "dp_max_states": 578
+    },
+    {
+      "kind": "regression",
+      "index": 4,
+      "runes": 3316,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 3316,
+      "alternatives": 0,
+      "dp_max_states": 1035
+    },
+    {
+      "kind": "regression",
+      "index": 5,
+      "runes": 3316,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 3316,
+      "alternatives": 0,
+      "dp_max_states": 1922
+    },
+    {
+      "kind": "regression",
+      "index": 6,
+      "runes": 1200,
+      "key_length": 17,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 289
+    },
+    {
+      "kind": "regression",
+      "index": 7,
+      "runes": 1200,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 1035
+    },
+    {
+      "kind": "regression",
+      "index": 8,
+      "runes": 1200,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 1922
+    },
+    {
+      "kind": "regression",
+      "index": 9,
+      "runes": 3316,
+      "key_length": 17,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 3316,
+      "alternatives": 0,
+      "dp_max_states": 578
+    },
+    {
+      "kind": "regression",
+      "index": 10,
+      "runes": 1200,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 828
+    },
+    {
+      "kind": "regression",
+      "index": 11,
+      "runes": 1200,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 1200,
+      "alternatives": 0,
+      "dp_max_states": 1922
+    },
+    {
+      "kind": "fresh",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 1,
+      "dp_max_states": 578
+    },
+    {
+      "kind": "fresh",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 1,
+      "dp_max_states": 1058
+    },
+    {
+      "kind": "fresh",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "reset_exact": true,
+      "coupled_exact": true,
+      "coupled_correct_runes": 729,
+      "alternatives": 1,
+      "dp_max_states": 3038
+    }
+  ],
+  "oracle_exact_controls": 15,
+  "oracle_gate_passed": true,
+  "blind_controls": [
+    {
+      "kind": "regression",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "checks": {
+        "plaintext_exact": false,
+        "key_exact": false,
+        "mask_exact": false,
+        "phases_exact": false
+      },
+      "exact": false,
+      "correct_runes": 43,
+      "found_score": -5.545697590847197,
+      "truth_score": -2.325677672790065,
+      "output": "results/E057-regression-2-4670c6232575.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 0,
+      "runes": 729,
+      "key_length": 17,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.171937753435113,
+      "truth_score": -2.1719377534351128,
+      "output": "results/E057-fresh-0-32b5ce8ace3e.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 1,
+      "runes": 729,
+      "key_length": 23,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.1253568320148304,
+      "truth_score": -2.1253568320148304,
+      "output": "results/E057-fresh-1-a45264c536c9.json"
+    },
+    {
+      "kind": "fresh",
+      "index": 2,
+      "runes": 729,
+      "key_length": 31,
+      "checks": {
+        "plaintext_exact": true,
+        "key_exact": true,
+        "mask_exact": true,
+        "phases_exact": true
+      },
+      "exact": true,
+      "correct_runes": 729,
+      "found_score": -2.2492302662533676,
+      "truth_score": -2.2492302662533668,
+      "output": "results/E057-fresh-2-37b0d4018e94.json"
+    }
+  ],
+  "blind_exact_controls": 3,
+  "blind_controls_executed": 4,
+  "stage_A_passed": false,
+  "stage_B_executed": false,
+  "deferred_stage_B_controls": 14,
+  "full_gate_passed": false,
+  "diagnostic_blind_null_score": -5.513590575633705,
+  "validation": {
+    "stream_records_recomputed": 16,
+    "independent_coupled_optima": 21,
+    "coupled_records_recomputed": 474,
+    "alternative_pairs_recomputed": 5,
+    "pool_records_recomputed": 15520,
+    "independent_pool_phase_optima": 160
+  },
+  "tests_passed": 118,
+  "successful_tasks": 6,
+  "seconds": 253.68537840002682,
+  "peak_sampled_bytes": 135282688,
+  "unknown_sections_searched": 0,
+  "new_decryptions": []
+}

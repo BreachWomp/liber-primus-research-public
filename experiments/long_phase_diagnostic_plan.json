@@ -1,0 +1,12 @@
+{
+  "experiment": "E055-long-page-phase-diagnosis",
+  "control_validation": "results/phase19_control_validation.json",
+  "purpose": "Adaptive diagnostic after observed E054 fresh0 single boundary error and fresh2 key failure. Separate algebraic identifiability, language-objective preference and heuristic search. No solver tuning or unknown inputs.",
+  "known_key_oracle": "For every failed E054 control only, inject true keycycle and sign into unchanged E047 exact perpage all-phase/Fmask optimizer. Record exacttext,keyorientation,mask,phases and score. This is an explicitly labelled oracle, not a blind decryption.",
+  "boundary_collision": "For all12 controls, enumerate every nonfirst nonempty page whose first ciphertext rune is F(0). With same key/sign, toggle copy decision at that firstposition only. If originally copied, remove skip and decrement that page's phase modulo m; otherwise add skip and increment phase. Other masks and phases unchanged. Decode and reencrypt both fulltexts; require identical originalciphertext and only that first plaintext rune changed (all injectedkey values nonzero).",
+  "proof": "If original noncopied C0=0 at phasep, P0=K[p],nextcursorp+1. Alternative copiedF with phasep+1 gives P0=0,nextcursorp+1. Conversely copiedF phasep can be replaced by noncopied K[p-1] startingphasep-1. Identical later cursor implies identical remaining plaintext and ciphertext. First page excluded to retain fixed firstphase0 gauge and literal key orientation.",
+  "scoring": "Recompute both source truth and alternatives with unchanged perpage fourgram model and same E054 penalty. If oracle optimum outranks truth, distinguish objective mismatch from key-search failure. Report descriptive gaps only.",
+  "null": "No new stochastic search or significance claim; E054 already includes a complete matched null run. This diagnostic is deterministic proof and labelled oracle decomposition.",
+  "bounds": "12 preservedcontrols,<=16pages,32keyslots,4096runes,<=256 DPstates/page,oneworker,180seconds. Included in phase19 total1200seconds.",
+  "limits": "Shows non-injectivity of this hypothetical rule without extra boundary information; does not establish that actual Liber Primus uses it. Language preferences can select a candidate but cannot remove algebraic ambiguity. No new decryption."
+}

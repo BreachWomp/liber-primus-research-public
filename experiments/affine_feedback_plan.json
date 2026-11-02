@@ -1,0 +1,80 @@
+{
+  "registered_at": "2026-10-19T12:40:39.220759+00:00",
+  "experiment": "E019",
+  "hypothesis_id": "H020",
+  "equation": "P_i=a*C_i+b*P_(i-1) mod29, P_(-1)=K",
+  "rationale": "Finite extension of plaintext autokey to all invertible feedback and ciphertext multipliers; no historical clue for a specific coefficient.",
+  "grid": {
+    "a": [
+      1,
+      28
+    ],
+    "b": [
+      1,
+      28
+    ],
+    "excluded_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        28,
+        1
+      ],
+      [
+        28,
+        28
+      ]
+    ],
+    "initial_keys": [
+      0,
+      28
+    ],
+    "count_per_page": 22620,
+    "interruptions": "none",
+    "offset_constant": 0,
+    "page_reset": true
+  },
+  "algebra": "With x=P0, S0=0, S_i=C_i+b*S_(i-1): P_i=a*S_i+b^i*x. K=b^-1*(x-a*C0), a bijection on29 keys for fixed a,b. Enumerate all coefficients and x exactly.",
+  "deduplication": "The four a,b sign pairs duplicate the length1 no-F case of E014/E017 and are excluded. E015 is ciphertext differencing, a different recurrence.",
+  "model": "Frozen external4gram, same parameters/source as E016/E018",
+  "controls": {
+    "cases": [
+      [
+        "LP1-03_04_divinity",
+        5,
+        11
+      ],
+      [
+        "LP1-14_15_circumference",
+        13,
+        7
+      ],
+      [
+        "LP2-57_direct",
+        28,
+        3
+      ]
+    ],
+    "keys": "random.Random(3301019).randrange(29), once per listed case",
+    "gate": "3/3 exact top1 under full grid before unknown pages"
+  },
+  "unknown_pages": "55 rune pages LP2-00..55, LP2-50 preserved but not rune input",
+  "null": {
+    "replicates": 19,
+    "seed": 3301019,
+    "selection": "highest mean4gram page after full scan",
+    "model": "independent exact count/doublet rejection shuffles",
+    "optimizer": "same full grid",
+    "correction": "Bonferroni55, and phase-family Bonferroni2 for E018/E019",
+    "escalation": "If zero exceedances, preserve candidate and preregister larger follow-up before any claim."
+  },
+  "max_process_seconds": 180.0,
+  "family_budget_seconds": 400,
+  "memory": "At most812 candidate rows times one page, dense29^4 table, 100000modelcache; one worker."
+}

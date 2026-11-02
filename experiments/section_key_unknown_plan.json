@@ -1,0 +1,19 @@
+{
+  "experiment": "E044-section-key-unknown",
+  "hypothesis_id": "H035",
+  "control_output": "results/E043-section-key-controls-73aef4cf11c1.json",
+  "gate": "All3 long external controls exact text,key,mask, plus2 reused source-replayed historical controls. Frozen E043 optimizer and objective.",
+  "unknown_scope": "All10 groups in pinned experiments/section_plan.json, explicit unverified cipher-boundary hypotheses. Continuous key,cursor and language context across page joins. Preserve source_refs, offsets and numeric LP2-50 zero-rune spans; numeric values consume no key under this hypothesis.",
+  "search_seed": 3303040,
+  "selection": "Freeze maximum penalized full-stream score over10groups and all internal choices plus hashes of10outputs and passed E043 gate before null generation.",
+  "null_seed": 3301044,
+  "replicates": 19,
+  "null": "Perpage exact counts,doublets and first/last rune. Independently shuffle interior and reject until doublets match, <=100000proposals. Pages<=2 copied. Seed3301044+100*replicate+page_index. This also preserves cross-page doublets. Fully reoptimize all windows,seeds,keys,phases,masks with identical search seed.",
+  "correction": "Plus-one p,Bonferroni10 despite overlapping groups. Exploratory family only, not project-wide.19replicates cannot resolve corrected significance; zero exceedances requires separately registered fresh larger calibration.",
+  "process_seconds": 180,
+  "family_seconds": 650,
+  "phase_seconds": 900,
+  "workers": 1,
+  "memory": "Max4096runes,16keyslots,29coordinate rows,12seeds,128fixed-key DP states. Same E043 bounds.",
+  "limits": "Heuristic key search, exact schedule optimization conditional on key; negative findings do not rule out arbitrary keys or page resets. No community solution claims investigated."
+}

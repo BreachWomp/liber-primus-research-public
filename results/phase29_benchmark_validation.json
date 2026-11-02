@@ -1,0 +1,19 @@
+{
+  "gate_passed": true,
+  "output": "results/E080-terminated-benchmark-cc5eaa9b75f0.json",
+  "sha256": "8d7b7b083f3c7580f9022d0b08797612e45b86a1f9631024128e545ac77db207",
+  "fingerprint": "cc5eaa9b75f0efb3f2f5d566df9e899ba4236bc6fdfd506a36e324ef0719d6a6",
+  "independent_scores": 1944,
+  "max_absolute_error": 5.329070518200751e-15,
+  "new_old_mutation_wins": [
+    358,
+    355
+  ],
+  "new_old_null_wins": [
+    342,
+    342
+  ],
+  "validation_seconds": 2.2023401000187732,
+  "verifier_sha256": "fc01594156806388eaf3554ddaf8cccaa9c2c45ba76d8c35555059448434f3ed",
+  "source_note": "Raw bytes and training ranges verified; declared GP tokenizer shared, event counts/probability/scoring implementation separate."
+}

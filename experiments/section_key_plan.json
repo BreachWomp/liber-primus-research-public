@@ -1,0 +1,16 @@
+{
+  "experiment": "E043-section-key-controls",
+  "hypothesis_id": "H035",
+  "historical_reuse": "Reuse completed E040 exact no-oracle DIVINITY/CIRCUMFERENCE results; verify their ciphertext is the concatenation of canonical LP1 page IDs and preserve page spans. No repeat of unchanged historical search.",
+  "optimizer": "E040 exact fixed-key schedule and alternating coordinate updates unchanged. For inputs<=1024 use E040 search unchanged. For longer input use first1024 and last1024 rune windows plus longest3 maximal non-F runs>=32 capped256 for seed generation, E038 both signs,periods1..16,4starts. Deduplicate primitive cyclic keys and retain12 by source seed score. Optimize those12 on the ENTIRE stream, at most3 rounds of6 coordinate sweeps and exact all-phase schedule DP.",
+  "search_seed": 3303040,
+  "bounds": "Max4096 total runes;29coordinate-neighbor rows;16key slots;12seeds;<=128DP states;one process. Key, language context and F cursor continue across page joins. Numeric pages preserved as zero-rune spans with zero key consumption, an explicit hypothesis.",
+  "score": "Unchanged E040 mean order4 logp minus [primitive_key_length*ln29+cipher_F_count*ln2]/full_stream_length; no perpage key or context reset.",
+  "external_controls": "Take first3316 runes of chapterX and first1200 of XI and XII by concatenating original paragraphs in source order. Training excludes all3 chapters. Store every paragraph source range and consumed rune count. Keys length5,8,13 respectively from Random(3301043), uniform1..28; signs+1,-1,+1; skip every other plaintextF starting with first.",
+  "artificial_pages": "ChapterX split by canonical rune lengths of pinned LP2-40_55 grouping, including LP2-50 zero-length numeric span. XI and XII split into lengths197,263,311,429. Synthetic span labels identify external data, not LP plaintext.",
+  "gate": "All3 long synthetic controls exact text,key and skip mask without oracle, plus independently source-replayed historical E040 controls. Failure blocks unknown sections. Prior chapter exposure means no historically blind claim.",
+  "diagnostic_null": "One full-optimizer null of chapterXI control. For each artificial page fix first/last rune and preserve counts and adjacent equality count; independently shuffle interior with rejection<=100000, seed3302043+page_index. Zero/short pages copied. Endpoints also preserve cross-page equalities. No inferential p-value.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "limits": "Longer search remains heuristic in keys. Arbitrary source groupings do not prove shared encryption. No unsupported community solution claims investigated."
+}

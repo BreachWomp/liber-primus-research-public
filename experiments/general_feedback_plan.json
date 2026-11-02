@@ -1,0 +1,13 @@
+{
+  "experiment": "E066",
+  "hypothesis": "H047",
+  "mechanism": "P_i=a*C_i+b*P_(i-m) mod29; a=+1/-1, b=1..28, m=4..32. First m plaintext symbols parameterize initial key bijectively through inverse(b). No skipped symbols or resets.",
+  "screen": "For each of29 periods, enumerate56 (a,b) pairs in a=+1,-1 then b=1..28 order. Maximize summed unigram log-likelihood independently over each prefix residue, sum residue maxima. Retain top4 families WITHIN each period, stable ties. No comparisons across periods at this stage. Record all1624 scores and ranks. No claim of exhaustive key search.",
+  "optimizer": "For116 retained families reuse E062 cyclic trigram beam (cuts0,m//2,width128,keep2/cut) and8 coordinate starts (unigram ranks0,1,2;5 random ranks0..4),6 sweeps,keep2. Seed3303066+56*m+28*(a==-1)+b-1. Pool fourgram candidates, stable distinct top12,6 fourgram coordinate sweeps; keep3 distinct plaintexts. All affine coefficients reduced modulo29.",
+  "controls": "Indices0..11 use excluded Emerson X/XI/XII cycling by index%3; m=13,23,31 likewise. Blocks start,length=(12750,200),(6800,300),(15000,729),(1000,3316). b cycles2,7,14,27; a alternates+1,-1. Fresh uniform keys Random3301066+index. Text ranges were previously inspected, not fresh unseen prose. Indices12..15 reuse exact INPUTS of E062 controls0..3 under the changed search; never counted as unchanged-run reuse. All16 controls are run regardless of failures.",
+  "null": "One full optimizer null of newcontrol5 using Random3302066; shuffle interior only, preserve counts,endpoints and adjacent-equality count; rejection cap100000. Diagnostic only, no pvalue. Null repeats entire screening and optimization.",
+  "gate": "All16 exact full plaintext AND injected key/a/b (old -1 represented28), all injected families retained, all source/screen/score/queue/reencryption checks independently verified. Failure blocks unknown search; preserve outputs and diagnose screening versus optimizer failure. No tuning within E066.",
+  "bounds": {"process_seconds":180,"watchdog_seconds":185,"family_seconds":1800,"phase_seconds":3000,"memory_ceiling_mib":768,"workers":1},
+  "unknown": "Separate preregistration only after gate and independent validation pass. Full optimizer matched nulls and correction over all selected page/group hypotheses required before claims.",
+  "limits": "Only12 fresh-key general-coefficient controls and4 old-sign input regressions; no guarantee for every b/key/source. Unigram family screening may discard true cipher. No arbitrary cipher multiplier, affine constant, F omission or unknown boundary recovery. Algebra and E020/E023 short delays are prior work."
+}

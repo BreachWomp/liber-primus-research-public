@@ -1,0 +1,2720 @@
+{
+  "experiment": "E003-bounded-cipher-screen",
+  "created_at": "2026-10-18T19:45:17.944067+00:00",
+  "input_sha256": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67",
+  "fixtures_sha256": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+  "parameters": {
+    "seed": 3301003,
+    "timeout_seconds": 180.0,
+    "model_order": 3,
+    "alpha": 0.1,
+    "training_ids": [
+      "LP1-01_atbash",
+      "LP1-03_04_divinity",
+      "LP1-05_direct",
+      "LP1-10_13_direct",
+      "LP1-14_15_circumference",
+      "LP1-16_direct"
+    ],
+    "training_runes": 2019,
+    "affine_grid": "a=1..28,b=0..28,P=aC+b mod29",
+    "prime_grid": "phi(p) offsets 0..28,cipher_sign +/-1,key_sign +/-1",
+    "skip_masks": "none, all ciphertext F, each single ciphertext F; duplicate masks removed",
+    "negative_control_replicates": 1,
+    "top_saved_per_page": 3
+  },
+  "variants_total": 113448,
+  "descriptive_control_score_threshold": -8.62817908248223,
+  "limitations": [
+    "Screening scores are not calibrated significance or decryption probabilities.",
+    "No corrected p-value: adaptive maximum over this large family prevents inferential use of raw scores.",
+    "One shuffle per page is a pipeline sanity check, not a statistical test.",
+    "A score below known controls does not reject a cipher family or a different language/register.",
+    "Exact positive controls use previously published transformations; no novelty.",
+    "Skipped-F subsets of size 2..n-1, global section keys, and larger prime offsets are outside scope."
+  ],
+  "new_decryptions": [],
+  "pages": [
+    {
+      "id": "LP2-00",
+      "status": "unverified_screen",
+      "runes": 262,
+      "variants": 2668,
+      "top": [
+        {
+          "score": -10.430064191824718,
+          "recipe": {
+            "family": "affine",
+            "a": 18,
+            "b": 9
+          },
+          "plaintext_runes": "ᛖᚻᛉᚳᚢᚩᚦᚾᛖᛈᛉᛁᛇᛏᚱᚢᚪᚾᚱᛠᚳᚣᛏᚣᛉᛗᚫᚷᛖᛠᛟᛋᛁᛡᚣᚪᚢᛋᛏᚻᚫᚣᚦᛄᚫᚣᛟᚱᛏᚷᛁᛈᚠᚫᛒᛄᛉᚦᚾᚠᚢᚾᛖᛄᚹᚾᛄᛡᛁᛈᛁᚠᚦᛈᚻᚫᛡᚢᚳᛄᛁᚪᛏᛋᚪᚻᚠᛏᛄᚢᛈᚾᛁᛇᚱᛏᚷᚩᛋᛁᛋᚦᛈᚻᛟᚹᚻᚪᚦᚠᛈᛉᛡᛁᛇᚾᚣᛟᛏᚱᛋᛏᛏᛄᛈᛁᛚᛈᚣᛉᛈᛒᚠᛁᛗᚫᛇᚠᛒᚫᚾᚩᚹᚣᛉᛚᚱᚣᛝᚢᚫᚠᚢᛏᛈᛋᛒᚷᛁᚢᚩᚱᛞᚳᛝᛟᛈᚹᛄᛋᛏᛒᚱᛠᚻᛝᛚᚾᚠᚪᛄᚢᚠᚾᛝᛗᛟᚹᚪᚾᚢᚣᚩᛟᛝᚣᛁᚩᚾᛞᚦᚷᛖᛚᚩᛁᚠᚠᛟᛒᚫᛠᛒᚩᚳᛚᛟᚻᛒᛁᚢᛠᛁᛝᛡᛞᚣᚹᚪᛖᛈᛡᚻᛞᚹᚻᛇᛖᛠᚹᛠᛁᛡᛞᛖᚾᚳᛉᛗᛚᛠᛝᚾᚪᚩᛞᛁᛒᚷᚩᛞᛗ",
+          "transliteration": "EHXCUOTHNEPXIEOTRUANREACYTYXMAEGEEAOESIIAYAUSTHAEYTHJAEYOERTGIPFAEBJXTHNFUNEJWNJIAIPIFTHPHAEIAUCJIATSAHFTJUPNIEORTGOSISTHPHOEWHATHFPXIAIEONYOETRSTTJPILPYXPBFIMAEEOFBAENOWYXLRYNGUAEFUTPSBGIUORDCNGOEPWJSTBREAHNGLNFAJUFNNGMOEWANUYOOENGYIONDTHGELOIFFOEBAEEABOCLOEHBIUEAINGIADYWAEPIAHDWHEOEEAWEAIIADENCXMLEANGNAODIBGODM"
+        },
+        {
+          "score": -10.448322747837864,
+          "recipe": {
+            "family": "affine",
+            "a": 12,
+            "b": 10
+          },
+          "plaintext_runes": "ᛏᛗᛞᛒᚪᚷᛋᛁᛏᚩᛞᚢᛇᚳᚣᚪᛚᛁᚣᛈᛒᚦᚳᚦᛞᚹᛄᚻᛏᛈᚾᛉᚢᛟᚦᛚᚪᛉᚳᛗᛄᚦᛋᛝᛄᚦᚾᚣᚳᚻᚢᚩᚱᛄᚫᛝᛞᛋᛁᚱᚪᛁᛏᛝᛠᛁᛝᛟᚢᚩᚢᚱᛋᚩᛗᛄᛟᚪᛒᛝᚢᛚᚳᛉᛚᛗᚱᚳᛝᚪᚩᛁᚢᛇᚣᚳᚻᚷᛉᚢᛉᛋᚩᛗᚾᛠᛗᛚᛋᚱᚩᛞᛟᚢᛇᛁᚦᚾᚳᚣᛉᚳᚳᛝᚩᚢᛡᚩᚦᛞᚩᚫᚱᚢᚹᛄᛇᚱᚫᛄᛁᚷᛠᚦᛞᛡᚣᚦᛖᚪᛄᚱᚪᚳᚩᛉᚫᚻᚢᚪᚷᚣᚠᛒᛖᚾᚩᛠᛝᛉᚳᚫᚣᛈᛗᛖᛡᛁᚱᛚᛝᚪᚱᛁᛖᚹᚾᛠᛚᛁᚪᚦᚷᚾᛖᚦᚢᚷᛁᚠᛋᚻᛏᛡᚷᚢᚱᚱᚾᚫᛄᛈᚫᚷᛒᛡᚾᛗᚫᚢᚪᛈᚢᛖᛟᚠᚦᛠᛚᛏᚩᛟᛗᚠᛠᛗᛇᛏᛈᛠᛈᚢᛟᚠᛏᛁᛒᛞᚹᛡᛈᛖᛁᛚᚷᚠᚢᚫᚻᚷᚠᚹ",
+          "transliteration": "TMDBAGSITODUEOCYALIYPBTHCTHDWJHTPNXUOETHLAXCMJTHSNGJTHNYCHUORJAENGDSIRAITNGEAINGOEUOURSOMJOEABNGULCXLMRCNGAOIUEOYCHGXUXSOMNEAMLSRODOEUEOITHNCYXCCNGOUIAOTHDOAERUWJEORAEJIGEATHDIAYTHEAJRACOXAEHUAGYFBENOEANGXCAEYPMEIAIRLNGARIEWNEALIATHGNETHUGIFSHTIAGURRNAEJPAEGBIANMAEUAPUEOEFTHEALTOOEMFEAMEOTPEAPUOEFTIBDWIAPEILGFUAEHGFW"
+        },
+        {
+          "score": -10.451213628398104,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 8,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              245
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚻᚹᛗᛁᛒᚩᛋᛞᛋᛠᚣᚱᛗᛟᚷᚹᚳᛈᚣᛇᚪᚳᛇᛞᚾᚠᛚᚠᚣᛁᚱᚻᚫᚹᚫᛉᛠᚳᚾᛡᛄᚳᛡᛗᚫᛡᚹᛇᚾᚱᚹᛏᚷᛗᛁᚱᛄᚪᛄᚦᚱᚠᛗᛞᚳᚪᛉᚷᚩᛏᛋᛏᛁᛄᚩᛉᚱᛈᛏᚳᛒᛞᚱᚪᛖᚳᛗᛄᛠᚱᚣᛖᛏᛁᛟᛗᛉᛋᛏᚱᛠᛖᛞᛄᛗᚫᚠᛡᚦᛟᛄᚾᛞᚣᛉᛋᚩᛏᛉᚱᛄᚾᛋᚢᛟᛞᚳᛄᛡᛝᛁᛗᛇᚠᛒᚦᛝᛄᚳᚩᛒᛄᛟᛗᚢᛋᛖᛚᛁᚷᚫᚣᚪᚣᚷᛞᛈᛚᚫᛏᛇᚻᚹᚻᚷᚠᛚᛚᛗᚣᛚᛖᚪᛁᛡᛉᛠᚷᛠᛏᛁᚫᚷᚦᚢᛡᚾᛗᚹᛞᚱᛈᚠᚪᚾᛁᚩᛗᚦᛁᛁᚾᚷᛞᛏᛟᛡᚠᚱᛚᛚᚦᛄᚫᛗᚠᛒᛋᚳᚾᚦᛟᛞᛠᛝᚳᛇᛞᚳᛠᛏᚩᛟᚣᛝᛗᛚᚹᛟᛚᚳᚻᚦᚾᚣᚠᛏᚷᚢᚪᚪᚩᚩᚳᚩᛗᚦᚻᛄᛏᛈᛖ",
+          "transliteration": "HWMIBOSDSEAYRMOEGWCPYEOACEODNFLFYIRHAEWAEXEACNIAJCIAMAEIAWEONRWTGMIRJAJTHRFMDCAXGOTSTIJOXRPTCBDRAECMJEARYETIOEMXSTREAEDJMAEFIATHOEJNDYXSOTXRJNSUOEDCJIANGIMEOFBTHNGJCOBJOEMUSELIGAEYAYGDPLAETEOHWHGFLLMYLEAIIAXEAGEATIAEGTHUIANMWDRPFANIOMTHIINGDTOEIAFRLLTHJAEMFBSCNTHOEDEANGCEODCEATOOEYNGMLWOELCHTHNYFTGUAAOOCOMTHHJTPE"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.394434997777985,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-01",
+      "status": "unverified_screen",
+      "runes": 266,
+      "variants": 2552,
+      "top": [
+        {
+          "score": -10.412356940237718,
+          "recipe": {
+            "family": "affine",
+            "a": 8,
+            "b": 12
+          },
+          "plaintext_runes": "ᚢᚳᛗᛏᚣᛏᛉᛋᛚᛁᛏᛡᚫᛉᚢᚾᚷᛏᛟᚠᚪᛞᛋᛠᚫᛋᚩᚹᛟᛠᛇᛒᚻᚳᚪᛉᚳᛇᛡᚹᛇᚱᛋᚹᛉᛗᛖᛗᚦᚠᛖᚾᛖᚣᚹᛖᛒᛉᛏᛡᚣᚦᚾᛒᛉᛞᚩᛡᛈᚷᛡᛉᚾᛈᚱᛁᚱᛠᚹᚩᛉᛒᛞᛇᛞᛈᛡᚾᚣᛠᚠᛚᚻᛉᚻᚦᚠᛇᛏᛝᚾᛉᚷᚠᛝᚹᛄᚢᚦᚾᚫᚷᛠᚹᚠᚢᛉᛠᛋᚷᚾᛞᛏᚩᛝᛒᛖᚪᚻᛄᛡᛋᚦᛁᛒᛈᛇᚳᚣᚫᛞᛒᚱᚳᚫᚹᛠᛄᛞᚾᛞᚻᚫᚱᚹᛡᛞᛇᛋᛟᚷᛄᛚᛟᛞᛡᚱᛏᚻᛞᚦᚫᛁᛏᛠᛇᛟᚷᚳᚫᛗᚢᚾᚦᛁᛏᚣᛟᛞᚠᛠᚻᚠᚱᚱᛁᛚᚱᛁᛇᛁᛈᛒᚻᛟᛁᛞᚦᛞᛉᛟᚻᛉᛋᚫᚦᚣᚠᚢᛒᚠᛞᛒᛖᛇᛄᛈᚱᚣᛉᚾᛚᚢᛖᛋᛄᚱᛠᛇᛈᚢᛡᚻᛏᚪᛗᛇᛡᛇᚪᚦᚳᛠᛚᛡᚦᚻᚱᚪᛏᛡᛈᚠᛡᚻᚳ",
+          "transliteration": "UCMTYTXSLITIAAEXUNGTOEFADSEAAESOWOEEAEOBHCAXCEOIAWEORSWXMEMTHFENEYWEBXTIAYTHNBXDOIAPGIAXNPRIREAWOXBDEODPIANYEAFLHXHTHFEOTNGNXGFNGWJUTHNAEGEAWFUXEASGNDTONGBEAHJIASTHIBPEOCYAEDBRCAEWEAJDNDHAERWIADEOSOEGJLOEDIARTHDTHAEITEAEOOEGCAEMUNTHITYOEDFEAHFRRILRIEOIPBHOEIDTHDXOEHXSAETHYFUBFDBEEOJPRYXNLUESJREAEOPUIAHTAMEOIAEOATHCEALIATHHRATIAPFIAHC"
+        },
+        {
+          "score": -10.43079215617654,
+          "recipe": {
+            "family": "affine",
+            "a": 14,
+            "b": 8
+          },
+          "plaintext_runes": "ᚫᚩᛈᛋᛖᛋᚣᚷᛟᛗᛋᛡᚾᚣᚫᛁᛇᛋᛄᛏᚠᛚᚷᚹᚾᚷᛉᛝᛄᚹᚻᚪᚢᚩᚠᚣᚩᚻᛡᛝᚻᛞᚷᛝᚣᛈᚱᛈᚳᛏᚱᛁᚱᛖᛝᚱᚪᚣᛋᛡᛖᚳᛁᚪᚣᛚᛉᛡᛒᛇᛡᚣᛁᛒᛞᛗᛞᚹᛝᛉᚣᚪᛚᚻᛚᛒᛡᛁᛖᚹᛏᛟᚢᚣᚢᚳᛏᚻᛋᚦᛁᚣᛇᛏᚦᛝᛠᚫᚳᛁᚾᛇᚹᛝᛏᚫᚣᚹᚷᛇᛁᛚᛋᛉᚦᚪᚱᚠᚢᛠᛡᚷᚳᛗᚪᛒᚻᚩᛖᚾᛚᚪᛞᚩᚾᛝᚹᛠᛚᛁᛚᚢᚾᛞᛝᛡᛚᚻᚷᛄᛇᛠᛟᛄᛚᛡᛞᛋᚢᛚᚳᚾᛗᛋᚹᚻᛄᛇᚩᚾᛈᚫᛁᚳᛗᛋᛖᛄᛚᛏᚹᚢᛏᛞᛞᛗᛟᛞᛗᚻᛗᛒᚪᚢᛄᛗᛚᚳᛚᚣᛄᚢᚣᚷᚾᚳᛖᛏᚫᚪᛏᛚᚪᚱᚻᛠᛒᛞᛖᚣᛁᛟᚫᚱᚷᛠᛞᚹᚻᛒᚫᛡᚢᛋᚠᛈᚻᛡᚻᚠᚳᚩᚹᛟᛡᚳᚢᛞᚠᛋᛡᛒᛏᛡᚢᚩ",
+          "transliteration": "AEOPSESYGOEMSIANYAEIEOSJTFLGWNGXNGJWHAUOFYOHIANGHDGNGYPRPCTRIRENGRAYSIAECIAYLXIABEOIAYIBDMDWNGXYALHLBIAIEWTOEUYUCTHSTHIYEOTTHNGEAAECINEOWNGTAEYWGEOILSXTHARFUEAIAGCMABHOENLADONNGWEALILUNDNGIALHGJEOEAOEJLIADSULCNMSWHJEOONPAEICMSEJLTWUTDDMOEDMHMBAUJMLCLYJUYGNCETAEATLARHEABDEYIOEAERGEADWHBAEIAUSFPHIAHFCOWOEIACUDFSIABTIAUO"
+        },
+        {
+          "score": -10.447523898925496,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 12,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              175
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛈᚣᚦᛝᚾᛈᛉᛝᛏᛏᛚᛗᛖᚾᚾᚷᚠᛗᛈᛠᚫᛇᚢᚣᛏᛏᚫᚳᛗᚫᛈᚻᛝᛋᚾᚩᛏᚱᛚᚣᛝᛁᚾᚦᛋᛁᛟᚠᛉᛄᛝᚳᛋᛇᛝᛚᛠᛟᛄᛁᛚᛄᚪᛝᛄᛋᛞᛖᛠᚹᚫᚫᛟᚱᛋᛋᚩᚱᚢᚩᚠᚠᚠᛚᛗᛈᛚᚹᛉᚣᚦᛈᚪᚣᚻᛞᚪᚾᛖᚾᛖᛈᚠᛄᚻᚪᚱᚱᛈᛚᛖᚷᚻᛠᚢᚦᛝᚪᛚᚱᚠᚩᚾᚩᛞᛞᚪᛚᛏᛁᛁᛗᛗᛁᛋᚫᛇᛖᚩᛒᛟᛁᛝᛠᚻᚩᛞᚷᛏᚢᚫᚢᚻᚩᛠᛁᛇᚩᚢᛖᚷᚢᚹᛗᛠᚱᛁᛚᚢᛒᛏᚱᚹᚾᛒᚠᚩᚪᛚᚷᛒᛉᚳᚾᚱᚱᛋᚫᚢᚩᛗᚫᛇᛒᛠᚳᚪᛏᛟᚾᛇᛉᚫᚢᚻᛋᚻᚩᚫᚳᛒᛡᛝᛠᛚᚪᛝᛒᚪᚪᚳᛉᚫᚳᛟᚾᛡᚾᚹᚻᚩᚫᛈᛟᛇᛖᚪᛗᛈᛁᛗᚾᚢᛡᛟᛞᛡᚻᚣᚹᛟᚪᛝᛏᚱᚾᚳᛒᚪᛋᛉᛠᚪᛈᚢᛟ",
+          "transliteration": "PYTHNGNPXNGTTLMENNGFMPEAAEEOUYTTAECMAEPHNGSNOTRLYNGINTHSIOEFXJNGCSEONGLEAOEJILJANGJSDEEAWAEAEOERSSORUOFFFLMPLWXYTHPAYHDANENEPFJHARRPLEGHEAUTHNGALRFONODDALTIIMMISAEEOEOBOEINGEAHODGTUAEUHOEAIEOOUEGUWMEARILUBTRWNBFOALGBXCNRRSAEUOMAEEOBEACATOENEOXAEUHSHOAECBIANGEALANGBAACXAECOENIANWHOAEPOEEOEAMPIMNUIAOEDIAHYWOEANGTRNCBASXEAAPUOE"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.440534292881324,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-02",
+      "status": "unverified_screen",
+      "runes": 201,
+      "variants": 1856,
+      "top": [
+        {
+          "score": -10.40609820339227,
+          "recipe": {
+            "family": "affine",
+            "a": 5,
+            "b": 23
+          },
+          "plaintext_runes": "ᛒᚦᛠᚳᛏᛝᚫᚹᛟᚳᛝᚦᛖᛉᛝᛁᚳᛝᚣᚪᚫᛟᚹᚠᚫᛈᚢᚾᚳᚣᛖᚠᛋᛉᛋᚳᛠᚱᚳᚻᛁᚷᛝᚪᛚᚢᛠᛇᛖᛞᛁᛋᚣᛟᛈᛇᛉᛟᛝᛚᛈᛒᚦᛋᛞᛏᛚᛟᛋᚱᛉᚹᛄᚣᚫᚾᚪᛝᛏᛟᚱᛡᛁᛗᚻᛈᛄᚱᛟᛇᛞᚹᚣᚪᚳᛗᚣᚾᛋᛏᛁᚷᚢᛏᛞᚳᛉᛟᚣᛞᛏᚩᚠᚳᛝᛗᛞᚢᛡᚹᛠᛖᛁᚹᛚᛚᛗᚹᚠᛖᛟᛠᛟᚫᛖᚷᛟᚠᚳᛖᚱᛈᚩᛗᚹᛏᚠᚣᛋᛗᚢᛒᛟᛗᛁᚳᛡᛉᛋᚪᚱᛖᚣᛏᚪᚱᚳᚾᛈᚠᚩᛚᚣᛇᛖᛟᚾᚩᛡᚹᛝᛚᛗᛠᚷᛏᛡᛝᛚᚢᛞᛖᚳᛟᛁᛈᛠᚢᛄᛠᚠ",
+          "transliteration": "BTHEACTNGAEWOECNGTHEXNGICNGYAAEOEWFAEPUNCYEFSXSCEARCHIGNGALUEAEOEDISYOEPEOXOENGLPBTHSDTLOESRXWJYAENANGTOERIAIMHPJROEEODWYACMYNSTIGUTDCXOEYDTOFCNGMDUIAWEAEIWLLMWFEOEEAOEAEEGOEFCERPOMWTFYSMUBOEMICIAXSAREYTARCNPFOLYEOEOENOIAWNGLMEAGTIANGLUDECOEIPEAUJEAF"
+        },
+        {
+          "score": -10.42164093684786,
+          "recipe": {
+            "family": "affine",
+            "a": 23,
+            "b": 24
+          },
+          "plaintext_runes": "ᚻᚣᛖᚳᛋᚾᛁᛚᚦᚳᚾᚣᚢᚠᚾᛠᚳᚾᚩᛒᛁᚦᛚᛄᛁᚹᚱᚷᚳᚩᚢᛄᛟᚠᛟᚳᛖᛇᚳᛈᛠᛡᚾᛒᛏᚱᛖᛉᚢᚪᛠᛟᚩᚦᚹᛉᚠᚦᚾᛏᚹᚻᚣᛟᚪᛋᛏᚦᛟᛇᚠᛚᛝᚩᛁᚷᛒᚾᛋᚦᛇᚫᛠᛞᛈᚹᛝᛇᚦᛉᚪᛚᚩᛒᚳᛞᚩᚷᛟᛋᛠᛡᚱᛋᚪᚳᚠᚦᚩᚪᛋᛗᛄᚳᚾᛞᚪᚱᚫᛚᛖᚢᛠᛚᛏᛏᛞᛚᛄᚢᚦᛖᚦᛁᚢᛡᚦᛄᚳᚢᛇᚹᛗᛞᛚᛋᛄᚩᛟᛞᚱᚻᚦᛞᛠᚳᚫᚠᛟᛒᛇᚢᚩᛋᛒᛇᚳᚷᚹᛄᛗᛏᚩᛉᚢᚦᚷᛗᚫᛚᚾᛏᛞᛖᛡᛋᚫᚾᛏᚱᚪᚢᚳᚦᛠᚹᛖᚱᛝᛖᛄ",
+          "transliteration": "HYECSNILTHCNYUFNEACNOBITHLJIWRGCOUJOEFOECEEOCPEAIANBTREXUAEAOEOTHWXFTHNTWHYOEASTTHOEEOFLNGOIGBNSTHEOAEEADPWNGEOTHXALOBCDOGOESEAIARSACFTHOASMJCNDARAELEUEALTTDLJUTHETHIUIATHJCUEOWMDLSJOOEDRHTHDEACAEFOEBEOUOSBEOCGWJMTOXUTHGMAELNTDEIASAENTRAUCTHEAWERNGEJ"
+        },
+        {
+          "score": -10.423402524459009,
+          "recipe": {
+            "family": "affine",
+            "a": 11,
+            "b": 15
+          },
+          "plaintext_runes": "ᚫᛝᚣᛏᛒᛠᚦᚩᚹᛏᛠᛝᚱᚢᛠᛡᛏᛠᛁᛞᚦᚹᚩᚳᚦᛟᛈᛗᛏᛁᚱᚳᚾᚢᚾᛏᚣᚻᛏᛄᛡᚪᛠᛞᛚᛈᚣᛉᚱᛋᛡᚾᛁᚹᛟᛉᚢᚹᛠᛚᛟᚫᛝᚾᛋᛒᛚᚹᚾᚻᚢᚩᚷᛁᚦᛗᛞᛠᛒᚹᚻᛖᛡᛇᛄᛟᚷᚻᚹᛉᛋᚩᛁᛞᛏᛇᛁᛗᚾᛒᛡᚪᛈᛒᛋᛏᚢᚹᛁᛋᛒᚠᚳᛏᛠᛇᛋᛈᛖᚩᚣᚱᛡᚩᛚᛚᛇᚩᚳᚱᚹᚣᚹᚦᚱᚪᚹᚳᛏᚱᚻᛟᚠᛇᚩᛒᚳᛁᚾᛇᛈᚫᚹᛇᛡᛏᛖᚢᚾᛞᚻᚱᛁᛒᛞᚻᛏᛗᛟᚳᚠᛚᛁᛉᚱᚹᛗᚠᛖᚩᛠᛚᛇᚣᚪᛒᛖᛠᛚᛈᛋᚱᛏᚹᛡᛟᚣᛈᚷᚣᚳ",
+          "transliteration": "AENGYTBEATHOWTEANGRUEAIATEAIDTHWOCTHOEPMTIRCNUNTYHTJIAAEADLPYXRSIANIWOEXUWEALOEAENGNSBLWNHUOGITHMDEABWHEIAEOJOEGHWXSOIDTEOIMNBIAAPBSTUWISBFCTEAEOSPEOYRIAOLLEOOCRWYWTHRAWCTRHOEFEOOBCINEOPAEWEOIATEUNDHRIBDHTMOECFLIXRWMFEOEALEOYABEEALPSRTWIAOEYPGYC"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.33709734015574,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-03",
+      "status": "unverified_screen",
+      "runes": 217,
+      "variants": 1856,
+      "top": [
+        {
+          "score": -10.346664354533612,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 3,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛉᚢᚠᛝᚩᛇᚩᛋᛖᚠᚩᚣᛉᛏᛠᛉᚩᛠᛈᛄᚫᚠᛄᛚᛟᚠᛈᚣᛋᚷᛏᛉᛞᛏᚫᛒᛠᛚᚾᚩᛠᚳᚱᛚᛚᚾᛝᚱᚩᛇᛁᚾᛗᛈᚾᚦᛒᛒᚷᚩᚾᚠᛚᛁᛏᚣᛡᚦᛇᛞᛝᛖᚾᛇᛟᚫᚪᚫᛉᛋᛞᛇᚦᛞᛈᚱᛋᛒᛠᛡᚦᛁᛟᛉᚪᛡᛈᛞᛝᛞᛞᚢᚾᛝᚹᛠᚩᚻᚾᚱᚢᚪᛚᛗᛚᚱᚹᛏᛄᚱᚻᚻᚻᛄᛗᚪᛈᛝᛁᛏᚣᚦᛟᚢᛞᛖᚳᛁᚻᛝᛗᛝᚪᚾᚷᛡᛒᛗᛖᛞᛠᛈᚱᚪᚩᚠᚪᚳᚪᚾᚷᚳᚱᚢᛏᛇᛠᚷᛄᛏᛖᛏᚹᚱᛖᚳᚩᚢᛚᚷᚦᛠᚠᛉᚢᚩᚣᛄᚦᛈᛉᛋᚣᛗᛚᚢᛈᛟᚦᛝᚫᚪᛋᛈᛄᛏᛖᛗᛖᛈᛁᚣᛒᚣᛄᚫᛠ",
+          "transliteration": "XUFNGOEOOSEFOYXTEAXOEAPJAEFJLOEFPYSGTXDTAEBEALNOEACRLLNNGROEOINMPNTHBBGONFLITYIATHEODNGENEOOEAEAAEXSDEOTHDPRSBEAIATHIOEXAIAPDNGDDUNNGWEAOHNRUALMLRWTJRHHHJMAPNGITYTHOEUDECIHNGMNGANGIABMEDEAPRAOFACANGCRUTEOEAGJTETWRECOULGTHEAFXUOYJTHPXSYMLUPOETHNGAEASPJTEMEPIYBYJAEEA"
+        },
+        {
+          "score": -10.371977925280223,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 3,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              185
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛉᚢᚠᛝᚩᛇᚩᛋᛖᚠᚩᚣᛉᛏᛠᛉᚩᛠᛈᛄᚫᚠᛄᛚᛟᚠᛈᚣᛋᚷᛏᛉᛞᛏᚫᛒᛠᛚᚾᚩᛠᚳᚱᛚᛚᚾᛝᚱᚩᛇᛁᚾᛗᛈᚾᚦᛒᛒᚷᚩᚾᚠᛚᛁᛏᚣᛡᚦᛇᛞᛝᛖᚾᛇᛟᚫᚪᚫᛉᛋᛞᛇᚦᛞᛈᚱᛋᛒᛠᛡᚦᛁᛟᛉᚪᛡᛈᛞᛝᛞᛞᚢᚾᛝᚹᛠᚩᚻᚾᚱᚢᚪᛚᛗᛚᚱᚹᛏᛄᚱᚻᚻᚻᛄᛗᚪᛈᛝᛁᛏᚣᚦᛟᚢᛞᛖᚳᛁᚻᛝᛗᛝᚪᚾᚷᛡᛒᛗᛖᛞᛠᛈᚱᚪᚩᚠᚪᚳᚪᚾᚷᚳᚱᚢᛏᛇᛠᚷᛄᛏᛖᛏᚹᚱᛖᚳᚩᚢᛚᚷᚦᛠᚠᛉᚢᚠᛗᛈᛇᛝᚪᛝᚩᛡᚩᚳᛗᛠᚱᛡᚻᚳᚱᛋᛋᛟᛚᚫᛟᛋᛉᚾᛗᚩᛏᚦᚳ",
+          "transliteration": "XUFNGOEOOSEFOYXTEAXOEAPJAEFJLOEFPYSGTXDTAEBEALNOEACRLLNNGROEOINMPNTHBBGONFLITYIATHEODNGENEOOEAEAAEXSDEOTHDPRSBEAIATHIOEXAIAPDNGDDUNNGWEAOHNRUALMLRWTJRHHHJMAPNGITYTHOEUDECIHNGMNGANGIABMEDEAPRAOFACANGCRUTEOEAGJTETWRECOULGTHEAFXUFMPEONGANGOIAOCMEARIAHCRSSOELAEOESXNMOTTHC"
+        },
+        {
+          "score": -10.371977925280223,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 3,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              192
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛉᚢᚠᛝᚩᛇᚩᛋᛖᚠᚩᚣᛉᛏᛠᛉᚩᛠᛈᛄᚫᚠᛄᛚᛟᚠᛈᚣᛋᚷᛏᛉᛞᛏᚫᛒᛠᛚᚾᚩᛠᚳᚱᛚᛚᚾᛝᚱᚩᛇᛁᚾᛗᛈᚾᚦᛒᛒᚷᚩᚾᚠᛚᛁᛏᚣᛡᚦᛇᛞᛝᛖᚾᛇᛟᚫᚪᚫᛉᛋᛞᛇᚦᛞᛈᚱᛋᛒᛠᛡᚦᛁᛟᛉᚪᛡᛈᛞᛝᛞᛞᚢᚾᛝᚹᛠᚩᚻᚾᚱᚢᚪᛚᛗᛚᚱᚹᛏᛄᚱᚻᚻᚻᛄᛗᚪᛈᛝᛁᛏᚣᚦᛟᚢᛞᛖᚳᛁᚻᛝᛗᛝᚪᚾᚷᛡᛒᛗᛖᛞᛠᛈᚱᚪᚩᚠᚪᚳᚪᚾᚷᚳᚱᚢᛏᛇᛠᚷᛄᛏᛖᛏᚹᚱᛖᚳᚩᚢᛚᚷᚦᛠᚠᛉᚢᚩᚣᛄᚦᛈᛉᛋᚠᛡᚩᚳᛗᛠᚱᛡᚻᚳᚱᛋᛋᛟᛚᚫᛟᛋᛉᚾᛗᚩᛏᚦᚳ",
+          "transliteration": "XUFNGOEOOSEFOYXTEAXOEAPJAEFJLOEFPYSGTXDTAEBEALNOEACRLLNNGROEOINMPNTHBBGONFLITYIATHEODNGENEOOEAEAAEXSDEOTHDPRSBEAIATHIOEXAIAPDNGDDUNNGWEAOHNRUALMLRWTJRHHHJMAPNGITYTHOEUDECIHNGMNGANGIABMEDEAPRAOFACANGCRUTEOEAGJTETWRECOULGTHEAFXUOYJTHPXSFIAOCMEARIAHCRSSOELAEOESXNMOTTHC"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.416506355887856,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-04",
+      "status": "unverified_screen",
+      "runes": 261,
+      "variants": 1856,
+      "top": [
+        {
+          "score": -10.397237797023966,
+          "recipe": {
+            "family": "affine",
+            "a": 10,
+            "b": 14
+          },
+          "plaintext_runes": "ᛄᛞᛈᛠᚾᛡᚣᚢᚷᛡᛄᛏᛉᛒᛞᚷᚾᛠᛋᚫᛞᚹᚻᚢᚦᚾᛝᚪᚢᛖᚱᛏᛝᛝᚣᚷᛄᛝᚪᚾᚻᛉᚦᚪᛏᚱᚢᚾᛟᚣᛄᚪᚾᚩᚢᛇᛝᚹᚫᛈᚹᛟᛏᛡᛉᛏᚷᚩᛝᚻᛖᚾᛞᛒᚳᛁᚪᚻᚫᚣᛏᛄᚦᛏᚳᛖᛉᚳᚱᛡᛗᛏᛏᛈᚱᛞᛠᛞᚩᛄᚳᚱᚾᚩᛚᚢᛚᚠᚦᚠᚱᚷᛉᚷᚱᛏᚳᛠᛡᚷᛒᛖᛈᛝᚻᛝᚢᚣᚷᛒᛁᛈᚱᛋᚦᛏᚫᚢᚫᚢᛠᛞᚣᚩᚦᚳᚦᛠᚾᚻᛄᚫᛄᚫᛁᛟᛠᚠᚾᛄᚠᚢᚾᛡᚣᚻᛗᚦᚢᛒᚫᛚᛁᛗᚷᚠᛄᚦᛗᛁᛉᚾᚳᛟᚱᚪᛖᚾᚫᛏᚠᛖᚱᛡᚻᛁᚦᚾᛏᚻᛝᚱᚳᚫᛝᛁᛒᚪᛟᛝᛁᛠᛗᚱᛠᚣᛋᚹᛚᚩᛖᛏᛒᚩᛗᛖᛋᛠᚢᛚᚾᛞᛁᚣᚪᛚᛡᛇᛠᛟᛖᛏᛗᚷᛏᛇᛠᛈᛞᛄᚳᚫᚷᚪᛉᛖᚳᚾᛚᛄᚪ",
+          "transliteration": "JDPEANIAYUGIAJTXBDGNEASAEDWHUTHNNGAUERTNGNGYGJNGANHXTHATRUNOEYJANOUEONGWAEPWOETIAXTGONGHENDBCIAHAEYTJTHTCEXCRIAMTTPRDEADOJCRNOLULFTHFRGXGRTCEAIAGBEPNGHNGUYGBIPRSTHTAEUAEUEADYOTHCTHEANHJAEJAEIOEEAFNJFUNIAYHMTHUBAELIMGFJTHMIXNCOERAENAETFERIAHITHNTHNGRCAENGIBAOENGIEAMREAYSWLOETBOMESEAULNDIYALIAEOEAOEETMGTEOEAPDJCAEGAXECNLJA"
+        },
+        {
+          "score": -10.427097253532908,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 9,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              41
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛗᛠᚱᚪᛡᛡᚢᛗᚹᛖᚩᛚᛚᚱᛠᛉᛡᛠᛟᚫᛞᛖᚫᛁᛋᛒᚣᛇᚹᚱᚣᛁᛡᚻᚫᛡᛋᛠᛚᚻᚹᚠᛟᚹᛉᛒᛉᛋᚦᛏᚷᛚᚷᛡᚷᛉᛉᚳᛋᛉᚷᚪᛁᛚᛖᚢᚷᚢᚩᚢᚷᛏᛁᛞᚣᛉᚱᛖᛒᛠᚦᛖᚪᛚᚪᚾᚳᛄᛉᚻᛋᚪᚢᚦᛁᛋᚩᛞᚦᚩᛚᛗᛄᛠᚫᛠᛁᛖᚣᚪᛈᚫᛟᛁᚻᛝᚫᛒᛟᛡᛁᛗᛁᚾᚹᛞᚫᛝᛞᛇᚢᛟᚣᛄᚩᛚᛚᛏᛋᚳᚢᛗᛈᚷᚳᛖᚠᚪᚱᛄᛠᛏᚾᛠᚣᚻᚩᛇᛖᚢᚾᛏᛒᛋᛟᛠᚾᚣᚫᚫᛟᛈᚢᚩᚪᛁᛚᛠᚠᚻᚣᚱᛞᚣᚾᛝᚾᛒᛋᚠᛉᛏᚾᛟᚠᛖᚱᛉᚻᛒᚱᛈᛟᛠᛖᛖᛟᛏᛏᛖᛚᛟᚩᚳᚠᚻᚻᛋᚠᛈᚻᚷᛄᚱᚷᛈᚷᛚᛠᚦᚱᚠᚦᚠᚷᚠᚫᛋᛈᛠᚪᛟᛏᛁᛒᚹᚢᛚᛞᛟᛉᚹᛉᛉᛋᛟᛏᚢᛋᚠᛇ",
+          "transliteration": "MEARAIAIAUMWEOLLREAXIAEAOEAEDEAEISBYEOWRYIIAHAEIASEALHWFOEWXBXSTHTGLGIAGXXCSXGAILEUGUOUGTIDYXREBEATHEALANCJXHSAUTHISODTHOLMJEAAEEAIEYAPAEOEIHNGAEBOEIAIMINWDAENGDEOUOEYJOLLTSCUMPGCEFARJEATNEAYHOEOEUNTBSOEEANYAEAEOEPUOAILEAFHYRDYNNGNBSFXTNOEFERXHBRPOEEAEEOETTELOEOCFHHSFPHGJRGPGLEATHRFTHFGFAESPEAAOETIBWULDOEXWXXSOETUSFEO"
+        },
+        {
+          "score": -10.434673716694418,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 9,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              12
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛗᛠᚱᚪᛡᛡᚢᛗᚹᛖᚩᛚᚠᚠᛟᚷᛞᚣᛖᛞᛗᚱᛝᚱᛈᚹᚪᚷᚢᚠᛚᚱᚫᛡᛞᛞᛈᛏᚻᚱᚳᚫᛟᚹᛉᛒᛉᛋᚦᛏᚷᛚᚷᛡᚷᛉᛉᚳᛋᛉᚷᚪᛁᛚᛖᚢᚷᚢᚩᚢᚷᛏᛁᛞᚣᛉᚱᛖᛒᛠᚦᛖᚪᛚᚪᚾᚳᛄᛉᚻᛋᚪᚢᚦᛁᛋᚩᛞᚦᚩᛚᛗᛄᛠᚫᛠᛁᛖᚣᚪᛈᚫᛟᛁᚻᛝᚫᛒᛟᛡᛁᛗᛁᚾᚹᛞᚫᛝᛞᛇᚢᛟᚣᛄᚩᛚᛚᛏᛋᚳᚢᛗᛈᚷᚳᛖᚠᚪᚱᛄᛠᛏᚾᛠᚣᚻᚩᛇᛖᚢᚾᛏᛒᛋᛟᛠᚾᚣᚫᚫᛟᛈᚢᚩᚪᛁᛚᛠᚠᚻᚣᚱᛞᚣᚾᛝᚾᛒᛋᚠᛉᛏᚾᛟᚠᛖᚱᛉᚻᛒᚱᛈᛟᛠᛖᛖᛟᛏᛏᛖᛚᛟᚩᚳᚠᚻᚻᛋᚠᛈᚻᚷᛄᚱᚷᛈᚷᛚᛠᚦᚱᚠᚦᚠᚷᚠᚫᛋᛈᛠᚪᛟᛏᛁᛒᚹᚢᛚᛞᛟᛉᚹᛉᛉᛋᛟᛏᚢᛋᚠᛇ",
+          "transliteration": "MEARAIAIAUMWEOLFFOEGDYEDMRNGRPWAGUFLRAEIADDPTHRCAEOEWXBXSTHTGLGIAGXXCSXGAILEUGUOUGTIDYXREBEATHEALANCJXHSAUTHISODTHOLMJEAAEEAIEYAPAEOEIHNGAEBOEIAIMINWDAENGDEOUOEYJOLLTSCUMPGCEFARJEATNEAYHOEOEUNTBSOEEANYAEAEOEPUOAILEAFHYRDYNNGNBSFXTNOEFERXHBRPOEEAEEOETTELOEOCFHHSFPHGJRGPGLEATHRFTHFGFAESPEAAOETIBWULDOEXWXXSOETUSFEO"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.411035812129974,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-05",
+      "status": "unverified_screen",
+      "runes": 263,
+      "variants": 1972,
+      "top": [
+        {
+          "score": -10.423092791428049,
+          "recipe": {
+            "family": "affine",
+            "a": 28,
+            "b": 0
+          },
+          "plaintext_runes": "ᚫᚱᛋᛝᛖᚱᛁᚾᚠᚪᚻᚷᛗᚻᚣᚪᛉᚹᛄᚩᚹᛝᛠᛞᚷᛟᚳᛄᛉᛞᚻᚠᛋᚷᛋᛖᚢᛝᛗᛡᛏᛋᚩᚦᛒᚷᛒᚻᛒᚻᛄᚢᚷᚫᚾᛒᛈᛋᛈᚩᚫᛒᛏᚻᛒᛏᚣᛗᚾᛄᚠᛒᚱᚳᚩᚻᚠᚩᚠᚷᛚᚾᛋᛈᛚᚱᛉᛗᚣᚪᛠᚩᚢᛚᛈᛞᚪᚳᛋᚦᛒᛡᛖᚩᛖᚾᚹᛄᚾᚩᛏᚦᛄᛟᚹᛒᛚᚳᛝᚷᛒᛉᛡᚩᛒᛡᛖᛡᚫᛠᚪᚢᚳᛠᛖᚦᛏᚩᚱᛒᛉᛝᚢᛈᚩᚷᚩᚱᚠᛝᚣᚹᛁᛋᚹᛖᛞᛠᚦᚫᚦᚪᛗᚠᚹᛗᛖᛏᛇᛄᚻᚩᛡᚣᚱᚩᚢᛋᚦᛄᚾᛗᚫᚩᚷᚢᛖᚱᚪᛁᛞᛗᚱᛠᚳᚱᛖᚳᛝᛏᚠᚷᚾᛗᚢᛏᚹᚩᚣᛠᛇᛞᚻᚹᛠᚻᛉᛠᚪᛈᚷᚱᛏᚣᛖᛇᛝᚫᛗᛞᛝᛖᚩᛟᛁᛒᛚᚱᚷᚻᛒᚹᛖᚻᚪᛄᚢᛋᚳᚫᚩᚳᛠᛈᚪᛏᚪᚣᛒᚹᚱᛏᛈ",
+          "transliteration": "AERSNGERINFAHGMHYAXWJOWNGEADGOECJXDHFSGSEUNGMIATSOTHBGBHBHJUGAENBPSPOAEBTHBTYMNJFBRCOHFOFGLNSPLRXMYAEAOULPDACSTHBIAEOENWJNOTTHJOEWBLCNGGBXIAOBIAEIAAEEAAUCEAETHTORBXNGUPOGORFNGYWISWEDEATHAETHAMFWMETEOJHOIAYROUSTHJNMAEOGUERAIDMREACRECNGTFGNMUTWOYEAEODHWEAHXEAAPGRTYEEONGAEMDNGEOOEIBLRGHBWEHAJUSCAEOCEAPATAYBWRTP"
+        },
+        {
+          "score": -10.428354249438204,
+          "recipe": {
+            "family": "affine",
+            "a": 8,
+            "b": 21
+          },
+          "plaintext_runes": "ᚪᛖᛒᛡᛟᛖᛠᚹᛝᚩᛋᚦᛉᛋᛏᚩᚫᛞᛚᚣᛞᛡᚠᛄᚦᛗᛁᛚᚫᛄᛋᛝᛒᚦᛒᛟᛈᛡᛉᚻᚾᛒᚣᚳᚢᚦᚢᛋᚢᛋᛚᛈᚦᚪᚹᚢᚱᛒᚱᚣᚪᚢᚾᛋᚢᚾᛏᛉᚹᛚᛝᚢᛖᛁᚣᛋᛝᚣᛝᚦᚷᚹᛒᚱᚷᛖᚫᛉᛏᚩᚠᚣᛈᚷᚱᛄᚩᛁᛒᚳᚢᚻᛟᚣᛟᚹᛞᛚᚹᚣᚾᚳᛚᛗᛞᚢᚷᛁᛡᚦᚢᚫᚻᚣᚢᚻᛟᚻᚪᚠᚩᛈᛁᚠᛟᚳᚾᚣᛖᚢᚫᛡᛈᚱᚣᚦᚣᛖᛝᛡᛏᛞᛠᛒᛞᛟᛄᚠᚳᚪᚳᚩᛉᛝᛞᛉᛟᚾᛇᛚᛋᚣᚻᛏᛖᚣᛈᛒᚳᛚᚹᛉᚪᚣᚦᛈᛟᛖᚩᛠᛄᛉᛖᚠᛁᛖᛟᛁᛡᚾᛝᚦᚹᛉᛈᚾᛞᚣᛏᚠᛇᛄᛋᛞᚠᛋᚫᚠᚩᚱᚦᛖᚾᛏᛟᛇᛡᚪᛉᛄᛡᛟᚣᛗᛠᚢᚷᛖᚦᛋᚢᛞᛟᛋᚩᛚᛈᛒᛁᚪᚣᛁᚠᚱᚩᚾᚩᛏᚢᛞᛖᚾᚱ",
+          "transliteration": "AEBIAOEEEAWNGOSTHXSTOAEDLYDIAFJTHMILAEJSNGBTHBOEPIAXHNBYCUTHUSUSLPTHAWURBRYAUNSUNTXWLNGUEIYSNGYNGTHGWBRGEAEXTOFYPGRJOIBCUHOEYOEWDLWYNCLMDUGIIATHUAEHYUHOEHAFOPIFOECNYEUAEIAPRYTHYENGIATDEABDOEJFCACOXNGDXOENEOLSYHTEYPBCLWXAYTHPOEEOEAJXEFIEOEIIANNGTHWXPNDYTFEOJSDFSAEFORTHENTOEEOIAAXJIAOEYMEAUGETHSUDOESOLPBIAYIFRONOTUDENR"
+        },
+        {
+          "score": -10.444692122439717,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 26,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              8
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛗᛋᚷᚱᛝᛁᛁᛈᚠᚻᚣᚳᛡᛈᚢᚾᛝᚾᚹᛗᛒᛋᛚᚠᛗᚹᚢᚣᚱᚢᛟᚹᛞᚾᚱᚩᚢᚪᚢᚪᛁᚫᛉᚫᛇᛡᛟᛁᚹᛟᛞᛁᛈᛡᛟᚪᚢᚾᛈᚠᛄᚫᚳᛒᛁᛋᛒᚩᛒᛞᚾᛡᛞᚪᛋᛏᚳᚻᛒᛈᚳᚣᚣᚳᚠᛟᛖᛒᛇᚣᚩᚢᚹᛞᚹᛠᛁᚱᚠᛝᛏᛉᚱᛡᛖᚱᛁᛉᛟᚩᛡᛏᛝᛚᛖᛁᛒᚳᛟᛁᚾᚣᛒᛉᚱᚻᛝᛉᛚᚻᛏᛖᚪᚾᛞᛏᚻᚷᚾᚦᛄᛇᚾᚾᛞᚣᚦᛄᛒᚦᚹᛠᚷᚩᛒᚪᛞᛚᛝᚱᚱᛗᚢᚣᛇᚦᛈᛞᚻᛋᚪᚻᚫᚢᚠᚹᛄᚩᛠᚠᛚᛇᛁᚾᚻᛗᚷᛟᚷᚩᛝᚦᛟᚱᚱᛈᛒᛄᚾᛖᚹᚳᚻᚷᛠᛋᚢᛒᚱᚱᚪᛋᚳᛇᚩᚷᚻᚷᛏᚦᛋᚫᛒᛋᛡᛖᛈᛋᛞᛞᚦᚹᛠᛗᛟᛝᛟᛄᚱᚷᛠᛗᛚᚩᚣᛖᚳᚣᛈᛄᛁᛇᛚᛖᛒᚻᚻᛟᛏᚩᛁᚠᚹ",
+          "transliteration": "MSGRNGIIPFHYCIAPUNNGNWMBSLFMWUYRUOEWDNROUAUAIAEXAEEOIAOEIWOEDIPIAOEAUNPFJAECBISBOBDNIADASTCHBPCYYCFOEEBEOYOUWDWEAIRFNGTXRIAERIXOEOIATNGLEIBCOEINYBXRHNGXLHTEANDTHGNTHJEONNDYTHJBTHWEAGOBADLNGRRMUYEOTHPDHSAHAEUFWJOEAFLEOINHMGOEGONGTHOERRPBJNEWCHGEASUBRRASCEOOGHGTTHSAEBSIAEPSDDTHWEAMOENGOEJRGEAMLOYECYPJIEOLEBHHOETOIFW"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.39657568478136,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-06",
+      "status": "unverified_screen",
+      "runes": 196,
+      "variants": 1392,
+      "top": [
+        {
+          "score": -10.416186900901653,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 11,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              52,
+              124,
+              156
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚻᛈᚠᚱᛇᛒᛈᚱᛖᛗᚠᛞᚠᚫᛠᚫᛄᚢᚷᛠᚻᛠᚾᛄᛄᛡᛁᛈᛏᛉᚫᛗᛉᚩᛄᚠᚻᚦᛗᚹᛏᚪᛒᛖᛟᚦᛟᚷᚩᛖᛞᛝᚠᚱᚩᚹᚻᚪᚫᛏᛠᚫᛏᚢᚱᛁᚫᚾᚩᛒᛖᛚᛖᛖᚾᚩᛁᛁᛖᛉᛈᚩᚢᛞᚫᚪᚻᛁᚷᚣᛏᚻᛋᚷᛇᛇᛋᚢᚷᛠᚷᛋᚷᛡᚳᛗᛝᛁᛁᛚᚾᛝᚣᛗᛗᛠᛏᛡᚪᛁᛚᛏᛞᚾᚠᚦᛈᚩᛇᚷᛄᛏᛄᚠᛚᛇᛝᛈᛠᚳᛠᚣᛏᚱᛠᛖᛡᛉᚹᚳᛗᚠᛝᚢᛟᚪᚠᛉᚩᛇᛈᛇᛁᛖᛁᚾᚳᛁᛋᛖᛉᛟᛖᛝᚾᛡᛏᛏᚱᛖᚣᛟᛖᚣᚻᛗᛚᛒᚷᛁᛄᚢᛠᛄᛏᛈ",
+          "transliteration": "HPFREOBPREMFDFAEEAAEJUGEAHEANJJIAIPTXAEMXOJFHTHMWTABEOETHOEGOEDNGFROWHAAETEAAETURIAENOBELEENOIIEXPOUDAEAHIGYTHSGEOEOSUGEAGSGIACMNGIILNNGYMMEATIAAILTDNFTHPOEOGJTJFLEONGPEACEAYTREAEIAXWCMFNGUOEAFXOEOPEOIEINCISEXOEENGNIATTREYOEEYHMLBGIJUEAJTP"
+        },
+        {
+          "score": -10.419588381846985,
+          "recipe": {
+            "family": "affine",
+            "a": 21,
+            "b": 8
+          },
+          "plaintext_runes": "ᛇᚣᚫᚦᛡᛠᛇᛒᛏᛄᛞᚹᛏᛗᛒᚾᛏᛁᚪᛟᛁᛋᚪᚱᛚᛟᛝᛗᚱᚹᚪᛡᚩᚳᛡᚷᛝᚳᛇᚷᛁᚩᛡᚫᛖᛟᚪᚦᛁᚢᚳᛉᚻᚣᚳᛄᛋᛒᛖᛚᚩᛡᛗᚳᛗᛇᚷᚠᛈᛋᛏᛗᚫᛇᛒᚢᛖᚪᚱᛒᛇᛠᛖᛞᛏᛄᛖᛉᛡᛇᚾᚫᛈᛖᚪᛉᚦᚫᚣᛋᚩᚹᚫᚷᛈᚦᚳᚹᚣᚾᚪᛈᛡᛗᚫᚩᚠᛞᚳᛠᛄᛄᛋᚾᚻᛉᛝᚦᛇᛋᚷᚱᛋᚢᛗᚠᚹᚣᚱᛁᛞᚩᛈᛚᛇᚳᛟᛄᚷᚫᚪᚹᛚᚢᛡᚱᚻᚢᚷᛁᛡᛟᚫᛖᚳᛈᚠᚱᚦᛗᚩᛠᚪᛟᚠᚦᛚᛁᚹᛟᛖᛒᚢᚠᚹᚢᛠᛞᛠᛄᛟᛗᛟᛖᛗᚱ",
+          "transliteration": "EOYAETHIAEAEOBTJDWTMBNTIAOEISARLOENGMRWAIAOCIAGNGCEOGIOIAAEEOEATHIUCXHYCJSBELOIAMCMEOGFPSTMAEEOBUEARBEOEAEDTJEXIAEONAEPEAXTHAEYSOWAEGPTHCWYNAPIAMAEOFDCEAJJSNHXNGTHEOSGRSUMFWYRIDOPLEOCOEJGAEAWLUIARHUGIIAOEAEECPFRTHMOEAAOEFTHLIWOEEBUFWUEADEAJOEMOEEMR"
+        },
+        {
+          "score": -10.429120858396816,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 6,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              156
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛠᚷᛚᛟᚳᛁᚱᛠᛈᛁᛚᛏᛟᛟᛡᛚᚷᛝᛟᚫᚹᚠᛁᛖᚷᚪᚹᛇᛄᛈᛚᛖᛄᛡᚦᚢᛄᚹᛟᛇᛋᛈᛇᛒᛞᚩᛞᚩᛡᚾᛖᛠᛉᚳᚱᚦᚩᛝᚢᛗᛝᛖᚹᚫᚢᚳᛖᚱᚫᛉᛗᛋᛗᛈᚠᚫᛠᚳᛄᚳᚦᚫᛡᛟᛠᛗᚢᛄᚢᚷᚫᛋᚣᚳᚹᚩᛁᚫᚳᛞᚣᚷᚪᛏᚠᛖᛖᚾᚩᚾᛡᛖᛝᛉᛚᛡᛗᚳᚦᛈᛝᛄᛖᚱᛏᛚᚦᛗᚾᚳᛖᛄᚷᛉᚹᛚᚻᛁᛡᚫᚾᛒᚾᚪᚾᛋᚣᛒᚠᚦᛇᛖᚻᛡᛒᛗᚠᚢᛞᚩᛁᚳᚩᚢᛠᛞᛞᛠᚱᛄᛠᛄᛋᛚᚱᚻᛠᚩᚪᚾᛒᛡᛗᚦᛠᛖᛋᛁᚣᚹᚷᛞᛋᚫᚢᚱ",
+          "transliteration": "EAGLOECIREAPILTOEOEIALGNGOEAEWFIEGAWEOJPLEJIATHUJWOEEOSPEOBDODOIANEEAXCRTHONGUMNGEWAEUCERAEXMSMPFAEEACJCTHAEIAOEEAMUJUGAESYCWOIAECDYGATFEENONIAENGXLIAMCTHPNGJERTLTHMNCEJGXWLHIIAAENBNANSYBFTHEOEHIABMFUDOICOUEADDEARJEAJSLRHEAOANBIAMTHEAESIYWGDSAEUR"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.412198759577997,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-07",
+      "status": "unverified_screen",
+      "runes": 208,
+      "variants": 1044,
+      "top": [
+        {
+          "score": -10.39118567049459,
+          "recipe": {
+            "family": "affine",
+            "a": 15,
+            "b": 25
+          },
+          "plaintext_runes": "ᚠᛝᚷᚣᛗᛖᛈᛄᛈᛇᚪᚷᛈᛏᚩᚻᛋᚦᚩᛁᛚᛒᛄᛚᚫᚷᛁᛝᛗᚩᚢᚷᚣᛡᛁᚪᚢᛈᛇᚩᚳᛟᚪᚱᛖᛚᛁᛏᛒᛁᚹᚪᛞᚣᛉᚠᛒᚦᚻᛠᛒᚠᛁᛈᚷᛁᛒᚪᚾᛋᚢᚷᚪᚢᛈᛞᚦᛋᛞᛈᚪᛡᚪᚷᛟᛗᚹᛝᚪᚩᛚᛝᛈᚠᚹᛁᛋᛒᛈᚣᚢᚦᚣᚦᛄᛇᚣᛒᚻᚪᚷᚹᛉᚪᛒᛏᛚᛠᛗᛒᛖᛋᚦᚱᛇᛠᛄᛋᛞᚳᛋᚾᚢᚳᛟᛝᛟᛝᚷᛄᚷᚩᚻᛋᛝᚦᚻᛏᚠᛟᛉᛒᛞᛉᛞᚦᚢᚷᛝᚣᛋᛈᛗᚢᚱᛁᛈᛇᚦᚳᛝᛈᚠᚹᚠᛞᛏᚹᚩᚢᛈᚳᚱᛖᛉᚳᛋᚪᚾᛏᛚᚳᛈᚻᛟᛇᚹᚱᚣᛞᛈᛉᛏᚩᛁᛠᛁᛚ",
+          "transliteration": "FNGGYMEPJPEOAGPTOHSTHOILBJLAEGINGMOUGYIAIAUPEOOCOEARELITBIWADYXFBTHHEABFIPGIBANSUGAUPDTHSDPAIAAGOEMWNGAOLNGPFWISBPYUTHYTHJEOYBHAGWXABTLEAMBESTHREOEAJSDCSNUCOENGOENGGJGOHSNGTHHTFOEXBDXDTHUGNGYSPMURIPEOTHCNGPFWFDTWOUPCREXCSANTLCPHOEEOWRYDPXTOIEAIL"
+        },
+        {
+          "score": -10.416307968544382,
+          "recipe": {
+            "family": "affine",
+            "a": 18,
+            "b": 27
+          },
+          "plaintext_runes": "ᚣᛠᛁᚳᛉᚹᚢᛏᚢᛞᛚᛁᚢᛟᛖᚪᛋᛄᛖᚾᛝᚠᛏᛝᛡᛁᚾᛠᛉᛖᚱᛁᚳᛇᚾᛚᚱᚢᛞᛖᚩᚷᛚᚫᚹᛝᚾᛟᚠᚾᛒᛚᛈᚳᚻᚣᚠᛄᚪᛗᚠᚣᚾᚢᛁᚾᚠᛚᚦᛋᚱᛁᛚᚱᚢᛈᛄᛋᛈᚢᛚᛇᛚᛁᚷᛉᛒᛠᛚᛖᛝᛠᚢᚣᛒᚾᛋᚠᚢᚳᚱᛄᚳᛄᛏᛞᚳᚠᚪᛚᛁᛒᚻᛚᚠᛟᛝᛗᛉᚠᚹᛋᛄᚫᛞᛗᛏᛋᛈᚩᛋᚦᚱᚩᚷᛠᚷᛠᛁᛏᛁᛖᚪᛋᛠᛄᚪᛟᚣᚷᚻᚠᛈᚻᛈᛄᚱᛁᛠᚳᛋᚢᛉᚱᚫᚾᚢᛞᛄᚩᛠᚢᚣᛒᚣᛈᛟᛒᛖᚱᚢᚩᚫᚹᚻᚩᛋᛚᚦᛟᛝᚩᚢᚪᚷᛞᛒᚫᚳᛈᚢᚻᛟᛖᚾᛗᚾᛝ",
+          "transliteration": "YEAICXWUTUDLIUOEEASJENNGFTNGIAINEAXERICEONLRUDEOGLAEWNGNOEFNBLPCHYFJAMFYNUINFLTHSRILRUPJSPULEOLIGXBEALENGEAUYBNSFUCRJCJTDCFALIBHLFOENGMXFWSJAEDMTSPOSTHROGEAGEAITIEASEAJAOEYGHFPHPJRIEACSUXRAENUDJOEAUYBYPOEBERUOAEWHOSLTHOENGOUAGDBAECPUHOEENMNNG"
+        },
+        {
+          "score": -10.432037514424398,
+          "recipe": {
+            "family": "affine",
+            "a": 5,
+            "b": 22
+          },
+          "plaintext_runes": "ᚱᛄᚷᚩᛚᛁᛖᛡᛖᚻᛇᚷᛖᛗᚳᚣᚾᚪᚳᛒᚢᚠᛡᚢᛟᚷᛒᛄᛚᚳᛉᚷᚩᛈᛒᛇᛉᛖᚻᚳᚫᛝᛇᛋᛁᚢᛒᛗᚠᛒᛏᛇᚦᚩᛠᚱᚠᚪᚣᛞᚠᚱᛒᛖᚷᛒᚠᛇᚹᚾᛉᚷᛇᛉᛖᚦᚪᚾᚦᛖᛇᛈᛇᚷᛝᛚᛏᛄᛇᚳᚢᛄᛖᚱᛏᛒᚾᚠᛖᚩᛉᚪᚩᚪᛡᚻᚩᚠᚣᛇᚷᛏᛠᛇᚠᛗᚢᛞᛚᚠᛁᚾᚪᛋᚻᛞᛡᚾᚦᚫᚾᚹᛉᚫᛝᛄᛝᛄᚷᛡᚷᚳᚣᚾᛄᚪᚣᛗᚱᛝᛠᚠᚦᛠᚦᚪᛉᚷᛄᚩᚾᛖᛚᛉᛋᛒᛖᚻᚪᚫᛄᛖᚱᛏᚱᚦᛗᛏᚳᛉᛖᚫᛋᛁᛠᚫᚾᛇᚹᛗᚢᚫᛖᚣᛝᚻᛏᛋᚩᚦᛖᛠᛗᚳᛒᛞᛒᚢ",
+          "transliteration": "RJGOLIEIAEHEOGEMCYNACBUFIAUOEGBJLCXGOPBEOXEHCAENGEOSIUBMFBTEOTHOEARFAYDFRBEGBFEOWNXGEOXETHANTHEEOPEOGNGLTJEOCUJERTBNFEOXAOAIAHOFYEOGTEAEOFMUDLFINASHDIANTHAENWXAENGJNGJGIAGCYNJAYMRNGEAFTHEATHAXGJONELXSBEHAAEJERTRTHMTCXEAESIEAAENEOWMUAEEYNGHTSOTHEEAMCBDBU"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.326584469748411,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-08",
+      "status": "unverified_screen",
+      "runes": 255,
+      "variants": 1972,
+      "top": [
+        {
+          "score": -10.422628983012405,
+          "recipe": {
+            "family": "affine",
+            "a": 18,
+            "b": 18
+          },
+          "plaintext_runes": "ᚾᚪᚾᛇᚹᚾᛇᛝᚫᛚᛉᚳᛄᚷᛏᚠᚾᛚᚩᛟᛉᛝᚠᛇᛗᛁᚾᚢᚹᛗᚪᛏᛉᛈᛖᛗᛡᚢᚷᚣᛉᛇᚦᚱᚩᚣᛠᛏᛈᚫᛟᚫᛡᚱᛟᛞᛡᚾᚻᚳᚠᚩᚦᛚᛗᚹᛚᛉᚫᚾᛋᛒᚻᚩᛗᚹᛞᚩᛟᚢᚾᚢᛄᚢᚩᛚᛠᚦᚷᚠᛋᚩᚾᛗᛟᛡᛒᚹᚢᛡᛟᛁᚷᚹᚦᚱᚷᚷᛉᚱᛞᚣᛋᛉᛈᛄᚹᛋᚾᚩᚾᛄᚻᛈᛇᚪᚦᚢᚠᛒᚫᛇᚠᛟᛁᚳᛝᛚᚾᛝᚷᚻᚻᛡᛁᛇᛚᛞᛏᚢᚷᛈᛈᛝᛗᛉᚪᛠᚢᚠᚳᛖᛋᛞᛏᛗᚷᛚᚠᛉᛏᚫᛒᛗᚾᛚᛒᛚᛝᛚᚩᚹᚢᛖᛞᚻᛁᛋᚳᛖᚪᚱᛖᚹᚻᛇᛖᛟᛗᛈᛝᛒᛏᛖᚢᚱᛞᚫᛡᚢᛉᚹᚱᛉᛋᛇᚻᚹᛠᚦᚳᚷᛡᚢᛗᛈᚻᚷᛇᚢᚳᚻᛏᚷᚣᚳᛉᚷᚫᛄᛒᚻᚩᛚᚷᛖᛚᚣᛡᛉᚪᚠᛟᚷᚦ",
+          "transliteration": "NANEOWNEONGAELXCJGTFNLOOEXNGFEOMINUWMATXPEMIAUGYXEOTHROYEATPAEOEAEIAROEDIANHCFOTHLMWLXAENSBHOMWDOOEUNUJUOLEATHGFSONMOEIABWUIAOEIGWTHRGGXRDYSXPJWSNONJHPEOATHUFBAEEOFOEICNGLNNGGHHIAIEOLDTUGPPNGMXAEAUFCESDTMGLFXTAEBMNLBLNGLOWUEDHISCEAREWHEOEOEMPNGBTEURDAEIAUXWRXSEOHWEATHCGIAUMPHGEOUCHTGYCXGAEJBHOLGELYIAXAFOEGTH"
+        },
+        {
+          "score": -10.434367920189544,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 19,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              161
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚩᚳᚪᛋᛡᚷᚣᚾᚻᚪᚢᚦᛒᚠᛚᛡᛁᚳᚻᛄᛠᛚᚪᛞᛗᚢᛚᚦᚾᛉᛞᛈᛚᛁᛄᛈᛈᚦᛄᛚᚹᛖᛋᛒᚳᛈᚫᚦᚢᚠᚩᛞᚱᛋᚻᛁᚾᚱᛒᛖᛠᛈᚩᛝᛄᚫᚾᛈᚷᛗᚹᛗᛟᚩᛄᛞᚦᛁᚳᚾᚣᛉᚣᛡᚻᚣᚣᛄᚻᛇᛉᛠᛇᚢᛞᛟᛗᚪᚢᚠᛇᚢᛋᛗᚦᛁᛏᚻᚱᚩᚱᛟᛒᚢᛏᚫᛉᛏᛇᛇᛗᚱᛠᚻᚫᚩᛚᛡᛋᚱᚷᚱᛚᛚᚹᚳᛈᚣᛋᛏᚻᛖᛇᚳᛁᛚᛚᚹᚩᛏᛞᛋᛈᚾᛚᚩᛋᛏᛟᛇᛒᚠᛝᛞᛞᛉᛚᛁᛏᚷᛏᚻᚠᚷᚳᚫᚪᛈᛈᛟᛡᚪᛠᛒᛟᚷᛇᚳᛁᛞᚹᛗᚾᚱᛁᚾᛏᛒᛏᛝᛝᛇᚫᛞᛟᚩᚷᛚᚩᛝᚢᛠᚦᛖᛉᚾᚱᛝᛈᚱᛟᛖᚠᛏᚩᚹᛝᛠᛁᚳᚠᛚᛇᛋᚪᛠᚾᚣᚦᚠᚾᚱᛏᚩᚳᛗᚦᛗᛒᛒᚻᚾᚩᛉᚳ",
+          "transliteration": "OCASIAGYNHAUTHBFLIAICHJEALADMULTHNXDPLIJPPTHJLWESBCPAETHUFODRSHINRBEEAPONGJAENPGMWMOEOJDTHICNYXYIAHYYJHEOXEAEOUDOEMAUFEOUSMTHITHROROEBUTAEXTEOEOMREAHAEOLIASRGRLLWCPYSTHEEOCILLWOTDSPNLOSTOEEOBFNGDDXLITGTHFGCAEAPPOEIAAEABOEGEOCIDWMNRINTBTNGNGEOAEDOEOGLONGUEATHEXNRNGPROEEFTOWNGEAICFLEOSAEANYTHFNRTOCMTHMBBHNOXC"
+        },
+        {
+          "score": -10.435311883648463,
+          "recipe": {
+            "family": "affine",
+            "a": 16,
+            "b": 2
+          },
+          "plaintext_runes": "ᛞᛒᛞᛏᛖᛞᛏᚪᚳᚹᛝᛈᛠᚢᚣᛋᛞᚹᚻᛇᛝᚪᛋᛏᛗᛄᛞᚩᛖᛗᛒᚣᛝᚱᚦᛗᛁᚩᚢᛟᛝᛏᛚᚫᚻᛟᛡᚣᚱᚳᛇᚳᛁᚫᛇᚠᛁᛞᚷᛈᛋᚻᛚᚹᛗᛖᚹᛝᚳᛞᚾᛉᚷᚻᛗᛖᚠᚻᛇᚩᛞᚩᛠᚩᚻᚹᛡᛚᚢᛋᚾᚻᛞᛗᛇᛁᛉᛖᚩᛁᛇᛄᚢᛖᛚᚫᚢᚢᛝᚫᚠᛟᚾᛝᚱᛠᛖᚾᛞᚻᛞᛠᚷᚱᛏᛒᛚᚩᛋᛉᚳᛏᛋᛇᛄᛈᚪᚹᛞᚪᚢᚷᚷᛁᛄᛏᚹᚠᚣᚩᚢᚱᚱᚪᛗᛝᛒᛡᚩᛋᛈᚦᚾᚠᚣᛗᚢᚹᛋᛝᚣᚳᛉᛗᛞᚹᛉᚹᚪᚹᚻᛖᚩᚦᚠᚷᛄᚾᛈᚦᛒᚫᚦᛖᚷᛏᚦᛇᛗᚱᚪᛉᚣᚦᚩᚫᚠᚳᛁᚩᛝᛖᚫᛝᚾᛏᚷᛖᛡᛚᛈᚢᛁᚩᛗᚱᚷᚢᛏᚩᛈᚷᚣᚢᛟᛈᛝᚢᚳᛠᛉᚷᚻᚹᚢᚦᚹᛟᛁᛝᛒᛋᛇᚢᛚ",
+          "transliteration": "DBDTEDTACWNGPEAUYSDWHEONGASTMJDOEMBYNGRTHMIOUOENGTLAEHOEIAYRCEOCIAEEOFIDGPSHLWMEWNGCDNXGHMEFHEOODOEAOHWIALUSNHDMEOIXEOIEOJUELAEUUNGAEFOENNGREAENDHDEAGRTBLOSXCTSEOJPAWDAUGGIJTWFYOURRAMNGBIAOSPTHNFYMUWSNGYCXMDWXWAWHEOTHFGJNPTHBAETHEGTTHEOMRAXYTHOAEFCIONGEAENGNTGEIALPUIOMRGUTOPGYUOEPNGUCEAXGHWUTHWOEINGBSEOUL"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.439423080839937,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-09",
+      "status": "unverified_screen",
+      "runes": 268,
+      "variants": 2320,
+      "top": [
+        {
+          "score": -10.41903989792375,
+          "recipe": {
+            "family": "affine",
+            "a": 11,
+            "b": 12
+          },
+          "plaintext_runes": "ᚻᚦᚣᛚᛒᛄᛖᛋᚦᛁᛋᛞᚪᛁᛗᛖᚹᚱᛟᚷᛝᛗᛖᛇᛁᛏᚳᛝᚱᛏᚱᚩᛁᛝᛗᛚᛟᛈᛇᚳᛝᛒᛟᚩᚳᚻᚳᛉᛈᚩᚻᛈᚢᛚᚠᚣᛡᛉᛞᚩᛟᚳᛇᛇᚻᛟᛗᛠᚾᚻᚫᚠᛄᚢᛡᛈᚱᛒᚻᛉᚣᛈᚱᚾᚩᛝᛇᚱᚳᛖᚾᛠᛄᚣᚪᛗᚢᚦᚷᛗᚫᛖᛄᛚᛁᚷᚾᚢᚠᛚᛝᚻᚻᛡᛒᛝᚷᛒᛞᚹᚻᛋᛄᛁᛗᚣᚾᚹᚢᚦᚫᚳᛟᛇᛖᚣᛡᛇᛏᛉᛄᛝᚱᛖᚹᛗᛏᛁᚩᛠᚱᛠᛟᚣᚪᛚᛖᚻᚷᚣᚷᛒᛁᛒᛏᛗᛚᛁᚾᛒᚠᚹᛗᛈᚠᛚᛡᛠᛟᚻᚢᚻᛖᚦᚪᚦᛇᚷᛒᛞᛖᚣᚪᚾᛖᚢᚷᛏᛠᚫᚠᚱᚪᚦᛇᚪᚫᛡᚩᛟᚳᛗᛋᛗᛉᛚᛚᚦᛋᚩᛗᚳᚩᚳᚩᛇᛖᛚᚱᚢᛄᛁᛏᛋᚻᛄᛁᚩᛟᚪᛠᛋᚹᛈᛞᛚᛏᛞᚳᛉᚫᛚᚻᛄᛇᚻᚷᛈᚦᛗᚢᛡᚣᚦᛗᚱᛋᚳ",
+          "transliteration": "HTHYLBJESTHISDAIMEWROEGNGMEEOITCNGRTROINGMLOEPEOCNGBOEOCHCXPOHPULFYIAXDOOECEOEOHOEMEANHAEFJUIAPRBHXYPRNONGEORCENEAJYAMUTHGMAEEJLIGNUFLNGHHIABNGGBDWHSJIMYNWUTHAECOEEOEYIAEOTXJNGREWMTIOEAREAOEYALEHGYGBIBTMLINBFWMPFLIAEAOEHUHETHATHEOGBDEYANEUGTEAAEFRATHEOAAEIAOOECMSMXLLTHSOMCOCOEOELRUJITSHJIOOEAEASWPDLTDCXAELHJEOHGPTHMUIAYTHMRSC"
+        },
+        {
+          "score": -10.447177311794926,
+          "recipe": {
+            "family": "affine",
+            "a": 9,
+            "b": 5
+          },
+          "plaintext_runes": "ᚹᛁᛡᚢᛒᛚᚦᛖᛁᚷᛖᛉᛠᚷᛏᚦᛟᚾᚠᚻᛋᛏᚦᚳᚷᚩᛞᛋᚾᚩᚾᚪᚷᛋᛏᚢᚠᛗᚳᛞᛋᛒᚠᚪᛞᚹᛞᚱᛗᚪᚹᛗᚫᚢᛄᛡᛇᚱᛉᚪᚠᛞᚳᚳᚹᚠᛏᚣᛝᚹᛈᛄᛚᚫᛇᛗᚾᛒᚹᚱᛡᛗᚾᛝᚪᛋᚳᚾᛞᚦᛝᚣᛚᛡᛠᛏᚫᛁᚻᛏᛈᚦᛚᚢᚷᚻᛝᚫᛄᚢᛋᚹᚹᛇᛒᛋᚻᛒᛉᛟᚹᛖᛚᚷᛏᛡᛝᛟᚫᛁᛈᛞᚠᚳᚦᛡᛇᚳᚩᚱᛚᛋᚾᚦᛟᛏᚩᚷᚪᚣᚾᚣᚠᛡᛠᚢᚦᚹᚻᛡᚻᛒᚷᛒᚩᛏᚢᚷᛝᛒᛄᛟᛏᛗᛄᚢᛇᚣᚠᚹᚫᚹᚦᛁᛠᛁᚳᚻᛒᛉᚦᛡᛠᛝᚦᚫᚻᚩᚣᛈᛄᚾᛠᛁᚳᛠᛈᛇᚪᚠᛞᛏᛖᛏᚱᚢᚢᛁᛖᚪᛏᛞᚪᛞᚪᚳᚦᚢᚾᚫᛚᚷᚩᛖᚹᛚᚷᚪᚠᛠᚣᛖᛟᛗᛉᚢᚩᛉᛞᚱᛈᚢᚹᛚᚳᚹᚻᛗᛁᛏᚫᛇᛡᛁᛏᚾᛖᛞ",
+          "transliteration": "WIIAUBLTHEIGEXEAGTTHOENFHSTTHCGODSNONAGSTUFMCDSBFADWDRMAWMAEUJIAEORXAFDCCWFTYNGWPJLAEEOMNBWRIAMNNGASCNDTHNGYLIAEATAEIHTPTHLUGHNGAEJUSWWEOBSHBXOEWELGTIANGOEAEIPDFCTHIAEOCORLSNTHOETOGAYNYFIAEAUTHWHIAHBGBOTUGNGBJOETMJUEOYFWAEWTHIEAICHBXTHIAEANGTHAEHOYPJNEAICEAPEOAFDTETRUUIEATDADACTHUNAELGOEWLGAFEAYEOEMXUOXDRPUWLCWHMITAEEOIAITNED"
+        },
+        {
+          "score": -10.450631668645409,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 20,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [
+              133
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛒᛈᛠᚪᛡᛝᚫᚪᛉᛇᛋᛈᛄᚾᚳᛋᛟᛞᛠᛒᛗᚻᚣᛖᚾᛝᚳᚳᚠᛟᚷᛚᚪᚱᚣᚪᛉᚢᛋᛒᚹᛚᛞᚳᛚᚠᚾᚢᛗᛉᚹᚦᛗᛖᛁᚾᚹᚩᛟᛏᛗᛇᚪᚣᚷᛉᛋᚾᛚᚢᛉᛞᚢᛡᚢᚢᛝᛏᚩᚦᛠᚣᛒᛇᚱᛄᚷᛖᛏᚢᛝᛚᛋᛈᛇᚱᚳᚢᚱᛟᚳᛋᛒᚾᛁᛞᚹᛞᛁᚢᛠᛚᛠᛡᚪᚠᚻᛝᛇᚹᚢᛈᛖᚢᛖᚢᚷᚣᛖᛉᛖᚻᛗᚠᚣᛄᚹᛗᚣᛝᛚᚱᚢᛗᚪᛝᛟᛚᚪᛁᚩᛚᛇᛗᚻᛒᛉᚾᚷᛟᛉᚦᚱᚻᛚᚦᚠᚢᛋᛋᛠᚩᚱᚦᚠᛚᛠᛠᚢᚢᚳᛈᛟᛄᛝᚱᚠᛝᚪᛄᚪᚪᛋᛝᛄᛉᚳᛖᛉᛋᛖᛞᚣᚾᚢᚫᛗᚹᚦᚩᛡᚱᛈᛟᛉᚣᚢᚦᛖᚱᚱᛇᚹᚩᚫᛋᚦᛞᛁᛈᚪᛒᚦᛏᛏᚫᛁᛁᚾᚩᛚᛉᚪᚹᚾᚻᛈᚫᚹᚪᚱᛞᚾᛚᛖᛁᚩᚾᛇᚱᛈᛚᚹᛇᚷᛏᛗᛉ",
+          "transliteration": "BPEAAIANGAEAXEOSPJNCSOEDEABMHYENNGCCFOEGLARYAXUSBWLDCLFNUMXWTHMEINWOOETMEOAYGXSNLUXDUIAUUNGTOTHEAYBEORJGETUNGLSPEORCUROECSBNIDWDIUEALEAIAAFHNGEOWUPEUEUGYEXEHMFYJWMYNGLRUMANGOELAIOLEOMHBXNGOEXTHRHLTHFUSSEAORTHFLEAEAUUCPOEJNGRFNGAJAASNGJXCEXSEDYNUAEMWTHOIARPOEXYUTHERREOWOAESTHDIPABTHTTAEIINOLXAWNHPAEWARDNLEIONEORPLWEOGTMX"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.437349295493027,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-10",
+      "status": "unverified_screen",
+      "runes": 263,
+      "variants": 1856,
+      "top": [
+        {
+          "score": -10.432859719377086,
+          "recipe": {
+            "family": "affine",
+            "a": 19,
+            "b": 6
+          },
+          "plaintext_runes": "ᛉᛄᚫᛝᛚᚢᚫᚠᚱᛋᚣᚾᚠᚢᛏᛠᛄᛝᛄᚩᛖᚻᛖᛁᚩᛞᚫᛟᚦᚾᚻᛟᛋᚹᚱᛖᛝᚣᚠᛡᚷᚢᛄᚻᚠᚱᛋᛏᚩᚢᚻᛖᛗᚠᛗᚩᛄᛞᛁᛏᛝᛖᛗᛄᛒᛇᚳᚻᛈᚣᚱᚷᚹᛗᛟᚱᛄᛈᛞᚩᚢᛗᚱᛏᚹᚾᚪᛇᛗᛄᚹᚦᚪᚫᛖᚹᛋᚫᛖᚳᚪᚫᛞᛟᛁᛉᛏᛚᚻᚾᚠᚢᛇᛉᛖᚱᚻᚣᚫᛞᛠᛈᛒᚫᛝᛚᛝᚳᚹᚩᚦᛋᛖᛚᚦᛉᚷᛁᛡᚩᛗᛋᛠᛖᛏᚫᛟᛡᚩᛈᛠᛄᚳᚦᛟᚣᚷᛖᛁᛋᚷᚢᛁᚷᚻᚦᚳᛋᛚᚱᚾᛇᚠᛒᚹᛟᛒᛞᛈᛒᛚᛟᛄᛄᛈᚻᚳᛏᛒᚢᛠᚾᛠᚠᚳᛈᛗᚳᛖᛁᛋᚪᚾᚢᛉᛈᛡᚣᚩᚦᚪᛄᛋᚹᛄᛈᚣᚩᚫᛗᛄᛞᚠᛝᚠᚳᛉᛝᛉᚻᛡᛄᚫᛗᛠᛖᚢᚩᛖᛄᚷᚪᛉᛁᚫᛇᚪᛒᛠᛁᚢᛖᛏᚣᛡᚾᛚᛖᚩᛒᛖᛡᛟ",
+          "transliteration": "XJAENGLUAEFRSYNFUTEAJNGJOEHEIODAEOETHNHOESWRENGYFIAGUJHFRSTOUHEMFMOJDITNGEMJBEOCHPYRGWMOERJPDOUMRTWNAEOMJWTHAAEEWSAEECAAEDOEIXTLHNFUEOXERHYAEDEAPBAENGLNGCWOTHSELTHXGIIAOMSEAETAEOEIAOPEAJCTHOEYGEISGUIGHTHCSLRNEOFBWOEBDPBLOEJJPHCTBUEANEAFCPMCEISANUXPIAYOTHAJSWJPYOAEMJDFNGFCXNGXHIAJAEMEAEUOEJGAXIAEEOABEAIUETYIANLEOBEIAOE"
+        },
+        {
+          "score": -10.461739578969407,
+          "recipe": {
+            "family": "affine",
+            "a": 11,
+            "b": 24
+          },
+          "plaintext_runes": "ᛝᚱᚷᛟᚣᛋᚷᛗᚩᛒᚦᛇᛗᛋᛈᛞᚱᛟᚱᚹᚳᛏᚳᚻᚹᛉᚷᛖᛄᛇᛏᛖᛒᛚᚩᚳᛟᚦᛗᛡᚪᛋᚱᛏᛗᚩᛒᛈᚹᛋᛏᚳᚢᛗᚢᚹᚱᛉᚻᛈᛟᚳᚢᚱᚾᚠᛠᛏᚫᚦᚩᚪᛚᚢᛖᚩᚱᚫᛉᚹᛋᚢᚩᛈᛚᛇᛁᚠᚢᚱᛚᛄᛁᚷᚳᛚᛒᚷᚳᛠᛁᚷᛉᛖᚻᛝᛈᚣᛏᛇᛗᛋᚠᛝᚳᚩᛏᚦᚷᛉᛞᚫᚾᚷᛟᚣᛟᛠᛚᚹᛄᛒᚳᚣᛄᛝᚪᚻᛡᚹᚢᛒᛞᚳᛈᚷᛖᛡᚹᚫᛞᚱᛠᛄᛖᚦᚪᚳᚻᛒᚪᛋᚻᚪᛏᛄᛠᛒᚣᚩᛇᚠᛗᚾᛚᛖᚾᛉᚫᚾᚣᛖᚱᚱᚫᛏᛠᛈᚾᛋᛞᛇᛞᛗᛠᚫᚢᛠᚳᚻᛒᛁᛇᛋᛝᚫᛡᚦᚹᛄᛁᚱᛒᛚᚱᚫᚦᚹᚷᚢᚱᛉᛗᛟᛗᛠᛝᛟᛝᛏᛡᚱᚷᚢᛞᚳᛋᚹᚳᚱᚪᛁᛝᚻᚷᚠᛁᚾᛞᚻᛋᚳᛈᚦᛡᛇᚣᚳᚹᚾᚳᛡᛖ",
+          "transliteration": "NGRGOEYSGMOBTHEOMSPDROERWCTCHWXGEJEOTEBLOCOETHMIAASRTMOBPWSTCUMUWRXHPOECURNFEATAETHOALUEORAEXWSUOPLEOIFURLJIGCLBGCEAIGXEHNGPYTEOMSFNGCOTTHGXDAENGOEYOEEALWJBCYJNGAHIAWUBDCPGEIAWAEDREAJETHACHBASHATJEABYOEOFMNLENXAENYERRAETEAPNSDEODMEAAEUEACHBIEOSNGAEIATHWJIRBLRAETHWGURXMOEMEANGOENGTIARGUDCSWCRAINGHGFINDHSCPTHIAEOYCWNCIAE"
+        },
+        {
+          "score": -10.463349261969995,
+          "recipe": {
+            "family": "affine",
+            "a": 1,
+            "b": 23
+          },
+          "plaintext_runes": "ᛠᚻᚪᚹᛁᚾᚪᛇᚠᚫᛝᛉᛇᚾᛟᛋᚻᚹᚻᚩᛏᛒᛏᛄᚩᚢᚪᚱᚷᛉᛒᚱᚫᛚᚠᛏᚹᛝᛇᛖᛞᚾᚻᛒᛇᚠᚫᛟᚩᚾᛒᛏᛈᛇᛈᚩᚻᚢᛄᛟᚹᛏᛈᚻᛗᚳᚣᛒᚦᛝᚠᛞᛚᛈᚱᚠᚻᚦᚢᚩᚾᛈᚠᛟᛚᛉᛡᚳᛈᚻᛚᚷᛡᚪᛏᛚᚫᚪᛏᚣᛡᚪᚢᚱᛄᛠᛟᛁᛒᛉᛇᚾᚳᛠᛏᚠᛒᛝᚪᚢᛋᚦᛗᚪᚹᛁᚹᚣᛚᚩᚷᚫᛏᛁᚷᛠᛞᛄᛖᚩᛈᚫᛋᛏᛟᚪᚱᛖᚩᚦᛋᚻᚣᚷᚱᛝᛞᛏᛄᚫᛞᚾᛄᛞᛒᚷᚣᚫᛁᚠᛉᚳᛇᛗᛚᚱᛗᚢᚦᛗᛁᚱᚻᚻᚦᛒᚣᛟᛗᚾᛋᛉᛋᛇᚣᚦᛈᚣᛏᛄᚫᛡᛉᚾᛠᚦᛖᛝᚩᚷᛡᚻᚫᛚᚻᚦᛝᚩᚪᛈᚻᚢᛇᚹᛇᚣᛠᚹᛠᛒᛖᚻᚪᛈᛋᛏᚾᚩᛏᚻᛞᛡᛠᛄᚪᚳᛡᛗᛋᛄᚾᛏᛟᛝᛖᛉᛁᛏᚩᛗᛏᛖᚱ",
+          "transliteration": "EAHAWINAEOFAENGXEONOESHWHOTBTJOUARGXBRAELFTWNGEOEDNHBEOFAEOEONBTPEOPOHUJOEWTPHMCYBTHNGFDLPRFHTHUONPFOELXIACPHLGIAATLAEATYIAAURJEAOEIBXEONCEATFBNGAUSTHMAWIWYLOGAETIGEADJEOPAESTOEAREOTHSHYGRNGDTJAEDNJDBGYAEIFXCEOMLRMUTHMIRHHTHBYOEMNSXSEOYTHPYTJAEIAXNEATHENGOGIAHAELHTHNGOAPHUEOWEOYEAWEABEHAPSTNOTHDIAEAJACIAMSJNTOENGEXITOMTER"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.432616314268405,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-11",
+      "status": "unverified_screen",
+      "runes": 273,
+      "variants": 2668,
+      "top": [
+        {
+          "score": -10.442893585725313,
+          "recipe": {
+            "family": "affine",
+            "a": 11,
+            "b": 2
+          },
+          "plaintext_runes": "ᚾᛟᛠᚣᛝᛋᛉᛗᚢᚪᛉᚫᛚᛋᚾᛒᚦᚣᚫᛝᛉᚦᚻᛈᛁᛉᚹᛗᛠᛒᚢᛡᛄᛟᚳᛇᛒᛄᛠᛋᛏᚦᛈᚳᚣᚳᛝᛗᛉᚹᛄᚩᚪᛄᚻᛗᛉᚣᚱᚢᚪᚳᚷᛈᚻᛡᚦᚢᚳᚩᚾᛖᚾᛗᚱᚫᛖᚫᛠᛈᛈᚣᛠᛋᛏᛖᚦᚪᛠᛗᚷᛄᛗᚷᛗᚦᛠᛚᚳᚦᛇᛏᚦᛉᛠᛈᛋᛒᛉᛖᚷᛄᚫᛠᛇᛞᛄᛚᚢᚦᛒᚾᛠᛖᛄᛇᚠᚻᛞᛠᚪᛝᚠᚾᚩᛉᚪᛖᚱᛝᚣᛈᛏᛖᚪᚢᛇᚱᛠᛁᛋᛚᚳᛠᛋᚳᚷᛝᛏᛄᛈᛏᚣᛋᛖᚱᛈᚷᛇᛞᚦᛈᛟᚾᚹᚻᚪᛚᚱᚳᛋᛝᛡᚱᚹᚩᚪᛏᛗᚳᛒᛏᛇᚪᚷᛉᛇᚫᚣᚾᚦᛁᛟᚦᚪᚱᛚᚾᛚᚫᛈᚾᛖᚢᛞᛄᚱᚦᛋᚩᛈᛟᛠᛒᛖᛝᛖᚠᛟᛈᛗᚳᚠᛈᛠᚣᚦᛞᛄᚪᛚᛖᚢᚩᛡᛒᚻᛇᛉᛗᚠᛝᛞᛒᚹᚳᚢᛞᚫᚪᚱᛁᛈᛝᛠᚩᚣᚷᚳᚣᛄᚳᛈ",
+          "transliteration": "NOEEAYNGSXMUAXAELSNBTHYAENGXTHHPIXWMEABUIAJOECEOBJEASTTHPCYCNGMXWJOAJHMXYRUACGPHIATHUCONENMRAEEAEEAPPYEASTETHAEAMGJMGMTHEALCTHEOTTHXEAPSBXEGJAEEAEODJLUTHBNEAEJEOFHDEAANGFNOXAERNGYPTEAUEOREAISLCEASCGNGTJPTYSERPGEODTHPOENWHALRCSNGIARWOATMCBTEOAGXEOAEYNTHIOETHARLNLAEPNEUDJRTHSOPOEEABENGEFOEPMCFPEAYTHDJALEUOIABHEOXMFNGDBWCUDAEARIPNGEAOYGCYJCP"
+        },
+        {
+          "score": -10.464496186984869,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 25,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              16
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛖᛠᚳᛗᚣᚦᚷᛖᛋᚪᛋᚻᛈᛚᚱᛝᚠᚳᚩᚱᛡᚳᚩᚾᚠᚪᛖᚩᛏᚹᛈᚦᚻᚳᛗᛒᚱᛈᚻᛝᛄᚩᛒᛒᛈᚳᛖᛠᚦᛞᛉᛏᛏᚫᛏᚹᚻᚣᛖᛄᚪᛡᛈᚹᛉᚳᛡᛞᛇᚪᚣᚻᛏᛄᛈᚢᛟᛉᛈᛄᚾᛋᛖᚠᛋᚣᚩᚪᛒᚠᚳᛈᚳᛖᚪᚾᚦᚫᚫᛉᛈᚠᛒᛡᛞᛝᛠᚻᚪᛋᛚᚢᚢᛝᛞᛁᛒᛟᛡᛋᚾᚳᛈᚦᛡᛋᛁᚠᛞᚻᛚᛄᚣᚦᛈᚻᚾᛟᚱᚾᛝᚩᚠᚹᚳᛄᚱᚻᚾᚷᛖᚣᛠᚻᛞᛁᛈᚳᛉᛝᛠᛡᚣᛝᛚᛞᚹᚪᚣᛋᚩᚫᚩᚻᛚᚷᛒᛖᚪᚱᚢᛟᚢᚹᚷᚹᚹᚾᛇᚱᛇᛖᛋᚢᛞᛄᛗᛈᚪᚢᚪᛏᚩᛇᚦᛈᛠᛞᛁᛖᚫᚪᚻᚪᛏᛈᛠᚹᚹᛁᛈᛟᚪᛝᚳᚷᛏᛄᚩᛋᛝᛄᛚᚣᛇᚻᛚᛟᚠᛒᛏᚢᛄᛇᛝᚱᛁᚢᚻᛚᚾᚾᛖᚷᛏᛟᛈᚩᚠᛞᚩᚾᛇᚦᚦᛖᚫᚳᚹᚪᚣᚠᛝ",
+          "transliteration": "EEACMYTHGESASHPLRNGFCORIACONFAEOTWPTHHCMBRPHNGJOBBPCEEATHDXTTAETWHYEJAIAPWXCIADEOAYHTJPUOEXPJNSEFSYOABFCPCEANTHAEAEXPFBIADNGEAHASLUUNGDIBOEIASNCPTHIASIFDHLJYTHPHNOERNNGOFWCJRHNGEYEAHDIPCXNGEAIAYNGLDWAYSOAEOHLGBEARUOEUWGWWNEOREOESUDJMPAUATOEOTHPEADIEAEAHATPEAWWIPOEANGCGTJOSNGJLYEOHLOEFBTUJEONGRIUHLNNEGTOEPOFDONEOTHTHEAECWAYFNG"
+        },
+        {
+          "score": -10.465209873482383,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 18,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              41
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚷᛡᛗᚾᚦᛖᛖᚱᚹᛝᚢᚷᚾᚦᛖᚣᚩᛞᛝᚪᚢᛡᛞᚹᛟᛡᚱᛋᛇᛞᛋᛟᛉᛝᚩᛄᛠᛋᛇᚣᛄᚠᛚᛏᛚᛄᛡᛈᚷᛟᚦᚷᚦᛖᚠᚾᚱᛗᛝᚩᛝᛖᚳᛈᚱᛝᚣᚪᚦᛝᛗᚻᚫᛟᚢᚩᚾᛋᛉᛏᛠᛖᛞᛇᚢᛞᛒᛝᚢᚣᛋᚩᛄᚠᛞᚹᛉᛚᚣᚱᚢᛁᛚᚦᛁᛁᚩᛡᛈᚪᚫᛋᛒᛖᛁᛗᛏᚳᚷᛖᚹᛄᚢᛁᛟᚩᛡᚷᛚᛏᛒᚪᚳᚱᛖᛝᛖᛗᛡᚣᛖᚾᚻᚢᚣᚢᚷᚷᚢᛁᛡᛝᛝᚻᛟᛁᛚᚢᚠᛚᛒᛉᛈᚢᚠᚷᚪᚩᛠᚻᛚᛡᚳᛗᛈᚠᛟᚫᛗᚷᛄᚳᚢᚣᛞᚣᚩᚹᛚᚣᛁᚻᚹᛟᛡᚷᛞᛞᚱᛗᚣᚾᚪᛒᚻᚩᚠᚩᚷᛝᛖᛞᛇᛞᚦᚳᛒᚩᚪᛒᛉᚳᚹᛖᚳᛇᛞᛠᚹᚢᚪᚹᚠᚦᛁᚠᛈᛄᚻᛡᚢᚪᚪᛒᛁᛗᚠᚹᚫᛒᛟᛖᛋᚱᛒᚹᛁᚢᛞᛗᚷᚻᛈᚦᚻᛡᛟᛈᚾᚳᚳᛒᚱ",
+          "transliteration": "GIAMNTHEERWNGUGNTHEYODNGAUIADWOEIARSEODSOEXNGOJEASEOYJFLTLJIAPGOETHGTHEFNRMNGONGECPRNGYATHNGMHAEOEUONSXTEAEDEOUDBNGUYSOJFDWXLYRUILTHIIOIAPAAESBEIMTCGEWJUIOEOIAGLTBACRENGEMIAYENHUYUGGUIIANGNGHOEILUFLBXPUFGAOEAHLIACMPFOEAEMGJCUYDYOWLYIHWOEIAGDDRMYNABHOFOGNGEDEODTHCBOABXCWECEODEAWUAWFTHIFPJHIAUAABIMFWAEBOEESRBWIUDMGHPTHHIAOEPNCCBR"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.403794723249998,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-12",
+      "status": "unverified_screen",
+      "runes": 261,
+      "variants": 2436,
+      "top": [
+        {
+          "score": -10.445253226541178,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 25,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛖᚫᛞᚣᚩᚾᚣᚹᚪᚻᛈᛇᛋᛠᛚᛁᛖᚠᛗᚷᚣᛈᛏᚪᛚᛗᛈᛈᚹᛏᚳᚷᚩᚦᛡᚩᛇᚠᛠᛟᛄᚩᚢᚹᛒᚾᚳᚪᛁᛞᛗᛁᚩᛖᚳᛖᛉᚠᚪᛉᚷᛉᛝᛄᛖᛠᚳᛞᛉᛗᛈᛇᚹᛁᛒᛋᛇᚣᛒᛝᛚᚳᚫᚪᚹᚩᚢᚠᚻᛗᛗᛖᛗᚦᚾᚦᛠᚾᛉᛈᚷᚹᛇᚢᚦᛝᛋᛋᛇᛟᚹᚣᚠᛚᛇᛡᚫᛚᛁᚳᛖᛠᚷᚱᛚᛚᚩᛡᚫᛝᛖᚷᛠᚪᚢᛗᛟᛡᛡᛠᚻᚣᛋᚦᚣᚷᛉᛋᛟᛖᛁᛁᛗᛒᚣᛚᛉᚹᚱᛝᛖᚹᛒᚩᚾᚪᛇᛏᚦᚠᛋᛇᚱᛇᚫᚳᛏᚩᛒᛟᛞᛋᛋᚱᛚᚹᚫᛒᚹᛖᚦᛟᛉᛋᛟᛚᚩᛒᛒᚩᚩᛡᚪᛇᛇᚠᚱᛏᚩᛗᛠᚻᛖᚠᛏᛟᚪᚦᛗᚷᚢᛋᚻᛁᛇᛝᚢᚠᛗᚫᛒᚳᛁᛄᚩᚱᛚᚱᛁᚫᚱᚾᛈᛖᚻᛉᛋᛄᚹᛒᛈᚣᛒᚹᛡᛒᛁᚩᛁᚦᚹ",
+          "transliteration": "EAEDYONYWAHPEOSEALIEFMGYPTALMPPWTCGOTHIAOEOFEAOEJOUWBNCAIDMIOECEXFAXGXNGJEEACDXMPEOWIBSEOYBNGLCAEAWOUFHMMEMTHNTHEANXPGWEOUTHNGSSEOOEWYFLEOIAAELICEEAGRLLOIAAENGEGEAAUMOEIAIAEAHYSTHYGXSOEEIIMBYLXWRNGEWBONAEOTTHFSEOREOAECTOBOEDSSRLWAEBWETHOEXSOELOBBOOIAAEOEOFRTOMEAHEFTOEATHMGUSHIEONGUFMAEBCIJORLRIAERNPEHXSJWBPYBWIABIOITHW"
+        },
+        {
+          "score": -10.445253226541178,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 25,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              234
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛖᚫᛞᚣᚩᚾᚣᚹᚪᚻᛈᛇᛋᛠᛚᛁᛖᚠᛗᚷᚣᛈᛏᚪᛚᛗᛈᛈᚹᛏᚳᚷᚩᚦᛡᚩᛇᚠᛠᛟᛄᚩᚢᚹᛒᚾᚳᚪᛁᛞᛗᛁᚩᛖᚳᛖᛉᚠᚪᛉᚷᛉᛝᛄᛖᛠᚳᛞᛉᛗᛈᛇᚹᛁᛒᛋᛇᚣᛒᛝᛚᚳᚫᚪᚹᚩᚢᚠᚻᛗᛗᛖᛗᚦᚾᚦᛠᚾᛉᛈᚷᚹᛇᚢᚦᛝᛋᛋᛇᛟᚹᚣᚠᛚᛇᛡᚫᛚᛁᚳᛖᛠᚷᚱᛚᛚᚩᛡᚫᛝᛖᚷᛠᚪᚢᛗᛟᛡᛡᛠᚻᚣᛋᚦᚣᚷᛉᛋᛟᛖᛁᛁᛗᛒᚣᛚᛉᚹᚱᛝᛖᚹᛒᚩᚾᚪᛇᛏᚦᚠᛋᛇᚱᛇᚫᚳᛏᚩᛒᛟᛞᛋᛋᚱᛚᚹᚫᛒᚹᛖᚦᛟᛉᛋᛟᛚᚩᛒᛒᚩᚩᛡᚪᛇᛇᚠᚱᛏᚩᛗᛠᚻᛖᚠᛏᛟᚪᚦᛗᚷᚢᛋᚻᛁᛇᛝᚢᚠᛗᚫᛒᚳᛁᛄᚠᛡᛏᚦᛋᛝᚦᛠᚢᛏᛡᚷᚾᚳᚢᛠᚹᛟᛋᚪᛒᚳᚦᛏᚫᚫᚩ",
+          "transliteration": "EAEDYONYWAHPEOSEALIEFMGYPTALMPPWTCGOTHIAOEOFEAOEJOUWBNCAIDMIOECEXFAXGXNGJEEACDXMPEOWIBSEOYBNGLCAEAWOUFHMMEMTHNTHEANXPGWEOUTHNGSSEOOEWYFLEOIAAELICEEAGRLLOIAAENGEGEAAUMOEIAIAEAHYSTHYGXSOEEIIMBYLXWRNGEWBONAEOTTHFSEOREOAECTOBOEDSSRLWAEBWETHOEXSOELOBBOOIAAEOEOFRTOMEAHEFTOEATHMGUSHIEONGUFMAEBCIJFIATTHSNGTHEAUTIAGNCUEAWOESABCTHTAEAEO"
+        },
+        {
+          "score": -10.445253226541178,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 25,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              238
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛖᚫᛞᚣᚩᚾᚣᚹᚪᚻᛈᛇᛋᛠᛚᛁᛖᚠᛗᚷᚣᛈᛏᚪᛚᛗᛈᛈᚹᛏᚳᚷᚩᚦᛡᚩᛇᚠᛠᛟᛄᚩᚢᚹᛒᚾᚳᚪᛁᛞᛗᛁᚩᛖᚳᛖᛉᚠᚪᛉᚷᛉᛝᛄᛖᛠᚳᛞᛉᛗᛈᛇᚹᛁᛒᛋᛇᚣᛒᛝᛚᚳᚫᚪᚹᚩᚢᚠᚻᛗᛗᛖᛗᚦᚾᚦᛠᚾᛉᛈᚷᚹᛇᚢᚦᛝᛋᛋᛇᛟᚹᚣᚠᛚᛇᛡᚫᛚᛁᚳᛖᛠᚷᚱᛚᛚᚩᛡᚫᛝᛖᚷᛠᚪᚢᛗᛟᛡᛡᛠᚻᚣᛋᚦᚣᚷᛉᛋᛟᛖᛁᛁᛗᛒᚣᛚᛉᚹᚱᛝᛖᚹᛒᚩᚾᚪᛇᛏᚦᚠᛋᛇᚱᛇᚫᚳᛏᚩᛒᛟᛞᛋᛋᚱᛚᚹᚫᛒᚹᛖᚦᛟᛉᛋᛟᛚᚩᛒᛒᚩᚩᛡᚪᛇᛇᚠᚱᛏᚩᛗᛠᚻᛖᚠᛏᛟᚪᚦᛗᚷᚢᛋᚻᛁᛇᛝᚢᚠᛗᚫᛒᚳᛁᛄᚩᚱᛚᚱᚠᛝᚦᛠᚢᛏᛡᚷᚾᚳᚢᛠᚹᛟᛋᚪᛒᚳᚦᛏᚫᚫᚩ",
+          "transliteration": "EAEDYONYWAHPEOSEALIEFMGYPTALMPPWTCGOTHIAOEOFEAOEJOUWBNCAIDMIOECEXFAXGXNGJEEACDXMPEOWIBSEOYBNGLCAEAWOUFHMMEMTHNTHEANXPGWEOUTHNGSSEOOEWYFLEOIAAELICEEAGRLLOIAAENGEGEAAUMOEIAIAEAHYSTHYGXSOEEIIMBYLXWRNGEWBONAEOTTHFSEOREOAECTOBOEDSSRLWAEBWETHOEXSOELOBBOOIAAEOEOFRTOMEAHEFTOEATHMGUSHIEONGUFMAEBCIJORLRFNGTHEAUTIAGNCUEAWOESABCTHTAEAEO"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.437804717148474,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-13",
+      "status": "unverified_screen",
+      "runes": 272,
+      "variants": 2436,
+      "top": [
+        {
+          "score": -10.401437928953003,
+          "recipe": {
+            "family": "affine",
+            "a": 24,
+            "b": 7
+          },
+          "plaintext_runes": "ᚷᚣᚹᛁᚷᛄᚾᛋᛠᛞᚳᛇᚢᛚᛡᚢᚷᛝᚫᚩᛉᛚᛁᛟᛖᛉᛒᛖᚦᛝᚹᛟᛠᚦᚾᛉᚹᚠᛏᛝᚪᛝᛖᚾᚱᛉᛝᚪᛟᛠᚹᚪᚱᛝᛡᚷᛟᛞᛝᚳᚹᛗᛡᚳᛠᛒᛈᚢᛚᛝᚦᚢᚱᛋᛚᚣᛡᛇᚩᛇᛞᚢᛒᛝᚦᚣᛠᛖᛞᚩᚹᛖᛞᚹᛞᛄᚾᚦᛖᚪᛟᛒᚩᚷᚢᛈᚩᚫᚢᚦᚱᛇᚷᛋᚩᛉᛁᛠᛉᚱᛋᛟᛒᚣᛚᚹᚣᛝᚠᚫᚩᚫᛗᛇᛒᚪᚩᛡᚹᛟᚻᛇᚳᚹᛡᛉᛠᛄᛒᚷᛏᚦᚻᛁᛗᛒᚳᛝᛞᛈᚣᛏᛡᚾᛞᚣᚱᚩᚣᛠᛞᚣᚪᚩᛏᛈᚱᚾᛁᛏᛁᚱᛋᚠᚩᚱᛇᚹᛁᚦᚻᚢᚣᛟᚪᚷᛝᛄᛒᚳᛠᚻᛄᛉᚫᛞᚣᛖᚱᛠᛏᚾᚷᚻᚪᛠᚾᚪᛄᛖᚣᛟᚻᛡᛇᛗᛉᛠᛉᚫᚢᚳᛄᚩᚻᛇᚦᚾᚪᛒᛋᛒᛞᚷᛗᚣᚻᚹᚦᛝᛇᛞᛗᛟᛉᛗᚩᚻᛡᚢᛁᚻᛗᚠᛗᛁᚩᚱᛋᚳᚾᛈ",
+          "transliteration": "GYWIGJNSEADCEOULIAUGNGAEOXLIOEEXBETHNGWOEEATHNXWFTNGANGENRXNGAOEEAWARNGIAGOEDNGCWMIACEABPULNGTHURSLYIAEOOEODUBNGTHYEAEDOWEDWDJNTHEAOEBOGUPOAEUTHREOGSOXIEAXRSOEBYLWYNGFAEOAEMEOBAOIAWOEHEOCWIAXEAJBGTTHHIMBCNGDPYTIANDYROYEADYAOTPRNITIRSFOREOWITHHUYOEAGNGJBCEAHJXAEDYEREATNGHAEANAJEYOEHIAEOMXEAXAEUCJOHEOTHNABSBDGMYHWTHNGEODMOEXMOHIAUIHMFMIORSCNP"
+        },
+        {
+          "score": -10.45003086169349,
+          "recipe": {
+            "family": "affine",
+            "a": 14,
+            "b": 4
+          },
+          "plaintext_runes": "ᚢᚩᚱᛈᚢᛏᛁᛠᚾᛞᛡᛗᛋᛉᚷᛋᚢᛒᚠᛝᚫᛉᛈᛚᚻᚫᚳᚻᛖᛒᚱᛚᚾᛖᛁᚫᚱᛇᚦᛒᚣᛒᚻᛁᚪᚫᛒᚣᛚᚾᚱᚣᚪᛒᚷᚢᛚᛞᛒᛡᚱᛄᚷᛡᚾᚳᛟᛋᛉᛒᛖᛋᚪᛠᛉᚩᚷᛗᛝᛗᛞᛋᚳᛒᛖᚩᚾᚻᛞᛝᚱᚻᛞᚱᛞᛏᛁᛖᚻᚣᛚᚳᛝᚢᛋᛟᛝᚠᛋᛖᚪᛗᚢᛠᛝᚫᛈᚾᚫᚪᛠᛚᚳᚩᛉᚱᚩᛒᛇᚠᛝᚠᛄᛗᚳᚣᛝᚷᚱᛚᚹᛗᛡᚱᚷᚫᚾᛏᚳᚢᚦᛖᚹᛈᛄᚳᛡᛒᛞᛟᚩᚦᚷᛁᛞᚩᚪᛝᚩᚾᛞᚩᚣᛝᚦᛟᚪᛁᛈᚦᛈᚪᛠᛇᛝᚪᛗᚱᛈᛖᚹᛋᚩᛚᚣᚢᛒᛏᚳᛡᚾᚹᛏᚫᚠᛞᚩᚻᚪᚾᚦᛁᚢᚹᚣᚾᛁᚣᛏᚻᚩᛚᚹᚷᛗᛄᚫᚾᚫᚠᛋᛡᛏᛝᚹᛗᛖᛁᚣᚳᛠᚳᛞᚢᛄᚩᚹᚱᛖᛒᛗᛞᛄᛚᚫᛄᛝᚹᚷᛋᛈᚹᛄᛇᛄᛈᛝᚪᛠᛡᛁᛟ",
+          "transliteration": "UORPUTIEANDIAMSXGSUBFNGAEXPLHAECHEBRLNEIAEREOTHBYBHIAAEBYLNRYABGULDBIARJGIANCOESXBESAEAXOGMNGMDSCBEONHDNGRHDRDTIEHYLCNGUSOENGFSEAMUEANGAEPNAEAEALCOXROBEOFNGFJMCYNGGRLWMIARGAENTCUTHEWPJCIABDOEOTHGIDOANGONDOYNGTHOEAIPTHPAEAEONGAMRPEWSOLYUBTCIANWTAEFDOHANTHIUWYNIYTHOLWGMJAENAEFSIATNGWMEIYCEACDUJOWREBMDJLAEJNGWGSPWJEOJPNGAEAIAIOE"
+        },
+        {
+          "score": -10.45367343514995,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 10,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              187
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛟᛚᛖᚳᚷᚢᛇᛒᚦᚣᚩᛁᛡᛗᚪᚾᚻᚹᚠᚾᚩᚷᛡᛁᚳᚻᛚᛚᚹᛠᚫᚣᛞᛁᛗᛖᛟᚣᚦᚢᛋᛚᚠᛞᛏᛇᛗᚷᛒᛚᚻᛈᚪᚷᛄᚣᛝᛝᛠᛒᚫᚱᛋᛟᚾᚣᚫᚩᚣᚪᛏᚻᛏᛟᛒᛚᛚᚾᚾᚩᚹᚻᚾᚠᛞᛖᚪᛁᚾᛏᚳᚩᛡᛇᛗᛠᚷᛏᛗᚪᚷᛠᛡᛉᚢᚳᚢᛈᚻᚻᛖᚫᛉᚱᛄᚾᚷᛒᛇᚱᚷᛋᚷᚫᛉᛋᚾᛞᚩᚫᚹᛈᚱᛏᛋᛖᛞᛖᛇᛄᚠᛚᚳᛈᚣᚦᛚᚪᛞᛄᚹᚱᚣᚳᚪᚷᛈᛏᛏᛁᚪᛚᛖᚪᛋᛞᚳᛖᚾᛋᚫᛁᚫᛄᚫᚢᚣᛝᛝᚷᚣᚾᚾᚫᚻᚻᛗᚠᚪᚢᚦᛇᛋᛉᛉᛇᚣᛟᚫᚳᚫᛋᚠᛏᛚᚫᛇᛏᛉᚹᛏᚪᛒᛗᛉᚳᚳᚱᚹᛇᛡᚢᛡᛈᚠᛄᚷᚢᚠᚦᛚᚩᚦᚠᚪᛋᚹᛇᛄᛗᚩᚢᚱᛇᚢᛁᛇᚱᚣᛉᛡᚠᚢᛒᚩᚠᛖᚾᚪᛄᚣᚷᚻᚱᚫᛄᛝᛞᚠᛋᚠᛇ",
+          "transliteration": "OELECGUEOBTHYOIIAMANHWFNOGIAICHLLWEAAEYDIMEOEYTHUSLFDTEOMGBLHPAGJYNGNGEABAERSOENYAEOYATHTOEBLLNNOWHNFDEAINTCOIAEOMEAGTMAGEAIAXUCUPHHEAEXRJNGBEORGSGAEXSNDOAEWPRTSEDEEOJFLCPYTHLADJWRYCAGPTTIALEASDCENSAEIAEJAEUYNGNGGYNNAEHHMFAUTHEOSXXEOYOEAECAESFTLAEEOTXWTABMXCCRWEOIAUIAPFJGUFTHLOTHFASWEOJMOUREOUIEORYXIAFUBOFENAJYGHRAEJNGDFSFEO"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.430299307010193,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-14",
+      "status": "unverified_screen",
+      "runes": 137,
+      "variants": 1276,
+      "top": [
+        {
+          "score": -10.342029646121302,
+          "recipe": {
+            "family": "affine",
+            "a": 16,
+            "b": 26
+          },
+          "plaintext_runes": "ᛝᛠᚣᛏᛡᛒᚫᚷᛗᛡᚷᛄᛁᚠᛈᚢᚾᚫᚢᚹᛞᛋᚾᚹᚱᚦᚫᚳᛒᛚᛁᛗᛖᛠᚠᛟᚳᚩᚠᛚᚫᛞᛡᚹᛚᚳᚪᚢᚹᛉᛞᚠᚹᚷᛋᚩᚳᛁᛝᛞᛗᛖᛁᚷᛗᚻᚳᛟᚫᚾᚪᛉᚳᛏᛞᛄᛖᛉᛖᚠᛁᛒᛗᚻᚷᛖᛟᛉᛈᛖᛒᚦᛖᛞᚦᚢᚫᛞᚣᛞᛈᚳᛖᚱᚪᚾᚩᚹᛁᛋᚻᚢᚱᛉᛞᛗᚩᛗᚦᛏᛝᚾᚹᛚᛇᚳᛏᚠᛡᚢᛡᚳᚱᛈᚱᚦᚾ",
+          "transliteration": "NGEAYTIABAEGMIAGJIFPUNAEUWDSNWRTHAECBLIMEEAFOECOFLAEDIAWLCAUWXDFWGSOCINGDMEIGMHCOEAENAXCTDJEXEFIBMHGEOEXPEBTHEDTHUAEDYDPCERANOWISHURXDMOMTHTNGNWLEOCTFIAUIACRPRTHN"
+        },
+        {
+          "score": -10.357647215912136,
+          "recipe": {
+            "family": "affine",
+            "a": 16,
+            "b": 25
+          },
+          "plaintext_runes": "ᛚᛡᚫᛋᚣᛏᚪᚳᛖᚣᚳᛁᚾᛠᛇᚠᚻᚪᚠᚷᛟᛉᚻᚷᚩᚢᚪᚱᛏᛗᚾᛖᛒᛡᛠᛝᚱᚦᛠᛗᚪᛟᚣᚷᛗᚱᛞᚠᚷᛈᛟᛠᚷᚳᛉᚦᚱᚾᛚᛟᛖᛒᚾᚳᛖᚹᚱᛝᚪᚻᛞᛈᚱᛋᛟᛁᛒᛈᛒᛠᚾᛏᛖᚹᚳᛒᛝᛈᛇᛒᛏᚢᛒᛟᚢᚠᚪᛟᚫᛟᛇᚱᛒᚩᛞᚻᚦᚷᚾᛉᚹᚠᚩᛈᛟᛖᚦᛖᚢᛋᛚᚻᚷᛗᛄᚱᛋᛠᚣᚠᚣᚱᚩᛇᚩᚢᚻ",
+          "transliteration": "LIAAESYTACEYCINEAEOFHAFGOEXHGOUARTMNEBIAEANGRTHEAMAOEYGMRDFGPOEEAGCXTHRNLOEEBNCEWRNGAHDPRSOEIBPBEANTEWCBNGPEOBTUBOEUFAOEAEOEEORBODHTHGNXWFOPOEETHEUSLHGMJRSEAYFYROEOOUH"
+        },
+        {
+          "score": -10.36611795498689,
+          "recipe": {
+            "family": "affine",
+            "a": 23,
+            "b": 0
+          },
+          "plaintext_runes": "ᛚᛝᚠᛄᚫᚹᚱᛟᛠᚫᛟᚦᚷᛒᛞᛈᛁᚱᛈᛖᛇᛋᛁᛖᚢᚾᚱᚣᚹᚪᚷᛠᚩᛝᛒᛏᚣᚳᛒᚪᚱᛇᚫᛖᚪᚣᚻᛈᛖᛗᛇᛒᛖᛟᛋᚳᚣᚷᛚᛇᛠᚩᚷᛟᛠᛉᚣᛏᚱᛁᚻᛗᚣᛄᛇᚦᚩᛗᚩᛒᚷᚹᛠᛉᛟᚩᛏᛗᛞᚩᚹᚾᚩᛇᚾᛈᚱᛇᚠᛇᛞᚣᚩᚢᚻᛁᚳᛖᚷᛋᛉᛈᚢᛗᛇᛠᚳᛠᚾᛄᛚᛁᛖᚪᛡᚣᛄᛒᚫᛈᚫᚣᚢᛞᚢᚾᛁ",
+          "transliteration": "LNGFJAEWROEEAAEOETHGBDPIRPEEOSIEUNRYWAGEAONGBTYCBAREOAEEAYHPEMEOBEOESCYGLEOEAOGOEEAXYTRIHMYJEOTHOMOBGWEAXOEOTMDOWNOEONPREOFEODYOUHICEGSXPUMEOEACEANJLIEAIAYJBAEPAEYUDUNI"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.340846870739686,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-15",
+      "status": "unverified_screen",
+      "runes": 159,
+      "variants": 1856,
+      "top": [
+        {
+          "score": -10.393713984653871,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 21,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [
+              18
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛚᛞᛁᛗᛖᛏᛟᛠᚢᛗᛈᛠᛈᛡᚱᛞᚻᚳᚠᚷᛞᚳᚷᛒᚠᛠᚫᛗᛡᚪᛞᛝᚫᚳᛁᚱᚻᛖᛚᚳᛠᛒᛖᛖᛉᛡᚦᛟᛟᛠᛡᚢᚳᚷᛝᚩᚻᛖᛈᚱᚻᛡᛉᚾᛚᚦᛈᛋᛟᚫᚹᚱᚾᛖᚹᛝᚻᛉᛝᛉᚢᛚᚪᛏᛟᚻᚷᚣᚱᛗᚹᛟᚾᚳᚠᚢᚱᚷᛟᚹᚠᛒᚢᚾᛋᚷᛝᛗᚹᛇᚻᛋᛇᚻᛚᛏᛁᛚᛟᚪᛄᛟᛏᛇᛋᚩᛗᚪᚩᚠᛗᚹᛝᛝᛏᛉᚣᚦᛞᛋᚢᛏᛈᚦᛝᛋᚠᚻᚦᚣᚱᚫᛞᚩᚱᛏᚩᛒᚳ",
+          "transliteration": "LDIMETOEEAUMPEAPIARDHCFGDCGBFEAAEMIAADNGAECIRHELCEABEEXIATHOEOEEAIAUCGNGOHEPRHIAXNLTHPSOEAEWRNEWNGHXNGXULATOEHGYRMWOENCFURGOEWFBUNSGNGMWEOHSEOHLTILOEAJOETEOSOMAOFMWNGNGTXYTHDSUTPTHNGSFHTHYRAEDORTOBC"
+        },
+        {
+          "score": -10.393713984653871,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 21,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [
+              27
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛚᛞᛁᛗᛖᛏᛟᛠᚢᛗᛈᛠᛈᛡᚱᛞᚻᚳᛡᛇᚫᛋᚻᛝᚦᛄᚻᚠᛡᚪᛞᛝᚫᚳᛁᚱᚻᛖᛚᚳᛠᛒᛖᛖᛉᛡᚦᛟᛟᛠᛡᚢᚳᚷᛝᚩᚻᛖᛈᚱᚻᛡᛉᚾᛚᚦᛈᛋᛟᚫᚹᚱᚾᛖᚹᛝᚻᛉᛝᛉᚢᛚᚪᛏᛟᚻᚷᚣᚱᛗᚹᛟᚾᚳᚠᚢᚱᚷᛟᚹᚠᛒᚢᚾᛋᚷᛝᛗᚹᛇᚻᛋᛇᚻᛚᛏᛁᛚᛟᚪᛄᛟᛏᛇᛋᚩᛗᚪᚩᚠᛗᚹᛝᛝᛏᛉᚣᚦᛞᛋᚢᛏᛈᚦᛝᛋᚠᚻᚦᚣᚱᚫᛞᚩᚱᛏᚩᛒᚳ",
+          "transliteration": "LDIMETOEEAUMPEAPIARDHCIAEOAESHNGTHJHFIAADNGAECIRHELCEABEEXIATHOEOEEAIAUCGNGOHEPRHIAXNLTHPSOEAEWRNEWNGHXNGXULATOEHGYRMWOENCFURGOEWFBUNSGNGMWEOHSEOHLTILOEAJOETEOSOMAOFMWNGNGTXYTHDSUTPTHNGSFHTHYRAEDORTOBC"
+        },
+        {
+          "score": -10.393856802896263,
+          "recipe": {
+            "family": "affine",
+            "a": 22,
+            "b": 2
+          },
+          "plaintext_runes": "ᚦᚪᚹᛉᚻᚾᛞᛟᚻᚹᚪᚠᚣᚫᚪᛠᚣᚷᚦᚠᛗᚪᛗᚪᛟᚢᛇᚦᚢᚪᛖᛚᚳᛡᛚᛞᚾᚹᚻᛚᛟᛚᛏᛒᚱᚾᚣᚻᚫᚪᛖᚣᛡᛝᚣᛒᛁᚪᛗᛏᚩᚷᛗᛠᚳᚫᚦᛖᛁᛒᚻᛗᛡᚱᛏᛠᛄᛡᚱᚩᛋᛚᚷᚪᛞᛠᚦᛈᛚᚪᛉᛗᛏᚩᚠᚪᚦᛒᚠᛡᛟᛠᚱᛖᚱᛏᚹᛁᛋᚻᚫᛒᛡᛋᛈᛏᚱᚳᚹᚪᚷᛈᛋᛒᚪᛋᚠᚹᛚᚠᚷᛁᚹᚻᚹᛞᛟᛏᛚᛞᛠᚱᚢᛇᛏᛗᚩᛒᚹᚦᚾᚣᚠᛚᛉᛠᛁᚾᛡ",
+          "transliteration": "THAWXHNDOEHWAFYAEAEAYGTHFMAMAOEUEOTHUAELCIALDNWHLOELTBRNYHAEAEYIANGYBIAMTOGMEACAETHEIBHMIARTEAJIAROSLGADEATHPLAXMTOFATHBFIAOEEARERTWISHAEBIASPTRCWAGPSBASFWLFGIWHWDOETLDEARUEOTMOBWTHNYFLXEAINIA"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.308616178066288,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-16",
+      "status": "unverified_screen",
+      "runes": 267,
+      "variants": 2204,
+      "top": [
+        {
+          "score": -10.424453055123879,
+          "recipe": {
+            "family": "affine",
+            "a": 24,
+            "b": 28
+          },
+          "plaintext_runes": "ᚫᚠᚪᛗᚷᛈᚱᚫᚱᛏᚩᚱᚷᛈᚠᚩᚱᛇᚩᛖᛚᚠᛡᚹᚩᛟᚳᚪᛞᚢᚩᛗᛖᚻᛄᛉᚪᚷᛖᚢᛁᛟᛄᚻᚹᛁᚢᚹᚪᛗᛋᚷᚻᚾᛗᛠᚠᛁᚦᛈᚾᚱᛏᚪᚾᛒᚻᚢᚹᚠᚾᚦᚪᛝᚻᛄᛞᚾᛒᛡᛋᚳᛠᛒᛡᛗᛄᛝᛟᛡᛡᛚᚳᚪᛇᚻᛈᚳᚠᛡᚳᛠᚱᚾᛡᚩᛏᚱᛠᛋᚢᛗᛝᛈᚦᛝᚦᛚᚱᛇᛏᚪᚾᚫᛄᛡᛗᛖᚦᛡᛏᛈᛖᚦᚩᛉᛞᚦᛖᚦᚪᛇᚷᚢᚩᛝᚾᚦᛄᛗᛄᛚᛒᚠᚱᛏᛞᛚᚷᚱᚫᛉᛠᚦᚷᛄᛚᚠᚳᚹᛁᚪᛏᚫᛝᛋᚣᚠᛖᚪᛄᛏᚩᚢᛞᚳᚩᚢᛋᛇᚳᛁᛏᛈᚫᚩᛁᚳᚩᚹᚢᛝᛗᛉᚫᚦᛁᚠᛞᚻᛏᚳᛈᛠᛟᛈᛉᚹᛠᛞᚣᛋᚷᛝᚢᛚᚣᛁᛞᚩᚻᚾᚫᛈᚹᛉᚦᚷᚾᚫᛠᚣᛠᛋᚹᛉᛡᛠᛁᚾᛝᛡᚢᚾᛈᛡᚾᚳᛇᛟᚾᛝᚳᛖᛝᚳᛡ",
+          "transliteration": "AEFAMGPRAERTORGPFOREOOELFIAWOOECADUOMEHJXAGEUIOEJHWIUWAMSGHNMEAFITHPNRTANBHUWFNTHANGHJDNBIASCEABIAMJNGOEIAIALCAEOHPCFIACEARNIAOTREASUMNGPTHNGTHLREOTANAEJIAMETHIATPETHOXDTHETHAEOGUONGNTHJMJLBFRTDLGRAEXEATHGJLFCWIATAENGSYFEAJTOUDCOUSEOCITPAEOICOWUNGMXAETHIFDHTCPEAOEPXWEADYSGNGULYIDOHNAEPWXTHGNAEEAYEASWXIAEAINNGIAUNPIANCEOOENNGCENGCIA"
+        },
+        {
+          "score": -10.438580130523997,
+          "recipe": {
+            "family": "affine",
+            "a": 9,
+            "b": 22
+          },
+          "plaintext_runes": "ᛁᚣᚷᛋᛝᛚᛈᛁᛈᚩᚾᛈᛝᛚᚣᚾᛈᛏᚾᛄᛗᚣᛖᚫᚾᛡᛒᚷᚦᚢᚾᛋᛄᚠᛇᚪᚷᛝᛄᚢᚻᛡᛇᚠᚫᚻᚢᚫᚷᛋᛠᛝᚠᚱᛋᛟᚣᚻᚳᛚᚱᛈᚩᚷᚱᚹᚠᚢᚫᚣᚱᚳᚷᛞᚠᛇᚦᚱᚹᛖᛠᛒᛟᚹᛖᛋᛇᛞᛡᛖᛖᛗᛒᚷᛏᚠᛚᛒᚣᛖᛒᛟᛈᚱᛖᚾᚩᛈᛟᛠᚢᛋᛞᛚᚳᛞᚳᛗᛈᛏᚩᚷᚱᛁᛇᛖᛋᛄᚳᛖᚩᛚᛄᚳᚾᚪᚦᚳᛄᚳᚷᛏᛝᚢᚾᛞᚱᚳᛇᛋᛇᛗᚹᚣᛈᚩᚦᛗᛝᛈᛁᚪᛟᚳᛝᛇᛗᚣᛒᚫᚻᚷᚩᛁᛞᛠᛉᚣᛄᚷᛇᚩᚾᚢᚦᛒᚾᚢᛠᛏᛒᚻᚩᛚᛁᚾᚻᛒᚾᚫᚢᛞᛋᚪᛁᚳᚻᚣᚦᚠᚩᛒᛚᛟᛡᛚᚪᚫᛟᚦᛉᛠᛝᛞᚢᛗᛉᚻᚦᚾᚠᚱᛁᛚᚫᚪᚳᛝᚱᛁᛟᛉᛟᛠᚫᚪᛖᛟᚻᚱᛞᛖᚢᚱᛚᛖᚱᛒᛏᛡᚱᛞᛒᛄᛞᛒᛖ",
+          "transliteration": "IYGSNGLPIPONPNGLYNPTNJMYEAENIABGTHUNSJFEOAGNGJUHIAEOFAEHUAEGSEANGFRSOEYHCLRPOGRWFUAEYRCGDFEOTHRWEEABOEWESEODIAEEMBGTFLBYEBOEPRENOPOEEAUSDLCDCMPTOGRIEOESJCEOLJCNATHCJCGTNGUNDRCEOSEOMWYPOTHMNGPIAOECNGEOMYBAEHGOIDEAXYJGEOONUTHBNUEATBHOLINHBNAEUDSAICHYTHFOBLOEIALAAEOETHXEANGDUMXHTHNFRILAEACNGRIOEXOEEAAEAEOEHRDEURLERBTIARDBJDBE"
+        },
+        {
+          "score": -10.443943894464226,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 11,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [
+              162
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛖᛒᛖᛝᚹᚣᚩᛗᛈᚠᛋᚫᛉᚷᛗᛁᛚᛇᛚᚻᚪᚣᛏᛟᚠᚱᚪᚣᚣᛏᚢᛚᛏᛖᚾᛁᚪᚹᛞᛇᛉᚢᚩᛚᛚᛋᛝᚳᚪᚫᛄᚠᛏᚪᚢᛄᛞᚷᛖᚢᛇᛗᛁᚷᚹᚩᛋᚷᛝᛖᛏᛈᚦᛗᚩᛡᛚᛡᛗᚫᛞᚠᚣᚣᚩᛗᛇᛏᛄᛖᛠᛝᚪᚪᛏᚦᚾᚫᚣᛚᛁᚹᛁᛞᚫᛠᛞᛋᛚᚦᛒᛈᚦᛚᛟᛠᛄᛄᚻᚱᚩᚢᚱᛒᛠᛇᚹᛄᛉᛝᛞᚹᛇᚳᛝᛉᛉᚷᛗᚪᛋᚩᚠᛗᚷᚷᚦᚣᚣᛟᚾᛗᚳᚫᚣᛗᚾᚩᛁᚱᛏᛖᚠᚷᚹᛖᛏᛟᚫᛉᛝᛟᚳᚳᛏᛋᚦᚣᚪᚪᚷᛒᚳᚩᚫᛁᚷᚷᚹᚪᛒᛚᚱᛡᛟᚪᛁᛈᚹᚱᚩᛄᚢᚱᚪᚱᚠᚩᚦᚳᚩᛈᛈᚢᛡᚱᛉᚹᚫᛠᛗᛒᚱᛒᛋᛒᚣᛝᛖᚣᛁᚪᛏᚻᚳᚪᛖᛒᛉᛡᚢᛟᛄᛟᚹᚣᛗᚦᛚᚳᚫᚹᛡᛇᛄᛁᛠᛏᚦᛉᚦᛟᛗᛏᛞᛚᛄ",
+          "transliteration": "EBENGWYOMPFSAEXGMILEOLHAYTOEFRAYYTULTENIAWDEOXUOLLSNGCAAEJFTAUJDGEUEOMIGWOSGNGETPTHMOIALIAMAEDFYYOMEOTJEEANGAATTHNAEYLIWIDAEEADSLTHBPTHLOEEAJJHROURBEAEOWJXNGDWEOCNGXXGMASOFMGGTHYYOENMCAEYMNOIRTEFGWETOEAEXNGOECCTSTHYAAGBCOAEIGGWABLRIAOEAIPWROJURARFOTHCOPPUIARXWAEEAMBRBSBYNGEYIATHCAEBXIAUOEJOEWYMTHLCAEWIAEOJIEATTHXTHOEMTDLJ"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.445092272423793,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-17",
+      "status": "unverified_screen",
+      "runes": 273,
+      "variants": 2436,
+      "top": [
+        {
+          "score": -10.409975099876952,
+          "recipe": {
+            "family": "affine",
+            "a": 4,
+            "b": 7
+          },
+          "plaintext_runes": "ᚠᛋᚢᛇᛋᚣᛒᛠᛏᛒᛏᛉᚫᛡᛉᛝᛠᚷᚱᛈᛞᚱᛚᚠᚻᛖᚣᚪᚱᛠᛉᛈᛞᛖᚾᛏᛝᚣᛄᚱᛇᛟᚹᛞᚩᚫᚩᛏᛚᚢᛈᚹᛝᛈᚦᛉᚹᛖᚹᛞᛁᛞᚣᛒᛁᚢᛈᚣᛞᚱᛠᛒᚷᚠᛈᚫᚳᛋᛉᛟᛡᛚᚦᚢᚾᛝᛗᛄᚱᛗᛈᚢᛖᚪᛉᛏᛈᚷᚹᚫᛉᚻᛉᛡᛒᛟᚳᛠᚻᛏᛖᛚᚱᛒᚳᛈᛟᛖᚾᚩᛡᛝᛞᛋᚪᛗᚪᚢᛚᚦᛠᛟᛖᛗᛞᛋᚩᚣᛋᛗᚳᛉᛞᛉᛚᛖᚳᛖᚱᚪᛚᛠᛚᚫᚷᛝᚣᚦᛁᛝᚫᚦᛄᛇᚷᛟᛁᚳᛞᛄᛟᛄᛉᚢᚾᚪᛟᛚᚢᛡᚪᛡᛒᛠᛚᚻᛏᚹᛈᚦᛗᚣᚻᛖᛞᚫᛝᚳᚻᚫᚣᛚᚻᛋᛞᛇᛖᛄᛋᛁᚫᛠᛉᛖᛋᛁᚠᛈᛡᛏᛋᚹᛏᛚᚪᛁᚩᛋᚹᚾᚹᚱᚦᛞᚢᛈᛟᚳᚻᚦᚠᛁᛗᛏᛋᛈᛡᛖᚹᚪᛄᛖᚷᚻᛏᚪᛖᚩᛟᛏᚻᚱᛋᚻᚹᛋᛉᚣᚦᚩᚠᛒᚹ",
+          "transliteration": "FSUEOSYBEATBTXAEIAXNGEAGRPDRLFHEYAREAXPDENTNGYJREOOEWDOAEOTLUPWNGPTHXWEWDIDYBIUPYDREABGFPAECSXOEIALTHUNNGMJRMPUEAXTPGWAEXHXIABOECEAHTELRBCPOEENOIANGDSAMAULTHEAOEEMDSOYSMCXDXLECERALEALAEGNGYTHINGAETHJEOGOEICDJOEJXUNAOELUIAAIABEALHTWPTHMYHEDAENGCHAEYLHSDEOEJSIAEEAXESIFPIATSWTLAIOSWNWRTHDUPOECHTHFIMTSPIAEWAJEGHTAEOOETHRSHWSXYTHOFBW"
+        },
+        {
+          "score": -10.42209161895626,
+          "recipe": {
+            "family": "affine",
+            "a": 28,
+            "b": 28
+          },
+          "plaintext_runes": "ᚻᚣᛋᚳᚣᛏᛄᚢᚱᛄᚱᛗᚾᛞᛗᛁᚢᛝᚹᛇᚪᚹᚩᚻᚷᛖᛏᚦᚹᚢᛗᛇᚪᛖᛈᚱᛁᛏᛡᚹᚳᛒᛠᚪᚠᚾᚠᚱᚩᛋᛇᛠᛁᛇᛟᛗᛠᛖᛠᚪᛚᚪᛏᛄᛚᛋᛇᛏᚪᚹᚢᛄᛝᚻᛇᚾᛉᚣᛗᛒᛞᚩᛟᛋᛈᛁᚫᛡᚹᚫᛇᛋᛖᚦᛗᚱᛇᛝᛠᚾᛗᚷᛗᛞᛄᛒᛉᚢᚷᚱᛖᚩᚹᛄᛉᛇᛒᛖᛈᚠᛞᛁᚪᚣᚦᚫᚦᛋᚩᛟᚢᛒᛖᚫᚪᚣᚠᛏᚣᚫᛉᛗᚪᛗᚩᛖᛉᛖᚹᚦᚩᚢᚩᚾᛝᛁᛏᛟᛚᛁᚾᛟᛡᚳᛝᛒᛚᛉᚪᛡᛒᛡᛗᛋᛈᚦᛒᚩᛋᛞᚦᛞᛄᚢᚩᚷᚱᛠᛇᛟᚫᛏᚷᛖᚪᚾᛁᛉᚷᚾᛏᚩᚷᚣᚪᚳᛖᛡᚣᛚᚾᚢᛗᛖᚣᛚᚻᛇᛞᚱᚣᛠᚱᚩᚦᛚᚠᚣᛠᛈᛠᚹᛟᚪᛋᛇᛒᛉᚷᛟᚻᛚᚫᚱᚣᛇᛞᛖᛠᚦᛡᛖᛝᚷᚱᚦᛖᚠᛒᚱᚷᚹᚣᚷᛠᚣᛗᛏᛟᚠᚻᛄᛠ",
+          "transliteration": "HYSCYTJURJRMNDMIUNGWEOAWOHGETTHWUMEOAEPRITIAWCBEAAFNFROSEOEAIEOOEMEAEEAALATJLSEOTAWUJNGHEONXYMBDOOESPIAEIAWAEEOSETHMREONGEANMGMDJBXUGREOWJXEOBEPFDIAYTHAETHSOOEUBEAEAYFTYAEXMAMOEXEWTHOUONNGITOELINOEIACNGBLXAIABIAMSPTHBOSDTHDJUOGREAEOOEAETGEANIXGNTOGYACEIAYLNUMEYLHEODRYEAROTHLFYEAPEAWOEASEOBXGOEHLAERYEODEEATHIAENGGRTHEFBRGWYGEAYMTOEFHJEA"
+        },
+        {
+          "score": -10.431315654095236,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 4,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [
+              187
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛗᛁᚩᚪᛚᛏᛈᚾᛏᚫᛟᛉᛁᚣᛠᛞᛏᛈᚩᛉᚳᛝᛗᛠᛠᛋᛡᛒᛠᚪᛞᛖᚹᚹᚷᚩᛋᛞᛋᚣᛠᛈᚹᛋᚪᚷᚢᛄᛇᚳᚻᚢᛖᛟᚾᛁᛝᛝᛏᛏᛉᛟᛠᚠᛗᛏᛒᛡᛉᚩᚩᛒᚱᛠᚹᛇᛡᛇᛋᛋᛡᛄᚹᚻᛁᚾᛠᛈᚢᛞᛖᚫᚳᚢᛚᛞᚻᛡᛄᛡᛁᚩᚣᚹᚢᚾᛇᚳᛉᛉᛄᚷᛇᛚᚠᚱᛄᚪᛞᛏᛖᛋᚻᛚᚱᚱᛏᚱᚠᚫᚻᚩᚻᚠᚾᛞᛠᚫᚻᛄᚦᛒᚹᚷᛝᛄᛝᚠᛚᛗᛄᛈᛞᛁᚢᛞᚷᛖᚢᚪᚠᛗᚩᛏᛋᛋᚪᛚᛄᛏᛇᚩᚣᚩᚩᛡᚦᛝᚷᛖᚩᚢᚣᛟᚢᚣᚣᚠᛋᚱᛒᛉᛁᚢᛗᚻᛋᚫᛗᛠᛖᛋᚹᚠᚦᛖᚱᛗᛟᛖᛄᛋᚷᛄᚪᚪᛖᚢᚢᛝᛠᚳᛇᛋᛚᛒᚢᚠᚻᚳᚢᛄᚢᚳᚠᚩᛚᚠᚠᛠᛚᚹᛖᚳᚦᚫᛄᛚᚳᛉᛇᚹᛏᚩᚹᛋᛟᛁᚦᛚᛒᛟᛉᚱᚾᚾᛇᛒᚠᛈᛡᛗᛈ",
+          "transliteration": "MIOALTPNTAEOEXIYEADTPOXCNGMEAEASIABEAADEWWGOSDSYEAPWSAGUJEOCHUEOENINGNGTTXOEEAFMTBIAXOOBREAWEOIAEOSSIAJWHINEAPUDEAECULDHIAJIAIOYWUNEOCXXJGEOLFRJADTESHLRRTRFAEHOHFNDEAAEHJTHBWGNGJNGFLMJPDIUDGEUAFMOTSSALJTEOOYOOIATHNGGEOUYOEUYYFSRBXIUMHSAEMEAESWFTHERMOEEJSGJAAEUUNGEACEOSLBUFHCUJUCFOLFFEALWECTHAEJLCXEOWTOWSOEITHLBOEXRNNEOBFPIAMP"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.427933614094687,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-18",
+      "status": "unverified_screen",
+      "runes": 260,
+      "variants": 2204,
+      "top": [
+        {
+          "score": -10.420970469687676,
+          "recipe": {
+            "family": "affine",
+            "a": 28,
+            "b": 8
+          },
+          "plaintext_runes": "ᚾᛈᚣᚫᚾᛒᚱᚦᛟᚢᚳᛚᛡᚾᚩᛡᛉᚣᛗᛖᚱᚦᛈᚠᚾᛒᚦᚳᛞᚠᛁᛏᛉᚱᚢᚳᚪᛁᛄᚩᚷᛡᚫᚹᛡᛋᚷᚻᚩᚠᚳᛡᛏᛠᛡᛉᛝᛇᚱᛏᛇᚪᚾᛉᚫᛞᚩᚾᚳᛋᛗᛖᚪᛚᚷᛏᛟᚹᛁᚠᛁᛝᛞᚫᚦᚻᛁᛁᛋᚹᛁᚷᛄᛉᛈᛇᛏᛚᚩᚳᚦᛝᛉᚷᛡᚻᛚᛗᚷᛋᚩᚻᚠᛉᚻᛄᛟᛠᛋᚾᚫᚣᛗᛞᚳᚪᚾᛒᛈᛋᚳᛠᚣᛞᛟᛄᛇᚦᛗᚳᛋᚹᚱᚢᚹᛋᛁᚣᚫᚹᛉᛞᛚᚫᚩᛏᛒᛖᚾᛖᛈᚱᛁᛖᛚᚳᚢᛟᛗᛠᚠᛄᚪᛉᛒᛉᚪᛝᛈᛉᛒᛞᛋᚱᛠᚢᚾᚻᛡᛋᛠᛚᚫᛋᛗᛏᚩᚻᛝᛉᛝᚫᛇᛏᚹᚾᛁᛇᛗᛋᛉᛏᚾᚻᛖᛚᛒᛝᚹᚪᚱᚢᛋᚫᛞᚩᛋᚪᛝᚹᚻᚩᛉᚣᛟᛉᚪᛒᚻᛏᚱᚣᛄᛉᛖᛗᛄᚹᛗᛏᚾᚩᛉᚪᚳᚾᛝᛚᚩᚦ",
+          "transliteration": "NPYAENBRTHOEUCLIANOIAXYMERTHPFNBTHCDFITXRUCAIJOGIAAEWIASGHOFCIATEAIAXNGEORTEOANXAEDONCSMEALGTOEWIFINGDAETHHIISWIGJXPEOTLOCTHNGXGIAHLMGSOHFXHJOEEASNAEYMDCANBPSCEAYDOEJEOTHMCSWRUWSIYAEWXDLAEOTBENEPRIELCUOEMEAFJAXBXANGPXBDSREAUNHIASEALAESMTOHNGXNGAEEOTWNIEOMSXTNHELBNGWARUSAEDOSANGWHOXYOEXABHTRYJXEMJWMTNOXACNNGLOTH"
+        },
+        {
+          "score": -10.432382556714122,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 0,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              47
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚠᚣᛋᛖᚾᚩᛚᚪᚻᚷᚱᚪᛝᛇᛟᚱᛞᛈᚣᚦᛖᚣᛗᚾᚻᚱᛝᛟᚷᚱᚻᚷᛉᚣᛁᚻᚪᛋᛖᚩᚷᛏᛠᛗᚩᛒᚾᚠᚪᚦᛠᛁᛡᛒᛠᛖᛒᚩᛈᚹᛋᚳᚢᛁᚩᚹᚦᛁᛚᛚᛖᛞᛞᚷᚣᛟᛚᛇᛒᚦᚠᛠᛠᚹᚩᚩᚳᛄᛉᚣᚫᚱᛄᛏᛝᚢᚢᚩᚩᚩᚪᛄᛠᛈᛡᛗᛈᚪᛉᛄᚫᚣᛄᚢᚾᛖᛒᛈᚢᛈᚩᚱᛞᛞᛖᚹᚩᚩᛒᛞᛁᛟᛠᛁᛒᚩᛁᚪᛝᛏᛖᛠᛇᛒᛋᚾᚪᛟᛡᛖᛋᛚᛡᚪᛝᛠᚦᚾᛠᛡᚹᛟᛟᛠᚢᛟᚩᛗᛠᚦᚳᚠᛖᚾᚻᛒᛒᛟᛄᛇᛋᛡᛁᛞᚩᚹᚳᛉᚢᛗᛠᚾᛉᚩᚾᛖᚻᛄᛁᛝᛚᛟᚻᛁᚦᛁᛡᛡᚪᚳᚻᛇᛞᚣᛚᚢᚷᚻᛡᛏᛈᚪᛠᛠᛋᛁᚠᚪᚱᚣᚠᚹᚦᚦᛏᚣᛚᚠᛈᛄᚷᚫᛗᛠᚢᚱᛖᚢᛟᚱᛋᚷᛠᚪᛏᛏᛁᛈᚹᛖ",
+          "transliteration": "FYSENOLAHGRANGEOOERDPYTHEYMNHRNGOEGRHGXYIHASEOGTEAMOBNFATHEAIIABEAEBOPWSCUIOWTHILLEDDGYOELEOBTHFEAEAWOOCJXYAERJTNGUUOOOAJEAPIAMPAXJAEYJUNEBPUPORDDEWOOBDIOEEAIBOIANGTEEAEOBSNAOEIAESLIAANGEATHNEAIAWOEOEEAUOEOMEATHCFENHBBOEJEOSIAIDOWCXUMEANXONEHJINGLOEHITHIIAIAACHEODYLUGHIATPAEAEASIFARYFWTHTHTYLFPJGAEMEAUREUOERSGEAATTIPWE"
+        },
+        {
+          "score": -10.441205072605019,
+          "recipe": {
+            "family": "affine",
+            "a": 25,
+            "b": 1
+          },
+          "plaintext_runes": "ᚳᛝᛋᛄᚳᚻᛉᚷᛠᚦᛖᛚᛗᚳᛁᛗᚫᛋᛏᛇᛉᚷᛝᛡᚳᚻᚷᛖᚩᛡᚾᚱᚫᛉᚦᛖᚹᚾᛈᛁᛟᛗᛄᚣᛗᚠᛟᚢᛁᛡᛖᛗᚱᛞᛗᚫᚪᛒᛉᚱᛒᚹᚳᚫᛄᚩᛁᚳᛖᚠᛏᛇᚹᛚᛟᚱᛠᚣᚾᛡᚾᚪᚩᛄᚷᚢᚾᚾᚠᚣᚾᛟᛈᚫᛝᛒᚱᛚᛁᛖᚷᚪᚫᛟᛗᚢᛚᛏᛟᚠᛁᚢᛡᚫᚢᛈᛠᛞᚠᚳᛄᛋᛏᚩᛖᚹᚳᚻᛝᚠᛖᛞᛋᚩᛠᛈᛒᚷᛏᛖᚠᚣᛉᚦᚣᚠᚾᛋᛄᚣᚫᚩᛚᛄᛁᚱᚻᛇᚳᛇᛝᛉᚾᛇᛚᛖᚦᛠᛏᛞᛡᛈᚹᚫᚻᚫᚹᚪᛝᚫᚻᚩᚠᛉᛞᚦᚳᚢᛗᚠᛞᛚᛄᚠᛏᚱᛁᚢᚪᚫᚪᛄᛒᚱᚣᚳᚾᛒᛏᚠᚫᚱᚳᚢᛇᛚᚻᚪᚣᚹᛉᚦᚠᛄᚩᛁᚠᚹᚪᚣᚢᛁᚫᛋᛠᚫᚹᚻᚢᚱᛉᛋᛈᚫᛇᛏᛈᚣᛏᚱᚳᛁᚫᚹᛖᚳᚪᛚᛁᚷ",
+          "transliteration": "CNGSJCHXGEATHELMCIMAESTEOXGNGIACHGEOIANRAEXTHEWNPIOEMJYMFOEUIIAEMRDMAEABXRBWCAEJOICEFTEOWLOEREAYNIANAOJGUNNFYNOEPAENGBRLIEGAAEOEMULTOEFIUIAAEUPEADFCJSTOEWCHNGFEDSOEAPBGTEFYXTHYFNSJYAEOLJIRHEOCEONGXNEOLETHEATDIAPWAEHAEWANGAEHOFXDTHCUMFDLJFTRIUAAEAJBRYCNBTFAERCUEOLHAYWXTHFJOIFWAYUIAESEAAEWHURXSPAEEOTPYTRCIAEWECALIG"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.424497926771922,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-19",
+      "status": "unverified_screen",
+      "runes": 271,
+      "variants": 2436,
+      "top": [
+        {
+          "score": -10.429295967473756,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 28,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              169
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛠᚢᚣᚷᚾᚱᛏᚪᛒᚣᛠᚻᛖᚪᚢᛡᚩᚦᛗᛠᛄᛄᛒᚪᛁᚢᛇᛒᛠᛗᚾᛖᚳᛞᛝᛞᚫᛟᚳᛡᛈᚷᛋᛁᛝᛋᛞᛁᛋᚠᚪᚱᛇᛉᛁᛚᚪᚪᚱᚠᚳᚳᛠᚹᚹᚠᚣᛝᛠᚾᚳᚱᚾᛏᛋᚢᚾᚠᛚᛚᚪᛈᚻᛠᛏᚾᛒᛏᚱᚳᚣᛝᛏᛁᛇᛁᚩᚠᚳᛞᛒᛞᛄᛠᛈᚢᛁᛚᛇᛖᚻᛖᚷᛖᛡᚻᛡᚾᛖᚾᛈᚳᛄᛞᛟᛁᛋᛠᛋᚩᚫᛄᛋᛞᛏᚾᛏᚠᛞᛈᚦᚫᛒᛖᛏᛝᛖᛚᛇᚹᚱᛡᛇᚦᛁᛗᚠᚩᚠᛡᛇᛋᚣᛞᚩᛋᚣᚢᛗᚠᛝᚻᚠᛈᚾᚪᚾᛝᛏᛄᚷᚪᛞᛡᛗᛞᚹᚷᚹᚷᚱᚳᚣᚩᚢᚹᚩᛉᚩᚣᛡᚠᚷᛇᚦᚾᚩᛗᚠᚳᛉᛏᚱᚦᛋᚢᛚᚻᛚᚳᚩᛋᛋᛄᚠᛄᚹᛡᛁᛈᛉᚹᚾᛚᚹᛉᛝᛇᚣᚾᛄᚩᛗᚪᛋᛠᚩᛝᛞᛒᛝᚻᚫᚷᚢᚣᛟᚪᛝᛈᛈᛠᚣᛡᚷᛚᛟᚠᚹᚩᛒ",
+          "transliteration": "EAUYGNRTABYEAHEAUIAOTHMEAJJBAIUEOBEAMNECDNGDAEOECIAPGSINGSDISFAREOXILAARFCCEAWWFYNGEANCRNTSUNFLLAPHEATNBTRCYNGTIEOIOFCDBDJEAPUILEOEHEGEIAHIANENPCJDOEISEASOAEJSDTNTFDPTHAEBETNGELEOWRIAEOTHIMFOFIAEOSYDOSYUMFNGHFPNANNGTJGADIAMDWGWGRCYOUWOXOYIAFGEOTHNOMFCXTRTHSULHLCOSSJFJWIAIPXWNLWXNGEOYNJOMASEAONGDBNGHAEGUYOEANGPPEAYIAGLOEFWOB"
+        },
+        {
+          "score": -10.437051814280709,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 23,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              205
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛁᛇᚷᚪᛗᚪᚷᛁᛋᚷᚦᚣᛇᛁᚠᚳᚦᚹᚾᛡᛈᛋᚹᚷᚢᚱᛖᛄᚠᚾᛞᛏᚱᛄᚢᚢᚢᚦᛋᚢᚾᛏᚹᛚᚹᛒᚳᛖᛈᛠᚷᚪᛁᛇᛉᚷᚱᛁᚣᚩᚫᚠᚷᛝᛝᛠᚫᚢᚠᛋᛝᛇᚳᛞᚢᛄᛗᛠᚻᚻᚱᛋᛚᚱᛖᚠᛄᚻᚪᛞᛡᚾᛟᛖᛏᛖᛞᛖᛒᛟᚣᛟᚾᚫᛈᛡᛚᚻᛏᚱᛁᛝᛁᛝᚪᛚᛄᛝᚻᛋᛈᛗᚾᚹᛁᛚᛠᚫᚳᚾᛇᛈᚹᚢᚱᛋᚷᛟᚣᛋᛖᚣᚳᛁᚻᛈᛉᚻᛏᛝᚪᚢᚻᛏᛏᚳᚪᚱᚩᚢᛉᚪᛒᛖᚹᛚᚫᛒᚢᛁᚳᛚᛠᛒᚦᛉᛞᚹᚫᚳᛖᚱᛝᛈᛝᛝᚷᚢᚦᛠᚠᚳᚾᚢᛗᚾᚳᛡᚫᚻᛋᚾᚢᚣᚹᚠᛝᚹᚪᛞᛟᚪᚣᛚᚢᚹᛒᚻᚦᛒᛡᛈᛈᚾᚪᛄᛝᚢᚣᚫᚪᛞᚳᛞᚳᚦᛁᚷᚫᚹᚪᚫᚩᛝᚳᛡᛗᛟᛟᚢᚢᚻᛠᛇᛈᚩᚳᚹᛖᚩᛋᛇᛁᚢᛖᚦᛈᛉᚩᛄᛁ",
+          "transliteration": "IEOGAMAGISGTHYEOIFCTHWNIAPSWGUREJFNDTRJUUUTHSUNTWLWBCEPEAGAIEOXGRIYOAEFGNGNGEAAEUFSNGEOCDUJMEAHHRSLREFJHADIANOEETEDEBOEYOENAEPIALHTRINGINGALJNGHSPMNWILEAAECNEOPWURSGOEYSEYCIHPXHTNGAUHTTCAROUXABEWLAEBUICLEABTHXDWAECERNGPNGNGGUTHEAFCNUMNCIAAEHSNUYWFNGWADOEAYLUWBHTHBIAPPNAJNGUYAEADCDCTHIGAEWAAEONGCIAMOEOEUUHEAEOPOCWEOSEOIUETHPXOJI"
+        },
+        {
+          "score": -10.440613894751536,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 28,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              156
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛠᚢᚣᚷᚾᚱᛏᚪᛒᚣᛠᚻᛖᚪᚢᛡᚩᚦᛗᛠᛄᛄᛒᚪᛁᚢᛇᛒᛠᛗᚾᛖᚳᛞᛝᛞᚫᛟᚳᛡᛈᚷᛋᛁᛝᛋᛞᛁᛋᚠᚪᚱᛇᛉᛁᛚᚪᚪᚱᚠᚳᚳᛠᚹᚹᚠᚣᛝᛠᚾᚳᚱᚾᛏᛋᚢᚾᚠᛚᛚᚪᛈᚻᛠᛏᚾᛒᛏᚱᚳᚣᛝᛏᛁᛇᛁᚩᚠᚳᛞᛒᛞᛄᛠᛈᚢᛁᛚᛇᛖᚻᛖᚷᛖᛡᚻᛡᚾᛖᚾᛈᚳᛄᛞᛟᛁᛋᛠᛋᚩᚫᛄᛋᛞᛏᚾᛏᚠᛞᛈᚦᚫᛒᛖᛏᛝᛖᛚᛇᚹᚱᛡᛇᚦᛁᛗᚠᚾᚻᚱᛖᚻᛠᚱᛄᚫᚩᚹᛡᛖᛝᚻᚠᛈᚾᚪᚾᛝᛏᛄᚷᚪᛞᛡᛗᛞᚹᚷᚹᚷᚱᚳᚣᚩᚢᚹᚩᛉᚩᚣᛡᚠᚷᛇᚦᚾᚩᛗᚠᚳᛉᛏᚱᚦᛋᚢᛚᚻᛚᚳᚩᛋᛋᛄᚠᛄᚹᛡᛁᛈᛉᚹᚾᛚᚹᛉᛝᛇᚣᚾᛄᚩᛗᚪᛋᛠᚩᛝᛞᛒᛝᚻᚫᚷᚢᚣᛟᚪᛝᛈᛈᛠᚣᛡᚷᛚᛟᚠᚹᚩᛒ",
+          "transliteration": "EAUYGNRTABYEAHEAUIAOTHMEAJJBAIUEOBEAMNECDNGDAEOECIAPGSINGSDISFAREOXILAARFCCEAWWFYNGEANCRNTSUNFLLAPHEATNBTRCYNGTIEOIOFCDBDJEAPUILEOEHEGEIAHIANENPCJDOEISEASOAEJSDTNTFDPTHAEBETNGELEOWRIAEOTHIMFNHREHEARJAEOWIAENGHFPNANNGTJGADIAMDWGWGRCYOUWOXOYIAFGEOTHNOMFCXTRTHSULHLCOSSJFJWIAIPXWNLWXNGEOYNJOMASEAONGDBNGHAEGUYOEANGPPEAYIAGLOEFWOB"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.36884823595929,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-20",
+      "status": "unverified_screen",
+      "runes": 269,
+      "variants": 1856,
+      "top": [
+        {
+          "score": -10.446605237312331,
+          "recipe": {
+            "family": "affine",
+            "a": 24,
+            "b": 28
+          },
+          "plaintext_runes": "ᛝᚦᛞᚢᛡᚹᚣᛝᛏᛉᛝᚳᛖᚠᚻᚱᚪᚾᛁᚾᚢᛋᛒᛖᛗᛏᚳᛗᚪᚣᛏᚩᚱᛠᛗᛞᛉᛖᛄᛠᛁᛠᚻᛟᚳᚢᛚᛡᚠᛇᚾᚠᚪᛒᛉᚣᚻᛋᚫᛉᚣᛒᚱᛈᛞᚩᚻᛒᚾᚳᛚᚱᛁᚦᛖᚦᛞᚹᚣᚦᚹᚫᛡᚹᚪᚣᚷᛁᚾᚩᛋᚣᛠᛚᚪᛡᛋᚢᛄᛏᚠᛗᚳᛄᛋᛟᚷᚱᛚᛋᛖᛚᛁᛖᛉᛝᛠᚪᚠᛋᚪᚫᛋᛈᚻᛡᛋᚩᚣᚷᛡᛉᚳᛚᚪᚹᛡᚦᚢᚾᛚᚠᛝᚪᚩᚱᛡᛄᚷᛝᛈᛄᚷᛚᚻᛉᛄᛏᚹᚦᛋᛁᛋᚹᛏᛞᚱᛚᚣᛞᛄᛒᚩᛏᚦᛈᛠᚦᛠᚹᛉᚹᚳᚷᛡᚻᛖᚾᚢᛄᚩᚣᛞᛡᛋᚻᚹᛚᚻᛚᛁᛒᛝᛗᛁᛄᛗᚫᛝᚹᚢᚣᛟᛗᛞᚦᚩᚢᛖᛄᛟᛖᛗᚾᚳᛡᛋᚠᛋᛞᚳᚾᚻᚠᚻᚢᚦᚩᛞᚱᛈᛏᛏᛁᚾᚦᚹᛗᚳᚫᛚᛟᚫᛏᛖᛚᚪᛄᛏᚠᛖᚾᛞᛏᛚᛗᛄᚩᚫ",
+          "transliteration": "NGTHDUIAWYNGTXNGCEFHRANINUSBEMTCMAYTOREAMDXEJEAIEAHOECULIAFEONFABXYHSAEXYBRPDOHBNCLRITHETHDWYTHWAEIAWAYGINOSYEALAIASUJTFMCJSOEGRLSELIEXNGEAAFSAAESPHIASOYGIAXCLAWIATHUNLFNGAORIAJGNGPJGLHXJTWTHSISWTDRLYDJBOTTHPEATHEAWXWCGIAHENUJOYDIASHWLHLIBNGMIJMAENGWUYOEMDTHOUEJOEEMNCIASFSDCNHFHUTHODRPTTINTHWMCAELOEAETELAJTFENDTLMJOAE"
+        },
+        {
+          "score": -10.447810997884517,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 24,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              39
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛟᚪᛏᚹᛡᚷᛟᛡᚳᛗᛏᛡᛈᛄᚫᚣᛠᚱᚻᛏᛁᛋᛋᛝᛗᛁᛟᚦᚩᚢᚾᚷᚷᚾᛄᛚᛖᚱᚦᚠᛇᛟᚢᛖᛁᛋᛗᛁᚱᛡᛟᚪᚠᛗᛏᚷᚷᚩᚩᛝᚾᛄᚷᛏᛟᚢᚦᛁᛇᛋᛏᚱᚢᚣᚠᛄᛗᚳᛒᛟᛡᚻᚦᛏᚹᚢᚹᛖᚢᛇᚠᚱᚦᛞᚩᛚᛄᛁᛚᛞᚾᛗᚣᛡᛈᚻᛞᛇᚹᛏᚱᚫᚷᛚᚠᚣᚫᛟᚦᚢᚾᚳᛒᛉᛗᛞᛇᛄᛟᛠᛟᚱᚱᚾᚪᛖᛖᚠᛇᚹᚩᛈᚾᛠᛋᛝᚩᛖᛝᛠᛚᚾᛚᚫᛚᛋᛁᛡᛡᚢᛉᛝᚣᚪᚳᛡᛖᛄᛉᛄᚷᚳᚻᚫᚳᚢᚱᛝᛇᛠᛡᛝᛟᛖᛇᛏᛏᛖᛇᛇᚷᚫᛏᛡᛒᚹᛗᚹᛁᚷᛟᛈᛚᚹᚾᛄᚫᛚᛝᚢᛖᛋᛉᚳᛉᚢᚹᚦᚪᛚᛖᛒᛒᛡᚣᛖᚹᚪᚫᛇᚷᛋᛡᛗᚷᚠᛉᛉᛉᛉᛈᛠᚢᛖᚹᛟᚦᚫᛠᚢᚻᛉᚦᚦᛝᛝᚹᛁᛒᛈᚷᚻᛋᚢᛁᛖᛖᛚᛁ",
+          "transliteration": "OEATWIAGOEIACMTIAPJAEYEARHTISSNGMIOETHOUNGGNJLERTHFEOOEUEISMIRIAOEAFMTGGOONGNJGTOEUTHIEOSTRUYFJMCBOEIAHTHTWUWEUEOFRTHDOLJILDNMYIAPHDEOWTRAEGLFYAEOETHUNCBXMDEOJOEEAOERRNAEEFEOWOPNEASNGOENGEALNLAELSIIAIAUXNGYACIAEJXJGCHAECURNGEOEAIANGOEEEOTTEEOEOGAETIABWMWIGOEPLWNJAELNGUESXCXUWTHALEBBIAYEWAAEEOGSIAMGFXXXXPEAUEWOETHAEEAUHXTHTHNGNGWIBPGHSUIEELI"
+        },
+        {
+          "score": -10.447810997884517,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 24,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              41
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛟᚪᛏᚹᛡᚷᛟᛡᚳᛗᛏᛡᛈᛄᚫᚣᛠᚱᚻᛏᛁᛋᛋᛝᛗᛁᛟᚦᚩᚢᚾᚷᚷᚾᛄᛚᛖᚱᚦᛚᛉᚠᚢᛖᛁᛋᛗᛁᚱᛡᛟᚪᚠᛗᛏᚷᚷᚩᚩᛝᚾᛄᚷᛏᛟᚢᚦᛁᛇᛋᛏᚱᚢᚣᚠᛄᛗᚳᛒᛟᛡᚻᚦᛏᚹᚢᚹᛖᚢᛇᚠᚱᚦᛞᚩᛚᛄᛁᛚᛞᚾᛗᚣᛡᛈᚻᛞᛇᚹᛏᚱᚫᚷᛚᚠᚣᚫᛟᚦᚢᚾᚳᛒᛉᛗᛞᛇᛄᛟᛠᛟᚱᚱᚾᚪᛖᛖᚠᛇᚹᚩᛈᚾᛠᛋᛝᚩᛖᛝᛠᛚᚾᛚᚫᛚᛋᛁᛡᛡᚢᛉᛝᚣᚪᚳᛡᛖᛄᛉᛄᚷᚳᚻᚫᚳᚢᚱᛝᛇᛠᛡᛝᛟᛖᛇᛏᛏᛖᛇᛇᚷᚫᛏᛡᛒᚹᛗᚹᛁᚷᛟᛈᛚᚹᚾᛄᚫᛚᛝᚢᛖᛋᛉᚳᛉᚢᚹᚦᚪᛚᛖᛒᛒᛡᚣᛖᚹᚪᚫᛇᚷᛋᛡᛗᚷᚠᛉᛉᛉᛉᛈᛠᚢᛖᚹᛟᚦᚫᛠᚢᚻᛉᚦᚦᛝᛝᚹᛁᛒᛈᚷᚻᛋᚢᛁᛖᛖᛚᛁ",
+          "transliteration": "OEATWIAGOEIACMTIAPJAEYEARHTISSNGMIOETHOUNGGNJLERTHLXFUEISMIRIAOEAFMTGGOONGNJGTOEUTHIEOSTRUYFJMCBOEIAHTHTWUWEUEOFRTHDOLJILDNMYIAPHDEOWTRAEGLFYAEOETHUNCBXMDEOJOEEAOERRNAEEFEOWOPNEASNGOENGEALNLAELSIIAIAUXNGYACIAEJXJGCHAECURNGEOEAIANGOEEEOTTEEOEOGAETIABWMWIGOEPLWNJAELNGUESXCXUWTHALEBBIAYEWAAEEOGSIAMGFXXXXPEAUEWOETHAEEAUHXTHTHNGNGWIBPGHSUIEELI"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.449164809028836,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-21",
+      "status": "unverified_screen",
+      "runes": 273,
+      "variants": 1972,
+      "top": [
+        {
+          "score": -10.426798731575149,
+          "recipe": {
+            "family": "affine",
+            "a": 27,
+            "b": 1
+          },
+          "plaintext_runes": "ᛚᚾᚩᛈᛚᛖᚪᛁᚷᛇᛋᛖᚹᛚᚣᛚᚣᛝᚹᚱᛄᚫᚱᛉᛠᛉᛇᛡᚾᚫᚷᚪᛁᚱᚾᚪᚹᚳᚹᛝᛖᚢᛟᚳᛗᛡᛞᛋᚪᚱᛗᚪᛖᛁᛋᚩᛈᛞᛚᛝᛁᚹᚱᛗᛁᛏᚠᚻᛏᛋᚳᛄᚣᛞᚪᚻᛖᚠᛒᚹᛝᛋᛉᛝᚢᚣᚦᚣᚾᚠᚱᚹᚪᚢᚱᛋᚠᛞᚾᚷᛝᛗᚱᛇᚳᚢᛚᛇᚪᚻᚠᚳᚾᚻᚣᛄᚩᚱᛉᚠᛋᛝᛏᛟᚹᛁᛠᚦᛏᚠᛟᛈᚱᚣᚱᚪᛈᚻᚪᛠᚱᛞᛄᚾᚦᚾᛡᛟᛋᛡᚫᚩᚾᛚᛇᛞᛒᚣᚻᚻᚢᛗᛇᚪᚫᚦᛖᛄᚪᛗᛄᛠᛈᛉᛚᛏᛗᚳᛈᚷᛋᚪᚳᛗᛚᚳᛚᚦᛒᚩᛒᛖᛒᛈᚻᛡᚩᚱᛏᚱᛝᚱᛟᚾᛡᛞᛠᛒᚾᚳᛇᛁᚩᛉᚣᚹᚩᚾᚪᚦᚠᚪᚻᚢᛡᛖᛏᛁᛄᛁᚪᛁᛒᚩᛇᛖᛝᛏᚣᛞᛖᛋᛄᛏᛈᛉᛠᚳᛏᚹᛖᚦᚫᛄᛇᛒᚳᚻᚳᚢᛖᚱᚣᚢᚣᛁᚱᛄᛒᚠᛈᛋᚪ",
+          "transliteration": "LNOPLEAIGEOSEWLYLYNGWRJAERXEAXEOIANAEGAIRNAWCWNGEUOECMIADSARMAEISOPDLNGIWRMITFHTSCJYDAHEFBWNGSXNGUYTHYNFRWAURSFDNGNGMREOCULEOAHFCNHYJORXFSNGTOEWIEATHTFOEPRYRAPHAEARDJNTHNIAOESIAAEONLEODBYHHUMEOAAETHEJAMJEAPXLTMCPGSACMLCLTHBOBEBPHIAORTRNGROENIADEABNCEOIOXYWONATHFAHUIAETIJIAIBOEOENGTYDESJTPXEACTWETHAEJEOBCHCUERYUYIRJBFPSA"
+        },
+        {
+          "score": -10.455245783445132,
+          "recipe": {
+            "family": "affine",
+            "a": 20,
+            "b": 21
+          },
+          "plaintext_runes": "ᚳᛠᚢᛒᚳᚫᛞᛖᚠᛡᚣᚫᛗᚳᚩᚳᚩᚪᛗᛚᚻᛈᛚᚹᛇᚹᛡᛟᛠᛈᚠᛞᛖᛚᛠᛞᛗᛁᛗᚪᚫᛝᛉᛁᛋᛟᚱᚣᛞᛚᛋᛞᚫᛖᚣᚢᛒᚱᚳᚪᛖᛗᛚᛋᛖᛏᚦᚾᛏᚣᛁᚻᚩᚱᛞᚾᚫᚦᚷᛗᚪᚣᚹᚪᛝᚩᛄᚩᛠᚦᛚᛗᛞᛝᛚᚣᚦᚱᛠᚠᚪᛋᛚᛡᛁᛝᚳᛡᛞᚾᚦᛁᛠᚾᚩᚻᚢᛚᚹᚦᚣᚪᛏᛉᛗᛖᛇᛄᛏᚦᛉᛒᛚᚩᛚᛞᛒᚾᛞᛇᛚᚱᚻᛠᛄᛠᛟᛉᚣᛟᛈᚢᛠᚳᛡᚱᚷᚩᚾᚾᛝᛋᛡᛞᛈᛄᚫᚻᛞᛋᚻᛇᛒᚹᚳᛏᛋᛁᛒᚠᚣᛞᛁᛋᚳᛁᚳᛄᚷᚢᚷᚫᚷᛒᚾᛟᚢᛚᛏᛚᚪᛚᛉᛠᛟᚱᛇᚷᛠᛁᛡᛖᚢᚹᚩᛗᚢᛠᛞᛄᚦᛞᚾᛝᛟᚫᛏᛖᚻᛖᛞᛖᚷᚢᛡᚫᚪᛏᚩᚱᚫᚣᚻᛏᛒᚹᛇᛁᛏᛗᚫᛄᛈᚻᛡᚷᛁᚾᛁᛝᚫᛚᚩᛝᚩᛖᛚᚻᚷᚦᛒᚣᛞ",
+          "transliteration": "CEAUBCAEDEFIAYAEMCOCOAMLHPLWEOWIAOEEAPFDELEADMIMAAENGXISOERYDLSDAEEYUBRCAEMLSETTHNTYIHORDNAETHGMAYWANGOJOEATHLMDNGLYTHREAFASLIAINGCIADNTHIEANOHULWTHYATXMEEOJTTHXBLOLDBNDEOLRHEAJEAOEXYOEPUEACIARGONNNGSIADPJAEHDSHEOBWCTSIBFYDISCICJGUGAEGBNOEULTLALXEAOEREOGEAIIAEUWOMUEADJTHDNNGOEAETEHEDEGUIAAEATORAEYHTBWEOITMAEJPHIAGININGAELONGOELHGTHBYD"
+        },
+        {
+          "score": -10.455762422965305,
+          "recipe": {
+            "family": "affine",
+            "a": 21,
+            "b": 5
+          },
+          "plaintext_runes": "ᛞᚻᛈᚪᛞᛋᛁᛇᚫᛚᚩᛋᚠᛞᛖᛞᛖᛡᚠᛒᛏᛉᛒᛠᚣᛠᛚᛟᚻᛉᚫᛁᛇᛒᚻᛁᚠᛝᚠᛡᛋᚳᚦᛝᛗᛟᚷᚩᛁᛒᛗᛁᛋᛇᚩᛈᚪᚷᛞᛡᛇᚠᛒᛗᛇᚹᚢᚱᚹᚩᛝᛏᛖᚷᛁᚱᛋᚢᛄᚠᛡᚩᛠᛡᚳᛖᚾᛖᚻᚢᛒᚠᛁᚳᛒᚩᚢᚷᚻᚫᛡᛗᛒᛚᛝᚳᛞᛚᛁᚱᚢᛝᚻᚱᛖᛏᛈᛒᛠᚢᚩᛡᚹᚦᚠᛇᚣᚾᚹᚢᚦᚪᛒᛖᛒᛁᚪᚱᛁᚣᛒᚷᛏᚻᚾᚻᛟᚦᚩᛟᛉᛈᚻᛞᛚᚷᛄᛖᚱᚱᚳᛗᛚᛁᛉᚾᛋᛏᛁᛗᛏᚣᚪᛠᛞᚹᛗᛝᚪᚫᚩᛁᛝᛗᛞᛝᛞᚾᛄᛈᛄᛋᛄᚪᚱᛟᛈᛒᚹᛒᛡᛒᚦᚻᛟᚷᚣᛄᚻᛝᛚᛇᛈᛠᛖᚠᛈᚻᛁᚾᚢᛁᚱᚳᛟᛋᚹᛇᛏᛇᛁᛇᛄᛈᛚᛋᛡᚹᛖᚷᛋᚩᛏᚹᚪᛠᚣᛝᚹᚠᛋᚾᛉᛏᛚᛄᛝᚱᛝᚳᛋᛒᛖᚳᛖᛇᛒᛏᛄᚢᚪᚩᛁ",
+          "transliteration": "DHPADSIEOAELOSFDEDEIAFBTXBEAYEALOEHXAEIEOBHIFNGFIASCTHNGMOEGOIBMISEOOPAGDIAEOFBMEOWURWONGTEGIRSUJFIAOEAIACENEHUBFICBOUGHAEIAMBLNGCDLIRUNGHRETPBEAUOIAWTHFEOYNWUTHABEBIARIYBGTHNHOETHOOEXPHDLGJERRCMLIXNSTIMTYAEADWMNGAAEOINGMDNGDNJPJSJAROEPBWBIABTHHOEGYJHNGLEOPEAEFPHINUIRCOESWEOTEOIEOJPLSIAWEGSOTWAEAYNGWFSNXTLJNGRNGCSBECEEOBTJUAOI"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.420036329635405,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-22",
+      "status": "unverified_screen",
+      "runes": 131,
+      "variants": 1740,
+      "top": [
+        {
+          "score": -10.258953044163302,
+          "recipe": {
+            "family": "affine",
+            "a": 10,
+            "b": 24
+          },
+          "plaintext_runes": "ᚦᛄᚻᚣᛖᚣᛏᚫᛋᚢᛋᛖᛞᚪᛋᛏᛖᚱᚢᚳᛗᛖᛏᛒᛖᚷᛖᚩᛒᛡᛋᛝᚣᚷᛋᛚᚩᚫᚢᚳᚱᛖᚹᛁᚷᚹᛇᛋᛏᛄᛋᚪᛈᛒᚱᚪᛉᛞᚩᛋᛝᛁᛚᚳᚦᚢᚠᛄᚷᚩᚹᛚᚹᛚᛄᚷᛡᛄᛒᛄᚻᛡᚩᛟᚱᚢᚫᛡᚹᚱᚳᛖᛋᛉᛝᛏᚣᛝᛠᛇᛉᛉᚩᛠᛗᛞᚩᚣᛁᚫᚢᚹᛚᚾᚣᚦᛚᚱᛋᚪᚠᛡᛚᛋᚪᛠᚦᛉᚪᛡᛗ",
+          "transliteration": "THJHYEYTAESUSEDASTERUCMETBEGEOBIASNGYGSLOAEUCREWIGWEOSTJSAPBRAXDOSNGILCTHUFJGOWLWLJGIAJBJHIAOOERUAEIAWRCESXNGTYNGEAEOXXOEAMDOYIAEUWLNYTHLRSAFIALSAEATHXAIAM"
+        },
+        {
+          "score": -10.321284570746366,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 7,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              51
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛁᛇᚾᚹᛖᛒᛖᛚᚫᛖᚱᛗᚾᛉᛟᚠᛇᚹᚦᛏᚱᚩᚢᛖᚫᚪᚱᛡᛈᛚᛗᛇᚱᚻᚻᚱᛈᚫᛈᚻᛒᚳᚩᛏᛁᛋᛄᚣᚷᚣᛄᚠᛄᛡᛗᚦᛋᛒᛒᛠᚦᚱᛋᚢᚫᛠᚱᛉᚳᚠᛖᚹᚢᛗᚦᛖᚱᛏᛄᚣᛞᚢᛚᛝᚠᚩᚫᚷᛇᚹᛏᚾᚦᛒᛋᛁᛒᚻᚦᛖᚳᛄᛈᚩᛄᚠᚦᛋᚻᚳᛟᛋᚦᚱᛠᚣᚣᛈᚫᚱᛡᚦᛖᚾᛈᚠᛒᚢᚷᛞᚩ",
+          "transliteration": "IEONWEBELAEERMNXOEFEOWTHTROUEAEARIAPLMEORHHRPAEPHBCOTISJYGYJFJIAMTHSBBEATHRSUAEEARXCFEWUMTHERTJYDULNGFOAEGEOWTNTHBSIBHTHECJPOJFTHSHCOESTHREAYYPAERIATHENPFBUGDO"
+        },
+        {
+          "score": -10.321284570746366,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 7,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              55
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛁᛇᚾᚹᛖᛒᛖᛚᚫᛖᚱᛗᚾᛉᛟᚠᛇᚹᚦᛏᚱᚩᚢᛖᚫᚪᚱᛡᛈᛚᛗᛇᚱᚻᚻᚱᛈᚫᛈᚻᛒᚳᚩᛏᛁᛋᛄᚣᚷᚣᛄᛋᛋᚠᚠᚠᛋᛒᛒᛠᚦᚱᛋᚢᚫᛠᚱᛉᚳᚠᛖᚹᚢᛗᚦᛖᚱᛏᛄᚣᛞᚢᛚᛝᚠᚩᚫᚷᛇᚹᛏᚾᚦᛒᛋᛁᛒᚻᚦᛖᚳᛄᛈᚩᛄᚠᚦᛋᚻᚳᛟᛋᚦᚱᛠᚣᚣᛈᚫᚱᛡᚦᛖᚾᛈᚠᛒᚢᚷᛞᚩ",
+          "transliteration": "IEONWEBELAEERMNXOEFEOWTHTROUEAEARIAPLMEORHHRPAEPHBCOTISJYGYJSSFFFSBBEATHRSUAEEARXCFEWUMTHERTJYDULNGFOAEGEOWTNTHBSIBHTHECJPOJFTHSHCOESTHREAYYPAERIATHENPFBUGDO"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.320910996510435,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-23",
+      "status": "unverified_screen",
+      "runes": 213,
+      "variants": 1856,
+      "top": [
+        {
+          "score": -10.398970403748846,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 11,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              119
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚻᚷᛚᚾᚠᛉᚫᛉᛟᚦᚢᚹᛒᚣᛞᛇᛖᛡᛄᚷᛡᛡᛇᚦᛒᛟᚠᛠᚷᛉᛇᛋᚷᛞᛝᛋᛏᛋᚩᚢᛁᛞᛝᛟᚢᚳᚻᚾᛇᛞᛝᛝᚠᚹᛚᛈᚷᚦᛇᚾᚳᚠᛁᛞᚷᛖᛞᛁᛒᚢᚠᛄᛞᚹᚷᚾᚢᛗᛄᛗᛇᚻᛡᛠᛡᛇᚠᛚᚫᛒᛚᛒᚻᚢᛝᚪᛋᛞᛟᚱᛟᚻᛇᛡᚦᛠᛄᛇᛇᛁᚱᛄᛚᛖᚻᛁᚾᛞᛉᚠᛁᚾᚣᛠᛏᚳᚳᛠᚾᛚᚦᛝᛁᚱᛞᚠᚳᛉᚳᚳᛡᚩᛝᛟᚣᚾᚻᚩᛒᚩᚩᛏᛗᛄᛋᛋᛇᛠᚠᛏᚪᛖᛡᚹᛝᛋᚦᛗᛏᚪᛁᚦᛇᛗᚦᚦᚦᛞᛝᛝᚩᚷᛝᚠᛠᚢᛄᛖᛉᛈᛖᛖᛗᚪᛏᚦᚩᛁᛈᚹᛉᚩᚢᚹᛚᚦᚳᛋᚩᚱᚫᚳᛖ",
+          "transliteration": "HGLNFXAEXOETHUWBYDEOEIAJGIAIAEOTHBOEFEAGXEOSGDNGSTSOUIDNGOEUCHNEODNGNGFWLPGTHEONCFIDGEDIBUFJDWGNUMJMEOHIAEAIAEOFLAEBLBHUNGASDOEROEHEOIATHEAJEOEOIRJLEHINDXFINYEATCCEANLTHNGIRDFCXCCIAONGOEYNHOBOOTMJSSEOEAFTAEIAWNGSTHMTAITHEOMTHTHTHDNGNGOGNGFEAUJEXPEEMATTHOIPWXOUWLTHCSORAECE"
+        },
+        {
+          "score": -10.401879300229925,
+          "recipe": {
+            "family": "affine",
+            "a": 7,
+            "b": 17
+          },
+          "plaintext_runes": "ᚪᛄᚻᛗᚢᛠᚱᚢᚠᛚᚠᛉᛈᛚᚠᚫᛁᚢᚷᛖᛝᚻᚳᛁᛉᚹᛉᚻᛋᚠᚢᛁᛚᚪᚫᛋᚫᛗᚻᚪᛏᚷᚾᚩᛒᚩᛁᚱᚣᚦᚳᛞᛟᛠᚱᚦᛡᛏᛉᛞᛄᚹᚷᚣᚪᚻᛏᛈᚷᛡᚷᛈᚫᛏᛁᛖᛟᚱᛝᛚᚩᚷᚪᚱᛡᚫᚦᛇᚻᚣᚷᚢᛇᚹᛖᛡᚾᛞᚦᚻᚳᚪᚾᚢᛒᛄᚾᚩᛗᛚᛁᚦᛞᛄᛏᚩᛈᚣᚻᛒᚫᛗᚪᚫᚠᛇᛈᛖᛖᛄᛏᛝᛒᚳᚻᚾᚱᛁᛚᛝᛗᚣᛟᚢᚳᚩᛡᚾᛟᛇᛠᛗᚠᚩᛖᚳᛋᛡᚻᚳᛗᛝᛉᚳᚩᚹᛖᚾᚩᛒᚫᛠᚣᛖᚦᛖᛚᚾᛄᚦᚹᛏᚹᛟᚦᚩᛒᛄᛈᛟᛋᚢᚪᚱᛞᚦᚪᛏᚪᚣᚱᛋᛏᚢᚻᛈᛝᛡᛒᛄᛋᛁᚦ",
+          "transliteration": "AJHMUEARUFLFXPLFAEIUGENGHCIXWXHSFUILAAESAEMHATGNOBOIRYTHCDOEEARTHIATXDJWGYAHTPGIAGPAETIEOERNGLOGARIAAETHEOHYGUEOWEIANDTHHCANUBJNOMLITHDJTOPYHBAEMAAEFEOPEEJTNGBCHNRILNGMYOEUCOIANOEEOEAMFOECSIAHCMNGXCOWENOBAEEAYETHELNJTHWTWOETHOBJPOESUARDTHATAYRSTUHPNGIABJSITH"
+        },
+        {
+          "score": -10.406034238430754,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 22,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              169
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚷᛞᛡᚻᛚᚪᚦᛁᚠᚩᛗᛗᛈᛇᛠᚾᚹᚻᛄᛗᚣᛖᚣᚱᚳᛝᛖᛄᚻᚱᛡᛁᛟᚠᛗᛠᛄᚦᛋᛠᛒᚪᛁᚢᛖᛁᚢᛞᛖᛝᚢᛁᚻᚾᛇᛇᚪᚦᚠᛚᚠᛉᛇᛋᛒᛋᚻᛖᛈᚱᛟᛗᛝᚪᛈᛡᚾᚳᛖᛇᛏᛡᛄᛡᛇᛉᛈᚠᛁᛗᚻᚣᛠᚾᛝᛁᛖᛉᚾᚦᛁᛋᚾᚦᛒᚦᚦᛚᚻᚠᚩᚠᛠᛁᛋᚪᚩᚣᚾᛝᛏᚹᛉᚠᛠᚳᛠᚱᛗᛉᛝᚣᛟᚻᛒᚩᛋᛏᛠᛖᛇᚾᛗᛁᛋᛒᚫᚷᚷᛋᛠᚱᛏᛞᛗᚩᛗᛞᛞᚦᚦᛗᛇᛈᛈᛚᛠᛈᚷᚠᚪᚱᚦᛠᛠᛉᛞᚳᛚᛝᛠᛋᛁᛡᚦᚫᛞᛇᚦᛖᛈᚾᚠᛁᛗᛁᚱᚢᛝᚳᛒᛝᚩᚢᚠᚳᚫᛟᚠᛟᚠᚻᚢ",
+          "transliteration": "GDIAHLATHIFOMMPEOEANWHJMYEYRCNGEJHRIAIOEFMEAJTHSEABAIUEIUDENGUIHNEOEOATHFLFXEOSBSHEPROEMNGAPIANCEEOTIAJIAEOXPFIMHYEANNGIEXNTHISNTHBTHTHLHFOFEAISAOYNNGTWXFEACEARMXNGYOEHBOSTEAEEONMISBAEGGSEARTDMOMDDTHTHMEOPPLEAPGFARTHEAEAXDCLNGEASIIATHAEDEOTHEPNFIMIRUNGCBNGOUFCAEOEFOEFHU"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.429497210470672,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-24",
+      "status": "unverified_screen",
+      "runes": 270,
+      "variants": 2436,
+      "top": [
+        {
+          "score": -10.37218715432559,
+          "recipe": {
+            "family": "affine",
+            "a": 23,
+            "b": 4
+          },
+          "plaintext_runes": "ᛄᚾᚱᛇᚫᛠᚻᚩᛉᛚᛗᛏᛈᛁᛚᚷᚠᛚᛒᛚᛁᚳᚻᚳᚩᚳᚣᚠᛝᛖᛋᛚᛡᚣᚠᚱᚢᛉᚻᚹᛞᚷᛇᛝᛡᛞᛏᛈᛟᛡᚹᚣᚣᛚᛄᚦᚢᛝᛏᛏᛈᚩᚳᛋᛡᚷᛡᚹᛋᛟᛉᚪᛋᛠᚷᛡᛋᚻᚪᛁᛖᛒᛖᚱᚦᛈᚠᚢᛞᛠᚩᛠᛒᚪᛡᛋᚹᚻᛏᚢᚱᛇᚹᚾᚷᛋᛋᛠᚱᛡᛝᛇᛄᚻᛟᛏᚢᚢᚾᚠᛒᛡᛉᛡᚻᛈᚦᛉᛇᚹᛝᛄᚷᛈᛒᚱᛈᚱᛞᛠᛞᚢᛒᚫᛚᛁᛖᛟᛒᛚᛄᚱᛟᚫᚦᚪᚹᚠᛋᛝᛞᚱᚳᚢᛏᚦᛉᛖᚾᚳᛡᛟᛠᛡᛒᛁᚳᛟᛇᛒᛠᛇᛈᚱᛖᛈᚫᚦᚢᛞᛖᚾᛝᚩᛗᚠᚦᛡᛈᚪᚩᛖᚹᛇᚳᛟᚱᚷᚩᛟᚾᛉᛚᚪᚻᛏᚹᛠᛝᛒᚩᛚᛁᚱᚪᛁᛞᛋᛉᛏᛁᛖᚢᛉᛒᛠᚦᛁᚪᚦᚢᚪᛠᛉᚾᛉᚫᚢᛏᛚᚻᚻᛏᛚᚠᛡᛇᚪᚾᛞᚩᛟᚳᚹᛗᛞᚢᛇᛗᚦ",
+          "transliteration": "JNREOAEEAHOXLMTPILGFLBLICHCOCYFNGESLIAYFRUXHWDGEONGIADTPOEIAWYYLJTHUNGTTPOCSIAGIAWSOEXASEAGIASHAIEBERTHPFUDEAOEABAIASWHTUREOWNGSSEARIANGEOJHOETUUNFBIAXIAHPTHXEOWNGJGPBRPRDEADUBAELIEOEBLJROEAETHAWFSNGDRCUTTHXENCIAOEEAIABICOEEOBEAEOPREPAETHUDENNGOMFTHIAPAOEWEOCOERGOOENXLAHTWEANGBOLIRAIDSXTIEUXBEATHIATHUAEAXNXAEUTLHHTLFIAEOANDOOECWMDUEOMTH"
+        },
+        {
+          "score": -10.43805167377584,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 21,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              183
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚩᚾᛠᚾᛡᛁᛗᛈᛇᚣᛡᚹᛚᚫᚦᚻᚩᛋᚪᚩᛟᚻᛚᚦᛁᛒᛏᚣᚷᛒᚣᛠᛇᛄᛗᛟᚷᛟᛗᛟᛗᚩᛡᚾᚱᛁᛁᛋᚣᚣᚱᛒᛄᚷᛖᛠᚫᚻᚫᛋᛠᛁᛡᚠᛞᚷᚾᛖᚳᚪᛞᛞᚷᛚᛁᛋᚳᚾᛡᚱᛇᛄᚠᛁᛉᚹᚻᚣᚢᛠᚦᛖᛈᚪᛠᛠᚷᚪᚹᛟᚪᚾᛠᛁᛋᛚᛁᚪᛟᛒᛉᛟᛝᚩᛇᚾᛇᚦᚻᛟᛉᛚᛞᛉᛇᚦᚪᛚᚣᚻᛝᛄᚩᚷᛄᛁᛈᛝᚾᚹᚣᚷᚾᛝᛄᚪᚹᚱᚫᚱᛖᛉᚾᛒᚷᛁᛡᚦᚻᛖᚱᛁᚢᛋᛝᚫᛒᛚᛉᚩᛠᛏᚳᚱᛗᛒᚢᛠᛉᛇᛈᚠᛇᚠᚷᛈᚾᚱᚩᚹᚣᚾᚳᚱᛠᚳᛖᚱᛁᚹᛒᛄᛡᛒᛗᛗᛖᚦᚾᚣᚦᚠᛏᛋᚷᛚᚳᛇᛇᛚᛚᛉᛞᛖᚢᚹᛝᛠᚫᛄᛡᛇᚱᚪᚳᚦᛉᚣᚱᚹᚷᚩᛁᛡᛗᛝᛉᚷᛏᛋᚾᚩᛋᛖᛈᛒᚢᚣᚦᚾᛁᛞᚳᛁᚦᚹᛠᛡᛗᚹ",
+          "transliteration": "ONEANIAIMPEOYIAWLAETHHOSAOOEHLTHIBTYGBYEAEOJMOEGOEMOEMOIANRIISYYRBJGEEAAEHAESEAIIAFDGNECADDGLISCNIAREOJFIXWHYUEATHEPAEAEAGAWOEANEAISLIAOEBXOENGOEONEOTHHOEXLDXEOTHALYHNGJOGJIPNGNWYGNNGJAWRAEREXNBGIIATHHERIUSNGAEBLXOEATCRMBUEAXEOPFEOFGPNROWYNCREACERIWBJIABMMETHNYTHFTSGLCEOEOLLXDEUWNGEAAEJIAEORACTHXYRWGOIIAMNGXGTSNOSEPBUYTHNIDCITHWEAIAMW"
+        },
+        {
+          "score": -10.44812975182191,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 10,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛟᚣᛖᚳᛞᚦᚾᚩᚠᚪᛡᚹᛖᛡᛡᚷᚳᛒᚢᛄᛖᛁᛖᚦᚦᛗᚪᚩᛁᛗᛠᚢᛉᛒᛡᚳᚻᛖᛋᛖᛝᛈᛁᛈᚷᛚᛚᚱᛄᛄᛟᚱᛗᛏᚢᛈᚱᛉᚠᛡᚾᚪᚷᚻᚠᛉᛗᚪᚾᚪᚫᚦᚻᛠᛏᛞᛗᛒᛚᚢᛋᚻᚪᚩᚳᚱᚳᛒᛝᚹᛁᛚᛄᛠᛄᚹᚻᚣᚾᚪᚩᛋᚹᚪᛡᚢᛠᛒᛋᛁᚾᛈᛉᛞᚩᛞᚩᛟᚩᛈᚾᛈᛇᛠᚩᛠᛝᚳᚳᛖᚱᛋᚾᛠᚷᚩᚦᛉᚱᚱᛋᚳᛁᚪᚠᛒᛡᚣᛉᚪᚳᚳᛒᛡᛚᛚᛁᛁᛁᚳᛖᚪᚾᛡᚱᚷᚦᚢᛋᚠᛒᚾᚷᚹᛟᛟᛁᚷᛝᚩᚱᛏᚩᚾᛚᛁᚠᛏᛒᛒᚹᛝᛈᚱᚢᛚᚻᚪᚢᚦᛉᛟᛒᛒᛄᛄᚻᛟᚦᛒᛏᚦᛚᛋᚱᛚᚩᚻᚷᛟᚩᛠᚻᛠᛈᛝᛇᛗᛖᚫᛉᚪᛁᚣᚹᚱᛁᚪᚱᛞᛉᛄᛉᚪᛏᛉᛋᛈᛋᚱᚠᚫᛇᚣᚷᛉᛝᚹᛟᚠᚳᛚᛇᚫᚳᚻᛡᛠᛁᛡ",
+          "transliteration": "OEYECDTHNOFAIAWEIAIAGCBUJEIETHTHMAOIMEAUXBIACHESENGPIPGLLRJJOERMTUPRXFIANAGHFXMANAAETHHEATDMBLUSHAOCRCBNGWILJEAJWHYNAOSWAIAUEABSINPXDODOOEOPNPEOEAOEANGCCERSNEAGOTHXRRSCIAFBIAYXACCBIALLIIICEANIARGTHUSFBNGWOEOEIGNGORTONLIFTBBWNGPRULHAUTHXOEBBJJHOETHBTTHLSRLOHGOEOEAHEAPNGEOMEAEXAIYWRIARDXJXATXSPSRFAEEOYGXNGWOEFCLEOAECHIAEAIIA"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.437021558748272,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-25",
+      "status": "unverified_screen",
+      "runes": 273,
+      "variants": 2088,
+      "top": [
+        {
+          "score": -10.417465794845999,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 3,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛉᛗᛖᛞᚩᛡᛈᛡᛟᚪᛖᛁᛡᛒᛠᛗᚱᚩᚢᚱᚹᚱᛁᛝᛁᚾᚣᛝᛒᛇᚹᛒᚠᚠᚳᛞᛇᚦᛁᚩᚪᚠᚷᛟᚠᛞᚪᛁᚱᛁᛁᚱᛗᛏᚾᛖᚾᛁᛠᛄᚫᛄᚦᛖᛇᛞᚹᛏᛄᛚᚩᛋᚷᛚᛖᛉᚩᛝᛏᚻᛇᚱᛚᛒᛋᛝᛚᚷᛇᛖᛝᚷᛁᚳᛖᚦᛒᛋᚣᚪᛉᛟᛄᛠᚹᛟᛁᛠᚫᛚᚠᚹᛖᛉᚻᚠᚾᚠᚣᛠᚾᚣᚩᚻᛚᛖᛞᛏᚩᛉᛖᚢᛉᛉᛚᚱᚳᛈᚩᚪᚹᚫᛒᛖᚱᛚᛇᛏᛝᛠᚱᚦᛄᚱᛏᛄᚳᚠᚱᛋᛠᚫᛏᛁᚾᛁᚩᛝᚻᛁᛚᛇᛡᛇᛠᚻᚠᛒᛞᚩᛒᚩᚷᛝᚩᚫᛈᛖᛞᛗᚢᚣᛏᚦᛇᛚᚳᛋᚦᚾᚣᛡᛉᛈᛁᚣᚪᛗᚢᛒᚹᛖᚢᚪᛖᛠᛄᚹᛉᚾᚢᚾᛟᛏᛗᛟᚩᛗᛖᛏᚾᛝᚻᚫᚱᛁᛉᛚᛋᚦᛠᚪᛞᚻᚩᚢᛡᛖᛉᛝᚱᛏᛡᚹᚦᛒᛖᚢᛖᛠᛏᛟᚦᛏᛝᚳᚱᚣᚱᚢᚳᚷᛉ",
+          "transliteration": "XMEDOIAPIAOEAEIIABEAMROURWRINGINYNGBEOWBFFCDEOTHIOAFGOEFDAIRIIRMTNENIEAJAEJTHEEODWTJLOSGLEXONGTHEORLBSNGLGEOENGGICETHBSYAXOEJEAWOEIEAAELFWEXHFNFYEANYOHLEDTOXEUXXLRCPOAWAEBERLEOTNGEARTHJRTJCFRSEAAETINIONGHILEOIAEOEAHFBDOBOGNGOAEPEDMUYTTHEOLCSTHNYIAXPIYAMUBWEUAEEAJWXNUNOETMOEOMETNNGHAERIXLSTHEAADHOUIAEXNGRTIAWTHBEUEEATOETHTNGCRYRUCGX"
+        },
+        {
+          "score": -10.427099096104751,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 4,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              45
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛖᛝᛟᚫᚹᚱᛋᚱᚣᚣᛟᛏᚱᛗᚳᛞᚷᚾᚳᛁᛋᚻᛇᚫᛇᛈᛄᚫᛞᛉᛒᛗᚷᚷᚾᚠᛖᚱᛚᚳᛠᚦᛖᚳᚱᚠᚪᛁᚱᛁᛁᚱᛗᛏᚾᛖᚾᛁᛠᛄᚫᛄᚦᛖᛇᛞᚹᛏᛄᛚᚩᛋᚷᛚᛖᛉᚩᛝᛏᚻᛇᚱᛚᛒᛋᛝᛚᚷᛇᛖᛝᚷᛁᚳᛖᚦᛒᛋᚣᚪᛉᛟᛄᛠᚹᛟᛁᛠᚫᛚᚠᚹᛖᛉᚻᚠᚾᚠᚣᛠᚾᚣᚩᚻᛚᛖᛞᛏᚩᛉᛖᚢᛉᛉᛚᚱᚳᛈᚩᚪᚹᚫᛒᛖᚱᛚᛇᛏᛝᛠᚱᚦᛄᚱᛏᛄᚳᚠᚱᛋᛠᚫᛏᛁᚾᛁᚩᛝᚻᛁᛚᛇᛡᛇᛠᚻᚠᛒᛞᚩᛒᚩᚷᛝᚩᚫᛈᛖᛞᛗᚢᚣᛏᚦᛇᛚᚳᛋᚦᚾᚣᛡᛉᛈᛁᚣᚪᛗᚢᛒᚹᛖᚢᚪᛖᛠᛄᚹᛉᚾᚢᚾᛟᛏᛗᛟᚩᛗᛖᛏᚾᛝᚻᚫᚱᛁᛉᛚᛋᚦᛠᚪᛞᚻᚩᚢᛡᛖᛉᛝᚱᛏᛡᚹᚦᛒᛖᚢᛖᛠᛏᛟᚦᛏᛝᚳᚱᚣᚱᚢᚳᚷᛉ",
+          "transliteration": "ENGOEAEWRSRYYOETRMCDGNCISHEOAEEOPJAEDXBMGGNFERLCEATHECRFAIRIIRMTNENIEAJAEJTHEEODWTJLOSGLEXONGTHEORLBSNGLGEOENGGICETHBSYAXOEJEAWOEIEAAELFWEXHFNFYEANYOHLEDTOXEUXXLRCPOAWAEBERLEOTNGEARTHJRTJCFRSEAAETINIONGHILEOIAEOEAHFBDOBOGNGOAEPEDMUYTTHEOLCSTHNYIAXPIYAMUBWEUAEEAJWXNUNOETMOEOMETNNGHAERIXLSTHEAADHOUIAEXNGRTIAWTHBEUEEATOETHTNGCRYRUCGX"
+        },
+        {
+          "score": -10.429485174204107,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 4,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              54
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛖᛝᛟᚫᚹᚱᛋᚱᚣᚣᛟᛏᚱᛗᚳᛞᚷᚾᚳᛁᛋᚻᛇᚫᛇᛈᛄᚫᛞᛉᛒᛗᚷᚷᚾᚠᛖᚱᛚᚳᛠᚦᛖᚳᚱᚫᛠᛏᚷᛚᛏᛁᚫᛖᚠᛖᚾᛁᛠᛄᚫᛄᚦᛖᛇᛞᚹᛏᛄᛚᚩᛋᚷᛚᛖᛉᚩᛝᛏᚻᛇᚱᛚᛒᛋᛝᛚᚷᛇᛖᛝᚷᛁᚳᛖᚦᛒᛋᚣᚪᛉᛟᛄᛠᚹᛟᛁᛠᚫᛚᚠᚹᛖᛉᚻᚠᚾᚠᚣᛠᚾᚣᚩᚻᛚᛖᛞᛏᚩᛉᛖᚢᛉᛉᛚᚱᚳᛈᚩᚪᚹᚫᛒᛖᚱᛚᛇᛏᛝᛠᚱᚦᛄᚱᛏᛄᚳᚠᚱᛋᛠᚫᛏᛁᚾᛁᚩᛝᚻᛁᛚᛇᛡᛇᛠᚻᚠᛒᛞᚩᛒᚩᚷᛝᚩᚫᛈᛖᛞᛗᚢᚣᛏᚦᛇᛚᚳᛋᚦᚾᚣᛡᛉᛈᛁᚣᚪᛗᚢᛒᚹᛖᚢᚪᛖᛠᛄᚹᛉᚾᚢᚾᛟᛏᛗᛟᚩᛗᛖᛏᚾᛝᚻᚫᚱᛁᛉᛚᛋᚦᛠᚪᛞᚻᚩᚢᛡᛖᛉᛝᚱᛏᛡᚹᚦᛒᛖᚢᛖᛠᛏᛟᚦᛏᛝᚳᚱᚣᚱᚢᚳᚷᛉ",
+          "transliteration": "ENGOEAEWRSRYYOETRMCDGNCISHEOAEEOPJAEDXBMGGNFERLCEATHECRAEEATGLTIAEEFENIEAJAEJTHEEODWTJLOSGLEXONGTHEORLBSNGLGEOENGGICETHBSYAXOEJEAWOEIEAAELFWEXHFNFYEANYOHLEDTOXEUXXLRCPOAWAEBERLEOTNGEARTHJRTJCFRSEAAETINIONGHILEOIAEOEAHFBDOBOGNGOAEPEDMUYTTHEOLCSTHNYIAXPIYAMUBWEUAEEAJWXNUNOETMOEOMETNNGHAERIXLSTHEAADHOUIAEXNGRTIAWTHBEUEEATOETHTNGCRYRUCGX"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.407736235821783,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-26",
+      "status": "unverified_screen",
+      "runes": 265,
+      "variants": 2088,
+      "top": [
+        {
+          "score": -10.43695642268352,
+          "recipe": {
+            "family": "affine",
+            "a": 12,
+            "b": 2
+          },
+          "plaintext_runes": "ᚹᚾᛞᛗᚾᛖᚪᚢᚫᛗᚠᚹᛞᛒᛟᛄᛈᛗᛄᚹᛉᛟᛄᚣᛈᚫᛉᛗᚪᛈᚳᚣᚻᚪᛈᚦᛚᚩᚷᚳᚠᛏᛁᛗᛄᛟᚷᚹᛁᛟᛞᛒᚠᛈᛏᛞᛚᚣᚻᚩᚻᚻᛗᛏᚱᛗᛡᛉᛋᚫᚩᛏᛇᚦᚾᚷᚫᚦᚠᛗᛝᚢᚾᚷᛒᚻᛁᚣᛋᚩᚢᚳᛏᚪᛏᛞᛏᚣᚦᚱᛡᚾᛋᛋᚾᚦᚩᛄᛟᚱᚷᛖᚠᛞᚾᚠᛈᛄᛝᛡᛝᛡᚳᚣᛏᛖᚩᛝᚣᚠᛗᚫᛋᚹᛒᚣᛝᛟᛖᚩᛞᛚᚪᛚᚻᚩᛞᛇᛉᛋᚷᚾᚹᛖᚢᛉᚣᛁᚱᛋᛁᚷᚩᛉᚦᚠᛝᛗᛡᚩᛒᚫᛡᛉᛗᛚᚪᚠᛖᛈᛉᛈᛗᚪᛏᛡᚹᛡᛉᚠᛡᛟᚪᚹᚠᛋᛚᛋᚻᚠᚳᚱᛄᚷᚻᚦᚷᛞᛈᚳᛟᚢᚣᚪᛚᛇᚫᛋᚳᛚᛒᚹᛁᛋᛈᛚᚠᛚᚦᛝᛞᚠᛗᛝᛗᚱᛞᛄᛠᚩᚢᚻᚷᛄᚪᚻᛠᚾᚫᛠᚾᛟᛉᛄᛟᚳᛚᛁᚦᛖᛏᛚᛟᛖᛟ",
+          "transliteration": "WNDMNEAUAEMFWDBOEJPMJWXOEJYPAEXMAPCYHAPTHLOGCFTIMJOEGWIOEDBFPTDLYHOHHMTRMIAXSAEOTEOTHNGAETHFMNGUNGBHIYSOUCTATDTYTHRIANSSNTHOJOERGEFDNFPJNGIANGIACYTEONGYFMAESWBYNGOEEODLALHODEOXSGNWEUXYIRSIGOXTHFNGMIAOBAEIAXMLAFEPXPMATIAWIAXFIAOEAWFSLSHFCRJGHTHGDPCOEUYALEOAESCLBWISPLFLTHNGDFMNGMRDJEAOUHGJAHEANAEEANOEXJOECLITHETLOEEOE"
+        },
+        {
+          "score": -10.440150366847394,
+          "recipe": {
+            "family": "affine",
+            "a": 16,
+            "b": 11
+          },
+          "plaintext_runes": "ᚻᚢᛁᚪᚢᛈᛝᚠᚩᚪᛖᚻᛁᚦᛠᛞᛏᚪᛞᚻᛡᛠᛞᛉᛏᚩᛡᚪᛝᛏᛋᛉᛗᛝᛏᛄᚷᛟᚣᛋᛖᛚᛇᚪᛞᛠᚣᚻᛇᛠᛁᚦᛖᛏᛚᛁᚷᛉᛗᛟᛗᛗᚪᛚᚱᚪᚫᛡᚾᚩᛟᛚᚳᛄᚢᚣᚩᛄᛖᚪᛒᚠᚢᚣᚦᛗᛇᛉᚾᛟᚠᛋᛚᛝᛚᛁᛚᛉᛄᚱᚫᚢᚾᚾᚢᛄᛟᛞᛠᚱᚣᛈᛖᛁᚢᛖᛏᛞᛒᚫᛒᚫᛋᛉᛚᛈᛟᛒᛉᛖᚪᚩᚾᚻᚦᛉᛒᛠᛈᛟᛁᚷᛝᚷᛗᛟᛁᚳᛡᚾᚣᚢᚻᛈᚠᛡᛉᛇᚱᚾᛇᚣᛟᛡᛄᛖᛒᚪᚫᛟᚦᚩᚫᛡᚪᚷᛝᛖᛈᛏᛡᛏᚪᛝᛚᚫᚻᚫᛡᛖᚫᛠᛝᚻᛖᚾᚷᚾᛗᛖᛋᚱᛞᚣᛗᛄᚣᛁᛏᛋᛠᚠᛉᛝᚷᚳᚩᚾᛋᚷᚦᚻᛇᚾᛏᚷᛖᚷᛄᛒᛁᛖᚪᛒᚪᚱᛁᛞᚹᛟᚠᛗᚣᛞᛝᛗᚹᚢᚩᚹᚢᛠᛡᛞᛠᛋᚷᛇᛄᛈᛚᚷᛠᛈᛠ",
+          "transliteration": "HUIAUPNGFOAEHITHEADTADHIAEADXTOIAANGTSXMNGTJGOEYSELEOADEAYHEOEAITHETLIGXMOEMMALRAAEIANOOELCJUYOJEABFUYTHMEOXNOEFSLNGLILXJRAEUNNUJOEDEARYPEIUETDBAEBAESXLPOEBXEAONHTHXBEAPOEIGNGGMOEICIANYUHPFIAXEORNEOYOEIAJEBAAEOETHOAEIAAGNGEPTIATANGLAEHAEIAEAEEANGHENGNMESRDYMJYITSEAFXNGGCONSGTHHEONTGEGJBIEABARIDWOEFMYDNGMWUOWUEAIADEASGEOJPLGEAPEA"
+        },
+        {
+          "score": -10.446927718256932,
+          "recipe": {
+            "family": "affine",
+            "a": 10,
+            "b": 25
+          },
+          "plaintext_runes": "ᚳᚣᛠᛋᚣᛗᚪᚠᛚᛋᚱᚳᛠᛞᚩᛖᛁᛋᛖᚳᚷᚩᛖᛏᛁᛚᚷᛋᚪᛁᛈᛏᚢᚪᛁᚫᛄᛝᚾᛈᚱᛡᛟᛋᛖᚩᚾᚳᛟᚩᛠᛞᚱᛁᛡᛠᛄᛏᚢᛝᚢᚢᛋᛡᛒᛋᛇᚷᚦᛚᛝᛡᛉᚫᚣᚾᛚᚫᚱᛋᚹᚠᚣᚾᛞᚢᛟᛏᚦᛝᚠᛈᛡᚪᛡᛠᛡᛏᚫᛒᛇᚣᚦᚦᚣᚫᛝᛖᚩᛒᚾᛗᚱᛠᚣᚱᛁᛖᚹᛇᚹᛇᛈᛏᛡᛗᛝᚹᛏᚱᛋᛚᚦᚳᛞᛏᚹᚩᛗᛝᛠᛄᚪᛄᚢᛝᛠᛉᚷᚦᚾᚣᚳᛗᚠᚷᛏᛟᛒᚦᛟᚾᛝᚷᚫᚱᚹᛋᛇᛝᛞᛚᛇᚷᛋᛄᚪᚱᛗᛁᚷᛁᛋᚪᛡᛇᚳᛇᚷᚱᛇᚩᚪᚳᚱᚦᛄᚦᚢᚱᛈᛒᛖᚾᚢᚫᚾᛠᛁᛈᚩᚠᛏᚪᛄᛉᛚᚦᛈᛄᛞᚳᛟᚦᛁᛄᚱᛄᚫᚹᛠᚱᛋᚹᛋᛒᛠᛖᚻᛝᚠᚢᚾᛖᚪᚢᚻᚣᛚᚻᚣᚩᚷᛖᚩᛈᛄᛟᚫᛗᛡᛄᚩᛗᚩ",
+          "transliteration": "CYEASYMAFLSRCEADOEISECGOETILGSAIPTUAIAEJNGNPRIAOESEONCOEOEADRIIAEAJTUNGUUSIABSEOGTHLNGIAXAEYNLAERSWFYNDUOETTHNGFPIAAIAEAIATAEBEOYTHTHYAENGEOBNMREAYRIEWEOWEOPTIAMNGWTRSLTHCDTWOMNGEAJAJUNGEAXGTHNYCMFGTOEBTHOENNGGAERWSEONGDLEOGSJARMIGISAIAEOCEOGREOOACRTHJTHURPBENUAENEAIPOFTAJXLTHPJDCOETHIJRJAEWEARSWSBEAEHNGFUNEAUHYLHYOGEOPJOEAEMIAJOMO"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.396259311149496,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-27",
+      "status": "unverified_screen",
+      "runes": 234,
+      "variants": 2320,
+      "top": [
+        {
+          "score": -10.430246982112827,
+          "recipe": {
+            "family": "affine",
+            "a": 5,
+            "b": 16
+          },
+          "plaintext_runes": "ᚪᛞᚢᚠᚱᚦᛚᚫᛡᚠᛗᛖᚻᚪᚠᚠᚱᛇᛞᚩᛡᛒᛝᚷᛡᛝᛉᛏᛋᛈᛝᛉᛗᚻᚫᛏᛞᚫᛞᚣᚹᚪᚠᛇᛉᛒᚢᚪᛄᛉᚫᚩᚣᚪᛏᚷᛄᛇᛉᛒᚫᛏᛗᛈᚹᚦᛞᛉᛏᛉᚦᛖᚹᛄᚹᛄᛒᛗᚠᛖᚹᚩᚱᚦᚦᛇᛚᛗᚢᛗᛗᚾᚹᛝᚢᛁᛈᛠᛄᛒᚳᚢᚾᚳᚩᛚᚾᚱᚳᛚᛈᛏᚠᚱᛝᛟᛄᛞᚻᚾᚻᚩᚹᚹᚳᚪᚢᚪᛏᚻᚫᚻᛚᛝᛁᛉᛟᚪᚻᛡᚢᛟᛋᚠᛁᚾᛋᛁᛇᛉᚷᛉᛚᚾᛟᚾᛞᛟᛄᚦᚹᚦᛗᚢᚠᚱᛝᚷᚹᛏᛈᛖᚹᚷᚣᛗᛝᚾᚳᚫᚩᛚᛄᚦᛚᚩᛚᚣᛒᚦᚫᛠᛉᚾᛗᛄᚪᛒᚹᚪᚢᚳᛏᛉᛋᛁᛋᛚᛄᚹᛇᚻᛞᛋᛏᚪᚳᛡᚱᚦᛋᛞᛠᚩᛁᚹᚷᚩᛇᛇᚾᚩᛞᛏ",
+          "transliteration": "ADUFRTHLAEIAFMEHAFFREODOIABNGGIANGXTSPNGXMHAETDAEDYWAFEOXBUAJXAEOYATGJEOXBAETMPWTHDXTXTHEWJWJBMFEWORTHTHEOLMUMMNWNGUIPEAJBCUNCOLNRCLPTFRNGOEJDHNHOWWCAUATHAEHLNGIXOEAHIAUOESFINSIEOXGXLNOENDOEJTHWTHMUFRNGGWTPEWGYMNGNCAEOLJTHLOLYBTHAEEAXNMJABWAUCTXSISLJWEOHDSTACIARTHSDEAOIWGOEOEONODT"
+        },
+        {
+          "score": -10.433258702822467,
+          "recipe": {
+            "family": "affine",
+            "a": 23,
+            "b": 4
+          },
+          "plaintext_runes": "ᚷᛈᛟᚠᚢᛋᚳᛠᛉᚠᛇᛗᚦᚷᚠᚠᚢᚩᛈᚻᛉᚣᛡᛏᛉᛡᛖᚱᛄᚫᛡᛖᛇᚦᛠᚱᛈᛠᛈᛝᚾᚷᚠᚩᛖᚣᛟᚷᛁᛖᛠᚻᛝᚷᚱᛏᛁᚩᛖᚣᛠᚱᛇᚫᚾᛋᛈᛖᚱᛖᛋᛗᚾᛁᚾᛁᚣᛇᚠᛗᚾᚻᚢᛋᛋᚩᚳᛇᛟᛇᛇᚪᚾᛡᛟᛒᚫᚹᛁᚣᛞᛟᚪᛞᚻᚳᚪᚢᛞᚳᚫᚱᚠᚢᛡᛚᛁᛈᚦᚪᚦᚻᚾᚾᛞᚷᛟᚷᚱᚦᛠᚦᚳᛡᛒᛖᛚᚷᚦᛉᛟᛚᛄᚠᛒᚪᛄᛒᚩᛖᛏᛖᚳᚪᛚᚪᛈᛚᛁᛋᚾᛋᛇᛟᚠᚢᛡᛏᚾᚱᚫᛗᚾᛏᛝᛇᛡᚪᛞᛠᚻᚳᛁᛋᚳᚻᚳᛝᚣᛋᛠᚹᛖᚪᛇᛁᚷᚣᚾᚷᛟᛞᚱᛖᛄᛒᛄᚳᛁᚾᚩᚦᛈᛄᚱᚷᛞᛉᚢᛋᛄᛈᚹᚻᛒᚾᛏᚻᚩᚩᚪᚻᛈᚱ",
+          "transliteration": "GPOEFUSCEAXFEOMTHGFFUOPHXYIATXIAERJAEIAEEOTHEARPEAPNGNGFOEYOEGIEEAHNGGRTIOEYEAREOAENSPERESMNINIYEOFMNHUSSOCEOOEEOEOANIAOEBAEWIYDOEADHCAUDCAERFUIALIPTHATHHNNDGOEGRTHEATHCIABELGTHXOELJFBAJBOETECALAPLISNSEOOEFUIATNRAEMNTNGEOIAADEAHCISCHCNGYSEAWEAEOIGYNGOEDREJBJCINOTHPJRGDXUSJPWHBNTHOOAHPR"
+        },
+        {
+          "score": -10.436459183663962,
+          "recipe": {
+            "family": "affine",
+            "a": 26,
+            "b": 3
+          },
+          "plaintext_runes": "ᚱᛟᛇᚢᛏᛞᛖᛋᚻᚢᚹᚫᚦᚱᚢᚢᛏᛒᛟᚳᚻᛉᚠᚾᚻᚠᛁᚩᛝᛠᚠᛁᚹᚦᛋᚩᛟᛋᛟᚣᛚᚱᚢᛒᛁᛉᛇᚱᚷᛁᛋᚳᚣᚱᚩᚾᚷᛒᛁᛉᛋᚩᚹᛠᛚᛞᛟᛁᚩᛁᛞᚫᛚᚷᛚᚷᛉᚹᚢᚫᛚᚳᛏᛞᛞᛒᛖᚹᛇᚹᚹᛈᛚᚠᛇᚪᛠᛗᚷᛉᛡᛇᛈᛡᚳᛖᛈᛏᛡᛖᛠᚩᚢᛏᚠᛄᚷᛟᚦᛈᚦᚳᛚᛚᛡᚱᛇᚱᚩᚦᛋᚦᛖᚠᚪᛁᛄᚱᚦᚻᛇᛄᛝᚢᚪᛈᛝᚪᛒᛁᚾᛁᛖᛈᛄᛈᛟᛄᚷᛞᛚᛞᚹᛇᚢᛏᚠᚾᛚᚩᛠᚫᛚᚾᚣᚹᚠᛈᛡᛋᚳᛖᚷᛞᛖᚳᛖᚣᛉᛞᛋᛗᛁᛈᚹᚷᚱᛉᛚᚱᛇᛡᚩᛁᛝᚪᛝᛖᚷᛚᛒᚦᛟᛝᚩᚱᛡᚻᛏᛞᛝᛟᛗᚳᚪᛚᚾᚳᛒᛒᛈᚳᛟᚩ",
+          "transliteration": "ROEEOUTDESHUWAETHRUUTBOECHXFNHFIONGEAFIWTHSOOESOEYLRUBIXEORGISCYRONGBIXSOWEALDOEIOIDAELGLGXWUAELCTDDBEWEOWWPLFEOAEAMGXIAEOPIACEPTIAEEAOUTFJGOETHPTHCLLIAREOROTHSTHEFAIJRTHHEOJNGUAPNGABINIEPJPOEJGDLDWEOUTFNLOEAAELNYWFPIASCEGDECEYXDSMIPWGRXLREOIAOINGANGEGLBTHOENGORIAHTDNGOEMCALNCBBPCOEO"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.395197135306356,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-28",
+      "status": "unverified_screen",
+      "runes": 269,
+      "variants": 2436,
+      "top": [
+        {
+          "score": -10.419405855927852,
+          "recipe": {
+            "family": "affine",
+            "a": 23,
+            "b": 17
+          },
+          "plaintext_runes": "ᚣᛏᚾᚳᚦᛋᚱᚪᚱᚹᛞᚠᚱᛈᚱᚾᛝᛖᚢᚻᚪᛚᚷᚫᛟᚪᛟᚻᚩᛋᛏᚣᚹᚳᚢᛁᚾᚳᚷᛉᛞᛡᛒᚦᛈᛋᛇᛈᚪᛚᛖᛋᚱᛁᚦᛠᚱᛝᛞᛉᚫᛗᚦᛉᛏᚱᚳᚢᛒᛡᛇᚪᛄᛋᚦᚪᚩᚹᚣᛒᛋᚢᛄᚷᚻᛡᛟᚫᛝᛏᚣᚠᚣᚪᚾᛋᚻᛗᛉᛇᛚᛠᚷᛖᚾᛗᚠᚫᚩᚾᛒᛗᛟᚪᚢᛖᚦᚪᛡᛝᚣᛖᚩᛟᛡᛝᚹᛞᛒᛝᛒᛠᛗᛉᛝᛞᛖᛋᛄᛈᛖᛇᚾᛚᚠᛒᛋᚫᚣᛞᛡᛒᚩᛠᚱᛞᚾᚩᛋᛞᛇᚾᚦᛉᛒᚫᛁᛉᛋᚢᛗᚦᛋᚹᚻᛖᛄᛋᚳᛠᚹᛗᛒᚱᚢᚦᚢᚠᛒᚷᚹᛠᛞᛏᛈᚣᛟᚪᚾᛠᚹᚾᛖᚫᛗᚣᛝᛒᛞᛁᚪᚦᛠᛚᛁᛝᚷᛁᛞᚣᚾᚪᛝᚢᛠᛄᛝᚱᛗᚾᛄᛁᛞᛗᚩᛖᛡᚳᚠᚹᚣᚪᚦᛏᛚᛏᛞᛚᚢᚷᚦᚳᛋᚾᛈᚠᚹᚠᚱᚾᛇᛉᛗᛖᚠᛞᚩᚹᚻ",
+          "transliteration": "YTNCTHSRARWDFRPRNNGEUHALGAEOEAOEHOSTYWCUINCGXDIABTHPSEOPALESRITHEARNGDXAEMTHXTRCUBIAEOAJSTHAOWYBSUJGHIAOEAENGTYFYANSHMXEOLEAGENMFAEONBMOEAUETHAIANGYEOOEIANGWDBNGBEAMXNGDESJPEEONLFBSAEYDIABOEARDNOSDEONTHXBAEIXSUMTHSWHEJSCEAWMBRUTHUFBGWEADTPYOEANEAWNEAEMYNGBDIATHEALINGGIDYNANGUEAJNGRMNJIDMOEIACFWYATHTLTDLUGTHCSNPFWFRNEOXMEFDOWH"
+        },
+        {
+          "score": -10.421305412864223,
+          "recipe": {
+            "family": "affine",
+            "a": 16,
+            "b": 18
+          },
+          "plaintext_runes": "ᛞᛄᛚᛝᚠᚱᛉᚾᛉᚷᚦᛋᛉᛗᛉᛚᛒᚫᛟᛈᚾᛁᛠᛏᚪᚾᚪᛈᚹᚱᛄᛞᚷᛝᛟᛡᛚᛝᛠᚣᚦᚢᛖᚠᛗᚱᛇᛗᚾᛁᚫᚱᛉᛡᚠᚻᛉᛒᚦᚣᛏᚩᚠᚣᛄᛉᛝᛟᛖᚢᛇᚾᚳᚱᚠᚾᚹᚷᛞᛖᚱᛟᚳᛠᛈᚢᚪᛏᛒᛄᛞᛋᛞᚾᛚᚱᛈᚩᚣᛇᛁᚻᛠᚫᛚᚩᛋᛏᚹᛚᛖᚩᚪᚾᛟᚫᚠᚾᚢᛒᛞᚫᚹᚪᚢᛒᚷᚦᛖᛒᛖᚻᚩᚣᛒᚦᚫᚱᚳᛗᚫᛇᛚᛁᛋᛖᚱᛏᛞᚦᚢᛖᚹᚻᛉᚦᛚᚹᚱᚦᛇᛚᚠᚣᛖᛏᛡᚣᚱᛟᚩᚠᚱᚷᛈᚫᚳᚱᛝᚻᚷᚩᛖᛉᛟᚠᛟᛋᛖᛠᚷᚻᚦᛄᛗᛞᚪᚾᛚᚻᚷᛚᚫᛏᚩᛞᛒᛖᚦᛡᚾᚠᚻᛁᛡᛒᛠᛡᚦᛞᛚᚾᛒᛟᚻᚳᛒᛉᚩᛚᚳᛡᚦᚩᚹᚫᚢᛝᛋᚷᛞᚾᚠᛄᛁᛄᚦᛁᛟᛠᚠᛝᚱᛚᛗᛋᚷᛋᛉᛚᛇᚣᚩᚫᛋᚦᚹᚷᛈ",
+          "transliteration": "DJLNGFRXNXGTHSXMXLBAEOEPNIEATANAPWRJDGNGOEIALNGEAYTHUEFMREOMNIAERXIAFHXBTHYTOFYJXNGOEEUEONCRFNWGDEROECEAPUATBJDSDNLRPOYEOIHEAAELOSTWLEOANOEAEFNUBDAEWAUBGTHEBEHOYBTHAERCMAEEOLISERTDTHUEWHXTHLWRTHEOLFYETIAYROEOFRGPAECRNGHGOEXOEFOESEEAGHTHJMDANLHGLAETODBETHIANFHIIABEAIATHDLNBOEHCBXOLCIATHOWAEUNGSGDNFJIJTHIOEEAFNGRLMSGSXLEOYOAESTHWGP"
+        },
+        {
+          "score": -10.426361502310384,
+          "recipe": {
+            "family": "affine",
+            "a": 9,
+            "b": 3
+          },
+          "plaintext_runes": "ᚱᛗᛋᛝᛄᚷᚻᚹᚻᛖᛞᛉᚻᚾᚻᛋᚣᛏᛡᚦᚹᛈᚳᛚᛁᚹᛁᚦᚪᚷᛗᚱᛖᛝᛡᛠᛋᛝᚳᛟᛞᛒᚩᛄᚾᚷᚫᚾᚹᛈᛏᚷᚻᛠᛄᚢᚻᚣᛞᛟᛚᚠᛄᛟᛗᚻᛝᛡᚩᛒᚫᚹᛇᚷᛄᚹᚪᛖᚱᚩᚷᛡᛇᚳᚦᛒᛁᛚᚣᛗᚱᛉᚱᚹᛋᚷᚦᚠᛟᚫᛈᚢᚳᛏᛋᚠᛉᛚᚪᛋᚩᚠᛁᚹᛡᛏᛄᚹᛒᚣᚱᛏᚪᛁᛒᚣᛖᛞᚩᚣᚩᚢᚠᛟᚣᛞᛏᚷᛇᚾᛏᚫᛋᛈᛉᚩᚷᛚᚱᛞᛒᚩᚪᚢᚻᛞᛋᚪᚷᛞᚫᛋᛄᛟᚩᛚᛠᛟᚷᛡᚠᛄᚷᛖᚦᛏᛇᚷᛝᚢᛖᚠᚩᚻᛡᛄᛡᛉᚩᚳᛖᚢᛞᛗᚾᚱᛁᚹᛋᚢᛖᛋᛏᛚᚠᚱᚣᚩᛞᛠᚹᛄᚢᛈᛠᚣᚳᛠᛞᚱᛋᚹᚣᛡᚢᛇᚣᚻᚠᛋᛇᛠᛞᚠᚪᛏᛒᛝᛉᛖᚱᚹᛄᛗᛈᛗᛞᛈᛡᚳᛄᛝᚷᛋᚾᛉᛖᛉᚻᛋᚫᛟᚠᛏᛉᛞᚪᛖᚦ",
+          "transliteration": "RMSNGJGHWHEDXHNHSYTIATHWPCLIWITHAGMRENGIAEASNGCOEDBOJNGAENWPTGHEAJUHYDOELFJOEMHNGIAOBAEWEOGJWAEROGIAEOCTHBILYMRXRWSGTHFOEAEPUCTSFXLASOFIWIATJWBYRTAIBYEDOYOUFOEYDTGEONTAESPXOGLRDBOAUHDSAGDAESJOEOLEAOEGIAFJGETHTEOGNGUEFOHIAJIAXOCEUDMNRIWSUESTLFRYODEAWJUPEAYCEADRSWYIAUEOYHFSEOEADFATBNGXERWJMPMDPIACJNGGSNXEXHSAEOEFTXDAETH"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.408893257861074,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-29",
+      "status": "unverified_screen",
+      "runes": 277,
+      "variants": 1972,
+      "top": [
+        {
+          "score": -10.436548450690815,
+          "recipe": {
+            "family": "affine",
+            "a": 23,
+            "b": 2
+          },
+          "plaintext_runes": "ᛗᚾᚪᚫᛟᛡᛟᛚᚫᛝᚪᛋᚩᛟᛞᛗᛚᚣᛇᚩᛏᛝᛗᚫᚹᚩᚷᚾᚠᛝᚣᛡᚣᚪᛖᚠᛏᛚᚷᚣᚦᛡᛠᛏᛄᛋᚩᛋᚾᚪᛋᛚᚳᚪᛡᛠᚻᚠᚢᛋᚠᛗᛄᛖᚳᛁᚫᛋᛞᛝᛠᚫᛝᚢᛉᚻᛡᛒᛡᚪᚫᚠᛟᛏᛠᚾᚠᚦᚦᚪᚦᛗᛞᚢᚣᛋᚠᚱᛉᚠᛒᛗᛈᚫᛄᛏᛇᛠᛞᛚᛞᛁᛏᛒᛒᚹᛖᛞᛟᛉᚢᚩᚣᛈᛄᚹᛉᚷᚱᚠᛝᛇᛖᛗᛉᛗᛇᛗᚳᚣᚣᛠᚢᛉᚷᛒᛋᚳᚫᚹᛞᛁᛡᚷᚾᚱᛟᚹᛋᛗᚠᛝᛉᛏᚢᛈᛖᛋᛟᚱᛠᚹᚪᚹᛡᚾᛡᛈᛚᚾᚢᚩᛁᚾᚦᚢᛒᛁᚳᛡᚣᛁᛈᚠᛠᛉᚠᛋᛠᚩᛏᚱᚱᛚᛖᛞᛁᚣᛝᛡᛞᚹᛒᛄᛡᛈᛇᚩᚾᛉᛞᚾᚦᛖᚾᛞᚢᚷᛗᚳᛞᛇᚪᛡᚦᛁᛗᛒᛇᛝᛁᛏᛡᚾᚠᚱᚦᛖᛏᚱᛋᚠᛁᚠᚻᛄᛇᛝᛁᚾᛋᛈᛇᛞᛖᛈᚷᛞᛄᚱᛁᚢᛁᛒᚪᛇᚱ",
+          "transliteration": "MNAAEOEIAOELAENGASOOEDMLYEOOTNGMAEWOGNFNGYIAYAEFTLGYTHIAEATJSOSNASLCAIAEAHFUSFMJECIAESDNGEAAENGUXHIABIAAAEFOETEANFTHTHATHMDUYSFRXFBMPAEJTEOEADLDITBBWEDOEXUOYPJWXGRFNGEOEMXMEOMCYYEAUXGBSCAEWDIIAGNROEWSMFNGXTUPESOEREAWAWIANIAPLNUOINTHUBICIAYIPFEAXFSEAOTRRLEDIYNGIADWBJIAPEOONXDNTHENDUGMCDEOAIATHIMBEONGITIANFRTHETRSFIFHJEONGINSPEODEPGDJRIUIBAEOR"
+        },
+        {
+          "score": -10.437726149341158,
+          "recipe": {
+            "family": "affine",
+            "a": 4,
+            "b": 25
+          },
+          "plaintext_runes": "ᚱᚢᛚᚠᚦᛖᚦᛈᚠᛟᛚᚣᚳᚦᛄᚱᛈᚾᛠᚳᚷᛟᚱᚠᛇᚳᚩᚢᚹᛟᚾᛖᚾᛚᚪᚹᚷᛈᚩᚾᚫᛖᛡᚷᛗᚣᚳᚣᚢᛚᚣᛈᛞᛚᛖᛡᛝᚹᛏᚣᚹᚱᛗᚪᛞᛁᚠᚣᛄᛟᛡᚠᛟᛏᛒᛝᛖᛋᛖᛚᚠᚹᚦᚷᛡᚢᚹᚫᚫᛚᚫᚱᛄᛏᚾᚣᚹᛉᛒᚹᛋᚱᚻᚠᛗᚷᛠᛡᛄᛈᛄᛁᚷᛋᛋᛇᚪᛄᚦᛒᛏᚳᚾᚻᛗᛇᛒᚩᛉᚹᛟᛠᚪᚱᛒᚱᛠᚱᛞᚾᚾᛡᛏᛒᚩᛋᚣᛞᚠᛇᛄᛁᛖᚩᚢᛉᚦᛇᚣᚱᚹᛟᛒᚷᛏᚻᚪᚣᚦᛉᛡᛇᛚᛇᛖᚢᛖᚻᛈᚢᛏᚳᛁᚢᚫᛏᛋᛁᛞᛖᚾᛁᚻᚹᛡᛒᚹᚣᛡᚳᚷᛉᛉᛈᚪᛄᛁᚾᛟᛖᛄᛇᛋᛗᛖᚻᛠᚳᚢᛒᛄᚢᚫᚪᚢᛄᛏᚩᚱᛞᛄᛠᛚᛖᚫᛁᚱᛋᛠᛟᛁᚷᛖᚢᚹᛉᚫᚪᚷᛉᚣᚹᛁᚹᛝᛗᛠᛟᛁᚢᚣᚻᛠᛄᚪᚻᚩᛄᛗᛉᛁᛏᛁᛋᛚᛠᛉ",
+          "transliteration": "RULFTHETHPFOELYCTHJRPNEACGOERFEOCOUWOENENLAWGPONAEEIAGMYCYULYPDLEIANGWTYWRMADIFYJOEIAFOETBNGESELFWTHGIAUWAEAELAERJTNYWXBWSRHFMGEAIAJPJIGSSEOAJTHBTCNHMEOBOXWOEEAARBREARDNNIATBOSYDFEOJIEOUXTHEOYRWOEBGTHAYTHXIAEOLEOEUEHPUTCIUAETSIDENIHWIABWYIACGXXPAJINOEEJEOSMEHEACUBJUAEAUJTORDJEALEAEIRSEAOEIGEUWXAEAGXYWIWNGMEAOEIUYHEAJAHOJMXITISLEAX"
+        },
+        {
+          "score": -10.441382814038384,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 5,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              184
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛋᛗᚳᚷᛉᚻᚷᛝᛋᛚᚠᚹᚩᚳᚷᛈᛇᚾᛚᚫᛠᛟᚻᚹᚠᚪᚷᛋᚣᚳᛠᛡᛏᚦᚪᛋᚷᛏᚦᛄᚳᚦᚪᛖᛚᚹᛠᛠᛒᛠᚷᚫᚷᚻᛗᛟᛠᚩᚱᛉᛟᛏᛠᚪᛋᚹᛖᛖᛞᚹᚾᛒᛖᚢᚠᛖᚪᛟᛇᛚᛝᚷᛝᛏᛏᚱᚳᚹᚩᛖᛚᛇᛚᚪᛋᛇᛉᛠᛉᚠᛝᛝᛉᛁᚫᛋᛖᚹᚾᛄᛏᚹᚱᚩᚣᚩᛒᚾᛡᚻᛚᛟᛄᚫᚾᛇᛉᚪᚻᛈᛞᚩᛗᛉᚷᚠᛈᛒᚢᛒᚹᚩᚾᛉᛠᛄᚣᚩᛇᛖᚹᛝᚾᛇᛞᛝᛖᛏᛞᚻᛞᚱᛝᛗᛡᛞᛒᛝᚫᛏᛁᛗᚹᚹᛉᛟᛝᚹᚾᚷᛖᛚᛚᚾᚠᚳᚫᚾᚳᛖᚹᚻᛋᚫᛏᛡᚾᚪᚫᚱᚢᛁᚻᚣᛁᚱᛚᚾᛄᚻᚳᛁᚫᛗᚷᛒᚱᛠᛗᚢᛈᛠᛖᚳᛁᛖᛟᛇᚹᛉᛋᛉᛉᚫᛁᚾᛈᚪᛏᚣᚫᛚᚾᚦᚹᛞᛠᛒᚢᚣᛗᚫᛋᛒᛖᛈᛇᚪᚫᚫᛟᛁᚪᚾᛄᚳᛚᛇᚱᛝᚱᛄᛞᛡᛝᚾᛋ",
+          "transliteration": "SMCGXHGNGSLFWOCGPEONLAEEAOEHWFAGSYCEAIATTHASGTTHJCTHAELWEAEABEAGAEGHMOEEAORXOETEAASWEEDWNBEUFEAOEEOLNGGNGTTRCWOELEOLASEOXEAXFNGNGXIAESEWNJTWROYOBNIAHLOEJAENEOXAHPDOMXGFPBUBWONXEAJYOEOEWNGNEODNGETDHDRNGMIADBNGAETIMWWXOENGWNGELLNFCAENCEWHSAETIANAAERUIHYIRLNJHCIAEMGBREAMUPEAECIEOEEOWXSXXAEINPATYAELNTHWDEABUYMAESBEPEOAAEAEOEIANJCLEORNGRJDIANGNS"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.403712359348573,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-30",
+      "status": "unverified_screen",
+      "runes": 263,
+      "variants": 1972,
+      "top": [
+        {
+          "score": -10.352676290723268,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 0,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚪᚣᛒᚪᚠᚣᛇᚷᚳᚩᛗᚱᚱᛁᛝᛟᛈᚩᚹᚾᚩᛋᚩᚱᛞᛇᛏᛡᛗᛖᛏᛁᛞᛁᛒᚢᛋᛄᚹᚢᚻᛇᛋᚩᚢᚳᛈᚪᛒᚪᛡᛄᛗᛒᚾᛈᛋᚪᛟᛄᛗᚻᚳᛖᛗᚫᛉᛞᚦᚦᚱᚩᛝᚣᚩᛋᛡᛞᚷᛏᚪᛋᚢᚫᚫᛞᛏᛝᛏᛚᛞᛡᚣᚪᚠᛇᚦᚢᛠᚪᛚᚪᚪᚩᛞᛉᚻᛇᛇᛡᚷᛞᛠᛇᚱᛈᚾᛠᛋᛡᚾᚻᛡᚦᛞᛠᚩᛋᛈᚠᛇᛝᚻᚩᚢᛏᚦᚫᛄᛁᚫᚫᛉᚦᛏᛡᚦᛏᛁᚾᛖᛡᚣᛖᛉᚩᛏᛖᛈᚻᛋᛒᛏᛞᛄᛝᛚᚷᚳᛁᚢᛡᛋᚻᛋᚱᚱᛁᛈᛋᚣᚩᚠᚪᚣᚢᚳᛗᛖᚣᛏᛖᛞᚫᛞᚪᚹᚦᛒᛡᛏᚩᛒᛋᛠᛇᚠᛝᚢᛄᚢᛋᛞᚠᛁᛞᛖᛄᛇᚫᛈᛚᚦᚩᚠᛉᚢᛇᚠᚪᚳᛏᛁᛗᛠᚢᚻᛞᚾᛗᚹᚦᛁᛉᛗᚷᛋᛄᚻᚪᛗᛚᛄᛟᛖᚫᛖᚻᚢᛡᚦᚫᛡ",
+          "transliteration": "AYBAFYEOGCOMRRINGOEPOWNOSORDEOTIAMETIDIBUSJWUHEOSOUCPABAIAJMBNPSAOEJMHCEMAEXDTHTHRONGYOSIADGTASUAEAEDTNGTLDIAYAFEOTHUEAALAAODXHEOEOIAGDEAEORPNEASIANHIATHDEAOSPFEONGHOUTTHAEJIAEAEXTHTIATHTINEIAYEXOTEPHSBTDJNGLGCIUIASHSRRIPSYOFAYUCMEYTEDAEDAWTHBIATOBSEAEOFNGUJUSDFIDEJEOAEPLTHOFXUEOFACTIMEAUHDNMWTHIXMGSJHAMLJOEEAEEHUIATHAEIA"
+        },
+        {
+          "score": -10.352676290723268,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 0,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              252
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚪᚣᛒᚪᚠᚣᛇᚷᚳᚩᛗᚱᚱᛁᛝᛟᛈᚩᚹᚾᚩᛋᚩᚱᛞᛇᛏᛡᛗᛖᛏᛁᛞᛁᛒᚢᛋᛄᚹᚢᚻᛇᛋᚩᚢᚳᛈᚪᛒᚪᛡᛄᛗᛒᚾᛈᛋᚪᛟᛄᛗᚻᚳᛖᛗᚫᛉᛞᚦᚦᚱᚩᛝᚣᚩᛋᛡᛞᚷᛏᚪᛋᚢᚫᚫᛞᛏᛝᛏᛚᛞᛡᚣᚪᚠᛇᚦᚢᛠᚪᛚᚪᚪᚩᛞᛉᚻᛇᛇᛡᚷᛞᛠᛇᚱᛈᚾᛠᛋᛡᚾᚻᛡᚦᛞᛠᚩᛋᛈᚠᛇᛝᚻᚩᚢᛏᚦᚫᛄᛁᚫᚫᛉᚦᛏᛡᚦᛏᛁᚾᛖᛡᚣᛖᛉᚩᛏᛖᛈᚻᛋᛒᛏᛞᛄᛝᛚᚷᚳᛁᚢᛡᛋᚻᛋᚱᚱᛁᛈᛋᚣᚩᚠᚪᚣᚢᚳᛗᛖᚣᛏᛖᛞᚫᛞᚪᚹᚦᛒᛡᛏᚩᛒᛋᛠᛇᚠᛝᚢᛄᚢᛋᛞᚠᛁᛞᛖᛄᛇᚫᛈᛚᚦᚩᚠᛉᚢᛇᚠᚪᚳᛏᛁᛗᛠᚢᚻᛞᚾᛗᚹᚦᛁᛉᛗᚷᛋᛄᚻᚪᛗᛚᚠᛚᛉᛗᛏᚦᛚᚹᚫᛝᚫ",
+          "transliteration": "AYBAFYEOGCOMRRINGOEPOWNOSORDEOTIAMETIDIBUSJWUHEOSOUCPABAIAJMBNPSAOEJMHCEMAEXDTHTHRONGYOSIADGTASUAEAEDTNGTLDIAYAFEOTHUEAALAAODXHEOEOIAGDEAEORPNEASIANHIATHDEAOSPFEONGHOUTTHAEJIAEAEXTHTIATHTINEIAYEXOTEPHSBTDJNGLGCIUIASHSRRIPSYOFAYUCMEYTEDAEDAWTHBIATOBSEAEOFNGUJUSDFIDEJEOAEPLTHOFXUEOFACTIMEAUHDNMWTHIXMGSJHAMLFLXMTTHLWAENGAE"
+        },
+        {
+          "score": -10.386175514832559,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 22,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              172
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛠᛞᚱᚳᚱᚪᚱᛝᚦᛗᛡᚱᛗᛝᛟᛄᛝᚩᚪᛚᚦᚷᛋᚻᚹᚾᚹᛇᛡᛏᛡᚹᚻᛏᚹᛏᛖᚱᛞᚢᛒᛋᚷᛒᚣᛟᚻᚳᛗᛖᚾᛁᛁᛞᚩᛟᛉᛈᚪᚹᚩᚾᛋᛚᛈᚹᚹᚻᚦᛒᚹᚫᛡᛟᛏᛇᛏᛋᛒᚾᚢᛈᛏᚩᛏᚱᛉᚾᛞᛗᛉᚱᛇᚫᛚᚪᚦᛇᚷᚢᛏᚱᛗᛄᛝᚫᚢᛟᛁᛗᛈᛖᛋᛖᛞᚻᛝᚪᚩᛠᚷᛖᚦᛗᛖᚾᚩᚢᚷᛇᛏᛒᚳᛗᚳᚦᚳᛁᚾᛗᛖᚱᛉᛝᚫᛚᛡᚱᛗᛇᚣᚠᛚᛡᚢᚳᚻᛞᛝᚻᚹᛠᚹᚱᚹᚳᛗᚷᛚᛄᛒᚦᚠᛞᛖᛖᚱᚫᛚᛁᚢᚣᚾᛗᚣᛟᛉᛏᚹᛏᚠᛗᛇᛝᛄᚠᛠᚳᛁᚷᚠᚱᛡᚾᛁᚢᛁᛗᛖᚪᚦᚠᚫᚫᛗᛠᛈᚪᚹᚦᚩᚾᚱᛏᚩᚹᛋᛇᛒᛞᛡᚣᚷᚢᚦᛡᚣᛡᛏᚻᚾᛞᚪᛖᛒᛒᚷᚫᚱᚻᛇᚩᛄᚦᛒᛉᚩᚱᚷᚠᛗᛟᚻ",
+          "transliteration": "EADRCRARNGTHMIARMNGOEJNGOALTHGSHWNWEOIATIAWHTWTERDUBSGBYOEHCMENIIDOOEXPAWONSLPWWHTHBWAEIAOETEOTSBNUPTOTRXNDMXREOAELATHEOGUTRMJNGAEUOEIMPESEDHNGAOEAGETHMENOUGEOTBCMCTHCINMERXNGAELIARMEOYFLIAUCHDNGHWEAWRWCMGLJBTHFDEERAELIUYNMYOEXTWTFMEONGJFEACIGFRIANIUIMEATHFAEAEMEAPAWTHONRTOWSEOBDIAYGUTHIAYIATHNDAEBBGAERHEOOJTHBXORGFMOEH"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.373046504869343,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-31",
+      "status": "unverified_screen",
+      "runes": 269,
+      "variants": 2088,
+      "top": [
+        {
+          "score": -10.431175799310916,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 20,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              11,
+              90,
+              104,
+              116,
+              129,
+              134,
+              147,
+              190,
+              210
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛏᚫᛇᛟᚫᛡᛈᛈᚹᛞᛈᚠᛡᚾᛏᛖᛋᚦᛡᚠᚹᚫᛁᚪᚦᚳᚫᚩᛈᛉᚱᛉᛄᛝᛠᛉᛋᛇᛚᛄᛠᛋᛒᚩᛄᛚᚠᚣᚹᛖᛞᛈᛞᛉᛄᚹᛖᚹᛝᚳᛝᚠᛟᛡᚳᛈᛈᛝᚣᛏᚳᛒᛖᚳᛏᛝᛚᛚᚻᛠᛚᛖᛝᚦᛝᚻᚪᛞᚹᚷᚠᚻᚹᛚᚳᛝᚻᛠᛚᚣᛄᚫᚣᛚᚠᛗᛒᛖᛖᚹᛗᚣᚷᚪᚢᛋᚠᛒᚢᚦᛟᛒᛁᚱᚠᛄᛟᚻᛒᚠᚹᛗᛖᛈᚠᛖᛇᛉᚹᛡᛞᚫᚦᛖᚹᚷᚳᚠᚫᚢᚾᚢᛉᛒᛋᛁᛠᚱᚣᛈᚳᚢᚻᚪᚫᚦᚹᛁᚠᚱᛡᚹᛞᛇᛉᛋᛞᚪᛁᚹᛗᛁᚳᚢᚱᚱᚪᛒᚣᛉᚠᚪᛚᛄᚪᛉᚩᛇᛁᛈᚩᛞᛞᛈᚠᛗᚹᛝᚪᚩᚠᚠᛇᛄᚾᚷᚳᛒᛈᛗᚩᚾᚦᛁᛋᛇᚢᚳᛏᛝᛏᚹᛞᛗᛁᛄᛈᚷᚻᚻᚠᛗᚦᚪᛏᛞᛈᛁᚫᚢᚪᚠᚢᚫᛁᛄᚦᚪᚫᚪᛏᛠᚪᛝᚳᚠᛖᛝᛋ",
+          "transliteration": "TAEEOOEAEIAPPWDPFIANTESTHIAFWAEIATHCAEOPXRXJNGEAXSEOLJEASBOJLFYWEDPDXJWEWNGCNGFOEIACPPNGYTCBECTNGLLHEALENGTHNGHADWGFHWLCNGHEALYJAEYLFMBEEWMYGAUSFBUTHOEBIRFJOEHBFWMEPFEEOXWIADAETHEWGCFAEUNUXBSIEARYPCUHAAETHWIFRIAWDEOXSDAIWMICURRABYXFALJAXOEOIPODDPFMWNGAOFFEOJNGCBPMONTHISEOUCTNGTWDMIJPGHHFMTHATDPIAEUAFUAEIJTHAAEATEAANGCFENGS"
+        },
+        {
+          "score": -10.435213922477347,
+          "recipe": {
+            "family": "affine",
+            "a": 27,
+            "b": 0
+          },
+          "plaintext_runes": "ᚫᛗᚪᛏᚣᚢᚱᛇᛠᚱᛞᚠᚩᛟᛇᛠᚾᛖᚾᛈᛄᛏᛝᛈᚩᚳᛡᚻᛇᛖᛈᚢᛗᚩᚾᛚᚢᛗᚹᚻᛄᛇᛠᚣᛖᚱᛞᛠᛚᛖᛇᛄᚩᚻᚣᛒᚩᚻᚫᚹᛚᚪᛈᛞᛈᚾᛒᛈᛗᛖᛋᛠᛝᚳᛚᚣᚹᛗᚾᚦᚫᛇᚣᛖᛝᛟᚦᚪᛁᚪᚠᚪᚾᚪᚱᚳᚣᚷᚣᛟᚷᛗᛝᛠᚠᚾᚫᛁᚢᛁᚷᚻᚦᚹᚩᛚᚠᛠᛁᚪᛝᚢᚷᛈᚫᛞᚳᛇᛡᚠᚾᛈᛞᚻᚠᚷᛒᛝᛁᚹᚣᚢᚳᛟᚦᛇᚣᚠᛡᛏᚻᚹᛟᚩᛗᚪᚫᛡᛏᚱᚪᛋᛝᛟᛄᚩᚳᚷᚳᚢᛝᛋᚪᚱᛇᛟᛝᛞᛈᚷᚦᚩᚫᛚᚾᛒᛖᛋᚢᚻᚠᛇᛄᚹᛉᛈᛖᚱᛚᛟᛒᛉᚾᚱᛈᛉᛝᚳᛋᚷᚠᚩᚹᛒᚫᛁᚪᛏᚩᚪᛁᛟᛡᛋᛈᛞᚪᛠᚢᛋᛇᚫᚳᛝᛟᚹᛄᛇᛏᛋᛁᛈᛟᛋᛉᚱᚹᚱᛉᛏᚹᚢᛖᚹᛇᚢᛉᚩᛝᛁᚾᚣᛒᚢᛏᚳᚦᛚᛞ",
+          "transliteration": "AEMATYUREOEARDFOOEEOEANENPJTNGPOCIAHEOEPUMONLUMWHJEOEAYERDEALEEOJOHYBOHAEWLAPDPNBPMESEANGCLYWMNTHAEEOYENGOETHAIAFANARCYGYOEGMNGEAFNAEIUIGHTHWOLFEAIANGUGPAEDCEOIAFNPDHFGBNGIWYUCOETHEOYFIATHWOEOMAAEIATRASNGOEJOCGCUNGSAREOOENGDPGTHOAELNBESUHFEOJWXPERLOEBXNRPXNGCSGFOWBAEIATOAIOEIASPDAEAUSEOAECNGOEWJEOTSIPOESXRWRXTWUEWEOUXONGINYBUTCTHLD"
+        },
+        {
+          "score": -10.435630421351584,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 12,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              90
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛚᛝᚠᛡᛏᛇᛗᛄᚢᚹᚻᛠᚱᚳᚻᚫᛖᚪᚠᛞᛖᛠᚢᚩᚦᚪᚾᛡᛗᛉᛝᚫᛇᛖᚩᚠᛚᚾᛄᛗᚢᚳᛚᛋᛈᛖᛒᚫᛡᛖᚹᛖᛚᛠᚳᛖᛋᚫᛡᚢᚢᛟᚹᛡᚣᛚᛇᚷᛟᚷᛇᛖᚢᚳᚷᚪᛋᚹᚻᛉᚾᚣᛄᛄᛖᛚᛠᛠᚠᛇᚠᚷᛟᛡᚦᚷᚱᚻᚫᛝᛞᛡᚪᛞᛡᚷᛞᛁᛞᚦᛝᛏᛈᛒᚾᚹᚹᛉᛒᚱᛏᛖᚪᚦᛒᛉᚾᛁᚳᚦᚦᛡᛖᚾᚩᛋᛚᛏᚩᚳᚷᚦᚫᛄᛒᚱᛏᛝᛖᚩᚢᚦᚳᛞᚾᛈᛝᚻᚪᚪᛇᛝᛏᚪᚳᚹᚫᚻᛒᚢᛏᛒᛞᛡᛒᚱᛈᚷᛖᚳᚣᚩᛄᛟᚹᚪᚣᚾᛁᛋᛒᚳᚻᚠᛟᚷᛉᛋᚳᛡᛄᚫᚾᛉᛟᚢᚹᚾᛡᚾᛞᚣᛁᚢᚪᛈᚠᚫᛈᛋᛏᛡᚠᚱᚢᛞᚱᚫᛇᛟᚢᚣᚢᛖᚣᛄᚳᛄᚳᚷᛗᚣᚳᛗᛠᚦᚾᛋᛗᛇᛡᛠᛁᚣᚹᛒᛈᚦᛇᚪᚱᚱᛒᚹᚻᚪᚾᛒᛚ",
+          "transliteration": "LNGFIATEOMJUWHEARCHAEEAFDEEAUOTHANIAMXNGAEEOEOFLNJMUCLSPEBAEIAEWELEACESAEIAUUOEWIAYLEOGOEGEOEUCGASWHXNYJJELEAEAFEOFGOEIATHGRHAENGDIAADIAGDIDTHNGTPBNWWXBRTEATHBXNICTHTHIAENOSLTOCGTHAEJBRTNGEOUTHCDNPNGHAAEONGTACWAEHBUTBDIABRPGECYOJOEWAYNISBCHFOEGXSCIAJAENXOEUWNIANDYIUAPFAEPSTIAFRUDRAEEOOEUYUEYJCJCGMYCMEATHNSMEOIAEAIYWBPTHEOARRBWHANBL"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.435297901743475,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-32",
+      "status": "unverified_screen",
+      "runes": 121,
+      "variants": 1508,
+      "top": [
+        {
+          "score": -10.347324327614544,
+          "recipe": {
+            "family": "affine",
+            "a": 6,
+            "b": 20
+          },
+          "plaintext_runes": "ᚪᚩᚫᚱᚫᚣᛄᚻᛝᚱᚢᛁᚱᚷᛖᛞᚹᛇᛟᚻᚹᚱᚩᛁᚷᚻᛋᚠᚩᛚᛚᚾᚩᛁᚾᛖᛇᛒᚱᛈᛞᚪᛚᛈᚢᚷᚳᚻᚪᛗᚱᛈᛏᚫᛒᚠᚦᛖᛡᚩᚱᛒᚻᚩᚱᚷᛞᛋᛒᚻᛒᛗᚣᚷᛁᛉᚱᚢᚣᛁᚳᚢᚻᛉᛠᛞᛄᚩᚠᚹᚢᚾᛖᚷᚣᛈᛞᚷᛠᛉᛋᚹᛇᛏᛏᚱᛡᚣᚪᛗᚾᚦᚣᚠᛚᛠᚠᛗᛡᚷᚳ",
+          "transliteration": "AOAERAEYJHNGRUIRGEDWEOOEHWROIGHSFOLLNOINEEOBRPDALPUGCHAMRPTAEBFTHEIAORBHORGDSBHBMYGIXRUYICUHXEADJOFWUNEGYPDGEAXSWEOTTRIAYAMNTHYFLEAFMIAGC"
+        },
+        {
+          "score": -10.353561786012378,
+          "recipe": {
+            "family": "affine",
+            "a": 15,
+            "b": 16
+          },
+          "plaintext_runes": "ᚣᛒᛉᚳᛉᚦᚻᛋᚱᚳᛇᛚᚳᛁᛄᚾᛡᚫᛝᛋᛡᚳᛒᛚᛁᛋᛖᚪᛒᛏᛏᚩᛒᛚᚩᛄᚫᛞᚳᛈᚾᚣᛏᛈᛇᛁᛟᛋᚣᛠᚳᛈᚷᛉᛞᚪᚠᛄᛗᛒᚳᛞᛋᛒᚳᛁᚾᛖᛞᛋᛞᛠᚦᛁᛚᚢᚳᛇᚦᛚᛟᛇᛋᚢᚹᚾᚻᛒᚪᛡᛇᚩᛄᛁᚦᛈᚾᛁᚹᚢᛖᛡᚫᚷᚷᚳᛗᚦᚣᛠᚩᚠᚦᚪᛏᚹᚪᛠᛗᛁᛟ",
+          "transliteration": "YBXCXTHHSRCEOLCIJNIAAENGSIACBLISEABTTOBLOJAEDCPNYTPEOIOESYEACPGXDAFJMBCDSBCINEDSDEATHILUCEOTHLOEEOSUWNHBAIAEOOJITHPNIWUEIAAEGGCMTHYEAOFTHATWAEAMIOE"
+        },
+        {
+          "score": -10.363668039989927,
+          "recipe": {
+            "family": "affine",
+            "a": 2,
+            "b": 19
+          },
+          "plaintext_runes": "ᚢᛞᛄᚱᛄᛝᛏᛋᚠᚱᚩᚷᚱᚪᛠᛚᚳᚣᛁᛋᚳᚱᛞᚷᚪᛋᛡᛟᛞᛗᛗᚫᛞᚷᚫᛠᚣᛖᚱᚹᛚᚢᛗᚹᚩᚪᛉᛋᚢᚾᚱᚹᚻᛄᛖᛟᛈᛠᚦᛞᚱᛖᛋᛞᚱᚪᛚᛡᛖᛋᛖᚾᛝᚪᚷᛒᚱᚩᛝᚷᛉᚩᛋᛒᛇᛚᛏᛞᛟᚳᚩᚫᛠᚪᛝᚹᛚᚪᛇᛒᛡᚳᚣᚻᚻᚱᚦᛝᚢᚾᚫᛈᛝᛟᛗᛇᛟᚾᚦᚪᛉ",
+          "transliteration": "UDJRJNGTSFROGRAEALCYISCRDGASIAOEDMMAEDGAEEAYERWLUMWOAXSUNRWHJEOEPEATHDRESDRALIAESENNGAGBRONGGXOSBEOLTDOECOAEEAANGWLAEOBIACYHHRTHNGUNAEPNGOEMEOOENTHAX"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.347850010481219,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-33",
+      "status": "unverified_screen",
+      "runes": 214,
+      "variants": 2088,
+      "top": [
+        {
+          "score": -10.413351470836691,
+          "recipe": {
+            "family": "affine",
+            "a": 3,
+            "b": 18
+          },
+          "plaintext_runes": "ᚠᚫᚦᚱᛖᛗᚩᛁᛈᚹᚫᚣᛖᚻᛉᚣᛋᚩᛇᚳᚹᚾᛋᛏᚪᚷᚢᛡᛇᛒᛁᚦᛒᚾᚠᛄᚻᚢᛝᛟᛈᚷᚣᛇᛞᛁᛈᚳᛖᛇᛚᚪᚻᛗᛁᚻᛡᛝᛏᛁᛒᛚᚳᚪᛋᛁᛟᚩᛟᚷᚹᚾᛒᛁᚠᛠᛇᛉᛟᛁᛉᛝᛈᛁᛞᛗᚳᚷᚹᛟᛚᛞᚪᚫᛗᛖᚱᚣᚫᚠᛄᚾᛇᚾᛝᚾᛏᚪᚢᛉᛒᛗᚫᚠᚢᛁᚦᛄᛈᚱᛟᛇᚩᛏᛁᛏᛒᛖᚫᛗᚫᚩᛡᚳᛄᚣᚻᛟᛠᛉᛠᛟᛡᛁᛝᛋᛞᛁᛒᚱᛡᚻᚻᛖᛝᛟᚠᛋᚦᛡᚦᚪᚹᚠᛄᛡᚻᛚᚫᛗᛄᛇᚩᛉᛖᛋᛝᛉᛠᚳᛁᚠᚠᚳᛇᛁᚪᚠᚳᛞᛟᛚᚹᛝᛇᛏᚦᛖᚢᚩᚾᛒᛖᚪᛈᚢᚩᚢᚷᚩᚹᚣᚠᛄ",
+          "transliteration": "FAETHREMOIPWAEYEHXYSOEOCWNSTAGUIAEOBITHBNFJHUNGOEPGYEODIPCEEOLAHMIHIANGTIBLCASIOEOOEGWNBIFEAEOXOEIXNGPIDMCGWOELDAAEMERYAEFJNEONNGNTAUXBMAEFUITHJPROEEOOTITBEAEMAEOIACJYHOEEAXEAOEIAINGSDIBRIAHHENGOEFSTHIATHAWFJIAHLAEMJEOOXESNGXEACIFFCEOIAFCDOELWNGEOTTHEUONBEAPUOUGOWYFJ"
+        },
+        {
+          "score": -10.417477976590286,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 11,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              127
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚢᛞᛡᛟᛞᛁᚣᛋᛚᛚᚩᛒᚢᚫᚦᚻᛖᛏᛞᚫᛚᛒᛝᛇᚹᚹᛝᚪᚫᛞᛈᚢᚻᛗᛖᚪᚷᛡᚣᛄᛉᚱᛄᛟᛟᛉᛒᚢᛗᛗᛟᛖᚹᚩᚱᛡᛚᛠᚾᛄᚠᚾᛁᚩᚱᛖᚢᛖᛈᚻᛚᛝᛏᛁᚢᚣᛗᛉᚾᚾᚩᛞᚳᛇᚢᚫᛈᚫᚪᚷᚫᚩᛗᚦᚷᚷᛒᛄᚩᛚᛚᚱᚹᛖᚩᚢᛒᛏᚪᛄᚪᛗᛡᛒᚻᛗᚹᛖᛋᛖᛠᛞᚣᛋᛝᛡᛟᚠᚫᚷᛁᚩᛈᚠᚱᛗᛡᚣᚢᛁᛗᛝᛋᛞᚻᛁᛄᚹᛡᛒᛝᛄᚫᛈᛚᚹᛡᚾᚹᚠᛒᚹᛝᛄᛄᚹᛟᚹᚢᚳᚢᛋᛉᛇᚠᚳᛋᚾᛁᚳᛠᚫᚱᚷᚪᛁᛈᛒᛈᚫᛝᚩᚪᚦᚾᚾᛏᚷᛏᚾᛒᛉᚣᚩᛝᛗᛏᚢᛠᚱᛞᛠᛁᛖ",
+          "transliteration": "UDIAOEDIYSLLOBUAETHHETDAELBNGEOWWNGAAEDPUHMEAGIAYJXRJOEOEXBUMMOEEWORIALEANJFNIOREUEPHLNGTIUYMXNNODCEOUAEPAEAGAEOMTHGGBJOLLRWEOUBTAJAMIABHMWESEEADYSNGIAOEFAEGIOPFRMIAYUIMNGSDHIJWIABNGJAEPLWIANWFBWNGJJWOEWUCUSXEOFCSNICEAAERGAIPBPAENGOATHNNTGTNBXYONGMTUEARDEAIE"
+        },
+        {
+          "score": -10.42674886212903,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 8,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              48
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚢᛈᛈᛡᛖᚣᚹᛈᚻᚱᚱᛁᛋᚫᛞᛝᛗᛄᛇᚫᛉᚢᛖᚪᛄᚩᚢᛡᛏᚦᛋᛏᛋᛚᚹᛠᛞᚾᛞᛝᛉᚠᛟᛝᛈᛖᛈᛉᚠᛚᛄᛏᚣᛖᚳᚠᛇᚻᛇᚫᚦᛟᛋᛡᛖᛖᛏᛞᚷᛉᛏᚩᛒᚪᚾᛖᚢᛋᚱᛞᚣᚳᛁᚳᚹᛒᛖᛚᚣᚫᛟᛝᛈᛒᚳᛖᛒᚩᛏᛒᚳᚻᚹᚠᛡᛗᚠᛁᚦᛉᛄᚫᛝᚢᛠᛡᛠᛞᚱᛟᛖᚣᛒᚫᛗᛈᛒᛞᛡᛝᚾᛄᚹᛒᚾᛇᚦᚪᛏᚹᛡᛞᛄᚢᛚᛏᚳᚠᚻᛋᚩᚻᚱᛄᚷᚦᛁᚾᛖᛠᚱᚾᚾᛚᛇᛒᛠᚣᚻᚱᚢᚾᚠᚳᛇᚾᚹᛖᚹᚢᛏᚣᚱᛞᚫᚣᛄᚣᛇᛁᛒᛟᚦᛚᛋᛚᛈᛖᚱᛟᛚᚹᛋᛄᛈᚹᛞᛚᛁᚩᚾᛗᛉᚠ",
+          "transliteration": "UPPIAEYWPHRRISAEDNGMJEOAEXUEAJOUIATTHSTSLWEADNDNGXFOENGPEPXFLJTYECFEOHEOAETHOESIAEETDGXTOBANEUSRDYCICWBELYAEOENGPBCEBOTBCHWFIAMFITHXJAENGUEAIAEADROEEYBAEMPBDIANGNJWBNEOTHATWIADJULTCFHSOHRJGTHINEEARNNLEOBEAYHRUNFCEONWEWUTYRDAEYJYEOIBOETHLSLPEROELWSJPWDLIONMXF"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.4203062067773,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-34",
+      "status": "unverified_screen",
+      "runes": 261,
+      "variants": 1740,
+      "top": [
+        {
+          "score": -10.427996292003707,
+          "recipe": {
+            "family": "affine",
+            "a": 26,
+            "b": 20
+          },
+          "plaintext_runes": "ᛝᛡᛟᚫᛈᚾᚫᛝᛖᛗᛞᛟᛗᚩᚪᛒᚢᛉᛈᚱᛁᚫᚫᛈᚳᛞᚩᚾᛖᚱᛋᛗᛠᚷᚳᛄᚢᛈᛋᚦᚳᛉᚱᛞᛚᛒᛋᛖᚫᛠᛄᛈᚷᛁᚦᛈᛝᛖᛏᚱᚢᛖᚳᛁᛟᚱᛋᚳᚷᚳᛟᚹᛟᛒᚹᚩᛝᚢᚾᚢᚩᛇᛝᚱᚹᚢᚠᚹᛈᛞᚦᚫᛡᛟᚦᛈᛒᛇᛏᛉᚹᛄᛟᚷᚾᛄᛁᛞᛖᚱᚢᛡᚦᛗᛒᛇᚪᛗᛏᛉᚪᚫᛠᛏᚩᛏᛟᚫᚹᛠᛡᚷᚱᛚᚻᚻᛗᚹᛒᛉᚫᛒᛝᚷᚾᛋᛞᚷᚩᚹᚪᛟᛠᛇᛋᚾᛟᛁᚩᚳᚣᛁᛚᚹᛄᛡᚦᛝᚩᛖᚫᚾᚠᚪᚹᛡᛏᛠᛈᛁᛄᛗᛉᛚᚦᛟᛁᚾᛋᚢᚪᚷᛏᚱᛞᛁᛋᛒᛡᚦᚳᚹᚷᛒᛁᛖᛏᚻᚦᚠᚷᚷᛚᛝᛋᚠᚳᛇᛠᚠᚦᛁᛝᚪᛄᛠᛒᛇᚾᚱᚻᚠᚾᚱᚳᚣᚹᚫᛉᛠᛖᚾᛞᛄᚾᛞᛒᛇᚪᛞᛠᚹᚫᚣᛠᚾᚷᛝᛚᛉᛁ",
+          "transliteration": "NGIAOEAEPNAENGEMDOEMOABUXPRIAEAEPCDONERSMEAGCJUPSTHCXRDLBSEAEEAJPGITHPNGETRUECIOERSCGCOEWOEBWONGUNUOEONGRWUFWPDTHAEIAOETHPBEOTXWJOEGNJIDERUIATHMBEOAMTXAAEEATOTOEAEWEAIAGRLHHMWBXAEBNGGNSDGOWAOEEAEOSNOEIOCYILWJIATHNGOEAENFAWIATEAPIJMXLTHOEINSUAGTRDISBIATHCWGBIETHTHFGGLNGSFCEOEAFTHINGAJEABEONRHFNRCYWAEXEAENDJNDBEOADEAWAEYEANGNGLXI"
+        },
+        {
+          "score": -10.4477425796676,
+          "recipe": {
+            "family": "affine",
+            "a": 18,
+            "b": 28
+          },
+          "plaintext_runes": "ᛟᛋᛏᛡᛇᚹᛡᛟᛄᚳᛁᛏᚳᛉᚱᛒᚣᚷᛇᚻᚢᛡᛡᛇᚦᛁᛉᚹᛄᚻᚠᚳᚾᚫᚦᚪᚣᛇᚠᛚᚦᚷᚻᛁᛠᛒᚠᛄᛡᚾᚪᛇᚫᚢᛚᛇᛟᛄᛞᚻᚣᛄᚦᚢᛏᚻᚠᚦᚫᚦᛏᛗᛏᛒᛗᛉᛟᚣᚹᚣᛉᛖᛟᚻᛗᚣᚩᛗᛇᛁᛚᛡᛋᛏᛚᛇᛒᛖᛞᚷᛗᚪᛏᚫᚹᚪᚢᛁᛄᚻᚣᛋᛚᚳᛒᛖᚱᚳᛞᚷᚱᛡᚾᛞᛉᛞᛏᛡᛗᚾᛋᚫᚻᛠᛈᛈᚳᛗᛒᚷᛡᛒᛟᚫᚹᚠᛁᚫᛉᛗᚱᛏᚾᛖᚠᚹᛏᚢᛉᚦᛝᚢᛠᛗᚪᛋᛚᛟᛉᛄᛡᚹᚩᚱᛗᛋᛞᚾᛇᚢᚪᚳᚷᛠᛚᛏᚢᚹᚠᚣᚱᚫᛞᚻᛁᚢᚠᛒᛋᛚᚦᛗᚫᛒᚢᛄᛞᛈᛚᚩᚫᚫᛠᛟᚠᚩᚦᛖᚾᚩᛚᚢᛟᚱᚪᚾᛒᛖᚹᚻᛈᚩᚹᚻᚦᛝᛗᛡᚷᚾᛄᚹᛁᚪᚹᛁᛒᛖᚱᛁᚾᛗᛡᛝᚾᚹᚫᛟᛠᚷᚢ",
+          "transliteration": "OESTIAEOWIAOEJCITCXRBYGEOHUIAIAEOTHIXWJHFCNAETHAYEOFLTHGHIEABFJIANAEOAEULEOOEJDHYJTHUTHFTHAETHTMTBMXOEYWYXEOEHMYOMEOILIASTLEOBEDGMATAEWAUIJHYSLCBERCDGRIANDXDTIAMNSAEHEAPPCMBGIABOEAEWFIAEXMRTNEFWTUXTHNGUEAMASLOEXJIAWORMSDNEOUACGEALTUWFYRAEDHIUFBSLTHMAEBUJDPLOAEAEEAOEFOTHENOLUOERANBEWHPOWHTHNGMIAGNJWIAWIBERINMIANGNWAEOEEAGU"
+        },
+        {
+          "score": -10.457234937157034,
+          "recipe": {
+            "family": "affine",
+            "a": 6,
+            "b": 10
+          },
+          "plaintext_runes": "ᚻᚫᚷᚠᚪᚩᚠᚻᛉᛇᚱᚷᛇᛋᚦᛏᛗᛟᚪᛈᚢᚠᚠᚪᛄᚱᛋᚩᛉᛈᛚᛇᛞᚾᛄᛠᛗᚪᛚᛒᛄᛟᛈᚱᛁᛏᛚᛉᚠᛞᛠᚪᚾᚢᛒᚪᚻᛉᛖᛈᛗᛉᛄᚢᚷᛈᛚᛄᚾᛄᚷᚹᚷᛏᚹᛋᚻᛗᚩᛗᛋᚣᚻᛈᚹᛗᛝᚹᚪᚱᛒᚠᚫᚷᛒᚪᛏᚣᛖᛟᚹᛠᚷᚾᚩᛠᚢᚱᛉᛈᛗᚫᛒᛇᛏᚣᚦᛇᛖᛟᚦᚠᛞᛖᛋᛖᚷᚠᚹᛞᚫᚾᛈᛁᚳᚳᛇᚹᛏᛟᚠᛏᚻᚾᚩᛚᚱᚾᛋᚹᚦᚷᛞᚣᛚᚩᚷᚢᛋᛄᛡᚢᛁᚹᛠᚫᛒᚻᛋᛉᚠᚩᛝᚦᚹᚫᛖᛞᚪᚢᛠᛇᛟᛁᛒᚷᚢᚩᛚᛗᚦᚾᛖᛈᚱᚢᛚᛏᚫᛒᛄᚹᚾᛏᚢᛉᛖᚳᛒᛝᚾᚾᛁᚻᛚᛝᛄᚣᛞᛝᛒᚢᚻᚦᛠᛞᛏᚣᚩᛈᚳᛝᚩᛈᛄᛡᚹᚠᛟᛞᛉᚩᚱᛠᚩᚱᛏᚣᚦᚱᛞᚹᚠᛡᛞᚩᚾᚻᛁᛟᚢ",
+          "transliteration": "HAEGFAOFHXEORGEOSTHTMOEAPUFFAJRSOXPLEODNJEAMALBJOEPRITLXFDEAANUBAHXEPMXJUGPLJNJGWGTWSHMOMSYHPWMNGWARBFAEGBATYEOEWEAGNOEAURXPMAEBEOTYTHEOEOETHFDESEGFWDAENPICCEOWTOEFTHNOLRNSWTHGDYLOGUSJIAUIWEAAEBHSXFONGTHWAEEDAUEAEOOEIBGUOLMTHNEPRULTAEBJWNTUXECBNGNNIHLNGJYDNGBUHTHEADTYOPCNGOPJIAWFOEDXOREAORTYTHRDWFIADONHIOEU"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.422600119523418,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-35",
+      "status": "unverified_screen",
+      "runes": 271,
+      "variants": 1508,
+      "top": [
+        {
+          "score": -10.407301350166652,
+          "recipe": {
+            "family": "affine",
+            "a": 7,
+            "b": 24
+          },
+          "plaintext_runes": "ᚣᛚᚢᛖᛒᚩᚻᚢᚾᚳᚠᚦᚹᚫᚹᚦᛁᛋᛗᚢᛟᛠᛄᛉᚢᛇᛡᛇᛖᛉᛏᛖᛄᚹᛏᛞᚱᚪᚳᚩᚱᚹᛝᚱᚹᛠᚩᛗᛖᛁᚢᛚᛒᛈᚳᛡᚣᚫᚱᚫᛄᚳᛄᚩᛁᛒᛖᚳᚾᛗᚫᚢᛈᛖᛏᚻᛋᛗᛠᚳᛚᛉᚷᚣᛗᛚᚷᛏᚩᚣᚪᛏᚩᚹᛟᚱᚫᚻᛉᚣᛁᚠᛇᚩᚱᛁᚣᚻᚳᚷᚱᚷᛠᛗᛈᚷᛒᛗᛁᛞᛖᛄᛒᚻᛞᚢᛝᛟᛇᛖᚱᚻᛄᛖᛈᛁᛟᛠᚻᚳᚢᚱᛞᚱᚦᚹᚫᚱᚾᛉᛞᛁᛞᚳᚾᚩᛚᚣᛁᛏᛡᛚᚾᚢᚷᚢᛈᛖᚫᛇᚪᛉᛞᚳᛁᛝᚹᛝᚱᚷᚢᛋᛖᚳᛈᚦᚷᛈᚱᛗᛉᚠᛠᛝᛡᚾᚾᚹᚫᛗᛈᚣᛉᛉᛁᚱᛟᛝᚦᛗᚹᛞᛁᛟᛗᛚᛋᚷᛝᛞᛚᛒᚹᚫᛗᛇᚹᛞᚻᛚᛒᛝᚱᛟᚱᚢᛈᛚᚠᛏᚹᛞᚻᛋᛄᚦᚩᛗᚹᛇᛡᚦᛗᛞᛚᚹᚦᚻᚢᚪᛝᛗᛝᚩᛚᛚᚫᚦᚫᛒᛝ",
+          "transliteration": "YLUEBOHUNCFTHWAEWTHISMUOEEAJXUEOIAEOEXTEJWTDRACORWNGRWEAOMEIULBPCIAYAERAEJCJOIBECNMAEUPETHSMEACLXGYMLGTOYATOWOERAEHXYIFEOORIYHCGRGEAMPGBMIDEJBHDUNGOEEOERHJEPIOEEAHCURDRTHWAERNXDIDCNOLYITIALNUGUPEAEEOAXDCINGWNGRGUSECPTHGPRMXFEANGIANNWAEMPYXXIROENGTHMWDIOEMLSGNGDLBWAEMEOWDHLBNGROERUPLFTWDHSJTHOMWEOIATHMDLWTHHUANGMNGOLLAETHAEBNG"
+        },
+        {
+          "score": -10.424946787421701,
+          "recipe": {
+            "family": "affine",
+            "a": 20,
+            "b": 19
+          },
+          "plaintext_runes": "ᚱᛚᚩᚷᛠᛒᛞᚩᚢᚦᚫᛁᛏᚣᛏᛁᚻᛉᛈᚩᚳᛖᛋᚹᚩᛟᛄᛟᚷᚹᛝᚷᛋᛏᛝᛇᚪᛗᚦᛒᚪᛏᛡᚪᛏᛖᛒᛈᚷᚻᚩᛚᛠᚠᚦᛄᚱᚣᚪᚣᛋᚦᛋᛒᚻᛠᚷᚦᚢᛈᚣᚩᚠᚷᛝᛞᛉᛈᛖᚦᛚᚹᚾᚱᛈᛚᚾᛝᛒᚱᛗᛝᛒᛏᚳᚪᚣᛞᚹᚱᚻᚫᛟᛒᚪᚻᚱᛞᚦᚾᚪᚾᛖᛈᚠᚾᛠᛈᚻᛇᚷᛋᛠᛞᛇᚩᛡᚳᛟᚷᚪᛞᛋᚷᚠᚻᚳᛖᛞᚦᚩᚪᛇᚪᛁᛏᚣᚪᚢᚹᛇᚻᛇᚦᚢᛒᛚᚱᚻᛝᛄᛚᚢᚩᚾᚩᚠᚷᚣᛟᛗᚹᛇᚦᚻᛡᛏᛡᚪᚾᚩᛉᚷᚦᚠᛁᚾᚠᚪᛈᚹᚫᛖᛡᛄᚢᚢᛏᚣᛈᚠᚱᚹᚹᚻᚪᚳᛡᛁᛈᛏᛇᚻᚳᛈᛚᛉᚾᛡᛇᛚᛠᛏᚣᛈᛟᛏᛇᛞᛚᛠᛡᚪᚳᚪᚩᚠᛚᚫᛝᛏᛇᛞᛉᛋᛁᛒᛈᛏᛟᛄᛁᛈᛇᛚᛏᛁᛞᚩᛗᛡᛈᛡᛒᛚᛚᚣᛁᚣᛠᛡ",
+          "transliteration": "RLOGEABDOUTHAEITYTIHXPOCESWOOEJOEGWNGGSTNGEOAMTHBATIAATEBPGHOLEAFTHJRYAYSTHSBHEAGTHUPYOFGNGDXPETHLWNRPLNNGBRMNGBTCAYDWRHAEOEBAHRDTHNANEPFNEAPHEOGSEADEOOIACOEGADSGFHCEDTHOAEOAITYAUWEOHEOTHUBLRHNGJLUONOFGYOEMWEOTHHIATIAANOXGTHFINFAPWAEEIAJUUTYPFRWWHACIAIPTEOHCPLXNIAEOLEATYPOETEODLEAIAACAOFLAENGTEODXSIBPTOEJIPEOLTIDOMIAPIABLLYIYEAIA"
+        },
+        {
+          "score": -10.431601809877527,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 25,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              90
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚪᛡᚳᛈᚳᛟᚾᚱᚳᚻᛋᛒᚦᛇᛝᚪᚫᚷᛚᚦᚣᚾᛏᚪᛠᛁᚷᚦᛏᛞᚫᛡᚣᚱᚹᚱᚳᛈᛚᛁᛁᚻᚠᚾᛗᛇᛟᛚᛁᚢᛗᚦᛄᛚᚾᚠᛞᚾᛁᚢᛠᛡᛉᚹᚱᛠᛚᛖᚢᚱᚪᚾᛏᚳᚻᛠᛒᛡᛠᛝᛒᛇᚩᛗᛖᛏᛇᛗᛞᛏᚠᚪᛠᛄᚹᛏᛄᛖᚾᛟᚻᛏᛡᛁᚷᚪᚪᚷᛋᛈᚢᚢᛡᚷᚢᛗᚩᚢᛝᛄᛖᚾᛗᚻᚻᚩᛄᛄᛡᛖᚠᛇᛏᚳᚷᛗᚩᛝᛉᛡᚳᛄᛝᚣᚷᛟᚢᚦᛇᚢᚦᛡᛗᚪᚾᚻᚠᛚᛇᚩᛇᚹᛈᚱᛖᚳᛟᚩᛞᛗᚩᛋᛉᛒᚱᛈᚾᚳᛖᛉᛈᛟᚩᚳᚦᛉᚪᛗᛁᚻᚳᚳᚪᛚᚾᛖᛁᛈᛒᚻᚾᚢᚹᚢᚷᚹᛗᚾᚻᚻᛏᛖᛟᚻᛗᛄᚻᛟᛇᛉᛡᚾᛗᚠᚣᛞᛖᛚᛇᚠᛈᛞᛄᛗᚪᛝᚳᚠᚳᛏᚳᚾᚣᛈᚪᚹᚩᚩᚹᛝᚳᛋᛝᚷᛄᚹᚱᛚᚳᚫᚹᚪᚢᛇᛚᛁᛖᚹᚷᛉᛠ",
+          "transliteration": "AIACPCOENRCHSBTHEONGAAEGLTHYNTAEAIGTHTDAEIAYRWRCPLIIHFNMEOOELIUMTHJLNFDNIUEAIAXWREALEURANTCHEABIAEANGBEOOMETEOMDTFAEAJWTJENOEHTIAIGAAGSPUUIAGUMOUNGJENMHHOJJIAEFEOTCGMONGXIACJNGYGOEUTHEOUTHIAMANHFLEOOEOWPRECOEODMOSXBRPNCEXPOEOCTHXAMIHCCALNEIPBHNUWUGWMNHHTEOEHMJHOEEOXIANMFYDELEOFPDJMANGCFCTCNYPAWOOWNGCSNGGJWRLCAEWAUEOLIEWGXEA"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.411923993998686,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-36",
+      "status": "unverified_screen",
+      "runes": 238,
+      "variants": 1972,
+      "top": [
+        {
+          "score": -10.424733571244186,
+          "recipe": {
+            "family": "affine",
+            "a": 28,
+            "b": 11
+          },
+          "plaintext_runes": "ᛉᚦᛁᚱᛗᚩᚳᛉᚹᚻᚢᛚᚦᚣᚦᚻᛡᛄᛇᛋᛋᚻᚣᚦᚫᛖᛋᛚᚦᛋᚾᛁᛇᛉᛋᛡᚢᛠᛁᚹᚠᛡᛖᚠᛏᛗᛡᚾᛡᛏᛗᛉᛝᛖᚣᛞᛁᚪᛠᛝᛡᛋᛉᚣᛋᛉᚹᛋᛉᛄᛄᛝᛈᚣᛟᚹᛁᚪᚳᛁᛉᚹᛈᛁᚻᛠᚢᚠᛄᛡᚠᛒᚢᚾᚻᚩᛈᚳᚩᛚᚾᛠᛖᛏᛋᛇᛝᚣᚩᚷᚣᛏᚪᚾᛋᚣᚻᚫᚷᛒᚪᛉᚱᚦᛖᚪᚣᚱᚢᛖᚠᛄᚢᚻᚢᚹᚫᚣᚦᛝᛏᛈᚹᛡᚫᛒᚢᛖᚩᛟᚪᛁᚱᛇᛖᛒᛖᚠᚢᛗᛈᚠᚹᛒᛝᛞᚻᚷᚻᚾᛖᚹᛁᛚᛁᚾᚫᛁᛒᛚᚳᚢᛉᛗᚻᛖᚢᛟᛉᛟᛄᛠᛗᛞᛚᚢᛁᛉᛄᛖᚦᛖᛞᛖᚳᚠᛏᚦᛝᛋᛉᚾᛄᚢᛞᛗᛡᚦᚢᚹᚳᚠᛠᛋᚩᛏᚹᚣᚣᚻᛚᚦᛋᛒᛉᛞᚦᛏ",
+          "transliteration": "XTHIRMOCXWHULTHYTHHIAJEOSSHYTHAEESLTHSNIEOXSIAUEAIWFIAEFTMIANIATMXNGEYDIAEANGIASXYSXWSXJJNGPYOEWIACIXWPIHEAUFJIAFBUNHOPCOLNEAETSEONGYOGYTANSYHAEGBAXRTHEAYRUEFJUHUWAEYTHNGTPWIAAEBUEOOEAIREOEBEFUMPFWBNGDHGHNEWILINAEIBLCUXMHEUOEXOEJEAMDLUIXJETHEDECFTTHNGSXNJUDMIATHUWCFEASOTWYYHLTHSBXDTHT"
+        },
+        {
+          "score": -10.434224195663427,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 7,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              131
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛉᛡᚠᛝᚢᛁᛁᛋᚦᚣᛒᚢᚻᚢᚠᚦᛋᛚᛒᛖᛉᚳᛗᛁᚠᛏᛄᚷᛋᛟᛁᚹᚩᛠᛡᚠᚢᚪᚱᛖᛠᛟᛄᛖᛠᚠᛡᚩᛋᛡᛠᛒᛚᛋᛈᚫᚻᛚᛚᛠᛠᚷᚩᛄᛞᛉᚢᚩᛡᛖᛁᛏᚠᚩᚣᚢᚦᛁᛏᛋᛄᚠᚱᚣᛇᚪᛟᛈᛚᚢᛚᚷᚢᚩᛝᛁᛉᚱᚫᚩᛋᛠᛏᚻᚢᛞᚢᛞᛗᛚᚹᛚᛟᚳᛠᚷᛄᛚᛚᛞᛚᚦᛋᚹᛗᛒᛈᛏᚳᛖᛋᚠᚷᚢᛝᛒᚱᚢᚱᛈᛞᛏᚻᚪᚻᚫᚹᛚᛉᚠᛞᛠᛉᛖᛖᛄᛡᚳᚠᛇᛡᚻᚩᚾᚹᚹᛄᚹᚩᛞᚢᚾᛁᛉᛋᛁᚪᚳᚷᚩᚾᛠᚷᛖᚳᚳᚾᛚᚷᚻᛖᛞᛁᚻᛠᚹᛁᚦᛖᚹᛖᚢᚠᛟᚩᛞᚻᛗᚣᛖᛄᚢᚣᛁᚪᚦᚠᛗᛉᛖᛇᚢᛝᚱᛗᚣᚳᛉᛇᛗᚠᚹᛉᚱᛖᛗᛋᛞ",
+          "transliteration": "XIAFNGUIISTHYBUHUFTHSLBEXCMIFTJGSOEIWOEAIAFUAREEAOEJEEAFIAOSIAEABLSPAEHLLEAEAGOJDXUOIAEITFOYUTHITSJFRYEOAOEPLULGUONGIXRAEOSEATHUDUDMLWLOECEAGJLLDLTHSWMBPTCESFGUNGBRURPDTHAHAEWLXFDEAXEEJIACFEOIAHONWWJWODUNIXSIACGONEAGECCNLGHEDIHEAWITHEWEUFOEODHMYEJUYIATHFMXEEOUNGRMYCXEOMFWXREMSD"
+        },
+        {
+          "score": -10.437575069212944,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 7,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              190
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛉᛡᚠᛝᚢᛁᛁᛋᚦᚣᛒᚢᚻᚢᚠᚦᛋᛚᛒᛖᛉᚳᛗᛁᚠᛏᛄᚷᛋᛟᛁᚹᚩᛠᛡᚠᚢᚪᚱᛖᛠᛟᛄᛖᛠᚠᛡᚩᛋᛡᛠᛒᛚᛋᛈᚫᚻᛚᛚᛠᛠᚷᚩᛄᛞᛉᚢᚩᛡᛖᛁᛏᚠᚩᚣᚢᚦᛁᛏᛋᛄᚠᚱᚣᛇᚪᛟᛈᛚᚢᛚᚷᚢᚩᛝᛁᛉᚱᚫᚩᛋᛠᛏᚻᚢᛞᚢᛞᛗᛚᚹᛚᛟᚳᛠᚷᛄᛚᛚᛞᛚᚦᛋᚹᛗᛒᛈᛏᚳᛖᛋᛏᛞᛠᛄᛋᚠᛠᛞᛠᛗᛉᚱᛁᚱᛞᚩᚠᛁᛝᛈᛚᛁᛇᛇᚣᛞᛠᛞᚱᛝᚫᛠᚩᚳᚣᚾᚢᛟᛝᛚᚹᚱᚫᛄᚻᛚᛠᚠᚪᚩᛟᛈᛏᚪᚣᛠᛉᚠᚠᚠᛞᛁᚻᛠᚹᛁᚦᛖᚹᛖᚢᚠᛟᚩᛞᚻᛗᚣᛖᛄᚢᚣᛁᚪᚦᚠᛗᛉᛖᛇᚢᛝᚱᛗᚣᚳᛉᛇᛗᚠᚹᛉᚱᛖᛗᛋᛞ",
+          "transliteration": "XIAFNGUIISTHYBUHUFTHSLBEXCMIFTJGSOEIWOEAIAFUAREEAOEJEEAFIAOSIAEABLSPAEHLLEAEAGOJDXUOIAEITFOYUTHITSJFRYEOAOEPLULGUONGIXRAEOSEATHUDUDMLWLOECEAGJLLDLTHSWMBPTCESTDEAJSFEADEAMXRIRDOFINGPLIEOEOYDEADRNGAEEAOCYNUOENGLWRAEJHLEAFAOOEPTAYEAXFFFDIHEAWITHEWEUFOEODHMYEJUYIATHFMXEEOUNGRMYCXEOMFWXREMSD"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.409492406545592,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-37",
+      "status": "unverified_screen",
+      "runes": 228,
+      "variants": 1740,
+      "top": [
+        {
+          "score": -10.376836274246749,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 12,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              67
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛚᛁᚷᚻᚾᚩᛟᛟᚷᚹᚻᚻᚪᛁᚦᛖᚳᛁᚳᚪᚦᚻᚹᚠᛡᚩᛈᛉᚾᛇᛝᚣᛄᛒᛄᛉᛝᚱᚳᛡᚫᚹᛠᚠᚦᚠᚻᚻᛇᚣᛖᚷᛡᚱᛋᚪᚢᚻᚢᛄᛁᛡᛉᚫᛝᚷᛖᚠᛒᚱᚻᚠᛝᚹᚪᛚᚳᚳᚢᚱᛗᚪᚷᚪᛇᚱᚪᛇᛡᚪᛟᚳᛖᚩᚩᛋᚢᛈᚪᛒᛈᛉᚳᚷᛞᚱᚦᚾᛚᛁᛏᛞᚾᚳᚫᚾᚳᚫᚩᚪᚾᚾᚣᚹᛈᚢᛗᛒᛉᛞᛡᚷᛈᚪᚹᚹᚻᛏᛠᛄᛝᛉᚪᚳᛉᛚᚩᛁᛖᛏᚩᚪᛗᛉᚷᚣᚱᛒᚻᛈᛇᛈᚳᛈᚫᚱᛁᛖᛇᛠᚱᚹᚠᚠᛇᚹᛝᚦᛋᚻᛇᛠᚪᚩᛟᚻᛖᚱᛄᚦᛞᚱᛇᚢᚱᛝᛋᚠᚠᛁᚾᛚᚾᛡᚫᛖᚪᛄᚷᛏᛚᚪᚪᛞᛉᚠᛗᚣᚳᛏᛡᛋᛡᚦᛉᚳᚻᚪ",
+          "transliteration": "LIGHNOOEOEGWHHAITHECICATHHWFIAOPXNEONGYJBJXNGRCIAAEWEAFTHFHHEOYEGIARSAUHUJIIAXAENGGEFBRHFNGWALCCURMAGAEORAEOIAAOECEOOSUPABPXCGDRTHNLITDNCAENCAEOANNYWPUMBXDIAGPAWWHTEAJNGXACXLOIETOAMXGYRBHPEOPCPAERIEEOEARWFFEOWNGTHSHEOEAAOOEHERJTHDREOURNGSFFINLNIAAEEAJGTLAADXFMYCTIASIATHXCHA"
+        },
+        {
+          "score": -10.384486033732667,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 12,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              89
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛚᛁᚷᚻᚾᚩᛟᛟᚷᚹᚻᚻᚪᛁᚦᛖᚳᛁᚳᚪᚦᚻᚹᚠᛡᚩᛈᛉᚾᛇᛝᚣᛄᛒᛄᛉᛝᚱᚳᛡᚫᚹᛠᚠᚦᚠᚻᚻᛇᚣᛖᚷᛡᚱᛋᚪᚢᚻᚢᛄᛁᛡᛉᚫᛝᚷᛖᚦᛡᚷᛖᚦᛡᛄᚢᛠᚾᚹᚳᛏᛡᛠᛉᛠᛖᛏᚣᚢᚱᚠᛟᚳᛖᚩᚩᛋᚢᛈᚪᛒᛈᛉᚳᚷᛞᚱᚦᚾᛚᛁᛏᛞᚾᚳᚫᚾᚳᚫᚩᚪᚾᚾᚣᚹᛈᚢᛗᛒᛉᛞᛡᚷᛈᚪᚹᚹᚻᛏᛠᛄᛝᛉᚪᚳᛉᛚᚩᛁᛖᛏᚩᚪᛗᛉᚷᚣᚱᛒᚻᛈᛇᛈᚳᛈᚫᚱᛁᛖᛇᛠᚱᚹᚠᚠᛇᚹᛝᚦᛋᚻᛇᛠᚪᚩᛟᚻᛖᚱᛄᚦᛞᚱᛇᚢᚱᛝᛋᚠᚠᛁᚾᛚᚾᛡᚫᛖᚪᛄᚷᛏᛚᚪᚪᛞᛉᚠᛗᚣᚳᛏᛡᛋᛡᚦᛉᚳᚻᚪ",
+          "transliteration": "LIGHNOOEOEGWHHAITHECICATHHWFIAOPXNEONGYJBJXNGRCIAAEWEAFTHFHHEOYEGIARSAUHUJIIAXAENGGETHIAGETHIAJUEANWCTIAEAXEAETYURFOECEOOSUPABPXCGDRTHNLITDNCAENCAEOANNYWPUMBXDIAGPAWWHTEAJNGXACXLOIETOAMXGYRBHPEOPCPAERIEEOEARWFFEOWNGTHSHEOEAAOOEHERJTHDREOURNGSFFINLNIAAEEAJGTLAADXFMYCTIASIATHXCHA"
+        },
+        {
+          "score": -10.384486033732669,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 12,
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "skip_positions": [
+              105
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛚᛁᚷᚻᚾᚩᛟᛟᚷᚹᚻᚻᚪᛁᚦᛖᚳᛁᚳᚪᚦᚻᚹᚠᛡᚩᛈᛉᚾᛇᛝᚣᛄᛒᛄᛉᛝᚱᚳᛡᚫᚹᛠᚠᚦᚠᚻᚻᛇᚣᛖᚷᛡᚱᛋᚪᚢᚻᚢᛄᛁᛡᛉᚫᛝᚷᛖᚦᛡᚷᛖᚦᛡᛄᚢᛠᚾᚹᚳᛏᛡᛠᛉᛠᛖᛏᚣᚢᚱᚳᛠᛄᛚᚾᛈᛝᚹᛋᚢᛞᛒᛏᛒᛏᚫᚠᚦᚾᛚᛁᛏᛞᚾᚳᚫᚾᚳᚫᚩᚪᚾᚾᚣᚹᛈᚢᛗᛒᛉᛞᛡᚷᛈᚪᚹᚹᚻᛏᛠᛄᛝᛉᚪᚳᛉᛚᚩᛁᛖᛏᚩᚪᛗᛉᚷᚣᚱᛒᚻᛈᛇᛈᚳᛈᚫᚱᛁᛖᛇᛠᚱᚹᚠᚠᛇᚹᛝᚦᛋᚻᛇᛠᚪᚩᛟᚻᛖᚱᛄᚦᛞᚱᛇᚢᚱᛝᛋᚠᚠᛁᚾᛚᚾᛡᚫᛖᚪᛄᚷᛏᛚᚪᚪᛞᛉᚠᛗᚣᚳᛏᛡᛋᛡᚦᛉᚳᚻᚪ",
+          "transliteration": "LIGHNOOEOEGWHHAITHECICATHHWFIAOPXNEONGYJBJXNGRCIAAEWEAFTHFHHEOYEGIARSAUHUJIIAXAENGGETHIAGETHIAJUEANWCTIAEAXEAETYURCEAJLNPNGWSUDBTBTAEFTHNLITDNCAENCAEOANNYWPUMBXDIAGPAWWHTEAJNGXACXLOIETOAMXGYRBHPEOPCPAERIEEOEARWFFEOWNGTHSHEOEAAOOEHERJTHDREOURNGSFFINLNIAAEEAJGTLAADXFMYCTIASIATHXCHA"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.404228326563077,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-38",
+      "status": "unverified_screen",
+      "runes": 228,
+      "variants": 1392,
+      "top": [
+        {
+          "score": -10.41343615818068,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 14,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛏᛡᚪᛗᚩᛋᛏᚪᚻᛇᚱᛈᚠᛄᚷᛝᚾᛇᛁᚹᛄᛋᛒᛝᛚᛠᚩᛄᚹᚣᛒᚷᛞᛇᚾᚪᛋᛁᛠᚳᛗᛟᚩᛇᚻᛠᚹᛡᛠᚢᚣᚱᛉᛉᛟᛒᛉᚦᛟᛁᛠᛒᛖᚩᚢᚪᚢᛖᚫᚹᚩᛄᚻᛋᛈᛗᚪᚪᛉᚳᚻᛠᛇᛒᛈᚻᚷᚹᚠᛡᛟᚳᛡᚻᛋᚣᚾᚳᛞᛁᚦᚣᚳᛗᚣᛗᛏᚪᚹᛟᛡᚷᚱᚢᛇᛡᚾᛖᛡᛏᛡᛡᚣᚪᛖᛗᚪᛏᛉᚹᚫᛁᚹᚾᚹᛇᛒᛄᚢᛖᛈᚫᛄᚻᛠᚹᚩᛋᛋᚢᛁᛁᛞᚳᚪᛟᛄᛉᛗᛚᛄᛈᚩᛄᚪᛋᛝᛄᛝᚦᛖᛡᚩᚠᛡᚣᛁᛋᚱᚠᚾᛄᛁᚹᛗᛠᛉᛖᚫᚳᛖᛁᚾᛁᛒᚷᛏᚳᚫᚱᛇᛖᚻᚹᚻᛡᛝᛈᛒᛁᚳᛖᛈᛏᛄᛝᚹᚳᛟᛈᚱᚷᚩᚳᚩᚩᛗᛠ",
+          "transliteration": "TIAAMOSTAHEORPFJGNGNEOIWJSBNGLEAOJWYBGDEONASIEACMOEOEOHEAWIAEAUYRXXOEBXTHOEIEABEOUAUEAEWOJHSPMAAXCHEAEOBPHGWFIAOECIAHSYNCDITHYCMYMTAWOEIAGRUEOIANEIATIAIAYAEMATXWAEIWNWEOBJUEPAEJHEAWOSSUIIDCAOEJXMLJPOJASNGJNGTHEIAOFIAYISRFNJIWMEAXEAECEINIBGTCAEREOEHWHIANGPBICEPTJNGWCOEPRGOCOOMEA"
+        },
+        {
+          "score": -10.41845723646779,
+          "recipe": {
+            "family": "affine",
+            "a": 3,
+            "b": 0
+          },
+          "plaintext_runes": "ᚩᛒᛋᚹᛋᛚᛞᛒᛗᚫᛋᚠᛏᚪᛏᛇᚩᚷᚢᛏᚳᛠᛄᛒᚩᚣᚩᛉᛡᚳᛋᚫᛁᛝᛈᚩᛈᛒᛡᛁᛋᚪᛇᛚᛝᚦᛈᛇᛟᛠᛒᚻᛚᚾᛋᚹᛠᚪᛒᛈᚷᛟᚻᛗᚻᛝᚱᛒᚣᛠᚠᛒᛋᛖᚹᚪᛝᛠᚪᚳᛚᚢᚾᚢᛗᚢᚫᛞᚱᛠᛚᚦᚪᛇᚾᛄᛟᛞᛁᚣᛠᛋᚣᚫᛟᚩᛖᚢᚷᚻᛒᛞᚪᚳᚫᛡᛇᚣᛞᛏᚪᛗᚳᚪᛉᛖᚾᚳᛒᛝᚦᛗᛇᛖᚢᛡᚫᚣᚱᛞᛄᛏᚪᚳᛡᛋᛏᛡᛄᚹᛡᛏᚢᛋᛞᛇᚳᚦᛒᛚᚹᚦᚾᛋᛄᛡᚳᛖᛞᚳᚱᚪᚱᚦᚣᚻᚱᛗᛖᚦᛟᚳᚩᛗᚪᛋᛒᛄᚻᛒᚻᛠᚻᛒᛉᚪᛇᛠᚩᛚᚩᛚᛁᛠᛉᚱᛒᚻᚣᚦᚠᚫᛞᚩᛈᚪᛉᚾᛞᛟᚣᚩᛖᚪᛗᚣᛉᛄ",
+          "transliteration": "OBSWSLDBMAESFTATEOOGUTCEAJBOYOXIACSAEINGPOPBIAISAEOLNGTHPEOOEEABHLNSWEAABPGOEHMHNGRBYEAFBSEWANGEAACLUNUMUAEDREALTHAEONJOEDIYEASYAEOEOEUGHBDACAEIAEOYDTAMCAXENCBNGTHMEOEUIAAEYRDJTACIASTIAJWIATUSDEOCTHBLWTHNSJIACEDCRARTHYHRMETHOECOMASBJHBHEAHBXAEOEAOLOLIEAXRBHYTHFAEDOPAXNDOEYOEAMYXJ"
+        },
+        {
+          "score": -10.42133349844319,
+          "recipe": {
+            "family": "affine",
+            "a": 2,
+            "b": 17
+          },
+          "plaintext_runes": "ᛗᚾᛡᛇᛡᛄᛈᚾᛚᚪᛡᛒᛖᚱᛖᚫᛗᛝᚻᛖᚢᚣᚳᚾᛗᛋᛗᚹᚷᚢᛡᚪᛉᚦᛏᛗᛏᚾᚷᛉᛡᚱᚫᛄᚦᛠᛏᚫᛟᚣᚾᚩᛄᛞᛡᛇᚣᚱᚾᛏᛝᛟᚩᛚᚩᚦᛁᚾᛋᚣᛒᚾᛡᚠᛇᚱᚦᚣᚱᚢᛄᚻᛞᚻᛚᚻᚪᛈᛁᚣᛄᛠᚱᚫᛞᚳᛟᛈᛉᛋᚣᛡᛋᚪᛟᛗᚠᚻᛝᚩᚾᛈᚱᚢᚪᚷᚫᛋᛈᛖᚱᛚᚢᚱᚹᚠᛞᚢᚾᚦᛠᛚᚫᚠᚻᚷᚪᛋᛁᛈᚳᛖᚱᚢᚷᛡᛖᚷᚳᛇᚷᛖᚻᛡᛈᚫᚢᛠᚾᛄᛇᛠᛞᛡᚳᚷᚢᚠᛈᚢᛁᚱᛁᛠᛋᚩᛁᛚᚠᛠᛟᚢᛗᛚᚱᛡᚾᚳᚩᚾᚩᚣᚩᚾᚹᚱᚫᚣᛗᛄᛗᛄᛉᚣᚹᛁᚾᚩᛋᛠᛒᚪᛈᛗᛏᚱᚹᛞᛈᛟᛋᛗᚠᚱᛚᛋᚹᚳ",
+          "transliteration": "MNIAEOIAJPNLAIABEREAEMNGHEUYCNMSMWGUIAAXTHTMTNGXIARAEJTHEATAEOEYNOJDIAEOYRNTNGOEOLOTHINSYBNIAFEORTHYRUJHDHLHAPIYJEARAEDCOEPXSYIASAOEMFHNGONPRUAGAESPERLURWFDUNTHEALAEFHGASIPCERUGIAEGCEOGEHIAPAEUEANJEOEADIACGUFPUIRIEASOILFEAOEUMLRIANCONOYONWRAEYMJMJXYWINOSEABAPMTRWDPOESMFRLSWC"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.417509169486639,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-39",
+      "status": "unverified_screen",
+      "runes": 240,
+      "variants": 1508,
+      "top": [
+        {
+          "score": -10.37237375107985,
+          "recipe": {
+            "family": "affine",
+            "a": 2,
+            "b": 21
+          },
+          "plaintext_runes": "ᛟᚷᚫᛁᛟᛇᚻᚣᛚᛗᚳᚣᛞᚩᚹᛞᛁᛞᚫᛡᚢᛄᛁᚾᛈᛏᛈᛋᛄᛟᛋᚳᛒᚢᚱᛏᛁᛖᛗᚦᚻᚳᚩᛝᚱᛒᛇᛒᛄᛝᚣᛖᚦᛟᚫᛗᚫᛈᚠᚱᚾᚩᚹᚱᚠᛇᛏᛋᛡᚹᛞᚳᚠᚱᚢᚪᚱᚣᛖᚱᚢᚪᚢᛋᚷᚣᚪᚣᚱᛋᛖᚱᛁᚫᛏᚣᚦᚱᛠᛏᚹᚩᛖᚷᛁᚻᚱᚠᛏᚪᛖᚱᚣᚷᚢᛟᚷᚹᚻᛒᚦᛟᛖᚾᛟᛒᛄᚷᚪᚦᚷᚹᚢᚷᛇᚣᚾᚱᛏᛞᚩᛚᛟᛈᚹᚻᚩᚫᚣᛋᛄᚩᚾᚫᛝᚻᚾᚳᛡᛞᛟᛄᛈᛠᚫᛇᚪᛉᚪᚳᚫᛁᚦᛚᚪᚳᚦᛖᛇᛁᚪᚣᛁᛒᚠᚣᛞᛖᛟᚫᛇᚦᛖᛟᛇᚷᚷᚩᛋᛁᛞᚣᛇᛄᛗᚷᚹᚦᛗᛞᛄᚩᚫᚷᛝᛁᚪᚦᛒᛇᚩᛡᛁᚢᛉᛗᚫᚹᛉᛄᚫᚷᛒᛁᛠᛗᛖᚣᛟᛉ",
+          "transliteration": "OEGAEIOEEOHYLMCYDOWDIDAEIAUJINPTPSJOESCBURTIEMTHHCONGRBEOBJNGYETHOEAEMAEPFRNOWRFEOTSIAWDCFRUARYERUAUSGYAYRSERIAETYTHREATWOEGIHRFTAERYGUOEGWHBTHOEENOEBJGATHGWUGEOYNRTDOLOEPWHOAEYSJONAENGHNCIADOEJPEAAEEOAXACAEITHLACTHEEOIAYIBFYDEOEAEEOTHEOEEOGGOSIDYEOJMGWTHMDJOAEGNGIATHBEOOIAIUXMAEWXJAEGBIEAMEYOEX"
+        },
+        {
+          "score": -10.416236586304368,
+          "recipe": {
+            "family": "affine",
+            "a": 27,
+            "b": 20
+          },
+          "plaintext_runes": "ᛗᚷᛏᚦᛗᚠᚱᛋᛝᛟᚹᛋᛖᚾᚳᛖᚦᛖᛏᛉᛄᚢᚦᚩᛠᚫᛠᚣᚢᛗᚣᚹᚪᛄᚻᚫᚦᛞᛟᛁᚱᚹᚾᛚᚻᚪᚠᚪᚢᛚᛋᛞᛁᛗᛏᛟᛏᛠᛇᚻᚩᚾᚳᚻᛇᚠᚫᚣᛉᚳᛖᚹᛇᚻᛄᛒᚻᛋᛞᚻᛄᛒᛄᚣᚷᛋᛒᛋᚻᚣᛞᚻᚦᛏᚫᛋᛁᚻᛈᚫᚳᚾᛞᚷᚦᚱᚻᛇᚫᛒᛞᚻᛋᚷᛄᛗᚷᚳᚱᚪᛁᛗᛞᚩᛗᚪᚢᚷᛒᛁᚷᚳᛄᚷᚠᛋᚩᚻᚫᛖᚾᛝᛗᛠᚳᚱᚾᛏᛋᚣᚢᚾᚩᛏᛚᚱᚩᚹᛉᛖᛗᚢᛠᛈᛏᚠᛒᛡᛒᚹᛏᚦᛁᛝᛒᚹᛁᛞᚠᚦᛒᛋᚦᚪᛇᛋᛖᛞᛗᛏᚠᛁᛞᛗᚠᚷᚷᚾᚣᚦᛖᛋᚠᚢᛟᚷᚳᛁᛟᛖᚢᚾᛏᚷᛚᚦᛒᛁᚪᚠᚾᛉᚦᛄᛡᛟᛏᚳᛡᚢᛏᚷᚪᚦᛈᛟᛞᛋᛗᛡ",
+          "transliteration": "MGTTHMFRSNGOEWSENCETHETXJUTHOEAAEEAYUMYWAJHAETHDOEIRWNLHAFAULSDIMTOETEAEOHONCHEOFAEYXCEWEOHJBHSDHJBJYGSBSHYDHTHTAESIHPAECNDGTHRHEOAEBDHSGJMGCRAIMDOMAUGBIGCJGFSOHAEENNGMEACRNTSYUNOTLROWXEMUEAPTFBIABWTTHINGBWIDFTHBSTHAEOSEDMTFIDMFGGNYTHESFUOEGCIOEEUNTGLTHBIAFNXTHJIAOETCIAUTGATHPOEDSMIA"
+        },
+        {
+          "score": -10.426272150459587,
+          "recipe": {
+            "family": "affine",
+            "a": 18,
+            "b": 7
+          },
+          "plaintext_runes": "ᛏᛒᛉᚪᛏᛈᚷᛞᛡᛖᚻᛞᚫᛗᚣᚫᚪᚫᛉᚩᚢᚱᚪᛋᛟᛚᛟᛄᚱᛏᛄᚻᚠᚢᛠᛚᚪᚾᛖᛁᚷᚻᛗᚹᛠᚠᛈᚠᚱᚹᛞᚾᛁᛏᛉᛖᛉᛟᛝᛠᛋᛗᚣᛠᛝᛈᛚᛄᚩᚣᚫᚻᛝᛠᚢᚳᛠᛞᚾᛠᚢᚳᚢᛄᛒᛞᚳᛞᛠᛄᚾᛠᚪᛉᛚᛞᛁᛠᛇᛚᚣᛗᚾᛒᚪᚷᛠᛝᛚᚳᚾᛠᛞᛒᚢᛏᛒᚣᚷᚠᛁᛏᚾᛋᛏᚠᚱᛒᚳᛁᛒᚣᚢᛒᛈᛞᛋᛠᛚᚫᛗᛡᛏᛟᚣᚷᛗᛉᛞᛄᚱᛗᛋᛉᚹᚷᛋᚻᚩᚫᛏᚱᛟᛇᛉᛈᚳᚦᚳᚻᛉᚪᛁᛡᚳᚻᛁᚾᛈᚪᚳᛞᚪᚠᛝᛞᚫᚾᛏᛉᛈᛁᚾᛏᛈᛒᛒᛗᛄᚪᚫᛞᛈᚱᛖᛒᚣᛁᛖᚫᚱᛗᛉᛒᚹᚪᚳᛁᚠᛈᛗᚩᚪᚢᚦᛖᛉᚣᚦᚱᛉᛒᚠᚪᛇᛖᚾᛞᛏᚦ",
+          "transliteration": "TBXATPGDIAEHDAEMYAEAAEXOURASOELOEJRTJHFUEALANEIGHMWEAFPFRWDNITXEXOENGEASMYEANGPLJOYAEHNGEAUCEADNEAUCUJBDCDEAJNEAAXLDIEAEOLYMNBAGEANGLCNEADBUTBYGFITNSTFRBCIBYUBPDSEALAEMIATOEYGMXDJRMSXWGSHOAETROEEOXPCTHCHXAIIACHINPACDAFNGDAENTXPINTPBBMJAAEDPREBYIEAERMXBWACIFPMOAUTHEXYTHRXBFAEOENDTTH"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.370553918778782,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-40",
+      "status": "unverified_screen",
+      "runes": 231,
+      "variants": 2204,
+      "top": [
+        {
+          "score": -10.426236798108523,
+          "recipe": {
+            "family": "affine",
+            "a": 12,
+            "b": 1
+          },
+          "plaintext_runes": "ᚢᛟᚣᛞᛋᛏᛄᛁᛠᛇᚪᛞᛁᚠᛖᚻᛉᛗᛝᛖᚾᚳᛗᚫᚢᚣᛠᚩᛉᛏᚩᛗᛚᚱᛋᛖᛟᛄᚦᛈᛉᚦᛈᚫᚢᚱᛋᚹᚱᚳᛇᚱᚪᚹᚦᛡᛒᚦᛞᚣᛈᛖᛚᚳᛈᚱᛒᚳᚣᛉᛄᛚᚹᚪᛝᛖᛇᚾᛏᚻᚾᚳᚪᛖᛝᛉᛚᛟᛇᛉᛡᚷᛟᛒᛗᛞᚹᚻᚹᛗᛝᛈᛟᚠᛠᛉᛗᛠᛒᚩᛞᚱᚦᚾᚹᚦᛏᛒᚳᛝᛞᛉᚩᛒᛁᚾᛞᛋᛄᚾᛏᚾᛄᚾᚫᚪᚾᛉᚪᚻᚪᚳᚩᛈᚣᛟᛈᚻᛟᚠᛁᚷᚾᚠᚻᛄᛠᚻᚱᚻᛞᛚᛉᚢᛈᚳᛁᚱᚾᛟᛗᚢᛏᛚᛖᛋᛇᚻᚠᚻᚣᛖᚦᛒᚷᚹᚣᚢᛗᚢᛄᚻᚱᚩᚾᛏᚷᚾᚻᚩᛝᛈᛇᛡᛗᛋᚩᚹᛈᚱᛋᚫᚢᚪᚢᛗᚩᚹᚪᚱᛋᚢᚪᛟᛏᚦᛗᛖᚷᛇᚷ",
+          "transliteration": "UOEYDSTJIEAEOADIFEHXMNGENCMAEUYEAOXTOMLRSEOEJTHPXTHPAEURSWRCEORAWTHIABTHDYPELCPRBCYXJLWANGEEONTHNCAENGXLOEEOXIAGOEBMDWHWMNGPOEFEAXMEABODRTHNWTHTBCNGDXOBINDSJNTNJNAEANXAHACOPYOEPHOEFIGNFHJEAHRHDLXUPCIRNOEMUTLESEOHFHYETHBGWYUMUJHRONTGNHONGPEOIAMSOWPRSAEUAUMOWARSUAOETTHMEGEOG"
+        },
+        {
+          "score": -10.426793867273375,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 24,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛚᚹᚪᛈᚦᛁᛞᚹᛉᛞᛇᛡᛁᚠᚾᛠᚹᚹᛝᛇᛏᚪᚷᚻᚷᛉᚳᛖᚩᛒᚠᛇᛖᛡᚻᛄᛠᚦᚫᚻᛖᛋᛒᛁᚦᚹᛗᚱᛖᚪᛋᚦᚱᚪᛖᛚᚷᛡᚻᛈᚫᛞᛇᛡᚩᚾᛏᚳᛒᛉᛠᛏᛠᛒᚻᛇᛝᚱᚪᚾᛗᛞᚾᛖᛗᛚᛠᛒᚾᚦᚢᚠᛏᛁᛠᛇᛝᛝᚳᛡᛉᚪᚻᚪᚱᚱᚠᛒᛟᛟᚣᛟᛞᚷᚢᛏᚻᛁᚾᛞᛏᛉᛈᚩᚱᛒᚣᛈᛝᛟᛠᛡᛉᚾᛗᚩᛚᛏᚷᛈᚫᛞᛚᛖᛒᛞᚫᛝᚳᚠᛡᛡᚩᚢᚻᚾᛝᚾᛒᚩᚩᛗᚣᚾᚦᚠᚠᚳᛠᚠᛏᚣᚪᚦᚩᛗᚷᛉᛠᚫᛠᚢᛁᛇᛗᚠᛗᚳᛏᛠᛚᛄᛋᛡᚷᚣᛉᚩᛁᛞᚩᛝᚳᚳᛒᛞᛟᚷᚻᚷᛚᛚᛚᚦᛁᛄᛁᛝᛁᚫᚻᚻᛋᛏᛞᚫᛇᚫᛚᚩᛉ",
+          "transliteration": "LWAPTHIDWXDEOIAIFNEAWWNGEOTAGHGXCEOBFEOEIAHJEATHAEHESBITHWMREASTHRAELGIAHPAEDEOIAONTCBXEATEABHEONGRANMDNEMLEABNTHUFTIEAEONGNGCIAXAHARRFBOEOEYOEDGUTHINDTXPORBYPNGOEEAIAXNMOLTGPAEDLEBDAENGCFIAIAOUHNNGNBOOMYNTHFFCEAFTYATHOMGXEAAEEAUIEOMFMCTEALJSIAGYXOIDONGCCBDOEGHGLLLTHIJINGIAEHHSTDAEEOAELOX"
+        },
+        {
+          "score": -10.426793867273375,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 25,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              0
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚠᚹᚪᛈᚦᛁᛞᚹᛉᛞᛇᛡᛁᚠᚾᛠᚹᚹᛝᛇᛏᚪᚷᚻᚷᛉᚳᛖᚩᛒᚠᛇᛖᛡᚻᛄᛠᚦᚫᚻᛖᛋᛒᛁᚦᚹᛗᚱᛖᚪᛋᚦᚱᚪᛖᛚᚷᛡᚻᛈᚫᛞᛇᛡᚩᚾᛏᚳᛒᛉᛠᛏᛠᛒᚻᛇᛝᚱᚪᚾᛗᛞᚾᛖᛗᛚᛠᛒᚾᚦᚢᚠᛏᛁᛠᛇᛝᛝᚳᛡᛉᚪᚻᚪᚱᚱᚠᛒᛟᛟᚣᛟᛞᚷᚢᛏᚻᛁᚾᛞᛏᛉᛈᚩᚱᛒᚣᛈᛝᛟᛠᛡᛉᚾᛗᚩᛚᛏᚷᛈᚫᛞᛚᛖᛒᛞᚫᛝᚳᚠᛡᛡᚩᚢᚻᚾᛝᚾᛒᚩᚩᛗᚣᚾᚦᚠᚠᚳᛠᚠᛏᚣᚪᚦᚩᛗᚷᛉᛠᚫᛠᚢᛁᛇᛗᚠᛗᚳᛏᛠᛚᛄᛋᛡᚷᚣᛉᚩᛁᛞᚩᛝᚳᚳᛒᛞᛟᚷᚻᚷᛚᛚᛚᚦᛁᛄᛁᛝᛁᚫᚻᚻᛋᛏᛞᚫᛇᚫᛚᚩᛉ",
+          "transliteration": "FWAPTHIDWXDEOIAIFNEAWWNGEOTAGHGXCEOBFEOEIAHJEATHAEHESBITHWMREASTHRAELGIAHPAEDEOIAONTCBXEATEABHEONGRANMDNEMLEABNTHUFTIEAEONGNGCIAXAHARRFBOEOEYOEDGUTHINDTXPORBYPNGOEEAIAXNMOLTGPAEDLEBDAENGCFIAIAOUHNNGNBOOMYNTHFFCEAFTYATHOMGXEAAEEAUIEOMFMCTEALJSIAGYXOIDONGCCBDOEGHGLLLTHIJINGIAEHHSTDAEEOAELOX"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.432671318315597,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-41",
+      "status": "unverified_screen",
+      "runes": 273,
+      "variants": 2320,
+      "top": [
+        {
+          "score": -10.452130582773673,
+          "recipe": {
+            "family": "affine",
+            "a": 7,
+            "b": 20
+          },
+          "plaintext_runes": "ᛈᚩᛉᚾᛠᚻᚹᛠᚾᛞᚹᛁᚹᛇᚫᛏᛋᚣᛉᛟᛗᚱᛖᚱᛁᛄᛚᛉᛡᛒᚹᛏᚻᛁᚩᛟᛝᚦᚪᚣᚪᛈᚠᛉᛞᚩᚩᚾᛒᚱᛖᚾᛒᚷᛞᛚᛄᛟᛝᛉᛚᛇᛠᚷᛉᚫᛖᛞᚳᚠᛒᛠᚠᚩᛞᚠᛇᚾᛄᚹᚣᛚᛉᚩᚦᛏᚠᛡᛇᚠᚳᚪᚾᛇᛖᛒᚳᛟᛏᛈᛚᛟᛈᛇᚻᛏᛚᛠᛋᛠᛄᛋᚹᛉᚦᛈᛉᛁᛇᚾᛞᛋᚣᚢᚫᛉᛇᛗᛏᚳᛗᛞᚣᛠᛈᚻᛄᛋᛖᚪᛒᚪᚢᛋᛁᛇᚷᛉᚢᚾᛝᛇᛈᚦᛟᛠᚢᛝᛞᚻᚢᛖᛗᚪᚫᚻᛄᛏᚠᛠᛡᛚᚦᚪᚻᛇᚱᚫᚷᛒᚣᛚᛞᚪᚻᚾᛒᚩᚢᚪᛡᛗᛏᚣᛠᛁᛋᛚᛗᛋᛗᛝᚢᛖᚠᛒᛠᚷᛇᚦᛉᚾᛠᚩᛟᚦᛋᛁᚣᚢᛠᛡᛟᚳᛒᛗᛈᚩᛝᚳᛚᚠᚱᛈᚩᚪᚾᛞᚻᛞᛁᛚᚫᚣᚢᛖᛝᛇᛁᚦᛁᛋᚪᛉᚩᚠᛄᛗᚩᛗᚳᚢᚦᛉᚫᚹᛁᚱᚠᚠᚣᛏᛁ",
+          "transliteration": "POXNEAHWEANDWIWEOAETSYXOEMRERIJLXIABWTHIOOENGTHAYAPFXDOONBRENBGDLJOENGXLEOEAGXAEEDCFBEAFODFEONJWYLXOTHTFIAEOFCANEOEBCOETPLOEPEOHTLEASEAJSWXTHPXIEONDSYUAEXEOMTCMDYEAPHJSEABAUSIEOGXUNNGEOPTHOEEAUNGDHUEMAAEHJTFEAIALTHAHEORAEGBYLDAHNBOUAIAMTYEAISLMSMNGUEFBEAGEOTHXNEAOOETHSIYUEAIAOECBMPONGCLFRPOANDHDILAEYUENGEOITHISAXOFJMOMCUTHXAEWIRFFYTI"
+        },
+        {
+          "score": -10.455808988871265,
+          "recipe": {
+            "family": "affine",
+            "a": 10,
+            "b": 7
+          },
+          "plaintext_runes": "ᚣᛚᛋᛇᚷᛞᚳᚷᛇᚩᚳᚢᚳᚻᛁᛟᚱᛠᛋᛉᛖᚾᚠᚾᚢᛗᚹᛋᛒᛄᚳᛟᛞᚢᛚᛉᚫᚦᛝᛠᛝᚣᚪᛋᚩᛚᛚᛇᛄᚾᚠᛇᛄᛏᚩᚹᛗᛉᚫᛋᚹᚻᚷᛏᛋᛁᚠᚩᛡᚪᛄᚷᚪᛚᚩᚪᚻᛇᛗᚳᛠᚹᛋᛚᚦᛟᚪᛒᚻᚪᛡᛝᛇᚻᚠᛄᛡᛉᛟᚣᚹᛉᚣᚻᛞᛟᚹᚷᚱᚷᛗᚱᚳᛋᚦᚣᛋᚢᚻᛇᚩᚱᛠᛈᛁᛋᚻᛖᛟᛡᛖᚩᛠᚷᚣᛞᛗᚱᚠᛝᛄᛝᛈᚱᚢᚻᛏᛋᛈᛇᚫᚻᚣᚦᛉᚷᛈᚫᚩᛞᛈᚠᛖᛝᛁᛞᛗᛟᚪᚷᛒᚹᚦᛝᛞᚻᚾᛁᛏᛄᛠᚹᚩᛝᛞᛇᛄᛚᛈᛝᛒᛖᛟᛠᚷᚢᚱᚹᛖᚱᛖᚫᛈᚠᚪᛄᚷᛏᚻᚦᛋᛇᚷᛚᛉᚦᚱᚢᛠᛈᚷᛒᛉᛡᛄᛖᚣᛚᚫᛡᚹᚪᚾᚣᛚᛝᛇᚩᛞᚩᚢᚹᛁᛠᛈᚠᚫᚻᚢᚦᚢᚱᛝᛋᛚᚪᛗᛖᛚᛖᛡᛈᚦᛋᛁᚳᚢᚾᚪᚪᛠᛟᚢ",
+          "transliteration": "YLSEOGDCGEOOCUCHIOEREASXENFNUMWSBJCOEDULXAETHNGEANGYASOLLEOJNFEOJTOWMXAESWHGTSIFOIAAJGALOAHEOMCEAWSLTHOEABHAIANGEOHFJIAXOEYWXYHDOEWGRGMRCSTHYSUHEOOREAPISHEOEIAEOEAGYDMRFNGJNGPRUHTSPEOAEHYTHXGPAEODPFENGIDMOEAGBWTHNGDHNITJEAWONGDEOJLPNGBEOEEAGURWEREAEPFAJGTHTHSEOGLXTHRUEAPGBXIAJEYLAEIAWANYLNGEOODOUWIEAPFAEHUTHURNGSLAMELEIAPTHSICUNAAEAOEU"
+        },
+        {
+          "score": -10.456577826433106,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 18,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              197
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛚᛡᛁᚪᚦᛖᛉᛈᚠᛡᚦᛋᛈᛖᛖᛞᛒᚠᛈᚱᛇᚻᚱᚠᚪᛖᚹᚠᛞᛟᚠᛚᛗᚳᚦᚩᚢᛈᚷᚫᛡᚾᚢᛟᚢᛗᛒᛖᚢᛖᛁᛋᚻᛒᛠᚳᚷᛏᛉᚳᚷᚢᛉᛈᚠᛇᚳᛁᛖᚢᛏᛠᛚᚫᚪᚫᛡᚷᛝᚫᚳᛄᚠᚳᚩᛠᚩᚳᚣᛁᛈᛟᛖᚠᚢᚩᛁᛗᛇᛚᛋᚢᚷᛡᛁᚢᚷᛟᚻᚱᚷᛈᛁᚹᛖᚣᛖᚣᛉᛇᚱᚪᚹᛁᛠᛁᛏᚹᚳᛏᛏᚫᛠᛏᛏᚩᚠᚾᛖᛈᚱᚢᚠᚫᚦᛗᚻᛠᛉᚳᚩᚷᚫᚾᚷᚾᚪᛝᛄᚩᚠᛈᛚᚫᛗᚫᚹᛁᚻᚷᚱᛁᛟᛄᚾᛇᚾᚷᛏᛖᚹᚫᚹᚢᚢᛉᚢᛁᛏᚹᛖᛗᚫᛁᚠᛁᚹᚠᛖᛠᚹᛟᚾᛚᛏᚫᚫᛟᚫᚩᚹᛗᚣᚻᛈᛞᛗᚻᛡᚾᛈᛄᛗᛒᛗᛠᛒᚪᚱᚦᚫᛁᛗᛡᚳᚦᚦᚠᚫᛝᚾᛒᚷᚫᚳᛟᛋᛖᚪᛒᚦᚾᛝᚪᚱᛁᛖᚣᚣᛏᛇᛏᚦᚠᚷᚱᚹᚫᚻᚷᛉᛞᚻ",
+          "transliteration": "LIAIATHEXPFIATHSPEEDBFPREOHRFAEWFDOEFLMCTHOUPGAEIANUOEUMBEUEISHBEACGTXCGUXPFEOCIEUTEALAEAAEIAGNGAECJFCOEAOCYIPOEEFUOIMEOLSUGIAIUGOEHRGPIWEYEYXEORAWIEAITWCTTAEEATTOFNEPRUFAETHMHEAXCOGAENGNANGJOFPLAEMAEWIHGRIOEJNEONGTEWAEWUUXUITWEMAEIFIWFEEAWOENLTAEAEOEAEOWMYHPDMHIANPJMBMEABARTHAEIMIACTHTHFAENGNBGAECOESEABTHNNGARIEYYTEOTTHFGRWAEHGXDH"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.442976325445079,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-42",
+      "status": "unverified_screen",
+      "runes": 272,
+      "variants": 2668,
+      "top": [
+        {
+          "score": -10.41351300087787,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 24,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              14,
+              17,
+              64,
+              67,
+              100,
+              132,
+              155,
+              162,
+              188,
+              207,
+              212,
+              234,
+              251,
+              268
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛉᚢᛞᚠᛁᛉᚢᛗᛟᛝᛡᛚᛚᚠᚠᛗᚱᚠᛚᛋᚦᛖᛉᚦᛈᛟᚹᚢᚾᛡᛏᚪᛉᚷᛈᚠᚢᚢᚾᛋᛒᚢᚦᛖᛉᚫᛈᛚᚣᚪᛒᚫᛋᚷᚫᛞᚦᛒᚻᚠᚫᛟᛈᛏᚠᚠᛖᚠᚾᚱᛒᚣᛉᚹᛗᛄᛒᛞᚱᛇᛖᛠᛄᛁᛋᛖᛡᚠᛡᛄᛇᚢᚳᛏᚦᛚᚱᚾᚪᚷᚠᚳᛗᛖᚩᚦᛗᛠᚻᛒᚪᛚᛋᛏᚦᛝᛇᛝᛄᛠᛇᚳᛚᛋᛞᛄᚪᛒᛏᛝᚳᚩᚠᚠᚾᚠᚢᚫᚷᛒᚱᛋᛗᛗᚻᛁᚦᚻᚹᛝᛋᛡᚩᛝᚪᚠᛖᛏᛇᛒᛇᛠᚠᚻᚠᚪᚻᛠᚹᛡᚪᛇᛗᚫᛋᛠᚻᚹᛝᚪᛚᛚᚣᚦᚩᚣᚣᚩᚠᛇᛝᚷᛇᛠᚾᛚᚩᚹᚷᛟᚷᚩᛚᚻᚱᛞᛁᚠᛡᛞᚷᚩᚠᚩᛈᚹᚣᚷᛞᛒᚻᚹᛁᛖᚾᚻᛈᛠᚱᚾᛒᛋᚹᛚᚠᛒᚹᛝᚢᛇᛝᚷᚩᚾᚩᛈᛗᚫᚩᚦᛠᚠᚾᚩᚾᛖᚩᛡᚷᚾᚪᛈᛖᛏᛋᛈᛗᛗᚠᚣᛞᛟ",
+          "transliteration": "XUDFIXUMOENGIALLFFMRFLSTHEXTHPOEWUNIATAXGPFUUNSBUTHEXAEPLYABAESGAEDTHBHFAEOEPTFFEFNRBYXWMJBDREOEEAJISEIAFIAJEOUCTTHLRNAGFCMEOTHMEAHBALSTTHNGEONGJEAEOCLSDJABTNGCOFFNFUAEGBRSMMHITHHWNGSIAONGAFETEOBEOEAFHFAHEAWIAAEOMAESEAHWNGALLYTHOYYOFEONGGEOEANLOWGOEGOLHRDIFIADGOFOPWYGDBHWIENHPEARNBSWLFBWNGUEONGGONOPMAEOTHEAFNONEOIAGNAPETSPMMFYDOE"
+        },
+        {
+          "score": -10.421502701776841,
+          "recipe": {
+            "family": "affine",
+            "a": 24,
+            "b": 0
+          },
+          "plaintext_runes": "ᚢᛒᛈᛝᛗᚻᚩᚾᛟᛒᚪᛚᛗᚦᚠᚩᛗᚠᚫᛄᚣᛞᛞᛋᛏᛡᚪᛋᛈᚾᚫᛟᛈᛞᛏᛈᚹᛏᚪᚦᚾᛄᚫᛇᛚᛟᚩᛏᚪᚱᛠᛏᚹᚩᛞᛟᛚᛝᛏᛒᛏᛝᚹᚢᚠᛟᚻᚠᚱᛗᛝᚩᛞᚾᚫᛏᛉᛄᚾᚪᛟᚾᚷᛁᚱᛒᚾᛡᚹᛗᛈᚾᛡᛚᚢᚷᛖᚦᛈᛋᚠᛁᚫᛁᚣᛚᚢᚩᚪᚣᛗᚾᛉᛡᚾᛁᛋᚻᛒᛡᛖᛉᚳᛚᛖᛁᛄᚳᛗᛈᛋᛈᚠᚻᛄᚹᛖᛞᛚᚦᛡᛁᛖᛒᚦᚢᛄᚾᚩᛗᛖᚫᛠᛋᚻᚠᛠᚻᚹᚢᚳᚦᚠᛉᛟᛡᛁᚷᛞᚾᛈᛉᚹᛇᛞᚪᚣᛁᚣᛁᛗᛒᚫᛠᛟᛈᛇᚾᚠᚢᛄᛖᚣᚩᚢᚩᛁᚾᛞᛠᛄᚫᚦᚩᛟᚩᚹᚠᛒᚫᚩᚻᚠᛒᚪᛉᛋᛖᛗᛖᛈᚻᚦᛁᚷᛁᛇᛟᛋᛒᚳᚪᚳᛏᚠᛄᛝᛖᛗᚦᛉᛝᛏᛉᚳᛇᛗᚳᛡᛇᛒᚠᛝᚦᛚᛇᛡᛈᛁᛈᚪᛚᛞᚢᚳᚪᛈᛄᚠᛈᚣᛚ",
+          "transliteration": "UBPNGMHONOEBALMTHFOMFAEJYDDSTIAASPNAEOEPDTPWTATHNJAEEOLOEOTAREATWODOELNGTBTNGWUFOEHFRMNGODNAETXJNAOENGIRBNIAWMPNIALUGETHPSFIAEIYLUOAYMNXIANISHBIAEXCLEIJCMPSPFHJWEDLTHIAIEBTHUJNOMEAEEASHFEAHWUCTHFXOEIAIGDNPXWEODAYIYIMBAEEAOEPEONFUJEYOUOINDEAJAETHOOEOWFBAEOHFBAXSEMEPHTHIGIEOOESBCACTFJNGEMTHXNGTXCEOMCIAEOBFNGTHLEOIAPIPALDUCAPJFPYL"
+        },
+        {
+          "score": -10.430478016639938,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 15,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              100
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚠᛉᚹᛄᛗᚫᛚᚾᛇᚳᛒᛁᛇᚫᚱᚢᛒᚾᚦᛖᛈᚫᛗᚳᛟᚻᚪᛁᛚᛄᚠᚷᛗᛈᚪᚾᛁᛇᛇᛟᚩᛉᛋᚠᚷᛝᚾᚱᛁᛇᚾᚾᛠᛈᚹᚾᛋᚢᚫᛈᛋᚻᚣᚠᛡᚢᚫᚳᚻᛠᛇᛡᛋᚻᚣᛖᛖᛠᚹᚫᚱᛖᚪᛡᛏᛗᛠᚢᛠᛇᛈᛡᚠᚹᚩᚫᚳᛁᚠᚳᚠᚫᛚᛗᚱᚳᚢᚷᛝᚩᚻᚠᛚᛗᚩᛚᛈᛟᛖᛁᚦᛖᛁᛟᚪᚦᛞᛚᛝᚪᛁᛇᛖᚪᚱᚪᚦᚣᛈᚢᚳᛏᛖᛉᚾᛄᚩᚾᚦᛖᛖᛠᚦᛏᛒᚩᚩᚳᚢᚷᚳᛈᛞᛏᚪᛒᛉᚳᛒᛁᚾᚣᚦᚪᛁᛄᚣᚫᚻᚹᚳᛄᛈᛇᛋᚳᚳᛝᛄᛟᛁᚻᛏᚳᛄᚣᚹᚾᛁᚳᚻᚾᚫᛉᛁᚦᛠᛞᛡᛞᚷᚩᛖᚣᚳᚩᚪᚠᛄᚹᚷᚩᚻᛉᚩᚫᚢᛚᛝᚩᛈᚾᛠᛏᛒᚳᛖᚩᛚᚱᛋᚫᚪᚢᛏᛇᛟᛋᚣᚳᚠᛈᛟᚻᛉᛞᛇᚩᛋᛚᛞᛇᛗᚱᚣᛖᛉᛖᛁᚳᚻᛄ",
+          "transliteration": "FXWJMAELNEOCBIEOAERUBNTHEPAEMCOEHAILJFGMPANIEOEOOEOXSFGNGNRIEONNEAPWNSUAEPSHYFIAUAECHEAEOIASHYEEEAWAEREAIATMEAUEAEOPIAFWOAECIFCFAELMRCUGNGOHFLMOLPOEEITHEIOEATHDLNGAIEOEARATHYPUCTEXNJONTHEEEATHTBOOCUGCPDTABXCBINYTHAIJYAEHWCJPEOSCCNGJOEIHTCJYWNICHNAEXITHEADIADGOEYCOAFJWGOHXOAEULNGOPNEATBCEOLRSAEAUTEOOESYCFPOEHXDEOOSLDEOMRYEXEICHJ"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.417989240698322,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-43",
+      "status": "unverified_screen",
+      "runes": 274,
+      "variants": 3016,
+      "top": [
+        {
+          "score": -10.452105759844324,
+          "recipe": {
+            "family": "affine",
+            "a": 6,
+            "b": 0
+          },
+          "plaintext_runes": "ᛗᚻᚦᛝᚾᛒᚹᚦᛖᚫᚢᚷᚳᛡᛚᚩᛠᛒᚹᚱᛄᛈᛏᚠᚷᚣᚠᚳᛟᚠᛒᚻᚫᛗᚩᛇᚠᚾᚠᚻᚪᛈᚠᚩᚫᛈᚻᛝᛋᚷᛇᛖᛉᚳᛚᛒᛏᚷᚦᛖᚻᛖᛉᛏᚻᛟᛖᛚᛈᛟᚹᚪᚠᛏᛉᚹᚻᛏᛉᚳᚩᚳᛄᛋᚾᛟᛏᛞᛗᛒᚪᛞᛞᚣᚩᚠᚫᛄᚪᚠᛠᚫᛒᛠᛝᚳᚢᛉᚦᛁᛋᛒᛟᛞᚳᛋᛞᚢᚣᚠᚳᚾᚦᚪᛠᛡᛖᚱᚣᚩᛠᛋᛖᛚᚳᛖᛁᛗᛉᛝᛉᚳᛗᛝᛉᛞᚪᛡᛟᚳᛉᛡᚫᚫᛄᛒᚪᚫᛡᛞᚻᚣᚩᚻᛏᛝᛋᚾᛗᚫᚠᛠᚠᛋᚫᛖᚫᛝᚩᚾᛋᛈᛒᛗᚾᛖᛏᛖᛋᚫᛝᚢᚦᛈᛄᛏᛏᛖᛋᚩᛝᛖᚳᛗᛏᚠᚳᚹᛖᚻᛏᛋᛗᚢᛝᚦᚱᚳᛄᚱᚷᚱᚦᚫᛏᚾᚳᛚᛏᛚᛁᛡᚢᚷᚦᛄᚩᚢᚷᛒᛉᛖᚠᛝᚹᛏᛗᚳᛁᚠᛡᚠᛁᚣᛟᚦᛡᛁᛄᛠᛁᚠᚣᚦᛏᚹᚱᛉᛖᚳᛒᚾᚻᚾ",
+          "transliteration": "MHTHNGNBWTHEAEUGCIALOEABWRJPTFGYFCOEFBHAEMOEOFNFHAPFOAEPHNGSGEOEXCLBTGTHEHEXTHOEELPOEWAFTXWHTXCOCJSNOETDMBADDYOFAEJAFEAAEBEANGCUXTHISBOEDCSDUYFCNTHAEAIAERYOEASELCEIMXNGXCMNGXDAIAOECXIAAEAEJBAAEIADHYOHTNGSNMAEFEAFSAEEAENGONSPBMNETESAENGUTHPJTTESONGECMTFCWEHTSMUNGTHRCJRGRTHAETNCLTLIIAUGTHJOUGBXEFNGWTMCIFIAFIYOETHIAIJEAIFYTHTWRXECBNHN"
+        },
+        {
+          "score": -10.456950913386292,
+          "recipe": {
+            "family": "affine",
+            "a": 3,
+            "b": 19
+          },
+          "plaintext_runes": "ᛉᛞᛚᛋᚾᛈᚻᛚᛠᛒᚳᛟᚹᛖᚠᚷᚱᛈᚻᛝᛁᛄᛡᛗᛟᚩᛗᚹᚢᛗᛈᛞᛒᛉᚷᚫᛗᚾᛗᛞᚦᛄᛗᚷᛒᛄᛞᛋᛇᛟᚫᛠᚣᚹᚠᛈᛡᛟᛚᛠᛞᛠᚣᛡᛞᚢᛠᚠᛄᚢᚻᚦᛗᛡᚣᚻᛞᛡᚣᚹᚷᚹᛁᛇᚾᚢᛡᛏᛉᛈᚦᛏᛏᚩᚷᛗᛒᛁᚦᛗᚱᛒᛈᚱᛋᚹᚳᚣᛚᚪᛇᛈᚢᛏᚹᛇᛏᚳᚩᛗᚹᚾᛚᚦᚱᛖᛠᛝᚩᚷᚱᛇᛠᚠᚹᛠᚪᛉᚣᛋᚣᚹᛉᛋᚣᛏᚦᛖᚢᚹᚣᛖᛒᛒᛁᛈᚦᛒᛖᛏᛞᚩᚷᛞᛡᛋᛇᚾᛉᛒᛗᚱᛗᛇᛒᛠᛒᛋᚷᚾᛇᛄᛈᛉᚾᛠᛡᛠᛇᛒᛋᚳᛚᛄᛁᛡᛡᛠᛇᚷᛋᛠᚹᛉᛡᛗᚹᚻᛠᛞᛡᛇᛉᚳᛋᛚᛝᚹᛁᛝᛟᛝᛚᛒᛡᚾᚹᚠᛡᚠᚪᛖᚳᛟᛚᛁᚷᚳᛟᛈᚣᛠᛗᛋᚻᛡᛉᚹᚪᛗᛖᛗᚪᚩᚢᛚᛖᚪᛁᚱᚪᛗᚩᛚᛡᚻᛝᚣᛠᚹᛈᚾᛞᚾ",
+          "transliteration": "XDLSNPHLEABCOEWEFGRPHNGIJIAMOEOMWUMPDBXGAEMNMDTHJMGBJDSEOOEAEEAYWFPIAOELEADEAYIADUEAFJUHTHMIAYHDIAYWGWIEONUIATXPTHTTOGMBITHMRBPRSWCYLAEOPUTWEOTCOMWNLTHREEANGOGREOEAFWEAAXYSYWXSYTTHEUWYEBBIPTHBETDOGDIASEONXBMRMEOBEABSGNEOJPXNEAIAEAEOBSCLJIIAIAEAEOGSEAWXIAMWHEADIAEOXCSLNGWINGOENGLBIANWFIAFAECOELIGCOEPYEAMSHIAXWAMEMAOULEAIRAMOLIAHNGYEAWPNDN"
+        },
+        {
+          "score": -10.463438917797243,
+          "recipe": {
+            "family": "affine",
+            "a": 3,
+            "b": 16
+          },
+          "plaintext_runes": "ᛄᛚᛒᛇᚷᛁᚳᛒᚫᛉᚦᛗᚱᛋᚣᚩᚢᛁᚳᛖᚹᚻᚪᛏᛗᚠᛏᚱᛡᛏᛁᛚᛉᛄᚩᛟᛏᚷᛏᛚᛠᚻᛏᚩᛉᚻᛚᛇᚾᛗᛟᚫᛞᚱᚣᛁᚪᛗᛒᚫᛚᚫᛞᚪᛚᛡᚫᚣᚻᛡᚳᛠᛏᚪᛞᚳᛚᚪᛞᚱᚩᚱᚹᚾᚷᛡᚪᛈᛄᛁᛠᛈᛈᚠᚩᛏᛉᚹᛠᛏᚢᛉᛁᚢᛇᚱᚦᛞᛒᛝᚾᛁᛡᛈᚱᚾᛈᚦᚠᛏᚱᚷᛒᛠᚢᛋᚫᛖᚠᚩᚢᚾᚫᚣᚱᚫᛝᛄᛞᛇᛞᚱᛄᛇᛞᛈᛠᛋᛡᚱᛞᛋᛉᛉᚹᛁᛠᛉᛋᛈᛚᚠᚩᛚᚪᛇᚾᚷᛄᛉᛏᚢᛏᚾᛉᚫᛉᛇᚩᚷᚾᚻᛁᛄᚷᚫᚪᚫᚾᛉᛇᚦᛒᚻᚹᚪᚪᚫᚾᚩᛇᚫᚱᛄᚪᛏᚱᚳᚫᛚᚪᚾᛄᚦᛇᛒᛖᚱᚹᛖᛗᛖᛒᛉᚪᚷᚱᚣᚪᚣᛝᛋᚦᛗᛒᚹᚩᚦᛗᛁᛞᚫᛏᛇᚳᚪᛄᚱᛝᛏᛋᛏᛝᚠᛡᛒᛋᛝᚹᚢᛝᛏᚠᛒᚪᚳᛖᛞᚫᚱᛁᚷᛚᚷ",
+          "transliteration": "JLBEOGICBAEXTHMRSYOUICEWHATMFTRIATILXJOOETGTLEAHTOXHLEONMOEAEDRYIAMBAELAEDALIAAEYHIACEATADCLADRORWNGIAAPJIEAPPFOTXWEATUXIUEORTHDBNGNIIAPRNPTHFTRGBEAUSAEEFOUNAEYRAENGJDEODRJEODPEASIARDSXXWIEAXSPLFOLAEONGJXTUTNXAEXEOOGNHIJGAEAAENXEOTHBHWAAAENOEOAERJATRCAELANJTHEOBERWEMEBXAGRYAYNGSTHMBWOTHMIDAETEOCAJRNGTSTNGFIABSNGWUNGTFBACEDAERIGLG"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.386457152965681,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-44",
+      "status": "unverified_screen",
+      "runes": 273,
+      "variants": 2436,
+      "top": [
+        {
+          "score": -10.439582641871372,
+          "recipe": {
+            "family": "affine",
+            "a": 4,
+            "b": 9
+          },
+          "plaintext_runes": "ᚳᛈᚱᛒᚣᛒᛏᛁᚣᛝᛞᛇᛚᛄᛞᚣᛒᛖᚢᚷᛁᛠᚦᚢᛋᚷᛚᚦᚾᚹᚢᚳᛋᚾᛏᚪᚾᛇᚠᛇᛉᚳᚣᛁᚷᚹᛠᛇᛝᛄᛇᛠᛋᚾᚦᚫᛠᛒᛖᛚᛚᛗᚾᛚᚦᚪᚢᛗᚣᛡᛟᛟᛉᛇᛁᛖᚻᚹᚦᛋᛚᛖᛁᛉᛞᛏᚩᛇᚣᛒᚦᛞᛄᛞᛁᛟᛞᛋᚫᛖᛚᛟᚻᛟᛄᚩᚫᚪᚢᛖᛋᛟᛒᚾᚳᛈᚩᚣᛟᚷᚣᛏᛇᚢᚠᛡᚾᛏᛉᚪᛞᛝᛗᚱᛇᛖᛞᛉᛁᚾᛠᛉᛁᚩᚠᛚᛖᛗᚱᛗᚩᛁᛁᚪᚾᛖᛞᚪᚣᛝᚪᚣᛟᛄᛒᛚᛟᚪᛟᛋᛞᛠᛇᛁᚣᚾᚻᛉᚱᚢᚫᛗᛈᛗᚦᛈᚱᚩᚪᛖᛋᚢᚠᚪᚾᚢᚷᚦᚣᛗᛡᛇᚫᚦᛁᚳᛄᛒᚷᛋᚠᛁᚹᛚᚪᚫᚠᛞᛋᚪᚱᚢᚩᛋᚹᛝᛚᚪᛁᚱᛝᛖᛈᚣᛞᛖᛄᛁᛠᛈᛖᚢᛡᚫᚦᚠᚾᛗᛡᚷᛇᚹᚳᚪᛟᚹᛖᚱᛇᚣᛋᛞᚷᚹᚹᛡᛏᛟᛄᚫᛡᛉᛄ",
+          "transliteration": "CPRBYBTIYNGDEOLJDYBEUGIEATHUSGLTHNWUCSNTANEOFEOXCYIGWEAEONGJEOEASNTHAEEABELLMNLTHAUMYIAOEOEXEOIEHWTHSLEIXDTOEOYBTHDJDIOEDSAEELOEHOEJOAEAUESOEBNCPOYOEGYTEOUFIANTXADNGMREOEDXINEAXIOFLEMRMOIIANEDAYNGAYOEJBLOEAOESDEAEOIYNHXRUAEMPMTHPROAESUFANUGTHYMIAEOAETHICJBGSFIWLAAEFDSARUOSWNGLAIRNGEPYDEJIEAPEUIAAETHFNMIAGEOWCAOEWEREOYSDGWWIATOEJAEIAXJ"
+        },
+        {
+          "score": -10.451589592403106,
+          "recipe": {
+            "family": "affine",
+            "a": 17,
+            "b": 13
+          },
+          "plaintext_runes": "ᚫᚢᛠᛖᛚᛖᛝᛁᛚᚷᚠᚱᚾᚹᚠᛚᛖᛋᚻᛟᛁᛉᚳᚻᚪᛟᚾᚳᛈᛗᚻᚫᚪᛈᛝᚣᛈᚱᛄᚱᛡᚫᛚᛁᛟᛗᛉᚱᚷᚹᚱᛉᚪᛈᚳᛞᛉᛖᛋᚾᚾᛇᛈᚾᚳᚣᚻᛇᛚᛒᚩᚩᛡᚱᛁᛋᛏᛗᚳᚪᚾᛋᛁᛡᚠᛝᚦᚱᛚᛖᚳᚠᚹᚠᛁᚩᚠᚪᛞᛋᚾᚩᛏᚩᚹᚦᛞᚣᚻᛋᚪᚩᛖᛈᚫᚢᚦᛚᚩᛟᛚᛝᚱᚻᛄᛒᛈᛝᛡᚣᚠᚷᛇᛠᚱᛋᚠᛡᛁᛈᛉᛡᛁᚦᛄᚾᛋᛇᛠᛇᚦᛁᛁᚣᛈᛋᚠᚣᛚᚷᚣᛚᚩᚹᛖᚾᚩᚣᚩᚪᚠᛉᚱᛁᛚᛈᛏᛡᛠᚻᛞᛇᚢᛇᚳᚢᛠᚦᚣᛋᚪᚻᛄᚣᛈᚻᛟᚳᛚᛇᛒᚱᛞᚳᛁᚫᚹᛖᛟᚪᛄᛁᛗᚾᚣᛞᛄᚠᚪᚣᛠᚻᚦᚪᛗᚷᚾᚣᛁᛠᚷᛋᚢᛚᚠᛋᚹᛁᛉᚢᛋᚻᛒᛞᚳᛄᛈᛇᛒᛟᚱᛗᚫᚣᚩᛗᛋᛠᚱᛚᚪᚠᛟᛗᛗᛒᛝᚩᚹᛞᛒᛡᚹ",
+          "transliteration": "AEUEAELENGILGFRNWFLESHOEIXCHAOENCPMHAEAPNGYPRJRIAAELIOEMXRGWRXAPCDXESNNEOPNCYHEOLBOOIARISTMCANSIIAFNGTHRLECFWFIOFADSNOTOWTHDYHSAOEPAEUTHLOOELNGRHJBPNGIAYFGEOEARSFIAIPXIAITHJNSEOEAEOTHIIYPSFYLGYLOWENOYOAFXRILPTIAEAHDEOUEOCUEATHYSAHJYPHOECLEOBRDCIAEWEOEAJIMNYDJFAYEAHTHAMGNYIEAGSULFSWIXUSHBDCJPEOBOERMAEYOMSEARLAFOEMMBNGOWDBIAW"
+        },
+        {
+          "score": -10.454340669887934,
+          "recipe": {
+            "family": "affine",
+            "a": 27,
+            "b": 10
+          },
+          "plaintext_runes": "ᛇᚻᛡᚷᛏᚷᛝᚪᛏᚱᚩᛞᛗᚾᚩᛏᚷᛚᛉᚣᚪᛋᛠᛉᚹᚣᛗᛠᛁᛄᛉᛇᚹᛁᛝᛒᛁᛞᚠᛞᛟᛇᛏᚪᚣᛄᛋᛞᚱᚾᛞᛋᚹᛁᛠᚦᛋᚷᛚᛗᛗᚳᛁᛗᛠᛒᛉᚳᛏᚢᛖᛖᛟᛞᚪᛚᚫᛄᛠᚹᛗᛚᚪᛟᚩᛝᛈᛞᛏᚷᛠᚩᚾᚩᚪᛖᚩᚹᚦᛚᛗᛖᚫᛖᚾᛈᚦᛒᛉᛚᚹᛖᚷᛁᛇᚻᛈᛏᛖᚣᛏᛝᛞᛉᚠᚢᛁᛝᛟᛒᚩᚱᚳᛡᛞᛚᚩᛟᚪᛁᛋᛟᚪᛈᚠᛗᛚᚳᛡᚳᛈᚪᚪᛒᛁᛚᚩᛒᛏᚱᛒᛏᛖᚾᚷᛗᛖᛒᛖᚹᚩᛋᛞᚪᛏᛁᚫᛟᛡᛉᚦᚳᚻᚳᛠᚻᛡᛈᛒᛚᚹᛉᚠᛒᛁᛉᚣᛠᛏᚳᚢᛞᚦᛠᚪᛇᚾᚷᚣᚹᚠᚪᛄᛗᛒᚦᚠᚩᚹᛒᛡᛉᛈᚹᛄᚱᛗᛒᚪᛡᚱᛚᚻᛏᚩᛚᚾᚪᛋᚻᛚᛉᚢᚦᛠᚠᛁᚳᚢᚣᛞᛄᛇᛒᛖᛄᛚᛡᛞᛏᚹᚩᚣᛄᛄᚢᛝᛖᚾᚦᚢᛟᚾ",
+          "transliteration": "EOHIAGTGNGATRODMNOTGLXYASEAXWYMEAIJXEOWINGBIDFDOEEOTAYJSDRNDSWIEATHSGLMMCIMEABXCTUEEOEDALAEJEAWMLAOEONGPDTGEAONOAEOWTHLMEAEENPTHBXLWEGIEOHPTEYTNGDXFUINGOEBORCIADLOOEAISOEAPFMLCIACPAABILOBTRBTENGMEBEWOSDATIAEOEIAXTHCHCEAHIAPBLWXFBIXYEATCUDTHEAAEONGYWFAJMBTHFOWBIAXPWJRMBAIARLHTOLNASHLXUTHEAFICUYDJEOBEJLIADTWOYJJUNGENTHUOEN"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.426715782799452,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-45",
+      "status": "unverified_screen",
+      "runes": 270,
+      "variants": 1972,
+      "top": [
+        {
+          "score": -10.42164312701668,
+          "recipe": {
+            "family": "affine",
+            "a": 1,
+            "b": 28
+          },
+          "plaintext_runes": "ᚱᚢᛗᛝᛚᛄᚠᚹᚦᛋᚠᚾᚢᛁᚻᛠᚩᚢᛉᛝᚳᛡᛖᛞᛚᛗᛞᚾᛏᛡᚠᛉᚦᛒᛉᛚᛠᚣᚠᛝᛟᛄᛞᛟᚣᛏᚷᚦᛁᛉᛝᛚᛋᚱᚹᚻᛄᛉᛖᛗᚹᛟᛒᛇᚪᛁᚩᛞᚠᚹᚩᚢᚩᛝᛁᛝᛖᚦᛝᛋᚪᛄᛈᛏᚱᛁᚾᛞᚦᛈᚷᛞᚻᛇᛋᚠᚫᚾᛏᚠᚢᚦᚣᛖᚱᛠᛈᚩᚾᛞᛖᛋᛏᛖᛗᚾᚢᛋᛡᛉᚻᚳᛗᛋᛄᛇᚦᛗᛟᛗᚷᚱᛁᚷᛈᛞᚣᚷᛄᛒᛒᚷᛋᛞᚫᛠᛈᚱᛖᚦᚳᛟᚳᛗᚱᛏᚫᛉᚫᛠᛟᚫᛚᛡᛄᛋᚦᚠᚪᛝᚾᛏᛋᚻᚪᛠᛁᛝᛖᚻᛇᛡᚣᚦᛋᚣᛞᚩᛟᛞᛚᛇᚷᛖᛁᛝᛡᚦᛗᚷᛈᚩᛖᚦᛋᚷᛁᚷᚻᚳᚱᛡᛁᚱᚠᚩᛝᛄᛝᚻᚹᚪᛈᚫᛗᚦᚦᚣᚱᚹᛁᛉᚫᚷᚾᚫᛠᛉᚻᛞᚳᛒᚻᛁᛞᚷᛡᛟᛠᛝᚠᚾᛒᛄᚢᚪᛟᚱᛁᚳᚠᚹᚫᚹᚾᛏᛈᚻᚷᛚ",
+          "transliteration": "RUMNGLJFWTHSFNUIHEAOUXNGCIAEDLMDNTIAFXTHBXLEAYFNGOEJDOEYTGTHIXNGLSRWHJXEMWOEBEOAIODFWOUONGINGETHNGSAJPTRINDTHPGDHEOSFAENTFUTHYEREAPONDESTEMNUSIAXHCMSJEOTHMOEMGRIGPDYGJBBGSDAEEAPRETHCOECMRTAEXAEEAOEAELIAJSTHFANGNTSHAEAINGEHEOIAYTHSYDOOEDLEOGEINGIATHMGPOETHSGIGHCRIAIRFONGJNGHWAPAEMTHTHYRWIXAEGNAEEAXHDCBHIDGIAOEEANGFNBJUAOERICFWAEWNTPHGL"
+        },
+        {
+          "score": -10.429371658384133,
+          "recipe": {
+            "family": "affine",
+            "a": 10,
+            "b": 15
+          },
+          "plaintext_runes": "ᚹᚷᛇᚩᛟᛗᚫᚻᛏᚢᚫᛠᚷᚾᛖᛋᚣᚷᛚᚩᛒᚳᚦᛞᛟᛇᛞᛠᛄᚳᚫᛚᛏᛝᛚᛟᛋᚪᚫᚩᛈᛗᛞᛈᚪᛄᛡᛏᚾᛚᚩᛟᚢᚹᚻᛖᛗᛚᚦᛇᚻᛈᛝᚠᚱᚾᚣᛞᚫᚻᚣᚷᚣᚩᚾᚩᚦᛏᚩᚢᚱᛗᛁᛄᚹᚾᛠᛞᛏᛁᛡᛞᛖᚠᚢᚫᛉᛠᛄᚫᚷᛏᚪᚦᚹᛋᛁᚣᛠᛞᚦᚢᛄᚦᛇᛠᚷᚢᚳᛚᛖᛒᛇᚢᛗᚠᛏᛇᛈᛇᛡᚹᚾᛡᛁᛞᚪᛡᛗᛝᛝᛡᚢᛞᛉᛋᛁᚹᚦᛏᛒᛈᛒᛇᚹᛄᛉᛚᛉᛋᛈᛉᛟᚳᛗᚢᛏᚫᚱᚩᛠᛄᚢᛖᚱᛋᚾᚩᚦᛖᚠᚳᚪᛏᚢᚪᛞᚣᛈᛞᛟᚠᛡᚦᚾᚩᚳᛏᛇᛡᛁᚣᚦᛏᚢᛡᚾᛡᛖᛒᚹᚳᚾᚹᚫᚣᚩᛗᚩᛖᚻᚱᛁᛉᛇᛏᛏᚪᚹᚻᚾᛚᛉᛡᛠᛉᛋᛚᛖᛞᛒᛝᛖᚾᛞᛡᚳᛈᛋᚩᚫᛠᛝᛗᚷᚱᛈᚹᚾᛒᚫᚻᛉᚻᛠᛄᛁᛖᛡᛟ",
+          "transliteration": "WGEOOOEMAEHTUAEEAGNESYGLOBCTHDOEEODEAJCAELTNGLOESAAEOPMDPAJIATNLOOEUWHEMLTHEOHPNGFRNYDAEHYGYONOTHTOURMIJWNEADTIIADEFUAEXEAJAEGTATHWSIYEADTHUJTHEOEAGUCLEBEOUMFTEOPEOIAWNIAIDAIAMNGNGIAUDXSIWTHTBPBEOWJXLXSPXOECMUTAEROEAJUERSNOTHEFCATUADYPDOEFIATHNOCTEOIAIYTHTUIANIAEBWCNWAEYOMOEHRIXEOTTAWHNLXIAEAXSLEDBNGENDIACPSOAEEANGMGRPWNBAEHXHEAJIEIAOE"
+        },
+        {
+          "score": -10.448875382652458,
+          "recipe": {
+            "family": "affine",
+            "a": 8,
+            "b": 25
+          },
+          "plaintext_runes": "ᚹᛇᛄᛡᛗᚳᚱᚦᛚᚻᚱᛖᛇᚣᛁᚫᛠᛇᚠᛡᛋᛒᚩᛉᛗᛄᛉᛖᛏᛒᚱᚠᛚᚪᚠᛗᚫᚾᚱᛡᚷᚳᛉᚷᚾᛏᛞᛚᚣᚠᛡᛗᚻᚹᚦᛁᚳᚠᚩᛄᚦᚷᚪᛈᛟᚣᛠᛉᚱᚦᛠᛇᛠᛡᚣᛡᚩᛚᛡᚻᛟᚳᛝᛏᚹᚣᛖᛉᛚᛝᛞᛉᛁᛈᚻᚱᚢᛖᛏᚱᛇᛚᚾᚩᚹᚫᛝᛠᛖᛉᚩᚻᛏᚩᛄᛖᛇᚻᛒᚠᛁᛋᛄᚻᚳᛈᛚᛄᚷᛄᛞᚹᚣᛞᛝᛉᚾᛞᚳᚪᚪᛞᚻᛉᚢᚫᛝᚹᚩᛚᛋᚷᛋᛄᚹᛏᚢᚠᚢᚫᚷᚢᛗᛒᚳᚻᛚᚱᛟᛡᛖᛏᚻᛁᛟᚫᚣᛡᚩᛁᛈᛒᚾᛚᚻᚾᛉᛠᚷᛉᛗᛈᛞᚩᚣᛡᛒᛚᛄᛞᛝᛠᚩᛚᚻᛞᚣᛞᛁᛋᚹᛒᚣᚹᚱᛠᛡᚳᛡᛁᚦᛟᛝᚢᛄᛚᛚᚾᚹᚦᚣᚠᚢᛞᛖᚢᚫᚠᛁᛉᛋᚪᛁᚣᛉᛞᛒᚷᚫᛡᚱᛖᚪᚳᛇᛟᚷᚹᚣᛋᚱᚦᚢᚦᛖᛏᛝᛁᛞᛗ",
+          "transliteration": "WEOJIAMCRTHLHREEOYIAEEAEOFIASBOXMJXETBRFLAFMAENRIAGCXGNTDLYFIAMHWTHICFOJTHGAPOEYEAXRTHEAEOEAIAYIAOLIAHOECNGTWYEXLNGDXIPHRUETREOLNOWAENGEAEXOHTOJEEOHBFISJHCPLJGJDWYDNGXNDCAADHXUAENGWOLSGSJWTUFUAEGUMBCHLROEIAETHIOEAEYIAOIPBNLHNXEAGXMPDOYIABLJDNGEAOLHDYDISWBYWREAIACIAITHOENGUJLLNWTHYFUDEUAEFIXSAIYXDBGAEIAREACEOOEGWYSRTHUTHETNGIDM"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.421004389590477,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-46",
+      "status": "unverified_screen",
+      "runes": 270,
+      "variants": 2088,
+      "top": [
+        {
+          "score": -10.413979690476483,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 12,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [
+              8
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚩᚣᚩᛡᛗᛚᚹᛖᚠᛏᚪᚾᛚᚦᛝᚦᚠᚹᛉᚣᛚᚢᚢᛚᛉᛒᛚᛝᚪᛁᛉᛁᚾᛁᛖᛖᛠᚾᛠᚱᛋᛗᚱᚣᚾᛝᚱᚳᛒᛋᛋᛗᛈᛗᚳᛟᚠᚩᛁᛒᛋᛇᚹᛒᚹᛖᚪᚾᛁᚪᛚᛁᛋᚢᚷᚣᚾᚹᚢᚹᚾᛞᚪᛡᛟᚢᚪᚪᚪᚹᛇᚻᛖᛁᚫᛄᛝᛠᚦᛏᚢᛄᛉᛞᛚᛞᛈᛁᛖᛖᛏᛚᛖᚻᚪᛞᚷᚠᛠᚠᛇᛞᛏᚢᚦᚱᛉᚢᚫᚱᚾᛞᚢᛗᛉᛇᛉᚢᚹᚱᚱᚱᛚᛡᛇᛋᚦᛚᚫᚻᛁᚷᛇᛡᚳᛏᛡᛗᚱᛖᚩᛝᛄᛞᚢᚦᚩᛞᚻᛒᚦᚪᛝᛄᛈᛗᛠᚢᛟᚱᛄᛇᛖᛒᚩᛡᚢᚠᚪᛝᚳᚠᛄᚻᛋᚪᚱᛈᚱᛖᚹᚻᚣᛚᛁᚹᛈᛉᛠᛏᚱᚩᚢᛄᛞᚠᚹᚩᛝᛉᚷᚱᛡᛡᚷᛖᛗᚻᛁᛇᛄᚪᛏᚻᚪᛠᛇᚩᚢᛝᛝᛄᛒᚠᛇᚠᚱᛟᚫᚣᛖᛇᚢᚩᛄᚷᛝᚣᚪᚢᚱᚳᚣᛏᛞᛇᛝᛗᛇᛠ",
+          "transliteration": "OYOIAMLWEFTANLTHNGTHFWXYLUULXBLNGAIXINIEEEANEARSMRYNNGRCBSSMPMCOEFOIBSEOWBWEANIALISUGYNWUWNDAIAOEUAAAWEOHEIAEJNGEATHTUJXDLDPIEETLEHADGFEAFEODTUTHRXUAERNDUMXEOXUWRRRLIAEOSTHLAEHIGEOIACTIAMREONGJDUTHODHBTHANGJPMEAUOERJEOEBOIAUFANGCFJHSARPREWHYLIWPXEATROUJDFWONGXGRIAIAGEMHIEOJATHAEAEOOUNGNGJBFEOFROEAEYEEOUOJGNGYAURCYTDEONGMEOEA"
+        },
+        {
+          "score": -10.43670000717591,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 11,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛠᚪᛠᛝᛈᛖᚢᛉᛇᛏᚪᚾᛚᚦᛝᚦᚠᚹᛉᚣᛚᚢᚢᛚᛉᛒᛚᛝᚪᛁᛉᛁᚾᛁᛖᛖᛠᚾᛠᚱᛋᛗᚱᚣᚾᛝᚱᚳᛒᛋᛋᛗᛈᛗᚳᛟᚠᚩᛁᛒᛋᛇᚹᛒᚹᛖᚪᚾᛁᚪᛚᛁᛋᚢᚷᚣᚾᚹᚢᚹᚾᛞᚪᛡᛟᚢᚪᚪᚪᚹᛇᚻᛖᛁᚫᛄᛝᛠᚦᛏᚢᛄᛉᛞᛚᛞᛈᛁᛖᛖᛏᛚᛖᚻᚪᛞᚷᚠᛠᚠᛇᛞᛏᚢᚦᚱᛉᚢᚫᚱᚾᛞᚢᛗᛉᛇᛉᚢᚹᚱᚱᚱᛚᛡᛇᛋᚦᛚᚫᚻᛁᚷᛇᛡᚳᛏᛡᛗᚱᛖᚩᛝᛄᛞᚢᚦᚩᛞᚻᛒᚦᚪᛝᛄᛈᛗᛠᚢᛟᚱᛄᛇᛖᛒᚩᛡᚢᚠᚪᛝᚳᚠᛄᚻᛋᚪᚱᛈᚱᛖᚹᚻᚣᛚᛁᚹᛈᛉᛠᛏᚱᚩᚢᛄᛞᚠᚹᚩᛝᛉᚷᚱᛡᛡᚷᛖᛗᚻᛁᛇᛄᚪᛏᚻᚪᛠᛇᚩᚢᛝᛝᛄᛒᚠᛇᚠᚱᛟᚫᚣᛖᛇᚢᚩᛄᚷᛝᚣᚪᚢᚱᚳᚣᛏᛞᛇᛝᛗᛇᛠ",
+          "transliteration": "EAAEANGPEUXEOTANLTHNGTHFWXYLUULXBLNGAIXINIEEEANEARSMRYNNGRCBSSMPMCOEFOIBSEOWBWEANIALISUGYNWUWNDAIAOEUAAAWEOHEIAEJNGEATHTUJXDLDPIEETLEHADGFEAFEODTUTHRXUAERNDUMXEOXUWRRRLIAEOSTHLAEHIGEOIACTIAMREONGJDUTHODHBTHANGJPMEAUOERJEOEBOIAUFANGCFJHSARPREWHYLIWPXEATROUJDFWONGXGRIAIAGEMHIEOJATHAEAEOOUNGNGJBFEOFROEAEYEEOUOJGNGYAURCYTDEONGMEOEA"
+        },
+        {
+          "score": -10.43670000717591,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 11,
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "skip_positions": [
+              268
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛠᚪᛠᛝᛈᛖᚢᛉᛇᛏᚪᚾᛚᚦᛝᚦᚠᚹᛉᚣᛚᚢᚢᛚᛉᛒᛚᛝᚪᛁᛉᛁᚾᛁᛖᛖᛠᚾᛠᚱᛋᛗᚱᚣᚾᛝᚱᚳᛒᛋᛋᛗᛈᛗᚳᛟᚠᚩᛁᛒᛋᛇᚹᛒᚹᛖᚪᚾᛁᚪᛚᛁᛋᚢᚷᚣᚾᚹᚢᚹᚾᛞᚪᛡᛟᚢᚪᚪᚪᚹᛇᚻᛖᛁᚫᛄᛝᛠᚦᛏᚢᛄᛉᛞᛚᛞᛈᛁᛖᛖᛏᛚᛖᚻᚪᛞᚷᚠᛠᚠᛇᛞᛏᚢᚦᚱᛉᚢᚫᚱᚾᛞᚢᛗᛉᛇᛉᚢᚹᚱᚱᚱᛚᛡᛇᛋᚦᛚᚫᚻᛁᚷᛇᛡᚳᛏᛡᛗᚱᛖᚩᛝᛄᛞᚢᚦᚩᛞᚻᛒᚦᚪᛝᛄᛈᛗᛠᚢᛟᚱᛄᛇᛖᛒᚩᛡᚢᚠᚪᛝᚳᚠᛄᚻᛋᚪᚱᛈᚱᛖᚹᚻᚣᛚᛁᚹᛈᛉᛠᛏᚱᚩᚢᛄᛞᚠᚹᚩᛝᛉᚷᚱᛡᛡᚷᛖᛗᚻᛁᛇᛄᚪᛏᚻᚪᛠᛇᚩᚢᛝᛝᛄᛒᚠᛇᚠᚱᛟᚫᚣᛖᛇᚢᚩᛄᚷᛝᚣᚪᚢᚱᚳᚣᛏᛞᛇᛝᛗᚠᛏ",
+          "transliteration": "EAAEANGPEUXEOTANLTHNGTHFWXYLUULXBLNGAIXINIEEEANEARSMRYNNGRCBSSMPMCOEFOIBSEOWBWEANIALISUGYNWUWNDAIAOEUAAAWEOHEIAEJNGEATHTUJXDLDPIEETLEHADGFEAFEODTUTHRXUAERNDUMXEOXUWRRRLIAEOSTHLAEHIGEOIACTIAMREONGJDUTHODHBTHANGJPMEAUOERJEOEBOIAUFANGCFJHSARPREWHYLIWPXEATROUJDFWONGXGRIAIAGEMHIEOJATHAEAEOOUNGNGJBFEOFROEAEYEEOUOJGNGYAURCYTDEONGMFT"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.402870151913351,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-47",
+      "status": "unverified_screen",
+      "runes": 274,
+      "variants": 2088,
+      "top": [
+        {
+          "score": -10.402126991021744,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 11,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              64
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛝᛠᛖᚠᚳᛚᚠᚣᛄᚫᛝᚳᚠᚳᚦᛠᛚᛁᚠᚳᚳᛄᛉᛁᛇᚱᛠᚱᛄᚠᚱᛋᛞᚳᚾᛈᚻᛈᚳᚩᚾᚫᛖᚢᛏᚠᛖᚩᚩᛗᚫᛁᛡᛁᛝᛏᛖᛡᚠᚳᚣᚱᛝᚪᚠᚷᚫᚾᚻᛝᛡᛄᚻᛇᛇᛠᚠᚩᛟᚳᚪᛒᛉᛇᚢᛗᚠᚳᛇᛡᚣᛋᚪᚷᛡᛒᚹᚹᛝᚱᛝᛒᚾᚢᚱᚾᛉᚾᚪᚾᚦᛁᚣᚦᚷᛝᚪᚱᚳᛞᛉᛇᚩᛏᚾᚾᚦᚦᚱᛡᛖᚳᚻᚪᚣᚠᛟᛉᛚᚱᛋᛇᛇᚩᛁᛏᚢᛝᚹᛝᛇᛇᚪᛈᛖᛄᚩᛒᛚᛈᚳᚱᛟᛏᛄᛉᛁᚾᛉᛚᛈᛡᚦᚦᛡᛋᛄᛒᚳᛟᚩᛝᚳᚣᛈᚦᚦᛖᛗᛖᛋᛏᚩᛒᛁᛠᚪᛄᛉᚠᛒᚷᚩᚢᛁᛝᛡᚱᚹᛖᛞᚣᛠᛄᛚᚳᛁᛏᚪᛇᚣᚻᛇᛁᚠᛉᚱᛚᛖᚣᛏᛝᚣᛋᛋᛞᛡᛏᚷᛗᛖᛏᚫᚪᛏᛝᚳᛚᛉᚫᚣᛗᛚᚦᚫᚦᚦᚦᚢᛖᚾᚳᛚᚢᚣᛉᚣᛁᚷᛟᚠᚠᚳᛝ",
+          "transliteration": "NGEAEFCLFYJAENGCFCTHEALIFCCJXIEOREARJFRSDCNPHPCONAEEUTFEOOMAEIIAINGTEIAFCYRNGAFGAENHNGIAJHEOEOEAFOOECABXEOUMFCEOIAYSAGIABWWNGRNGBNURNXNANTHIYTHGNGARCDXEOOTNNTHTHRIAECHAYFOEXLRSEOEOOITUNGWNGEOEOAPEJOBLPCROETJXINXLPIATHTHIASJBCOEONGCYPTHTHEMESTOBIEAAJXFBGOUINGIARWEDYEAJLCITAEOYHEOIFXRLEYTNGYSSDIATGMETAEATNGCLXAEYMLTHAETHTHTHUENCLUYXYIGOEFFCNG"
+        },
+        {
+          "score": -10.405320782939471,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 6,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              109
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛇᛝᚾᛖᛡᛈᛚᛝᚷᛏᛇᛡᛟᚦᚢᛞᛋᚢᛏᚦᚱᛇᛋᛒᚹᚢᚫᚩᚷᛠᛠᛉᛚᚠᚠᛉᛄᛖᚻᚻᚻᛉᛈᚠᛒᚢᛗᚠᛡᛁᛚᛒᚩᛈᚣᚫᛗᚳᚹᛇᚫᚳᛖᚫᚫᚢᛖᚱᚢᛖᛠᚷᚾᚹᚩᛝᛖᛡᛋᚫᛈᛁᛄᛄᚱᛉᛟᚷᚹᚹᚷᛟᚷᚳᛟᚻᚦᚦᛚᛠᛇᚻᛡᛗᛠᚻᛄᚻᛒᚠᛟᛄᛡᚩᚾᚩᚦᛒᛚᚹᛞᛒᚷᛒᚻᛁᚩᚾᛋᛒᚦᚪᛋᚫᛒᛠᚫᛗᛞᚾᚪᛄᚾᚦᚫᛝᛁᚾᛠᚣᛗᛒᚱᛖᚫᛖᛇᛖᚠᛚᛇᚳᛡᛄᚻᛋᛄᛁᛋᛝᛟᚾᚳᚹᚩᚻᚻᛖᚻᛇᛖᚾᚪᛚᛚᛈᛄᚦᚣᚫᛟᛒᛡᛚᛒᛖᛉᛠᚫᚩᚻᛠᛞᛗᚾᛏᚪᚱᚾᛉᚫᛄᛖᚾᛏᚪᛋᛒᛗᚹᛝᚳᛋᛋᚩᛗᚳᛈᚹᚫᛞᚳᛖᚹᛠᚢᚳᛋᚹᛚᛡᛝᚩᚫᛒᛉᚫᛄᛈᛄᛇᚹᚱᚠᚹᚾᛋᚫᚦᚫᛟᛉᛞᚻᛇᛡᚻᛒᛗᛡᛄᛋᚳᛞ",
+          "transliteration": "EONGNEIAPLNGGTEOIAOETHUDSUTTHREOSBWUAEOGEAEAXLFFXJEHHHXPFBUMFIAILBOPYAEMCWEOAECEAEAEUERUEEAGNWONGEIASAEPIJJRXOEGWWGOEGCOEHTHTHLEAEOHIAMEAHJHBFOEJIAONOTHBLWDBGBHIONSBTHASAEBEAAEMDNAJNTHAENGINEAYMBREAEEEOEFLEOCIAJHSJISNGOENCWOHHEHEOENALLPJTHYAEOEBIALBEXEAAEOHEADMNTARNXAEJENTASBMWNGCSSOMCPWAEDCEWEAUCSWLIANGOAEBXAEJPJEOWRFWNSAETHAEOEXDHEOIAHBMIAJSCD"
+        },
+        {
+          "score": -10.410942782465854,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 11,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              58
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛝᛠᛖᚠᚳᛚᚠᚣᛄᚫᛝᚳᚠᚳᚦᛠᛚᛁᚠᚳᚳᛄᛉᛁᛇᚱᛠᚱᛄᚠᚱᛋᛞᚳᚾᛈᚻᛈᚳᚩᚾᚫᛖᚢᛏᚠᛖᚩᚩᛗᚫᛁᛡᛁᛝᛏᛖᛡᚠᚾᚩᛇᛡᚢᛠᚷᚫᚾᚻᛝᛡᛄᚻᛇᛇᛠᚠᚩᛟᚳᚪᛒᛉᛇᚢᛗᚠᚳᛇᛡᚣᛋᚪᚷᛡᛒᚹᚹᛝᚱᛝᛒᚾᚢᚱᚾᛉᚾᚪᚾᚦᛁᚣᚦᚷᛝᚪᚱᚳᛞᛉᛇᚩᛏᚾᚾᚦᚦᚱᛡᛖᚳᚻᚪᚣᚠᛟᛉᛚᚱᛋᛇᛇᚩᛁᛏᚢᛝᚹᛝᛇᛇᚪᛈᛖᛄᚩᛒᛚᛈᚳᚱᛟᛏᛄᛉᛁᚾᛉᛚᛈᛡᚦᚦᛡᛋᛄᛒᚳᛟᚩᛝᚳᚣᛈᚦᚦᛖᛗᛖᛋᛏᚩᛒᛁᛠᚪᛄᛉᚠᛒᚷᚩᚢᛁᛝᛡᚱᚹᛖᛞᚣᛠᛄᛚᚳᛁᛏᚪᛇᚣᚻᛇᛁᚠᛉᚱᛚᛖᚣᛏᛝᚣᛋᛋᛞᛡᛏᚷᛗᛖᛏᚫᚪᛏᛝᚳᛚᛉᚫᚣᛗᛚᚦᚫᚦᚦᚦᚢᛖᚾᚳᛚᚢᚣᛉᚣᛁᚷᛟᚠᚠᚳᛝ",
+          "transliteration": "NGEAEFCLFYJAENGCFCTHEALIFCCJXIEOREARJFRSDCNPHPCONAEEUTFEOOMAEIIAINGTEIAFNOEOIAUEAGAENHNGIAJHEOEOEAFOOECABXEOUMFCEOIAYSAGIABWWNGRNGBNURNXNANTHIYTHGNGARCDXEOOTNNTHTHRIAECHAYFOEXLRSEOEOOITUNGWNGEOEOAPEJOBLPCROETJXINXLPIATHTHIASJBCOEONGCYPTHTHEMESTOBIEAAJXFBGOUINGIARWEDYEAJLCITAEOYHEOIFXRLEYTNGYSSDIATGMETAEATNGCLXAEYMLTHAETHTHTHUENCLUYXYIGOEFFCNG"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.447507945894031,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-48",
+      "status": "unverified_screen",
+      "runes": 271,
+      "variants": 2668,
+      "top": [
+        {
+          "score": -10.385887624927841,
+          "recipe": {
+            "family": "affine",
+            "a": 26,
+            "b": 9
+          },
+          "plaintext_runes": "ᛉᛞᚻᚩᚳᛚᚱᛈᚷᛋᛗᚻᚹᚠᚣᛠᚾᚪᛠᛡᚣᛏᚱᚻᛟᛚᚾᛄᛠᚾᛏᚢᚩᚻᛇᚪᛋᛗᛄᛞᚩᚢᛉᛠᛈᚹᛝᚢᚾᛁᛋᚱᛏᚱᚩᚱᛇᚾᚦᛁᚢᚠᛇᛠᚻᛋᚣᛒᛒᚢᚠᛏᚠᛄᚠᚳᚢᛄᚩᛋᚾᚠᚳᛡᚩᛗᚻᛠᛄᚪᚣᚳᚫᚣᛖᚱᛋᛗᛁᛠᛡᛖᛉᛁᚱᛝᛞᚦᛋᛖᚳᚢᚱᚠᚷᚦᚻᚣᛗᚪᚠᛉᚪᚹᛝᚹᚪᛟᛠᛗᚪᚳᛞᚩᚷᛗᛒᚩᛁᛚᛈᛁᛖᛋᚻᛡᚷᛟᚾᛏᚢᚹᚢᚪᛏᚩᚹᛖᛞᛇᛖᛡᚦᚻᛒᚫᚢᚱᛏᚷᛟᛡᛉᛡᚷᛇᚣᛝᚠᛉᚱᛏᚪᛒᛠᛋᛄᚹᚦᛈᚢᚱᛋᚾᚦᛋᛞᚩᛒᚹᚩᚪᚻᛠᛡᚢᚳᚷᚫᚷᛄᛇᚾᚠᛄᚪᚣᛇᛚᛁᚷᛁᚻᚳᛏᛁᚣᛄᛁᚠᛄᚾᛖᛁᚾᚦᚾᚳᛏᛋᛠᚳᛈᛋᛗᛠᚢᛝᛗᚢᛉᛈᛄᛞᚦᚠᛟᛉᛝᚦᚱᚻᚢᚦᚾᚷᛡᛖᚪᚹᚾ",
+          "transliteration": "XDHOCLRPGSMHWFYEANAEAIAYTRHOELNJEANTUOHEOASMJDOUXEAPWNGUNISRTROREONTHIUFEOEAHSYBBUFTFJFCUJOSNFCIAOMHEAJAYCAEYERSMIEAIAEXIRNGDTHSECURFGTHHYMAFXAWNGWAOEEAMACDOGMBOILPIESHIAGOENTUWUATOWEDEOEIATHHBAEURTGOEIAXIAGEOYNGFXRTABEASJWTHPURSNTHSDOBWOAHEAIAUCGAEGJEONFJAYEOLIGIHCTIYJIFJNEINTHNCTSEACPSMEAUNGMUXPJDTHFOEXNGTHRHUTHNGIAEAWN"
+        },
+        {
+          "score": -10.401277290752747,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 24,
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "skip_positions": [
+              57
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛇᛄᚱᚻᚣᛡᛡᚣᚻᚾᛁᛉᛡᚾᚱᛖᚫᛠᚠᛒᚩᛒᚢᚠᛚᛡᚠᛉᚻᛄᛒᚷᛚᛁᛋᛋᛁᛄᚱᚱᚳᛁᛁᛠᛈᚾᚠᚣᛄᛋᚢᚩᚢᛖᚱᚷᛖᚠᚩᛋᛁᛞᛞᚩᛡᚷᛡᛚᚻᛉᚠᚹᛒᚳᛠᛖᛖᚫᛟᛚᛇᚹᛟᚠᛋᚪᛠᛗᛒᛡᛏᚣᛈᛝᚪᛞᛄᛚᚳᚹᛚᚾᛒᛡᛋᚩᛒᚱᛉᚹᛏᚢᛞᚻᚫᚱᛞᛡᚳᚪᛇᚳᚻᛡᛖᛝᛈᚻᚷᚢᛖᛄᛈᚻᛠᚳᛁᚾᛋᛉᛡᛚᚹᛡᚾᛈᚦᛄᚪᚣᛗᛋᚩᛠᚫᚾᛉᛗᚹᛄᚾᚷᛄᚳᚦᛖᛒᛏᛁᛖᛞᚾᛖᚪᚳᚩᛝᛞᛉᚩᚹᚢᚳᛚᛁᛗᚷᛖᛟᛉᚷᚪᛏᚻᛚᛠᛋᛁᛏᛟᚣᚠᛇᚳᛖᛄᛖᚣᚹᚻᛗᛡᛟᛒᚹᛋᛞᛏᚢᚳᛒᚪᛡᛖᚻᛡᚾᛗᚳᛋᚹᛇᚾᛉᛡᚳᚣᚾᛠᛏᚷᚱᚪᚳᚱᚳᛋᚱᚹᚪᚩᚱᚹᚹᛡᚪᚦᚣᚢᛡᚱᚾᛟᚢᚾᚷᚩᛒᛈᛄᛈ",
+          "transliteration": "EOJRHYIAIAYHNIXIANREAEEAFBOBUFLIAFXHJBGLISSIJRRCIIEAPNFYJSUOUERGEFOSIDDOIAGIALHXFWBCEAEEAEOELEOWOEFSAEAMBIATYPNGADJLCWLNBIASOBRXWTUDHAERDIACAEOCHIAENGPHGUEJPHEACINSXIALWIANPTHJAYMSOEAAENXMWJNGJCTHEBTIEDNEACONGDXOWUCLIMGEOEXGATHLEASITOEYFEOCEJEYWHMIAOEBWSDTUCBAIAEHIANMCSWEONXIACYNEATGRACRCSRWAORWWIAATHYUIARNOEUNGOBPJP"
+        },
+        {
+          "score": -10.431715400945153,
+          "recipe": {
+            "family": "affine",
+            "a": 22,
+            "b": 18
+          },
+          "plaintext_runes": "ᛚᛇᚷᚱᛠᚳᛏᚻᛄᚩᛟᚷᛞᚣᛗᛉᛖᚪᛉᚦᛗᛋᛏᚷᚠᚳᛖᛈᛉᛖᛋᚾᚱᚷᚫᚪᚩᛟᛈᛇᚱᚾᛚᛉᚻᛞᛒᚾᛖᚢᚩᛏᛋᛏᚱᛏᚫᛖᛝᚢᚾᚣᚫᛉᚷᚩᛗᛡᛡᚾᚣᛋᚣᛈᚣᛠᚾᛈᚱᚩᛖᚣᛠᚦᚱᛟᚷᛉᛈᚪᛗᛠᚹᛗᛁᛏᚩᛟᚢᛉᚦᛁᛚᚢᛏᛒᛇᛝᚩᛁᛠᚾᛏᚣᛄᛝᚷᛗᛟᚪᚣᛚᚪᛞᛒᛞᚪᚠᛉᛟᚪᛠᛇᚱᛄᛟᛡᚱᚢᚳᚻᚢᛁᚩᚷᚦᛄᚠᛖᛋᚾᛞᚾᚪᛋᚱᛞᛁᛇᚫᛁᚦᛝᚷᛡᚹᚾᛏᛋᛄᚠᚦᛚᚦᛄᚫᛗᛒᚣᛚᛏᛋᚪᛡᛉᚩᛈᛞᛝᚻᚾᛏᚩᛖᛝᚩᛇᚱᛡᛞᚱᚪᚷᛉᚦᚾᛠᛄᚹᛄᛈᚫᛖᚣᛈᚪᛗᚫᚳᚢᛄᚢᚷᛠᛋᚢᛗᛈᚢᚣᛈᛖᛁᚢᛖᛝᛖᛠᛋᚩᛉᛠᚻᚩᛟᛉᚾᛒᛟᚾᛚᚻᛈᛇᛝᚣᚠᛚᛒᛝᛏᚷᚾᛝᛖᛄᚦᛁᚪᛞᛖ",
+          "transliteration": "LEOGREACTHJOOEGDYMXEAXTHMSTGFCEPXESNRGAEAOOEPEORNLXHDBNEUOTSTRTAEENGUNYAEXGOMIAIANYSYPYEANPROEYEATHROEGXPAMEAWMITOOEUXTHILUTBEONGOIEANTYJNGGMOEAYLADBDAFXOEAEAEORJOEIARUCHUIOGTHJFESNDNASRDIEOAEITHNGGIAWNTSJFTHLTHJAEMBYLTSAIAXOPDNGHNTOENGOEORIADRAGXTHNEAJWJPAEEYPAMAECUJUGEASUMPUYPEIUENGEEASOXEAHOOEXNBOENLHPEONGYFLBNGTGNNGEJTHIADE"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.404344413729438,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-49",
+      "status": "unverified_screen",
+      "runes": 66,
+      "variants": 1276,
+      "top": [
+        {
+          "score": -10.256473933291726,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 13,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              3,
+              33
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛉᚢᛒᚠᛚᛚᚦᛟᚫᚢᛄᚢᛁᚦᛁᛏᚩᚩᚾᚫᚣᚳᛈᚱᛁᚦᛁᛖᛟᛗᚪᚠᛋᚠᚠᛚᛏᚢᛞᛁᛒᚷᛡᚷᛒᚪᚠᚩᚳᛝᚳᛇᚠᚪᚱᛟᛁᚪᚪᛟᛇᛞᛇᛁᚻᛇ",
+          "transliteration": "XUBFLLTHOEAEUJUITHITOONAEYCPRITHIEOEMAFSFFLTUDIBGIAGBAFOCNGCEOFAROEIAAOEEODEOIHEO"
+        },
+        {
+          "score": -10.256473933291726,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 12,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              33
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛏᚳᛞᚷᛚᛚᚦᛟᚫᚢᛄᚢᛁᚦᛁᛏᚩᚩᚾᚫᚣᚳᛈᚱᛁᚦᛁᛖᛟᛗᚪᚠᛋᚠᚠᛚᛏᚢᛞᛁᛒᚷᛡᚷᛒᚪᚠᚩᚳᛝᚳᛇᚠᚪᚱᛟᛁᚪᚪᛟᛇᛞᛇᛁᚻᛇ",
+          "transliteration": "TCDGLLTHOEAEUJUITHITOONAEYCPRITHIEOEMAFSFFLTUDIBGIAGBAFOCNGCEOFAROEIAAOEEODEOIHEO"
+        },
+        {
+          "score": -10.281049545667809,
+          "recipe": {
+            "family": "affine",
+            "a": 18,
+            "b": 12
+          },
+          "plaintext_runes": "ᚳᛒᚹᛇᚪᚦᛖᛋᛖᛈᚱᛗᚷᛝᛡᚱᚾᛞᚷᛖᛠᚳᛁᚠᛈᚷᛗᛁᛏᛡᚹᛒᛄᛇᚾᚳᚱᚾᚷᛖᛚᚩᛁᚢᛒᛗᚠᛒᚾᛉᛟᛞᚪᛠᚢᚣᚳᚦᚾᛏᚦᚫᛟᚹᛉᛚ",
+          "transliteration": "CBWEOATHESEPRMGNGIARNDGEEACIFPGMITIAWBJEONCRNGELOIUBMFBNXOEDAEAUYCTHNTTHAEOEWXL"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.064707501190306,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-50",
+      "status": "excluded_no_rune_trigrams",
+      "variants": 0
+    },
+    {
+      "id": "LP2-51",
+      "status": "unverified_screen",
+      "runes": 92,
+      "variants": 1508,
+      "top": [
+        {
+          "score": -10.301313268022492,
+          "recipe": {
+            "family": "affine",
+            "a": 18,
+            "b": 1
+          },
+          "plaintext_runes": "ᛄᛄᚩᚢᛞᛈᛝᛒᛖᚱᚪᛖᛋᚪᚠᚻᛏᚾᚫᛒᛞᛏᛉᛄᚪᛗᛡᚩᛞᚩᚹᚫᛡᛗᛖᛇᚷᚾᚪᛡᛠᛚᚪᛁᚾᚦᛟᛈᛁᚾᚦᛚᛁᚫᚾᛈᛚᚢᚫᛏᚢᛡᚦᛚᚳᚩᚳᚣᛒᛟᚱᚷᛠᛄᛡᛁᛒᚪᛇᚳᛉᚪᛏᛈᛋᛄᛉᚫᛒᚩᛈᚢ",
+          "transliteration": "JJOUDPNGBERAESAFHTNAEBDTXJAMIAODOWAEIAMEEOGNAIAEALAINTHOEPINTHLIAENPLUAETUIATHLCOCYBOERGEAJIAIBAEOCXATPSJXAEBOPU"
+        },
+        {
+          "score": -10.322893673217028,
+          "recipe": {
+            "family": "affine",
+            "a": 11,
+            "b": 18
+          },
+          "plaintext_runes": "ᚻᚻᛏᛖᚫᚷᛡᚦᚢᛋᚪᚢᚱᚪᛗᛄᚩᛁᛞᚦᚫᚩᚳᚻᚪᚠᛝᛏᚫᛏᛇᛞᛝᚠᚢᚹᛈᛁᚪᛝᛚᛠᚪᚾᛁᛒᚣᚷᚾᛁᛒᛠᚾᛞᛁᚷᛠᛖᛞᚩᛖᛝᛒᛠᛉᛏᛉᛟᚦᚣᛋᛈᛚᚻᛝᚾᚦᚪᚹᛉᚳᚪᚩᚷᚱᚻᚳᛞᚦᛏᚷᛖ",
+          "transliteration": "HHTEAEGIATHUSAURAMJOIDTHAEOCHAFNGTAETEODNGFUWPIANGLEAANIBYGNIBEANDIGEAEDOENGBEAXTXOETHYSPLHNGNTHAWXCAOGRHCDTHTGE"
+        },
+        {
+          "score": -10.337333186848582,
+          "recipe": {
+            "family": "affine",
+            "a": 1,
+            "b": 7
+          },
+          "plaintext_runes": "ᛉᛉᛚᚹᚳᛡᛝᚪᛏᛇᚣᛏᛄᚣᛋᚾᚩᚢᛖᚪᚳᚩᛗᛉᚣᚻᚦᛚᚳᛚᛒᛖᚦᚻᛏᚷᚫᚢᚣᚦᛞᚠᚣᛟᚢᛠᛈᛡᛟᚢᛠᚠᛟᛖᚢᛡᚠᚹᛖᚩᚹᚦᛠᚠᚱᛚᚱᛁᚪᛈᛇᚫᛞᛉᚦᛟᚪᚣᚷᚱᛗᚣᚩᛡᛄᛉᛗᛖᚪᛚᛡᚹ",
+          "transliteration": "XXLWCIANGATEOYTJYSNOUEACOMXYHTHLCLBETHHTGAEUYTHDFYOEUEAPIAOEUEAFOEEUIAFWEOWTHEAFRLRIAPEOAEDXTHOEAYGRMYOIAJXMEALIAW"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.271853033809887,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-52",
+      "status": "unverified_screen",
+      "runes": 263,
+      "variants": 2204,
+      "top": [
+        {
+          "score": -10.394260224032017,
+          "recipe": {
+            "family": "affine",
+            "a": 20,
+            "b": 2
+          },
+          "plaintext_runes": "ᚢᚦᚳᛏᛖᛁᚻᚹᚣᛁᛝᚠᚾᛝᛡᚹᚪᛞᛚᚪᚹᚣᚩᚷᚪᛗᛉᛄᚢᚫᛡᛒᛈᚪᛈᚠᚫᛝᛄᚢᚾᚦᛖᚾᛖᛞᚢᛇᚳᚩᚾᛋᚢᛏᚣᛈᛒᛄᛡᚱᛗᚷᛇᚱᛄᛋᛉᛇᚠᛉᚾᚢᛈᛠᛁᚢᛋᛏᚢᛋᛁᛟᚩᛋᛚᛁᛏᚻᛟᛒᛈᚠᚦᚳᚻᛏᚦᛗᛝᚹᚪᚳᛏᛄᛗᚩᛋᛟᚷᛈᚦᛈᛇᛖᚢᚱᛖᚾᛡᛇᛏᛞᚳᚱᚷᚣᚦᚳᛉᛄᛁᛒᚦᛒᛋᚪᚾᛏᚳᛝᛋᛇᛖᚣᛇᛄᚱᚠᚫᛝᛏᛄᚹᛝᚹᛄᛚᛏᛞᛏᛋᚾᛠᚪᛞᚦᚩᚠᚠᛄᛞᚠᚫᚱᛁᛝᚱᚷᚳᚱᚦᚫᚹᛏᛈᛄᛈᚠᛉᚠᚻᚷᚻᛚᚩᛗᚹᚻᛠᛇᚹᛄᛈᚠᛇᛞᚾᚫᛖᛗᛚᛉᚷᛝᛚᚻᛝᚩᛚᛞᛒᚫᚷᛟᛈᛄᛟᚻᛠᚱᚳᛄᛠᚷᚹᛈᚪᚠᛞᛉᛄᚱᚢᚳᚩᚪᚾᛟᛒᛠᛏᛁᛋᚦᛗᚻᚪᚷᚹᚷᛒᚠᛒ",
+          "transliteration": "UTHCTEIHWYINGFNNGIAWADLAWYOGAMXJUAEIABPAPFAENGJUNTHENEDUEOCONSUTYPBJIARMGEORJSXEOFXNUPEAIUSTUSIOEOSLITHOEBPFTHCHTTHMNGWACTJMOSOEGPTHPEOEURENIAEOTDCRGYTHCXJIBTHBSANTCNGSEOEYEOJRFAENGTJWNGWJLTDTSNEAADTHOFFJDFAERINGRGCRTHAEWTPJPFXFHGHLOMWHEAEOWJPFEODNAEEMLXGNGLHNGOLDBAEGOEPJOEHEARCJEAGWPAFDXJRUCOANOEBEATISTHMHAGWGBFB"
+        },
+        {
+          "score": -10.426874176254358,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 27,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              1,
+              41,
+              92,
+              96,
+              110,
+              126,
+              132,
+              165,
+              180,
+              253
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᛞᚠᛡᚫᛉᛡᛖᚠᚱᚹᚩᚾᚱᛏᛗᛏᛒᛠᚳᚾᛋᛒᛟᛁᚱᚳᛁᛁᛖᛗᛏᛠᛏᛉᛁᚪᚱᛞᚷᛏᛉᚠᚹᛡᚪᛈᚩᚣᚪᛋᛚᛞᛞᛡᚳᛗᛞᚱᚣᚠᚱᛟᛞᚹᚢᚩᚱᛟᚠᛈᛏᛡᚱᛁᛞᛖᚠᛁᚫᛋᛏᚪᚱᛏᚹᛋᛖᚦᛝᛏᚠᛟᚠᛄᚪᚢᚠᛖᚾᛈᛖᚫᛒᛏᛖᛋᛡᛒᛖᚷᚠᚠᚾᛁᚪᚠᛄᚠᚫᚹᛄᚩᚩᚷᚪᛝᚠᚦᚣᛟᚦᚫᚠᛝᛡᛟᚷᛝᛄᚦᛏᛚᛋᛞᚫᚩᛠᛏᛡᛒᛖᛞᚹᚣᛠᚪᛝᚳᛠᚣᛝᚻᛚᛁᛒᚠᛁᛇᚷᚦᛡᚳᛖᛟᛝᛒᚠᚪᚫᚳᚠᛏᛇᚾᛈᛡᛚᚣᛏᛚᚣᛝᛖᚩᛗᛁᚾᛞᛖᛖᛗᛗᛉᛚᛠᛏᛚᛈᛈᛞᚦᛖᚱᚷᚹᚻᛄᚾᛖᚱᛖᛖᛝᚻᚣᛒᛋᛒᛁᛠᚹᛇᚾᚢᛄᛖᛏᚩᛝᛏᛏᚠᚱᚷᚢᛞᛄᛉᛄᚢᛁᛚᚳᚠᚳᚣᛋᛠᚾᛖᛖᚪᚫ",
+          "transliteration": "DFIAAEXIAEFRWONRTMTBEACNSBOEIRCIIEMTEATXIARDGTXFWIAAPOYASLDDIACMDRYFROEDWUOROEFPTIARIDEFIAESTARTWSETHNGTFOEFJAUFENPEAEBTESIABEGFFNIAFJFAEWJOOGANGFTHYOETHAEFNGIAOEGNGJTHTLSDAEOEATIABEDWYEAANGCEAYNGHLIBFIEOGTHIACEOENGBFAAECFTEONPIALYTLYNGEOMINDEEMMXLEATLPPDTHERGWHJNEREENGHYBSBIEAWEONUJETONGTTFRGUDJXJUILCFCYSEANEEAAE"
+        },
+        {
+          "score": -10.435606600349786,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 25,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              92
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚠᛉᚠᚠᛠᚦᚪᚦᛉᚾᚾᛋᚻᛟᚫᛖᛡᚢᚾᛄᛡᚠᚣᛇᚻᛄᛇᛚᚪᚫᛟᚢᛟᛖᛇᚳᛖᛡᚻᛚᛠᛖᚹᛡᚪᛈᚩᚣᚪᛋᛚᛞᛞᛡᚳᛗᛞᚱᚣᚠᚱᛟᛞᚹᚢᚩᚱᛟᚠᛈᛏᛡᚱᛁᛞᛖᚠᛁᚫᛋᛏᚪᚱᛏᚹᛋᛖᚦᛝᛏᚠᛟᚠᛄᚪᚢᚹᚷᚳᚹᛁᛋᚾᚷᛁᚾᛝᛈᛁᚠᛞᛒᚣᛝᚠᚹᚣᛒᛈᚢᚳᛚᚻᛒᛖᛋᛞᚾᚷᛇᚳᚣᛁᚻᚣᛝᚹᚣᛁᚢᛋᛗᛚᚣᛟᚦᚠᛝᚳᚣᛡᚪᛏᛡᚱᚱᛉᚱᛡᛡᚳᛗᚫᛈᛚᛁᚪᚪᛏᚻᛚᛞᚾᚾᛉᛁᛟᛞᚢᚦᛖᛚᛚᛋᛗᛉᛄᚦᛝᚫᚫᛚᛒᚢᛈᚦᚳᚩᛞᛉᛒᛝᛚᚾᛗᛒᛞᛇᚱᛁᚪᛄᚣᚢᚻᚹᚠᛞᛟᚷᛟᛠᚷᚣᛗᛇᚠᚱᛠᛗᚦᚳᛉᚱᛁᛠᚪᛈᚦᚻᛉᛏᛏᛁᚳᛇᚫᚪᚫᛝᛉᛠᛒᛁᚾᚣᚾᚩᚩᚦᛡᛇᛝ",
+          "transliteration": "FXFFEATHATHXNNSHOEAEEIAUNJIAFYEOHJEOLAAEOEUOEEEOCEIAHLEAEWIAAPOYASLDDIACMDRYFROEDWUOROEFPTIARIDEFIAESTARTWSETHNGTFOEFJAUWGCWISNGINNGPIFDBYNGFWYBPUCLHBESDNGEOCYIHYNGWYIUSMLYOETHFNGCYIAATIARRXRIAIACMAEPLIAATHLDNNXIOEDUTHELLSMXJTHNGAEAELBUPTHCODXBNGLNMBDEORIAJYUHWFDOEGOEEAGYMEOFREAMTHCXRIEAAPTHHXTTICEOAEAAENGXEABINYNOOTHIAEONG"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.445089717673314,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-53",
+      "status": "unverified_screen",
+      "runes": 179,
+      "variants": 1624,
+      "top": [
+        {
+          "score": -10.380515306205533,
+          "recipe": {
+            "family": "affine",
+            "a": 25,
+            "b": 22
+          },
+          "plaintext_runes": "ᚩᚾᚣᚾᚳᛖᚱᛠᚪᛄᛖᛋᛁᛝᛋᛡᛒᛉᚢᚾᛞᛒᛝᚻᚷᚱᛋᚻᛗᛡᛇᛖᚹᛖᛉᚱᚻᛒᚫᛇᛡᚳᚷᚻᛄᛖᚹᚳᚢᚠᛖᚹᛝᚣᚪᚳᚩᚷᛁᛠᛚᚦᚾᚱᚩᛋᚹᚻᛟᛚᚻᛟᛈᚫᛖᚫᚹᚩᛡᛟᚫᚷᛄᛉᚹᛖᚾᚳᛚᛟᚻᛖᛚᚾᚳᚣᛄᛏᛝᚷᛏᛝᛁᛡᛋᛗᛒᚱᛁᚦᛒᚻᛏᛞᚪᛒᚠᛁᚾᚹᚩᛖᛇᚱᛏᛒᚱᚻᛏᛠᛞᚩᛚᛞᛇᚩᛉᛋᛗᛡᚹᚷᚢᛒᚢᛉᛈᛄᚩᚾᚪᚠᚩᚣᚢᛈᚹᛗᚷᛉᛠᛒᚹᚫᛁᛡᛟᚩᚱᚦᛗᛒᛁᛏᚦᛖᚷᛠᛋ",
+          "transliteration": "ONYNCEREAAJESINGSIABXUNDBNGHGRSHMIAEOEWEXRHBAEEOIACGHJEWCUFEWNGYACOGIEALTHNROSWHOELHOEPAEEAEWOIAOEAEGJXWENCLOEHELNCYJTNGGTNGIIASMBRITHBHTDABFINWOEEORTBRHTEADOLDEOOXSMIAWGUBUXPJONAFOYUPWMGXEABWAEIIAOEORTHMBITTHEGEAS"
+        },
+        {
+          "score": -10.404903122335218,
+          "recipe": {
+            "family": "affine",
+            "a": 3,
+            "b": 6
+          },
+          "plaintext_runes": "ᛈᛞᚩᛞᚣᚾᚳᛏᛗᚹᚾᚱᛋᛉᚱᚪᛒᛇᚠᛞᛡᛒᛉᚦᛖᚳᚱᚦᚢᚪᛠᚾᛁᚾᛇᚳᚦᛒᛄᛠᚪᚣᛖᚦᚹᚾᛁᚣᚠᚻᚾᛁᛉᚩᛗᚣᛈᛖᛋᛏᛟᛝᛞᚳᛈᚱᛁᚦᚷᛟᚦᚷᛚᛄᚾᛄᛁᛈᚪᚷᛄᛖᚹᛇᛁᚾᛞᚣᛟᚷᚦᚾᛟᛞᚣᚩᚹᚫᛉᛖᚫᛉᛋᚪᚱᚢᛒᚳᛋᛝᛒᚦᚫᛡᛗᛒᚻᛋᛞᛁᛈᚾᛠᚳᚫᛒᚳᚦᚫᛏᛡᛈᛟᛡᛠᛈᛇᚱᚢᚪᛁᛖᚠᛒᚠᛇᛚᚹᛈᛞᛗᚻᛈᚩᚠᛚᛁᚢᛖᛇᛏᛒᛁᛄᛋᚪᚷᛈᚳᛝᚢᛒᛋᚫᛝᚾᛖᛏᚱ",
+          "transliteration": "PDODYNCTMWNRSXRABEOFDIABXTHECRTHUAEANINEOCTHBJEAAYETHWNIYFHNIXOMYPESTOENGDCPRITHGOETHGLJNJIPAGJEWEOINDYOEGTHNOEDYOWAEXEAEXSARUBCSNGBTHAEIAMBHSDIPNEACAEBCTHAETIAPOEIAEAPEORUAIEFBFEOLWPDMHPOFLIUEEOTBIJSAGPCNGUBSAENGNETR"
+        },
+        {
+          "score": -10.405714681102415,
+          "recipe": {
+            "family": "affine",
+            "a": 19,
+            "b": 28
+          },
+          "plaintext_runes": "ᚪᛁᚾᛁᚠᛖᛇᛉᚱᛋᛖᚫᛡᛄᚫᚣᚢᚻᛗᛁᛏᚢᛄᛟᛒᛇᚫᛟᚷᚣᚩᛖᚳᛖᚻᛇᛟᚢᛝᚩᚣᚠᛒᛟᛋᛖᚳᚠᛗᚦᛖᚳᛄᚾᚱᚠᚪᛒᛡᛉᛞᚹᛁᛇᚪᚫᚳᛟᛠᛞᛟᛠᛚᛝᛖᛝᚳᚪᚣᛠᛝᛒᛋᚻᚳᛖᛁᚠᛞᛠᛟᛖᛞᛁᚠᚾᛋᛈᛄᛒᛈᛄᛡᚣᚫᚷᚢᛇᛡᚹᚢᛟᛈᛏᚱᚢᚦᛡᛁᚳᚪᛖᚩᛇᛈᚢᛇᛟᛈᛉᛏᚪᛞᛏᚩᚪᚻᚫᚷᚣᚳᛒᛗᚢᛗᚻᛚᛋᚪᛁᚱᚦᚪᚾᛗᛚᚳᚷᛒᚻᛉᚢᚳᛝᛡᚣᛠᚪᛇᚹᚷᚢᛡᛈᚹᛖᛒᛉᚫ",
+          "transliteration": "AINIFEEOXRSEAEIAJAEYUHMITUJOEBEOAEOEGYOECEHEOOEUNGOYFBOESECFMTHECJNRFABIAXDWIEOAAECOEEADOEEALNGENGCAYEANGBSHCEIFDEAOEEDIFNSPJBPJIAYAEGUEOIAWUOEPTRUTHIAICAEOEOPUEOOEPXTADTOAHAEGYCBMUMHLSAIRTHANMLCGBHXUCNGIAYEAAEOWGUIAPWEBXAE"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.402542513527242,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-54",
+      "status": "unverified_screen",
+      "runes": 232,
+      "variants": 1392,
+      "top": [
+        {
+          "score": -10.397693944613044,
+          "recipe": {
+            "family": "affine",
+            "a": 6,
+            "b": 22
+          },
+          "plaintext_runes": "ᛝᛚᚩᛋᛁᚳᛗᚪᛚᛁᛋᛈᚩᛠᚷᛝᛚᚦᛝᚩᚩᚳᛁᚷᚫᛇᚪᛞᛡᛈᛡᚠᛄᛚᚪᛝᛉᛄᚦᚷᛄᛟᚱᛠᚦᚢᚳᚢᛏᛉᛞᛖᛏᛞᛏᛉᛒᛄᛠᛗᛋᚷᛇᚻᚩᛟᛝᛞᚢᛠᛄᚢᛁᛏᚪᚣᚠᛇᚻᛠᚢᛗᛝᛞᚷᛁᛚᛄᛈᚱᛋᛁᚣᛈᚹᚪᚳᛒᚱᚠᛚᛗᚾᚠᚫᛚᛈᚢᚾᛋᚾᚦᛁᚾᚦᚩᚪᛚᚩᚱᛝᛡᚩᛒᚱᚢᛖᚣᛠᛗᚻᛇᛈᚢᛄᛏᚠᛡᚷᛗᚫᛋᛞᛠᚦᚾᛇᚹᛖᛈᚦᛏᚱᚻᛠᚠᚠᛝᚹᛖᚠᛄᛉᚣᛚᚻᚳᚱᛁᚾᚹᚱᛚᛞᚾᚳᛉᚣᛒᚹᛈᛒᛋᚱᛗᛋᚩᚱᛈᚫᛉᛗᚷᛞᚠᛟᛋᛒᛉᛋᛉᚷᛄᚹᚾᛇᛄᚾᚻᚫᛇᛏᛝᛞᚪᛚᛗᚢᛚᛉᛚᚣᚠᛄᚦᚳᛗᛉᛏᛒᚠᚱ",
+          "transliteration": "NGLOSICMALISPOEAGNGLTHNGOOCIGAEEOADIAPIAFJLANGXJTHGJOEREATHUCUTXDETDTXBJEAMSGEOHOOENGDUEAJUITAYFEOHEAUMNGDGILJPRSIYPWACBRFLMNFAELPUNSNTHINTHOALORNGIAOBRUEYEAMHEOPUJTFIAGMAESDEATHNEOWEPTHTRHEAFFNGWEFJXYLHCRINWRLDNCXYBWPBSRMSORPAEXMGDFOESBXSXGJWNEOJNHAEEOTNGDALMULXLYFJTHCMXTBFR"
+        },
+        {
+          "score": -10.44064284428109,
+          "recipe": {
+            "family": "affine",
+            "a": 21,
+            "b": 17
+          },
+          "plaintext_runes": "ᛠᛁᛞᚹᚱᚢᛝᚪᛁᚱᚹᚠᛞᚾᛗᛠᛁᚳᛠᛞᛞᚢᚱᛗᛈᛄᚪᚷᛚᚠᛚᛡᛟᛁᚪᛠᛖᛟᚳᛗᛟᛒᛇᚾᚳᛏᚢᛏᚫᛖᚷᚩᚫᚷᚫᛖᛉᛟᚾᛝᚹᛗᛄᚣᛞᛒᛠᚷᛏᚾᛟᛏᚱᚫᚪᚦᛡᛄᚣᚾᛏᛝᛠᚷᛗᚱᛁᛟᚠᛇᚹᚱᚦᚠᚻᚪᚢᛉᛇᛡᛁᛝᛋᛡᛈᛁᚠᛏᛋᚹᛋᚳᚱᛋᚳᛞᚪᛁᛞᛇᛠᛚᛞᛉᛇᛏᚩᚦᚾᛝᚣᛄᚠᛏᛟᚫᛡᛚᛗᛝᛈᚹᚷᚾᚳᛋᛄᚻᚩᚠᚳᚫᛇᚣᚾᛡᛡᛠᚻᚩᛡᛟᛖᚦᛁᚣᚢᛇᚱᛋᚻᛇᛁᚷᛋᚢᛖᚦᛉᚻᚠᛉᚹᛇᛝᚹᛞᛇᚠᛈᛖᛝᛗᚷᛡᛒᚹᛉᛖᚹᛖᛗᛟᚻᛋᛄᛟᛋᚣᛈᛄᚫᛠᚷᚪᛁᛝᛏᛁᛖᛁᚦᛡᛟᚳᚢᛝᛖᚫᛉᛡᛇ",
+          "transliteration": "EAIDWRUNGAIRWFDNMEAICEADDURMPJAGLFLIAOEIAEAEOECMOEBEONCTUTAEEGOAEGAEEXOENNGWMJYDBEAGTNOETRAEATHIAJYNTNGEAGMRIOEFEOWRTHFHAUXEOIAINGSIAPIFTSWSCRSCDAIDEOEALDXEOTOTHNNGYJFTOEAEIALMNGPWGNCSJHOFCAEEOYNIAIAEAHOIAOEETHIYUEORSHEOIGSUETHXHFXWEONGWDEOFPENGMGIABWXEWEMOEHSJOESYPJAEEAGAINGTIEITHIAOECUNGEAEXIAEO"
+        },
+        {
+          "score": -10.443772348281575,
+          "recipe": {
+            "family": "affine",
+            "a": 27,
+            "b": 12
+          },
+          "plaintext_runes": "ᛟᚩᛠᚪᛏᚻᛈᛝᚩᛏᚪᛋᛠᛁᛡᛟᚩᚾᛟᛠᛠᚻᛏᛡᛄᚫᛝᚦᛚᛋᛚᚠᚷᚩᛝᛟᚳᚷᚾᛡᚷᛇᛖᛁᚾᛗᚻᛗᛉᚳᚦᛞᛉᚦᛉᚳᚱᚷᛁᛈᚪᛡᚫᚹᛠᛇᛟᚦᛗᛁᚷᛗᛏᛉᛝᚢᚠᚫᚹᛁᛗᛈᛟᚦᛡᛏᚩᚷᛋᛖᚪᛏᚢᛋᛒᛝᚻᚱᛖᚠᚩᛈᚣᚠᛄᚩᛋᛗᚣᚪᚣᚾᛏᚣᚾᛠᛝᚩᛠᛖᛟᛚᛠᚱᛖᛗᛞᚢᛁᛈᚹᚫᛋᛗᚷᛉᚠᛚᛡᛈᛄᚪᚦᛁᚾᚣᚫᛒᛞᛋᚾᛉᛖᚹᛁᚠᚠᛟᛒᛞᚠᚷᚳᚢᚩᚹᚻᛖᛏᚣᛒᛖᚩᚦᚣᚻᚳᚢᚱᛒᛋᚱᚪᛖᛈᚪᛠᛖᛋᛄᚳᛈᛡᚦᚠᛇᚪᚱᚳᚪᚳᛡᚷᛒᚣᚫᚷᚣᚹᛄᚫᛉᛟᚦᛝᚩᛈᛗᚩᚳᚩᚢᚠᚷᚾᚻᛈᚳᛉᚱᚠᛖ",
+          "transliteration": "OEOEAATHPNGOTASEAIIAOEONOEEAEAHTIAJAENGTHLSLFGONGOECGNIAGEOEINMHMXCTHDXTHXCRGIPAIAAEWEAEOOETHMIGMTXNGUFAEWIMPOETHIATOGSEATUSBNGHREFOPYFJOSMYAYNTYNEANGOEAEOELEAREMDUIPWAESMGXFLIAPJATHINYAEBDSNXEWIFFOEBDFGCUOWHETYBEOTHYHCURBSRAEPAEAESJCPIATHFEOARCACIAGBYAEGYWJAEXOETHNGOPMOCOUFGNHPCXRFE"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.420850389805938,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-55",
+      "status": "unverified_screen",
+      "runes": 76,
+      "variants": 1392,
+      "top": [
+        {
+          "score": -10.18083109180993,
+          "recipe": {
+            "family": "affine",
+            "a": 15,
+            "b": 15
+          },
+          "plaintext_runes": "ᛄᛈᛁᛚᚱᚻᚾᛟᛁᚻᛝᛖᛇᛏᛈᛋᛉᛡᚾᚩᚢᚱᛒᚾᚠᛋᛟᛚᛁᚢᚩᚹᛗᛄᚫᛝᛁᚻᛇᛉᚹᛋᚾᛗᛝᚩᛝᚪᚠᚪᛚᛖᛟᛖᚻᚪᚻᛝᛏᛏᚪᚻᛏᚣᚩᚠᛚᛁᚩᛟᛇᚷᚢᚾᚪᛚ",
+          "transliteration": "JPILRHNOEIHNGEEOTPSXIANOURBNFSOELIUOWMJAENGIHEOXWSNMNGONGAFALEOEEHAHNGTTAHTYOFLIOOEEOGUNAL"
+        },
+        {
+          "score": -10.185622941706884,
+          "recipe": {
+            "family": "affine",
+            "a": 6,
+            "b": 3
+          },
+          "plaintext_runes": "ᛈᚻᚢᚳᛏᚷᛖᚠᚢᚷᛒᛁᚫᛋᚻᚩᛚᚦᛖᚱᚾᛏᛡᛖᚣᚩᚠᚳᚢᚾᚱᛞᛟᛈᚹᛒᚢᚷᚫᛚᛞᚩᛖᛟᛒᚱᛒᚪᚣᚪᚳᛁᚠᛁᚷᚪᚷᛒᛋᛋᚪᚷᛋᛗᚱᚣᚳᚢᚱᚠᚫᛄᚾᛖᚪᚳ",
+          "transliteration": "PHUCTGEFUGBIAESHOLTHERNTIAEYOFCUNRDOEPWBUGAELDOEOEBRBAYACIFIGAGBSSAGSMRYCURFAEJNEAC"
+        },
+        {
+          "score": -10.257490198417718,
+          "recipe": {
+            "family": "affine",
+            "a": 7,
+            "b": 27
+          },
+          "plaintext_runes": "ᚠᛠᛋᛁᛖᛏᚢᚾᛋᛏᚪᛄᛉᛇᛠᛡᛈᛝᚢᚱᚳᛖᚣᚢᛚᛡᚾᛁᛋᚳᚱᚦᚫᚠᛟᚪᛋᛏᛉᛈᚦᛡᚢᚫᚪᚱᚪᚻᛚᚻᛁᛄᚾᛄᛏᚻᛏᚪᛇᛇᚻᛏᛇᚹᚱᛚᛁᛋᚱᚾᛉᛒᚳᚢᚻᛁ",
+          "transliteration": "FEASIETUNSTAJXEOEAIAPNGURCEYULIANISCRTHAEFOEASTXPTHIAUAEARAHLHIJNJTHTAEOEOHTEOWRLISRNXBCUHI"
+        }
+      ],
+      "one_shuffled_negative_control_best": -10.168532558565632,
+      "above_minimum_known_control_score": false
+    },
+    {
+      "id": "LP2-56",
+      "status": "known_control",
+      "runes": 85,
+      "variants": 1624,
+      "top": [
+        {
+          "score": -8.570398473499138,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 0,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              51
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚪᚾᛖᚾᛞᚹᛁᚦᛁᚾᚦᛖᛞᛖᛖᛈᚹᛖᛒᚦᛖᚱᛖᛖᛉᛁᛋᛏᛋᚪᛈᚪᚷᛖᚦᚪᛏᚻᚪᛋᚻᛖᛋᛏᚩᛁᛏᛁᛋᚦᛖᚠᚩᚣᚩᚾᛠᛖᚢᛖᚱᚣᛈᛁᛚᚷᚱᛁᛗᛏᚩᛋᛖᛖᚳᚩᚢᛏᚦᛁᛋᛈᚪᚷᛖ",
+          "transliteration": "ANENDWITHINTHEDEEPWEBTHEREEXISTSAPAGETHATHASHESTOITISTHEFOYONEAEUERYPILGRIMTOSEECOUTTHISPAGE"
+        },
+        {
+          "score": -8.62817908248223,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 0,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              56
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚪᚾᛖᚾᛞᚹᛁᚦᛁᚾᚦᛖᛞᛖᛖᛈᚹᛖᛒᚦᛖᚱᛖᛖᛉᛁᛋᛏᛋᚪᛈᚪᚷᛖᚦᚪᛏᚻᚪᛋᚻᛖᛋᛏᚩᛁᛏᛁᛋᚦᛖᛞᚢᛏᚣᚩᚠᛖᚢᛖᚱᚣᛈᛁᛚᚷᚱᛁᛗᛏᚩᛋᛖᛖᚳᚩᚢᛏᚦᛁᛋᛈᚪᚷᛖ",
+          "transliteration": "ANENDWITHINTHEDEEPWEBTHEREEXISTSAPAGETHATHASHESTOITISTHEDUTYOFEUERYPILGRIMTOSEECOUTTHISPAGE"
+        },
+        {
+          "score": -8.833661532751268,
+          "recipe": {
+            "family": "prime_totient",
+            "prime_offset": 0,
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "skip_positions": [
+              47
+            ],
+            "skip_semantics": "copy rune; consume no key"
+          },
+          "plaintext_runes": "ᚪᚾᛖᚾᛞᚹᛁᚦᛁᚾᚦᛖᛞᛖᛖᛈᚹᛖᛒᚦᛖᚱᛖᛖᛉᛁᛋᛏᛋᚪᛈᚪᚷᛖᚦᚪᛏᚻᚪᛋᚻᛖᛋᛏᚩᛁᛏᚠᛗᚱᛟᚠᚩᚣᚩᚾᛠᛖᚢᛖᚱᚣᛈᛁᛚᚷᚱᛁᛗᛏᚩᛋᛖᛖᚳᚩᚢᛏᚦᛁᛋᛈᚪᚷᛖ",
+          "transliteration": "ANENDWITHINTHEDEEPWEBTHEREEXISTSAPAGETHATHASHESTOITFMROEFOYONEAEUERYPILGRIMTOSEECOUTTHISPAGE"
+        }
+      ],
+      "positive_control": {
+        "recipe": {
+          "family": "prime_totient",
+          "prime_offset": 0,
+          "cipher_sign": 1,
+          "key_sign": -1,
+          "skip_positions": [
+            56
+          ],
+          "skip_semantics": "copy rune; consume no key"
+        },
+        "score": -8.62817908248223,
+        "exact_recovery": true,
+        "top_is_exact": false
+      },
+      "one_shuffled_negative_control_best": -10.344443217095222
+    },
+    {
+      "id": "LP2-57",
+      "status": "known_control",
+      "runes": 95,
+      "variants": 1392,
+      "top": [
+        {
+          "score": -8.530541902248236,
+          "recipe": {
+            "family": "affine",
+            "a": 1,
+            "b": 0
+          },
+          "plaintext_runes": "ᛈᚪᚱᚪᛒᛚᛖᛚᛁᚳᛖᚦᛖᛁᚾᛋᛏᚪᚱᛏᚢᚾᚾᛖᛚᛝᛏᚩᚦᛖᛋᚢᚱᚠᚪᚳᛖᚹᛖᛗᚢᛋᛏᛋᚻᛖᛞᚩᚢᚱᚩᚹᚾᚳᛁᚱᚳᚢᛗᚠᛖᚱᛖᚾᚳᛖᛋᚠᛁᚾᛞᚦᛖᛞᛁᚢᛁᚾᛁᛏᚣᚹᛁᚦᛁᚾᚪᚾᛞᛖᛗᛖᚱᚷᛖ",
+          "transliteration": "PARABLELICETHEINSTARTUNNELNGTOTHESURFACEWEMUSTSHEDOUROWNCIRCUMFERENCESFINDTHEDIUINITYWITHINANDEMERGE"
+        },
+        {
+          "score": -10.15563854687922,
+          "recipe": {
+            "family": "affine",
+            "a": 3,
+            "b": 17
+          },
+          "plaintext_runes": "ᛡᚦᚠᚦᛁᛗᛈᛗᛖᚩᛈᛞᛈᛖᛋᚱᚹᚦᚠᚹᛚᛋᛋᛈᛗᛟᚹᚣᛞᛈᚱᛚᚠᛒᚦᚩᛈᚾᛈᛏᛚᚱᚹᚱᛇᛈᛠᚣᛚᚠᚣᚾᛋᚩᛖᚠᚩᛚᛏᛒᛈᚠᛈᛋᚩᛈᚱᛒᛖᛋᛠᛞᛈᛠᛖᛚᛖᛋᛖᚹᚻᚾᛖᛞᛖᛋᚦᛋᛠᛈᛏᛈᚠᚷᛈ",
+          "transliteration": "IATHFTHIMPMEOPDPESRWTHFWLSSPMOEWYDPRLFBTHOPNPTLRWREOPEAYLFYNSOEFOLTBPFPSOPRBESEADPEAELESEWHNEDESTHSEAPTPFGP"
+        },
+        {
+          "score": -10.189771909730664,
+          "recipe": {
+            "family": "affine",
+            "a": 3,
+            "b": 20
+          },
+          "plaintext_runes": "ᚢᚳᚩᚳᛈᛟᛏᛟᛝᚷᛏᚣᛏᛝᛖᚹᛁᚳᚩᛁᛞᛖᛖᛏᛟᚫᛁᚠᚣᛏᚹᛞᚩᛚᚳᚷᛏᛇᛏᛗᛞᚹᛁᚹᛋᛏᚦᚠᛞᚩᚠᛇᛖᚷᛝᚩᚷᛞᛗᛚᛏᚩᛏᛖᚷᛏᚹᛚᛝᛖᚦᚣᛏᚦᛝᛞᛝᛖᛝᛁᛄᛇᛝᚣᛝᛖᚳᛖᚦᛏᛗᛏᚩᚾᛏ",
+          "transliteration": "UCOCPOETOENGGTYTNGEWICOIDEETOEAEIFYTWDOLCGTEOTMDWIWSTTHFDOFEOEGNGOGDMLTOTEGTWLNGETHYTTHNGDNGENGIJEONGYNGECETHTMTONT"
+        }
+      ],
+      "positive_control": {
+        "recipe": {
+          "family": "affine",
+          "a": 1,
+          "b": 0
+        },
+        "score": -8.530541902248236,
+        "exact_recovery": true,
+        "top_is_exact": true
+      },
+      "one_shuffled_negative_control_best": -9.810476035346285
+    }
+  ],
+  "wall_seconds": 2.234122900001239
+}

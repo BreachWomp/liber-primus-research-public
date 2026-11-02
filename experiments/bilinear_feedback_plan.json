@@ -1,0 +1,13 @@
+{
+  "experiment":"E068",
+  "hypothesis":"H048",
+  "mechanism":"P_i=a*C_i+b*P_(i-m) mod29; a,b1..28,m4..32. Initial key recovered with inverse(b), encryption with inverse(a). No skipped symbols or resets.",
+  "screen":"Enumerate22736 families; per period order a1..28 then b1..28. Score=sum over residues max over29 prefix symbols of unigram log likelihood. Use histogram identity P_i=a*(base1_i+t*coeff_i), prefix=a*t, a a unit; per residue histogram29x29 then dot with logp(a*x). This changes computation, not objective. Rank by score rounded to9 decimal places, ties by fixed a,b order; retain8 per period,232 full families. Store raw scores and rounded selection scores. Independent literal evaluation and unit tests must agree within1e-7.",
+  "optimizer":"E066 budget per retained family:8 starts,6 trigram coordinate sweeps,keep2; beam cuts0,m//2,width128,keep2/cut; top12 distinct fourgram candidates,6 refinement sweeps,top3 plaintexts. Start seed3303068+784*m+28*(a-1)+b-1. All coefficients modulo29.",
+  "controls":"12 fresh uniform keys Random3301068+index. Excluded Emerson X/XI/XII by index%3; blocks start,length=(12750,200),(6800,300),(15000,729),(1000,3316); m13,23,31 except index11 uses32. a cycles2,7,14,27; b=(3,8,15,26)[(index//3+index)%4]. Previously inspected prose, not unseen text. Four regressions reuse INPUTS E066 controls2,5,8,11, representing -1 as28; changed search is executed anew. Finish all16 even on failure.",
+  "null":"One full optimizer interior-shuffle null of newcontrol5 with Random3302068; preserve counts,endpoints,adjacent equality; rejection cap100000. Diagnostic only, no pvalue.",
+  "gate":"All16 exact plaintext/key/a/b and true family retained. Independent raw-source, literal screening, score, queue and reencryption checks. If gate fails, no unknown scan with this solver; preserve failure and classify screening vs optimizer. No parameter tuning in E068.",
+  "bounds":{"process_seconds":180,"watchdog_seconds":185,"family_seconds":1800,"phase_seconds":3600,"memory_ceiling_mib":768,"workers":1},
+  "unknown":"Separate plan only after successful controls and independent verification. Full optimizer matched nulls and correction over all input selection required.",
+  "limits":"Finite heuristic search; top8 retention unproven. No constant, omissions or hidden boundaries. E020 short-delay multipliers and affine-chain algebra are prior work."
+}

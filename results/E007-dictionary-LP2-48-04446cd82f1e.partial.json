@@ -1,0 +1,113 @@
+{
+  "status": "partial_not_complete",
+  "mode": "dictionary",
+  "pages": [
+    {
+      "page": "LP2-48",
+      "ciphertext_runes": "ᚻᚳᛁᚦᛄᚷᛝᛖᚢᛡᛏᛁᛚᚩᚱᛈᚠᚪᛈᛞᚱᛒᛝᛁᛋᚷᚠᚾᛈᚠᛒᛟᚦᛁᛠᚪᛡᛏᚾᚳᚦᛟᚻᛈᛖᛚᚫᛟᚠᛗᛡᛝᛒᛝᚦᛝᛠᚠᛇᛗᛟᚩᛠᛈᛁᛡᚱᚹᚹᛟᚩᛒᚩᚾᚩᛄᛟᚾᚦᛡᚠᚩᛄᛞᚦᛏᛁᛈᚾᚪᚱᛄᛉᚱᚣᛝᛡᛏᛗᛈᛞᚣᚻᛗᛝᚫᚳᛇᛡᚣᛄᛟᛝᚩᚢᛇᛁᚱᛏᚪᚩᚻᚪᛚᚫᛚᚪᛋᛈᛏᚪᛄᚳᚦᚢᛏᚹᚦᛗᚷᛖᛗᚣᛡᛁᛞᚢᛋᚠᛒᛟᛚᛟᚪᛒᚦᛚᚣᚳᛠᚣᛞᛇᛁᚹᛉᛟᛝᛒᚢᛋᛞᚻᛞᚢᛠᚱᚫᚩᚻᛝᛒᚪᚹᛈᛡᚾᛚᛇᛖᛟᛝᛡᚠᛇᛡᚳᚦᚹᛚᚦᚪᛁᛈᛞᛟᛄᚢᛉᚢᚾᛠᚠᚩᚾᚪᚱᛠᚷᛗᚢᛗᛁᛄᛒᛗᚱᚾᛗᚩᚾᚠᚣᛗᚠᛇᚠᛄᛒᛡᛈᛄᛖᛡᛏᛈᛟᚫᛏᛟᚻᛖᚾᚳᛇᚩᛋᚻᚫᛇᛝᛁᛟᛇᚠᚢᛞᚣᚪᛚᚠ",
+      "rune_count": 271,
+      "f_count": 14,
+      "evaluated_key_sign_tasks": 1524,
+      "dp_transitions": 2677120,
+      "top": [
+        {
+          "score": -4.591768039725366,
+          "plaintext_runes": "ᛁᛋᛏᛠᚾᛁᛖᚢᛞᛖᚦᛁᚷᛡᛏᚩᛁᚪᛄᛟᛉᚩᚳᛚᚳᛁᚠᚢᚷᚠᚹᛞᛏᛁᛡᚷᛟᚠᚢᛉᛟᛞᛁᚹᚻᛁᚪᛞᛁᚠᚣᚪᚢᛠᚪᚾᛝᛏᛡᚠᚦᛈᛗᚹᛏᚩᛏᚾᚩᚣᛝᛠᛋᛄᛞᛗᛡᚹᚻᛝᚠᛝᚳᚪᛖᛁᛚᚹᚹᛋᛋᛈᚦᛉᛞᚳᚩᚱᚣᚣᚫᛡᚻᛠᛠᚢᚫᚻᛖᛈᚻᚦᚪᛋᛗᛉᛚᛏᚠᛋᛏᛏᛝᛡᚪᚷᚷᚳᚩᛞᚪᛈᛄᛏᛗᛁᛞᛖᚣᚱᚢᚳᛗᛚᛁᚩᚠᚳᛏᛟᚣᚱᛞᛞᚩᚪᛁᛞᛄᛄᛟᚢᚱᚻᛈᛇᚻᛠᛠᚾᚱᚢᚻᚪᛗᛡᚣᚪᛈᚦᛡᚹᛝᛄᚹᛠᛝᚠᚱᛝᚣᚩᛖᛖᚻᛠᚫᛖᚾᛗᛒᚠᚷᚳᚣᚱᛗᛗᚦᚾᛁᚫᛏᛋᛄᚦᚣᛝᛁᛚᛖᚳᚷᚹᚩᚹᚣᛄᚣᚹᛁᚪᛗᛠᛚᛉᚠᛗᚩᛖᚣᚻᚷᛖᚦᚹᚱᚳᚱᛞᚦᚢᛋᛄᚷᛒᛄᛟᚪᚱᛖᚾᚦᚱᛖᛗᚩᚱᚫᚫᛁ",
+          "transliteration": "ISTEANIEUDETHIGIATOIAJOEXOCLCIFUGFWDTIIAGOEFUXOEDIWHIADIFYAUEAANNGTIAFTHPMWTOTNOYNGEASJDMIAWHNGFNGCAEILWWSSPTHXDCORYYAEIAHEAEAUAEHEPHTHASMXLTFSTTNGIAAGGCODAPJTMIDEYRUCMLIOFCTOEYRDDOAIDJJOEURHPEOHEAEANRUHAMIAYAPTHIAWNGJWEANGFRNGYOEEHEAAEENMBFGCYRMMTHNIAETSJTHYNGILECGWOWYJYWIAMEALXFMOEYHGETHWRCRDTHUSJGBJOEARENTHREMORAEAEI",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "key_indices": [
+              1,
+              20,
+              16,
+              10,
+              19,
+              24,
+              16,
+              18,
+              20,
+              26
+            ],
+            "start": 7,
+            "skip_positions": [
+              26,
+              29,
+              80,
+              236
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 3120,
+          "max_states": 20
+        },
+        {
+          "score": -4.631415308785421,
+          "plaintext_runes": "ᚳᚾᚩᛖᚠᚠᚹᚪᛈᛋᚱᚢᛋᚫᚾᚢᚠᛖᚹᛒᚦᛄᛝᚱᛡᛉᛄᚣᛋᛈᚣᛚᛖᚢᚹᚱᛋᛡᚱᛋᚾᛈᛚᚠᚫᛟᚪᛖᚠᛏᚢᛝᚣᛝᛖᛗᚹᛠᚢᚪᛚᛒᛇᛟᛖᛋᛁᚷᛈᛖᚩᛄᛁᚳᛁᚾᛖᚣᚣᛋᚠᛄᚦᚣᚾᛗᛖᚠᚳᛖᛏᚠᛝᚪᛏᛟᛋᚱᛝᛟᚳᛏᚷᛞᛠᛋᚢᛏᛋᛒᚦᛡᛗᚩᛡᚢᚱᚾᚱᛏᚩᛚᛖᛞᛒᚠᛏᛚᛋᚣᛗᚦᛋᚾᚳᛇᚷᛇᛞᛉᛟᛏᚦᛋᚱᛗᛗᚫᚠᛖᚷᛟᛝᛖᚩᚾᛋᚦᚻᛋᛏᚣᛠᚫᛝᛠᛝᛝᚩᛁᛚᚳᚳᛚᛇᛝᚹᛁᚫᚳᛟᚫᚫᚱᛟᚢᚱᛞᚢᚦᛖᛉᚢᚠᚢᛏᚻᛖᚱᛋᚣᛖᚱᚠᚣᛖᚪᛡᛠᛈᚱᛝᛄᚩᛗᛖᛁᛉᛉᛝᚳᚾᚩᚩᚫᚢᚹᚣᚾᛁᚳᛈᛞᛝᚠᛞᛠᚦᚣᛋᚹᚠᛒᚢᚣᚢᛚᚪᚪᛈᛚᚪᚳᚻᚻᚻᛚᛚᛒᚦᛝᛁᛖᛞᚠᛡᛗᛒᛖᚠᚠ",
+          "transliteration": "CNOEFFWAPSRUSAENUFEWBTHJNGRIAXJYSPYLEUWRSIARSNPLFAEOEAEFTUNGYNGEMWEAUALBEOOEESIGPEOJICINEYYSFJTHYNMEFCETFNGATOESRNGOECTGDEASUTSBTHIAMOIAURNRTOLEDBFTLSYMTHSNCEOGEODXOETTHSRMMAEFEGOENGEONSTHHSTYEAAENGEANGNGOILCCLEONGWIAECOEAEAEROEURDUTHEXUFUTHERSYERFYEAIAEAPRNGJOMEIXXNGCNOOAEUWYNICPDNGFDEATHYSWFBUYULAAPLACHHHLLBTHNGIEDFIAMBEFF",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              1,
+              16,
+              15,
+              16,
+              9,
+              18,
+              23
+            ],
+            "start": 1,
+            "skip_positions": [
+              16,
+              48,
+              80,
+              148,
+              193,
+              234,
+              264,
+              270
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 2184,
+          "max_states": 14
+        },
+        {
+          "score": -4.63377267327151,
+          "plaintext_runes": "ᛖᚷᛁᚪᚠᛉᚳᛟᛗᛠᚪᛁᚷᚻᛏᛈᚠᛏᚹᚩᚹᚩᚳᚢᚳᛚᚠᚦᚹᚣᛞᛡᚪᚢᛝᚦᛈᚱᛒᚷᛖᚱᚩᚹᚻᛚᚪᚱᛄᚢᛠᛗᚩᚳᚾᛠᛡᚠᛠᚢᚱᚻᛝᛈᚢᛟᛟᚱᛈᚱᚻᚩᛞᚦᛒᛋᛖᛄᚪᛈᚠᛒᛋᛒᛖᛁᚢᚹᛒᛏᛏᛋᚣᛏᚠᛗᛟᛁᛝᚹᚩᛉᛇᚹᛗᚪᛝᛠᛟᚠᚠᛡᚳᚻᛗᛉᚢᛏᛁᛏᛒᛖᛏᚠᚢᛚᚫᛄᛡᚱᚦᚠᛋᚪᛁᚱᛗᚾᚢᛚᛟᚢᚠᛈᛁᚩᛁᚳᚠᚾᛖᚠᚱᛏᚩᚪᛚᛞᛝᛇᛞᚩᛠᛁᛗᚣᛡᚳᛞᛗᛄᛒᛇᚩᛁᛝᛟᛋᛒᛖᛗᚩᚦᚱᚹᛠᚦᚠᛉᛟᛡᚳᛈᛚᛉᛈᛋᚪᚱᚠᚪᛏᛁᛈᛒᛡᛋᛁᚷᚫᚦᛝᚠᛞᚦᚫᛟᛇᛉᚹᛁᚢᛏᚠᚩᚹᚹᛄᚹᚻᛄᚠᚠᛝᚠᚻᚣᚠᚩᛠᛡᚾᚻᛈᚱᛈᛖᚪᛁᛖᛇᚻᚦᛋᛉᚻᚳᛖᛋᚻᚳᚢᛡᛉᚠᛁᚣᚠᛏᚠᚠ",
+          "transliteration": "EGIAFXCOEMEAAIGHTPFTWOWOCUCLFTHWYDIAAUNGTHPRBGEROWHLARJUEAMOCNEAIAFEAURHNGPUOEOERPRHODTHBSEJAPFBSBEIUWBTTSYTFMOEINGWOXEOWMANGEAOEFFIACHMXUTITBETFULAEJIARTHFSAIRMNULOEUFPIOICFNEFRTOALDNGEODOEAIMYIACDMJBEOOINGOESBEMOTHRWEATHFXOEIACPLXPSARFATIPBIASIGAETHNGFDTHAEOEEOXWIUTFOWWJWHJFFNGFHYFOEAIANHPRPEAIEEOHTHSXHCESHCUIAXFIYFTFF",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "key_indices": [
+              3,
+              18,
+              9
+            ],
+            "start": 0,
+            "skip_positions": [
+              16,
+              26,
+              57,
+              80,
+              148,
+              212,
+              231,
+              234,
+              264,
+              270
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 936,
+          "max_states": 6
+        }
+      ]
+    }
+  ],
+  "new_decryptions": []
+}

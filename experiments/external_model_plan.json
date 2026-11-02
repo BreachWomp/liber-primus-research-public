@@ -1,0 +1,24 @@
+{
+  "registered_at": "2026-10-19T09:44:17.990026+00:00",
+  "experiment": "E016",
+  "hypothesis": "An external-only language model resolves the local F-interruption ambiguities seen with2019runes of LP1training.",
+  "source": "Pinned Gutenberg2944, eleven essays excludingII Self-Reliance; no LP data training.",
+  "models": [
+    {
+      "order": 3,
+      "alpha": 0.5,
+      "strength": 5.0
+    },
+    {
+      "order": 4,
+      "alpha": 0.5,
+      "strength": 5.0
+    }
+  ],
+  "normalization": "ae/oe ligatures expanded; NFKD+diacritic stripping; ASCII words; QU->CW,Q->C; greedyGP perword; paragraphs kept separate.",
+  "controls": "All undisputed known fixtures;100one-rune+100five-rune corruptions each; exact fullF-subset known-key searches on twoVigenere fixtures andLP2-56, allphases/offset0..255.",
+  "seed": 3301016,
+  "seconds": 180.0,
+  "selection": "No unknown pages in this benchmark. Later optimizer fixed to externaltrigram generation; external4gram only reranks generated candidates.",
+  "limits": "Previously inspected controls, not new holdouts; corrupted texts correlated; no p-value for model comparison."
+}

@@ -1,0 +1,11 @@
+{
+  "experiment":"E029-community-claim-triage",
+  "scope":"Check narrow reproducible statements in the retrieved project HTML sections LOG030/031/033. Do not execute scripts, tools, binaries, links to onion systems or downloaded source.",
+  "checks":"Verify project snapshot hashes; check published byte digest against already preserved E023 byte sequence; compute order of11 modulo29 and Pisano period29 independently; classify LP2-56/57 as existing controls, not new decryptions.",
+  "source_limit":"Timestamped HTML snapshot, not a pinned Git revision or authenticated historical Cicada artifact. The direct Reddit HTTP response is an empty client shell; its full post was viewed through the web tool, not recovered in that HTML file.",
+  "claims_not_validated":"Historical provenance of alleged sexagesimal.bin and alternate8db2... digest; RSA interpretation; matrix-to-plaintext claim; claims that all remaining pages need an external key. No broad judgment of the entire site.",
+  "null_model":"Not applicable: deterministic arithmetic/provenance comparison, not a search or significance test.",
+  "seed":null,
+  "seconds":30,
+  "workers":1
+}

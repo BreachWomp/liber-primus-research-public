@@ -1,0 +1,142 @@
+{
+  "experiment": "E028-boundary-selective",
+  "status": "completed",
+  "parameters": {
+    "mode": "page",
+    "page": "LP2-27",
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "page": "LP2-27",
+  "ciphertext_runes": "ᛗᛈᚣᛚᛋᚩᚪᚫᚻᛚᛖᛇᛁᛗᛚᛚᛋᚳᛈᚾᚻᚷᚢᛡᚻᚢᛒᚠᛞᛄᚢᛒᛖᛁᚫᚠᛈᚫᛈᚦᚱᛗᛚᚳᛒᚷᚣᛗᛠᛒᚫᚾᚦᛗᚠᛡᛠᚳᛒᚷᚫᚠᛖᛄᚱᚩᛈᛒᚠᛒᚩᛇᚱᛠᚱᛠᚷᛖᛚᛇᚱᚾᛋᚩᚩᚳᚪᛖᚣᛖᛖᛏᚱᚢᚣᛟᛄᛉᛠᚷᛝᚣᛏᛝᚾᚪᛏᛋᛝᚪᛄᚠᛚᛋᚢᚹᛠᛈᛁᛏᛁᚾᚱᚱᛝᛗᚣᛗᚠᛁᚫᛁᚪᚢᛟᛒᚹᛗᛁᚻᚣᚹᛞᛚᛟᛏᛞᛟᚳᛒᛡᛒᚪᛏᚹᛏᛈᚹᛠᚩᚱᚩᛖᚣᛚᛋᚢᛡᚱᚠᛄᛇᚱᛡᚦᛖᚢᛏᛝᚫᚾᚪᛠᚩᚪᚾᚪᚦᚷᚩᚫᛉᛒᛏᛖᛠᛗᚷᚱᛗᚣᛝᚠᛒᛞᛟᛞᚪᛠᚱᚳᛁᛈᛞᚠᛗᛝᚻᛋᚩᛞᛈᛉᚾᛟᚱᛡᚾᚳᚳᛏᚾᛈᚠ",
+  "segment_ends": [
+    3,
+    15,
+    19,
+    26,
+    28,
+    31,
+    34,
+    36,
+    37,
+    40,
+    44,
+    51,
+    53,
+    62,
+    66,
+    68,
+    71,
+    75,
+    79,
+    91,
+    93,
+    95,
+    98,
+    101,
+    105,
+    108,
+    111,
+    115,
+    120,
+    122,
+    126,
+    133,
+    137,
+    144,
+    147,
+    150,
+    152,
+    154,
+    157,
+    163,
+    166,
+    178,
+    180,
+    190,
+    200,
+    204,
+    208,
+    218,
+    220,
+    224,
+    231,
+    234
+  ],
+  "top": [
+    {
+      "score": -6.363032128115882,
+      "plaintext_runes": "ᚹᚷᛡᚷᚱᛝᚦᛞᛏᚷᚢᛇᛏᚠᚱᚷᚱᛗᛈᛁᛏᛚᛖᚣᛖᛖᚹᚠᚩᚻᛞᚾᚢᛉᚢᛗᛄᚢᚷᛟᛟᚠᚱᛝᚦᛖᚠᚠᚫᚾᛞᛋᚪᚠᚠᚣᛡᛉᚹᛚᛞᚠᚷᛋᛋᛝᛈᚦᚠᚹᛞᚹᛚᛡᛋᚫᛚᚢᚱᛉᛋᛋᛄᛏᛝᛝᚪᚷᚠᚢᚷᛁᛋᛞᚠᚣᛈᛇᛚᛖᚳᛟᚻᚳᛁᚠᛁᚱᚩᚦᚻᚠᚱᛄᛖᛒᛡᚷᛉᛁᚾᛋᛟᛋᚩᚹᛟᚳᚣᚾᛠᛏᚪᛞᚱᚦᛒᚹᚾᛏᚠᛇᚢᚷᚣᚻᚩᚣᛗᚾᛝᚹᚦᚩᛒᛁᚷᛒᛡᛏᛚᛞᚢᛡᚷᚱᛞᛠᛋᚠᛈᛉᛋᚣᚪᚢᛞᛁᛡᛠᛒᚪᚫᛞᚪᛋᚦᛒᛖᛞᛞᛁᚾᚩᚷᛡᚠᛖᛟᚠᛡᚳᛗᚹᚩᚣᚢᚦᛚᛚᛝᚾᛄᚩᚠᚠᚩᛖᚱᛝᚩᚷᛁᛒᚣᛚᛠᛁᛗᛝᚩᛋᛈᚠ",
+      "transliteration": "WGIAGRNGTHDTGUEOTFRGRMPITLEYEEWFOHDNUXUMJUGOEOEFRNGTHEFFAENDSAFFYIAXWLDFGSSNGPTHFWDWLIASAELURXSSJTNGNGAGFUGISDFYPEOLECOEHCIFIROTHHFRJEBIAGXINSOESOWOECYNEATADRTHBWNTFEOUGYHOYMNNGWTHOBIGBIATLDUIAGRDEASFPXSYAUDIIAEABAAEDASTHBEDDINOGIAFEOEFIACMWOYUTHLLNGNJOFFOERNGOGIBYLEAIMNGOSPF",
+      "recipe": {
+        "family": "vigenere",
+        "cipher_sign": -1,
+        "key_sign": 1,
+        "key_indices": [
+          19,
+          24,
+          26
+        ],
+        "start": 2,
+        "skip_positions": [
+          27,
+          54,
+          61,
+          68,
+          111,
+          169,
+          214,
+          233
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 822,
+      "max_states": 12
+    },
+    {
+      "score": -6.368361473004364,
+      "plaintext_runes": "ᚩᚢᛏᛉᛋᚾᚾᛏᚳᛁᛁᛉᛚᛁᛒᛞᚣᛠᛄᛈᛖᛖᛗᛠᛗᚢᛗᚠᚠᛞᛋᚻᛈᚹᚣᛈᛠᛒᛁᚳᛈᚹᚣᛝᛖᛄᚱᚢᛏᛈᚫᛄᛁᛁᚠᛠᚦᛇᚣᛗᛋᚦᚩᚱᚾᛉᛠᚾᚠᛝᛋᛠᚳᚱᛋᛇᛞᛇᛏᛉᛏᛇᚪᛏᛖᛋᚾᚳᛞᛡᚠᚻᚱᚹᚾᛄᛖᛡᛏᚫᛞᚾᛄᚪᛠᛠᚣᚠᚻᛋᚱᚠᛞᚢᛟᚳᛋᚦᛋᛞᛁᛋᛖᚪᛏᛏᛡᛠᚠᚫᛝᚻᚩᛞᚫᚣᛠᛈᚻᚻᚹᚠᛖᚦᚷᚷᛒᛖᛄᚦᚢᛋᚣᚪᛞᛗᛖᛏᛏᚹᛁᛈᚹᛝᛝᛚᛖᛒᛏᛖᚦᚾᚳᚳᛞᛏᚩᛚᚦᛁᚠᛡᚻᛖᚪᛈᚳᚪᚹᛁᚹᛟᛉᛞᚱᛖᛋᚱᚻᛏᚷᚩᚠᛋᚠᚩᛏᚦᛏᛞᛠᛇᛝᚻᛖᛁᛏᚾᚪᛏᚾᚳᛏᛈᚹᚣᚪᛚᚣᚾᛟᛝᚠᛖ",
+      "transliteration": "OUTXSNNTCIIXLIBDYEAJPEEMEAMUMFFDSHPWYPEABICPWYNGEJRUTPAEJIIFEATHEOYMSTHORNXEANFNGSEACRSEODEOTXTEOATESNCDIAFHRWNJEIATAEDNJAEAEAYFHSRFDUOECSTHSDISEATTIAEAFAENGHODAEYEAPHHWFETHGGBEJTHUSYADMETTWIPWNGNGLEBTETHNCCDTOLTHIFIAHEAPCAWIWOEXDRESRHTGOFSFOTTHTDEAEONGHEITNATNCTPWYALYNOENGFE",
+      "recipe": {
+        "family": "prime_totient",
+        "cipher_sign": 1,
+        "key_sign": 1,
+        "start": 180,
+        "skip_positions": [
+          27,
+          54,
+          111,
+          128,
+          202
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 71538,
+      "max_states": 1032
+    },
+    {
+      "score": -6.387798328206729,
+      "plaintext_runes": "ᛞᛗᛝᛞᚣᚳᛠᛞᚾᛟᚱᚷᚠᛁᚢᚣᚫᚠᚹᚹᚦᛡᚪᛝᛠᚦᚾᚪᛚᚢᚳᚻᚳᚩᛋᚳᚩᛏᚣᚱᚫᚱᚪᚱᛋᚱᛄᚻᛚᛝᚹᛒᛏᛏᚠᚱᚣᛉᚠᚳᚩᛖᛄᛏᛗᛉᚦᛝᚳᛋᚫᚱᛁᚾᛠᛡᛉᛞᚩᚢᚪᛋᚹᛋᚾᛠᚳᚾᚪᛚᛁᛁᛖᛗᛗᛒᛏᚢᚻᛖᚣᛒᛝᚻᛏᛟᚣᛈᚩᛞᚳᚠᛝᛚᚩᛚᛖᛈᛁᚠᚱᛁᛄᚾᛄᚢᛝᛖᚠᛗᛡᚹᛏᛝᛞᚪᚩᚻᚹᚣᚠᚩᚦᛠᛟᚣᛋᛉᛝᚣᛁᛉᛖᚪᛒᚷᛏᛏᛏᚷᚢᚠᛁᛞᛞᛖᚢᛞᚩᚠᛋᚻᚱᚻᚠᛄᛖᛚᛈᛟᚹᛋᚹᚢᛠᚷᚦᚠᛝᛖᛒᛇᚹᚱᛞᚣᚱᛈᚹᛋᚦᚩᚠᚪᛏᚪᛒᛉᚱᚪᛒᛡᛖᚱᚠᚷᛡᚹᛞᛞᚣᚢᛋᛏᚣᚩᚢᛈᛈᛏᛏᛈᚢᛁ",
+      "transliteration": "DMNGDYCEADNOERGFIUYAEFWWTHIAANGEATHNALUCHCOSCOTYRAERARSRJHLNGWBTTFRYXFCOEJTMXTHNGCSAERINEAIAXDOUASWSNEACNALIIEMMBTUHEYBNGHTOEYPODCFNGLOLEPIFRIJNJUNGEFMIAWTNGDAOHWYFOTHEAOEYSXNGYIXEABGTTTGUFIDDEUDOFSHRHFJELPOEWSWUEAGTHFNGEBEOWRDYRPWSTHOFATABXRABIAERFGIAWDDYUSTYOUPPTTPUI",
+      "recipe": {
+        "family": "prime_totient",
+        "cipher_sign": -1,
+        "key_sign": -1,
+        "start": 144,
+        "skip_positions": [
+          54,
+          111,
+          128,
+          169,
+          202,
+          214
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 71538,
+      "max_states": 1032
+    }
+  ],
+  "key_sign_tasks": 1536,
+  "wall_seconds": 10.14005940000061
+}

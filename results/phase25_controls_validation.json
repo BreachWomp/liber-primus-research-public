@@ -1,0 +1,335 @@
+{
+  "full_gate_passed": true,
+  "controls": [
+    {
+      "index": 0,
+      "runes": 200,
+      "key_length": 13,
+      "cipher_sign": 2,
+      "feedback_sign": 3,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 200,
+      "output": "results/E068-control-0-d8f26c866797.json"
+    },
+    {
+      "index": 1,
+      "runes": 200,
+      "key_length": 23,
+      "cipher_sign": 7,
+      "feedback_sign": 8,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 200,
+      "output": "results/E068-control-1-32f64b0d63bf.json"
+    },
+    {
+      "index": 2,
+      "runes": 200,
+      "key_length": 31,
+      "cipher_sign": 14,
+      "feedback_sign": 15,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 200,
+      "output": "results/E068-control-2-e4f60c59b7f3.json"
+    },
+    {
+      "index": 3,
+      "runes": 300,
+      "key_length": 13,
+      "cipher_sign": 27,
+      "feedback_sign": 3,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E068-control-3-0d5f45e05421.json"
+    },
+    {
+      "index": 4,
+      "runes": 300,
+      "key_length": 23,
+      "cipher_sign": 2,
+      "feedback_sign": 8,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E068-control-4-d66843b2d8f8.json"
+    },
+    {
+      "index": 5,
+      "runes": 300,
+      "key_length": 31,
+      "cipher_sign": 7,
+      "feedback_sign": 15,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E068-control-5-4d2529172249.json"
+    },
+    {
+      "index": 6,
+      "runes": 729,
+      "key_length": 13,
+      "cipher_sign": 14,
+      "feedback_sign": 3,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 729,
+      "output": "results/E068-control-6-cb6f97cb909c.json"
+    },
+    {
+      "index": 7,
+      "runes": 729,
+      "key_length": 23,
+      "cipher_sign": 27,
+      "feedback_sign": 8,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 729,
+      "output": "results/E068-control-7-d7407a778a24.json"
+    },
+    {
+      "index": 8,
+      "runes": 729,
+      "key_length": 31,
+      "cipher_sign": 2,
+      "feedback_sign": 15,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 729,
+      "output": "results/E068-control-8-1066d891b88f.json"
+    },
+    {
+      "index": 9,
+      "runes": 3316,
+      "key_length": 13,
+      "cipher_sign": 7,
+      "feedback_sign": 3,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 3316,
+      "output": "results/E068-control-9-606a96565da9.json"
+    },
+    {
+      "index": 10,
+      "runes": 3316,
+      "key_length": 23,
+      "cipher_sign": 14,
+      "feedback_sign": 8,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 3316,
+      "output": "results/E068-control-10-230905095eb0.json"
+    },
+    {
+      "index": 11,
+      "runes": 3316,
+      "key_length": 32,
+      "cipher_sign": 27,
+      "feedback_sign": 15,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 3316,
+      "output": "results/E068-control-11-92d03c435f0f.json"
+    },
+    {
+      "index": 12,
+      "runes": 200,
+      "key_length": 31,
+      "cipher_sign": 1,
+      "feedback_sign": 14,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 200,
+      "output": "results/E068-control-12-f2b39227a576.json"
+    },
+    {
+      "index": 13,
+      "runes": 300,
+      "key_length": 31,
+      "cipher_sign": 28,
+      "feedback_sign": 7,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 300,
+      "output": "results/E068-control-13-879f7881fdcc.json"
+    },
+    {
+      "index": 14,
+      "runes": 729,
+      "key_length": 31,
+      "cipher_sign": 1,
+      "feedback_sign": 2,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 729,
+      "output": "results/E068-control-14-6c46fd5e91cb.json"
+    },
+    {
+      "index": 15,
+      "runes": 3316,
+      "key_length": 31,
+      "cipher_sign": 28,
+      "feedback_sign": 27,
+      "family_rank": 1,
+      "family_retained": true,
+      "exact": true,
+      "injected_recipe_exact": true,
+      "correct_runes": 3316,
+      "output": "results/E068-control-15-e9cc89851236.json"
+    }
+  ],
+  "null_score": -4.263206548189729,
+  "entries": [
+    {
+      "id": "E068-control-0",
+      "fingerprint": "d8f26c866797a5ec96f2ec84a3ba8fd3cfe7ebc6c4b1809301a369c69e69f4fc",
+      "output": "results/E068-control-0-d8f26c866797.json",
+      "sha256": "c5d4f97fad4ea6a200596c889b00d9b29d7a87e670a6d674afc511768511656b"
+    },
+    {
+      "id": "E068-control-1",
+      "fingerprint": "32f64b0d63bf1e3477a075e213e5b8cc05673190b7832346096fb9a7d9eb936b",
+      "output": "results/E068-control-1-32f64b0d63bf.json",
+      "sha256": "2bcab73b761d4ff3e6bb581fad4dcf328f91ada15f7d3543b2f7b9fa2ec9343f"
+    },
+    {
+      "id": "E068-control-2",
+      "fingerprint": "e4f60c59b7f35004130dfbbb354c04e607fcd3d25bcf23a956d4bc876d496c59",
+      "output": "results/E068-control-2-e4f60c59b7f3.json",
+      "sha256": "9d0d63f90e4a4078820ee15b073f91d952d3f5f2b2da8733240219908f86c60c"
+    },
+    {
+      "id": "E068-control-3",
+      "fingerprint": "0d5f45e05421199309d2d5b83d4b5f7f393a0c3ffb69d07b52efb44fc2bcf048",
+      "output": "results/E068-control-3-0d5f45e05421.json",
+      "sha256": "32f901ab48a8846aba86d14ed72c429d6424bcd0b3caafcfaac861d0fae5a564"
+    },
+    {
+      "id": "E068-control-4",
+      "fingerprint": "d66843b2d8f8c2835f0b4cb479a738996a169a732234f0c1678247d2764bd74b",
+      "output": "results/E068-control-4-d66843b2d8f8.json",
+      "sha256": "ac1b1a4c082cfb3e48a33b36febb32b990ebf898cc0caa4f27f7c0fb4302bc04"
+    },
+    {
+      "id": "E068-control-5",
+      "fingerprint": "4d2529172249e8de0e273b406f8edd30dacc83a56e07ee034d070a93c50980d6",
+      "output": "results/E068-control-5-4d2529172249.json",
+      "sha256": "f7aadc846474e1b844d9266ef8a27f2df37ce64226452494fd3b210f55a1cfe7"
+    },
+    {
+      "id": "E068-control-6",
+      "fingerprint": "cb6f97cb909c69025c472d0bd0427f3b13592dcb72a0da31d3c6128b5e47011d",
+      "output": "results/E068-control-6-cb6f97cb909c.json",
+      "sha256": "5130ec226af9bf297ee668b625d6eaed2b3856e06ea45bd8bcf01d96db41ff48"
+    },
+    {
+      "id": "E068-control-7",
+      "fingerprint": "d7407a778a242dc9db9940696a5e7967714823dd7cd9ad219089a76776a4ed19",
+      "output": "results/E068-control-7-d7407a778a24.json",
+      "sha256": "196e263bae5363b2dd35415d79e7d121525eb4cd66f97d76a45bee594cd32493"
+    },
+    {
+      "id": "E068-control-8",
+      "fingerprint": "1066d891b88f975d4ca024355a6ec9ad594d0f3f87bea63676611bc564df4c63",
+      "output": "results/E068-control-8-1066d891b88f.json",
+      "sha256": "696f98e5f06eea53ffa7d9a85b84402dc0a2f735a84eb5cc81f683ac1e7c9315"
+    },
+    {
+      "id": "E068-control-9",
+      "fingerprint": "606a96565da92fc464483d231b8e71f198f7535eb4833066947ef817e4a4ac0e",
+      "output": "results/E068-control-9-606a96565da9.json",
+      "sha256": "5dcfee8fe73d8209e2074875a4875319b5a91b1aa0ca765e4a18cff5ba5305ee"
+    },
+    {
+      "id": "E068-control-10",
+      "fingerprint": "230905095eb04cb0261b4aa71b732ac7fb14bfc2c7edc0c867dcb38fc96759be",
+      "output": "results/E068-control-10-230905095eb0.json",
+      "sha256": "ad2c8f279dc9d53b59ac261ac07236f9446c0590793649772753843f6b163981"
+    },
+    {
+      "id": "E068-control-11",
+      "fingerprint": "92d03c435f0f5cefd0231998f1e4a6a3ad6b2e6c7fcc4ed1e3d0075d97152b85",
+      "output": "results/E068-control-11-92d03c435f0f.json",
+      "sha256": "0f8221fc7a0d66b5a8090abcecd7e6bcf565674161323b9273f53b2595c2c90c"
+    },
+    {
+      "id": "E068-control-12",
+      "fingerprint": "f2b39227a576f64f910e287f3208941c57c0233982360b03963ffd05a79e8cd9",
+      "output": "results/E068-control-12-f2b39227a576.json",
+      "sha256": "013e09f7a3f44cec871e0a8ea5b09bd2336d8536aa55e3e7327985762ba6b1e6"
+    },
+    {
+      "id": "E068-control-13",
+      "fingerprint": "879f7881fdcc1cef28e9c2e208e2b25c5fbbb3084aee985432c54f47ec2706b9",
+      "output": "results/E068-control-13-879f7881fdcc.json",
+      "sha256": "b868a536d9774e246fcfc3695b84ae2e285e06ba61e26c2a9b9b21bc43e92d72"
+    },
+    {
+      "id": "E068-control-14",
+      "fingerprint": "6c46fd5e91cbcba6d8f7f804117c6d570fefcdb828bed0c5bbcb8ff9b78ed2a9",
+      "output": "results/E068-control-14-6c46fd5e91cb.json",
+      "sha256": "90db319c8d48369548ed6f5d795c662fb7619c625a79f3cb3c98d6661058da9d"
+    },
+    {
+      "id": "E068-control-15",
+      "fingerprint": "e9cc8985123606db4a089d7e034cc4006ba058891b0b1c837ab9b8c982981f86",
+      "output": "results/E068-control-15-e9cc89851236.json",
+      "sha256": "ebda372c0494abf01398ac1c75029c7505c20c75308eef4239b817386fd67c82"
+    },
+    {
+      "id": "E068-null-5",
+      "fingerprint": "b3225106fb3be53d691d1e63a4b45a6d79895e3b0bcbffa09fbdb1ae69d9634e",
+      "output": "results/E068-null-5-b3225106fb3b.json",
+      "sha256": "61d95eb92d0930533a53fdaf90f723b75506877a1529290cf73116ef163049a1"
+    }
+  ],
+  "validation": {
+    "scalar_model_table_entries": 732540,
+    "reference_sequence_crosschecks": 12,
+    "scalar_decodings": 114761,
+    "independent_family_screen_scores": 386512,
+    "independent_trigram_coordinate_optima": 30973,
+    "initial_and_final_scores": 63104,
+    "candidate_score_pairs": 23640,
+    "fourgram_trace_scores": 409,
+    "independent_fourgram_coordinate_optima": 204,
+    "reencryptions": 51
+  },
+  "seconds": 604.5938186000567,
+  "peak_sampled_bytes": 161488896,
+  "validation_seconds": 291.23552590003237,
+  "verifier_sha256": "0f4fb975071e6fa4e07ba2ad527a76146feb7bbfd913dd4be1889af8ace1f9a9",
+  "new_decryptions": []
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "kind": "fresh",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 15.023544700001366,
+    "peak_sampled_bytes": 121176064,
+    "log": "results\\E052-fresh-0-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 15.278060199983884,
+    "peak_sampled_bytes": 121720832,
+    "log": "results\\E052-fresh-1-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 15.527208500017878,
+    "peak_sampled_bytes": 120791040,
+    "log": "results\\E052-fresh-2-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 29.55570239998633,
+    "peak_sampled_bytes": 123572224,
+    "log": "results\\E052-regression-0-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 15.046424999949522,
+    "peak_sampled_bytes": 121339904,
+    "log": "results\\E052-regression-1-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 15.042498100025114,
+    "peak_sampled_bytes": 121917440,
+    "log": "results\\E052-regression-2-process.txt"
+  },
+  {
+    "kind": "null",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 15.528162600006908,
+    "peak_sampled_bytes": 121696256,
+    "log": "results\\E052-null-2-process.txt"
+  }
+]

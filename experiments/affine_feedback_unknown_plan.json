@@ -1,0 +1,752 @@
+{
+  "registered_at": "2026-10-31T11:43:07.694569+00:00",
+  "experiment": "E073",
+  "hypothesis": "H049",
+  "control_validation": "results/phase26_controls_validation.json",
+  "required_gate": "All16 E072 plaintext/key/a/b/c exact and injected families retained; independent source/queue/retained-family/score checks and full-screen deterministic replay passed.",
+  "groups": [
+    {
+      "id": "LP2-00",
+      "page_ids": [
+        "LP2-00"
+      ],
+      "source_refs": [
+        "relikd:pages/p0-2.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-01",
+      "page_ids": [
+        "LP2-01"
+      ],
+      "source_refs": [
+        "relikd:pages/p0-2.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-02",
+      "page_ids": [
+        "LP2-02"
+      ],
+      "source_refs": [
+        "relikd:pages/p0-2.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-03",
+      "page_ids": [
+        "LP2-03"
+      ],
+      "source_refs": [
+        "relikd:pages/p3-7.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-04",
+      "page_ids": [
+        "LP2-04"
+      ],
+      "source_refs": [
+        "relikd:pages/p3-7.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-05",
+      "page_ids": [
+        "LP2-05"
+      ],
+      "source_refs": [
+        "relikd:pages/p3-7.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-07",
+      "page_ids": [
+        "LP2-07"
+      ],
+      "source_refs": [
+        "relikd:pages/p3-7.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-08",
+      "page_ids": [
+        "LP2-08"
+      ],
+      "source_refs": [
+        "relikd:pages/p8-14.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-09",
+      "page_ids": [
+        "LP2-09"
+      ],
+      "source_refs": [
+        "relikd:pages/p8-14.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-10",
+      "page_ids": [
+        "LP2-10"
+      ],
+      "source_refs": [
+        "relikd:pages/p8-14.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-11",
+      "page_ids": [
+        "LP2-11"
+      ],
+      "source_refs": [
+        "relikd:pages/p8-14.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-12",
+      "page_ids": [
+        "LP2-12"
+      ],
+      "source_refs": [
+        "relikd:pages/p8-14.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-13",
+      "page_ids": [
+        "LP2-13"
+      ],
+      "source_refs": [
+        "relikd:pages/p8-14.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-16",
+      "page_ids": [
+        "LP2-16"
+      ],
+      "source_refs": [
+        "relikd:pages/p15-22.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-17",
+      "page_ids": [
+        "LP2-17"
+      ],
+      "source_refs": [
+        "relikd:pages/p15-22.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-18",
+      "page_ids": [
+        "LP2-18"
+      ],
+      "source_refs": [
+        "relikd:pages/p15-22.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-19",
+      "page_ids": [
+        "LP2-19"
+      ],
+      "source_refs": [
+        "relikd:pages/p15-22.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-20",
+      "page_ids": [
+        "LP2-20"
+      ],
+      "source_refs": [
+        "relikd:pages/p15-22.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-21",
+      "page_ids": [
+        "LP2-21"
+      ],
+      "source_refs": [
+        "relikd:pages/p15-22.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-23",
+      "page_ids": [
+        "LP2-23"
+      ],
+      "source_refs": [
+        "relikd:pages/p23-26.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-24",
+      "page_ids": [
+        "LP2-24"
+      ],
+      "source_refs": [
+        "relikd:pages/p23-26.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-25",
+      "page_ids": [
+        "LP2-25"
+      ],
+      "source_refs": [
+        "relikd:pages/p23-26.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-26",
+      "page_ids": [
+        "LP2-26"
+      ],
+      "source_refs": [
+        "relikd:pages/p23-26.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-27",
+      "page_ids": [
+        "LP2-27"
+      ],
+      "source_refs": [
+        "relikd:pages/p27-32.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-28",
+      "page_ids": [
+        "LP2-28"
+      ],
+      "source_refs": [
+        "relikd:pages/p27-32.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-29",
+      "page_ids": [
+        "LP2-29"
+      ],
+      "source_refs": [
+        "relikd:pages/p27-32.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-30",
+      "page_ids": [
+        "LP2-30"
+      ],
+      "source_refs": [
+        "relikd:pages/p27-32.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-31",
+      "page_ids": [
+        "LP2-31"
+      ],
+      "source_refs": [
+        "relikd:pages/p27-32.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-33",
+      "page_ids": [
+        "LP2-33"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-34",
+      "page_ids": [
+        "LP2-34"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-35",
+      "page_ids": [
+        "LP2-35"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-36",
+      "page_ids": [
+        "LP2-36"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-37",
+      "page_ids": [
+        "LP2-37"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-38",
+      "page_ids": [
+        "LP2-38"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-39",
+      "page_ids": [
+        "LP2-39"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-40",
+      "page_ids": [
+        "LP2-40"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-41",
+      "page_ids": [
+        "LP2-41"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-42",
+      "page_ids": [
+        "LP2-42"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-43",
+      "page_ids": [
+        "LP2-43"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-44",
+      "page_ids": [
+        "LP2-44"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-45",
+      "page_ids": [
+        "LP2-45"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-46",
+      "page_ids": [
+        "LP2-46"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-47",
+      "page_ids": [
+        "LP2-47"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-48",
+      "page_ids": [
+        "LP2-48"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-52",
+      "page_ids": [
+        "LP2-52"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-54",
+      "page_ids": [
+        "LP2-54"
+      ],
+      "source_refs": [
+        "relikd:pages/p54-55.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "source_note": "Single canonical page; hypothetical key reset at page start."
+    },
+    {
+      "id": "LP2-00_02",
+      "page_ids": [
+        "LP2-00",
+        "LP2-01",
+        "LP2-02"
+      ],
+      "source_refs": [
+        "relikd:pages/p0-2.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-03_07",
+      "page_ids": [
+        "LP2-03",
+        "LP2-04",
+        "LP2-05",
+        "LP2-06",
+        "LP2-07"
+      ],
+      "source_refs": [
+        "relikd:pages/p3-7.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-08_14",
+      "page_ids": [
+        "LP2-08",
+        "LP2-09",
+        "LP2-10",
+        "LP2-11",
+        "LP2-12",
+        "LP2-13",
+        "LP2-14"
+      ],
+      "source_refs": [
+        "relikd:pages/p8-14.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-15_22",
+      "page_ids": [
+        "LP2-15",
+        "LP2-16",
+        "LP2-17",
+        "LP2-18",
+        "LP2-19",
+        "LP2-20",
+        "LP2-21",
+        "LP2-22"
+      ],
+      "source_refs": [
+        "relikd:pages/p15-22.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-23_26",
+      "page_ids": [
+        "LP2-23",
+        "LP2-24",
+        "LP2-25",
+        "LP2-26"
+      ],
+      "source_refs": [
+        "relikd:pages/p23-26.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-27_32",
+      "page_ids": [
+        "LP2-27",
+        "LP2-28",
+        "LP2-29",
+        "LP2-30",
+        "LP2-31",
+        "LP2-32"
+      ],
+      "source_refs": [
+        "relikd:pages/p27-32.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-33_39",
+      "page_ids": [
+        "LP2-33",
+        "LP2-34",
+        "LP2-35",
+        "LP2-36",
+        "LP2-37",
+        "LP2-38",
+        "LP2-39"
+      ],
+      "source_refs": [
+        "relikd:pages/p33-39.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-40_53",
+      "page_ids": [
+        "LP2-40",
+        "LP2-41",
+        "LP2-42",
+        "LP2-43",
+        "LP2-44",
+        "LP2-45",
+        "LP2-46",
+        "LP2-47",
+        "LP2-48",
+        "LP2-49",
+        "LP2-50",
+        "LP2-51",
+        "LP2-52",
+        "LP2-53"
+      ],
+      "source_refs": [
+        "relikd:pages/p40-53.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-54_55",
+      "page_ids": [
+        "LP2-54",
+        "LP2-55"
+      ],
+      "source_refs": [
+        "relikd:pages/p54-55.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    },
+    {
+      "id": "LP2-40_55",
+      "page_ids": [
+        "LP2-40",
+        "LP2-41",
+        "LP2-42",
+        "LP2-43",
+        "LP2-44",
+        "LP2-45",
+        "LP2-46",
+        "LP2-47",
+        "LP2-48",
+        "LP2-49",
+        "LP2-50",
+        "LP2-51",
+        "LP2-52",
+        "LP2-53",
+        "LP2-54",
+        "LP2-55"
+      ],
+      "source_refs": [
+        "iddqd:liber-primus__index/liber-primus__index.txt"
+      ],
+      "source_note": "Pinned community grouping; not an authenticated cipher boundary."
+    }
+  ],
+  "section_ids": [
+    "LP2-00",
+    "LP2-01",
+    "LP2-02",
+    "LP2-03",
+    "LP2-04",
+    "LP2-05",
+    "LP2-07",
+    "LP2-08",
+    "LP2-09",
+    "LP2-10",
+    "LP2-11",
+    "LP2-12",
+    "LP2-13",
+    "LP2-16",
+    "LP2-17",
+    "LP2-18",
+    "LP2-19",
+    "LP2-20",
+    "LP2-21",
+    "LP2-23",
+    "LP2-24",
+    "LP2-25",
+    "LP2-26",
+    "LP2-27",
+    "LP2-28",
+    "LP2-29",
+    "LP2-30",
+    "LP2-31",
+    "LP2-33",
+    "LP2-34",
+    "LP2-35",
+    "LP2-36",
+    "LP2-37",
+    "LP2-38",
+    "LP2-39",
+    "LP2-40",
+    "LP2-41",
+    "LP2-42",
+    "LP2-43",
+    "LP2-44",
+    "LP2-45",
+    "LP2-46",
+    "LP2-47",
+    "LP2-48",
+    "LP2-52",
+    "LP2-54",
+    "LP2-00_02",
+    "LP2-03_07",
+    "LP2-08_14",
+    "LP2-15_22",
+    "LP2-23_26",
+    "LP2-27_32",
+    "LP2-33_39",
+    "LP2-40_53",
+    "LP2-54_55",
+    "LP2-40_55"
+  ],
+  "scope": "46 single LP2 pages of at least200 runes followed by10 existing groups; all55 unknown rune pages represented, empty numeric LP2-50 preserved. Group boundaries and page resets are hypotheses.",
+  "solver": "Frozen E072,659344 families,top8 per period,232 full optimizations,12 refinements. a,b1..28,c0..28,m4..32. No skips, no language/key resets within inputs. Same parameters for observed/null.",
+  "selection": "Highest mean fourgram score among56 inputs, stable plan order for ties. Freeze winner and all56 output hashes before nulls.",
+  "null": "19 independent selected-input nulls, per-page interior shuffle preserving counts,endpoints,adjacent-equality and empty spans; rejection cap100000/page. Entire family screening and optimizer repeated.",
+  "null_seed": 3302073,
+  "replicate_seed_stride": 100,
+  "replicates": 19,
+  "inference": "Plus-one p=(1+exceedances)/20; Bonferroni56 across page/group selection irrespective of overlaps. Minimum adjusted p is1 with19nulls. Coarse rejection screen only, no significance claim; zero exceedances requires separately preregistered larger calibration.",
+  "process_seconds": 180,
+  "watchdog_seconds": 185,
+  "family_seconds": 2400,
+  "phase_seconds": 3600,
+  "memory_ceiling_mib": 768,
+  "workers": 1,
+  "limits": "Heuristic top8 screening, not exhaustive key search. E071 independently enumerates27608 family scores; each attack independently checks232 retained families and replays complete screen. No skipped runes or hidden boundaries. Grouping unauthenticated. No community claims.",
+  "control_validation_sha256": "3a26a4e35a4b83d7ed96cee0f62c098f59a664188e982d0f4f32fddffed29ad6",
+  "registration_script_sha256": "3aacaaf8ab9eb0cc0340f92f26f5926fb1f1376c068d5d3e3220c56ced8ea113"
+}

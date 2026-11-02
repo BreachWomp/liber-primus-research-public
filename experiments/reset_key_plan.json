@@ -1,0 +1,15 @@
+{
+  "experiment": "E045-reset-key-controls",
+  "hypothesis_id": "H036",
+  "rule": "P=s*C+K[j] mod29; ciphertext F may copy0 without consuming key. Same key on every page; cursor and language context reset at each page. Numeric zero-rune spans consume no key.",
+  "seeds": "Two longest nonempty pages capped1024, plus3 globally longest maximal non-F runs within pages, length>=32 capped256. E038 periods1..16,both signs,4starts,none/allF for pages and empty fixed skip for non-F runs. Canonical cyclic dedup, top12 source scores. Search seed3303045.",
+  "optimizer": "Initial schedule searches every COMMON phase across all pages: sum of separate exact fixed-phase DP optima, never independent page phases. Rotate winning common phase into key. Up to3 alternations of6 shared-coordinate sweeps and exact phase0 perpage DP. Language factors cannot cross boundaries. Subsequent common phase is represented by oriented key, not separately rescanned.",
+  "score": "Sum of perpage order4 logp / total runes minus [primitive_key_length*ln29+cipherFcount*ln2]/N. One shared key cost; empty pages zero score.",
+  "controls": "Reuse E043 plaintext source ranges and artificial page spans for chaptersX,XI,XII lengths3316,1200,1200, but encrypt with cursor reset at each page. Random3301045 keys lengths5,8,13 uniform1..28; signs+1,-1,+1; skip every other plaintextF startingfirst globally. No key, plaintext or mask input to solver. These source-excluded controls are not historically blind.",
+  "gate": "All3 controls exact plaintext,key and F masks. Failure blocks unknown groups; preserve failure and diagnose objective versus search without retuning.",
+  "null": "One diagnostic full optimizer null of XI using frozen E043 page_null, seed3302045+page_index; preserve page endpoints,counts,doublets. No inferential p.",
+  "bounds": "4096runes,16pages,16keyslots,12seeds,29coordinate rows,<=128 DP states per fixed phase/page,one process. Same training as E043.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "unknown_contingency": "Only after passed gate preregister all10 E012 groups, frozen max selection and19 fully reoptimized selected-group nulls with Bonferroni10. No unsupported community claims."
+}

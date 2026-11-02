@@ -1,0 +1,87 @@
+{
+  "status": "partial_not_complete",
+  "mode": "streams",
+  "pages": [
+    {
+      "page": "LP2-17",
+      "ciphertext_runes": "ᛚᚦᛈᛞᚦᛇᛒᛡᚪᛒᚪᚾᛗᚳᚾᛖᛡᚹᛝᛏᚱᛝᚫᛚᛟᛁᛇᚣᛝᛡᚾᛏᚱᛁᛋᚪᛖᛇᚢᛝᛞᛄᚠᚱᛠᛗᛠᚪᚫᛈᛏᚠᛖᛏᚷᚾᚠᛁᚠᚱᚻᚱᛇᛒᚻᛈᛏᛇᚱᛝᛡᛒᚹᛚᛏᛗᛉᚦᚾᛄᚳᚫᚷᛈᛋᛖᚩᚢᛝᚩᛏᛈᛁᚣᚾᚪᛏᚹᚠᛗᚾᛟᚾᚳᛒᛄᛉᛡᛟᚪᛁᚫᛝᛒᛉᛏᛄᛁᛋᛠᚳᛖᚱᚦᚣᚩᚣᛈᚫᚷᛡᛄᛁᚩᚱᚦᛠᛇᚦᚩᛉᚾᚱᚾᚫᛁᛉᛁᛝᚣᚫᛡᚫᛗᚹᛖᛇᚷᚻᛖᛗᚷᚢᛞᚹᛄᚻᛉᚱᚢᛄᚢᚾᛈᛋᚣᛄᚫᛈᚳᚣᚳᛒᛡᚫᛟᚪᚠᛏᚷᚩᛇᛟᛁᚱᛗᛖᛉᛟᛗᛇᚫᛟᚦᚱᛞᛁᚢᚦᚻᛗᛡᚾᛁᚦᚻᛚᛏᚳᚪᚦᚠᚪᚫᚣᚻᛠᚦᚠᛋᚠᛝᚷᚱᛈᛏᛄᛉᛟᚷᛚᚻᚩᚪᚦᛏᚳᛁᚠᚣᚢᛁᚹᛟᚪᚣᛁᛠᛄᚪᛟᛝᚦᛟᚠᚦᚾᛇᚷᛠᛚᛒᚠ",
+      "rune_count": 273,
+      "f_count": 12,
+      "evaluated_key_sign_tasks": 12,
+      "dp_transitions": 966076,
+      "top": [
+        {
+          "score": -4.652506327615783,
+          "plaintext_runes": "ᚩᚢᛝᚪᛖᚩᚱᛟᚹᚪᛈᚱᚷᛏᛝᚦᛖᚦᛉᚱᛚᚳᛏᛞᛒᚱᚢᚻᛏᚳᚻᛏᛚᛇᛏᚦᛝᚦᛝᚠᚣᚣᚠᛠᛄᛉᛈᚦᚹᛚᛖᚪᚾᛗᚦᛚᚪᚳᚷᛒᚷᛋᛈᛇᛟᛠᛖᚠᛖᚪᚹᚢᚾᚦᚠᛟᚠᛝᛠᚳᚪᚩᛡᚪᚠᚻᛠᚻᛟᚢᚢᛈᛗᚠᚩᚣᚾᚾᚠᚩᛏᚩᛋᚦᚹᚫᚫᛗᚢᚾᛏᛏᚹᛁᚱᛝᛞᛉᚳᚪᛗᛋᛖᚳᚻᚻᛄᛟᛡᛁᛒᛟᚢᛚᛁᛖᚪᚠᚪᚫᚾᚢᛞᛚᚦᚦᛄᚻᛗᚢᛖᛡᚣᛞᚣᚪᚣᛁᚾᛒᛝᛝᚷᛋᛝᛡᛉᚩᛈᛁᚻᛞᛄᚻᚻᛈᚪᛗᛗᛚᛇᛝᚣᚱᛋᚠᛇᚪᚷᚠᛒᛖᛉᚾᚣᚻᚩᚱᚦᛞᚻᛗᚹᛡᚳᛡᚷᚢᛏᛖᛗᚾᛖᛏᚻᛏᛉᚱᚾᛖᚪᚠᚻᚠᛏᛝᛒᛏᚠᚩᚠᚦᛖᛏᚻᛈᚪᛞᛏᛚᛝᚢᚻᛏᚱᚩᛇᚪᚾᚾᚠᚢᚱᛞᛁᛗᛏᚻᚢᚠᛉᛏᚢᚣᚠᛁᛖᛞᚦᛒᛗᛗᚣ",
+          "transliteration": "OUNGAEOROEWAPRGTNGTHETHXRLCTDBRUHTCHTLEOTTHNGTHNGFYYFEAJXPTHWLEANMTHLACGBGSPEOOEEAEFEAWUNTHFOEFNGEACAOIAAFHEAHOEUUPMFOYNNFOTOSTHWAEAEMUNTTWIRNGDXCAMSECHHJOEIAIBOEULIEAFAAENUDLTHTHJHMUEIAYDYAYINBNGNGGSNGIAXOPIHDJHHPAMMLEONGYRSFEOAGFBEXNYHORTHDHMWIACIAGUTEMNETHTXRNEAFHFTNGBTFOFTHETHPADTLNGUHTROEOANNFURDIMTHUFXTUYFIEDTHBMMY",
+          "recipe": {
+            "family": "integer_totient",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 27,
+            "skip_positions": [
+              42,
+              98,
+              221,
+              228,
+              230,
+              264
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 80488,
+          "max_states": 534
+        },
+        {
+          "score": -4.675577254406577,
+          "plaintext_runes": "ᛏᚷᛈᚾᛝᛇᚷᛖᛖᛄᛏᛋᚦᚢᛋᚫᛉᚩᚦᚩᛋᚹᚻᛁᛁᛡᛒᚠᚻᛖᛋᚦᚩᛒᛁᚩᛏᚫᛞᚹᛉᛠᚢᛈᚦᛖᛈᚦᛗᚱᚣᚪᚣᛝᚹᚳᛝᚢᚠᛟᛇᛋᛈᛋᛄᛈᛒᚷᚢᛖᚳᚣᚦᛞᛒᛄᚳᛋᚳᛁᚢᚳᚣᛚᚱᛗᛝᚱᚱᛈᚱᚱᛞᛠᛒᛏᛠᛞᛉᚱᛏᛄᛗᛝᚫᚻᚳᛁᛄᚩᛡᛋᚠᛈᛚᛉᛈᛇᛗᛠᚢᚳᛖᛡᚣᛈᚪᚪᛝᚫᛖᛒᚱᛋᚳᚱᚪᛞᚠᚪᛋᛏᚠᛉᛁᛈᚱᛟᚠᚫᚣᚹᚾᛉᚪᛁᛞᛋᛗᚹᛁᚦᚹᚪᛉᛖᚱᚪᚾᛒᚫᚹᛟᚢᛖᛈᛒᛈᚢᚩᛄᛞᛏᛡᚾᛈᚷᚠᚢᚠᛚᚩᚻᚩᛖᛉᛒᛗᛁᛁᚱᚦᛡᚩᚹᛒᛖᛒᛇᚾᛏᛇᛖᛝᚪᚾᛏᚣᛠᚷᛖᚠᛚᚦᚳᛡᚳᚱᚠᛏᚠᚠᛁᚷᛄᛚᚹᛏᚢᛡᛚᚷᚱᚳᛝᛞᚳᚫᚠᛋᛖᛝᛉᛏᛁᛉᛈᛚᚻᚹᛋᚱᚾᛉᚠᚣᛋᛋᛚᛋᚹᚾᚠ",
+          "transliteration": "TGPNNGEOGEEJTSTHUSAEXOTHOSWHIIIABFHESTHOBIOTAEDWXEAUPTHEPTHMRYAYNGWCNGUFOEEOSPSJPBGUECYTHDBJCSCIUCYLRMNGRRPRRDEABTEADXRTJMNGAEHCIJOIASFPLXPEOMEAUCEIAYPAANGAEEBRSCRADFASTFXIPROEFAEYWNXAIDSMWITHWAXERANBAEWOEUEPBPUOJDTIANPGFUFLOHOEXBMIIRTHIAOWBEBEONTEOENGANTYEAGEFLTHCIACRFTFFIGJLWTUIALGRCNGDCAEFSENGXTIXPLHWSRNXFYSSLSWNF",
+          "recipe": {
+            "family": "integer_totient",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "start": 230,
+            "skip_positions": [
+              58,
+              187,
+              221,
+              228,
+              230,
+              248,
+              264,
+              272
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 80488,
+          "max_states": 534
+        },
+        {
+          "score": -4.6957372605816925,
+          "plaintext_runes": "ᛋᛗᛋᛠᛏᚦᚦᛄᚾᚻᛠᚳᚷᚫᚪᚹᚦᚹᛖᛈᚹᛒᛁᛋᛋᛈᚳᚹᚦᚪᚱᛒᛋᚩᚩᛗᛠᛡᛄᛚᚢᛋᚠᚾᛁᚱᛋᚷᚣᛝᚳᚠᛈᚠᚢᚳᚠᛠᚠᚻᛚᛏᛉᛈᚹᚾᛗᚣᛋᛈᛞᚹᛝᛈᛝᛗᚣᛞᚾᛒᚣᚢᛞᛋᛚᛉᚠᛝᛠᚦᛁᛋᛡᛇᚹᚾᛉᚣᚠᚢᚠᚠᚦᛞᛞᛋᚩᛝᛗᛉᚷᚦᚠᛚᚩᚣᚱᚳᚹᛇᛉᚪᛒᚢᛇᛉᛉᚻᛏᚱᛞᛟᛈᛠᛞᚫᚣᛒᚦᛁᚢᚪᚫᛁᚷᚻᛗᚠᛒᚣᛁᛗᚩᚻᚣᚠᛗᚦᛚᚱᛉᛖᛉᚩᚩᚷᛈᛏᚪᛗᚳᚱᚩᚪᚩᛞᚹᛋᚫᛠᚣᛞᚳᚪᚻᚣᚠᚠᚣᚾᛚᚱᛗᛏᚾᚱᛞᛡᚾᚫᛠᚳᚹᛉᚳᚪᚳᚳᛁᚢᚪᚾᚷᚪᛠᛏᛝᛟᚩᛠᛟᛠᚦᛁᚪᚳᛚᚣᚩᚠᛚᚣᚢᚪᛚᚩᚪᚱᛚᛡᚩᛈᚹᛠᚫᛇᛏᛋᚠᚢᚢᛋᚣᚳᚣᛄᛗᚩᛒᚪᛒᚢᛡᛝᚠᚾᚩᚷᛏᚹᛞᚪᚣ",
+          "transliteration": "SMSEATTHTHJNHEACGAEAWTHWEPWBISSPCWTHARBSOOMEAIAJLUSFNIRSGYNGCFPFUCFEAFHLTXPWNMYSPDWNGPNGMYDNBYUDSLXFNGEATHISIAEOWNXYFUFFTHDDSONGMXGTHFLOYRCWEOXABUEOXXHTRDOEPEADAEYBTHIUAAEIGHMFBYIMOHYFMTHLRXEXOOGPTAMCROAODWSAEEAYDCAHYFFYNLRMTNRDIANAEEACWXCACCIUANGAEATNGOEOEAOEEATHIACLYOFLYUALOARLIAOPWEAAEEOTSFUUSYCYJMOBABUIANGFNOGTWDAY",
+          "recipe": {
+            "family": "integer_totient",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "start": 216,
+            "skip_positions": [
+              42,
+              51,
+              56,
+              58,
+              98,
+              187,
+              248,
+              264
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 80488,
+          "max_states": 534
+        }
+      ]
+    }
+  ],
+  "new_decryptions": []
+}

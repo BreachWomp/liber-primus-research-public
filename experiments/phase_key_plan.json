@@ -1,0 +1,15 @@
+{
+  "experiment": "E047-phase-key-controls",
+  "hypothesis_id": "H037",
+  "rule": "P=s*C+K[phase_page+j] mod29. Shared key, independent page phase, perpage context/cursor restart, selective ciphertext F copy without consuming key. Empty numeric spans have phase0 and consume nothing.",
+  "normalization": "Rotate key so first NONEMPTY page has phase0, subtract that rotation from all nonempty phases modulo primitive key length. Empty phases always0. This removes one redundant global rotation.",
+  "score": "[sum perpage logp4 - m*ln29 - cipherFcount*ln2 - (G-1)*ln(m)]/N with primitive m and G nonempty pages. Phase-description cost is fixed before unknown search.",
+  "optimizer": "Frozen E045 sources:2longest pages cap1024 plus3longest within-page non-F runs>=32 cap256. E038 periods1..16,both signs,4starts,none/allF or empty fixed non-F mask. Deduplicate cyclic keys and keep12. Exact perpage DP over ALL phases/F masks, then <=3alternations of6shared-coordinate sweeps and exact phase/mask DP. Normalize after each DP. Search seed3303047.",
+  "controls": "E043 source ranges and artificial spans reused (X3316,XI1200,XII1200), reencrypt with Random3301047 nonzero keys lengths5,8,13 and signs+1,-1,+1. After each key draw independent randrange(m) phase for each nonempty page except first fixed0; empty0. Copy every other plaintextF globally startingfirst. No truth/key/phase/mask input to solver.",
+  "gate": "All3 exact text,key,phase vector and Fmask. Failure blocks unknown sections; diagnose objective versus search without changing completed experiment. Chapters excluded from training but historically seen.",
+  "null": "One fully optimized diagnostic XI null, frozen perpage endpoint,count,doublet-preserving sampler, seed3302047+page_index. No inferential p.",
+  "bounds": "4096runes,16pages,16keyslots,12seeds,29coordinate rows,<=128DPstates perpage;one process; unchanged E043 training.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "unknown_contingency": "After gate pass, preregister10 E012 groups with frozen winner and19 fresh fully optimized selected-group nulls, Bonferroni10. No unsupported community solution claims."
+}

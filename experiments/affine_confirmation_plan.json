@@ -1,0 +1,29 @@
+{
+  "registered_at": "2026-10-19T12:45:43.200221+00:00",
+  "experiment": "E020",
+  "purpose": "Fixed fresh null calibration of frozen E019 maximum after0/19 initial exceedances; no new cipher family.",
+  "initial_null_output": "results/E019-null-LP2-55_55-3dcb82f90999.json",
+  "frozen_inputs": {
+    "results/E019-null-LP2-55_55-3dcb82f90999.json": "a7e7840a17af8926d1ff7268205d95b41eb5f95950031d41a8ac902e089f37c0",
+    "results/E019-pages-LP2-00_55-e867cef4e363.json": "5cd5761d1e6e8619388c03da492ca934f3fe33e8bba6cc72604d5c868b61e641",
+    "results/E019-controls-96a6be59a5ea.json": "402cf1ce4db14e14d9a95653d8c028a2f56ca8b5b099e0e60a88b548678ef82c"
+  },
+  "selected_page": "LP2-55",
+  "candidate_rule": {
+    "a": 5,
+    "b": 20,
+    "initial_key": 13
+  },
+  "observed_score": -5.225325413318316,
+  "seed": 3301020,
+  "batches": 20,
+  "batch_size": 200,
+  "total_replicates": 4000,
+  "randomization": "Random(seed+batch), independent uniform permutations conditional on exact counts and doublets; full unchanged E019 optimizer on every sample.",
+  "stopping": "All4000, no early stopping or pooling of trigger19. Incomplete run has no final p-value.",
+  "inference": "Fresh plus-one p=(exceedances+1)/4001; Bonferroni55 pages and2 attack families in this phase. InitialB19 cannot declare significance and is only a computation gate. Exploratory prior corpus use remains a limitation.",
+  "budget_seconds": 350,
+  "max_process_seconds": 180.0,
+  "memory": "Same bounded812candidate-row search asE019.",
+  "phase_allocation": "Uses at most350 of the original400second feedback-family allocation; E019 used11.292seconds. Combined phase budget stays900."
+}

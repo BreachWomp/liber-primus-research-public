@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "project": "Liber Primus Research",
+  "status": "initial_batch_complete_no_new_decryption",
+  "primary_objective": "Attempt a previously unknown independently reproducible decryption; never fabricate a success.",
+  "secondary_objective": "Produce documented falsifiable research findings.",
+  "new_decryptions": [],
+  "session_budget": {
+    "phase": "initial bounded research batch",
+    "max_compute_wall_seconds": 900,
+    "max_experiment_wall_seconds": 180,
+    "workers": 1,
+    "max_permutation_batch": 256,
+    "background_jobs": false,
+    "initial_experiment_queue_size": 5
+  },
+  "completed_experiments": [
+    {
+      "id": "E001-adjacency",
+      "fingerprint": "dca9ed9aa4602328827ad2fa49140ff95464358dd9447ca9c3dfacb181c3f9ba",
+      "output": "results/E001-adjacency-dca9ed9aa460.json",
+      "sha256": "16fefc0277ccebd00c838b39c7ca6a3832de377fb650b54cd4951ed31f92bb08"
+    },
+    {
+      "id": "E002-markov-heldout",
+      "fingerprint": "7e729f4fda7aa7c115f3c199d75607e73146c435547ffbc26152e2977ef805c2",
+      "output": "results/E002-markov-heldout-7e729f4fda7a.json",
+      "sha256": "550f7155a1505666bbf16c51683ecf8af7f3be4d28918a7af0cd6c72bc19d90e"
+    },
+    {
+      "id": "E003-bounded-cipher-screen",
+      "fingerprint": "c2e41025a0eb4a9d2a9fae499981b5ae72e1b28da1cddee052757aaf1220cb53",
+      "output": "results/E003-bounded-cipher-screen-c2e41025a0eb.json",
+      "sha256": "e3ea6f5925655b085f2a06cd590eab09efcc07d0909e755e0d53c562c35d7e42"
+    },
+    {
+      "id": "E004-sampler-audit",
+      "fingerprint": "7c4a6a3fc016f49e106216f31d5dc5ab1e95488a555cdd6ed77ddcfa0d5bba22",
+      "output": "results/E004-sampler-audit-7c4a6a3fc016.json",
+      "sha256": "66099666e06707a36e37509c5ab20f580fd4f708766465cd4177e43305f0d42d"
+    },
+    {
+      "id": "E005-heldout-period-scan",
+      "fingerprint": "4dcfc95b826f25d6e27ce916d5d020b1ae00122339fa71a615cb2dddb9863ba9",
+      "output": "results/E005-heldout-period-scan-4dcfc95b826f.json",
+      "sha256": "9be9d8e5f185e2dd742cfaf903f3b7a0b05a5ee9563f7daba48fe00fb0bce8af"
+    }
+  ],
+  "next_experiments": [
+    "H006",
+    "H007",
+    "H008",
+    "H009"
+  ],
+  "notes": [
+    "Primary decryption objective remains unresolved.",
+    "No unattended/background jobs or recurring automation are running.",
+    "Initial experiment queue finished; next phase should use the saved priorities and skip identical completed fingerprints."
+  ],
+  "updated_at": "2026-10-18T19:52:03.178045+00:00",
+  "promising_candidates": [],
+  "scoring_gate": "failed_rank_one_on_LP2_56",
+  "known_solutions": {
+    "fixtures_exact": 9,
+    "fixtures_matching_canonical": 8,
+    "disputed_fixture": "LP1-06_09_atbash_shift"
+  },
+  "validation": {
+    "tests_passed": 36,
+    "path": "results/validation.txt"
+  },
+  "resources": {
+    "recorded_successful_experiment_runs": 6,
+    "recorded_experiment_subprocess_wall_seconds": 30.905424899989157,
+    "scope": "Sum includes the documented E003 rerun after output/ranking implementation changes; excludes source retrieval, test runs and analyst time."
+  },
+  "latest_report": "reports/research_report.md",
+  "repository": {
+    "created": true,
+    "owner": "BreachWomp",
+    "name": "liber-primus-research",
+    "html_url": "https://github.com/BreachWomp/liber-primus-research",
+    "clone_url": "https://github.com/BreachWomp/liber-primus-research.git",
+    "private": true
+  },
+  "failed_approaches": [
+    "Treating every F as an interrupter fails the known LP2-56 control.",
+    "Ranking by the current sparse trigram model alone fails exact top-one recovery of LP2-56.",
+    "Fixed accepted-move constrained swaps do not guarantee a uniform null ensemble."
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "experiment": "E028-boundary-selective",
+  "status": "completed",
+  "parameters": {
+    "mode": "page",
+    "page": "LP2-29",
+    "replicate": 0
+  },
+  "new_decryptions": [],
+  "page": "LP2-29",
+  "ciphertext_runes": "ᚦᛞᚷᚢᛏᛚᛏᚣᚢᛝᚷᛟᚪᛏᛄᚦᚣᚫᚻᚪᛒᛝᚦᚢᚱᚪᚾᛞᛁᛝᚫᛚᚫᚷᚹᛁᛒᚣᚾᚫᚠᛚᛋᛒᛈᛟᚪᛟᛞᚷᛟᚣᛉᚷᛚᛋᛠᛁᚳᛟᛁᚦᛈᚹᛉᛖᚢᛟᛄᛝᛋᚢᛝᚳᛡᛠᛚᛇᛚᚷᚢᛁᛏᛒᛋᛞᛁᚠᚠᚷᚠᚦᛄᚳᚫᛟᛁᛗᛡᛁᛇᚦᚩᚢᛈᛒᚻᛋᛄᚣᛄᛖᛒᛇᛇᚱᚹᛄᛏᛡᚳᚪᚫᚩᛈᚱᛡᚾᛗᛁᛝᚻᚹᚦᛡᚦᚻᚦᛉᚫᚫᛋᚳᛡᚾᛇᛟᛉᚢᚱᛄᛖᛚᚾᛞᛗᛏᚱᛟᚦᛁᛝᛡᛒᚳᚩᚹᛟᛏᛗᛋᚱᚷᚱᛚᛞᛚᚩᚣᛞᚳᚪᛖᛞᚠᚳᛇᛖᛉᛚᚫᛖᚩᛁᛋᛡᛁᛟᛋᚪᛒᛗᛗᚣᚹᛄᛖᚫᛝᛚᛄᚱᛇᛈᛚᚩᚻᚪᛞᛡᛄᛞᚠᚹᛞᛄᚳᚾᚦᛉᛄᚻᚷᛚᚠᛖᚦᛇᚻᛝᛖᛒᛚᛞᛁᛗᚠᚹᛒᛗᛟᛁᛖᛁᛠᛈᚻᛝᛖᛞᛟᚩᚻᛄᚹᚩᚾᛄᛈᛗᛖᚳᛖᛇᚷᚻᛗ",
+  "segment_ends": [
+    3,
+    8,
+    10,
+    14,
+    17,
+    20,
+    22,
+    28,
+    31,
+    34,
+    38,
+    41,
+    44,
+    55,
+    58,
+    65,
+    67,
+    73,
+    76,
+    78,
+    85,
+    87,
+    91,
+    94,
+    96,
+    102,
+    103,
+    106,
+    108,
+    112,
+    116,
+    120,
+    123,
+    126,
+    131,
+    134,
+    138,
+    146,
+    149,
+    152,
+    155,
+    156,
+    160,
+    164,
+    168,
+    173,
+    177,
+    179,
+    186,
+    191,
+    195,
+    202,
+    206,
+    210,
+    213,
+    217,
+    219,
+    221,
+    227,
+    230,
+    232,
+    234,
+    237,
+    239,
+    247,
+    255,
+    264,
+    270,
+    272,
+    274,
+    277
+  ],
+  "top": [
+    {
+      "score": -6.544672064560293,
+      "plaintext_runes": "ᚱᛚᛠᛞᚾᛚᛗᛒᚱᚩᛗᛖᛄᛡᛞᛟᛠᛋᛡᛗᛒᚩᛞᛁᚦᛗᚫᚢᛋᛗᛁᛞᚾᛖᛖᚢᛖᛒᚫᛠᚠᚳᚫᛖᚢᛇᚠᚩᛒᚠᛝᚻᛁᛗᛚᛚᛋᚪᛗᚩᚢᚱᚢᛡᛁᚹᛁᛈᚩᛈᚾᚪᛗᚢᛏᚷᚱᛈᛚᚠᛈᚪᚻᚻᚫᛇᚱᚳᚪᛗᛄᚱᚩᚠᛠᚩᚢᛏᛏᚪᛇᛞᚻᚳᚢᛒᛏᛁᚠᚾᚩᛏᚹᛈᛠᚦᚹᛞᚻᛡᚷᛄᛖᚦᛄᛝᛈᚣᚪᚪᚩᛒᚱᚱᛏᚩᛏᛞᚣᛁᛖᛗᛗᛡᚦᛞᛝᛚᛞᛝᚠᛒᛞᚫᚢᚷᚪᚦᛝᚩᛉᚱᛈᛖᚾᚦᛒᚩᚪᛏᛠᚢᛖᛝᛚᛇᛞᚦᛡᚦᚷᛄᚫᛄᚠᛗᛈᛟᛝᛞᚾᚷᛟᚢᛚᛏᚪᚦᛁᛏᛖᚪᛋᛡᛖᚠᛒᛖᛈᚱᛉᚹᛞᚢᛉᛝᛒᛏᛇᛏᛞᚢᚫᚱᛇᚩᚠᛋᛞᚣᚪᚷᛠᚱᚫᛟᚱᚦᚣᚩᚹᛞᛋᛚᚪᚳᚠᛖᛞᛏᛝᚪᚷᛋᛇᛟᚷᛈᚷᚦᛖᚩᚷᛞᛒᛟᚦᚪᚢᛋᚷᛚᛟᛞᚻᚣᚳ",
+      "transliteration": "RLEADNLMBROMEJIADOEEASIAMBODITHMAEUSMIDNEEUEBAEEAFCAEEUEOFOBFNGHIMLLSAMOURUIAIWIPOPNAMUTGRPLFPAHHAEEORCAMJROFEAOUTTAEODHCUBTIFNOTWPEATHWDHIAGJETHJNGPYAAOBRRTOTDYIEMMIATHDNGLDNGFBDAEUGATHNGOXRPENTHBOATEAUENGLEODTHIATHGJAEJFMPOENGDNGOEULTATHITEASIAEFBEPRXWDUXNGBTEOTDUAEREOOFSDYAGEARAEOERTHYOWDSLACFEDTNGAGSEOOEGPGTHEOGDBOETHAUSGLOEDHYC",
+      "recipe": {
+        "family": "vigenere",
+        "cipher_sign": -1,
+        "key_sign": -1,
+        "key_indices": [
+          4,
+          18,
+          23,
+          15,
+          24,
+          5
+        ],
+        "start": 2,
+        "skip_positions": [
+          40,
+          184,
+          246
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 1818,
+      "max_states": 48
+    },
+    {
+      "score": -6.566579224763513,
+      "plaintext_runes": "ᛒᚦᚹᛚᚹᛠᚾᛏᛚᚦᛈᚩᛖᚳᛇᛒᛠᛒᛈᛠᚦᚱᛄᛚᛗᚪᛏᛗᛄᚦᛞᚳᛒᛋᛏᚾᚻᛏᛇᛡᛗᚳᛡᚱᛁᚣᚢᛚᛡᛒᚣᛠᛠᛋᚩᚱᚣᚩᛏᚢᚾᛞᚠᛉᚾᚢᚪᛚᛁᚦᚱᚪᛝᛏᚫᛚᚳᚢᚢᛒᛖᛋᚣᚱᚻᚫᛋᚠᚠᚹᛝᛝᚻᛚᛒᛠᛈᚠᛡᚩᚾᛝᛏᚪᚠᚱᛋᚱᛉᛏᛁᚳᚦᛈᚢᛒᛏᚻᚾᛋᛏᛠᛞᛟᚠᛒᚫᛁᚷᚩᚠᛋᛇᛞᛋᛗᛋᛒᛄᛒᚫᚻᛉᛡᚱᚾᚢᚳᚪᚾᛁᚳᛠᛏᛗᚦᚹᛋᚩᛄᛄᚦᛝᚻᚻᛖᛏᚣᚾᛞᚷᛗᛈᛝᛟᛡᚩᛏᛠᛗᛏᛠᚢᚦᛈᛏᛄᚢᛄᛟᚫᚳᛏᛋᛡᛞᛈᚣᛁᛖᚱᚱᚠᛠᚷᛁᚳᛞᚱᛟᛁᛗᚹᛇᛟᛖᛋᚪᚦᛋᛁᚠᛗᛖᛗᛁᛖᛁᛞᛠᛁᛋᛈᚳᛈᚩᛝᚹᛒᛝᚩᚷᛠᚦᚩᚦᚠᛏᚦᚷᛚᛄᚳᚾᚣᚠᛈᚦᚢᚦᛚᛖᛋᚻᛖᛁᛇᛇᚷᚷᚪᛏᚳᚹᛗᚳᚦ",
+      "transliteration": "BTHWLWEANTLTHPOECEOBEABPEATHRJLMATMJTHDCBSTNHTEOIAMCIARIYULIABYEAEASORYOTUNDFXNUALITHRANGTAELCUUBESYRHAESFFWNGNGHLBEAPFIAONNGTAFRSRXTICTHPUBTHNSTEADOEFBAEIGOFSEODSMSBJBAEHXIARNUCANICEATMTHWSOJJTHNGHHETYNDGMPNGOEIAOTEAMTEAUTHPTJUJOEAECTSIADPYIERRFEAGICDROEIMWEOOEESATHSIFMEMIEIDEAISPCPONGWBNGOGEATHOTHFTTHGLJCNYFPTHUTHLESHEIEOEOGGATCWMCTH",
+      "recipe": {
+        "family": "vigenere",
+        "cipher_sign": -1,
+        "key_sign": -1,
+        "key_indices": [
+          4,
+          16,
+          8,
+          6,
+          10
+        ],
+        "start": 4,
+        "skip_positions": [
+          87,
+          88,
+          246
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 1515,
+      "max_states": 40
+    },
+    {
+      "score": -6.6089447964570684,
+      "plaintext_runes": "ᛖᚦᚪᛈᛁᚠᚾᚱᛈᚳᛉᚩᚷᛡᛋᛖᛠᚳᚷᚦᚩᚱᛠᛈᛟᚫᛏᚹᚱᚳᚪᚳᚳᚻᛗᛁᚻᚱᚳᚢᛚᚳᛋᚣᛈᛡᚢᚻᛚᛚᛡᛠᛏᚻᚷᚳᚣᛚᚾᚱᛁᛞᛒᚹᛇᚦᚪᚻᚩᚳᚳᚪᚾᚾᛠᛝᚳᛖᛞᛚᛗᛋᛉᚣᛄᚣᛋᚠᚠᚪᛉᚪᚾᛚᚳᛝᛏᚢᛡᛚᚦᚪᛒᚪᛒᚣᛖᚳᛉᚱᚩᚻᚩᛈᛖᛁᛗᚾᚾᚩᚾᚦᚪᛟᛒᛁᛠᛄᚷᛚᛟᛖᛈᛞᚩᛇᛖᛖᛄᚳᛖᛄᛋᛡᛝᚦᚱᚷᚪᚣᚩᚻᚠᛏᚹᚪᛁᛏᚩᛠᚱᚳᛟᚻᚫᛄᛗᛡᚾᛄᛠᛟᛉᛝᛁᛚᚷᛒᛠᚹᚾᚦᚦᚦᚠᚫᚦᚻᚷᚳᚳᚫᛞᛁᛁᚩᚱᚱᚳᚢᛈᚪᚹᛞᛖᛗᚫᚢᛠᚳᛗᛁᛉᚹᚳᛡᚷᚦᚣᛡᛗᛚᚠᛗᚣᛉᚫᚳᚪᚷᛉᛟᚻᚷᚠᚦᛞᛖᚷᚳᚦᚻᛁᛚᛏᚢᚠᛖᛈᚪᚱᛁᚹᛚᛋᛈᛇᚱᛇᛚᚱᛒᛒᛗᚹᛞᛄᛉᛒᚪᚻᛋᚹᛖᚻᛖᚢ",
+      "transliteration": "ETHAPIFNRPCXOGIASEEACGTHOREAPOEAETWRCACCHMIHRCULCSYPIAUHLLIAEATHGCYLNRIDBWEOTHAHOCCANNEANGCEDLMSXYJYSFFAXANLCNGTUIALTHABABYECXROHOPEIMNNONTHAOEBIEAJGLOEEPDOEOEEJCEJSIANGTHRGAYOHFTWAITOEARCOEHAEJMIANJEAOEXNGILGBEAWNTHTHTHFAETHHGCCAEDIIORRCUPAWDEMAEUEACMIXWCIAGTHYIAMLFMYXAECAGXOEHGFTHDEGCTHHILTUFEPARIWLSPEOREOLRBBMWDJXBAHSWEHEU",
+      "recipe": {
+        "family": "vigenere",
+        "cipher_sign": -1,
+        "key_sign": -1,
+        "key_indices": [
+          3,
+          9,
+          4,
+          28,
+          15
+        ],
+        "start": 1,
+        "skip_positions": [
+          87,
+          88,
+          184,
+          222,
+          234,
+          246
+        ]
+      },
+      "replay_verified": true,
+      "transitions": 1515,
+      "max_states": 40
+    }
+  ],
+  "key_sign_tasks": 1536,
+  "wall_seconds": 10.506375700002536
+}

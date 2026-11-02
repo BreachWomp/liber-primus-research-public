@@ -1,0 +1,761 @@
+{
+  "experiment": "E017-long-autokey-pages",
+  "status": "completed",
+  "parameters": {
+    "first": 20,
+    "last": 24,
+    "seconds": 180.0,
+    "seed": 3301017,
+    "replicates": 19,
+    "periods": [
+      4,
+      12
+    ],
+    "beam_width": 512,
+    "keep_per_cut": 16,
+    "language": "external3gram candidate generation, external4gram ranking",
+    "F_policies": [
+      "none",
+      "all_F"
+    ],
+    "signs": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ]
+  },
+  "source": {
+    "source_sha256": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278",
+    "excluded_chapter": "II.Self-Reliance",
+    "sections": [
+      {
+        "roman": "I",
+        "title": "HISTORY",
+        "source_character_range": [
+          1204,
+          48452
+        ],
+        "runes": 34859
+      },
+      {
+        "roman": "III",
+        "title": "COMPENSATION",
+        "source_character_range": [
+          105038,
+          148548
+        ],
+        "runes": 31693
+      },
+      {
+        "roman": "IV",
+        "title": "SPIRITUAL LAWS",
+        "source_character_range": [
+          148568,
+          192880
+        ],
+        "runes": 32454
+      },
+      {
+        "roman": "V",
+        "title": "LOVE",
+        "source_character_range": [
+          192889,
+          218073
+        ],
+        "runes": 18408
+      },
+      {
+        "roman": "VI",
+        "title": "FRIENDSHIP",
+        "source_character_range": [
+          218089,
+          251419
+        ],
+        "runes": 24523
+      },
+      {
+        "roman": "VII",
+        "title": "PRUDENCE",
+        "source_character_range": [
+          251434,
+          276868
+        ],
+        "runes": 18721
+      },
+      {
+        "roman": "VIII",
+        "title": "HEROISM",
+        "source_character_range": [
+          276883,
+          301411
+        ],
+        "runes": 17965
+      },
+      {
+        "roman": "IX",
+        "title": "THE OVER-SOUL",
+        "source_character_range": [
+          301430,
+          340292
+        ],
+        "runes": 28407
+      },
+      {
+        "roman": "X",
+        "title": "CIRCLES",
+        "source_character_range": [
+          340304,
+          367105
+        ],
+        "runes": 19707
+      },
+      {
+        "roman": "XI",
+        "title": "INTELLECT",
+        "source_character_range": [
+          367120,
+          395164
+        ],
+        "runes": 20713
+      },
+      {
+        "roman": "XII",
+        "title": "ART",
+        "source_character_range": [
+          395174,
+          419196
+        ],
+        "runes": 17679
+      }
+    ],
+    "paragraphs": 393,
+    "runes": 265129,
+    "word_tokens": 64574,
+    "distinct_rune_words": 8182,
+    "non_ascii_letters": {
+      "æ": 9,
+      "Æ": 4,
+      "œ": 1,
+      "Ἀ": 1,
+      "ε": 2,
+      "ὶ": 1,
+      "γ": 1,
+      "ὰ": 1,
+      "ρ": 1,
+      "ὖ": 1,
+      "π": 2,
+      "ί": 1,
+      "τ": 1,
+      "ο": 3,
+      "υ": 1,
+      "σ": 1,
+      "ι": 3,
+      "ν": 1,
+      "ἱ": 1,
+      "Δ": 1,
+      "ὸ": 1,
+      "ς": 1,
+      "κ": 1,
+      "ύ": 1,
+      "β": 1,
+      "é": 2,
+      "ë": 1
+    },
+    "normalization": "Explicit ae/oe ligature expansion; NFKD and combining-mark removal; ASCII words; QU->CW, remainingQ->C; greedyGP within words; no ngrams across paragraphs.",
+    "training_data": "No Liber Primus plaintext or ciphertext, and no Self-Reliance text is used."
+  },
+  "new_decryptions": [],
+  "pages": [
+    {
+      "page": "LP2-20",
+      "ciphertext_runes": "ᛈᛄᚢᛒᚷᛁᛇᛈᛉᚣᛈᛟᚦᛞᚱᛠᚪᛡᛝᛡᛒᛚᚻᚦᚫᛉᛟᚫᚪᛇᛉᚳᛠᚠᚫᚢᚣᚦᛋᚠᛝᚠᚱᚹᛟᛒᛗᚷᛞᚾᛡᛞᚪᚻᚣᛇᚱᛚᛖᚣᛇᚻᛠᚩᚢᚳᚱᚻᛡᛟᛗᛠᛝᛄᚦᛄᚢᛁᛇᛄᛁᛖᚷᛁᚪᛇᛏᛝᛡᚳᛚᛇᚠᛗᚪᚷᛚᛒᛋᛉᛞᚫᛟᛋᛚᚹᛏᛠᛗᛚᚦᛗᛝᚦᚣᛈᚠᚪᛞᛚᚪᛖᛚᚩᚱᚷᛚᚳᛇᛏᚷᚣᛟᛗᚪᛁᚷᛄᛒᛡᛗᛞᛈᚪᚳᛠᚷᛋᛏᛈᚩᛋᛏᛗᚱᚣᛋᛉᛁᛄᛚᛝᛚᛁᛉᚢᛠᛗᛇᚢᛋᚻᚳᛉᛄᚩᚠᛄᚠᛁᚣᛁᛟᛏᚷᚱᚦᛡᛒᛋᚳᛇᚢᚷᛚᚱᛁᛗᚱᛗᛝᚻᛈᚫᛝᛋᚫᛖᛈᛁᛒᛇᚹᚫᚢᛄᚳᛒᚦᛋᚹᚦᚫᛡᛟᚷᛚᛞᛚᚢᛟᛡᚱᛞᚱᛒᛄᚳᚢᛠᚩᛉᛉᛝᛡᛄᛁᚫᛟᛖᛗᚹᛖᛉᚦᛗᚪᛋᛉᛞᚦᛡᚢᛉᛗᚫᛋᚳᛖ",
+      "top": [
+        {
+          "score": -5.361641271966597,
+          "trigram_score": -4.994970407200851,
+          "plaintext_runes": "ᚢᛞᚩᛝᛠᚪᚾᚹᛋᛏᛠᚳᚩᛒᚹᛚᛞᛟᚢᚳᚩᚹᚹᚹᛠᚦᚠᛏᛖᚳᛋᛁᚦᚹᚩᚻᚫᚱᛋᛏᛁᚳᛗᛒᚪᚪᛟᛉᛗᛈᛈᛁᚳᛈᛏᚠᛠᛋᛄᛄᚦᛝᛇᛈᚷᛖᛚᚻᚣᚻᚢᛁᛞᚩᛉᚪᚹᛠᚩᛗᚹᚣᚹᛚᛖᛋᚢᛏᚳᚱᛞᚦᚹᛏᚦᚣᚾᚩᛏᚢᛠᚠᛏᛒᛡᛞᛖᚫᛠᛞᛖᛚᛚᚦᛈᚢᛡᛖᛇᛏᛞᛇᚾᛞᚪᚻᚱᚷᛁᚳᛖᛈᛏᚦᚱᚱᚢᛗᛝᚱᚠᛠᚦᚻᛝᚢᛁᛗᛒᚩᚪᛗᛏᛖᚷᚳᚹᛋᛚᚢᚻᚪᛋᚠᚢᛗᚳᚪᛗᛏᚷᚾᛈᚾᚣᚩᚢᚢᚳᚳᛏᚣᛠᚫᛗᛈᛠᚢᛖᛏᛁᛒᛒᚩᛗᚠᚠᚩᚩᛚᛁᚪᛞᛈᚾᛖᛋᛖᛈᛈᛚᚩᛒᛚᚪᚪᛉᚷᛒᚱᛚᛋᛏᚢᛁᚣᛋᛖᚳᚹᛁᚦᚪᚾᛚᛖᛝᚦᛏᛒᚻᛝᚪᛞᛟᛚᚢᛉᛉᛚᚷᚪᚣᚷᚣᛈᛒᚷᛋᚻᛏᛖᚹᚾᛏᚦᛇᛖᚷ",
+          "transliteration": "UDONGEAANWSTEACOBWLDOEUCOWWWEATHFTECSITHWOHAERSTICMBAAOEXMPPICPTFEASJJTHNGEOPGELHYHUIDOXAWEAOMWYWLESUTCRDTHWTTHYNOTUEAFTBIADEAEEADELLTHPUIAEEOTDEONDAHRGICEPTTHRRUMNGRFEATHHNGUIMBOAMTEGCWSLUHASFUMCAMTGNPNYOUUCCTYEAAEMPEAUETIBBOMFFOOLIADPNESEPPLOBLAAXGBRLSTUIYSECWITHANLENGTHTBHNGADOELUXXLGAYGYPBGSHTEWNTTHEOEG",
+          "recipe": {
+            "key_indices": [
+              17,
+              12,
+              2,
+              4,
+              22,
+              14,
+              26,
+              23,
+              1,
+              19,
+              15,
+              12
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.385467782578318,
+          "trigram_score": -5.030384691288933,
+          "plaintext_runes": "ᚢᛞᚩᛝᛠᚪᚾᚹᛋᛏᚹᚳᚩᛒᚹᛚᛞᛟᚢᚳᚩᚹᛋᚹᛠᚦᚠᛏᛖᚳᛋᛁᚦᚹᛄᚻᚫᚱᛋᛏᛁᚳᛗᛒᚪᚪᚢᛉᛗᛈᛈᛁᚳᛈᛏᚠᛠᛋᛗᛄᚦᛝᛇᛈᚷᛖᛚᚻᚣᚻᚾᛁᛞᚩᛉᚪᚹᛠᚩᛗᚹᚣᛋᛚᛖᛋᚢᛏᚳᚱᛞᚦᚹᛏᛁᚣᚾᚩᛏᚢᛠᚠᛏᛒᛡᛞᚣᚫᛠᛞᛖᛚᛚᚦᛈᚢᛡᛖᛚᛏᛞᛇᚾᛞᚪᚻᚱᚷᛁᚳᚣᛈᛏᚦᚱᚱᚢᛗᛝᚱᚠᛠᛁᚻᛝᚢᛁᛗᛒᚩᚪᛗᛏᛖᛉᚳᚹᛋᛚᚢᚻᚪᛋᚠᚢᛗᛈᚪᛗᛏᚷᚾᛈᚾᚣᚩᚢᚢᛈᚳᛏᚣᛠᚫᛗᛈᛠᚢᛖᛏᛖᛒᛒᚩᛗᚠᚠᚩᚩᛚᛁᚪᚦᛈᚾᛖᛋᛖᛈᛈᛚᚩᛒᛚᚩᚪᛉᚷᛒᚱᛚᛋᛏᚢᛁᚣᛞᛖᚳᚹᛁᚦᚪᚾᛚᛖᛝᚦᚪᛒᚻᛝᚪᛞᛟᛚᚢᛉᛉᛚᛉᚪᚣᚷᚣᛈᛒᚷᛋᚻᛏᛖᛋᚾᛏᚦᛇᛖᚷ",
+          "transliteration": "UDONGEAANWSTWCOBWLDOEUCOWSWEATHFTECSITHWJHAERSTICMBAAUXMPPICPTFEASMJTHNGEOPGELHYHNIDOXAWEAOMWYSLESUTCRDTHWTIYNOTUEAFTBIADYAEEADELLTHPUIAELTDEONDAHRGICYPTTHRRUMNGRFEAIHNGUIMBOAMTEXCWSLUHASFUMPAMTGNPNYOUUPCTYEAAEMPEAUETEBBOMFFOOLIATHPNESEPPLOBLOAXGBRLSTUIYDECWITHANLENGTHABHNGADOELUXXLXAYGYPBGSHTESNTTHEOEG",
+          "recipe": {
+            "key_indices": [
+              17,
+              12,
+              2,
+              4,
+              22,
+              14,
+              26,
+              23,
+              1,
+              19,
+              23,
+              12
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.393305318779931,
+          "trigram_score": -5.038829367801844,
+          "plaintext_runes": "ᚢᛞᚩᛝᛠᚪᚾᚹᛋᛏᚢᚳᚩᛒᚹᛚᛞᛟᚢᚳᚩᚹᚾᚹᛠᚦᚠᛏᛖᚳᛋᛁᚦᚹᚳᚻᚫᚱᛋᛏᛁᚳᛗᛒᚪᚪᚪᛉᛗᛈᛈᛁᚳᛈᛏᚠᛠᛋᛈᛄᚦᛝᛇᛈᚷᛖᛚᚻᚣᚻᚩᛁᛞᚩᛉᚪᚹᛠᚩᛗᚹᚣᚾᛚᛖᛋᚢᛏᚳᚱᛞᚦᚹᛏᚱᚣᚾᚩᛏᚢᛠᚠᛏᛒᛡᛞᛚᚫᛠᛞᛖᛚᛚᚦᛈᚢᛡᛖᛉᛏᛞᛇᚾᛞᚪᚻᚱᚷᛁᚳᛚᛈᛏᚦᚱᚱᚢᛗᛝᚱᚠᛠᚱᚻᛝᚢᛁᛗᛒᚩᚪᛗᛏᛖᚻᚳᚹᛋᛚᚢᚻᚪᛋᚠᚢᛗᚹᚪᛗᛏᚷᚾᛈᚾᚣᚩᚢᚢᚹᚳᛏᚣᛠᚫᛗᛈᛠᚢᛖᛏᛇᛒᛒᚩᛗᚠᚠᚩᚩᛚᛁᚪᚫᛈᚾᛖᛋᛖᛈᛈᛚᚩᛒᛚᚣᚪᛉᚷᛒᚱᛚᛋᛏᚢᛁᚣᛒᛖᚳᚹᛁᚦᚪᚾᛚᛖᛝᚦᛖᛒᚻᛝᚪᛞᛟᛚᚢᛉᛉᛚᚻᚪᚣᚷᚣᛈᛒᚷᛋᚻᛏᛖᚾᚾᛏᚦᛇᛖᚷ",
+          "transliteration": "UDONGEAANWSTUCOBWLDOEUCOWNWEATHFTECSITHWCHAERSTICMBAAAXMPPICPTFEASPJTHNGEOPGELHYHOIDOXAWEAOMWYNLESUTCRDTHWTRYNOTUEAFTBIADLAEEADELLTHPUIAEXTDEONDAHRGICLPTTHRRUMNGRFEARHNGUIMBOAMTEHCWSLUHASFUMWAMTGNPNYOUUWCTYEAAEMPEAUETEOBBOMFFOOLIAAEPNESEPPLOBLYAXGBRLSTUIYBECWITHANLENGTHEBHNGADOELUXXLHAYGYPBGSHTENNTTHEOEG",
+          "recipe": {
+            "key_indices": [
+              17,
+              12,
+              2,
+              4,
+              22,
+              14,
+              26,
+              23,
+              1,
+              19,
+              17,
+              12
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "search": {
+        "period_sign_policy_tasks": 72,
+        "generated_candidates": 8802,
+        "beam_width": 512,
+        "keep_per_cut": 16,
+        "cyclic_cuts": "all period positions",
+        "periods": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "page": "LP2-21",
+      "ciphertext_runes": "ᚳᚫᛠᛞᚳᚷᚩᛁᛇᚾᛟᚷᚣᚳᚦᚳᚦᛗᚣᛈᚪᛒᛈᚻᚢᚻᚾᛏᚫᛒᛇᚩᛁᛈᚫᚩᚣᛡᚣᛗᚷᚠᚱᛡᛚᛏᛖᛟᚩᛈᛚᚩᚷᛁᛟᛠᛞᛖᚳᛗᛁᚣᛈᛚᛁᚹᛋᛄᚹᛟᛡᚪᚦᛖᚩᛄᚷᛋᛝᚣᛗᛟᚻᛗᚠᚦᛉᚦᚫᛋᛈᚣᚩᚠᛈᛟᛋᛖᚫᛇᛗᛚᛈᚾᛡᚠᚳᚾᚩᛄᛋᛡᚫᛄᚦᚪᛠᛈᚻᛋᛟᛗᚹᚱᚣᛁᚢᛉᚹᛋᚱᛞᛈᚦᛈᚩᛞᛄᚩᚢᛈᛖᚪᚫᛉᚫᛏᚱᛟᛏᛒᛠᚫᚳᚾᛖᛝᚦᛄᛄᚠᛚᚾᚩᛒᛉᚷᚪᚩᛚᚪᚢᛞᚻᚳᚹᛚᛡᛞᛇᛟᚩᛡᛚᚳᛡᚳᛉᛝᛠᛝᚷᛝᛞᛄᛏᛠᛈᚹᛈᛗᛈᚱᚫᛏᛖᚢᛝᚫᛡᚾᛁᛠᚻᚦᚣᛠᚫᚩᛉᛋᚩᛄᚠᛏᚷᚹᛁᚪᛁᚩᛁᛝᛠᚾᚷᛗᚹᚦᛖᚷᛟᚪᚹᛞᚻᚢᛡᚹᚣᚷᛉᛒᚪᚾᛝᛡᛄᛡᚠᚷᛈᚦᚠᚦᛁᛈᚪᛝᛋᛞᛟᚩ",
+      "top": [
+        {
+          "score": -5.356200536773662,
+          "trigram_score": -4.941233731297249,
+          "plaintext_runes": "ᚣᚢᛄᛝᚣᚱᛋᛞᚷᚷᚷᛈᚠᚱᛚᛈᚳᛋᛄᛗᛖᛄᚹᚪᚢᚱᛖᚩᛚᚦᚢᛈᛝᚦᛖᚻᚫᛞᚻᛏᛋᚠᚦᚣᚹᚪᛏᚱᚪᛒᚣᚪᛗᚪᛚᚦᛏᛞᛖᛋᛋᚾᛏᚫᛚᛇᚪᚾᛚᛠᚾᚾᛏᚾᛏᛋᛋᚩᚣᛒᛠᛞᛠᛁᚠᛋᚳᛋᛁᚠᛁᚠᛋᚠᛉᛠᛏᚻᛁᚹᚱᛁᛈᛠᛡᚠᛗᚪᚱᚪᚹᛒᛖᚹᛝᛄᚠᛋᛖᛚᛖᚪᚠᛏᚻᚩᚾᚩᚹᚠᛋᚩᚪᚹᛈᛏᛋᚻᛞᛡᚷᛖᚾᛟᛗᛖᚩᛒᚹᚻᛞᚢᛗᛏᚠᚫᚦᛈᚻᛞᚠᛈᚢᚾᛏᚪᛗᚪᚹᛖᛄᛟᚠᚪᚱᛡᚱᚩᚱᛒᛋᛉᛏᛡᚳᚩᚢᛏᛒᚫᛒᛖᚷᚾᚪᛖᛞᛁᚷᚣᚦᛒᛏᚹᛁᚾᚷᚩᚦᛒᚩᛈᚣᛚᛋᛗᛖᛏᚣᛄᛈᛋᚻᚠᚩᚾᛏᚪᚳᛝᛏᛈᛁᛋᛞᛡᛏᛡᛋᛞᚢᚢᚻᛞᛈᛟᚹᚠᛚᛠᛚᛚᛏᛞᚢᛡᛉᛖᛚᚠᚷᛟᚩᚠᛄᛗᚣᚢᛚᛒᚾᚱᛇ",
+          "transliteration": "YUJNGYRSDGGGPFRLPCSJMEJWAUREOLTHUPNGTHEHAEDHTSFTHYWATRABYAMALTHTDESSNTAELEOANLEANNTNTSSOYBEADEAIFSCSIFIFSFXEATHIWRIPEAIAFMARAWBEWNGJFSELEAFTHONOWFSOAWPTSHDIAGENOEMEOBWHDUMTFAETHPHDFPUNTAMAWEJOEFARIARORBSXTIACOUTBAEBEGNAEDIGYTHBTWINGOTHBOPYLSMETYJPSHFONTACNGTPISDIATIASDUUHDPOEWFLEALLTDUIAXELFGOEOFJMYULBNREO",
+          "recipe": {
+            "key_indices": [
+              8,
+              24,
+              17,
+              2,
+              8,
+              2,
+              17,
+              16,
+              6,
+              3,
+              16,
+              22
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": -1,
+            "skip_positions": [
+              41,
+              84,
+              93,
+              105,
+              160,
+              223,
+              259,
+              263
+            ],
+            "skip_policy": "all_F"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.382223913047126,
+          "trigram_score": -4.9674732140399325,
+          "plaintext_runes": "ᚣᚢᛄᛝᚣᚱᛋᛋᛋᛞᚹᛈᚠᚱᛚᛈᚳᛋᛄᛡᚾᛞᚷᚪᚢᚱᛖᚩᛚᚦᚢᚳᚢᛗᛗᚻᚫᛞᚻᛏᛋᚠᚦᚣᛋᛋᛠᚩᚪᛒᚣᚪᛗᚪᛚᚦᚻᚩᚷᛏᛋᚾᛏᚫᛚᛇᚪᚾᛠᛗᛝᚻᛏᚾᛏᛋᛋᚩᚣᛒᛚᚩᛏᛄᚠᛋᚳᛋᛁᚠᛁᚠᛋᚠᛟᛗᛠᚹᛁᚹᚱᛁᛈᛠᛡᚠᛗᛏᛈᛇᚻᛒᛖᚹᛝᛄᚠᛋᛖᛠᚾᚹᛠᛏᚻᚩᚾᚩᚹᚠᛋᚪᚱᚪᛉᛏᛋᚻᛞᛡᚷᛖᚾᚢᛁᚢᚦᛒᚹᚻᛞᚢᛗᛏᚠᛒᛄᚢᚾᛞᚠᛈᚢᚾᛏᚪᛗᚪᛋᚾᛞᛝᚠᚪᚱᛡᚱᚩᚱᛒᚹᛞᚱᛠᚳᚩᚢᛏᛒᚫᛒᛖᛉᚠᚹᛒᛞᛁᚷᚣᚦᛒᛏᚹᚦᛖᛞᚱᚦᛒᚩᛈᚣᛚᛋᛗᚣᚹᚾᛁᛈᛋᚻᚠᚩᚾᛏᚪᚳᛈᚫᚢᛄᛋᛞᛡᛏᛡᛋᛞᚢᚾᛠᚷᛇᛟᚹᚠᛚᛠᛚᛚᛏᛋᛁᛋᛋᛖᛚᚠᚷᛟᚩᚠᛄᛗᚣᚾᛄᚠᚻᚱᛇ",
+          "transliteration": "YUJNGYRSSSDWPFRLPCSJIANDGAUREOLTHUCUMMHAEDHTSFTHYSSEAOABYAMALTHHOGTSNTAELEOANEAMNGHTNTSSOYBLOTJFSCSIFIFSFOEMEAWIWRIPEAIAFMTPEOHBEWNGJFSEEANWEATHONOWFSARAXTSHDIAGENUIUTHBWHDUMTFBJUNDFPUNTAMASNDNGFARIARORBWDREACOUTBAEBEXFWBDIGYTHBTWTHEDRTHBOPYLSMYWNIPSHFONTACPAEUJSDIATIASDUNEAGEOOEWFLEALLTSISSELFGOEOFJMYNJFHREO",
+          "recipe": {
+            "key_indices": [
+              8,
+              24,
+              17,
+              2,
+              8,
+              2,
+              17,
+              24,
+              26,
+              15,
+              15,
+              22
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": -1,
+            "skip_positions": [
+              41,
+              84,
+              93,
+              105,
+              160,
+              223,
+              259,
+              263
+            ],
+            "skip_policy": "all_F"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.384918294268003,
+          "trigram_score": -4.9375047728370935,
+          "plaintext_runes": "ᛗᛄᚩᛡᚫᛄᛞᛖᛉᚹᚱᛠᚹᛞᛠᚹᚷᚻᚩᚪᛁᛁᚾᚾᛞᛉᛁᚾᛗᚾᚾᚻᚠᚩᛏᛞᚩᛈᛏᛁᛏᛚᚪᛗᛚᛈᚦᛠᚠᚠᚱᛟᛗᛗᛡᚾᚩᚳᚩᛚᛁᚣᚾᛡᛚᛒᛒᚦᚱᛒᚪᚱᛝᛝᛞᛈᛋᛡᚱᚪᛋᚳᛈᛋᚻᛁᛚᛖᛁᛒᚾᚦᛒᚪᚠᚹᚹᚻᚳᛞᚾᚩᚱᚹᛁᚳᚳᚦᚫᚩᛁᚱᛏᚻᛡᛒᛖᚻᚩᛈᚣᛏᚣᚠᛁᚦᚩᚣᛖᚹᚢᛁᛏᛋᛏᚩᛈᚾᚠᚱᚪᛄᛞᛋᛡᛁᚠᚢᚾᚹᛒᚪᚢᛞᛋᚩᛞᛝᛄᛁᛚᛈᛝᚻᛏᛚᛚᛝᚾᛠᛈᛚᚩᚪᛈᛠᚱᚹᚩᛚᛈᚱᛉᚠᚦᚩᛝᛋᛒᛝᛖᛋᚻᛗᚣᛏᚣᛁᛋᛡᚦᛝᛋᛁᚻᛠᚱᚳᛠᛒᛞᛇᚣᛏᛏᛏᛚᚣᛠᚾᛏᛋᛒᛒᛗᛗᛚᛞᚱᛈᚱᚢᚳᛈᛝᛖᚠᛒᛄᚪᚦᚾᛚᚷᛖᚪᚾᚾᚹᚾᚪᛗᛋᛋᛖᛋᚾᛏᛖᛚᛠᚱᚹᛁᛏᚪᚪᚾᛇᛠᚳᚦᚱ",
+          "transliteration": "MJOIAAEJDEXWREAWDEAWGHOAIINNDXINMNNHFOTDOPTITLAMLPTHEAFFROEMMIANOCOLIYNIALBBTHRBARNGNGDPSIARASCPSHILEIBNTHBAFWWHCDNORWICCTHAEOIRTHIABEHOPYTYFITHOYEWUITSTOPNFRAJDSIAIFUNWBAUDSODNGJILPNGHTLLNGNEAPLOAPEARWOLPRXFTHONGSBNGESHMYTYISIATHNGSIHEARCEABDEOYTTTLYEANTSBBMMLDRPRUCPNGEFBJATHNLGEANNWNAMSSESNTELEARWITAANEOEACTHR",
+          "recipe": {
+            "key_indices": [
+              15,
+              14,
+              25,
+              25,
+              9,
+              24,
+              9,
+              21,
+              27,
+              2,
+              18,
+              7
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": -1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "search": {
+        "period_sign_policy_tasks": 72,
+        "generated_candidates": 8729,
+        "beam_width": 512,
+        "keep_per_cut": 16,
+        "cyclic_cuts": "all period positions",
+        "periods": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "page": "LP2-22",
+      "ciphertext_runes": "ᛝᛗᛁᚷᛄᚷᚳᚩᚦᛖᚦᛄᚣᚠᚦᚳᛄᛡᛖᚢᛉᛄᚳᚻᛄᚱᛄᚪᚻᚾᚦᛚᚷᚱᚦᛒᚪᚩᛖᚢᛡᛄᚹᛏᚱᚹᛟᚦᚳᛗᚦᚠᚫᚻᛡᚠᛠᚣᚪᚦᛚᛏᛒᚢᛝᛖᛋᛗᚱᚪᚹᛒᚹᛒᛗᚱᚾᛗᚻᛗᛁᚾᚪᛞᛡᛖᚩᚾᚹᛡᚢᛄᚦᛠᛚᚳᚷᛚᛇᛟᛠᛠᚪᛇᛉᚣᚪᚷᛏᚩᛖᚹᛒᛈᚷᛝᛒᛡᚦᚠᛋᚾᛒᚦᚠᛇᛝᛠᚠᚾᛉ",
+      "top": [
+        {
+          "score": -4.5884705874428136,
+          "trigram_score": -4.284717167391357,
+          "plaintext_runes": "ᚱᚣᛚᛈᛏᛚᚢᛠᛉᚢᚩᛏᛠᚠᚢᚱᚳᛋᛚᛡᛏᚱᛞᛖᚦᚣᛒᚢᛏᚳᚹᛄᚹᛝᚱᛞᚩᚠᛞᛡᛋᛈᛋᚦᛖᚢᚩᚱᛝᛁᚱᚠᚷᚷᛖᚠᛋᚢᛏᚣᚷᚾᛚᛖᚱᚳᚻᛝᛁᚱᚷᛋᛏᚩᛗᚹᛏᚳᛈᛖᚾᛏᛠᛚᛋᚻᚹᛈᚷᚣᛋᚠᛖᛉᛁᚱᚻᚢᛁᛞᚪᚱᛗᛒᚣᛖᚪᛗᚳᚫᚢᛠᛒᛇᚱᛚᛋᛈᚩᚠᚪᛋᛏᚣᚠᛖᛚᛖᚠᛏᚪ",
+          "transliteration": "RYLPTLUEAXUOTEAFURCSLIATRDETHYBUTCWJWNGRDOFDIASPSTHEUORNGIRFGGEFSUTYGNLERCHNGIRGSTOMWTCPENTEALSHWPGYSFEXIRHUIDARMBYEAMCAEUEABEORLSPOFASTYFELEFTA",
+          "recipe": {
+            "key_indices": [
+              4,
+              13,
+              28,
+              10,
+              2,
+              3,
+              23,
+              27,
+              13,
+              10,
+              24,
+              2
+            ],
+            "cipher_sign": -1,
+            "feedback_sign": -1,
+            "skip_positions": [
+              13,
+              51,
+              55,
+              119,
+              124,
+              128
+            ],
+            "skip_policy": "all_F"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -4.623560526772304,
+          "trigram_score": -4.250922003278191,
+          "plaintext_runes": "ᛁᛞᛖᛒᚦᛋᚹᛗᚹᚱᚪᛝᛚᛖᛗᚹᚣᚳᚻᚻᛖᚷᚣᛠᚠᛞᛖᛝᛈᛒᛁᚾᛇᚢᚢᛒᛖᛝᛁᛉᛋᛝᛏᛠᚳᚻᛁᛚᚣᚠᛏᛋᛒᚪᚣᚳᚹᚹᛋᛠᛚᚩᚩᛖᛏᛋᛚᚣᛄᛁᚷᚻᛁᛚᚻᛚᚪᛁᚳᚢᛚᛋᚩᚱᛖᚣᛞᚱᛒᚩᚦᚦᛒᚦᚪᛞᚩᛉᛏᛁᚦᚢᚣᚠᛏᛝᛖᚾᚢᛗᛠᚾᛖᛁᚷᚻᚾᛏᛄᚢᚳᚻᚣᛚᛁᛖᚠᚻᛏᛚᛋ",
+          "transliteration": "IDEBTHSWMWRANGLEMWYCHHEGYEAFDENGPBINEOUUBENGIXSNGTEACHILYFTSBAYCWWSEALOOETSLYJIGHILHLAICULSOREYDRBOTHTHBTHADOXTITHUYFTNGENUMEANEIGHNTJUCHYLIEFHTLS",
+          "recipe": {
+            "key_indices": [
+              18,
+              4,
+              8,
+              11,
+              20,
+              9,
+              2,
+              16,
+              5,
+              15,
+              22
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -4.630853030875367,
+          "trigram_score": -4.25040660538149,
+          "plaintext_runes": "ᛁᛞᛖᛒᚦᛋᚢᚳᚳᚱᚪᛝᛚᛖᛗᚹᚣᛠᛞᚷᛖᚷᚣᛠᚠᛞᛖᛝᚹᚩᚻᚾᛇᚢᚢᛒᛖᛝᛁᚻᚢᛗᛏᛠᚳᚻᛁᛚᚣᚠᛁᚢᛋᚪᚣᚳᚹᚹᛋᛠᛚᚣᛖᛏᛏᛋᛚᚣᛄᛁᚷᚻᚱᚷᚷᛚᚪᛁᚳᚢᛚᛋᚩᛡᚱᚪᛞᚱᛒᚩᚦᚦᛒᚦᛖᚾᚢᛉᛏᛁᚦᚢᚣᚠᛏᛋᚱᚹᚢᛗᛠᚾᛖᛁᚷᚻᚩᚦᚾᚢᚳᚻᚣᛚᛁᛖᚠᚦᚦᛖᛋ",
+          "transliteration": "IDEBTHSUCCRANGLEMWYEADGEGYEAFDENGWOHNEOUUBENGIHUMTEACHILYFIUSAYCWWSEALYETTSLYJIGHRGGLAICULSOIARADRBOTHTHBTHENUXTITHUYFTSRWUMEANEIGHOTHNUCHYLIEFTHTHES",
+          "recipe": {
+            "key_indices": [
+              18,
+              4,
+              8,
+              11,
+              20,
+              9,
+              25,
+              2,
+              3,
+              15,
+              22
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "search": {
+        "period_sign_policy_tasks": 72,
+        "generated_candidates": 8475,
+        "beam_width": 512,
+        "keep_per_cut": 16,
+        "cyclic_cuts": "all period positions",
+        "periods": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "page": "LP2-23",
+      "ciphertext_runes": "ᚢᚪᚹᛝᚷᛉᛞᚷᛁᛒᛁᛇᛏᛒᛁᚣᛠᚷᛋᚫᛈᚹᛗᛠᛇᛄᛇᚹᚻᛁᚷᛠᛒᚢᚣᚻᚣᛝᚹᚢᚱᛋᚩᛡᚠᛡᛠᛞᛟᚦᛗᚳᚾᛉᛞᚦᛖᚱᛇᚳᚪᛄᛋᛟᚢᚹᚱᛏᛋᛖᛋᛏᚣᚱᛠᚫᚾᛞᛈᛒᛡᛋᚢᛞᛖᚣᚦᛚᚹᛟᛋᚷᛚᛄᚫᛖᚩᚳᚦᚹᛗᚢᚩᚷᚠᚪᚩᛡᛝᛒᛠᚦᚳᚪᚱᛡᛏᛟᚹᚠᚣᛝᚢᚣᛁᛚᛏᚫᚫᚪᚱᛈᚠᛗᚹᚩᛞᛠᛒᛈᛝᛟᚾᚷᛗᛡᛖᚩᚾᛚᛉᛝᛁᛡᚫᛗᚻᛖᚹᛗᛝᛈᛇᛗᛡᛄᚫᚩᛡᚠᚣᛉᛟᚫᚦᚫᛒᚩᚪᚦᛄᚱᛄᚾᚦᛡᚠᚪᛏᚾᚻᚷᚢᛞᚳᚦᚢᚱᚢᛟᛞᚻᚱᚷᚹᛏᛈᛖᚠᚪᚻᛠᚦ",
+      "top": [
+        {
+          "score": -5.121412503638943,
+          "trigram_score": -4.683493506991785,
+          "plaintext_runes": "ᛏᚣᛖᛞᚾᚩᛒᚪᚳᚻᛒᛝᚠᛚᛝᚩᛗᚩᛡᚢᚻᛠᚦᚹᛇᛚᛚᚱᛖᚹᚻᛡᚾᚦᚪᚢᛉᚢᛏᚣᛋᚻᚪᚠᚠᛖᚣᛠᛝᛒᛖᛖᛇᛠᛋᚹᛖᛋᛋᚷᚩᛞᚣᚱᛖᚻᛖᚾᚣᚩᚠᛁᛞᛁᚦᛝᛚᛋᚪᚻᚢᛇᚢᛈᚪᛏᚠᛠᛏᚹᛚᛡᛗᛠᚪᚳᚻᛖᚦᚻᚩᛞᛇᚻᚠᚳᚱᚩᛏᚾᛁᚠᚣᛝᛁᛋᚻᛒᚩᚠᛞᚳᛝᛏᛁᛞᚪᛋᛁᛏᛏᛁᚠᚫᚦᛄᚹᛖᛞᛖᚷᛇᛟᛗᚾᚦᛏᛝᚦᚦᛚᚩᚱᛋᚩᚠᛠᛏᛚᛡᛗᛄᛝᛏᛞᚫᛟᚩᛠᚠᛁᛞᚪᚷᛚᚱᚢᚾᛠᚾᚻᚳᚢᛋᚹᛝᚠᚱᛇᚻᛠᚹᛝᛋᚠᚢᛋᚣᚾᛖᛄᚠᚳᛠᛋᚢᛈᛒᚠᚾᛄᛗᛈ",
+          "transliteration": "TYEDNOBACHBNGFLNGOMOIAUHEATHWEOLLREWHIANTHAUXUTYSHAFFEYEANGBEEEOEASWESSGODYREHENYOFIDITHNGLSAHUEOUPATFEATWLIAMEAACHETHHODEOHFCROTNIFYNGISHBOFDCNGTIDASITTIFAETHJWEDEGEOOEMNTHTNGTHTHLORSOFEATLIAMJNGTDAEOEOEAFIDAGLRUNEANHCUSWNGFREOHEAWNGSFUSYNEJFCEASUPBFNJMP",
+          "recipe": {
+            "key_indices": [
+              14,
+              27,
+              18,
+              27,
+              26,
+              11,
+              6,
+              11,
+              5,
+              9,
+              22,
+              20
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": -1,
+            "skip_positions": [
+              44,
+              104,
+              119,
+              132,
+              169,
+              186,
+              208
+            ],
+            "skip_policy": "all_F"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.132852198924748,
+          "trigram_score": -4.784920841594383,
+          "plaintext_runes": "ᛒᛞᚦᛞᚾᚩᛒᚪᛗᚱᚷᛡᛠᛞᚻᚩᛗᚩᛡᚢᛞᚩᛈᚢᛈᛒᚱᚱᛖᚹᚻᛡᛞᛡᛈᚹᛈᚱᚩᚣᛋᚻᚪᚠᚠᚱᚢᛁᛋᛖᛋᚦᛇᛠᛋᚹᛖᚠᛄᚪᚾᛟᚠᛚᛖᚻᛖᚾᚣᛖᚱᛝᛒᛄᛠᚳᛚᛋᚪᚻᚢᚣᚣᚦᚢᛋᚩᛋᛏᚹᛚᛡᛗᛉᛠᛏᚦᛗᛠᛝᚩᛞᛇᚻᚠᚳᛖᛠᚳᛋᚾᚩᛈᛝᛁᛋᚻᛒᛖᚠᛡᛏᛋᛒᚹᚹᚪᛋᛁᛏᛏᚪᚠᛝᛚᛒᚷᛝᛁᛖᚷᛇᛟᛗᚪᚷᛡᛋᚩᛠᚱᚩᚱᛋᚩᚠᛈᛇᚾᚱᛖᛉᚻᛏᛞᚫᛟᚩᛉᚠᛉᚳᛖᚹᛒᛒᚢᚾᛠᚾᚻᛗᚣᚱᛈᛚᚠᚹᛠᚻᛠᚹᛝᛋᛋᚳᚣᛚᛁᛋᚪᚠᚳᛠᛋᚢᛡᛈᚠᛡᛒᛖᛏ",
+          "transliteration": "BDTHDNOBAMRGIAEADHOMOIAUDOPUPBRREWHIADIAPWPROYSHAFFRUISESTHEOEASWEFJANOEFLEHENYERNGBJEACLSAHUYYTHUSOSTWLIAMXEATTHMEANGODEOHFCEEACSNOPNGISHBEFIATSBWWASITTAFNGLBGNGIEGEOOEMAGIASOEARORSOFPEONREXHTDAEOEOXFXCEWBBUNEANHMYRPLFWEAHEAWNGSSCYLISAFCEASUIAPFIABET",
+          "recipe": {
+            "key_indices": [
+              13,
+              1,
+              5,
+              27,
+              26,
+              11,
+              6,
+              11,
+              20,
+              13,
+              4,
+              14
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": -1,
+            "skip_positions": [
+              44,
+              104,
+              119,
+              132,
+              169,
+              186,
+              208
+            ],
+            "skip_policy": "all_F"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.133864259644063,
+          "trigram_score": -4.803773530094408,
+          "plaintext_runes": "ᚳᚾᛖᚹᚩᚳᚾᚩᛞᛒᛈᛟᛟᚢᚣᚷᚷᚩᛒᛡᚱᚷᚩᛞᛖᛋᛞᛠᚪᚹᛝᚳᛖᚦᚣᛁᛖᚦᛝᛞᚩᚷᚦᛚᚠᚱᛡᛏᚫᚠᚦᛖᛞᛝᚻᛖᛋᛞᚱᛚᚳᛚᚩᚢᛚᚢᛉᛠᚻᛋᚳᛖᛞᛠᚦᚪᛝᛚᛋᛚᛒᛗᛒᚠᛁᚳᛟᚢᛈᛟᚳᛄᛠᚷᚱᛝᚦᛒᛠᚷᚩᚱᚻᛟᚠᛄᚢᛞᛁᚠᚠᚱᛡᚾᚱᚪᚪᚻᛏᚠᛈᚻᛠᚹᛒᛖᛒᛠᛠᛈᛇᚠᚠᛖᛝᚱᛞᛗᚠᛋᚹᛚᚩᛞᛠᛞᛋᛚᛁᚾᚢᛋᛁᚳᛡᚾᛋᚣᛈᛚᛒᛒᚩᛚᚹᛏᛈᛇᛠᚠᛏᚷᚪᛝᚢᚪᛗᛈᛖᛁᛒᛇᚪᛋᛗᚩᚠᚠᚩᚱᛁᚱᛏᛖᛗᛈᛖᛠᛠᛁᛁᚦᚠᛁᛄᚩᚠᚠᚠᚱᛚᛄᚻ",
+          "transliteration": "CNEWOCNODBPOEOEUYGGOBIARGODESDEAAWNGCETHYIETHNGDOGTHLFRIATAEFTHEDNGHESDRLCLOULUXEAHSCEDEATHANGLSLBMBFICOEUPOECJEAGRNGTHBEAGORHOEFJUDIFFRIANRAAHTFPHEAWBEBEAEAPEOFFENGRDMFSWLODEADSLINUSICIANSYPLBBOLWTPEOEAFTGANGUAMPEIBEOASMOFFORIRTEMPEEAEAIITHFIJOFFFRLJH",
+          "recipe": {
+            "key_indices": [
+              6,
+              4,
+              25,
+              28,
+              9,
+              19,
+              3,
+              9,
+              4,
+              5,
+              23
+            ],
+            "cipher_sign": -1,
+            "feedback_sign": 1,
+            "skip_positions": [
+              44,
+              104,
+              119,
+              132,
+              169,
+              186,
+              208
+            ],
+            "skip_policy": "all_F"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "search": {
+        "period_sign_policy_tasks": 72,
+        "generated_candidates": 8603,
+        "beam_width": 512,
+        "keep_per_cut": 16,
+        "cyclic_cuts": "all period positions",
+        "periods": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "page": "LP2-24",
+      "ciphertext_runes": "ᛞᚱᚠᛖᛄᚫᚾᚳᚻᚹᛇᛡᛈᛠᚹᛗᛚᚹᛟᚹᛠᚪᚾᚪᚳᚪᚷᛚᚦᛒᚩᚹᚢᚷᛚᚠᛋᚻᚾᛉᛝᛗᛖᚦᚢᛝᛡᛈᚣᚢᛉᚷᚷᚹᛞᛁᛋᚦᛡᛡᛈᚳᚪᚩᚢᛗᚢᛉᚩᚣᚻᛏᚩᚫᛗᚢᚩᚾᛏᛠᛒᛟᛒᚠᛁᛈᛚᛋᛝᚫᚳᚫᛟᛏᚢᚩᛉᚾᛡᛋᚠᛖᛉᚱᛗᚩᚩᚫᚠᚢᚦᛖᛞᚾᚣᛡᛋᛋᚱᛚᛟᚢᚻᚢᚾᛈᛁᚻᛖᛉᚦᛞᛗᛈᛟᚠᛈᚠᛝᚫᛝᛋᛟᛄᚹᛠᛒᚣᛟᚹᛞᚠᚣᛄᛁᛏᛉᛚᚩᚦᛝᚠᚪᛋᛡᛁᚻᛒᚱᚪᚢᚣᚫᚢᛟᛠᚪᚣᛖᛟᚫᛖᛈᚠᛒᛈᛄᛁᛋᛝᛒᚱᚦᚳᛇᛚᛁᚢᛈᛏᚳᛒᛉᛖᚪᚣᚠᛗᚳᚣᚱᚻᚹᛏᚾᛡᛉᚫᚦᛟᚳᚹᛠᚠᛏᛠᛝᚩᚻᛡᛠᛒᛋᚻᛟᚫᛁᛠᛏᛁᛋᛏᚫᚻᚱᚻᛄᛋᛡᚹᚾᚾᛡᚹᛚᚢᛖᛏᚱᛝᚳᚣᚪᛉᛇᛝᛋᛖᛇᛁ",
+      "top": [
+        {
+          "score": -5.245295832515018,
+          "trigram_score": -4.8284897278687176,
+          "plaintext_runes": "ᛠᛝᚷᛠᛒᛁᚫᛟᚳᛋᚳᛇᛇᛚᛈᛖᚻᛒᛖᚠᚱᛁᛉᚹᛒᛋᛗᚾᛁᚳᛝᚹᚳᛏᚳᚹᚩᛞᛠᛞᚦᚪᛁᚾᚷᚻᚩᛚᚠᚪᛈᚠᚻᚦᚱᛗᛝᛁᚢᛖᛈᚠᚻᚩᚾᛝᚳᚱᚪᚹᚾᚳᛏᚫᛡᚱᛇᚢᛝᚩᛇᚠᚣᚳᚣᚾᛖᛗᚱᚣᚣᛠᚳᛏᛡᚻᛄᛖᛏᚳᚱᛋᛄᚩᚪᛗᚢᚱᛄᛗᛖᛞᛡᚪᚻᚢᛁᚳᚳᚪᚱᛚᚣᚪᚹᚻᛖᚾᛠᛗᚹᛖᛞᚱᛗᚪᛚᚻᛁᚳᛚᚳᚠᚠᚢᚩᚹᛝᛈᛋᚱᚳᛒᛏᛁᛏᛋᛞᛁᛞᚳᛋᛠᛚᛋᚣᛖᚱᛗᛖᛄᛚᚢᛏᛝᛗᛁᛞᚹᚣᛋᚹᚪᛚᛖᚠᚩᚠᚫᛋᚪᚢᛒᛇᚹᛄᛠᚢᛏᛏᚢᚩᚾᛗᛇᚾᚹᚢᚱᛡᛚᚪᚻᛗᛖᛒᚣᚳᚾᛞᚾᚳᛗᚪᚪᛖᛁᛚᚳᚩᚻᛄᚪᛈᛇᛚᚳᛒᚣᚢᛚᛗᚱᛗᛠᛝᛞᚷᚩᚪᚷᛁᛖᚣᚪᛚᛒᚻᛡᛡᚻᛝᚢᚪᚢᛖᛁᚾᚠᛖ",
+          "transliteration": "EANGGEABIAEOECSCEOEOLPEHBEFRIXWBSMNICNGWCTCWODEADTHAINGHOLFAPFHTHRMNGIUEPFHONNGCRAWNCTAEIAREOUNGOEOFYCYNEMRYYEACTIAHJETCRSJOAMURJMEDIAAHUICCARLYAWHENEAMWEDRMALHICLCFFUOWNGPSRCBTITSDIDCSEALSYERMEJLUTNGMIDWYSWALEFOFAESAUBEOWJEAUTTUONMEONWURIALAHMEBYCNDNCMAAEILCOHJAPEOLCBYULMRMEANGDGOAGIEYALBHIAIAHNGUAUEINFE",
+          "recipe": {
+            "key_indices": [
+              5,
+              17,
+              6,
+              10,
+              6,
+              14,
+              16,
+              17,
+              26,
+              8,
+              22,
+              14
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.272814246637536,
+          "trigram_score": -4.87181162641711,
+          "plaintext_runes": "ᛠᛝᚩᛉᚣᛁᚫᛟᚳᛋᚳᛇᛇᛚᛁᚱᛒᛒᛖᚠᚱᛁᛉᚹᛒᛋᛏᚪᛗᚳᛝᚹᚳᛏᚳᚹᚩᛞᚫᚾᛄᚪᛁᚾᚷᚻᚩᛚᚠᚪᛁᛋᛒᚦᚱᛗᛝᛁᚢᛖᛈᚠᚳᛖᛖᛝᚳᚱᚪᚹᚾᚳᛏᚫᚪᛗᛝᚢᛝᚩᛇᚠᚣᚳᚣᚾᛋᚳᛈᚣᚣᛠᚳᛏᛡᚻᛄᛖᛈᛚᛈᛋᛄᚩᚪᛗᚢᚱᛄᛗᛋᚾᚹᚪᚻᚢᛁᚳᚳᚪᚱᛚᛞᛁᛏᚻᛖᚾᛠᛗᚹᛖᛞᚱᛏᛁᚠᚻᛁᚳᛚᚳᚠᚠᚢᚩᚱᚹᛟᛋᚱᚳᛒᛏᛁᛏᛋᛞᚹᚾᛉᛋᛠᛚᛋᚣᛖᚱᛗᛖᚻᚷᛁᛏᛝᛗᛁᛞᚹᚣᛋᚹᛝᚷᛡᚠᚩᚠᚫᛋᚪᚢᛒᛇᚱᚣᚻᚢᛏᛏᚢᚩᚾᛗᛇᚾᚱᛏᛈᛡᛚᚪᚻᛗᛖᛒᚣᚳᚷᚾᛖᚳᛗᚪᚪᛖᛁᛚᚳᚩᚳᚣᚱᛈᛇᛚᚳᛒᚣᚢᛚᛗᚢᚳᚻᛝᛞᚷᚩᚪᚷᛁᛖᚣᛝᚷᚣᚻᛡᛡᚻᛝᚢᚪᚢᛖᚹᚪᚾᛖ",
+          "transliteration": "EANGOXYIAEOECSCEOEOLIRBBEFRIXWBSTAMCNGWCTCWODAENJAINGHOLFAISBTHRMNGIUEPFCEENGCRAWNCTAEAMNGUNGOEOFYCYNSCPYYEACTIAHJEPLPSJOAMURJMSNWAHUICCARLDITHENEAMWEDRTIFHICLCFFUORWOESRCBTITSDWNXSEALSYERMEHGITNGMIDWYSWNGGIAFOFAESAUBEORYHUTTUONMEONRTPIALAHMEBYCGNECMAAEILCOCYRPEOLCBYULMUCHNGDGOAGIEYNGGYHIAIAHNGUAUEWANE",
+          "recipe": {
+            "key_indices": [
+              5,
+              17,
+              3,
+              25,
+              15,
+              14,
+              16,
+              17,
+              26,
+              8,
+              22,
+              14
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -5.283025695072252,
+          "trigram_score": -4.912469395385771,
+          "plaintext_runes": "ᛠᛝᚷᛠᛞᚫᚢᛝᚩᛋᚳᛇᛇᛚᛈᛖᛉᚩᛞᛠᚦᛁᛉᚹᛒᛋᛗᚾᛏᛚᚣᚷᚩᛏᚳᚹᚩᛞᛠᛞᚻᛁᛋᚻᚱᚻᚩᛚᚠᚪᛈᚠᛉᛒᚾᛖᛗᛁᚢᛖᛈᚠᚻᚩᛋᚹᛁᚩᛟᚹᚾᚳᛏᚫᛡᚱᛖᛏᚣᚦᛁᚠᚣᚳᚣᚾᛖᛗᛁᛇᚦᛡᚩᛏᛡᚻᛄᛖᛏᚳᛁᚢᛏᚦᛟᛗᚢᚱᛄᛗᛖᛞᚱᛁᛈᚠᚻᚳᚳᚪᚱᛚᚣᚪᛈᛞᛞᚻᚣᛗᚹᛖᛞᚱᛗᚪᚣᛞᛋᚱᛖᚳᚠᚠᚢᚩᚹᛝᛗᚢᚾᚱᛋᛏᛁᛏᛋᛞᛁᛞᛄᚢᚱᛗᛈᚣᛖᚱᛗᛖᛄᛚᚹᚦᚣᛖᚻᛞᚹᚣᛋᚹᚪᛚᚪᛋᚻᛠᛞᛋᚪᚢᛒᛇᚹᛄᚳᛏᛝᛋᛠᚩᚾᛗᛇᚾᚹᚢᛁᛈᚫᛞᚷᛗᛖᛒᚣᚳᚾᛞᛋᛚᚪᛞᛟᛖᛁᛚᚳᚩᚻᛄᚢᛠᛒᛗᚩᛒᚣᚢᛚᛗᚱᛗᚳᚹᛠᚳᚢᚪᚷᛁᛖᚣᚪᛚᛞᛞᚩᚣᚷᛝᚢᚪᚢᛖᛁᚾᚷᚱ",
+          "transliteration": "EANGGEADAEUNGOSCEOEOLPEXODEATHIXWBSMNTLYGOTCWODEADHISHRHOLFAPFXBNEMIUEPFHOSWIOOEWNCTAEIARETYTHIFYCYNEMIEOTHIAOTIAHJETCIUTTHOEMURJMEDRIPFHCCARLYAPDDHYMWEDRMAYDSRECFFUOWNGMUNRSTITSDIDJURMPYERMEJLWTHYEHDWYSWALASHEADSAUBEOWJCTNGSEAONMEONWUIPAEDGMEBYCNDSLADOEEILCOHJUEABMOBYULMRMCWEACUAGIEYALDDOYGNGUAUEINGR",
+          "recipe": {
+            "key_indices": [
+              5,
+              17,
+              6,
+              10,
+              12,
+              0,
+              21,
+              16,
+              24,
+              8,
+              22,
+              14
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "search": {
+        "period_sign_policy_tasks": 72,
+        "generated_candidates": 8690,
+        "beam_width": 512,
+        "keep_per_cut": 16,
+        "cyclic_cuts": "all period positions",
+        "periods": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Beam search is heuristic; all finite paths are not enumerated. Negative result does not exclude this cipher family.",
+    "All cyclic cuts are tried; top16percut generated under trigram are reranked by a4gram model. Null replicates repeat this selection.",
+    "External-only training, but LP controls were previously inspected; not fresh blind validation.",
+    "Seed lengths4..12 only; no arbitrary F subset or cross-page key."
+  ],
+  "wall_seconds": 30.679957000014838
+}

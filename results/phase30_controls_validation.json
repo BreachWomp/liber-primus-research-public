@@ -1,0 +1,270 @@
+{
+  "full_gate_passed": true,
+  "controls": [
+    {
+      "index": 0,
+      "runes": 204,
+      "exact": true,
+      "correct_positions": 204,
+      "truth_score": -2.1346040998834845,
+      "found_score": -2.1346040998834845,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-0-32ee72460c26.json"
+    },
+    {
+      "index": 1,
+      "runes": 202,
+      "exact": true,
+      "correct_positions": 202,
+      "truth_score": -1.6406106981771833,
+      "found_score": -1.6406106981771837,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-1-cb1ade4d03e0.json"
+    },
+    {
+      "index": 2,
+      "runes": 200,
+      "exact": true,
+      "correct_positions": 200,
+      "truth_score": -2.0784258706418837,
+      "found_score": -2.078425870641883,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-2-b3534764eb6e.json"
+    },
+    {
+      "index": 3,
+      "runes": 302,
+      "exact": true,
+      "correct_positions": 302,
+      "truth_score": -1.7862901712980552,
+      "found_score": -1.7862901712980552,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-3-a8588073f85a.json"
+    },
+    {
+      "index": 4,
+      "runes": 306,
+      "exact": true,
+      "correct_positions": 306,
+      "truth_score": -1.8734331619472633,
+      "found_score": -1.8734331619472628,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-4-7d0722ecc2f2.json"
+    },
+    {
+      "index": 5,
+      "runes": 300,
+      "exact": true,
+      "correct_positions": 300,
+      "truth_score": -1.9531262451778055,
+      "found_score": -1.9531262451778055,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-5-934393a46a1e.json"
+    },
+    {
+      "index": 6,
+      "runes": 502,
+      "exact": true,
+      "correct_positions": 502,
+      "truth_score": -1.8885691640398432,
+      "found_score": -1.888569164039843,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-6-dd7868cc739a.json"
+    },
+    {
+      "index": 7,
+      "runes": 501,
+      "exact": true,
+      "correct_positions": 501,
+      "truth_score": -1.848565340235481,
+      "found_score": -1.848565340235481,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-7-bbb55a7a77bd.json"
+    },
+    {
+      "index": 8,
+      "runes": 502,
+      "exact": true,
+      "correct_positions": 502,
+      "truth_score": -1.8852750930865407,
+      "found_score": -1.8852750930865405,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-8-b16acf4c26e0.json"
+    },
+    {
+      "index": 9,
+      "runes": 729,
+      "exact": true,
+      "correct_positions": 729,
+      "truth_score": -1.9064120020283262,
+      "found_score": -1.906412002028326,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-9-4cb02713ae3e.json"
+    },
+    {
+      "index": 10,
+      "runes": 730,
+      "exact": true,
+      "correct_positions": 730,
+      "truth_score": -2.0459818720445426,
+      "found_score": -2.045981872044542,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-10-6ac00b1a8f70.json"
+    },
+    {
+      "index": 11,
+      "runes": 730,
+      "exact": true,
+      "correct_positions": 730,
+      "truth_score": -1.6664120904159148,
+      "found_score": -1.666412090415915,
+      "wrong_outscores_truth": false,
+      "mismatches": [],
+      "changed_words": [],
+      "output": "results/E083-control-11-e3191dd9d200.json"
+    }
+  ],
+  "nulls": [
+    {
+      "replicate": 0,
+      "score": -7.429816005006977,
+      "output": "results/E083-null-0-0-376ba6cd1c0f.json"
+    },
+    {
+      "replicate": 1,
+      "score": -7.337267494999812,
+      "output": "results/E083-null-0-1-2f0576014792.json"
+    },
+    {
+      "replicate": 2,
+      "score": -7.314168665347525,
+      "output": "results/E083-null-0-2-02ff416d5ff0.json"
+    }
+  ],
+  "validation": {
+    "verified_source_inputs": 15,
+    "independent_candidate_scores": 257,
+    "reencryptions": 245,
+    "independent_final_neighbor_scores": 99470
+  },
+  "entries": [
+    {
+      "id": "E083-control-0",
+      "output": "results/E083-control-0-32ee72460c26.json",
+      "sha256": "9d25d088f188f7c2cddc8038c8a4f524da7347d73aabbda87ac7270893008d20",
+      "fingerprint": "32ee72460c26dcc07e9dcc8d639b84ce0fbdf37ae86ab8b19521e5faf311eee3"
+    },
+    {
+      "id": "E083-control-1",
+      "output": "results/E083-control-1-cb1ade4d03e0.json",
+      "sha256": "f188a5868c8f8295f0fcb9ec6197afc30db6acb8588ecf4013a78c9aceb1ce06",
+      "fingerprint": "cb1ade4d03e06b1623f1e52e85d065ccd2e2b358f7d30f7ce8134b48ef35e776"
+    },
+    {
+      "id": "E083-control-2",
+      "output": "results/E083-control-2-b3534764eb6e.json",
+      "sha256": "ecf59f76f4b34b11682682fa59670346fa33584c4175dc6efbdbf41e9af0c1f3",
+      "fingerprint": "b3534764eb6eff68da9cf63af28cf71c80e697d23191e5bd84510f79c8c4bcc4"
+    },
+    {
+      "id": "E083-control-3",
+      "output": "results/E083-control-3-a8588073f85a.json",
+      "sha256": "7fb9a0b34caa7446931f5671ac0d41db5b0c93622ae60486ac190dc1d24c8cff",
+      "fingerprint": "a8588073f85a4510ebeb7efbe460ddd58be73cc6a3d45b528485ef578abda962"
+    },
+    {
+      "id": "E083-control-4",
+      "output": "results/E083-control-4-7d0722ecc2f2.json",
+      "sha256": "b50efe70779660aa8ed28e6722628f475463f2b6ba903e6ddd86fe60cde0092f",
+      "fingerprint": "7d0722ecc2f224902be60dca2e7013714b1ea4c27f6e95328c5ef7cfd96b672c"
+    },
+    {
+      "id": "E083-control-5",
+      "output": "results/E083-control-5-934393a46a1e.json",
+      "sha256": "3b3f2b2944ec4c80d0328d713f8a56538923eafdeec3678c26e5cb54fc277113",
+      "fingerprint": "934393a46a1e960d922dc9e25e5763ab57d6be6f4e70d1747973dabf420192fb"
+    },
+    {
+      "id": "E083-control-6",
+      "output": "results/E083-control-6-dd7868cc739a.json",
+      "sha256": "82ebde903ec15a9cc57a05debfc141982333a2fb7048d0a556d46c971155e81e",
+      "fingerprint": "dd7868cc739a3679a481b8d0d83918be4591e71f58d200f345dbd92912164721"
+    },
+    {
+      "id": "E083-control-7",
+      "output": "results/E083-control-7-bbb55a7a77bd.json",
+      "sha256": "823fb0a29c54ee65bf24d65a5950fe9387bb203aa46b510d648a78bd38b4a751",
+      "fingerprint": "bbb55a7a77bd49b99cb89fd8b324d51a31cf32f27bdfa90807513e634aa49c63"
+    },
+    {
+      "id": "E083-control-8",
+      "output": "results/E083-control-8-b16acf4c26e0.json",
+      "sha256": "6abc3c6c8b7f5d4270d9db0fbe531dd6ba7ae6a738352c5fed1ebcc79d744bc3",
+      "fingerprint": "b16acf4c26e0758fdcbdf482f1fa9786f4a59936687e514564c5ca4adefeaf06"
+    },
+    {
+      "id": "E083-control-9",
+      "output": "results/E083-control-9-4cb02713ae3e.json",
+      "sha256": "4f7fabe6446e0887086af47d196ea5abc8873babe9ff12031b47e82dbc7b6a51",
+      "fingerprint": "4cb02713ae3e00787cddf6c1500e3531bc84e2a54965189a9c369482cb10fb2e"
+    },
+    {
+      "id": "E083-control-10",
+      "output": "results/E083-control-10-6ac00b1a8f70.json",
+      "sha256": "e6447a56b1a691d71057c047e607e0db1024b7484c7913c0ca76643da9f4a425",
+      "fingerprint": "6ac00b1a8f70e89d5b8ffb5d69ddbd32dcdb16426fede7c4057b3ce44970876e"
+    },
+    {
+      "id": "E083-control-11",
+      "output": "results/E083-control-11-e3191dd9d200.json",
+      "sha256": "b53dfc91fe211c4a56718f9bb93949a1e025c142ce9c00e308a819fa5c1653fe",
+      "fingerprint": "e3191dd9d200ccd399b2a583402f2db0af41c0ce9665da5ee0d25bf04b3f0afa"
+    },
+    {
+      "id": "E083-null-0-0",
+      "output": "results/E083-null-0-0-376ba6cd1c0f.json",
+      "sha256": "f95524a68c82628a6168bb97b375796eb3c2b218409257156d3e41a43b80c4c3",
+      "fingerprint": "376ba6cd1c0f244e976b790079be7af3801f26f1b0728948fb3ce558a96d35bc"
+    },
+    {
+      "id": "E083-null-0-1",
+      "output": "results/E083-null-0-1-2f0576014792.json",
+      "sha256": "ac5b1261e373ca7d2323f4003d43b98f2d2fc80a75733a461a2e3f3f149c67c1",
+      "fingerprint": "2f0576014792f7e5ca04357c865076e4006f9d1d5e9b630f895d1c348deb04f3"
+    },
+    {
+      "id": "E083-null-0-2",
+      "output": "results/E083-null-0-2-02ff416d5ff0.json",
+      "sha256": "ce7d53836d83a45e91bec814f252cc211a689f89c0e77540b9870fb485de7eb0",
+      "fingerprint": "02ff416d5ff0827b3ad40d968c0da21b5ebd702c28b39228166834a3ac7a99ea"
+    }
+  ],
+  "seconds": 37.05712299991865,
+  "validation_seconds": 8.471434899955057,
+  "verifier_sha256": "0b430656aeab08721435305ad422c43f3daa4ec0b255fd4d2748bc81d96ea320",
+  "limits": "Independent final scores/neighborhoods/source/inverse mappings; intermediate optimizer trajectory and initialization code not independently reimplemented.",
+  "unknown_pages_searched": 0,
+  "new_decryptions": []
+}

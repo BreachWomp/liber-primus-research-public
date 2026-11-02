@@ -1,0 +1,95 @@
+{
+  "status": "partial_not_complete",
+  "mode": "dictionary",
+  "pages": [
+    {
+      "page": "LP2-55",
+      "ciphertext_runes": "ᛝᚫᛗᛁᚹᛋᛒᛉᛗᛋᛇᚷᛞᚦᚫᚠᛡᚪᛒᚳᚢᚹᚱᛒᛠᚠᛉᛁᛗᚢᚳᛈᚻᛝᛚᛇᛗᛋᛞᛡᛈᚠᛒᚻᛇᚳᛇᛖᛠᛖᛁᚷᛉᚷᛋᛖᛋᛇᚦᚦᛖᛋᚦᛟᚳᛠᛁᛗᚳᛉᛞᛄᚢᛒᛖᛁ",
+      "rune_count": 76,
+      "f_count": 3,
+      "evaluated_key_sign_tasks": 1524,
+      "dp_transitions": 729476,
+      "top": [
+        {
+          "score": -4.18980240271261,
+          "plaintext_runes": "ᛄᚾᚷᚻᛏᛚᛚᛞᚳᛏᚦᛗᛁᚠᚳᚳᚢᚱᚩᚷᛚᛚᛚᛋᚻᚳᛒᛗᚳᚦᚪᚣᚪᛗᚠᛒᛟᚪᚾᛠᚩᛈᚱᚷᛝᛁᛋᛡᛉᛗᚠᛗᚢᚱᚪᛞᛖᛝᛒᚩᚻᛠᛖᛚᛉᚱᛈᛠᛚᛋᛈᚪᛒᛋᛡᛋ",
+          "transliteration": "JNGHTLLDCTTHMIFCCUROGLLLSHCBMCTHAYAMFBOEANEAOPRGNGISIAXMFMURADENGBOHEAELXRPEALSPABSIAS",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "key_indices": [
+              1,
+              19,
+              13,
+              16,
+              27,
+              9,
+              5,
+              3,
+              9,
+              15
+            ],
+            "start": 1,
+            "skip_positions": []
+          },
+          "replay_verified": true,
+          "transitions": 850,
+          "max_states": 20
+        },
+        {
+          "score": -4.25736154694414,
+          "plaintext_runes": "ᛁᚷᚾᛞᛁᚢᚷᚪᚾᛠᛋᛝᛇᛇᛋᛈᚢᛁᚷᛋᛚᛚᚹᚩᛒᚠᚪᚠᚩᚱᛚᚦᛖᛄᚱᛋᚳᚱᚱᛒᚣᚠᛚᛞᚢᛋᚦᚦᚦᚱᛠᛏᚱᛗᛖᚱᚱᛟᛝᛋᛝᚢᛚᚩᚪᛇᛈᚳᛞᚪᛈᚪᚱᚩᚹᛚ",
+          "transliteration": "IGNDIUGANEASNGEOEOSPUIGSLLWOBFAFORLTHEJRSCRRBYFLDUSTHTHTHREATRMERROENGSNGULOAEOPCDAPAROWL",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "key_indices": [
+              3,
+              15,
+              18,
+              10,
+              19,
+              13
+            ],
+            "start": 2,
+            "skip_positions": [
+              25,
+              41
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 510,
+          "max_states": 12
+        },
+        {
+          "score": -4.323112595361856,
+          "plaintext_runes": "ᛇᚹᚦᚳᚾᛖᛋᚹᚫᚢᛝᚣᛡᛈᛚᚠᚷᚻᚱᛁᛋᚣᛠᚱᛏᚠᚦᛞᛈᛚᛁᚩᚫᛄᚢᚩᚣᛖᚾᛞᚦᛏᛏᚪᚾᛁᚱᛋᚱᚩᚳᛁᛗᚣᚷᚣᚢᛝᚢᛗᚣᚢᚦᛁᛏᛏᚷᛉᛡᚹᛝᚳᚩᛋᚩᚳ",
+          "transliteration": "EOWTHCNESWAEUNGYIAPLFGHRISYEARTFTHDPLIOAEJUOYENDTHTTANIRSROCIMYGYUNGUMYUTHITTGXIAWNGCOSOC",
+          "recipe": {
+            "family": "vigenere",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "key_indices": [
+              3,
+              21,
+              15,
+              16,
+              4
+            ],
+            "start": 4,
+            "skip_positions": [
+              15,
+              25
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 425,
+          "max_states": 10
+        }
+      ]
+    }
+  ],
+  "new_decryptions": []
+}

@@ -1,0 +1,22 @@
+{
+  "experiment": "E024-numeric-structure",
+  "input": "results/E023-glyph-audit-8315f5c684bb.json",
+  "input_selection": "Use the image-supported overlay fixed before structure statistics. No choice among transcriptions by statistical score.",
+  "scope": "One 256-byte stream, original 32 rows of 8 cells across LP2-49/50/51. Diagnostic only, no decryption search.",
+  "hypothesis": "The source-aligned byte sequence departs from independent uniform bytes under one of four prespecified statistics.",
+  "statistics": [
+    "abs(2 * unordered equal-byte pairs - 255), a two-sided collision statistic",
+    "abs(256 * adjacent equal-byte count - 255), a two-sided adjacency statistic",
+    "max over 8 bit positions of abs(2 * one-count - 256)",
+    "sum over 8 source-aligned columns of (8 * column byte-sum - total byte-sum)^2"
+  ],
+  "null_model": "9999 independent uniform 256-byte draws via Python Random(seed).randbytes(256), every draw evaluated on all four statistics. This null does not preserve the observed histogram.",
+  "seed": 3301024,
+  "replicates": 9999,
+  "p_value": "(1 + null statistic >= observed count) / 10000; Bonferroni factor 4 across the prespecified statistics. Bit-plane maximum already recomputed in every null draw.",
+  "positive_controls": "Constant zero bytes for severe collision, adjacency and bit bias; repeated columns 0,32,...,224 for column separation. Controls evaluated by the same null samples; no plaintext recovery control applicable.",
+  "limits": "Failure to reject is not evidence of encryption or randomness. Rejection is not a decryption. No unknown-key search, file-type inference, statistical novelty claim or cryptographic authentication.",
+  "max_seconds": 120,
+  "memory": "Streaming samples, one 256-byte draw at a time; fixed 256-entry count arrays, no ensemble retention.",
+  "workers": 1
+}

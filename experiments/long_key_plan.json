@@ -1,0 +1,14 @@
+{
+  "experiment": "E049-long-key-controls",
+  "hypothesis_id": "H038",
+  "rule": "Continuous repeating P=s*C+K[j] mod29, both signs, selective ciphertext F copies without key advance. No page reset; source spans preserved.",
+  "search": "Nominal periods17..32 only, using existing E038 fixed-schedule seed solver4starts. Incidental shorter primitive keys may occur; no nominal1..16 seed search. Whole stream if<=1024 else prefix/suffix1024 plus3longest maximal non-F runs>=64 cap512. Canonical cyclic dedup top12 by seed score. E040 exact all-phase F DP, <=3rounds of6coordinate sweeps and DP. Search seed3303049.",
+  "score": "Frozen mean order4 logp minus [primitive_key_length*ln29+cipherFcount*ln2]/N. No phase fit beyond key rotation, no new page penalty.",
+  "controls": "Reuse E043 source-excluded plaintexts X3316,XI1200,XII1200 and their page spans. Continuous encryption, Random3301049 keys lengths17,23,31 uniformly1..28; signs+1,-1,+1; every other plaintextF copied startingfirst. No truth,key or Fmask to solver.",
+  "gate": "All3 exact text,key and Fmask. If fail, no unknown scan; independently diagnose truth objective and candidate-seed recovery before choosing another experiment. No silent tuning or replacement of failed results.",
+  "null": "One full-optimizer diagnostic XI null, perpage endpoints/counts/doublets preserved with E043 sampler seed3302049+page_index. No inferential p.",
+  "bounds": "512..4096runes,32keyslots,12seeds,29coordinate rows,<=256fixed-key DPstates,one process; unchanged E038 training.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "unknown_contingency": "If gate passes, preregister continuous E012 groups with>=512runes (9groups; exclude308rune LP2-54_55), same solver,19fully optimized selected-group nulls and Bonferroni9. No unsupported community claim audits."
+}

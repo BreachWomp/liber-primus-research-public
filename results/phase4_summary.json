@@ -1,0 +1,218 @@
+{
+  "created_at": "2026-10-19T12:37:30.387846+00:00",
+  "experiment_groups": [
+    "E016",
+    "E017",
+    "E018"
+  ],
+  "completed_processes": 23,
+  "seconds": 878.0502581999754,
+  "max_process_seconds": 90.772899100004,
+  "budget_seconds": 900,
+  "candidate_records_recomputed": 306,
+  "tests_passed": 61,
+  "source": {
+    "source_sha256": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278",
+    "excluded_chapter": "II.Self-Reliance",
+    "sections": [
+      {
+        "roman": "I",
+        "title": "HISTORY",
+        "source_character_range": [
+          1204,
+          48452
+        ],
+        "runes": 34859
+      },
+      {
+        "roman": "III",
+        "title": "COMPENSATION",
+        "source_character_range": [
+          105038,
+          148548
+        ],
+        "runes": 31693
+      },
+      {
+        "roman": "IV",
+        "title": "SPIRITUAL LAWS",
+        "source_character_range": [
+          148568,
+          192880
+        ],
+        "runes": 32454
+      },
+      {
+        "roman": "V",
+        "title": "LOVE",
+        "source_character_range": [
+          192889,
+          218073
+        ],
+        "runes": 18408
+      },
+      {
+        "roman": "VI",
+        "title": "FRIENDSHIP",
+        "source_character_range": [
+          218089,
+          251419
+        ],
+        "runes": 24523
+      },
+      {
+        "roman": "VII",
+        "title": "PRUDENCE",
+        "source_character_range": [
+          251434,
+          276868
+        ],
+        "runes": 18721
+      },
+      {
+        "roman": "VIII",
+        "title": "HEROISM",
+        "source_character_range": [
+          276883,
+          301411
+        ],
+        "runes": 17965
+      },
+      {
+        "roman": "IX",
+        "title": "THE OVER-SOUL",
+        "source_character_range": [
+          301430,
+          340292
+        ],
+        "runes": 28407
+      },
+      {
+        "roman": "X",
+        "title": "CIRCLES",
+        "source_character_range": [
+          340304,
+          367105
+        ],
+        "runes": 19707
+      },
+      {
+        "roman": "XI",
+        "title": "INTELLECT",
+        "source_character_range": [
+          367120,
+          395164
+        ],
+        "runes": 20713
+      },
+      {
+        "roman": "XII",
+        "title": "ART",
+        "source_character_range": [
+          395174,
+          419196
+        ],
+        "runes": 17679
+      }
+    ],
+    "paragraphs": 393,
+    "runes": 265129,
+    "word_tokens": 64574,
+    "distinct_rune_words": 8182,
+    "non_ascii_letters": {
+      "æ": 9,
+      "Æ": 4,
+      "œ": 1,
+      "Ἀ": 1,
+      "ε": 2,
+      "ὶ": 1,
+      "γ": 1,
+      "ὰ": 1,
+      "ρ": 1,
+      "ὖ": 1,
+      "π": 2,
+      "ί": 1,
+      "τ": 1,
+      "ο": 3,
+      "υ": 1,
+      "σ": 1,
+      "ι": 3,
+      "ν": 1,
+      "ἱ": 1,
+      "Δ": 1,
+      "ὸ": 1,
+      "ς": 1,
+      "κ": 1,
+      "ύ": 1,
+      "β": 1,
+      "é": 2,
+      "ë": 1
+    },
+    "normalization": "Explicit ae/oe ligature expansion; NFKD and combining-mark removal; ASCII words; QU->CW, remainingQ->C; greedyGP within words; no ngrams across paragraphs.",
+    "training_data": "No Liber Primus plaintext or ciphertext, and no Self-Reliance text is used."
+  },
+  "mutation_comparisons": {
+    "3": [
+      1542,
+      1600
+    ],
+    "4": [
+      1563,
+      1600
+    ]
+  },
+  "families": {
+    "E017": {
+      "pages": 55,
+      "exact_controls": 6,
+      "selected": "LP2-49",
+      "score": -3.3032488658874044,
+      "transliteration": "EANOFEREWROWDSTTOGAUOPANSGOSPLUISAFFELETAIDSLOWNFRALRIDSPASSYEBTWOF",
+      "p": 0.2,
+      "page_adjusted_p": 1,
+      "phase_adjusted_p": 1
+    },
+    "E018": {
+      "pages": 35,
+      "exact_controls": 3,
+      "status": "partial_budget_checkpoint",
+      "p": null,
+      "page_adjusted_p": null,
+      "remaining_pages": [
+        "LP2-35",
+        "LP2-36",
+        "LP2-37",
+        "LP2-38",
+        "LP2-39",
+        "LP2-40",
+        "LP2-41",
+        "LP2-42",
+        "LP2-43",
+        "LP2-44",
+        "LP2-45",
+        "LP2-46",
+        "LP2-47",
+        "LP2-48",
+        "LP2-49",
+        "LP2-51",
+        "LP2-52",
+        "LP2-53",
+        "LP2-54",
+        "LP2-55"
+      ],
+      "null_pending": true
+    }
+  },
+  "budget_audit": {
+    "phase_budget_seconds": 900,
+    "E016_E017_completed_seconds": 489.05164860002697,
+    "E018_orchestration_budget_seconds": 400,
+    "termination_allowance_seconds": 2,
+    "combined_conservative_seconds": 891.051648600027,
+    "interrupted_batch": "LP2-35_39",
+    "completed_E018_pages": 35,
+    "null_pending": true,
+    "note": "400 seconds includes all E018 successful subprocesses, startup overhead and interrupted batch; do not add it again to successful E018 runtimes. The two-second allowance is conservative accounting, not measured termination time."
+  },
+  "new_decryptions": []
+}

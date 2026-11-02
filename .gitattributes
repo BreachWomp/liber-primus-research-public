@@ -1,0 +1,6 @@
+# Research fingerprints describe exact bytes across platforms.
+# Do not let core.autocrlf alter source snapshots or hashed code on checkout.
+* -text
+* whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
+*.jpg binary
+*.png binary

@@ -1,0 +1,22 @@
+{
+  "experiment": "E037-quadratic-stream",
+  "hypothesis_id": "H032",
+  "rule": "P_i = a*C_i + b*i*i + c*i + d mod29, i=0 at page start.",
+  "motivation": "Direct finite test of a progressive additive key with constant second difference. Previous named prime/totient streams and affine substitution do not exhaust this family. This is a low-complexity exploratory hypothesis, not a claimed historical clue. Index-origin shifts and index reversal are already absorbed by b,c,d.",
+  "grid": "a=1..28; b,c=0..28 except b=c=0; d=0..28. Exactly682080 recipes/page. Constant affine substitutions excluded as already covered.",
+  "controls": [["LP1-03_04_divinity",5,11,7,3],["LP1-14_15_circumference",13,0,17,9],["LP2-57_direct",28,3,28,2]],
+  "gate": "All3 synthetic controls exact top1 in full grid, including linear b=0. Previously seen LP controls; not historical decryptions. Independent of E036's failed substitution objective; no E036 unknown scan.",
+  "unknown_scope": "All55 unknown rune pages LP2-00..55 except numericLP2-50. All runes, forward order, no skips. Keystream periodic modulo29; cross-page phase cannot create new polynomial sequences.",
+  "model": "Unchanged E016 external4gram from eleven pinned Emerson essays excluding Self-Reliance, no LP text. No tuning to unknown outputs.",
+  "selection": "Freeze maximum mean score over55pages and output hashes before null generation.",
+  "null": "19 independent uniform rejection shuffles preserving exact rune counts and adjacent equality count of selected page; each full682080-rule search; at most100000 proposals.",
+  "null_seed": 3301037,
+  "replicates": 19,
+  "correction": "Plus-one p and Bonferroni55; exploratory after previous families, not project-wide significance. Zero exceedances require separately registered larger calibration.",
+  "process_seconds": 180,
+  "family_seconds": 650,
+  "phase_seconds": 900,
+  "workers": 1,
+  "memory": "At most2048x1024 int32 candidate symbols; dense29^4 scoring lookup. One process.",
+  "limits": "Only degree<=2 polynomial key modulo29. No claim to exclude nonpolynomial streams, arbitrary period29 keys, changing moduli, F interruptions, or transposition."
+}

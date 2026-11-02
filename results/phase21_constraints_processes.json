@@ -1,0 +1,173 @@
+[
+  {
+    "kind": "regression",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 18.029155800002627,
+    "peak_sampled_bytes": 124403712,
+    "log": "results/E058-regression-2-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 18.277972600015346,
+    "peak_sampled_bytes": 128172032,
+    "log": "results/E058-fresh-0-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 19.03015469998354,
+    "peak_sampled_bytes": 126357504,
+    "log": "results/E058-fresh-1-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 18.0292560000089,
+    "peak_sampled_bytes": 125673472,
+    "log": "results/E058-fresh-2-process.txt"
+  },
+  {
+    "kind": "null",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 19.280409600003622,
+    "peak_sampled_bytes": 127016960,
+    "log": "results/E058-null-2-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 18.53097819996765,
+    "peak_sampled_bytes": 127266816,
+    "log": "results/E058-regression-0-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 18.531356199993752,
+    "peak_sampled_bytes": 126758912,
+    "log": "results/E058-regression-1-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 3,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 31.047162299975753,
+    "peak_sampled_bytes": 132202496,
+    "log": "results/E058-regression-3-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 4,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 28.541029200016055,
+    "peak_sampled_bytes": 138993664,
+    "log": "results/E058-regression-4-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 5,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 29.800364000024274,
+    "peak_sampled_bytes": 137932800,
+    "log": "results/E058-regression-5-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 6,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 14.527564499992877,
+    "peak_sampled_bytes": 125034496,
+    "log": "results/E058-regression-6-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 7,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 13.774096600012854,
+    "peak_sampled_bytes": 125374464,
+    "log": "results/E058-regression-7-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 8,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 14.774393300001975,
+    "peak_sampled_bytes": 126201856,
+    "log": "results/E058-regression-8-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 9,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 32.046527899976354,
+    "peak_sampled_bytes": 131514368,
+    "log": "results/E058-regression-9-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 10,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 14.525263499992434,
+    "peak_sampled_bytes": 125837312,
+    "log": "results/E058-regression-10-process.txt"
+  },
+  {
+    "kind": "regression",
+    "index": 11,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 14.775358400016557,
+    "peak_sampled_bytes": 125644800,
+    "log": "results/E058-regression-11-process.txt"
+  },
+  {
+    "kind": "stress",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 18.530793400015682,
+    "peak_sampled_bytes": 132001792,
+    "log": "results/E058-stress-0-process.txt"
+  },
+  {
+    "kind": "stress",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 18.029902199981734,
+    "peak_sampled_bytes": 137809920,
+    "log": "results/E058-stress-1-process.txt"
+  },
+  {
+    "kind": "stress",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 17.53081199998269,
+    "peak_sampled_bytes": 129294336,
+    "log": "results/E058-stress-2-process.txt"
+  }
+]

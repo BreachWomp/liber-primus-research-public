@@ -1,0 +1,12 @@
+{
+  "registered_at": "2026-10-19T09:17:33.325943+00:00",
+  "experiment": "E011",
+  "mechanism": "Plaintext feedback autokey seeded by original literal LP1 words and explicit labels, both word directions.",
+  "grid": "All55unknownrune pages, all original seeds without cyclic reduction, four signs, none or all ciphertextF interruptions.",
+  "budget_seconds": 180,
+  "replicates": 39,
+  "seed": 3301011,
+  "null": "After scan, two highest page scores; independent exact counts/doublets conditional shuffles; rerun full grid and Bonferroni55.",
+  "positive_control": "Encrypt LP1DIVINITY as plaintext-autokey with its known key; search full catalog with that section excluded from language model; require exact top1.",
+  "limits": "No arbitrary seed recovery or all-subset F search. No new decryption based only on selected scores."
+}

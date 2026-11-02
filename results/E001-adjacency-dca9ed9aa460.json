@@ -1,0 +1,2707 @@
+{
+  "experiment": "E001-adjacency",
+  "created_at": "2026-10-18T19:45:13.945461+00:00",
+  "input_sha256": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67",
+  "parameters": {
+    "replicates": 9999,
+    "seed": 330120261018,
+    "timeout_seconds": 120.0,
+    "batch_size": 256,
+    "page_ids": [
+      "LP2-00",
+      "LP2-01",
+      "LP2-02",
+      "LP2-03",
+      "LP2-04",
+      "LP2-05",
+      "LP2-06",
+      "LP2-07",
+      "LP2-08",
+      "LP2-09",
+      "LP2-10",
+      "LP2-11",
+      "LP2-12",
+      "LP2-13",
+      "LP2-14",
+      "LP2-15",
+      "LP2-16",
+      "LP2-17",
+      "LP2-18",
+      "LP2-19",
+      "LP2-20",
+      "LP2-21",
+      "LP2-22",
+      "LP2-23",
+      "LP2-24",
+      "LP2-25",
+      "LP2-26",
+      "LP2-27",
+      "LP2-28",
+      "LP2-29",
+      "LP2-30",
+      "LP2-31",
+      "LP2-32",
+      "LP2-33",
+      "LP2-34",
+      "LP2-35",
+      "LP2-36",
+      "LP2-37",
+      "LP2-38",
+      "LP2-39",
+      "LP2-40",
+      "LP2-41",
+      "LP2-42",
+      "LP2-43",
+      "LP2-44",
+      "LP2-45",
+      "LP2-46",
+      "LP2-47",
+      "LP2-48",
+      "LP2-49",
+      "LP2-50",
+      "LP2-51",
+      "LP2-52",
+      "LP2-53",
+      "LP2-54",
+      "LP2-55"
+    ]
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "rng": "numpy.default_rng/PCG64"
+  },
+  "null": "Independent uniform count-preserving permutations within each page; fixed layout masks",
+  "tail": "lower",
+  "multiple_testing": "Holm over 3 aggregate masks and 56 page-stream tests (59 total)",
+  "limitations": [
+    "Known prior-art signal; this is a replication.",
+    "A rejection concerns this exchangeable null, not all cipher families.",
+    "Transcription agreement does not establish independent historical provenance.",
+    "Within-word edges require no intervening non-rune character; within-line edges exclude LF/CR.",
+    "Finite Monte Carlo p-value resolution is 1/(replicates+1)."
+  ],
+  "aggregate": {
+    "stream": {
+      "observed": 86,
+      "edges": 12901,
+      "rate": 0.0066661499108596235,
+      "null_expectation_exact": 439.16592408430563,
+      "null_mean_simulated": 439.13601360136016,
+      "null_sd": 20.774648477268777,
+      "null_interval_95": [
+        400.0,
+        482.0
+      ],
+      "p_lower": 0.0001,
+      "p_holm_59": 0.0059
+    },
+    "within_word": {
+      "observed": 60,
+      "edges": 9636,
+      "rate": 0.0062266500622665,
+      "null_expectation_exact": 328.0665292552761,
+      "null_mean_simulated": 328.07860786078606,
+      "null_sd": 17.83678366725517,
+      "null_interval_95": [
+        294.0,
+        364.0
+      ],
+      "p_lower": 0.0001,
+      "p_holm_59": 0.0059
+    },
+    "within_line": {
+      "observed": 82,
+      "edges": 12362,
+      "rate": 0.0066332308687914576,
+      "null_expectation_exact": 420.81522556445725,
+      "null_mean_simulated": 420.78997899789977,
+      "null_sd": 20.307997896032685,
+      "null_interval_95": [
+        382.0,
+        462.0
+      ],
+      "p_lower": 0.0001,
+      "p_holm_59": 0.0059
+    }
+  },
+  "pages": [
+    {
+      "id": "LP2-00",
+      "runes": 262,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 261,
+          "rate": 0.007662835249042145,
+          "null_expectation_exact": 8.954198473282442,
+          "null_mean_simulated": 8.91129112911291,
+          "null_sd": 2.903087512730822,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0054,
+          "p_holm_59": 0.16119999999999998
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 197,
+          "rate": 0.005076142131979695,
+          "null_expectation_exact": 6.758532947266825,
+          "null_mean_simulated": 6.706470647064706,
+          "null_sd": 2.5096232340072135,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0068
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 250,
+          "rate": 0.008,
+          "null_expectation_exact": 8.576818460998508,
+          "null_mean_simulated": 8.535253525352536,
+          "null_sd": 2.83981429362481,
+          "null_interval_95": [
+            4.0,
+            14.0
+          ],
+          "p_lower": 0.0068
+        }
+      }
+    },
+    {
+      "id": "LP2-01",
+      "runes": 266,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 265,
+          "rate": 0.0037735849056603774,
+          "null_expectation_exact": 9.157894736842106,
+          "null_mean_simulated": 9.136913691369138,
+          "null_sd": 2.9691614472088723,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0009,
+          "p_holm_59": 0.0387
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 194,
+          "rate": 0.005154639175257732,
+          "null_expectation_exact": 6.7042701092353525,
+          "null_mean_simulated": 6.691269126912691,
+          "null_sd": 2.546191547735068,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0083
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 254,
+          "rate": 0.003937007874015748,
+          "null_expectation_exact": 8.777755710029792,
+          "null_mean_simulated": 8.752075207520752,
+          "null_sd": 2.910452471809586,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0011
+        }
+      }
+    },
+    {
+      "id": "LP2-02",
+      "runes": 201,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 200,
+          "rate": 0.005,
+          "null_expectation_exact": 7.124378109452737,
+          "null_mean_simulated": 7.110911091109111,
+          "null_sd": 2.5934812875811937,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0055,
+          "p_holm_59": 0.16119999999999998
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 156,
+          "rate": 0.0,
+          "null_expectation_exact": 5.557014925373134,
+          "null_mean_simulated": 5.539553955395539,
+          "null_sd": 2.295269982795682,
+          "null_interval_95": [
+            2.0,
+            10.0
+          ],
+          "p_lower": 0.004
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 192,
+          "rate": 0.005208333333333333,
+          "null_expectation_exact": 6.839402985074627,
+          "null_mean_simulated": 6.826182618261826,
+          "null_sd": 2.5394251859641246,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0073
+        }
+      }
+    },
+    {
+      "id": "LP2-03",
+      "runes": 217,
+      "statistics": {
+        "stream": {
+          "observed": 3,
+          "edges": 216,
+          "rate": 0.013888888888888888,
+          "null_expectation_exact": 7.142857142857142,
+          "null_mean_simulated": 7.122212221222123,
+          "null_sd": 2.6175629875449817,
+          "null_interval_95": [
+            2.0,
+            13.0
+          ],
+          "p_lower": 0.0727,
+          "p_holm_59": 0.6543
+        },
+        "within_word": {
+          "observed": 3,
+          "edges": 167,
+          "rate": 0.017964071856287425,
+          "null_expectation_exact": 5.522486772486772,
+          "null_mean_simulated": 5.501850185018502,
+          "null_sd": 2.294694903924732,
+          "null_interval_95": [
+            1.0,
+            10.0
+          ],
+          "p_lower": 0.1971
+        },
+        "within_line": {
+          "observed": 3,
+          "edges": 206,
+          "rate": 0.014563106796116505,
+          "null_expectation_exact": 6.812169312169312,
+          "null_mean_simulated": 6.792979297929793,
+          "null_sd": 2.5569228157159087,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.089
+        }
+      }
+    },
+    {
+      "id": "LP2-04",
+      "runes": 261,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 260,
+          "rate": 0.007692307692307693,
+          "null_expectation_exact": 9.088122605363985,
+          "null_mean_simulated": 9.033503350335033,
+          "null_sd": 2.9566409966312057,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0049,
+          "p_holm_59": 0.1568
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 190,
+          "rate": 0.0,
+          "null_expectation_exact": 6.641320365458296,
+          "null_mean_simulated": 6.6031603160316035,
+          "null_sd": 2.5339333410799796,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0014
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 249,
+          "rate": 0.008032128514056224,
+          "null_expectation_exact": 8.703625110521662,
+          "null_mean_simulated": 8.663266326632662,
+          "null_sd": 2.895444437711695,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0067
+        }
+      }
+    },
+    {
+      "id": "LP2-05",
+      "runes": 263,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 262,
+          "rate": 0.0,
+          "null_expectation_exact": 9.307984790874524,
+          "null_mean_simulated": 9.312631263126313,
+          "null_sd": 2.9989114960563525,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0004,
+          "p_holm_59": 0.0204
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 197,
+          "rate": 0.0,
+          "null_expectation_exact": 6.998751922909471,
+          "null_mean_simulated": 7.027002700270027,
+          "null_sd": 2.5904464884831433,
+          "null_interval_95": [
+            2.0,
+            13.0
+          ],
+          "p_lower": 0.0009
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 251,
+          "rate": 0.0,
+          "null_expectation_exact": 8.917191536295823,
+          "null_mean_simulated": 8.916691669166918,
+          "null_sd": 2.9207989710638214,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0004
+        }
+      }
+    },
+    {
+      "id": "LP2-06",
+      "runes": 196,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 195,
+          "rate": 0.005128205128205128,
+          "null_expectation_exact": 6.3061224489795915,
+          "null_mean_simulated": 6.286728672867286,
+          "null_sd": 2.4309003979673696,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.011,
+          "p_holm_59": 0.23099999999999998
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 148,
+          "rate": 0.006756756756756757,
+          "null_expectation_exact": 4.7861852433281005,
+          "null_mean_simulated": 4.756975697569757,
+          "null_sd": 2.1272635343413278,
+          "null_interval_95": [
+            1.0,
+            9.0
+          ],
+          "p_lower": 0.0434
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 186,
+          "rate": 0.005376344086021506,
+          "null_expectation_exact": 6.015070643642072,
+          "null_mean_simulated": 5.992599259925993,
+          "null_sd": 2.3811928209142423,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.0148
+        }
+      }
+    },
+    {
+      "id": "LP2-07",
+      "runes": 208,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 207,
+          "rate": 0.0,
+          "null_expectation_exact": 7.442307692307692,
+          "null_mean_simulated": 7.41934193419342,
+          "null_sd": 2.6896313409727304,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0008,
+          "p_holm_59": 0.0368
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 151,
+          "rate": 0.0,
+          "null_expectation_exact": 5.428929765886287,
+          "null_mean_simulated": 5.416241624162416,
+          "null_sd": 2.2928174018772784,
+          "null_interval_95": [
+            1.0,
+            10.0
+          ],
+          "p_lower": 0.0045
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 198,
+          "rate": 0.0,
+          "null_expectation_exact": 7.118729096989966,
+          "null_mean_simulated": 7.104010401040104,
+          "null_sd": 2.6251021219224855,
+          "null_interval_95": [
+            2.0,
+            13.0
+          ],
+          "p_lower": 0.0008
+        }
+      }
+    },
+    {
+      "id": "LP2-08",
+      "runes": 255,
+      "statistics": {
+        "stream": {
+          "observed": 3,
+          "edges": 254,
+          "rate": 0.011811023622047244,
+          "null_expectation_exact": 8.705882352941176,
+          "null_mean_simulated": 8.703770377037705,
+          "null_sd": 2.9041252683714327,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.025,
+          "p_holm_59": 0.392
+        },
+        "within_word": {
+          "observed": 2,
+          "edges": 199,
+          "rate": 0.010050251256281407,
+          "null_expectation_exact": 6.820750347383048,
+          "null_mean_simulated": 6.817781778177817,
+          "null_sd": 2.563379414520713,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0313
+        },
+        "within_line": {
+          "observed": 3,
+          "edges": 243,
+          "rate": 0.012345679012345678,
+          "null_expectation_exact": 8.328855951829551,
+          "null_mean_simulated": 8.335933593359336,
+          "null_sd": 2.8470829075049853,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.0324
+        }
+      }
+    },
+    {
+      "id": "LP2-09",
+      "runes": 268,
+      "statistics": {
+        "stream": {
+          "observed": 3,
+          "edges": 267,
+          "rate": 0.011235955056179775,
+          "null_expectation_exact": 8.932835820895523,
+          "null_mean_simulated": 8.946894689468946,
+          "null_sd": 2.9486978603826413,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0213,
+          "p_holm_59": 0.3621
+        },
+        "within_word": {
+          "observed": 3,
+          "edges": 202,
+          "rate": 0.01485148514851485,
+          "null_expectation_exact": 6.758175415059534,
+          "null_mean_simulated": 6.766876687668767,
+          "null_sd": 2.5784663375010957,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0906
+        },
+        "within_line": {
+          "observed": 3,
+          "edges": 256,
+          "rate": 0.01171875,
+          "null_expectation_exact": 8.564816367600201,
+          "null_mean_simulated": 8.575857585758575,
+          "null_sd": 2.88882160407531,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0268
+        }
+      }
+    },
+    {
+      "id": "LP2-10",
+      "runes": 263,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 262,
+          "rate": 0.003816793893129771,
+          "null_expectation_exact": 8.783269961977187,
+          "null_mean_simulated": 8.822882288228822,
+          "null_sd": 2.9276691586628845,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0014,
+          "p_holm_59": 0.0546
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 190,
+          "rate": 0.0,
+          "null_expectation_exact": 6.369546918991089,
+          "null_mean_simulated": 6.377737773777378,
+          "null_sd": 2.5056504344509465,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0013
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 251,
+          "rate": 0.00398406374501992,
+          "null_expectation_exact": 8.414506719298755,
+          "null_mean_simulated": 8.443944394439445,
+          "null_sd": 2.865776616980468,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0018
+        }
+      }
+    },
+    {
+      "id": "LP2-11",
+      "runes": 273,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 272,
+          "rate": 0.003676470588235294,
+          "null_expectation_exact": 9.531135531135531,
+          "null_mean_simulated": 9.574257425742575,
+          "null_sd": 2.9853381441480957,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0006,
+          "p_holm_59": 0.0294
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 211,
+          "rate": 0.004739336492890996,
+          "null_expectation_exact": 7.393638224520577,
+          "null_mean_simulated": 7.436043604360436,
+          "null_sd": 2.646220982003576,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0038
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 261,
+          "rate": 0.0038314176245210726,
+          "null_expectation_exact": 9.145685197155785,
+          "null_mean_simulated": 9.183718371837184,
+          "null_sd": 2.9277064791640464,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0008
+        }
+      }
+    },
+    {
+      "id": "LP2-12",
+      "runes": 261,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 260,
+          "rate": 0.0038461538461538464,
+          "null_expectation_exact": 8.827586206896552,
+          "null_mean_simulated": 8.858585858585858,
+          "null_sd": 2.946750873172985,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0014,
+          "p_holm_59": 0.0546
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 189,
+          "rate": 0.005291005291005291,
+          "null_expectation_exact": 6.416976127320955,
+          "null_mean_simulated": 6.43994399439944,
+          "null_sd": 2.480685267570845,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0101
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 249,
+          "rate": 0.004016064257028112,
+          "null_expectation_exact": 8.454111405835542,
+          "null_mean_simulated": 8.494249424942494,
+          "null_sd": 2.882985302606385,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0021
+        }
+      }
+    },
+    {
+      "id": "LP2-13",
+      "runes": 272,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 271,
+          "rate": 0.0,
+          "null_expectation_exact": 9.058823529411764,
+          "null_mean_simulated": 9.092709270927093,
+          "null_sd": 2.970904088792841,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0002,
+          "p_holm_59": 0.0106
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 203,
+          "rate": 0.0,
+          "null_expectation_exact": 6.785760798784459,
+          "null_mean_simulated": 6.802380238023803,
+          "null_sd": 2.5672686865100913,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0012
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 260,
+          "rate": 0.0,
+          "null_expectation_exact": 8.6911222053397,
+          "null_mean_simulated": 8.722672267226722,
+          "null_sd": 2.9072129948081558,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0002
+        }
+      }
+    },
+    {
+      "id": "LP2-14",
+      "runes": 137,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 136,
+          "rate": 0.0,
+          "null_expectation_exact": 4.598540145985401,
+          "null_mean_simulated": 4.6027602760276025,
+          "null_sd": 2.092102234593272,
+          "null_interval_95": [
+            1.0,
+            9.0
+          ],
+          "p_lower": 0.0094,
+          "p_holm_59": 0.2162
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 103,
+          "rate": 0.0,
+          "null_expectation_exact": 3.4827179046801198,
+          "null_mean_simulated": 3.484848484848485,
+          "null_sd": 1.8312881198164888,
+          "null_interval_95": [
+            0.0,
+            7.0
+          ],
+          "p_lower": 0.0286
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 130,
+          "rate": 0.0,
+          "null_expectation_exact": 4.395663374838986,
+          "null_mean_simulated": 4.402840284028403,
+          "null_sd": 2.053236247832003,
+          "null_interval_95": [
+            1.0,
+            9.0
+          ],
+          "p_lower": 0.0109
+        }
+      }
+    },
+    {
+      "id": "LP2-15",
+      "runes": 159,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 158,
+          "rate": 0.0,
+          "null_expectation_exact": 5.685534591194969,
+          "null_mean_simulated": 5.665466546654666,
+          "null_sd": 2.329309703881239,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.0044,
+          "p_holm_59": 0.1452
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 117,
+          "rate": 0.0,
+          "null_expectation_exact": 4.210174349176021,
+          "null_mean_simulated": 4.204220422042204,
+          "null_sd": 1.9971219013862875,
+          "null_interval_95": [
+            1.0,
+            8.0
+          ],
+          "p_lower": 0.0132
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 151,
+          "rate": 0.0,
+          "null_expectation_exact": 5.433643818167344,
+          "null_mean_simulated": 5.406940694069407,
+          "null_sd": 2.2728284100167864,
+          "null_interval_95": [
+            1.0,
+            10.0
+          ],
+          "p_lower": 0.0054
+        }
+      }
+    },
+    {
+      "id": "LP2-16",
+      "runes": 267,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 266,
+          "rate": 0.0037593984962406013,
+          "null_expectation_exact": 8.921348314606742,
+          "null_mean_simulated": 8.93919391939194,
+          "null_sd": 2.935034220494563,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0012,
+          "p_holm_59": 0.047999999999999994
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 198,
+          "rate": 0.005050505050505051,
+          "null_expectation_exact": 6.640702880797499,
+          "null_mean_simulated": 6.649064906490649,
+          "null_sd": 2.5257538997772557,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0093
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 255,
+          "rate": 0.00392156862745098,
+          "null_expectation_exact": 8.552420376784658,
+          "null_mean_simulated": 8.565956595659566,
+          "null_sd": 2.8686357344060944,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0015
+        }
+      }
+    },
+    {
+      "id": "LP2-17",
+      "runes": 273,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 272,
+          "rate": 0.0,
+          "null_expectation_exact": 9.2014652014652,
+          "null_mean_simulated": 9.245824582458246,
+          "null_sd": 2.959379648374369,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0001,
+          "p_holm_59": 0.0059
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 194,
+          "rate": 0.0,
+          "null_expectation_exact": 6.562809739280327,
+          "null_mean_simulated": 6.590959095909591,
+          "null_sd": 2.5202723314657827,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0015
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 261,
+          "rate": 0.0,
+          "null_expectation_exact": 8.82934712346477,
+          "null_mean_simulated": 8.874087408740873,
+          "null_sd": 2.909182062507439,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0001
+        }
+      }
+    },
+    {
+      "id": "LP2-18",
+      "runes": 260,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 259,
+          "rate": 0.003861003861003861,
+          "null_expectation_exact": 8.807692307692308,
+          "null_mean_simulated": 8.819581958195819,
+          "null_sd": 2.90894224319655,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0009,
+          "p_holm_59": 0.0387
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 192,
+          "rate": 0.005208333333333333,
+          "null_expectation_exact": 6.52925452925453,
+          "null_mean_simulated": 6.542454245424542,
+          "null_sd": 2.5242914306250523,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0104
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 248,
+          "rate": 0.004032258064516129,
+          "null_expectation_exact": 8.433620433620433,
+          "null_mean_simulated": 8.446644664466447,
+          "null_sd": 2.8534464992766435,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.0016
+        }
+      }
+    },
+    {
+      "id": "LP2-19",
+      "runes": 271,
+      "statistics": {
+        "stream": {
+          "observed": 5,
+          "edges": 270,
+          "rate": 0.018518518518518517,
+          "null_expectation_exact": 9.284132841328413,
+          "null_mean_simulated": 9.322532253225322,
+          "null_sd": 3.0503351057197423,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0947,
+          "p_holm_59": 0.7576
+        },
+        "within_word": {
+          "observed": 5,
+          "edges": 197,
+          "rate": 0.025380710659898477,
+          "null_expectation_exact": 6.773978406450731,
+          "null_mean_simulated": 6.773077307730773,
+          "null_sd": 2.582197666733151,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.3289
+        },
+        "within_line": {
+          "observed": 5,
+          "edges": 259,
+          "rate": 0.019305019305019305,
+          "null_expectation_exact": 8.905890392237255,
+          "null_mean_simulated": 8.92959295929593,
+          "null_sd": 2.978626829243974,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.117
+        }
+      }
+    },
+    {
+      "id": "LP2-20",
+      "runes": 269,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 268,
+          "rate": 0.0037313432835820895,
+          "null_expectation_exact": 9.137546468401487,
+          "null_mean_simulated": 9.098409840984099,
+          "null_sd": 2.9601129920042326,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0008,
+          "p_holm_59": 0.0368
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 198,
+          "rate": 0.005050505050505051,
+          "null_expectation_exact": 6.750873883371248,
+          "null_mean_simulated": 6.709070907090709,
+          "null_sd": 2.5539328968320585,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0091
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 257,
+          "rate": 0.0038910505836575876,
+          "null_expectation_exact": 8.762497919325305,
+          "null_mean_simulated": 8.724272427242724,
+          "null_sd": 2.9120745086243196,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0013
+        }
+      }
+    },
+    {
+      "id": "LP2-21",
+      "runes": 273,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 272,
+          "rate": 0.003676470588235294,
+          "null_expectation_exact": 9.340659340659341,
+          "null_mean_simulated": 9.367736773677368,
+          "null_sd": 2.992636690811544,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0008,
+          "p_holm_59": 0.0368
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 212,
+          "rate": 0.0047169811320754715,
+          "null_expectation_exact": 7.280219780219781,
+          "null_mean_simulated": 7.314731473147314,
+          "null_sd": 2.6061105824339292,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0044
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 261,
+          "rate": 0.0038314176245210726,
+          "null_expectation_exact": 8.96291208791209,
+          "null_mean_simulated": 8.990699069906992,
+          "null_sd": 2.9343373303803757,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0009
+        }
+      }
+    },
+    {
+      "id": "LP2-22",
+      "runes": 131,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 130,
+          "rate": 0.007692307692307693,
+          "null_expectation_exact": 4.65648854961832,
+          "null_mean_simulated": 4.642164216421643,
+          "null_sd": 2.083322923484587,
+          "null_interval_95": [
+            1.0,
+            9.0
+          ],
+          "p_lower": 0.047,
+          "p_holm_59": 0.4774
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 99,
+          "rate": 0.010101010101010102,
+          "null_expectation_exact": 3.546095126247798,
+          "null_mean_simulated": 3.531053105310531,
+          "null_sd": 1.8292840285454652,
+          "null_interval_95": [
+            0.0,
+            8.0
+          ],
+          "p_lower": 0.125
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 125,
+          "rate": 0.008,
+          "null_expectation_exact": 4.477392836171462,
+          "null_mean_simulated": 4.458445844584459,
+          "null_sd": 2.0412941486230554,
+          "null_interval_95": [
+            1.0,
+            9.0
+          ],
+          "p_lower": 0.0544
+        }
+      }
+    },
+    {
+      "id": "LP2-23",
+      "runes": 213,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 212,
+          "rate": 0.0047169811320754715,
+          "null_expectation_exact": 6.76056338028169,
+          "null_mean_simulated": 6.770677067706771,
+          "null_sd": 2.5176147299399974,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0074,
+          "p_holm_59": 0.1776
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 161,
+          "rate": 0.006211180124223602,
+          "null_expectation_exact": 5.134201435025245,
+          "null_mean_simulated": 5.137713771377138,
+          "null_sd": 2.1875771786302445,
+          "null_interval_95": [
+            1.0,
+            10.0
+          ],
+          "p_lower": 0.0299
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 203,
+          "rate": 0.0049261083743842365,
+          "null_expectation_exact": 6.473558331118788,
+          "null_mean_simulated": 6.486148614861486,
+          "null_sd": 2.462680677136063,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.009
+        }
+      }
+    },
+    {
+      "id": "LP2-24",
+      "runes": 270,
+      "statistics": {
+        "stream": {
+          "observed": 5,
+          "edges": 269,
+          "rate": 0.01858736059479554,
+          "null_expectation_exact": 8.940740740740742,
+          "null_mean_simulated": 8.936093609360936,
+          "null_sd": 2.920020836565273,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.1132,
+          "p_holm_59": 0.7924
+        },
+        "within_word": {
+          "observed": 4,
+          "edges": 197,
+          "rate": 0.02030456852791878,
+          "null_expectation_exact": 6.547680022029465,
+          "null_mean_simulated": 6.538853885388539,
+          "null_sd": 2.484411396397538,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.2088
+        },
+        "within_line": {
+          "observed": 5,
+          "edges": 258,
+          "rate": 0.01937984496124031,
+          "null_expectation_exact": 8.57513424204874,
+          "null_mean_simulated": 8.559455945594559,
+          "null_sd": 2.85350115433689,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.1379
+        }
+      }
+    },
+    {
+      "id": "LP2-25",
+      "runes": 273,
+      "statistics": {
+        "stream": {
+          "observed": 3,
+          "edges": 272,
+          "rate": 0.011029411764705883,
+          "null_expectation_exact": 9.047619047619047,
+          "null_mean_simulated": 9.05110511051105,
+          "null_sd": 2.9536135995610513,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.018,
+          "p_holm_59": 0.34199999999999997
+        },
+        "within_word": {
+          "observed": 2,
+          "edges": 207,
+          "rate": 0.00966183574879227,
+          "null_expectation_exact": 6.885504201680672,
+          "null_mean_simulated": 6.8772877287728775,
+          "null_sd": 2.59183076640138,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0309
+        },
+        "within_line": {
+          "observed": 3,
+          "edges": 261,
+          "rate": 0.011494252873563218,
+          "null_expectation_exact": 8.681722689075631,
+          "null_mean_simulated": 8.684668466846684,
+          "null_sd": 2.886163882385745,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0236
+        }
+      }
+    },
+    {
+      "id": "LP2-26",
+      "runes": 265,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 264,
+          "rate": 0.007575757575757576,
+          "null_expectation_exact": 8.875471698113207,
+          "null_mean_simulated": 8.893289328932893,
+          "null_sd": 2.8875909696005566,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0052,
+          "p_holm_59": 0.16119999999999998
+        },
+        "within_word": {
+          "observed": 2,
+          "edges": 196,
+          "rate": 0.01020408163265306,
+          "null_expectation_exact": 6.589365351629502,
+          "null_mean_simulated": 6.612761276127613,
+          "null_sd": 2.5090078099030784,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0351
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 253,
+          "rate": 0.007905138339920948,
+          "null_expectation_exact": 8.50566037735849,
+          "null_mean_simulated": 8.523752375237525,
+          "null_sd": 2.8348929794136946,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.008
+        }
+      }
+    },
+    {
+      "id": "LP2-27",
+      "runes": 234,
+      "statistics": {
+        "stream": {
+          "observed": 5,
+          "edges": 233,
+          "rate": 0.02145922746781116,
+          "null_expectation_exact": 7.905982905982905,
+          "null_mean_simulated": 7.920992099209921,
+          "null_sd": 2.7487941992349176,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.1921,
+          "p_holm_59": 0.9410000000000001
+        },
+        "within_word": {
+          "observed": 4,
+          "edges": 177,
+          "rate": 0.022598870056497175,
+          "null_expectation_exact": 6.005832507978431,
+          "null_mean_simulated": 6.021502150215022,
+          "null_sd": 2.405118421761165,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.2766
+        },
+        "within_line": {
+          "observed": 5,
+          "edges": 223,
+          "rate": 0.02242152466367713,
+          "null_expectation_exact": 7.566670334910678,
+          "null_mean_simulated": 7.587458745874588,
+          "null_sd": 2.688451652369946,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.2266
+        }
+      }
+    },
+    {
+      "id": "LP2-28",
+      "runes": 269,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 268,
+          "rate": 0.0,
+          "null_expectation_exact": 9.085501858736059,
+          "null_mean_simulated": 9.074607460746074,
+          "null_sd": 2.959997736612056,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0001,
+          "p_holm_59": 0.0059
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 202,
+          "rate": 0.0,
+          "null_expectation_exact": 6.848027520390612,
+          "null_mean_simulated": 6.843784378437844,
+          "null_sd": 2.5839764911495138,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0008
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 257,
+          "rate": 0.0,
+          "null_expectation_exact": 8.712589469011819,
+          "null_mean_simulated": 8.7002700270027,
+          "null_sd": 2.8992675070624667,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0001
+        }
+      }
+    },
+    {
+      "id": "LP2-29",
+      "runes": 277,
+      "statistics": {
+        "stream": {
+          "observed": 4,
+          "edges": 276,
+          "rate": 0.014492753623188406,
+          "null_expectation_exact": 9.299638989169674,
+          "null_mean_simulated": 9.297529752975297,
+          "null_sd": 2.993522529381837,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0434,
+          "p_holm_59": 0.4774
+        },
+        "within_word": {
+          "observed": 3,
+          "edges": 198,
+          "rate": 0.015151515151515152,
+          "null_expectation_exact": 6.671480144404332,
+          "null_mean_simulated": 6.686068606860686,
+          "null_sd": 2.52567471029862,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.095
+        },
+        "within_line": {
+          "observed": 4,
+          "edges": 265,
+          "rate": 0.01509433962264151,
+          "null_expectation_exact": 8.929001203369435,
+          "null_mean_simulated": 8.932193219321933,
+          "null_sd": 2.9228259069822364,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0539
+        }
+      }
+    },
+    {
+      "id": "LP2-30",
+      "runes": 263,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 262,
+          "rate": 0.007633587786259542,
+          "null_expectation_exact": 8.935361216730039,
+          "null_mean_simulated": 8.922092209220922,
+          "null_sd": 2.920948025996427,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0062,
+          "p_holm_59": 0.16119999999999998
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 196,
+          "rate": 0.00510204081632653,
+          "null_expectation_exact": 6.684468696485067,
+          "null_mean_simulated": 6.664966496649665,
+          "null_sd": 2.5239726353410465,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0094
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 251,
+          "rate": 0.00796812749003984,
+          "null_expectation_exact": 8.560212463355876,
+          "null_mean_simulated": 8.556055605560555,
+          "null_sd": 2.8555321563742804,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0079
+        }
+      }
+    },
+    {
+      "id": "LP2-31",
+      "runes": 269,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 268,
+          "rate": 0.0,
+          "null_expectation_exact": 8.83271375464684,
+          "null_mean_simulated": 8.835383538353835,
+          "null_sd": 2.929781707667648,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0001,
+          "p_holm_59": 0.0059
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 197,
+          "rate": 0.0,
+          "null_expectation_exact": 6.492703767408312,
+          "null_mean_simulated": 6.503350335033503,
+          "null_sd": 2.534452301005259,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0013
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 257,
+          "rate": 0.0,
+          "null_expectation_exact": 8.470176996060589,
+          "null_mean_simulated": 8.475347534753475,
+          "null_sd": 2.867718967951271,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0001
+        }
+      }
+    },
+    {
+      "id": "LP2-32",
+      "runes": 121,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 120,
+          "rate": 0.016666666666666666,
+          "null_expectation_exact": 4.099173553719009,
+          "null_mean_simulated": 4.0824082408240825,
+          "null_sd": 1.9609126948121456,
+          "null_interval_95": [
+            1.0,
+            8.0
+          ],
+          "p_lower": 0.218,
+          "p_holm_59": 0.9410000000000001
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 95,
+          "rate": 0.0,
+          "null_expectation_exact": 3.2451790633608817,
+          "null_mean_simulated": 3.237923792379238,
+          "null_sd": 1.7415236176104871,
+          "null_interval_95": [
+            0.0,
+            7.0
+          ],
+          "p_lower": 0.034
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 115,
+          "rate": 0.017391304347826087,
+          "null_expectation_exact": 3.9283746556473833,
+          "null_mean_simulated": 3.9095909590959095,
+          "null_sd": 1.9127359290945418,
+          "null_interval_95": [
+            1.0,
+            8.0
+          ],
+          "p_lower": 0.2413
+        }
+      }
+    },
+    {
+      "id": "LP2-33",
+      "runes": 214,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 213,
+          "rate": 0.009389671361502348,
+          "null_expectation_exact": 7.046728971962617,
+          "null_mean_simulated": 7.036503650365036,
+          "null_sd": 2.617467830619995,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0245,
+          "p_holm_59": 0.392
+        },
+        "within_word": {
+          "observed": 2,
+          "edges": 153,
+          "rate": 0.013071895424836602,
+          "null_expectation_exact": 5.061734895353429,
+          "null_mean_simulated": 5.0532053205320535,
+          "null_sd": 2.1967099453192422,
+          "null_interval_95": [
+            1.0,
+            10.0
+          ],
+          "p_lower": 0.112
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 203,
+          "rate": 0.009852216748768473,
+          "null_expectation_exact": 6.7158966258610855,
+          "null_mean_simulated": 6.7005700570057005,
+          "null_sd": 2.5536356212358715,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0336
+        }
+      }
+    },
+    {
+      "id": "LP2-34",
+      "runes": 261,
+      "statistics": {
+        "stream": {
+          "observed": 3,
+          "edges": 260,
+          "rate": 0.011538461538461539,
+          "null_expectation_exact": 8.674329501915707,
+          "null_mean_simulated": 8.648064806480647,
+          "null_sd": 2.9023333221983942,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0255,
+          "p_holm_59": 0.392
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 190,
+          "rate": 0.0,
+          "null_expectation_exact": 6.338933097553787,
+          "null_mean_simulated": 6.316331633163316,
+          "null_sd": 2.4941307989195085,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0007
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 249,
+          "rate": 0.004016064257028112,
+          "null_expectation_exact": 8.307338638373121,
+          "null_mean_simulated": 8.282628262826282,
+          "null_sd": 2.8467437613761235,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.0018
+        }
+      }
+    },
+    {
+      "id": "LP2-35",
+      "runes": 271,
+      "statistics": {
+        "stream": {
+          "observed": 3,
+          "edges": 270,
+          "rate": 0.011111111111111112,
+          "null_expectation_exact": 9.44649446494465,
+          "null_mean_simulated": 9.416541654165416,
+          "null_sd": 3.0001017521318727,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0139,
+          "p_holm_59": 0.27799999999999997
+        },
+        "within_word": {
+          "observed": 2,
+          "edges": 199,
+          "rate": 0.010050251256281407,
+          "null_expectation_exact": 6.962416290829575,
+          "null_mean_simulated": 6.957595759575957,
+          "null_sd": 2.569537422323124,
+          "null_interval_95": [
+            3.0,
+            12.0
+          ],
+          "p_lower": 0.025
+        },
+        "within_line": {
+          "observed": 3,
+          "edges": 259,
+          "rate": 0.011583011583011582,
+          "null_expectation_exact": 9.061637283039497,
+          "null_mean_simulated": 9.03020302030203,
+          "null_sd": 2.9297447925880538,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0185
+        }
+      }
+    },
+    {
+      "id": "LP2-36",
+      "runes": 238,
+      "statistics": {
+        "stream": {
+          "observed": 3,
+          "edges": 237,
+          "rate": 0.012658227848101266,
+          "null_expectation_exact": 8.529411764705882,
+          "null_mean_simulated": 8.536653665366536,
+          "null_sd": 2.852027078212142,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0267,
+          "p_holm_59": 0.392
+        },
+        "within_word": {
+          "observed": 3,
+          "edges": 180,
+          "rate": 0.016666666666666666,
+          "null_expectation_exact": 6.4780342516753535,
+          "null_mean_simulated": 6.474447444744475,
+          "null_sd": 2.487279526732378,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.1085
+        },
+        "within_line": {
+          "observed": 3,
+          "edges": 227,
+          "rate": 0.013215859030837005,
+          "null_expectation_exact": 8.16952097294614,
+          "null_mean_simulated": 8.175317531753175,
+          "null_sd": 2.7942670635370814,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.0331
+        }
+      }
+    },
+    {
+      "id": "LP2-37",
+      "runes": 228,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 227,
+          "rate": 0.0,
+          "null_expectation_exact": 7.587719298245615,
+          "null_mean_simulated": 7.616461646164616,
+          "null_sd": 2.686457975214697,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0003,
+          "p_holm_59": 0.0156
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 168,
+          "rate": 0.0,
+          "null_expectation_exact": 5.615580802225829,
+          "null_mean_simulated": 5.647464746474648,
+          "null_sd": 2.3014974910419883,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.0026
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 217,
+          "rate": 0.0,
+          "null_expectation_exact": 7.253458536208363,
+          "null_mean_simulated": 7.285528552855285,
+          "null_sd": 2.6252161720799,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0004
+        }
+      }
+    },
+    {
+      "id": "LP2-38",
+      "runes": 228,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 227,
+          "rate": 0.0,
+          "null_expectation_exact": 7.982456140350877,
+          "null_mean_simulated": 7.9405940594059405,
+          "null_sd": 2.6997275775395004,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.0007,
+          "p_holm_59": 0.0329
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 175,
+          "rate": 0.0,
+          "null_expectation_exact": 6.153875879125125,
+          "null_mean_simulated": 6.115311531153115,
+          "null_sd": 2.391055835830702,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.0021
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 217,
+          "rate": 0.0,
+          "null_expectation_exact": 7.630806090115155,
+          "null_mean_simulated": 7.587258725872587,
+          "null_sd": 2.6424530625547877,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0008
+        }
+      }
+    },
+    {
+      "id": "LP2-39",
+      "runes": 240,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 239,
+          "rate": 0.0041841004184100415,
+          "null_expectation_exact": 8.549999999999999,
+          "null_mean_simulated": 8.557955795579558,
+          "null_sd": 2.8675880237336986,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0017,
+          "p_holm_59": 0.0595
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 176,
+          "rate": 0.0,
+          "null_expectation_exact": 6.296234309623431,
+          "null_mean_simulated": 6.316731673167316,
+          "null_sd": 2.4687263925166216,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0018
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 228,
+          "rate": 0.0043859649122807015,
+          "null_expectation_exact": 8.156485355648535,
+          "null_mean_simulated": 8.165216521652166,
+          "null_sd": 2.7902443124729635,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.0024
+        }
+      }
+    },
+    {
+      "id": "LP2-40",
+      "runes": 231,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 230,
+          "rate": 0.0,
+          "null_expectation_exact": 7.670995670995672,
+          "null_mean_simulated": 7.687568756875687,
+          "null_sd": 2.7357436536188158,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0005,
+          "p_holm_59": 0.025
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 168,
+          "rate": 0.0,
+          "null_expectation_exact": 5.603162055335969,
+          "null_mean_simulated": 5.641164116411641,
+          "null_sd": 2.347925091525618,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.0025
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 220,
+          "rate": 0.0,
+          "null_expectation_exact": 7.337474120082817,
+          "null_mean_simulated": 7.360536053605361,
+          "null_sd": 2.680627520834694,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0006
+        }
+      }
+    },
+    {
+      "id": "LP2-41",
+      "runes": 273,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 272,
+          "rate": 0.007352941176470588,
+          "null_expectation_exact": 9.010989010989011,
+          "null_mean_simulated": 9.043504350435043,
+          "null_sd": 2.9674178462917844,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0056,
+          "p_holm_59": 0.16119999999999998
+        },
+        "within_word": {
+          "observed": 2,
+          "edges": 204,
+          "rate": 0.00980392156862745,
+          "null_expectation_exact": 6.758241758241758,
+          "null_mean_simulated": 6.774677467746774,
+          "null_sd": 2.559618167328059,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0335
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 261,
+          "rate": 0.007662835249042145,
+          "null_expectation_exact": 8.646574014221073,
+          "null_mean_simulated": 8.67936793679368,
+          "null_sd": 2.91068716637363,
+          "null_interval_95": [
+            3.950000000000017,
+            15.0
+          ],
+          "p_lower": 0.0079
+        }
+      }
+    },
+    {
+      "id": "LP2-42",
+      "runes": 272,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 271,
+          "rate": 0.0036900369003690036,
+          "null_expectation_exact": 9.205882352941178,
+          "null_mean_simulated": 9.204520452045205,
+          "null_sd": 2.9360517106287918,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0006,
+          "p_holm_59": 0.0294
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 204,
+          "rate": 0.004901960784313725,
+          "null_expectation_exact": 6.92988929889299,
+          "null_mean_simulated": 6.9331933193319335,
+          "null_sd": 2.565590334500867,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0056
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 260,
+          "rate": 0.0038461538461538464,
+          "null_expectation_exact": 8.83221185153028,
+          "null_mean_simulated": 8.826982698269827,
+          "null_sd": 2.8691661558171595,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0009
+        }
+      }
+    },
+    {
+      "id": "LP2-43",
+      "runes": 274,
+      "statistics": {
+        "stream": {
+          "observed": 3,
+          "edges": 273,
+          "rate": 0.01098901098901099,
+          "null_expectation_exact": 9.824817518248176,
+          "null_mean_simulated": 9.897889788978897,
+          "null_sd": 3.0741119986706433,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0095,
+          "p_holm_59": 0.2162
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 205,
+          "rate": 0.004878048780487805,
+          "null_expectation_exact": 7.3776102243255535,
+          "null_mean_simulated": 7.434343434343434,
+          "null_sd": 2.6664745758768085,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0038
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 262,
+          "rate": 0.007633587786259542,
+          "null_expectation_exact": 9.428945750113634,
+          "null_mean_simulated": 9.484648464846485,
+          "null_sd": 3.009443587123076,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0031
+        }
+      }
+    },
+    {
+      "id": "LP2-44",
+      "runes": 273,
+      "statistics": {
+        "stream": {
+          "observed": 4,
+          "edges": 272,
+          "rate": 0.014705882352941176,
+          "null_expectation_exact": 9.391941391941392,
+          "null_mean_simulated": 9.397639763976398,
+          "null_sd": 2.984573665674237,
+          "null_interval_95": [
+            4.0,
+            16.0
+          ],
+          "p_lower": 0.0375,
+          "p_holm_59": 0.44999999999999996
+        },
+        "within_word": {
+          "observed": 3,
+          "edges": 208,
+          "rate": 0.014423076923076924,
+          "null_expectation_exact": 7.182072829131653,
+          "null_mean_simulated": 7.188718871887189,
+          "null_sd": 2.632427526791887,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0699
+        },
+        "within_line": {
+          "observed": 4,
+          "edges": 261,
+          "rate": 0.01532567049808429,
+          "null_expectation_exact": 9.012120232708469,
+          "null_mean_simulated": 9.01930193019302,
+          "null_sd": 2.921991628968712,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0472
+        }
+      }
+    },
+    {
+      "id": "LP2-45",
+      "runes": 270,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 269,
+          "rate": 0.007434944237918215,
+          "null_expectation_exact": 8.925925925925927,
+          "null_mean_simulated": 8.904390439043905,
+          "null_sd": 2.9070173504724366,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0067,
+          "p_holm_59": 0.1675
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 200,
+          "rate": 0.005,
+          "null_expectation_exact": 6.636376153104778,
+          "null_mean_simulated": 6.631163116311631,
+          "null_sd": 2.5132521251447573,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0096
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 258,
+          "rate": 0.007751937984496124,
+          "null_expectation_exact": 8.560925237505163,
+          "null_mean_simulated": 8.547854785478547,
+          "null_sd": 2.8487028925721405,
+          "null_interval_95": [
+            4.0,
+            14.049999999999272
+          ],
+          "p_lower": 0.0083
+        }
+      }
+    },
+    {
+      "id": "LP2-46",
+      "runes": 270,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 269,
+          "rate": 0.0037174721189591076,
+          "null_expectation_exact": 9.044444444444444,
+          "null_mean_simulated": 8.981798179817982,
+          "null_sd": 2.948187085021971,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.001,
+          "p_holm_59": 0.041
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 199,
+          "rate": 0.0,
+          "null_expectation_exact": 6.690871540685667,
+          "null_mean_simulated": 6.656365636563656,
+          "null_sd": 2.5298235579127066,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.001
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 258,
+          "rate": 0.0,
+          "null_expectation_exact": 8.674597273853779,
+          "null_mean_simulated": 8.61876187618762,
+          "null_sd": 2.890180384635857,
+          "null_interval_95": [
+            3.0,
+            15.0
+          ],
+          "p_lower": 0.0003
+        }
+      }
+    },
+    {
+      "id": "LP2-47",
+      "runes": 274,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 273,
+          "rate": 0.007326007326007326,
+          "null_expectation_exact": 9.211678832116787,
+          "null_mean_simulated": 9.231923192319233,
+          "null_sd": 2.9761869143941637,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0053,
+          "p_holm_59": 0.16119999999999998
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 208,
+          "rate": 0.004807692307692308,
+          "null_expectation_exact": 7.018421967327076,
+          "null_mean_simulated": 7.02930293029303,
+          "null_sd": 2.5971889615973005,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0059
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 262,
+          "rate": 0.007633587786259542,
+          "null_expectation_exact": 8.84051228576776,
+          "null_mean_simulated": 8.855585558555855,
+          "null_sd": 2.898935549493898,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0071
+        }
+      }
+    },
+    {
+      "id": "LP2-48",
+      "runes": 271,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 270,
+          "rate": 0.003703703703703704,
+          "null_expectation_exact": 9.261992619926199,
+          "null_mean_simulated": 9.205420542054206,
+          "null_sd": 2.9927910017670993,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0014,
+          "p_holm_59": 0.0546
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 197,
+          "rate": 0.005076142131979695,
+          "null_expectation_exact": 6.7578242449091155,
+          "null_mean_simulated": 6.741974197419742,
+          "null_sd": 2.550594136475676,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0096
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 259,
+          "rate": 0.003861003861003861,
+          "null_expectation_exact": 8.884652179855133,
+          "null_mean_simulated": 8.84018401840184,
+          "null_sd": 2.9307984103320743,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0015
+        }
+      }
+    },
+    {
+      "id": "LP2-49",
+      "runes": 66,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 65,
+          "rate": 0.0,
+          "null_expectation_exact": 1.8484848484848486,
+          "null_mean_simulated": 1.8246824682468248,
+          "null_sd": 1.3087052298204438,
+          "null_interval_95": [
+            0.0,
+            5.0
+          ],
+          "p_lower": 0.1484,
+          "p_holm_59": 0.8904000000000001
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 46,
+          "rate": 0.0,
+          "null_expectation_exact": 1.308158508158508,
+          "null_mean_simulated": 1.2878287828782877,
+          "null_sd": 1.1002749644007566,
+          "null_interval_95": [
+            0.0,
+            4.0
+          ],
+          "p_lower": 0.2623
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 63,
+          "rate": 0.0,
+          "null_expectation_exact": 1.7916083916083916,
+          "null_mean_simulated": 1.7661766176617661,
+          "null_sd": 1.2863370576231115,
+          "null_interval_95": [
+            0.0,
+            5.0
+          ],
+          "p_lower": 0.1587
+        }
+      }
+    },
+    {
+      "id": "LP2-50",
+      "runes": 0,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 0,
+          "rate": null,
+          "null_expectation_exact": 0.0,
+          "null_mean_simulated": 0.0,
+          "null_sd": 0.0,
+          "null_interval_95": [
+            0.0,
+            0.0
+          ],
+          "p_lower": 1.0,
+          "p_holm_59": 1.0
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 0,
+          "rate": null,
+          "null_expectation_exact": 0.0,
+          "null_mean_simulated": 0.0,
+          "null_sd": 0.0,
+          "null_interval_95": [
+            0.0,
+            0.0
+          ],
+          "p_lower": 1.0
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 0,
+          "rate": null,
+          "null_expectation_exact": 0.0,
+          "null_mean_simulated": 0.0,
+          "null_sd": 0.0,
+          "null_interval_95": [
+            0.0,
+            0.0
+          ],
+          "p_lower": 1.0
+        }
+      }
+    },
+    {
+      "id": "LP2-51",
+      "runes": 92,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 91,
+          "rate": 0.01098901098901099,
+          "null_expectation_exact": 2.9782608695652177,
+          "null_mean_simulated": 3.002000200020002,
+          "null_sd": 1.6787970906378968,
+          "null_interval_95": [
+            0.0,
+            7.0
+          ],
+          "p_lower": 0.1882,
+          "p_holm_59": 0.9410000000000001
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 69,
+          "rate": 0.014492753623188406,
+          "null_expectation_exact": 2.258241758241758,
+          "null_mean_simulated": 2.2765276527652767,
+          "null_sd": 1.4642639508619886,
+          "null_interval_95": [
+            0.0,
+            5.0
+          ],
+          "p_lower": 0.3269
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 88,
+          "rate": 0.011363636363636364,
+          "null_expectation_exact": 2.8800764452938368,
+          "null_mean_simulated": 2.903190319031903,
+          "null_sd": 1.6569181930505745,
+          "null_interval_95": [
+            0.0,
+            6.0
+          ],
+          "p_lower": 0.205
+        }
+      }
+    },
+    {
+      "id": "LP2-52",
+      "runes": 263,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 262,
+          "rate": 0.003816793893129771,
+          "null_expectation_exact": 8.730038022813687,
+          "null_mean_simulated": 8.745574557455745,
+          "null_sd": 2.8865447503088966,
+          "null_interval_95": [
+            4.0,
+            15.0
+          ],
+          "p_lower": 0.0015,
+          "p_holm_59": 0.0546
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 193,
+          "rate": 0.0051813471502590676,
+          "null_expectation_exact": 6.430905871767335,
+          "null_mean_simulated": 6.44974497449745,
+          "null_sd": 2.4767471692275236,
+          "null_interval_95": [
+            2.0,
+            12.0
+          ],
+          "p_lower": 0.0093
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 251,
+          "rate": 0.00398406374501992,
+          "null_expectation_exact": 8.363509708878762,
+          "null_mean_simulated": 8.377137713771377,
+          "null_sd": 2.830703789683018,
+          "null_interval_95": [
+            3.0,
+            14.0
+          ],
+          "p_lower": 0.0023
+        }
+      }
+    },
+    {
+      "id": "LP2-53",
+      "runes": 179,
+      "statistics": {
+        "stream": {
+          "observed": 0,
+          "edges": 178,
+          "rate": 0.0,
+          "null_expectation_exact": 5.966480446927374,
+          "null_mean_simulated": 5.975497549754976,
+          "null_sd": 2.4005524823284077,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.0032,
+          "p_holm_59": 0.10880000000000001
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 133,
+          "rate": 0.0,
+          "null_expectation_exact": 4.4581005586592175,
+          "null_mean_simulated": 4.4465446544654466,
+          "null_sd": 2.074651452054219,
+          "null_interval_95": [
+            1.0,
+            9.0
+          ],
+          "p_lower": 0.0125
+        },
+        "within_line": {
+          "observed": 0,
+          "edges": 170,
+          "rate": 0.0,
+          "null_expectation_exact": 5.698324022346369,
+          "null_mean_simulated": 5.705770577057706,
+          "null_sd": 2.3419937426706587,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.0039
+        }
+      }
+    },
+    {
+      "id": "LP2-54",
+      "runes": 232,
+      "statistics": {
+        "stream": {
+          "observed": 2,
+          "edges": 231,
+          "rate": 0.008658008658008658,
+          "null_expectation_exact": 7.655172413793104,
+          "null_mean_simulated": 7.636563656365636,
+          "null_sd": 2.7494070416254086,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0199,
+          "p_holm_59": 0.3582
+        },
+        "within_word": {
+          "observed": 0,
+          "edges": 174,
+          "rate": 0.0,
+          "null_expectation_exact": 5.766233766233767,
+          "null_mean_simulated": 5.750875087508751,
+          "null_sd": 2.3655363317281295,
+          "null_interval_95": [
+            2.0,
+            11.0
+          ],
+          "p_lower": 0.0024
+        },
+        "within_line": {
+          "observed": 2,
+          "edges": 221,
+          "rate": 0.00904977375565611,
+          "null_expectation_exact": 7.323779668607255,
+          "null_mean_simulated": 7.312731273127313,
+          "null_sd": 2.681556838910776,
+          "null_interval_95": [
+            3.0,
+            13.0
+          ],
+          "p_lower": 0.0237
+        }
+      }
+    },
+    {
+      "id": "LP2-55",
+      "runes": 76,
+      "statistics": {
+        "stream": {
+          "observed": 1,
+          "edges": 75,
+          "rate": 0.013333333333333334,
+          "null_expectation_exact": 2.842105263157895,
+          "null_mean_simulated": 2.8237823782378237,
+          "null_sd": 1.629748959619174,
+          "null_interval_95": [
+            0.0,
+            6.0
+          ],
+          "p_lower": 0.2174,
+          "p_holm_59": 0.9410000000000001
+        },
+        "within_word": {
+          "observed": 1,
+          "edges": 57,
+          "rate": 0.017543859649122806,
+          "null_expectation_exact": 2.16,
+          "null_mean_simulated": 2.148114811481148,
+          "null_sd": 1.4275054293311096,
+          "null_interval_95": [
+            0.0,
+            5.0
+          ],
+          "p_lower": 0.3582
+        },
+        "within_line": {
+          "observed": 1,
+          "edges": 72,
+          "rate": 0.013888888888888888,
+          "null_expectation_exact": 2.728421052631579,
+          "null_mean_simulated": 2.711171117111711,
+          "null_sd": 1.595711589767213,
+          "null_interval_95": [
+            0.0,
+            6.0
+          ],
+          "p_lower": 0.2373
+        }
+      }
+    }
+  ],
+  "wall_seconds": 2.403549299997394
+}

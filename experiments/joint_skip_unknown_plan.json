@@ -1,0 +1,22 @@
+{
+  "experiment": "E042-joint-key-skip-unknown",
+  "hypothesis_id": "H034",
+  "control_output": "results/E041-joint-key-skip-external-709077b9a6f8.json",
+  "historical_control_output": "results/E040-joint-key-skip-controls-17a783e45d76.json",
+  "gate": "Both historical and all6 source-excluded external controls exact plaintext,key and selective F mask without oracle. No optimizer or objective change.",
+  "optimizer": "Frozen E040 longest3 non-F runs plus whole-page E038 seeds, canonical cyclic-key deduplication,12seeds; all-phase exact F-schedule DP; at most3 rounds of6 coordinate sweeps plus DP. Periods1..16, signs+/-1. No known key or mask input.",
+  "score": "Mean order4 logp minus [primitive_key_length*ln29+cipher_F_count*ln2]/rune_count. Fixed description-length score; not posterior confidence.",
+  "search_seed": 3303040,
+  "unknown_scope": "All55 unknown rune pages LP2-00..55 except numericLP2-50. Source order unchanged, page-local keys; arbitrary subsets of sourceF may copy0 without cursor advance. Every source rune represented in output.",
+  "selection": "Freeze maximum final penalized score over55pages and all seed/phase/key/schedule choices, plus hashes of55outputs and passed E041 gate, before null generation.",
+  "null_seed": 3301042,
+  "replicates": 19,
+  "null": "Uniform independent rejection shuffles conditional on exact rune counts AND adjacent equality count; max100000proposals. Every null recomputes longest F-free runs,all seeds,selection,phase,coordinates and exact schedules under identical search seed. No transfer of observed keys, masks or seed ranges.",
+  "correction": "Plus-one p,Bonferroni55. Exploratory continuation, not project-wide confirmation.19replicates cannot resolve corrected significance; zero exceedances trigger separately preregistered larger fresh calibration.",
+  "process_seconds": 180,
+  "family_seconds": 650,
+  "phase_seconds": 900,
+  "workers": 1,
+  "memory": "Same E040 bounds:1024runes,16key slots,29coordinate rows,12seeds,at most128fixed-key DP states.",
+  "limits": "Key search and seed selection are heuristic. Exact schedule optimization is conditional on candidate key. No claim to exhaust all possible keys or different interrupter symbols."
+}

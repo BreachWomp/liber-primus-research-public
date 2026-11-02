@@ -1,0 +1,14 @@
+{
+  "experiment": "E057-context-coupled-blind-controls",
+  "hypotheses": ["H041", "H042"],
+  "oracle_precondition": "E056 independently verified all15 true-key calibrations exact. This only allows blind controls, not unknown pages.",
+  "solver": "E054 page-bounded pooling and diversified20 final candidates, replaced full-stream optimizer/coordinates by frozen E056 continuous-language-context machinery. Keep reset contexts within isolated seedfragments. Final leading-F alternatives retained,never hidden by score.",
+  "short_initialization": "For N<=1024 only:64 starts per period/sign rather than16; retain best4 cyclically distinct unigram starts rather than2 before unchanged3bigram/3fourgram rounds. Same seed3303052 preserves first16 random-start prefix. N>1024 remains16starts/top2. Periods17..32,bothsigns,20 finalstarts,<=3fullcontext key/phase/F rounds,<=6coordinate sweeps each. No oracle key,mask,phase or trueperiod in solver.",
+  "stage_A": "Four short controls in fixed order: unchanged failed E054fresh2 (regression index2 of E056),then three new natural729-rune controls. Always finish allfour plus one matched fresh2 full-solver null. If any four-control gate fails, stop before stageB and report incomplete full calibration; no unknown scan.",
+  "fresh_controls": "New natural controls chapterX/XI/XII runeoffset14000,length729,spans262/266/201,keys17/23/31,signs+1,-1,+1. Random(3301057+index): nonzero uniform1..28 key,then phases[0,randrange(m),randrange(m)]. Separate Random(3304057+index) Bernoulli plaintextF copying probabilities.25,.5,.75. No forced boundary or key edits. TrainingunchangedI,III-IX.",
+  "stage_B": "Only if allfour stageA exact: remaining11 E054 regressions in E056 order,then allthree E056 fresh boundary-stress controls unchanged. Total18 controls must recover exactplaintext,keyorientation,sign,mask,phases before separate unknown plan. StageB finishes even if a failure occurs, within budget.",
+  "null": "One conditional perpage endpoints/counts/adjacent-equality preserving null of natural fresh2,seed3302057+page_index. Complete same solver,allstarts/periods/signs. Diagnostic only,no pvalue.",
+  "bounds": "512..4096runes,<=16pages(nonempty>=4),32keyslots,<=16384exactDPstates,12fragmentscap256,2048starts/128poolcandidates forshort;512starts/64poolcandidates forlong;20fullstarts,29coordinate rows. Oneprocess,BLASthreads1,768MiB sampledprivate/resident watchdog,180seconds per task,family1400seconds,phase20total1500seconds includingE056.",
+  "resume": "Skip registry completed identicalfingerprints. Retain stageA decisions and process accounting; no retry with newseeds after seeing failure. Unknown search is outside this calibration experiment.",
+  "limits": "Algorithm adapted after a known short31-key failure. Fresh cases assess transfer, not historical novelty. Preserved leading-F alternatives prevent uniqueness claims. No community-solution audits."
+}

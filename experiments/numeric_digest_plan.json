@@ -1,0 +1,12 @@
+{
+  "experiment": "E031-numeric-digest-comparison",
+  "seconds": 30,
+  "seed": null,
+  "inputs": ["E022 preserved relikd, iddqd and scream314 base60 grids", "E022 separately published scream314 decimal array", "E023 explicit five-cell image overlay"],
+  "enumeration": "Exactly five source-anchored 256-byte sequences, LP2-49 then50 then51 row-major. No case permutations or hash-guided correction.",
+  "targets": ["3b9b07d9a26e6d55c432d94d2661fdff3c2b348daed06821f2bdb23184a4b290", "8db2a93497bc02bbf0ab07ac3cf96edd227fec630232c04ea35493d3a7d7b65e"],
+  "validation": "Compute bytes independently from base60 token indices. Compare to E022 values and E023 overlay. Identify every difference to the image-supported baseline with LP2 row/column coordinates.",
+  "null_model": "Not applicable: deterministic byte equality, no statistical cipher claim.",
+  "limits": "A matching digest identifies a sequence, not its historical provenance or image correctness. No new correction or canonical edit allowed. No network or remote-code execution.",
+  "memory": "Five 256-byte arrays and prior JSON files below1MB, single process."
+}

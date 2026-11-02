@@ -1,0 +1,294 @@
+{
+  "experiment": "E017-long-autokey-pages",
+  "status": "completed",
+  "parameters": {
+    "first": 55,
+    "last": 55,
+    "seconds": 180.0,
+    "seed": 3301017,
+    "replicates": 19,
+    "periods": [
+      4,
+      12
+    ],
+    "beam_width": 512,
+    "keep_per_cut": 16,
+    "language": "external3gram candidate generation, external4gram ranking",
+    "F_policies": [
+      "none",
+      "all_F"
+    ],
+    "signs": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ]
+  },
+  "source": {
+    "source_sha256": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278",
+    "excluded_chapter": "II.Self-Reliance",
+    "sections": [
+      {
+        "roman": "I",
+        "title": "HISTORY",
+        "source_character_range": [
+          1204,
+          48452
+        ],
+        "runes": 34859
+      },
+      {
+        "roman": "III",
+        "title": "COMPENSATION",
+        "source_character_range": [
+          105038,
+          148548
+        ],
+        "runes": 31693
+      },
+      {
+        "roman": "IV",
+        "title": "SPIRITUAL LAWS",
+        "source_character_range": [
+          148568,
+          192880
+        ],
+        "runes": 32454
+      },
+      {
+        "roman": "V",
+        "title": "LOVE",
+        "source_character_range": [
+          192889,
+          218073
+        ],
+        "runes": 18408
+      },
+      {
+        "roman": "VI",
+        "title": "FRIENDSHIP",
+        "source_character_range": [
+          218089,
+          251419
+        ],
+        "runes": 24523
+      },
+      {
+        "roman": "VII",
+        "title": "PRUDENCE",
+        "source_character_range": [
+          251434,
+          276868
+        ],
+        "runes": 18721
+      },
+      {
+        "roman": "VIII",
+        "title": "HEROISM",
+        "source_character_range": [
+          276883,
+          301411
+        ],
+        "runes": 17965
+      },
+      {
+        "roman": "IX",
+        "title": "THE OVER-SOUL",
+        "source_character_range": [
+          301430,
+          340292
+        ],
+        "runes": 28407
+      },
+      {
+        "roman": "X",
+        "title": "CIRCLES",
+        "source_character_range": [
+          340304,
+          367105
+        ],
+        "runes": 19707
+      },
+      {
+        "roman": "XI",
+        "title": "INTELLECT",
+        "source_character_range": [
+          367120,
+          395164
+        ],
+        "runes": 20713
+      },
+      {
+        "roman": "XII",
+        "title": "ART",
+        "source_character_range": [
+          395174,
+          419196
+        ],
+        "runes": 17679
+      }
+    ],
+    "paragraphs": 393,
+    "runes": 265129,
+    "word_tokens": 64574,
+    "distinct_rune_words": 8182,
+    "non_ascii_letters": {
+      "æ": 9,
+      "Æ": 4,
+      "œ": 1,
+      "Ἀ": 1,
+      "ε": 2,
+      "ὶ": 1,
+      "γ": 1,
+      "ὰ": 1,
+      "ρ": 1,
+      "ὖ": 1,
+      "π": 2,
+      "ί": 1,
+      "τ": 1,
+      "ο": 3,
+      "υ": 1,
+      "σ": 1,
+      "ι": 3,
+      "ν": 1,
+      "ἱ": 1,
+      "Δ": 1,
+      "ὸ": 1,
+      "ς": 1,
+      "κ": 1,
+      "ύ": 1,
+      "β": 1,
+      "é": 2,
+      "ë": 1
+    },
+    "normalization": "Explicit ae/oe ligature expansion; NFKD and combining-mark removal; ASCII words; QU->CW, remainingQ->C; greedyGP within words; no ngrams across paragraphs.",
+    "training_data": "No Liber Primus plaintext or ciphertext, and no Self-Reliance text is used."
+  },
+  "new_decryptions": [],
+  "pages": [
+    {
+      "page": "LP2-55",
+      "ciphertext_runes": "ᛝᚫᛗᛁᚹᛋᛒᛉᛗᛋᛇᚷᛞᚦᚫᚠᛡᚪᛒᚳᚢᚹᚱᛒᛠᚠᛉᛁᛗᚢᚳᛈᚻᛝᛚᛇᛗᛋᛞᛡᛈᚠᛒᚻᛇᚳᛇᛖᛠᛖᛁᚷᛉᚷᛋᛖᛋᛇᚦᚦᛖᛋᚦᛟᚳᛠᛁᛗᚳᛉᛞᛄᚢᛒᛖᛁ",
+      "top": [
+        {
+          "score": -3.857278261073115,
+          "trigram_score": -3.5100946472336685,
+          "plaintext_runes": "ᚹᚹᚱᚪᚩᚹᚾᚩᚾᛏᛞᚩᚢᚾᚠᚪᚢᚦᚣᚻᛁᛞᛡᛚᚠᚾᛉᚳᛚᚩᚦᛝᛖᛋᛖᚩᛗᚪᚻᚩᚱᚩᛗᚠᚢᛚᚢᛝᛖᛈᛖᚾᛖᚾᚳᛖᛏᚩᚩᛞᚹᛠᛚᚦᛞᚻᛋᚻᛝᛒᚣᚳᚻᛏᚾᛇ",
+          "transliteration": "WWRAOWNONTDOUNFAUTHYHIDIALFNXCLOTHNGESEOMAHOROMFULUNGEPENENCETOODWEALTHDHSHNGBYCHTNEO",
+          "recipe": {
+            "key_indices": [
+              15,
+              11,
+              14,
+              14,
+              25,
+              21,
+              21,
+              18,
+              19,
+              1,
+              11,
+              26
+            ],
+            "cipher_sign": 1,
+            "feedback_sign": 1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -3.866314249215001,
+          "trigram_score": -3.5412657435811234,
+          "plaintext_runes": "ᛋᛝᚠᚳᛟᛏᚳᚾᚱᚦᛋᚪᛚᚷᚱᚪᚾᛖᚹᛋᚪᛚᛁᛒᛁᛞᛄᚪᚢᛁᛒᚢᚣᛒᛠᚠᚠᛚᚪᚹᛋᛗᚪᛚᛚᚹᛖᛄᚢᛚᚪᛏᚠᚱᛗᛚᛞᛁᚾᛏᛁᛞᚩᛚᚪᚣᚠᛗᚢᚳᚣᚦᛖᛖᚻᛠ",
+          "transliteration": "SNGFCOETCNRTHSALGRANEWSALIBIDJAUIBUYBEAFFLAWSMALLWEJULATFRMLDINTIDOLAYFMUCYTHEEHEA",
+          "recipe": {
+            "key_indices": [
+              22,
+              12,
+              10,
+              14,
+              0,
+              27,
+              7,
+              6,
+              6,
+              12,
+              2,
+              28
+            ],
+            "cipher_sign": -1,
+            "feedback_sign": -1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        },
+        {
+          "score": -3.870379404588623,
+          "trigram_score": -3.4797228498415023,
+          "plaintext_runes": "ᚳᛖᛒᚪᚳᛋᚦᛝᚢᚱᚦᛖᛒᛁᚾᚪᛏᚩᛚᛞᚪᛚᚹᚪᛚᛚᛚᚩᚹᚻᚢᛝᚢᚢᛉᚣᛗᛞᚩᚪᚻᛠᛚᛚᛏᛁᛚᛝᚹᚻᚪᛋᛏᚩᛞᚪᚱᚣᚷᛚᚩᛗᛇᛚᛝᚹᚪᚷᛡᚾᛋᛋᚾᚠᛚᛡ",
+          "transliteration": "CEBACSTHNGURTHEBINATOLDALWALLLOWHUNGUUXYMDOAHEALLTILNGWHASTODARYGLOMEOLNGWAGIANSSNFLIA",
+          "recipe": {
+            "key_indices": [
+              3,
+              15,
+              22,
+              24,
+              17,
+              28,
+              10,
+              23,
+              9,
+              10,
+              15
+            ],
+            "cipher_sign": -1,
+            "feedback_sign": -1,
+            "skip_positions": [],
+            "skip_policy": "none"
+          },
+          "reencryption_verified": true
+        }
+      ],
+      "search": {
+        "period_sign_policy_tasks": 72,
+        "generated_candidates": 8196,
+        "beam_width": 512,
+        "keep_per_cut": 16,
+        "cyclic_cuts": "all period positions",
+        "periods": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Beam search is heuristic; all finite paths are not enumerated. Negative result does not exclude this cipher family.",
+    "All cyclic cuts are tried; top16percut generated under trigram are reranked by a4gram model. Null replicates repeat this selection.",
+    "External-only training, but LP controls were previously inspected; not fresh blind validation.",
+    "Seed lengths4..12 only; no arbitrary F subset or cross-page key."
+  ],
+  "wall_seconds": 6.881255499989493
+}

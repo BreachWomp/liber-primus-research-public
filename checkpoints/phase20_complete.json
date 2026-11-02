@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-21T15:52:31.019557+00:00",
+  "status": "twentieth_batch_oracle_calibrated_blind_short_key_gate_failed",
+  "summary": "results/phase20_summary.json",
+  "summary_sha256": "b7426edce68cd427fc4c1752b3bd643272dcdc443f37dd236ee6422d1f97019c",
+  "experiments": [
+    {
+      "id": "E056-context-coupled-calibration",
+      "fingerprint": "1e7c7add4bfc14e4ff613409c6959ff18e1aa6ff6ec806b0ef1dee411ac31c67",
+      "output": "results/E056-context-coupled-calibration-1e7c7add4bfc.json",
+      "sha256": "aad302d69f8496f65bc65c43b7b0f4e0509fddd744f39fd8c9f6a02cff1260b6"
+    },
+    {
+      "id": "E057-regression-2",
+      "fingerprint": "4670c62325752c2c7766c44aa056a5ee3327ecbf923a95bf8185f13c2eda5431",
+      "output": "results/E057-regression-2-4670c6232575.json",
+      "sha256": "f8082b96b54447e1a5faf9e68ced65c4884e2d761fd183c8b5343fe71a4d2b03"
+    },
+    {
+      "id": "E057-fresh-0",
+      "fingerprint": "32b5ce8ace3e7728c677ec32ed93613ec28a3ec5b5539b96b14b4168251a1abc",
+      "output": "results/E057-fresh-0-32b5ce8ace3e.json",
+      "sha256": "be2f38959fa294d147ebbc44917f74db02c568d33420c52dd543865114b95803"
+    },
+    {
+      "id": "E057-fresh-1",
+      "fingerprint": "a45264c536c965259f8dde4d32a9c2117d483bd1096b661886187bf61d2e455f",
+      "output": "results/E057-fresh-1-a45264c536c9.json",
+      "sha256": "41b33d141f085a87a0f9121b4c3f5049b84e7a6da10f4b5a15d0b84e136b6282"
+    },
+    {
+      "id": "E057-fresh-2",
+      "fingerprint": "37b0d4018e94757d3f3e55e0a284b242df5e4d3bf1c89c95967b5119f22b8cf3",
+      "output": "results/E057-fresh-2-37b0d4018e94.json",
+      "sha256": "dd9700b5fd3f5c9e8978f28490b961b715c732c558aeb5a7021ce9d9bb671d6e"
+    },
+    {
+      "id": "E057-null-2",
+      "fingerprint": "36a191dc53bdda116cc44e38796ccbdee67a751974cd38dfdef5a608ac4cf474",
+      "output": "results/E057-null-2-36a191dc53bd.json",
+      "sha256": "d95015c5e815bca17715931d27256ef9fd3e2fbcf907111b0ce8cbfd50cd9f95"
+    }
+  ],
+  "validation_files": {
+    "results/phase20_context_validation.json": "6313fc127655d2a0b47d56f516cb9acc7730bec5ec83c6cb2443b0382df70a9a",
+    "results/phase20_blind_validation.json": "3095978269d27281b14c65a2a0f4b15f5cd573d309a55da302a7e35ea07d9e0d",
+    "results/validation_phase20.txt": "880e43066a97a9d78a3ffd9930fc901d2aaa93e25c6c17e2b6a669e3592d445f"
+  }
+}

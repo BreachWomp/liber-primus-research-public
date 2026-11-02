@@ -1,0 +1,21 @@
+{
+  "experiment": "E048-page-phase-unknown",
+  "hypothesis_id": "H037",
+  "control_output": "results/E047-page-phase-controls-82b4778167e1.json",
+  "gate": "All3 E047 controls exact plaintext,key,phase vector,F mask. Frozen E047 solver and phase penalty.",
+  "unknown_scope": "All10 existing E012 groups from experiments/section_plan.json. Shared key, independent initial phase perpage, page-local language context. Preserve spans,source_refs,numeric LP2-50. Groupings are unverified cipher boundaries.",
+  "optimizer": "E047 full solver:two longest page seeds plus3longest within-page non-F seeds,periods1..16,both signs,4starts,12cyclic deduplicated keys. All phases/F masks optimized independently on every page; shared key coordinates updated <=3rounds of6sweeps. First nonempty phase normalized0.",
+  "score": "[sum page logp4 - m*ln29 - cipherFcount*ln2 - (G-1)*ln(m)]/N; m primitive period,G nonempty pages. Fixed before unknown observations.",
+  "search_seed": 3303047,
+  "selection": "Freeze maximum score over10groups/all internal choices and hashes of10outputs+E047 gate before null generation.",
+  "null_seed": 3301048,
+  "replicates": 19,
+  "null": "Perpage uniform interior permutation conditioned on exact counts,doublets,endpoints with <=100000rejections. Seed3301048+100*replicate+page_index. Recompute every seed,key,phase and F mask with identical optimizer and search seed.",
+  "correction": "Plus-one p,Bonferroni10 (overlap permitted). Exploratory family,not project-wide.19nulls cannot resolve corrected significance; zero exceedances require separately preregistered larger fresh calibration.",
+  "process_seconds": 180,
+  "family_seconds": 650,
+  "phase_seconds": 900,
+  "workers": 1,
+  "memory": "4096runes,16pages,16keyslots,12seeds,29coordinate rows,<=128DPstates perpage.",
+  "limits": "Heuristic key search; exact phase/mask optimization conditional on key. No general key or boundary exclusion. No unsupported solution-claim audits."
+}

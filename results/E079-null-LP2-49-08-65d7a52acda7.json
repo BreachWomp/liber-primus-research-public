@@ -1,0 +1,6065 @@
+{
+  "experiment": "E079",
+  "mode": "null",
+  "page": "LP2-49",
+  "replicate": 8,
+  "group": {
+    "id": "LP2-49",
+    "page_ids": [
+      "LP2-49"
+    ],
+    "source_refs": [
+      "relikd:pages/p40-53.txt",
+      "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+    ]
+  },
+  "parameters": {
+    "registered_at": "2026-11-01T17:35:38.824032+00:00",
+    "experiment": "E079",
+    "hypothesis": "H050",
+    "groups": [
+      {
+        "id": "LP2-00",
+        "page_ids": [
+          "LP2-00"
+        ],
+        "source_refs": [
+          "relikd:pages/p0-2.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-01",
+        "page_ids": [
+          "LP2-01"
+        ],
+        "source_refs": [
+          "relikd:pages/p0-2.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-02",
+        "page_ids": [
+          "LP2-02"
+        ],
+        "source_refs": [
+          "relikd:pages/p0-2.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-03",
+        "page_ids": [
+          "LP2-03"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-04",
+        "page_ids": [
+          "LP2-04"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-05",
+        "page_ids": [
+          "LP2-05"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-06",
+        "page_ids": [
+          "LP2-06"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-07",
+        "page_ids": [
+          "LP2-07"
+        ],
+        "source_refs": [
+          "relikd:pages/p3-7.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-08",
+        "page_ids": [
+          "LP2-08"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-09",
+        "page_ids": [
+          "LP2-09"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-10",
+        "page_ids": [
+          "LP2-10"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-11",
+        "page_ids": [
+          "LP2-11"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-12",
+        "page_ids": [
+          "LP2-12"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-13",
+        "page_ids": [
+          "LP2-13"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-14",
+        "page_ids": [
+          "LP2-14"
+        ],
+        "source_refs": [
+          "relikd:pages/p8-14.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-15",
+        "page_ids": [
+          "LP2-15"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-16",
+        "page_ids": [
+          "LP2-16"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-17",
+        "page_ids": [
+          "LP2-17"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-18",
+        "page_ids": [
+          "LP2-18"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-19",
+        "page_ids": [
+          "LP2-19"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-20",
+        "page_ids": [
+          "LP2-20"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-21",
+        "page_ids": [
+          "LP2-21"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-22",
+        "page_ids": [
+          "LP2-22"
+        ],
+        "source_refs": [
+          "relikd:pages/p15-22.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-23",
+        "page_ids": [
+          "LP2-23"
+        ],
+        "source_refs": [
+          "relikd:pages/p23-26.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-24",
+        "page_ids": [
+          "LP2-24"
+        ],
+        "source_refs": [
+          "relikd:pages/p23-26.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-25",
+        "page_ids": [
+          "LP2-25"
+        ],
+        "source_refs": [
+          "relikd:pages/p23-26.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-26",
+        "page_ids": [
+          "LP2-26"
+        ],
+        "source_refs": [
+          "relikd:pages/p23-26.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-27",
+        "page_ids": [
+          "LP2-27"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-28",
+        "page_ids": [
+          "LP2-28"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-29",
+        "page_ids": [
+          "LP2-29"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-30",
+        "page_ids": [
+          "LP2-30"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-31",
+        "page_ids": [
+          "LP2-31"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-32",
+        "page_ids": [
+          "LP2-32"
+        ],
+        "source_refs": [
+          "relikd:pages/p27-32.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-33",
+        "page_ids": [
+          "LP2-33"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-34",
+        "page_ids": [
+          "LP2-34"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-35",
+        "page_ids": [
+          "LP2-35"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-36",
+        "page_ids": [
+          "LP2-36"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-37",
+        "page_ids": [
+          "LP2-37"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-38",
+        "page_ids": [
+          "LP2-38"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-39",
+        "page_ids": [
+          "LP2-39"
+        ],
+        "source_refs": [
+          "relikd:pages/p33-39.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-40",
+        "page_ids": [
+          "LP2-40"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-41",
+        "page_ids": [
+          "LP2-41"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-42",
+        "page_ids": [
+          "LP2-42"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-43",
+        "page_ids": [
+          "LP2-43"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-44",
+        "page_ids": [
+          "LP2-44"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-45",
+        "page_ids": [
+          "LP2-45"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-46",
+        "page_ids": [
+          "LP2-46"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-47",
+        "page_ids": [
+          "LP2-47"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-48",
+        "page_ids": [
+          "LP2-48"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-49",
+        "page_ids": [
+          "LP2-49"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-51",
+        "page_ids": [
+          "LP2-51"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-52",
+        "page_ids": [
+          "LP2-52"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-53",
+        "page_ids": [
+          "LP2-53"
+        ],
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-54",
+        "page_ids": [
+          "LP2-54"
+        ],
+        "source_refs": [
+          "relikd:pages/p54-55.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      },
+      {
+        "id": "LP2-55",
+        "page_ids": [
+          "LP2-55"
+        ],
+        "source_refs": [
+          "relikd:pages/p54-55.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ]
+      }
+    ],
+    "section_ids": [
+      "LP2-00",
+      "LP2-01",
+      "LP2-02",
+      "LP2-03",
+      "LP2-04",
+      "LP2-05",
+      "LP2-06",
+      "LP2-07",
+      "LP2-08",
+      "LP2-09",
+      "LP2-10",
+      "LP2-11",
+      "LP2-12",
+      "LP2-13",
+      "LP2-14",
+      "LP2-15",
+      "LP2-16",
+      "LP2-17",
+      "LP2-18",
+      "LP2-19",
+      "LP2-20",
+      "LP2-21",
+      "LP2-22",
+      "LP2-23",
+      "LP2-24",
+      "LP2-25",
+      "LP2-26",
+      "LP2-27",
+      "LP2-28",
+      "LP2-29",
+      "LP2-30",
+      "LP2-31",
+      "LP2-32",
+      "LP2-33",
+      "LP2-34",
+      "LP2-35",
+      "LP2-36",
+      "LP2-37",
+      "LP2-38",
+      "LP2-39",
+      "LP2-40",
+      "LP2-41",
+      "LP2-42",
+      "LP2-43",
+      "LP2-44",
+      "LP2-45",
+      "LP2-46",
+      "LP2-47",
+      "LP2-48",
+      "LP2-49",
+      "LP2-51",
+      "LP2-52",
+      "LP2-53",
+      "LP2-54",
+      "LP2-55"
+    ],
+    "preserved_non_rune_pages": [
+      {
+        "id": "LP2-50",
+        "edition": "LP2",
+        "page": 50,
+        "complete_page": 67,
+        "runes": "",
+        "text_with_layout": "2M\t0w\t3L\t3D\t2r\t0S\t1p\t15\n3V\t3e\t3I\t0n\t3u\t1O\t0u\t0Z\n3g\t2U\t1C\t0Y\t1N\t3n\t0W\t3Q\n22\t13\t0V\t3c\t0E\t34\t0W\t1t\n1D\t2N\t3H\t47\t0s\t2p\t0Z\t34\n0g\t3v\t1Q\t0s\t0D\t0K\t2h\t3D\n3L\t2x\t1Q\t20\t2n\t2L\t1C\t2p\n0A\t29\t3r\t0D\t45\t0k\t2e\t2W\n25\t3U\t1W\t2r\t46\t2s\t2X\t39\n3p\t0X\t0E\t1q\t0q\t4B\t49\t48\n3r\t3b\t3C\t1M\t1j\t0l\t4A\t48\n40\t3m\t4E\t0s\t2s\t1v\t3T\t0I\n3t\t2B\t2k\t2t\t2O\t0e\t2l\t1L",
+        "layout_scheme": "relikd_literal",
+        "source_refs": [
+          "relikd:pages/p40-53.txt",
+          "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+        ],
+        "status": "non_rune",
+        "image_ref": "https://raw.githubusercontent.com/scream314/cicada3301/10733feb487bb8beb9966d534727ee5897aa54fc/assets/2014/liber-primus-complete/67.jpg",
+        "transcription_agreement": true,
+        "rune_count": 0,
+        "runes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "solver": "Frozen E077/E078:delay2,a,b1..28,c0..28,top128 unigram families, all841 prefixes exact per retained family. No omissions or hidden resets.",
+    "control_validation": "results/phase28_controls_validation.json",
+    "control_validation_sha256": "66b6178398162dd8a0d1a759aa4d130b59590a65efda932b994fcfdddb6630a6",
+    "selection": "Highest mean fourgram score among55 inputs; stable page order for ties. Freeze all55 output hashes and winner before nulls.",
+    "null_seed": 3302079,
+    "replicates": 19,
+    "null": "19 independent selected-page interior shuffles preserving endpoints,counts,doublets; cap100000 proposals. Entire screen and exhaustive retained-family prefix search repeated.",
+    "inference": "Plus-one p=(1+exceedances)/20, Bonferroni55. Minimum corrected p is1; coarse screening, no significance claim. Zero exceedances triggers separately preregistered larger calibration.",
+    "bounds": {
+      "process_seconds": 180,
+      "watchdog_seconds": 185,
+      "memory_ceiling_mib": 768,
+      "workers": 1,
+      "phase_seconds": 1800
+    },
+    "limits": "Only128 of22736 coefficient/constant families retained. Exactness applies only to their prefix space. English-prose model, no interrupted updates. No community solution claims."
+  },
+  "ciphertext_indices": [
+    27,
+    21,
+    26,
+    18,
+    1,
+    6,
+    11,
+    18,
+    7,
+    13,
+    17,
+    27,
+    22,
+    12,
+    22,
+    2,
+    24,
+    18,
+    14,
+    9,
+    17,
+    24,
+    22,
+    0,
+    13,
+    8,
+    27,
+    19,
+    18,
+    24,
+    11,
+    28,
+    1,
+    6,
+    19,
+    26,
+    19,
+    0,
+    16,
+    28,
+    25,
+    20,
+    4,
+    20,
+    10,
+    11,
+    7,
+    16,
+    25,
+    10,
+    2,
+    19,
+    23,
+    24,
+    5,
+    6,
+    9,
+    15,
+    10,
+    24,
+    16,
+    21,
+    2,
+    27,
+    10,
+    23
+  ],
+  "page_spans": [
+    {
+      "page_id": "LP2-49",
+      "start": 0,
+      "end": 66,
+      "runes": 66,
+      "source_refs": [
+        "relikd:pages/p40-53.txt",
+        "iddqd:liber-primus__transcription--master/liber-primus__transcription--master.txt"
+      ],
+      "zero_rune_page": false
+    }
+  ],
+  "page_proposals": [
+    {
+      "page_id": "LP2-49",
+      "seed": 3302879,
+      "proposals": 16
+    }
+  ],
+  "training": {
+    "training_chapters": [
+      "I",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "VIII",
+      "IX"
+    ],
+    "training_source_ranges": [
+      [
+        1209,
+        1339
+      ],
+      [
+        1339,
+        1501
+      ],
+      [
+        1501,
+        1514
+      ],
+      [
+        1514,
+        1971
+      ],
+      [
+        1971,
+        2852
+      ],
+      [
+        2852,
+        4855
+      ],
+      [
+        4855,
+        6409
+      ],
+      [
+        6409,
+        7483
+      ],
+      [
+        7483,
+        7992
+      ],
+      [
+        7992,
+        9925
+      ],
+      [
+        9925,
+        10647
+      ],
+      [
+        10647,
+        11418
+      ],
+      [
+        11418,
+        12213
+      ],
+      [
+        12213,
+        13005
+      ],
+      [
+        13005,
+        13659
+      ],
+      [
+        13659,
+        15448
+      ],
+      [
+        15448,
+        16854
+      ],
+      [
+        16854,
+        17389
+      ],
+      [
+        17389,
+        18283
+      ],
+      [
+        18283,
+        19081
+      ],
+      [
+        19081,
+        19372
+      ],
+      [
+        19372,
+        20259
+      ],
+      [
+        20259,
+        21696
+      ],
+      [
+        21696,
+        22784
+      ],
+      [
+        22784,
+        23757
+      ],
+      [
+        23757,
+        24026
+      ],
+      [
+        24026,
+        24538
+      ],
+      [
+        24538,
+        26844
+      ],
+      [
+        26844,
+        27062
+      ],
+      [
+        27062,
+        27277
+      ],
+      [
+        27277,
+        29388
+      ],
+      [
+        29388,
+        31420
+      ],
+      [
+        31420,
+        31898
+      ],
+      [
+        31898,
+        32223
+      ],
+      [
+        32223,
+        32461
+      ],
+      [
+        32461,
+        32648
+      ],
+      [
+        32648,
+        32996
+      ],
+      [
+        32996,
+        33887
+      ],
+      [
+        33887,
+        34582
+      ],
+      [
+        34582,
+        35168
+      ],
+      [
+        35168,
+        39084
+      ],
+      [
+        39084,
+        39877
+      ],
+      [
+        39877,
+        40852
+      ],
+      [
+        40852,
+        41419
+      ],
+      [
+        41419,
+        41902
+      ],
+      [
+        41902,
+        43372
+      ],
+      [
+        43372,
+        43612
+      ],
+      [
+        43612,
+        44965
+      ],
+      [
+        44965,
+        45218
+      ],
+      [
+        45218,
+        46392
+      ],
+      [
+        46392,
+        47858
+      ],
+      [
+        47858,
+        48452
+      ],
+      [
+        105043,
+        105508
+      ],
+      [
+        105508,
+        106025
+      ],
+      [
+        106025,
+        106043
+      ],
+      [
+        106043,
+        107251
+      ],
+      [
+        107251,
+        107838
+      ],
+      [
+        107838,
+        108720
+      ],
+      [
+        108720,
+        109161
+      ],
+      [
+        109161,
+        110089
+      ],
+      [
+        110089,
+        110299
+      ],
+      [
+        110299,
+        111190
+      ],
+      [
+        111190,
+        111935
+      ],
+      [
+        111935,
+        112297
+      ],
+      [
+        112297,
+        113762
+      ],
+      [
+        113762,
+        114785
+      ],
+      [
+        114785,
+        115854
+      ],
+      [
+        115854,
+        116715
+      ],
+      [
+        116715,
+        117324
+      ],
+      [
+        117324,
+        118296
+      ],
+      [
+        118296,
+        119202
+      ],
+      [
+        119202,
+        120071
+      ],
+      [
+        120071,
+        120664
+      ],
+      [
+        120664,
+        121205
+      ],
+      [
+        121205,
+        122446
+      ],
+      [
+        122446,
+        122492
+      ],
+      [
+        122492,
+        123028
+      ],
+      [
+        123028,
+        123153
+      ],
+      [
+        123153,
+        124145
+      ],
+      [
+        124145,
+        124972
+      ],
+      [
+        124972,
+        125843
+      ],
+      [
+        125843,
+        126513
+      ],
+      [
+        126513,
+        127173
+      ],
+      [
+        127173,
+        127459
+      ],
+      [
+        127459,
+        127958
+      ],
+      [
+        127958,
+        128637
+      ],
+      [
+        128637,
+        129259
+      ],
+      [
+        129259,
+        129891
+      ],
+      [
+        129891,
+        130289
+      ],
+      [
+        130289,
+        131156
+      ],
+      [
+        131156,
+        132185
+      ],
+      [
+        132185,
+        133528
+      ],
+      [
+        133528,
+        134500
+      ],
+      [
+        134500,
+        135281
+      ],
+      [
+        135281,
+        135800
+      ],
+      [
+        135800,
+        135924
+      ],
+      [
+        135924,
+        136815
+      ],
+      [
+        136815,
+        138080
+      ],
+      [
+        138080,
+        138965
+      ],
+      [
+        138965,
+        140166
+      ],
+      [
+        140166,
+        140644
+      ],
+      [
+        140644,
+        141517
+      ],
+      [
+        141517,
+        142073
+      ],
+      [
+        142073,
+        142662
+      ],
+      [
+        142662,
+        144047
+      ],
+      [
+        144047,
+        145336
+      ],
+      [
+        145336,
+        146554
+      ],
+      [
+        146554,
+        147351
+      ],
+      [
+        147351,
+        148548
+      ],
+      [
+        148573,
+        148972
+      ],
+      [
+        148972,
+        148992
+      ],
+      [
+        148992,
+        150231
+      ],
+      [
+        150231,
+        151384
+      ],
+      [
+        151384,
+        151924
+      ],
+      [
+        151924,
+        152815
+      ],
+      [
+        152815,
+        154078
+      ],
+      [
+        154078,
+        154620
+      ],
+      [
+        154620,
+        155014
+      ],
+      [
+        155014,
+        156145
+      ],
+      [
+        156145,
+        156728
+      ],
+      [
+        156728,
+        157190
+      ],
+      [
+        157190,
+        158481
+      ],
+      [
+        158481,
+        160302
+      ],
+      [
+        160302,
+        161085
+      ],
+      [
+        161085,
+        162346
+      ],
+      [
+        162346,
+        163592
+      ],
+      [
+        163592,
+        164571
+      ],
+      [
+        164571,
+        164935
+      ],
+      [
+        164935,
+        166543
+      ],
+      [
+        166543,
+        167624
+      ],
+      [
+        167624,
+        167875
+      ],
+      [
+        167875,
+        168788
+      ],
+      [
+        168788,
+        169289
+      ],
+      [
+        169289,
+        169649
+      ],
+      [
+        169649,
+        170058
+      ],
+      [
+        170058,
+        171390
+      ],
+      [
+        171390,
+        172108
+      ],
+      [
+        172108,
+        172744
+      ],
+      [
+        172744,
+        174482
+      ],
+      [
+        174482,
+        175043
+      ],
+      [
+        175043,
+        176107
+      ],
+      [
+        176107,
+        176389
+      ],
+      [
+        176389,
+        178958
+      ],
+      [
+        178958,
+        179440
+      ],
+      [
+        179440,
+        179993
+      ],
+      [
+        179993,
+        180736
+      ],
+      [
+        180736,
+        181132
+      ],
+      [
+        181132,
+        181950
+      ],
+      [
+        181950,
+        183348
+      ],
+      [
+        183348,
+        184318
+      ],
+      [
+        184318,
+        184784
+      ],
+      [
+        184784,
+        185331
+      ],
+      [
+        185331,
+        185620
+      ],
+      [
+        185620,
+        186257
+      ],
+      [
+        186257,
+        187636
+      ],
+      [
+        187636,
+        188535
+      ],
+      [
+        188535,
+        189191
+      ],
+      [
+        189191,
+        189717
+      ],
+      [
+        189717,
+        190386
+      ],
+      [
+        190386,
+        190438
+      ],
+      [
+        190438,
+        190979
+      ],
+      [
+        190979,
+        192662
+      ],
+      [
+        192662,
+        192880
+      ],
+      [
+        192894,
+        192990
+      ],
+      [
+        192990,
+        193000
+      ],
+      [
+        193000,
+        193820
+      ],
+      [
+        193820,
+        195530
+      ],
+      [
+        195530,
+        196677
+      ],
+      [
+        196677,
+        199113
+      ],
+      [
+        199113,
+        201473
+      ],
+      [
+        201473,
+        201602
+      ],
+      [
+        201602,
+        201839
+      ],
+      [
+        201839,
+        201894
+      ],
+      [
+        201894,
+        202326
+      ],
+      [
+        202326,
+        202859
+      ],
+      [
+        202859,
+        203113
+      ],
+      [
+        203113,
+        203436
+      ],
+      [
+        203436,
+        203689
+      ],
+      [
+        203689,
+        204255
+      ],
+      [
+        204255,
+        205424
+      ],
+      [
+        205424,
+        207270
+      ],
+      [
+        207270,
+        207683
+      ],
+      [
+        207683,
+        207926
+      ],
+      [
+        207926,
+        208787
+      ],
+      [
+        208787,
+        210482
+      ],
+      [
+        210482,
+        211184
+      ],
+      [
+        211184,
+        212721
+      ],
+      [
+        212721,
+        212863
+      ],
+      [
+        212863,
+        215319
+      ],
+      [
+        215319,
+        215407
+      ],
+      [
+        215407,
+        216984
+      ],
+      [
+        216984,
+        218073
+      ],
+      [
+        218094,
+        218714
+      ],
+      [
+        218714,
+        218730
+      ],
+      [
+        218730,
+        219211
+      ],
+      [
+        219211,
+        219664
+      ],
+      [
+        219664,
+        221618
+      ],
+      [
+        221618,
+        222286
+      ],
+      [
+        222286,
+        223980
+      ],
+      [
+        223980,
+        224881
+      ],
+      [
+        224881,
+        227926
+      ],
+      [
+        227926,
+        227942
+      ],
+      [
+        227942,
+        228340
+      ],
+      [
+        228340,
+        229787
+      ],
+      [
+        229787,
+        230140
+      ],
+      [
+        230140,
+        230332
+      ],
+      [
+        230332,
+        231128
+      ],
+      [
+        231128,
+        231454
+      ],
+      [
+        231454,
+        235389
+      ],
+      [
+        235389,
+        237871
+      ],
+      [
+        237871,
+        239691
+      ],
+      [
+        239691,
+        240409
+      ],
+      [
+        240409,
+        241397
+      ],
+      [
+        241397,
+        242379
+      ],
+      [
+        242379,
+        244142
+      ],
+      [
+        244142,
+        244751
+      ],
+      [
+        244751,
+        246246
+      ],
+      [
+        246246,
+        247395
+      ],
+      [
+        247395,
+        248543
+      ],
+      [
+        248543,
+        250238
+      ],
+      [
+        250238,
+        251419
+      ],
+      [
+        251439,
+        251632
+      ],
+      [
+        251632,
+        251646
+      ],
+      [
+        251646,
+        252723
+      ],
+      [
+        252723,
+        253049
+      ],
+      [
+        253049,
+        253518
+      ],
+      [
+        253518,
+        254423
+      ],
+      [
+        254423,
+        255580
+      ],
+      [
+        255580,
+        256361
+      ],
+      [
+        256361,
+        257039
+      ],
+      [
+        257039,
+        257920
+      ],
+      [
+        257920,
+        260406
+      ],
+      [
+        260406,
+        263351
+      ],
+      [
+        263351,
+        265198
+      ],
+      [
+        265198,
+        266598
+      ],
+      [
+        266598,
+        267530
+      ],
+      [
+        267530,
+        269658
+      ],
+      [
+        269658,
+        270747
+      ],
+      [
+        270747,
+        271947
+      ],
+      [
+        271947,
+        272846
+      ],
+      [
+        272846,
+        273581
+      ],
+      [
+        273581,
+        275386
+      ],
+      [
+        275386,
+        276440
+      ],
+      [
+        276440,
+        276868
+      ],
+      [
+        276888,
+        276965
+      ],
+      [
+        276965,
+        277311
+      ],
+      [
+        277311,
+        277324
+      ],
+      [
+        277324,
+        278512
+      ],
+      [
+        278512,
+        278550
+      ],
+      [
+        278550,
+        278692
+      ],
+      [
+        278692,
+        278991
+      ],
+      [
+        278991,
+        279034
+      ],
+      [
+        279034,
+        279417
+      ],
+      [
+        279417,
+        279486
+      ],
+      [
+        279486,
+        279667
+      ],
+      [
+        279667,
+        280013
+      ],
+      [
+        280013,
+        280050
+      ],
+      [
+        280050,
+        280128
+      ],
+      [
+        280128,
+        280225
+      ],
+      [
+        280225,
+        280607
+      ],
+      [
+        280607,
+        282169
+      ],
+      [
+        282169,
+        283139
+      ],
+      [
+        283139,
+        283629
+      ],
+      [
+        283629,
+        285242
+      ],
+      [
+        285242,
+        285979
+      ],
+      [
+        285979,
+        287643
+      ],
+      [
+        287643,
+        289373
+      ],
+      [
+        289373,
+        290190
+      ],
+      [
+        290190,
+        290709
+      ],
+      [
+        290709,
+        291578
+      ],
+      [
+        291578,
+        291729
+      ],
+      [
+        291729,
+        292444
+      ],
+      [
+        292444,
+        294382
+      ],
+      [
+        294382,
+        296346
+      ],
+      [
+        296346,
+        297427
+      ],
+      [
+        297427,
+        298047
+      ],
+      [
+        298047,
+        298719
+      ],
+      [
+        298719,
+        299415
+      ],
+      [
+        299415,
+        300307
+      ],
+      [
+        300307,
+        300523
+      ],
+      [
+        300523,
+        300583
+      ],
+      [
+        300583,
+        301411
+      ],
+      [
+        301435,
+        301700
+      ],
+      [
+        301700,
+        302058
+      ],
+      [
+        302058,
+        302077
+      ],
+      [
+        302077,
+        303586
+      ],
+      [
+        303586,
+        303948
+      ],
+      [
+        303948,
+        306047
+      ],
+      [
+        306047,
+        307786
+      ],
+      [
+        307786,
+        308569
+      ],
+      [
+        308569,
+        309183
+      ],
+      [
+        309183,
+        309264
+      ],
+      [
+        309264,
+        311427
+      ],
+      [
+        311427,
+        312392
+      ],
+      [
+        312392,
+        313012
+      ],
+      [
+        313012,
+        313963
+      ],
+      [
+        313963,
+        316743
+      ],
+      [
+        316743,
+        317080
+      ],
+      [
+        317080,
+        317643
+      ],
+      [
+        317643,
+        318871
+      ],
+      [
+        318871,
+        319394
+      ],
+      [
+        319394,
+        321608
+      ],
+      [
+        321608,
+        321893
+      ],
+      [
+        321893,
+        323794
+      ],
+      [
+        323794,
+        324592
+      ],
+      [
+        324592,
+        325355
+      ],
+      [
+        325355,
+        326046
+      ],
+      [
+        326046,
+        327156
+      ],
+      [
+        327156,
+        328214
+      ],
+      [
+        328214,
+        330527
+      ],
+      [
+        330527,
+        332009
+      ],
+      [
+        332009,
+        332567
+      ],
+      [
+        332567,
+        333904
+      ],
+      [
+        333904,
+        336463
+      ],
+      [
+        336463,
+        337425
+      ],
+      [
+        337425,
+        340292
+      ]
+    ],
+    "training_runes": 207030,
+    "source_sha256": "5d9d28c12da8bd9aaf3043e9a2d08fbd46116efd5a3736490a393599aef6d278"
+  },
+  "result": {
+    "screen_audit": {
+      "families": 22736,
+      "retained": 128,
+      "score_sha256": "3a2c3099b0acd36b6c7a3c0d0b6fdd23819fa62a87517962d1dc923c23e89956"
+    },
+    "families": [
+      {
+        "a": 17,
+        "b": 18,
+        "c": 6,
+        "rank": 1,
+        "unigram_max_total": -207.34827389669172,
+        "prefix_scores_sha256": "a8f25d81ad89f4b934cb55b5b6a04e546907765c8f9a0c7e7f2a41644b68626b",
+        "top_prefixes": [
+          {
+            "prefix": [
+              13,
+              15
+            ],
+            "score": -5.598234513080116
+          },
+          {
+            "prefix": [
+              13,
+              28
+            ],
+            "score": -5.673620151754562
+          },
+          {
+            "prefix": [
+              13,
+              24
+            ],
+            "score": -5.705916219590894
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "b": 7,
+        "c": 19,
+        "rank": 2,
+        "unigram_max_total": -210.95113883782653,
+        "prefix_scores_sha256": "9059e86c0cbde482d7b59f84a3f0bf315c37c547fb0f4ae4f32a119b12d6a627",
+        "top_prefixes": [
+          {
+            "prefix": [
+              2,
+              9
+            ],
+            "score": -5.261860924383117
+          },
+          {
+            "prefix": [
+              19,
+              9
+            ],
+            "score": -5.353492023264584
+          },
+          {
+            "prefix": [
+              18,
+              6
+            ],
+            "score": -5.432024398788163
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "b": 13,
+        "c": 28,
+        "rank": 3,
+        "unigram_max_total": -211.57426760174735,
+        "prefix_scores_sha256": "f5347326f98851a81768aa5eaaac19ebc934d77d29cdd33ba55b2237136910d0",
+        "top_prefixes": [
+          {
+            "prefix": [
+              6,
+              4
+            ],
+            "score": -5.31289174309022
+          },
+          {
+            "prefix": [
+              22,
+              4
+            ],
+            "score": -5.503373452121055
+          },
+          {
+            "prefix": [
+              16,
+              4
+            ],
+            "score": -5.539897197037957
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "b": 2,
+        "c": 12,
+        "rank": 4,
+        "unigram_max_total": -212.92158521334534,
+        "prefix_scores_sha256": "986e6013c6d7e7173058aa31843ab7079da08db43c26bae0b95dc4abe2aab024",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              19
+            ],
+            "score": -5.451835148905068
+          },
+          {
+            "prefix": [
+              9,
+              3
+            ],
+            "score": -5.534503213767228
+          },
+          {
+            "prefix": [
+              3,
+              19
+            ],
+            "score": -5.737839908582239
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 5,
+        "c": 22,
+        "rank": 5,
+        "unigram_max_total": -214.12791326947024,
+        "prefix_scores_sha256": "81cb28c7c3f3c803a2dee0abaedc30dc4c9a157f7c323eed4d775a04226473bf",
+        "top_prefixes": [
+          {
+            "prefix": [
+              27,
+              23
+            ],
+            "score": -5.375145268295545
+          },
+          {
+            "prefix": [
+              27,
+              17
+            ],
+            "score": -5.582865859718658
+          },
+          {
+            "prefix": [
+              27,
+              2
+            ],
+            "score": -5.6132263609721065
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 15,
+        "c": 6,
+        "rank": 6,
+        "unigram_max_total": -214.3906458054999,
+        "prefix_scores_sha256": "e5c06dd4f207e5ea302d463aa39f0dc07eaf8c1ad2745ea7cd5f87875a4d4c81",
+        "top_prefixes": [
+          {
+            "prefix": [
+              21,
+              7
+            ],
+            "score": -5.43058534096039
+          },
+          {
+            "prefix": [
+              2,
+              7
+            ],
+            "score": -5.7335077407037724
+          },
+          {
+            "prefix": [
+              24,
+              7
+            ],
+            "score": -5.791170746593725
+          }
+        ]
+      },
+      {
+        "a": 21,
+        "b": 19,
+        "c": 27,
+        "rank": 7,
+        "unigram_max_total": -214.50369420800993,
+        "prefix_scores_sha256": "450cd8b9f5df3ac4ab0095e670da2c34f1eba581a9e48c7b735e8d59c0f93de9",
+        "top_prefixes": [
+          {
+            "prefix": [
+              28,
+              21
+            ],
+            "score": -5.219744547230001
+          },
+          {
+            "prefix": [
+              11,
+              21
+            ],
+            "score": -5.365887819466264
+          },
+          {
+            "prefix": [
+              5,
+              21
+            ],
+            "score": -5.478765889099252
+          }
+        ]
+      },
+      {
+        "a": 12,
+        "b": 7,
+        "c": 0,
+        "rank": 8,
+        "unigram_max_total": -214.83764744918346,
+        "prefix_scores_sha256": "69c3bc070846d6d84d5ae5bdcf970a65558a01c3a9d651ed3cca67b85180a685",
+        "top_prefixes": [
+          {
+            "prefix": [
+              27,
+              9
+            ],
+            "score": -5.418184106159435
+          },
+          {
+            "prefix": [
+              6,
+              9
+            ],
+            "score": -5.64180808638488
+          },
+          {
+            "prefix": [
+              19,
+              23
+            ],
+            "score": -5.661593234001124
+          }
+        ]
+      },
+      {
+        "a": 25,
+        "b": 18,
+        "c": 0,
+        "rank": 9,
+        "unigram_max_total": -215.06268496967937,
+        "prefix_scores_sha256": "8bb1b9c6e6e7da659c75ec921c1c18cfdd1af5a3898f57ebd0c72a84c724d90a",
+        "top_prefixes": [
+          {
+            "prefix": [
+              1,
+              5
+            ],
+            "score": -5.299601897970839
+          },
+          {
+            "prefix": [
+              10,
+              1
+            ],
+            "score": -5.395987893469545
+          },
+          {
+            "prefix": [
+              24,
+              10
+            ],
+            "score": -5.450173990682157
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "b": 13,
+        "c": 26,
+        "rank": 10,
+        "unigram_max_total": -215.158543928879,
+        "prefix_scores_sha256": "e2f16b5f9d03e0745b821a9c47b0b2473a7bcb48d8e5298a950ca142fbafa769",
+        "top_prefixes": [
+          {
+            "prefix": [
+              23,
+              8
+            ],
+            "score": -5.392841358953296
+          },
+          {
+            "prefix": [
+              23,
+              18
+            ],
+            "score": -5.606833113256496
+          },
+          {
+            "prefix": [
+              11,
+              17
+            ],
+            "score": -5.649516567431132
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 13,
+        "c": 13,
+        "rank": 11,
+        "unigram_max_total": -215.17209875182482,
+        "prefix_scores_sha256": "be482bc935582914023d44f0c324b1231c15273a1e68a8d61971c61be4ae4d87",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              24
+            ],
+            "score": -5.4258911276091695
+          },
+          {
+            "prefix": [
+              9,
+              28
+            ],
+            "score": -5.449635994698334
+          },
+          {
+            "prefix": [
+              9,
+              26
+            ],
+            "score": -5.469900710042709
+          }
+        ]
+      },
+      {
+        "a": 18,
+        "b": 19,
+        "c": 8,
+        "rank": 12,
+        "unigram_max_total": -215.67489990761655,
+        "prefix_scores_sha256": "8821b97a1bc48003bf673f836a751ac274dff9c134bcac4f05a60dd7b0992993",
+        "top_prefixes": [
+          {
+            "prefix": [
+              16,
+              23
+            ],
+            "score": -5.4942911609250205
+          },
+          {
+            "prefix": [
+              18,
+              23
+            ],
+            "score": -5.502869988972471
+          },
+          {
+            "prefix": [
+              9,
+              23
+            ],
+            "score": -5.583285077752331
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "b": 10,
+        "c": 15,
+        "rank": 13,
+        "unigram_max_total": -216.20114201042122,
+        "prefix_scores_sha256": "504b5c064ce300f099c869c9c911275972217a3d3ae195f8cc67d0b3fae49b75",
+        "top_prefixes": [
+          {
+            "prefix": [
+              1,
+              17
+            ],
+            "score": -5.560843546656315
+          },
+          {
+            "prefix": [
+              12,
+              17
+            ],
+            "score": -5.678281185561596
+          },
+          {
+            "prefix": [
+              26,
+              21
+            ],
+            "score": -5.7071283204729415
+          }
+        ]
+      },
+      {
+        "a": 20,
+        "b": 10,
+        "c": 20,
+        "rank": 14,
+        "unigram_max_total": -216.3039886382394,
+        "prefix_scores_sha256": "2b330a247118ad0563eef1329dba299e46a566bca5454136a40e860e37cc301f",
+        "top_prefixes": [
+          {
+            "prefix": [
+              5,
+              10
+            ],
+            "score": -5.453361392601352
+          },
+          {
+            "prefix": [
+              5,
+              9
+            ],
+            "score": -5.616858763253977
+          },
+          {
+            "prefix": [
+              8,
+              5
+            ],
+            "score": -5.659876434233712
+          }
+        ]
+      },
+      {
+        "a": 13,
+        "b": 26,
+        "c": 7,
+        "rank": 15,
+        "unigram_max_total": -216.53265020613838,
+        "prefix_scores_sha256": "3c5d1aa09a05a5fdf3bb89eed6ed2dc3032dc8952691f69beba978990a3ab3b1",
+        "top_prefixes": [
+          {
+            "prefix": [
+              21,
+              2
+            ],
+            "score": -5.411903620510792
+          },
+          {
+            "prefix": [
+              17,
+              5
+            ],
+            "score": -5.423939981141343
+          },
+          {
+            "prefix": [
+              21,
+              5
+            ],
+            "score": -5.527082592526385
+          }
+        ]
+      },
+      {
+        "a": 6,
+        "b": 24,
+        "c": 2,
+        "rank": 16,
+        "unigram_max_total": -216.5765639392697,
+        "prefix_scores_sha256": "a3b5646eb488bf141b87c3f6b8ef9a84d2f670c9f5334e12b3081ccb5b52472d",
+        "top_prefixes": [
+          {
+            "prefix": [
+              7,
+              4
+            ],
+            "score": -5.232646751488797
+          },
+          {
+            "prefix": [
+              7,
+              10
+            ],
+            "score": -5.298864086129939
+          },
+          {
+            "prefix": [
+              0,
+              4
+            ],
+            "score": -5.315236573448102
+          }
+        ]
+      },
+      {
+        "a": 27,
+        "b": 5,
+        "c": 7,
+        "rank": 17,
+        "unigram_max_total": -216.7486509311604,
+        "prefix_scores_sha256": "2cfdb3066a79fe235695283da2bdfa59e1f0554c7a2842aef5c94b485a55cc87",
+        "top_prefixes": [
+          {
+            "prefix": [
+              16,
+              10
+            ],
+            "score": -5.379474201472506
+          },
+          {
+            "prefix": [
+              25,
+              10
+            ],
+            "score": -5.701941628479538
+          },
+          {
+            "prefix": [
+              2,
+              23
+            ],
+            "score": -5.731885606106471
+          }
+        ]
+      },
+      {
+        "a": 20,
+        "b": 22,
+        "c": 27,
+        "rank": 18,
+        "unigram_max_total": -216.94009165629544,
+        "prefix_scores_sha256": "9920ebc44636dfd296f4338e74d1fa7e92db8815fcf08900f95f6228f5d47fb0",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              3
+            ],
+            "score": -5.434669320555245
+          },
+          {
+            "prefix": [
+              18,
+              6
+            ],
+            "score": -5.6195575861413625
+          },
+          {
+            "prefix": [
+              18,
+              19
+            ],
+            "score": -5.629358354517871
+          }
+        ]
+      },
+      {
+        "a": 19,
+        "b": 9,
+        "c": 10,
+        "rank": 19,
+        "unigram_max_total": -217.14179765043463,
+        "prefix_scores_sha256": "9f28d0cb8553ea724ac91c36670073776a25592ebf5f1d346b6df2457c3a3202",
+        "top_prefixes": [
+          {
+            "prefix": [
+              26,
+              18
+            ],
+            "score": -5.430233505450551
+          },
+          {
+            "prefix": [
+              15,
+              15
+            ],
+            "score": -5.501100228673037
+          },
+          {
+            "prefix": [
+              15,
+              18
+            ],
+            "score": -5.5156950291983575
+          }
+        ]
+      },
+      {
+        "a": 28,
+        "b": 22,
+        "c": 5,
+        "rank": 20,
+        "unigram_max_total": -217.34403182334927,
+        "prefix_scores_sha256": "e749f133f1fbb619b2f39d37e8ea3d724198852946d56bf21fd96c4b643f541b",
+        "top_prefixes": [
+          {
+            "prefix": [
+              19,
+              0
+            ],
+            "score": -5.50338476903855
+          },
+          {
+            "prefix": [
+              26,
+              18
+            ],
+            "score": -5.778176745657591
+          },
+          {
+            "prefix": [
+              26,
+              3
+            ],
+            "score": -5.797608716313452
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 1,
+        "c": 26,
+        "rank": 21,
+        "unigram_max_total": -217.37751434087687,
+        "prefix_scores_sha256": "5b506a03ec5b539a58895376a02ae9bec4f7196fed60225b39b6ec446b97c6c4",
+        "top_prefixes": [
+          {
+            "prefix": [
+              1,
+              18
+            ],
+            "score": -5.171253333740964
+          },
+          {
+            "prefix": [
+              4,
+              17
+            ],
+            "score": -5.435086065390853
+          },
+          {
+            "prefix": [
+              1,
+              3
+            ],
+            "score": -5.583197430744136
+          }
+        ]
+      },
+      {
+        "a": 22,
+        "b": 6,
+        "c": 23,
+        "rank": 22,
+        "unigram_max_total": -217.456488028512,
+        "prefix_scores_sha256": "69a386a7cf99ab1cf8dfabcbfc440df2ae1a8b42cc8fd7476ecfbc1c0e208346",
+        "top_prefixes": [
+          {
+            "prefix": [
+              16,
+              27
+            ],
+            "score": -5.512198723686899
+          },
+          {
+            "prefix": [
+              16,
+              6
+            ],
+            "score": -5.546205844787075
+          },
+          {
+            "prefix": [
+              24,
+              6
+            ],
+            "score": -5.639482715052581
+          }
+        ]
+      },
+      {
+        "a": 28,
+        "b": 25,
+        "c": 6,
+        "rank": 23,
+        "unigram_max_total": -217.56790796737909,
+        "prefix_scores_sha256": "6b2419fc7ac6daa1aa3caf369099e0ac9c00cb806d2472b24a4181a0910256b7",
+        "top_prefixes": [
+          {
+            "prefix": [
+              10,
+              4
+            ],
+            "score": -5.511223267851043
+          },
+          {
+            "prefix": [
+              16,
+              4
+            ],
+            "score": -5.553756338940446
+          },
+          {
+            "prefix": [
+              27,
+              21
+            ],
+            "score": -5.56578340651856
+          }
+        ]
+      },
+      {
+        "a": 21,
+        "b": 9,
+        "c": 19,
+        "rank": 24,
+        "unigram_max_total": -217.63266053900352,
+        "prefix_scores_sha256": "24c9151531519172f85112cf75cea17f6029cd012a1f006a483dea57753adca6",
+        "top_prefixes": [
+          {
+            "prefix": [
+              23,
+              9
+            ],
+            "score": -4.9606608445251235
+          },
+          {
+            "prefix": [
+              23,
+              26
+            ],
+            "score": -5.634290446754613
+          },
+          {
+            "prefix": [
+              23,
+              27
+            ],
+            "score": -5.702892732023454
+          }
+        ]
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "c": 4,
+        "rank": 25,
+        "unigram_max_total": -217.7503374746088,
+        "prefix_scores_sha256": "d00c284300dcd75831051f07ad11160f4b3b1f7716105bf8cd6f9da04bcfe021",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              4
+            ],
+            "score": -5.624787730194282
+          },
+          {
+            "prefix": [
+              13,
+              4
+            ],
+            "score": -5.654546831596588
+          },
+          {
+            "prefix": [
+              13,
+              10
+            ],
+            "score": -5.74560539667583
+          }
+        ]
+      },
+      {
+        "a": 20,
+        "b": 15,
+        "c": 20,
+        "rank": 26,
+        "unigram_max_total": -217.8078495590721,
+        "prefix_scores_sha256": "7533f3aea52105b4ddbb166abebd446a31c31d271f27caaf4982363588a64042",
+        "top_prefixes": [
+          {
+            "prefix": [
+              13,
+              24
+            ],
+            "score": -5.224208091858013
+          },
+          {
+            "prefix": [
+              13,
+              6
+            ],
+            "score": -5.277670401738185
+          },
+          {
+            "prefix": [
+              13,
+              16
+            ],
+            "score": -5.369346341558349
+          }
+        ]
+      },
+      {
+        "a": 20,
+        "b": 13,
+        "c": 11,
+        "rank": 27,
+        "unigram_max_total": -217.87000032261878,
+        "prefix_scores_sha256": "8c5c11743dd764f2b533d6439ee386c1df6601f4099a772a19b6a67a90bf92d9",
+        "top_prefixes": [
+          {
+            "prefix": [
+              0,
+              4
+            ],
+            "score": -5.244958117403557
+          },
+          {
+            "prefix": [
+              15,
+              0
+            ],
+            "score": -5.468621669657488
+          },
+          {
+            "prefix": [
+              0,
+              9
+            ],
+            "score": -5.504576497882804
+          }
+        ]
+      },
+      {
+        "a": 1,
+        "b": 19,
+        "c": 24,
+        "rank": 28,
+        "unigram_max_total": -217.88415569219757,
+        "prefix_scores_sha256": "8f2ca64f8fe1855e78c982db0959e35ef8853e6e7212cffd5b6d0f6ffd5a915c",
+        "top_prefixes": [
+          {
+            "prefix": [
+              6,
+              8
+            ],
+            "score": -5.435344540483382
+          },
+          {
+            "prefix": [
+              17,
+              8
+            ],
+            "score": -5.5501305335959135
+          },
+          {
+            "prefix": [
+              0,
+              11
+            ],
+            "score": -5.686183201274763
+          }
+        ]
+      },
+      {
+        "a": 7,
+        "b": 6,
+        "c": 15,
+        "rank": 29,
+        "unigram_max_total": -217.89213097563405,
+        "prefix_scores_sha256": "ff1add68a14dbccd8c4c9ff0639918c54808e23097e8895b6621a93676430092",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              21
+            ],
+            "score": -5.09232093530714
+          },
+          {
+            "prefix": [
+              9,
+              10
+            ],
+            "score": -5.328484445866795
+          },
+          {
+            "prefix": [
+              9,
+              24
+            ],
+            "score": -5.437221468058511
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 26,
+        "c": 16,
+        "rank": 30,
+        "unigram_max_total": -218.0146241672271,
+        "prefix_scores_sha256": "97ef534541a00fc39ce577214df5bb60c78662d4f8b12fb7276ec80bae3e4dce",
+        "top_prefixes": [
+          {
+            "prefix": [
+              19,
+              12
+            ],
+            "score": -5.190661661680403
+          },
+          {
+            "prefix": [
+              19,
+              18
+            ],
+            "score": -5.552665802114923
+          },
+          {
+            "prefix": [
+              19,
+              3
+            ],
+            "score": -5.635687022582787
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 20,
+        "c": 23,
+        "rank": 31,
+        "unigram_max_total": -218.0275980875345,
+        "prefix_scores_sha256": "19381573d29abf448952cb955f8e20ad8ca5285bc175b76d7202261270ddba35",
+        "top_prefixes": [
+          {
+            "prefix": [
+              25,
+              16
+            ],
+            "score": -5.39220834453824
+          },
+          {
+            "prefix": [
+              2,
+              8
+            ],
+            "score": -5.550763046253125
+          },
+          {
+            "prefix": [
+              2,
+              4
+            ],
+            "score": -5.632712076198161
+          }
+        ]
+      },
+      {
+        "a": 8,
+        "b": 10,
+        "c": 16,
+        "rank": 32,
+        "unigram_max_total": -218.09723137085712,
+        "prefix_scores_sha256": "55a9fb461abac6cdc0d6c38187561163968c9e0c014c1b3c24f00460feb17cb4",
+        "top_prefixes": [
+          {
+            "prefix": [
+              14,
+              4
+            ],
+            "score": -5.4544981676759505
+          },
+          {
+            "prefix": [
+              17,
+              4
+            ],
+            "score": -5.477447146310997
+          },
+          {
+            "prefix": [
+              13,
+              20
+            ],
+            "score": -5.645291938857111
+          }
+        ]
+      },
+      {
+        "a": 19,
+        "b": 7,
+        "c": 27,
+        "rank": 33,
+        "unigram_max_total": -218.12805323956525,
+        "prefix_scores_sha256": "90405bbce7ad7b679b613adcb61e9e1bedf2dadec0293afcc31f3e704870bcea",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              28
+            ],
+            "score": -5.296869641573837
+          },
+          {
+            "prefix": [
+              9,
+              9
+            ],
+            "score": -5.361464475778506
+          },
+          {
+            "prefix": [
+              9,
+              3
+            ],
+            "score": -5.4926385653652146
+          }
+        ]
+      },
+      {
+        "a": 2,
+        "b": 7,
+        "c": 28,
+        "rank": 34,
+        "unigram_max_total": -218.22271199613922,
+        "prefix_scores_sha256": "a6adf2bf2229f415f3a2737b4e096d15ed683e99a42674b0ce0d06d843a30122",
+        "top_prefixes": [
+          {
+            "prefix": [
+              21,
+              16
+            ],
+            "score": -5.382059737633973
+          },
+          {
+            "prefix": [
+              3,
+              16
+            ],
+            "score": -5.509798705096122
+          },
+          {
+            "prefix": [
+              23,
+              5
+            ],
+            "score": -5.747894809240064
+          }
+        ]
+      },
+      {
+        "a": 12,
+        "b": 21,
+        "c": 19,
+        "rank": 35,
+        "unigram_max_total": -218.39471299453638,
+        "prefix_scores_sha256": "af471e131fa189b0cbbb0bbd64ecb3259233e7eae9d2220668a4602ed55306e4",
+        "top_prefixes": [
+          {
+            "prefix": [
+              28,
+              1
+            ],
+            "score": -5.519051284192085
+          },
+          {
+            "prefix": [
+              7,
+              27
+            ],
+            "score": -5.545751381413235
+          },
+          {
+            "prefix": [
+              4,
+              27
+            ],
+            "score": -5.573120392399914
+          }
+        ]
+      },
+      {
+        "a": 18,
+        "b": 12,
+        "c": 2,
+        "rank": 36,
+        "unigram_max_total": -218.40288131237148,
+        "prefix_scores_sha256": "74ddf6bf34f0cc86fbe192c0f4928bab749787a7cad368b39ed606de8f020c39",
+        "top_prefixes": [
+          {
+            "prefix": [
+              10,
+              13
+            ],
+            "score": -5.4552798322042895
+          },
+          {
+            "prefix": [
+              18,
+              13
+            ],
+            "score": -5.512639414407246
+          },
+          {
+            "prefix": [
+              16,
+              25
+            ],
+            "score": -5.719279439590449
+          }
+        ]
+      },
+      {
+        "a": 24,
+        "b": 5,
+        "c": 10,
+        "rank": 37,
+        "unigram_max_total": -218.65433651121177,
+        "prefix_scores_sha256": "bc1d8c776a58411657e79e49880f5fb15bd080bce8e9a91c19b02da172564fd5",
+        "top_prefixes": [
+          {
+            "prefix": [
+              25,
+              0
+            ],
+            "score": -5.113549738372679
+          },
+          {
+            "prefix": [
+              25,
+              8
+            ],
+            "score": -5.596130853347162
+          },
+          {
+            "prefix": [
+              25,
+              16
+            ],
+            "score": -5.701221550751377
+          }
+        ]
+      },
+      {
+        "a": 14,
+        "b": 4,
+        "c": 24,
+        "rank": 38,
+        "unigram_max_total": -218.67746062498526,
+        "prefix_scores_sha256": "407a850df36ea9f3db180393d6dac5d8bf1d5fc75202007c921b1f9b1515e971",
+        "top_prefixes": [
+          {
+            "prefix": [
+              23,
+              1
+            ],
+            "score": -5.625637179091007
+          },
+          {
+            "prefix": [
+              5,
+              1
+            ],
+            "score": -5.643582810059109
+          },
+          {
+            "prefix": [
+              22,
+              1
+            ],
+            "score": -5.6644327355987585
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 10,
+        "c": 14,
+        "rank": 39,
+        "unigram_max_total": -218.70107439046407,
+        "prefix_scores_sha256": "10d0733ff0db88aca421a111ef74daf5907606fd6e5e953ddc8430ea74a021db",
+        "top_prefixes": [
+          {
+            "prefix": [
+              4,
+              9
+            ],
+            "score": -5.258247527862095
+          },
+          {
+            "prefix": [
+              22,
+              9
+            ],
+            "score": -5.62548490917056
+          },
+          {
+            "prefix": [
+              8,
+              22
+            ],
+            "score": -5.635486185994996
+          }
+        ]
+      },
+      {
+        "a": 4,
+        "b": 22,
+        "c": 22,
+        "rank": 40,
+        "unigram_max_total": -218.7939120738355,
+        "prefix_scores_sha256": "63ea586636e35fab30e1097bd46617cc73f5f31d3936a6505f8430b26893cf7a",
+        "top_prefixes": [
+          {
+            "prefix": [
+              15,
+              15
+            ],
+            "score": -5.368476979879085
+          },
+          {
+            "prefix": [
+              8,
+              17
+            ],
+            "score": -5.631253507836413
+          },
+          {
+            "prefix": [
+              18,
+              9
+            ],
+            "score": -5.665232303184674
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 11,
+        "c": 6,
+        "rank": 41,
+        "unigram_max_total": -218.79835207516513,
+        "prefix_scores_sha256": "7680d68d3b6f9f22109d31a4368049a40494aceef8827a1124837b01e5668298",
+        "top_prefixes": [
+          {
+            "prefix": [
+              22,
+              20
+            ],
+            "score": -5.542527643019306
+          },
+          {
+            "prefix": [
+              5,
+              26
+            ],
+            "score": -5.58811924362463
+          },
+          {
+            "prefix": [
+              22,
+              13
+            ],
+            "score": -5.649766131010145
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "b": 10,
+        "c": 14,
+        "rank": 42,
+        "unigram_max_total": -218.85057776994728,
+        "prefix_scores_sha256": "6e55e7ea8e6145ee310f2eb4236e114fe58f17180538ae737c416f55c01e0d4d",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              18
+            ],
+            "score": -5.1011674201252
+          },
+          {
+            "prefix": [
+              10,
+              18
+            ],
+            "score": -5.163047651281724
+          },
+          {
+            "prefix": [
+              9,
+              21
+            ],
+            "score": -5.5118759943907065
+          }
+        ]
+      },
+      {
+        "a": 1,
+        "b": 13,
+        "c": 8,
+        "rank": 43,
+        "unigram_max_total": -218.9105340395621,
+        "prefix_scores_sha256": "57f9f57db88c645bc10ffc3711b4cb3b63436bbd9b0be39d45d839c242600331",
+        "top_prefixes": [
+          {
+            "prefix": [
+              17,
+              0
+            ],
+            "score": -5.302322435613033
+          },
+          {
+            "prefix": [
+              27,
+              18
+            ],
+            "score": -5.347967984679221
+          },
+          {
+            "prefix": [
+              14,
+              0
+            ],
+            "score": -5.636887762531187
+          }
+        ]
+      },
+      {
+        "a": 4,
+        "b": 17,
+        "c": 6,
+        "rank": 44,
+        "unigram_max_total": -218.92478373266286,
+        "prefix_scores_sha256": "2a52a0dbf7c532b941a92f704a5c6b5b000b4ff0e88d66f2e7e92d70556b1742",
+        "top_prefixes": [
+          {
+            "prefix": [
+              17,
+              4
+            ],
+            "score": -5.566944411273829
+          },
+          {
+            "prefix": [
+              18,
+              19
+            ],
+            "score": -5.6752947129285705
+          },
+          {
+            "prefix": [
+              18,
+              4
+            ],
+            "score": -5.759043864064143
+          }
+        ]
+      },
+      {
+        "a": 16,
+        "b": 11,
+        "c": 10,
+        "rank": 45,
+        "unigram_max_total": -218.94850699164402,
+        "prefix_scores_sha256": "52139114c9c6b34b1143ba0b07e3310338ce7c54ed818a19984d7116f8f86f68",
+        "top_prefixes": [
+          {
+            "prefix": [
+              28,
+              16
+            ],
+            "score": -5.45824501128801
+          },
+          {
+            "prefix": [
+              14,
+              16
+            ],
+            "score": -5.548749947944137
+          },
+          {
+            "prefix": [
+              3,
+              16
+            ],
+            "score": -5.664892932976926
+          }
+        ]
+      },
+      {
+        "a": 14,
+        "b": 17,
+        "c": 7,
+        "rank": 46,
+        "unigram_max_total": -218.9572932053057,
+        "prefix_scores_sha256": "4adf20f8f76f38630c3bca4db6c434128d073d29561659ab58538bbf001e31ae",
+        "top_prefixes": [
+          {
+            "prefix": [
+              26,
+              15
+            ],
+            "score": -5.3328348778109325
+          },
+          {
+            "prefix": [
+              3,
+              4
+            ],
+            "score": -5.441120203093943
+          },
+          {
+            "prefix": [
+              3,
+              15
+            ],
+            "score": -5.597234736197755
+          }
+        ]
+      },
+      {
+        "a": 22,
+        "b": 5,
+        "c": 26,
+        "rank": 47,
+        "unigram_max_total": -218.9876469659295,
+        "prefix_scores_sha256": "e8f02e705f4431ca88c8c6bc1389bbc38df152edc8a0a18c99415d127c5a6a5a",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              2
+            ],
+            "score": -5.140681542558094
+          },
+          {
+            "prefix": [
+              9,
+              19
+            ],
+            "score": -5.525842035495168
+          },
+          {
+            "prefix": [
+              9,
+              12
+            ],
+            "score": -5.577603240592659
+          }
+        ]
+      },
+      {
+        "a": 27,
+        "b": 15,
+        "c": 4,
+        "rank": 48,
+        "unigram_max_total": -218.98784425415892,
+        "prefix_scores_sha256": "c51cb1992930899e90278ff2f3225cd0b85ed976a36f3d4478f5705a593ddb85",
+        "top_prefixes": [
+          {
+            "prefix": [
+              22,
+              16
+            ],
+            "score": -5.504896928501602
+          },
+          {
+            "prefix": [
+              15,
+              9
+            ],
+            "score": -5.579558904384407
+          },
+          {
+            "prefix": [
+              15,
+              16
+            ],
+            "score": -5.629077980528392
+          }
+        ]
+      },
+      {
+        "a": 8,
+        "b": 20,
+        "c": 15,
+        "rank": 49,
+        "unigram_max_total": -219.02707036629494,
+        "prefix_scores_sha256": "5e6c0f2449cf49dff945f3b9d14426ca486f0e124b3a16fcf7a060da45cdc732",
+        "top_prefixes": [
+          {
+            "prefix": [
+              26,
+              3
+            ],
+            "score": -5.3964427541331155
+          },
+          {
+            "prefix": [
+              26,
+              14
+            ],
+            "score": -5.525937613229878
+          },
+          {
+            "prefix": [
+              26,
+              13
+            ],
+            "score": -5.550847100417623
+          }
+        ]
+      },
+      {
+        "a": 2,
+        "b": 24,
+        "c": 19,
+        "rank": 50,
+        "unigram_max_total": -219.03835624427265,
+        "prefix_scores_sha256": "e614b42e0d89d61832a196f903058a05f496afea9a1caa1dfa248bd531ddfd05",
+        "top_prefixes": [
+          {
+            "prefix": [
+              14,
+              15
+            ],
+            "score": -5.305980434324377
+          },
+          {
+            "prefix": [
+              17,
+              0
+            ],
+            "score": -5.3677981231399485
+          },
+          {
+            "prefix": [
+              17,
+              15
+            ],
+            "score": -5.669421434006346
+          }
+        ]
+      },
+      {
+        "a": 27,
+        "b": 2,
+        "c": 15,
+        "rank": 51,
+        "unigram_max_total": -219.0419537792252,
+        "prefix_scores_sha256": "316b35cd3527ad3b883b12e8d682c2d0014c49fbd87db29aa1603e8ed9b885d6",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              17
+            ],
+            "score": -5.4393123340863685
+          },
+          {
+            "prefix": [
+              9,
+              4
+            ],
+            "score": -5.714423981879648
+          },
+          {
+            "prefix": [
+              25,
+              10
+            ],
+            "score": -5.8502327091774475
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 11,
+        "c": 26,
+        "rank": 52,
+        "unigram_max_total": -219.04204905838512,
+        "prefix_scores_sha256": "3f8ef151252299af221a55dafc6e2469765b49d348fcce60678038bf448ba16f",
+        "top_prefixes": [
+          {
+            "prefix": [
+              26,
+              6
+            ],
+            "score": -5.023312256828519
+          },
+          {
+            "prefix": [
+              26,
+              0
+            ],
+            "score": -5.556203644764634
+          },
+          {
+            "prefix": [
+              26,
+              9
+            ],
+            "score": -5.675082956610825
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 20,
+        "c": 11,
+        "rank": 53,
+        "unigram_max_total": -219.08740686403297,
+        "prefix_scores_sha256": "61df232278b3c31ab3e929823c2fdd3c53bc915a116cbce3ffc4035d36b41d39",
+        "top_prefixes": [
+          {
+            "prefix": [
+              7,
+              10
+            ],
+            "score": -5.4850696834894554
+          },
+          {
+            "prefix": [
+              7,
+              11
+            ],
+            "score": -5.518594540270617
+          },
+          {
+            "prefix": [
+              1,
+              10
+            ],
+            "score": -5.624118603402647
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "b": 13,
+        "c": 16,
+        "rank": 54,
+        "unigram_max_total": -219.09847587480425,
+        "prefix_scores_sha256": "8374b9e641a00da3424e5b2aaa510f2b4d54718c8dd9ae71cf5b6fd0ab6c64c6",
+        "top_prefixes": [
+          {
+            "prefix": [
+              14,
+              6
+            ],
+            "score": -5.371182894253406
+          },
+          {
+            "prefix": [
+              23,
+              6
+            ],
+            "score": -5.380739482894974
+          },
+          {
+            "prefix": [
+              14,
+              8
+            ],
+            "score": -5.424667280337017
+          }
+        ]
+      },
+      {
+        "a": 15,
+        "b": 19,
+        "c": 3,
+        "rank": 55,
+        "unigram_max_total": -219.19478051737326,
+        "prefix_scores_sha256": "b13019802ae96173dfc20601f55252ddc2cd4d374164460d838a1fb53cf75db9",
+        "top_prefixes": [
+          {
+            "prefix": [
+              5,
+              17
+            ],
+            "score": -5.528032407875721
+          },
+          {
+            "prefix": [
+              3,
+              20
+            ],
+            "score": -5.56842914548096
+          },
+          {
+            "prefix": [
+              25,
+              25
+            ],
+            "score": -5.7901077191000105
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 2,
+        "c": 16,
+        "rank": 56,
+        "unigram_max_total": -219.20743843684835,
+        "prefix_scores_sha256": "2e722ee89cf51f0c0c02a03f709580dae403e7926eb1371569cdedbbe073f5f3",
+        "top_prefixes": [
+          {
+            "prefix": [
+              23,
+              7
+            ],
+            "score": -5.353601228384992
+          },
+          {
+            "prefix": [
+              23,
+              8
+            ],
+            "score": -5.5469301478831605
+          },
+          {
+            "prefix": [
+              23,
+              11
+            ],
+            "score": -5.7342937844293385
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "b": 22,
+        "c": 20,
+        "rank": 57,
+        "unigram_max_total": -219.25092385397184,
+        "prefix_scores_sha256": "886ab894a52bf21c251a206efdbd5369a156a3fe87c67a04e73a1c50fd6c9c88",
+        "top_prefixes": [
+          {
+            "prefix": [
+              23,
+              16
+            ],
+            "score": -5.496918882424801
+          },
+          {
+            "prefix": [
+              23,
+              28
+            ],
+            "score": -5.555882965336639
+          },
+          {
+            "prefix": [
+              23,
+              1
+            ],
+            "score": -5.756269161307243
+          }
+        ]
+      },
+      {
+        "a": 24,
+        "b": 7,
+        "c": 1,
+        "rank": 58,
+        "unigram_max_total": -219.25219260630783,
+        "prefix_scores_sha256": "1de5c6043912eafa79551290fbd5f71afaafca6642c6a4963af1c6f27e91917e",
+        "top_prefixes": [
+          {
+            "prefix": [
+              12,
+              16
+            ],
+            "score": -5.4560975933405755
+          },
+          {
+            "prefix": [
+              12,
+              22
+            ],
+            "score": -5.509955190062236
+          },
+          {
+            "prefix": [
+              12,
+              5
+            ],
+            "score": -5.537762089946997
+          }
+        ]
+      },
+      {
+        "a": 26,
+        "b": 19,
+        "c": 10,
+        "rank": 59,
+        "unigram_max_total": -219.25557584362235,
+        "prefix_scores_sha256": "577a70e2d48d758cedfb30ddcb344e37f3a33f0556056ed7185d37cd3f4bd543",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              3
+            ],
+            "score": -5.4760120177423
+          },
+          {
+            "prefix": [
+              1,
+              3
+            ],
+            "score": -5.489301705940016
+          },
+          {
+            "prefix": [
+              19,
+              24
+            ],
+            "score": -5.6612004863276395
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 7,
+        "c": 7,
+        "rank": 60,
+        "unigram_max_total": -219.27301625390749,
+        "prefix_scores_sha256": "204f7caa9d5ed09df4b06a196143a81eca08b375daf953d1a7b678b93203a9fc",
+        "top_prefixes": [
+          {
+            "prefix": [
+              10,
+              5
+            ],
+            "score": -5.708005375640549
+          },
+          {
+            "prefix": [
+              17,
+              9
+            ],
+            "score": -5.751472308733656
+          },
+          {
+            "prefix": [
+              10,
+              1
+            ],
+            "score": -5.792427394660511
+          }
+        ]
+      },
+      {
+        "a": 18,
+        "b": 5,
+        "c": 22,
+        "rank": 61,
+        "unigram_max_total": -219.286493529405,
+        "prefix_scores_sha256": "63ee3c9711b84ba36a39870dcdb00751cad2babd4d08072ccc010b98003834c8",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              5
+            ],
+            "score": -5.418138793632495
+          },
+          {
+            "prefix": [
+              11,
+              24
+            ],
+            "score": -5.736604220387065
+          },
+          {
+            "prefix": [
+              24,
+              15
+            ],
+            "score": -5.738845408657269
+          }
+        ]
+      },
+      {
+        "a": 27,
+        "b": 17,
+        "c": 1,
+        "rank": 62,
+        "unigram_max_total": -219.29581417936694,
+        "prefix_scores_sha256": "4a6fe4cf1c8aacea47346c80b34bda598a19e63b821e638a3396092627f373db",
+        "top_prefixes": [
+          {
+            "prefix": [
+              16,
+              16
+            ],
+            "score": -5.397027194483522
+          },
+          {
+            "prefix": [
+              15,
+              14
+            ],
+            "score": -5.436292773248901
+          },
+          {
+            "prefix": [
+              15,
+              16
+            ],
+            "score": -5.568183490676822
+          }
+        ]
+      },
+      {
+        "a": 14,
+        "b": 11,
+        "c": 19,
+        "rank": 63,
+        "unigram_max_total": -219.30167410465305,
+        "prefix_scores_sha256": "73d5004c7da3fb8d7b8c91005142be31980af314b45a0043874b9aa01c3eee0e",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              27
+            ],
+            "score": -5.585827864043632
+          },
+          {
+            "prefix": [
+              18,
+              1
+            ],
+            "score": -5.591640385208239
+          },
+          {
+            "prefix": [
+              5,
+              24
+            ],
+            "score": -5.77049983299043
+          }
+        ]
+      },
+      {
+        "a": 17,
+        "b": 8,
+        "c": 1,
+        "rank": 64,
+        "unigram_max_total": -219.32112701748775,
+        "prefix_scores_sha256": "2adaf817eeab6d859ed889e6cdcf231638110b47ac00dbdf82a562a05ab69f20",
+        "top_prefixes": [
+          {
+            "prefix": [
+              17,
+              11
+            ],
+            "score": -5.582184740152292
+          },
+          {
+            "prefix": [
+              16,
+              27
+            ],
+            "score": -5.637326922938558
+          },
+          {
+            "prefix": [
+              1,
+              27
+            ],
+            "score": -5.65605267016071
+          }
+        ]
+      },
+      {
+        "a": 15,
+        "b": 19,
+        "c": 16,
+        "rank": 65,
+        "unigram_max_total": -219.32775022781965,
+        "prefix_scores_sha256": "cd52732273ed1d118d0e4158ba65ffbdf6bd526def09a8607f9e00dc994bf433",
+        "top_prefixes": [
+          {
+            "prefix": [
+              17,
+              11
+            ],
+            "score": -5.589513303765506
+          },
+          {
+            "prefix": [
+              17,
+              12
+            ],
+            "score": -5.665678808171843
+          },
+          {
+            "prefix": [
+              18,
+              26
+            ],
+            "score": -5.694536015082096
+          }
+        ]
+      },
+      {
+        "a": 28,
+        "b": 14,
+        "c": 20,
+        "rank": 66,
+        "unigram_max_total": -219.38365665738723,
+        "prefix_scores_sha256": "ea76fd24b45c5b75a7002c5305be3b75da154dbd50fd9893fc9e398c98798b23",
+        "top_prefixes": [
+          {
+            "prefix": [
+              19,
+              16
+            ],
+            "score": -5.3640069026472865
+          },
+          {
+            "prefix": [
+              27,
+              16
+            ],
+            "score": -5.4544717587767035
+          },
+          {
+            "prefix": [
+              28,
+              17
+            ],
+            "score": -5.614307974856487
+          }
+        ]
+      },
+      {
+        "a": 22,
+        "b": 10,
+        "c": 11,
+        "rank": 67,
+        "unigram_max_total": -219.43449914276988,
+        "prefix_scores_sha256": "63b6630cd30aed893a6fdcf39fdda6422ed656430d656163ee6034c01ea8c05b",
+        "top_prefixes": [
+          {
+            "prefix": [
+              28,
+              0
+            ],
+            "score": -5.697244711216863
+          },
+          {
+            "prefix": [
+              1,
+              9
+            ],
+            "score": -5.7699455203640895
+          },
+          {
+            "prefix": [
+              18,
+              9
+            ],
+            "score": -5.7723559639051265
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 26,
+        "c": 5,
+        "rank": 68,
+        "unigram_max_total": -219.46598732890675,
+        "prefix_scores_sha256": "76a93ab939b9171b0d829f979a5f76f108c1085e7ad6f9e58b676421c5b9a579",
+        "top_prefixes": [
+          {
+            "prefix": [
+              15,
+              4
+            ],
+            "score": -5.61747520068377
+          },
+          {
+            "prefix": [
+              26,
+              4
+            ],
+            "score": -5.627577459629622
+          },
+          {
+            "prefix": [
+              24,
+              4
+            ],
+            "score": -5.684050507949494
+          }
+        ]
+      },
+      {
+        "a": 2,
+        "b": 25,
+        "c": 2,
+        "rank": 69,
+        "unigram_max_total": -219.4728150339593,
+        "prefix_scores_sha256": "814cfe5a572f3c87415818fdd753f3d028bb8023283a12a8a56111ece1a2d03a",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              1
+            ],
+            "score": -5.402718351182201
+          },
+          {
+            "prefix": [
+              24,
+              28
+            ],
+            "score": -5.473338290678637
+          },
+          {
+            "prefix": [
+              24,
+              13
+            ],
+            "score": -5.5274990383458045
+          }
+        ]
+      },
+      {
+        "a": 4,
+        "b": 18,
+        "c": 27,
+        "rank": 70,
+        "unigram_max_total": -219.48531185861438,
+        "prefix_scores_sha256": "1909d4cfaf54bf99e8561637f4e4d727408357d603320801d39594783fa246d7",
+        "top_prefixes": [
+          {
+            "prefix": [
+              2,
+              26
+            ],
+            "score": -5.570668666322681
+          },
+          {
+            "prefix": [
+              23,
+              26
+            ],
+            "score": -5.6129884010518865
+          },
+          {
+            "prefix": [
+              10,
+              23
+            ],
+            "score": -5.712900638800253
+          }
+        ]
+      },
+      {
+        "a": 22,
+        "b": 26,
+        "c": 5,
+        "rank": 71,
+        "unigram_max_total": -219.53573369990772,
+        "prefix_scores_sha256": "fd39dcf37231bdc75dd6246d3d9a3d242ff834f7760ef2e9c37655ebf6fa9bdc",
+        "top_prefixes": [
+          {
+            "prefix": [
+              6,
+              15
+            ],
+            "score": -5.4457152692752535
+          },
+          {
+            "prefix": [
+              17,
+              15
+            ],
+            "score": -5.496218431326865
+          },
+          {
+            "prefix": [
+              15,
+              15
+            ],
+            "score": -5.658869064886236
+          }
+        ]
+      },
+      {
+        "a": 24,
+        "b": 13,
+        "c": 6,
+        "rank": 72,
+        "unigram_max_total": -219.55988536996745,
+        "prefix_scores_sha256": "ec16e92ca9fda5f87cc98c50c3a5b63ee19a0aa66351b07b34b9b53d165f42ef",
+        "top_prefixes": [
+          {
+            "prefix": [
+              16,
+              21
+            ],
+            "score": -5.313077703403295
+          },
+          {
+            "prefix": [
+              21,
+              0
+            ],
+            "score": -5.5659914232378815
+          },
+          {
+            "prefix": [
+              16,
+              4
+            ],
+            "score": -5.615515112713048
+          }
+        ]
+      },
+      {
+        "a": 17,
+        "b": 6,
+        "c": 23,
+        "rank": 73,
+        "unigram_max_total": -219.56700359941442,
+        "prefix_scores_sha256": "cc79671d4169088855a76f7d38dc30e0a25a60df414f88cae91b5a20f284aa75",
+        "top_prefixes": [
+          {
+            "prefix": [
+              10,
+              8
+            ],
+            "score": -5.465203374171951
+          },
+          {
+            "prefix": [
+              5,
+              23
+            ],
+            "score": -5.512474102672992
+          },
+          {
+            "prefix": [
+              7,
+              8
+            ],
+            "score": -5.6841180439779375
+          }
+        ]
+      },
+      {
+        "a": 25,
+        "b": 11,
+        "c": 11,
+        "rank": 74,
+        "unigram_max_total": -219.57515946820777,
+        "prefix_scores_sha256": "38f6840798df187bf11919fc5d1f93c9cabcd5410315090186bacdf660457518",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              3
+            ],
+            "score": -5.467872405384568
+          },
+          {
+            "prefix": [
+              26,
+              3
+            ],
+            "score": -5.645866326434184
+          },
+          {
+            "prefix": [
+              10,
+              17
+            ],
+            "score": -5.670199529823497
+          }
+        ]
+      },
+      {
+        "a": 27,
+        "b": 13,
+        "c": 13,
+        "rank": 75,
+        "unigram_max_total": -219.60751084816775,
+        "prefix_scores_sha256": "c447e7a578abbd484d44ed4b6be6d30d95e4e704e696e7f3fe68907d6fb2f474",
+        "top_prefixes": [
+          {
+            "prefix": [
+              17,
+              10
+            ],
+            "score": -5.295274230652148
+          },
+          {
+            "prefix": [
+              17,
+              24
+            ],
+            "score": -5.653132763543554
+          },
+          {
+            "prefix": [
+              17,
+              21
+            ],
+            "score": -5.678606890112171
+          }
+        ]
+      },
+      {
+        "a": 26,
+        "b": 22,
+        "c": 8,
+        "rank": 76,
+        "unigram_max_total": -219.60837231777163,
+        "prefix_scores_sha256": "ba1b1b806efd86e95af51b6b0428642428e34b83273a98201b86679af784d8e4",
+        "top_prefixes": [
+          {
+            "prefix": [
+              8,
+              3
+            ],
+            "score": -5.633329550558902
+          },
+          {
+            "prefix": [
+              4,
+              5
+            ],
+            "score": -5.695926763713507
+          },
+          {
+            "prefix": [
+              2,
+              5
+            ],
+            "score": -5.718015035025695
+          }
+        ]
+      },
+      {
+        "a": 24,
+        "b": 16,
+        "c": 0,
+        "rank": 77,
+        "unigram_max_total": -219.70383265045277,
+        "prefix_scores_sha256": "cf7910950a68949827835eaeb87b84d5e843ca1d6aeb7dc793d101145e3c7c92",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              6
+            ],
+            "score": -5.528658738096535
+          },
+          {
+            "prefix": [
+              18,
+              13
+            ],
+            "score": -5.569108958057494
+          },
+          {
+            "prefix": [
+              18,
+              1
+            ],
+            "score": -5.624090361420967
+          }
+        ]
+      },
+      {
+        "a": 20,
+        "b": 18,
+        "c": 5,
+        "rank": 78,
+        "unigram_max_total": -219.72488000875026,
+        "prefix_scores_sha256": "e0d72fc402e938f0197e831ef1576ba14ef614ffb832395f05bb5a439c1747ec",
+        "top_prefixes": [
+          {
+            "prefix": [
+              8,
+              11
+            ],
+            "score": -5.457177289358196
+          },
+          {
+            "prefix": [
+              1,
+              19
+            ],
+            "score": -5.576644642060067
+          },
+          {
+            "prefix": [
+              8,
+              10
+            ],
+            "score": -5.630899217161998
+          }
+        ]
+      },
+      {
+        "a": 14,
+        "b": 1,
+        "c": 14,
+        "rank": 79,
+        "unigram_max_total": -219.74145516598287,
+        "prefix_scores_sha256": "c6457311fc9d9b204c5e35e08abfb46edb6f54d6ca06ec676a40086a613abafc",
+        "top_prefixes": [
+          {
+            "prefix": [
+              15,
+              23
+            ],
+            "score": -5.21713625955686
+          },
+          {
+            "prefix": [
+              5,
+              8
+            ],
+            "score": -5.345939102737937
+          },
+          {
+            "prefix": [
+              5,
+              5
+            ],
+            "score": -5.605852276995389
+          }
+        ]
+      },
+      {
+        "a": 21,
+        "b": 14,
+        "c": 25,
+        "rank": 80,
+        "unigram_max_total": -219.74460775591038,
+        "prefix_scores_sha256": "efa2628811cfa2503ae6bf6de0ff3b89d2da2bd8371e671967aa54eb20300d25",
+        "top_prefixes": [
+          {
+            "prefix": [
+              3,
+              5
+            ],
+            "score": -5.245964519535273
+          },
+          {
+            "prefix": [
+              18,
+              5
+            ],
+            "score": -5.55766401646899
+          },
+          {
+            "prefix": [
+              3,
+              3
+            ],
+            "score": -5.6973925457192935
+          }
+        ]
+      },
+      {
+        "a": 6,
+        "b": 17,
+        "c": 0,
+        "rank": 81,
+        "unigram_max_total": -219.7781605513053,
+        "prefix_scores_sha256": "19df705162d24cb1c7fb689dc65a3a94adf162eb1265fd742d92835cc0f87915",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              1
+            ],
+            "score": -5.454154033447066
+          },
+          {
+            "prefix": [
+              24,
+              15
+            ],
+            "score": -5.5515495801203345
+          },
+          {
+            "prefix": [
+              24,
+              2
+            ],
+            "score": -5.559275408798632
+          }
+        ]
+      },
+      {
+        "a": 22,
+        "b": 8,
+        "c": 24,
+        "rank": 82,
+        "unigram_max_total": -219.8437730057451,
+        "prefix_scores_sha256": "dc53c4c9e0c3fac1f245f3cc42a6fadd15e81c47e9ece0e71c45a4563b850a9f",
+        "top_prefixes": [
+          {
+            "prefix": [
+              15,
+              10
+            ],
+            "score": -5.538254211823026
+          },
+          {
+            "prefix": [
+              26,
+              11
+            ],
+            "score": -5.571645349366819
+          },
+          {
+            "prefix": [
+              15,
+              11
+            ],
+            "score": -5.57860860536478
+          }
+        ]
+      },
+      {
+        "a": 8,
+        "b": 23,
+        "c": 23,
+        "rank": 83,
+        "unigram_max_total": -219.85685045369965,
+        "prefix_scores_sha256": "19a06175b14f79b99a0b06878b3410f65aa5307c86bc57cb1bf3329a02284f78",
+        "top_prefixes": [
+          {
+            "prefix": [
+              10,
+              6
+            ],
+            "score": -5.686316451458314
+          },
+          {
+            "prefix": [
+              13,
+              15
+            ],
+            "score": -5.7213184600777005
+          },
+          {
+            "prefix": [
+              0,
+              8
+            ],
+            "score": -5.72317922334123
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 15,
+        "c": 24,
+        "rank": 84,
+        "unigram_max_total": -219.86871621080678,
+        "prefix_scores_sha256": "9da4c9a312d275c1926a1de4616eccc10bc85a400e0153711e32e5c735ea3045",
+        "top_prefixes": [
+          {
+            "prefix": [
+              12,
+              15
+            ],
+            "score": -5.655087018699092
+          },
+          {
+            "prefix": [
+              1,
+              15
+            ],
+            "score": -5.676478359482333
+          },
+          {
+            "prefix": [
+              11,
+              10
+            ],
+            "score": -5.858808564007617
+          }
+        ]
+      },
+      {
+        "a": 27,
+        "b": 24,
+        "c": 26,
+        "rank": 85,
+        "unigram_max_total": -219.932503038176,
+        "prefix_scores_sha256": "f5dfa0409e04dccac5c5b5ce9b008049a1942be5b7a5e68b55b5a7a6adf0aa14",
+        "top_prefixes": [
+          {
+            "prefix": [
+              16,
+              26
+            ],
+            "score": -5.33690113432028
+          },
+          {
+            "prefix": [
+              16,
+              18
+            ],
+            "score": -5.50536059690563
+          },
+          {
+            "prefix": [
+              16,
+              24
+            ],
+            "score": -5.812158781810815
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "b": 7,
+        "c": 4,
+        "rank": 86,
+        "unigram_max_total": -220.02848993051126,
+        "prefix_scores_sha256": "d2128a27474858a167f69c615080fcb0d8245b11e493ab56ae65da393805f614",
+        "top_prefixes": [
+          {
+            "prefix": [
+              5,
+              17
+            ],
+            "score": -5.647152446705983
+          },
+          {
+            "prefix": [
+              9,
+              17
+            ],
+            "score": -5.669981020535702
+          },
+          {
+            "prefix": [
+              23,
+              17
+            ],
+            "score": -5.782252112920875
+          }
+        ]
+      },
+      {
+        "a": 14,
+        "b": 18,
+        "c": 3,
+        "rank": 87,
+        "unigram_max_total": -220.0425633675065,
+        "prefix_scores_sha256": "0ffe333baad936aa0901ceca7b8eb4060aef31d7592ac29d2db6e3333a8b3553",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              2
+            ],
+            "score": -5.563200265041882
+          },
+          {
+            "prefix": [
+              14,
+              17
+            ],
+            "score": -5.591510241218423
+          },
+          {
+            "prefix": [
+              23,
+              17
+            ],
+            "score": -5.757661777179096
+          }
+        ]
+      },
+      {
+        "a": 28,
+        "b": 9,
+        "c": 27,
+        "rank": 88,
+        "unigram_max_total": -220.1018713223023,
+        "prefix_scores_sha256": "025675c087aa7f6dada27b51cde9501d09992b40fb805662509aa87f4f7af881",
+        "top_prefixes": [
+          {
+            "prefix": [
+              20,
+              11
+            ],
+            "score": -5.373134868472708
+          },
+          {
+            "prefix": [
+              20,
+              0
+            ],
+            "score": -5.390090852178365
+          },
+          {
+            "prefix": [
+              5,
+              0
+            ],
+            "score": -5.443939194588199
+          }
+        ]
+      },
+      {
+        "a": 21,
+        "b": 19,
+        "c": 3,
+        "rank": 89,
+        "unigram_max_total": -220.14058106821244,
+        "prefix_scores_sha256": "f7981a9dcb0c71379dca0169e62433332c175aa7fdf6e596b8b1d475ae674cc1",
+        "top_prefixes": [
+          {
+            "prefix": [
+              4,
+              14
+            ],
+            "score": -5.601705897303175
+          },
+          {
+            "prefix": [
+              25,
+              16
+            ],
+            "score": -5.7818211083734425
+          },
+          {
+            "prefix": [
+              25,
+              14
+            ],
+            "score": -5.7883431699483205
+          }
+        ]
+      },
+      {
+        "a": 7,
+        "b": 21,
+        "c": 27,
+        "rank": 90,
+        "unigram_max_total": -220.14194703855827,
+        "prefix_scores_sha256": "781836a2b22cff7b1e8adaaca532456ea5f7caeb5ae50270c59fd1ebc14ac402",
+        "top_prefixes": [
+          {
+            "prefix": [
+              15,
+              15
+            ],
+            "score": -5.371652790891167
+          },
+          {
+            "prefix": [
+              10,
+              15
+            ],
+            "score": -5.45888782580663
+          },
+          {
+            "prefix": [
+              10,
+              2
+            ],
+            "score": -5.485053894855978
+          }
+        ]
+      },
+      {
+        "a": 14,
+        "b": 23,
+        "c": 17,
+        "rank": 91,
+        "unigram_max_total": -220.21898830094347,
+        "prefix_scores_sha256": "ebfbe6dc6b6e6c4f8d4e96b2d441c757396e30008b8b260e8a02b4a2771779eb",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              0
+            ],
+            "score": -5.204663075552202
+          },
+          {
+            "prefix": [
+              5,
+              0
+            ],
+            "score": -5.376418584015117
+          },
+          {
+            "prefix": [
+              26,
+              6
+            ],
+            "score": -5.676160486298752
+          }
+        ]
+      },
+      {
+        "a": 8,
+        "b": 9,
+        "c": 16,
+        "rank": 92,
+        "unigram_max_total": -220.22678996149733,
+        "prefix_scores_sha256": "40823e1a8d5f41e1daf70a4e89936db58e94d05e04fa527992faed8bc6f4cdc8",
+        "top_prefixes": [
+          {
+            "prefix": [
+              20,
+              5
+            ],
+            "score": -5.537767345171898
+          },
+          {
+            "prefix": [
+              8,
+              1
+            ],
+            "score": -5.696706578962164
+          },
+          {
+            "prefix": [
+              8,
+              10
+            ],
+            "score": -5.748612190651138
+          }
+        ]
+      },
+      {
+        "a": 8,
+        "b": 8,
+        "c": 15,
+        "rank": 93,
+        "unigram_max_total": -220.23238257643806,
+        "prefix_scores_sha256": "f64779259b6f2915e005540350cca6661f6e10464d834f33740d1f3930f33c66",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              10
+            ],
+            "score": -5.533122475016431
+          },
+          {
+            "prefix": [
+              24,
+              18
+            ],
+            "score": -5.5803167494583725
+          },
+          {
+            "prefix": [
+              24,
+              15
+            ],
+            "score": -5.639780178149956
+          }
+        ]
+      },
+      {
+        "a": 12,
+        "b": 17,
+        "c": 24,
+        "rank": 94,
+        "unigram_max_total": -220.26162945670418,
+        "prefix_scores_sha256": "ac19f6ce4a85edbf04141074f783e1f01bdb24ee9fc6a878a8acd8cce06b3c34",
+        "top_prefixes": [
+          {
+            "prefix": [
+              1,
+              8
+            ],
+            "score": -5.45367798958931
+          },
+          {
+            "prefix": [
+              10,
+              3
+            ],
+            "score": -5.470237250269335
+          },
+          {
+            "prefix": [
+              3,
+              16
+            ],
+            "score": -5.613048474457903
+          }
+        ]
+      },
+      {
+        "a": 24,
+        "b": 19,
+        "c": 16,
+        "rank": 95,
+        "unigram_max_total": -220.28267608935886,
+        "prefix_scores_sha256": "b008ebdc009b8f4be6196b7c288b243537fcdc55ff8d05a196e8e4fdeb6dd85e",
+        "top_prefixes": [
+          {
+            "prefix": [
+              20,
+              25
+            ],
+            "score": -5.501155796113073
+          },
+          {
+            "prefix": [
+              7,
+              25
+            ],
+            "score": -5.524300338900282
+          },
+          {
+            "prefix": [
+              20,
+              2
+            ],
+            "score": -5.71636577590228
+          }
+        ]
+      },
+      {
+        "a": 12,
+        "b": 8,
+        "c": 25,
+        "rank": 96,
+        "unigram_max_total": -220.2945461699381,
+        "prefix_scores_sha256": "564218714e17cdf96302658f1a35263bd199d8a7bb35d41b8f069b5de34f757f",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              18
+            ],
+            "score": -5.484804341739106
+          },
+          {
+            "prefix": [
+              11,
+              18
+            ],
+            "score": -5.678429435973849
+          },
+          {
+            "prefix": [
+              9,
+              25
+            ],
+            "score": -5.702305125006829
+          }
+        ]
+      },
+      {
+        "a": 2,
+        "b": 12,
+        "c": 17,
+        "rank": 97,
+        "unigram_max_total": -220.2974780220191,
+        "prefix_scores_sha256": "6ccf1a713f80046c504dd54f028eaa13a91364e72474c5f337385f21e8696be2",
+        "top_prefixes": [
+          {
+            "prefix": [
+              26,
+              7
+            ],
+            "score": -5.53157997021077
+          },
+          {
+            "prefix": [
+              26,
+              20
+            ],
+            "score": -5.635799661135501
+          },
+          {
+            "prefix": [
+              26,
+              22
+            ],
+            "score": -5.63811302697428
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 3,
+        "c": 4,
+        "rank": 98,
+        "unigram_max_total": -220.32122029713145,
+        "prefix_scores_sha256": "380e5c7f0ee400e10c94129705a4e3a65aa42eb6c5b72777aeb39a883267e582",
+        "top_prefixes": [
+          {
+            "prefix": [
+              5,
+              3
+            ],
+            "score": -5.37818408003534
+          },
+          {
+            "prefix": [
+              5,
+              6
+            ],
+            "score": -5.491670231469045
+          },
+          {
+            "prefix": [
+              5,
+              18
+            ],
+            "score": -5.6109804959833305
+          }
+        ]
+      },
+      {
+        "a": 4,
+        "b": 6,
+        "c": 27,
+        "rank": 99,
+        "unigram_max_total": -220.3565720299406,
+        "prefix_scores_sha256": "2c295a4b244ce3372a455f3827ab0509747e88a35f056f4791e9cb78f913e14e",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              26
+            ],
+            "score": -5.395721087837999
+          },
+          {
+            "prefix": [
+              20,
+              26
+            ],
+            "score": -5.569943131242641
+          },
+          {
+            "prefix": [
+              0,
+              12
+            ],
+            "score": -5.61248157729662
+          }
+        ]
+      },
+      {
+        "a": 1,
+        "b": 25,
+        "c": 17,
+        "rank": 100,
+        "unigram_max_total": -220.3596505328327,
+        "prefix_scores_sha256": "9e05c5af60eb958fce4f6816f483fe83fbb1551a90d3e6a72b95161ce069322f",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              3
+            ],
+            "score": -5.515090961621725
+          },
+          {
+            "prefix": [
+              9,
+              5
+            ],
+            "score": -5.542861877785545
+          },
+          {
+            "prefix": [
+              27,
+              5
+            ],
+            "score": -5.5517691924651
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "b": 18,
+        "c": 20,
+        "rank": 101,
+        "unigram_max_total": -220.36800378640447,
+        "prefix_scores_sha256": "38a7241cf16d32ab9abdb40a5296536aee79c61feed3137bdb71dedd5fc32a4a",
+        "top_prefixes": [
+          {
+            "prefix": [
+              11,
+              28
+            ],
+            "score": -5.6427229219770965
+          },
+          {
+            "prefix": [
+              20,
+              24
+            ],
+            "score": -5.6431396391698465
+          },
+          {
+            "prefix": [
+              20,
+              8
+            ],
+            "score": -5.64960132886806
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 27,
+        "c": 19,
+        "rank": 102,
+        "unigram_max_total": -220.395791518914,
+        "prefix_scores_sha256": "3ed25c6655058773ddcfdf5155565eba96307c208f477f6a2fa71a7eee9b4520",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              17
+            ],
+            "score": -5.6173710732241515
+          },
+          {
+            "prefix": [
+              24,
+              19
+            ],
+            "score": -5.642759553318537
+          },
+          {
+            "prefix": [
+              20,
+              3
+            ],
+            "score": -5.763741653996055
+          }
+        ]
+      },
+      {
+        "a": 15,
+        "b": 23,
+        "c": 6,
+        "rank": 103,
+        "unigram_max_total": -220.3991223228281,
+        "prefix_scores_sha256": "0e61f57eb3378c7a52bb5c1e7e2cc7fe3300333c7d345b7372e6c30e2d6e0b7d",
+        "top_prefixes": [
+          {
+            "prefix": [
+              16,
+              7
+            ],
+            "score": -5.615748879194763
+          },
+          {
+            "prefix": [
+              8,
+              7
+            ],
+            "score": -5.662145900198627
+          },
+          {
+            "prefix": [
+              16,
+              24
+            ],
+            "score": -5.686598894987302
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 8,
+        "c": 14,
+        "rank": 104,
+        "unigram_max_total": -220.44450752015953,
+        "prefix_scores_sha256": "71127365d71fc5695b7dc37ce7e73bb641e568575c8301f81491ac201a67e7c5",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              5
+            ],
+            "score": -5.6601441468133675
+          },
+          {
+            "prefix": [
+              1,
+              7
+            ],
+            "score": -5.731709095595015
+          },
+          {
+            "prefix": [
+              1,
+              16
+            ],
+            "score": -5.789236538087237
+          }
+        ]
+      },
+      {
+        "a": 14,
+        "b": 1,
+        "c": 7,
+        "rank": 105,
+        "unigram_max_total": -220.45039194585758,
+        "prefix_scores_sha256": "b93fb9a85d21cc324fd97dbb55cbbe4e0729118a1d8fd2e792fceff5d8d136d0",
+        "top_prefixes": [
+          {
+            "prefix": [
+              24,
+              2
+            ],
+            "score": -5.6850851558873225
+          },
+          {
+            "prefix": [
+              1,
+              2
+            ],
+            "score": -5.735330924680672
+          },
+          {
+            "prefix": [
+              24,
+              18
+            ],
+            "score": -5.77005530426804
+          }
+        ]
+      },
+      {
+        "a": 13,
+        "b": 24,
+        "c": 10,
+        "rank": 106,
+        "unigram_max_total": -220.4734088981851,
+        "prefix_scores_sha256": "9e6683cda929da4e9a084f57b4e17420a97f21a28ac126516c85f8ffbc1f60f0",
+        "top_prefixes": [
+          {
+            "prefix": [
+              5,
+              5
+            ],
+            "score": -5.553829339174641
+          },
+          {
+            "prefix": [
+              5,
+              18
+            ],
+            "score": -5.675769613244936
+          },
+          {
+            "prefix": [
+              5,
+              20
+            ],
+            "score": -5.805901894634732
+          }
+        ]
+      },
+      {
+        "a": 20,
+        "b": 3,
+        "c": 22,
+        "rank": 107,
+        "unigram_max_total": -220.48180370980805,
+        "prefix_scores_sha256": "51cc55846fe75cb80ea2b4e450e5bb557b140291d33044e8f13d96781b32eaa7",
+        "top_prefixes": [
+          {
+            "prefix": [
+              5,
+              1
+            ],
+            "score": -5.419994974148646
+          },
+          {
+            "prefix": [
+              5,
+              8
+            ],
+            "score": -5.605148326691997
+          },
+          {
+            "prefix": [
+              23,
+              5
+            ],
+            "score": -5.612125464390339
+          }
+        ]
+      },
+      {
+        "a": 9,
+        "b": 20,
+        "c": 24,
+        "rank": 108,
+        "unigram_max_total": -220.4852808341697,
+        "prefix_scores_sha256": "b8866ba023f0ad7d1cbd30e5a2129111f8b98b14662a3e1d852b297edf0116a3",
+        "top_prefixes": [
+          {
+            "prefix": [
+              19,
+              20
+            ],
+            "score": -5.389956388629187
+          },
+          {
+            "prefix": [
+              17,
+              3
+            ],
+            "score": -5.6073261427515595
+          },
+          {
+            "prefix": [
+              17,
+              7
+            ],
+            "score": -5.69195957241805
+          }
+        ]
+      },
+      {
+        "a": 21,
+        "b": 12,
+        "c": 7,
+        "rank": 109,
+        "unigram_max_total": -220.49847381666265,
+        "prefix_scores_sha256": "f25d6afda5ee573c3ad26e1027bd407e9b30d3875ebce5eeb0c86e01312a1d55",
+        "top_prefixes": [
+          {
+            "prefix": [
+              5,
+              21
+            ],
+            "score": -5.23481931715445
+          },
+          {
+            "prefix": [
+              5,
+              16
+            ],
+            "score": -5.378435994502588
+          },
+          {
+            "prefix": [
+              5,
+              5
+            ],
+            "score": -5.380167937166588
+          }
+        ]
+      },
+      {
+        "a": 8,
+        "b": 20,
+        "c": 18,
+        "rank": 110,
+        "unigram_max_total": -220.5178913043663,
+        "prefix_scores_sha256": "de8d35cc42b22cc6c84e656bc9dd80c4fafc90a32afa8e666de316777502c86f",
+        "top_prefixes": [
+          {
+            "prefix": [
+              23,
+              26
+            ],
+            "score": -5.3285638645869815
+          },
+          {
+            "prefix": [
+              1,
+              26
+            ],
+            "score": -5.6909285320958345
+          },
+          {
+            "prefix": [
+              10,
+              13
+            ],
+            "score": -5.696241395938036
+          }
+        ]
+      },
+      {
+        "a": 23,
+        "b": 6,
+        "c": 13,
+        "rank": 111,
+        "unigram_max_total": -220.53919426621724,
+        "prefix_scores_sha256": "c5027c3b6f9243cdd9a988216bff81643dbc5c8d7429185079b880ea372656c7",
+        "top_prefixes": [
+          {
+            "prefix": [
+              8,
+              2
+            ],
+            "score": -5.372376542774273
+          },
+          {
+            "prefix": [
+              10,
+              2
+            ],
+            "score": -5.576884039166314
+          },
+          {
+            "prefix": [
+              8,
+              0
+            ],
+            "score": -5.689122299111234
+          }
+        ]
+      },
+      {
+        "a": 20,
+        "b": 16,
+        "c": 6,
+        "rank": 112,
+        "unigram_max_total": -220.5432013690484,
+        "prefix_scores_sha256": "543fd460c3700b885c09c84f45e2ef47ee8479b66cc6d363cf3885c33ece17d0",
+        "top_prefixes": [
+          {
+            "prefix": [
+              3,
+              26
+            ],
+            "score": -5.4530711726263545
+          },
+          {
+            "prefix": [
+              3,
+              16
+            ],
+            "score": -5.5506852757747485
+          },
+          {
+            "prefix": [
+              3,
+              22
+            ],
+            "score": -5.57538693715131
+          }
+        ]
+      },
+      {
+        "a": 6,
+        "b": 14,
+        "c": 12,
+        "rank": 113,
+        "unigram_max_total": -220.594941726409,
+        "prefix_scores_sha256": "6acfea78f7fbde8e0df74ff6c3f08cb2f21c1841111330e1535ae04a68d18639",
+        "top_prefixes": [
+          {
+            "prefix": [
+              14,
+              4
+            ],
+            "score": -5.415146898228059
+          },
+          {
+            "prefix": [
+              23,
+              4
+            ],
+            "score": -5.578697186326063
+          },
+          {
+            "prefix": [
+              14,
+              0
+            ],
+            "score": -5.705032183608657
+          }
+        ]
+      },
+      {
+        "a": 12,
+        "b": 10,
+        "c": 22,
+        "rank": 114,
+        "unigram_max_total": -220.61549234680842,
+        "prefix_scores_sha256": "e0bdfbdd745b9159d48c0ca8c5718e97d294f095a31f61acf6e4e28442cd3a33",
+        "top_prefixes": [
+          {
+            "prefix": [
+              23,
+              20
+            ],
+            "score": -5.4991177472052195
+          },
+          {
+            "prefix": [
+              24,
+              0
+            ],
+            "score": -5.561004543441584
+          },
+          {
+            "prefix": [
+              14,
+              9
+            ],
+            "score": -5.66811382971623
+          }
+        ]
+      },
+      {
+        "a": 23,
+        "b": 13,
+        "c": 8,
+        "rank": 115,
+        "unigram_max_total": -220.62708565348015,
+        "prefix_scores_sha256": "8a0e82608bc098c209bd59b8aa93000a3545bfa0cc6fa52ce28f56e2ac8f6a8b",
+        "top_prefixes": [
+          {
+            "prefix": [
+              21,
+              11
+            ],
+            "score": -5.416677784056679
+          },
+          {
+            "prefix": [
+              21,
+              1
+            ],
+            "score": -5.427959848513495
+          },
+          {
+            "prefix": [
+              15,
+              15
+            ],
+            "score": -5.645879836884008
+          }
+        ]
+      },
+      {
+        "a": 19,
+        "b": 18,
+        "c": 21,
+        "rank": 116,
+        "unigram_max_total": -220.69042189796542,
+        "prefix_scores_sha256": "839afc1adf4e2c4478cce103d628354addfed826bc1422a4087eeff9d708fc61",
+        "top_prefixes": [
+          {
+            "prefix": [
+              27,
+              4
+            ],
+            "score": -5.339335695125314
+          },
+          {
+            "prefix": [
+              8,
+              4
+            ],
+            "score": -5.547708244240461
+          },
+          {
+            "prefix": [
+              16,
+              4
+            ],
+            "score": -5.572812614315968
+          }
+        ]
+      },
+      {
+        "a": 2,
+        "b": 17,
+        "c": 8,
+        "rank": 117,
+        "unigram_max_total": -220.6929665219531,
+        "prefix_scores_sha256": "ee34866cff3c18ed027120c4b3c2e28d0606d6a9ab10078b6ce3ab92df999eb8",
+        "top_prefixes": [
+          {
+            "prefix": [
+              26,
+              9
+            ],
+            "score": -5.6506257922403185
+          },
+          {
+            "prefix": [
+              26,
+              7
+            ],
+            "score": -5.6670780354858294
+          },
+          {
+            "prefix": [
+              20,
+              20
+            ],
+            "score": -5.757928131560562
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 4,
+        "c": 6,
+        "rank": 118,
+        "unigram_max_total": -220.70578252397746,
+        "prefix_scores_sha256": "edbeb2cea31d4b6bf2f351e98ddfe57054208689c0830f3bb0b1c810bbf3dbcb",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              0
+            ],
+            "score": -5.509871109067644
+          },
+          {
+            "prefix": [
+              24,
+              11
+            ],
+            "score": -5.542527789043291
+          },
+          {
+            "prefix": [
+              18,
+              4
+            ],
+            "score": -5.698941612463498
+          }
+        ]
+      },
+      {
+        "a": 1,
+        "b": 10,
+        "c": 26,
+        "rank": 119,
+        "unigram_max_total": -220.71721395461094,
+        "prefix_scores_sha256": "b26c9b2259c52e5c46f1ffe4b64effea08b81fab2480e10ebb642473b5e8ba6b",
+        "top_prefixes": [
+          {
+            "prefix": [
+              4,
+              12
+            ],
+            "score": -5.3601860806053425
+          },
+          {
+            "prefix": [
+              28,
+              9
+            ],
+            "score": -5.6523300789286655
+          },
+          {
+            "prefix": [
+              16,
+              9
+            ],
+            "score": -5.751256227044641
+          }
+        ]
+      },
+      {
+        "a": 10,
+        "b": 18,
+        "c": 25,
+        "rank": 120,
+        "unigram_max_total": -220.73357537325438,
+        "prefix_scores_sha256": "0bd365fb69e3f4085fa35fce2a457e12d07276d5a08c706e9a6417119170611a",
+        "top_prefixes": [
+          {
+            "prefix": [
+              4,
+              16
+            ],
+            "score": -5.406140808938049
+          },
+          {
+            "prefix": [
+              1,
+              16
+            ],
+            "score": -5.674515142665186
+          },
+          {
+            "prefix": [
+              2,
+              6
+            ],
+            "score": -5.836033563958496
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 1,
+        "c": 9,
+        "rank": 121,
+        "unigram_max_total": -220.74076054190397,
+        "prefix_scores_sha256": "ff9e45b5054efa969461ee6c48288a978150b8c8123ce579f5b6cdfa693a8f48",
+        "top_prefixes": [
+          {
+            "prefix": [
+              14,
+              5
+            ],
+            "score": -5.487346204832958
+          },
+          {
+            "prefix": [
+              8,
+              5
+            ],
+            "score": -5.6406444578817245
+          },
+          {
+            "prefix": [
+              5,
+              5
+            ],
+            "score": -5.661459703577384
+          }
+        ]
+      },
+      {
+        "a": 1,
+        "b": 5,
+        "c": 9,
+        "rank": 122,
+        "unigram_max_total": -220.74091720672138,
+        "prefix_scores_sha256": "35de9d707c8f0a31876764d315c3eb7e195627fd3be453725889a44d12897769",
+        "top_prefixes": [
+          {
+            "prefix": [
+              4,
+              15
+            ],
+            "score": -5.6139750870014655
+          },
+          {
+            "prefix": [
+              4,
+              1
+            ],
+            "score": -5.727612187651048
+          },
+          {
+            "prefix": [
+              21,
+              1
+            ],
+            "score": -5.805072055494679
+          }
+        ]
+      },
+      {
+        "a": 26,
+        "b": 8,
+        "c": 2,
+        "rank": 123,
+        "unigram_max_total": -220.75096447745298,
+        "prefix_scores_sha256": "d8eb48010f960dbecd465e17b3859910706ef3805926451318605eb25fd583e5",
+        "top_prefixes": [
+          {
+            "prefix": [
+              3,
+              7
+            ],
+            "score": -5.296671255792037
+          },
+          {
+            "prefix": [
+              14,
+              7
+            ],
+            "score": -5.318599197492018
+          },
+          {
+            "prefix": [
+              5,
+              7
+            ],
+            "score": -5.474718557155294
+          }
+        ]
+      },
+      {
+        "a": 8,
+        "b": 17,
+        "c": 8,
+        "rank": 124,
+        "unigram_max_total": -220.76084629508517,
+        "prefix_scores_sha256": "b4efb04d43a58f10eb0ce2d5db71c752ac05f37c87a7fbdc54477b3d48062255",
+        "top_prefixes": [
+          {
+            "prefix": [
+              9,
+              9
+            ],
+            "score": -5.163400502835674
+          },
+          {
+            "prefix": [
+              9,
+              26
+            ],
+            "score": -5.435027825727351
+          },
+          {
+            "prefix": [
+              8,
+              23
+            ],
+            "score": -5.597201371055732
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "b": 2,
+        "c": 9,
+        "rank": 125,
+        "unigram_max_total": -220.79791394350286,
+        "prefix_scores_sha256": "568e1f6deba2841b5621a6ec58e35b53d5a82b69172b905e5a383dc32959d672",
+        "top_prefixes": [
+          {
+            "prefix": [
+              18,
+              20
+            ],
+            "score": -5.2488684145619295
+          },
+          {
+            "prefix": [
+              18,
+              23
+            ],
+            "score": -5.3725396585053184
+          },
+          {
+            "prefix": [
+              18,
+              27
+            ],
+            "score": -5.420625266882175
+          }
+        ]
+      },
+      {
+        "a": 13,
+        "b": 13,
+        "c": 27,
+        "rank": 126,
+        "unigram_max_total": -220.8192147482762,
+        "prefix_scores_sha256": "ca41878fb64b4d4cf6cf367fd1d483585a7d2c470271a7add166887c4bd78666",
+        "top_prefixes": [
+          {
+            "prefix": [
+              0,
+              20
+            ],
+            "score": -5.581277167627407
+          },
+          {
+            "prefix": [
+              9,
+              23
+            ],
+            "score": -5.734671052908785
+          },
+          {
+            "prefix": [
+              11,
+              28
+            ],
+            "score": -5.76688258710943
+          }
+        ]
+      },
+      {
+        "a": 11,
+        "b": 7,
+        "c": 8,
+        "rank": 127,
+        "unigram_max_total": -220.83878428950945,
+        "prefix_scores_sha256": "4c11fb8bea171788aa47096883229095c1ed9397ab1e29aff1b312c02d3dfe81",
+        "top_prefixes": [
+          {
+            "prefix": [
+              23,
+              3
+            ],
+            "score": -5.484682942992931
+          },
+          {
+            "prefix": [
+              9,
+              3
+            ],
+            "score": -5.79490680667877
+          },
+          {
+            "prefix": [
+              19,
+              3
+            ],
+            "score": -5.813158492174502
+          }
+        ]
+      },
+      {
+        "a": 18,
+        "b": 7,
+        "c": 20,
+        "rank": 128,
+        "unigram_max_total": -220.8439976303947,
+        "prefix_scores_sha256": "d64423556b878b49009008ad0f12208ea33109d05657487b473b5e328dc7ed7f",
+        "top_prefixes": [
+          {
+            "prefix": [
+              0,
+              11
+            ],
+            "score": -5.393337557911652
+          },
+          {
+            "prefix": [
+              0,
+              5
+            ],
+            "score": -5.531150515117119
+          },
+          {
+            "prefix": [
+              0,
+              28
+            ],
+            "score": -5.775859602322978
+          }
+        ]
+      }
+    ],
+    "top": [
+      {
+        "score": -4.9606608445251235,
+        "plaintext_runes": "ᛞᚾᛖᛉᛠᛁᚾᛞᛋᚷᛖᚦᚳᛠᚱᛞᚻᚪᚻᛖᛈᛖᛖᚹᛗᛖᚩᚠᛖᚢᚷᚹᚹᚳᛒᚢᛚᛠᛈᛖᛞᛝᛚᛗᚩᛋᛗᚣᛗᛠᚠᚩᚾᛠᚦᛚᛞᛝᚢᛏᛏᚪᚦᛗᛋᚷ",
+        "transliteration": "DNEXEAINDSGETHCEARDHAHEPEEWMEOFEUGWWCBULEAPEDNGLMOSMYMEAFONEATHLDNGUTTATHMSG",
+        "recipe": {
+          "key_indices": [
+            18,
+            24
+          ],
+          "cipher_sign": 21,
+          "feedback_sign": 9,
+          "constant": 19,
+          "skip_positions": [],
+          "skip_policy": "none"
+        }
+      },
+      {
+        "score": -5.023312256828519,
+        "plaintext_runes": "ᚣᚷᛖᚠᚩᚳᚷᛖᚪᛗᛈᛁᚳᚹᚱᚾᛋᚱᚣᚪᚷᚩᛋᚢᛋᚾᚪᛋᚪᛚᚳᚩᚳᚾᚠᚳᚩᛞᚩᚹᛋᚱᚩᚠᚪᚦᛗᛝᛒᛗᚩᚾᛟᛇᚱᛝᚪᛏᛞᚦᛚᛖᚹᛠᛁᚹ",
+        "transliteration": "YGEFOCGEAMPICWRNSRYAGOSUSNASALCOCNFCODOWSROFATHMNGBMONOEEORNGATDTHLEWEAIW",
+        "recipe": {
+          "key_indices": [
+            2,
+            22
+          ],
+          "cipher_sign": 11,
+          "feedback_sign": 11,
+          "constant": 26,
+          "skip_positions": [],
+          "skip_policy": "none"
+        }
+      },
+      {
+        "score": -5.09232093530714,
+        "plaintext_runes": "ᚾᛝᛗᚷᛚᚷᚾᚩᚦᚻᚢᛚᚢᛏᚢᚾᛋᛝᚠᚢᛖᛋᛏᛖᛠᚳᚪᚱᚪᚱᚱᚩᛒᛒᛖᚾᚪᛄᛁᛏᛖᛗᚷᚻᚳᚪᚹᛁᚠᚠᚠᚩᚦᛡᚱᛏᛋᛈᚢᚠᛒᛒᛋᛏᚢᛄ",
+        "transliteration": "NNGMGLGNOTHHULUTUNSNGFUESTEEACARARROBBENAJITEMGHCAWIFFFOTHIARTSPUFBBSTUJ",
+        "recipe": {
+          "key_indices": [
+            11,
+            20
+          ],
+          "cipher_sign": 7,
+          "feedback_sign": 6,
+          "constant": 15,
+          "skip_positions": [],
+          "skip_policy": "none"
+        }
+      }
+    ],
+    "prefixes_per_retained_family": 841,
+    "total_prefix_evaluations": 107648
+  },
+  "wall_seconds": 1.1427372000180185,
+  "new_decryptions": []
+}

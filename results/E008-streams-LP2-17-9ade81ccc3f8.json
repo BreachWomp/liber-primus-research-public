@@ -1,0 +1,147 @@
+{
+  "experiment": "E008-selective-streams",
+  "status": "completed",
+  "parameters": {
+    "mode": "streams",
+    "page_range": [
+      17,
+      17
+    ],
+    "max_offset": 255,
+    "signs": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "model": {
+      "order": 3,
+      "alpha": 0.5,
+      "strength": 5
+    },
+    "all_initial_key_phases": true,
+    "F_masks": "all subsets, optimized exactly by dynamic programming",
+    "training_ids": [
+      "LP1-01_atbash",
+      "LP1-03_04_divinity",
+      "LP1-05_direct",
+      "LP1-10_13_direct",
+      "LP1-14_15_circumference",
+      "LP1-16_direct"
+    ],
+    "timeout_seconds": 180.0
+  },
+  "key_catalog": null,
+  "stream_families": [
+    "prime_totient",
+    "prime",
+    "integer_totient"
+  ],
+  "input_sha256": "4bc811cd72f4466b1c67a84feb597b1e10a0cb7a480551cd7c14aecea813be67",
+  "fixtures_sha256": "00a9f12cd7b09c5a9dceee303b24afb23752dfdca906eff7dfe367fc479c73c3",
+  "pages": [
+    {
+      "page": "LP2-17",
+      "ciphertext_runes": "ᛚᚦᛈᛞᚦᛇᛒᛡᚪᛒᚪᚾᛗᚳᚾᛖᛡᚹᛝᛏᚱᛝᚫᛚᛟᛁᛇᚣᛝᛡᚾᛏᚱᛁᛋᚪᛖᛇᚢᛝᛞᛄᚠᚱᛠᛗᛠᚪᚫᛈᛏᚠᛖᛏᚷᚾᚠᛁᚠᚱᚻᚱᛇᛒᚻᛈᛏᛇᚱᛝᛡᛒᚹᛚᛏᛗᛉᚦᚾᛄᚳᚫᚷᛈᛋᛖᚩᚢᛝᚩᛏᛈᛁᚣᚾᚪᛏᚹᚠᛗᚾᛟᚾᚳᛒᛄᛉᛡᛟᚪᛁᚫᛝᛒᛉᛏᛄᛁᛋᛠᚳᛖᚱᚦᚣᚩᚣᛈᚫᚷᛡᛄᛁᚩᚱᚦᛠᛇᚦᚩᛉᚾᚱᚾᚫᛁᛉᛁᛝᚣᚫᛡᚫᛗᚹᛖᛇᚷᚻᛖᛗᚷᚢᛞᚹᛄᚻᛉᚱᚢᛄᚢᚾᛈᛋᚣᛄᚫᛈᚳᚣᚳᛒᛡᚫᛟᚪᚠᛏᚷᚩᛇᛟᛁᚱᛗᛖᛉᛟᛗᛇᚫᛟᚦᚱᛞᛁᚢᚦᚻᛗᛡᚾᛁᚦᚻᛚᛏᚳᚪᚦᚠᚪᚫᚣᚻᛠᚦᚠᛋᚠᛝᚷᚱᛈᛏᛄᛉᛟᚷᛚᚻᚩᚪᚦᛏᚳᛁᚠᚣᚢᛁᚹᛟᚪᚣᛁᛠᛄᚪᛟᛝᚦᛟᚠᚦᚾᛇᚷᛠᛚᛒᚠ",
+      "rune_count": 273,
+      "f_count": 12,
+      "evaluated_key_sign_tasks": 12,
+      "dp_transitions": 966076,
+      "top": [
+        {
+          "score": -4.652506327615783,
+          "plaintext_runes": "ᚩᚢᛝᚪᛖᚩᚱᛟᚹᚪᛈᚱᚷᛏᛝᚦᛖᚦᛉᚱᛚᚳᛏᛞᛒᚱᚢᚻᛏᚳᚻᛏᛚᛇᛏᚦᛝᚦᛝᚠᚣᚣᚠᛠᛄᛉᛈᚦᚹᛚᛖᚪᚾᛗᚦᛚᚪᚳᚷᛒᚷᛋᛈᛇᛟᛠᛖᚠᛖᚪᚹᚢᚾᚦᚠᛟᚠᛝᛠᚳᚪᚩᛡᚪᚠᚻᛠᚻᛟᚢᚢᛈᛗᚠᚩᚣᚾᚾᚠᚩᛏᚩᛋᚦᚹᚫᚫᛗᚢᚾᛏᛏᚹᛁᚱᛝᛞᛉᚳᚪᛗᛋᛖᚳᚻᚻᛄᛟᛡᛁᛒᛟᚢᛚᛁᛖᚪᚠᚪᚫᚾᚢᛞᛚᚦᚦᛄᚻᛗᚢᛖᛡᚣᛞᚣᚪᚣᛁᚾᛒᛝᛝᚷᛋᛝᛡᛉᚩᛈᛁᚻᛞᛄᚻᚻᛈᚪᛗᛗᛚᛇᛝᚣᚱᛋᚠᛇᚪᚷᚠᛒᛖᛉᚾᚣᚻᚩᚱᚦᛞᚻᛗᚹᛡᚳᛡᚷᚢᛏᛖᛗᚾᛖᛏᚻᛏᛉᚱᚾᛖᚪᚠᚻᚠᛏᛝᛒᛏᚠᚩᚠᚦᛖᛏᚻᛈᚪᛞᛏᛚᛝᚢᚻᛏᚱᚩᛇᚪᚾᚾᚠᚢᚱᛞᛁᛗᛏᚻᚢᚠᛉᛏᚢᚣᚠᛁᛖᛞᚦᛒᛗᛗᚣ",
+          "transliteration": "OUNGAEOROEWAPRGTNGTHETHXRLCTDBRUHTCHTLEOTTHNGTHNGFYYFEAJXPTHWLEANMTHLACGBGSPEOOEEAEFEAWUNTHFOEFNGEACAOIAAFHEAHOEUUPMFOYNNFOTOSTHWAEAEMUNTTWIRNGDXCAMSECHHJOEIAIBOEULIEAFAAENUDLTHTHJHMUEIAYDYAYINBNGNGGSNGIAXOPIHDJHHPAMMLEONGYRSFEOAGFBEXNYHORTHDHMWIACIAGUTEMNETHTXRNEAFHFTNGBTFOFTHETHPADTLNGUHTROEOANNFURDIMTHUFXTUYFIEDTHBMMY",
+          "recipe": {
+            "family": "integer_totient",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 27,
+            "skip_positions": [
+              42,
+              98,
+              221,
+              228,
+              230,
+              264
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 80488,
+          "max_states": 534
+        },
+        {
+          "score": -4.675577254406577,
+          "plaintext_runes": "ᛏᚷᛈᚾᛝᛇᚷᛖᛖᛄᛏᛋᚦᚢᛋᚫᛉᚩᚦᚩᛋᚹᚻᛁᛁᛡᛒᚠᚻᛖᛋᚦᚩᛒᛁᚩᛏᚫᛞᚹᛉᛠᚢᛈᚦᛖᛈᚦᛗᚱᚣᚪᚣᛝᚹᚳᛝᚢᚠᛟᛇᛋᛈᛋᛄᛈᛒᚷᚢᛖᚳᚣᚦᛞᛒᛄᚳᛋᚳᛁᚢᚳᚣᛚᚱᛗᛝᚱᚱᛈᚱᚱᛞᛠᛒᛏᛠᛞᛉᚱᛏᛄᛗᛝᚫᚻᚳᛁᛄᚩᛡᛋᚠᛈᛚᛉᛈᛇᛗᛠᚢᚳᛖᛡᚣᛈᚪᚪᛝᚫᛖᛒᚱᛋᚳᚱᚪᛞᚠᚪᛋᛏᚠᛉᛁᛈᚱᛟᚠᚫᚣᚹᚾᛉᚪᛁᛞᛋᛗᚹᛁᚦᚹᚪᛉᛖᚱᚪᚾᛒᚫᚹᛟᚢᛖᛈᛒᛈᚢᚩᛄᛞᛏᛡᚾᛈᚷᚠᚢᚠᛚᚩᚻᚩᛖᛉᛒᛗᛁᛁᚱᚦᛡᚩᚹᛒᛖᛒᛇᚾᛏᛇᛖᛝᚪᚾᛏᚣᛠᚷᛖᚠᛚᚦᚳᛡᚳᚱᚠᛏᚠᚠᛁᚷᛄᛚᚹᛏᚢᛡᛚᚷᚱᚳᛝᛞᚳᚫᚠᛋᛖᛝᛉᛏᛁᛉᛈᛚᚻᚹᛋᚱᚾᛉᚠᚣᛋᛋᛚᛋᚹᚾᚠ",
+          "transliteration": "TGPNNGEOGEEJTSTHUSAEXOTHOSWHIIIABFHESTHOBIOTAEDWXEAUPTHEPTHMRYAYNGWCNGUFOEEOSPSJPBGUECYTHDBJCSCIUCYLRMNGRRPRRDEABTEADXRTJMNGAEHCIJOIASFPLXPEOMEAUCEIAYPAANGAEEBRSCRADFASTFXIPROEFAEYWNXAIDSMWITHWAXERANBAEWOEUEPBPUOJDTIANPGFUFLOHOEXBMIIRTHIAOWBEBEONTEOENGANTYEAGEFLTHCIACRFTFFIGJLWTUIALGRCNGDCAEFSENGXTIXPLHWSRNXFYSSLSWNF",
+          "recipe": {
+            "family": "integer_totient",
+            "cipher_sign": 1,
+            "key_sign": -1,
+            "start": 230,
+            "skip_positions": [
+              58,
+              187,
+              221,
+              228,
+              230,
+              248,
+              264,
+              272
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 80488,
+          "max_states": 534
+        },
+        {
+          "score": -4.6957372605816925,
+          "plaintext_runes": "ᛋᛗᛋᛠᛏᚦᚦᛄᚾᚻᛠᚳᚷᚫᚪᚹᚦᚹᛖᛈᚹᛒᛁᛋᛋᛈᚳᚹᚦᚪᚱᛒᛋᚩᚩᛗᛠᛡᛄᛚᚢᛋᚠᚾᛁᚱᛋᚷᚣᛝᚳᚠᛈᚠᚢᚳᚠᛠᚠᚻᛚᛏᛉᛈᚹᚾᛗᚣᛋᛈᛞᚹᛝᛈᛝᛗᚣᛞᚾᛒᚣᚢᛞᛋᛚᛉᚠᛝᛠᚦᛁᛋᛡᛇᚹᚾᛉᚣᚠᚢᚠᚠᚦᛞᛞᛋᚩᛝᛗᛉᚷᚦᚠᛚᚩᚣᚱᚳᚹᛇᛉᚪᛒᚢᛇᛉᛉᚻᛏᚱᛞᛟᛈᛠᛞᚫᚣᛒᚦᛁᚢᚪᚫᛁᚷᚻᛗᚠᛒᚣᛁᛗᚩᚻᚣᚠᛗᚦᛚᚱᛉᛖᛉᚩᚩᚷᛈᛏᚪᛗᚳᚱᚩᚪᚩᛞᚹᛋᚫᛠᚣᛞᚳᚪᚻᚣᚠᚠᚣᚾᛚᚱᛗᛏᚾᚱᛞᛡᚾᚫᛠᚳᚹᛉᚳᚪᚳᚳᛁᚢᚪᚾᚷᚪᛠᛏᛝᛟᚩᛠᛟᛠᚦᛁᚪᚳᛚᚣᚩᚠᛚᚣᚢᚪᛚᚩᚪᚱᛚᛡᚩᛈᚹᛠᚫᛇᛏᛋᚠᚢᚢᛋᚣᚳᚣᛄᛗᚩᛒᚪᛒᚢᛡᛝᚠᚾᚩᚷᛏᚹᛞᚪᚣ",
+          "transliteration": "SMSEATTHTHJNHEACGAEAWTHWEPWBISSPCWTHARBSOOMEAIAJLUSFNIRSGYNGCFPFUCFEAFHLTXPWNMYSPDWNGPNGMYDNBYUDSLXFNGEATHISIAEOWNXYFUFFTHDDSONGMXGTHFLOYRCWEOXABUEOXXHTRDOEPEADAEYBTHIUAAEIGHMFBYIMOHYFMTHLRXEXOOGPTAMCROAODWSAEEAYDCAHYFFYNLRMTNRDIANAEEACWXCACCIUANGAEATNGOEOEAOEEATHIACLYOFLYUALOARLIAOPWEAAEEOTSFUUSYCYJMOBABUIANGFNOGTWDAY",
+          "recipe": {
+            "family": "integer_totient",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "start": 216,
+            "skip_positions": [
+              42,
+              51,
+              56,
+              58,
+              98,
+              187,
+              248,
+              264
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 80488,
+          "max_states": 534
+        }
+      ]
+    }
+  ],
+  "evaluated_key_sign_tasks": 12,
+  "dp_transitions": 966076,
+  "limits": [
+    "DP finds the global optimum under this finite-context score, not the correct plaintext by guarantee.",
+    "No deleted nulls, transpositions, changing alphabets, or cross-page keys in this family.",
+    "Scores are selected over keys/phases/signs/F masks; uncalibrated maxima are not evidence of decryption.",
+    "Distinct keys are reduced by primitive period and rotation; reverse spellings are also included.",
+    "A negative result only concerns this finite family and scorer."
+  ],
+  "wall_seconds": 1.0987653999909526,
+  "new_decryptions": []
+}

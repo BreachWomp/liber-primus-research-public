@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-22T09:10:48.927670+00:00",
+  "frozen_supervisor_sha256": "23b12f112c05d5d1a4c2747580a7a1644c18128e059ff13d2f8456f7dd5443b6",
+  "resume_supervisor_sha256": "51a8d4a70c56bb2ebe5e7d5b68c084f726c89828ed1a09fdd02564b700d0ff88",
+  "interrupted": [
+    {
+      "experiment": "E061-null-LP2-00_02-04",
+      "fingerprint": "ad459eff82904c7e1012aa54045e304acf93187e92aa5b141b8c6220490e6532",
+      "budget_charge_seconds": 185.0
+    }
+  ],
+  "completed_results_to_reuse": 13,
+  "original_process_logs_preserved": true,
+  "experiment_parameters_unchanged": true,
+  "preserved_process_logs_sha256": {
+    "results/E061-null-LP2-00_02-00-process.txt": "fdbe9a35bd722e0119aeb0ced723f8afee6573802e82451b07a9e8a9f23d23fd",
+    "results/E061-null-LP2-00_02-01-process.txt": "22dd336478bda1847be5a62b6c4fec82609933ba1e0cf4efd43a54449147d540",
+    "results/E061-null-LP2-00_02-02-process.txt": "397d0d23f7c914b379e34132a5359ac8b21d58dc76e491fc5546fa6d9d0e03be",
+    "results/E061-null-LP2-00_02-03-process.txt": "5f722d426e08444fd3fbdeb9d558a9427d0448480bfbc0864b1e82da94473e7c",
+    "results/E061-null-LP2-00_02-04-process.txt": "102c416527a7705de4806256cf425a084de0d9a299b5c25c0d8aa57e08cb600c",
+    "results/E061-section-LP2-00_02-00-process.txt": "38b9921558a7cf2eefdef7d2fd6b085ec3810694552e348e7ad272b574f2acc4",
+    "results/E061-section-LP2-03_07-00-process.txt": "dc944fb62ef1e16810755c1200cd2b407b6a69780ddff24a077c66cb26707ba1",
+    "results/E061-section-LP2-08_14-00-process.txt": "efd2a03e611a8425adb9b655bf4adc6a2abb8e75296d27af46719c3b79a149de",
+    "results/E061-section-LP2-15_22-00-process.txt": "6cd0f8795e282e058b17f3bdfb888c95a7e7e303efb165ddce11a8d7570db6c7",
+    "results/E061-section-LP2-23_26-00-process.txt": "365b41228e8e6802ab6f3dbacfc821a4c78783fc0049489a9403b17829a25a19",
+    "results/E061-section-LP2-27_32-00-process.txt": "4d6731b83f7ac31f829406edc54190e4532a32270ef5e001296b4f2602686786",
+    "results/E061-section-LP2-33_39-00-process.txt": "7e937a8ff3d514bc40d53ef122c507a0c522f8b7df0fb2ea9b7de81474aa1fb7",
+    "results/E061-section-LP2-40_53-00-process.txt": "ba7d78d82d9a37b8838bde52cbd7e556e126efea196792caed13552ca9bc51ff",
+    "results/E061-section-LP2-40_55-00-process.txt": "a12bb00d576a99e92c4d338ac1b22fd3e267e3dbeebec2b67d5fe644ee91e7ae"
+  }
+}

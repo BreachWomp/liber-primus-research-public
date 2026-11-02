@@ -1,0 +1,11 @@
+{
+  "experiment": "E050-long-key-diagnostic",
+  "control_output": "results/E049-long-key-controls-74c0828cc750.json",
+  "purpose": "Diagnose E049 failed31-key control without changing frozen solver or running unknown ciphertexts. Distinguish objective failure from key initialization/search failure.",
+  "checks": "For all3controls independently rescore injected plaintext and record observed correctness, true key presence among12initial seeds, and final key matches. For failed controls only, optimize exact Fschedule from the INJECTED key (explicit oracle), then run E038 on first1024cipher runes with INJECTED skip mask and INJECTED period (explicit twofold oracle), unknown key values,4starts,both signs.",
+  "seed": 3303050,
+  "score": "Same E049 model and primitive-key/F cost. Never count oracle-assisted diagnosis as blind recovery or a new decryption.",
+  "process_seconds": 180,
+  "phase_seconds": 900,
+  "limits": "No unknown-page scan. Diagnostic findings apply to specified controls; no parameter tuning or changes to historical outcomes. Source hashes and all truth-dependent inputs recorded."
+}

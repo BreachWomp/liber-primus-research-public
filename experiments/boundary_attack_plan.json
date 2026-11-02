@@ -1,0 +1,17 @@
+{
+  "experiment":"E028-boundary-selective-attack",
+  "hypothesis":"H026",
+  "rationale":"Changed-score rescan of the finite word/number family plus affine substitutions. E027 gate passed without parameter tuning; this is not a novel cipher family.",
+  "model":"Fixed E027 word-conditioned mixture, tau20; external training only, same source and lexical rules.",
+  "grid":"812 affine substitutions P=aC+b (a1..28,b0..28), 381 existing primitive word cycles with all phases, three number streams prime,prime-minus-one,integer-totient with starts0..255. Four signs on key streams; all F-skip subsets via exact wordwise DP.",
+  "controls":["LP1-03_04_divinity","LP1-14_15_circumference","LP2-56_totient_primes","LP2-57_direct"],
+  "gate":"All4 known texts must be exact top1 in the complete cipher union before unknown pages.",
+  "unknown_scope":"55 LP2 rune pages00..55; numericLP2-50 preserved but excluded from rune scoring. Canonical boundaries used, with explicit image-supported LP2-35 decision. Other54 layouts agree across two textual sources.",
+  "null":"19 independent exact count/doublet shuffles of the best raw-score page; retain fixed segment lengths/positions and repeat entire cipher union. Plus-one p, Bonferroni55; zero exceedances require larger preregistered confirmation before significance claim.",
+  "seed":3301028,
+  "replicates":19,
+  "family_seconds":850,
+  "process_seconds":180,
+  "memory":"One page/worker,100000-word cache,100000-character-model cache, at most200000 exact DP states. Failure at a bound is recorded, never beam-pruned.",
+  "limits":"No arbitrary key, text transposition, punctuation/key consumption, ciphertext insertions, word reordering, or cross-page continuation. Boundary locations remain a hypothesis about plaintext segments. Global count/doublet null does not preserve all higher-order rune patterns."
+}

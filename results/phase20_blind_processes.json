@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "regression",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 51.95631550002145,
+    "peak_sampled_bytes": 124825600,
+    "log": "results/E057-regression-2-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 0,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 49.41320160002215,
+    "peak_sampled_bytes": 125829120,
+    "log": "results/E057-fresh-0-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 1,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 46.65967470000032,
+    "peak_sampled_bytes": 125378560,
+    "log": "results/E057-fresh-1-process.txt"
+  },
+  {
+    "kind": "fresh",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 53.17857669998193,
+    "peak_sampled_bytes": 126701568,
+    "log": "results/E057-fresh-2-process.txt"
+  },
+  {
+    "kind": "null",
+    "index": 2,
+    "exit_code": 0,
+    "reason": null,
+    "seconds": 48.396487699996214,
+    "peak_sampled_bytes": 135282688,
+    "log": "results/E057-null-2-process.txt"
+  }
+]

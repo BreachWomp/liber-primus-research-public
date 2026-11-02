@@ -1,0 +1,20 @@
+{
+  "registered_at": "2026-10-18T19:59:29.545278+00:00",
+  "user_priority": "Attempt decryptions of the unsolved pages; defer expanded image/sampler audits.",
+  "wall_compute_budget_seconds": 900,
+  "timeout_per_process_seconds": 180,
+  "model": {
+    "order": 3,
+    "alpha": 0.5,
+    "strength": 5
+  },
+  "key_count": 381,
+  "key_source": "All 3..24 rune words from eligible LP1 solved files plus 8 named keys; both directions, primitive cycles and rotations deduplicated.",
+  "attacks": [
+    "E006 known-key control benchmark, leave-one-section-out, fixed seed 3301006, 1200 local corruptions",
+    "E007 all 55 unsolved rune pages, all catalog keys, all initial phases, four cipher/key sign choices, all F interruption subsets via exact DP",
+    "E008 all 55 pages, prime/totient-prime/integer-totient streams, offsets0..255, four signs, all F subsets"
+  ],
+  "significance": "No score is a decryption claim. Preserve full candidates. Match full search and selection in null tests for any promoted candidate.",
+  "image_audit_status": "Deferred to focus on actual unknown-page attacks per user steering; no new image validations claimed."
+}

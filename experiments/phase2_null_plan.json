@@ -1,0 +1,20 @@
+{
+  "registered_at": "2026-10-18T20:05:53.552699+00:00",
+  "experiment": "E009",
+  "selection": "After observing E007/E008 maxima: LP2-55 dictionary winner, LP2-49 stream winner. No null samples inspected yet.",
+  "pages": [
+    "LP2-55",
+    "LP2-49"
+  ],
+  "replicates_per_page": 39,
+  "seeds": {
+    "LP2-55": 330100955,
+    "LP2-49": 330100949
+  },
+  "grid": "Union of exact E007 and E008 grids, all phases, four signs, all F masks.",
+  "null": "Exact counts and stream doublets via independent rejection shuffles, max100000 proposals per sample.",
+  "correction": "Bonferroni55 for page selection; families handled by union max inside each null replicate.",
+  "timeout_seconds_per_page": 180,
+  "memory": "Sequential null samples, O(page length) shuffle storage, fixed finite DP grid and 100000 cached model probabilities.",
+  "claim_limit": "Cannot attain adjusted p<0.05 with B39. Diagnostic calibration, no decryption claim."
+}

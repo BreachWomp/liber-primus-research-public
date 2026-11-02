@@ -1,0 +1,84 @@
+{
+  "status": "partial_not_complete",
+  "mode": "streams",
+  "pages": [
+    {
+      "page": "LP2-12",
+      "ciphertext_runes": "ᚳᛁᚱᚳᚹᛠᛇᛏᚦᚳᚻᚢᛡᚹᛟᚷᛇᛈᚢᛈᚦᚷᚣᚢᚪᛗᚹᚳᛖᛝᚱᛠᛞᛏᚻᛄᛁᛈᚻᚠᛉᛝᛈᚾᛒᚳᚪᚷᛋᛟᛉᛠᛈᚪᚩᚷᚠᚳᛡᛄᛠᚢᚠᛋᛚᚣᛚᚢᛒᛉᚱᚣᚾᛁᛠᛚᚹᛋᚠᚦᚪᛠᛈᚷᛏᚷᛡᛟᛠᛡᛒᛉᛄᛒᛖᚾᛞᚠᛠᛗᚦᚪᛗᚠᚪᚻᛡᛗᛁᛏᛟᚻᚣᚹᛏᚠᛒᛁᚫᛖᛝᛒᛚᛏᛠᛉᛟᛋᚾᛉᚹᛏᛠᛏᛖᚢᛡᛖᛉᚾᛇᛟᚳᚾᚠᚩᚾᚠᚳᚪᚷᚱᚩᛠᚦᚹᚣᛒᛁᛝᛇᛟᚣᚷᛗᚩᛁᚷᛄᚩᛇᚢᛁᛉᛝᚪᚱᛉᛏᛄᛞᛈᚾᛝᚷᛏᚢᛚᚷᚳᛏᚢᛒᛇᛈᚩᚣᚢᛏᛡᚫᛏᚹᛏᛇᛡᚫᚫᚦᛏᛝᛠᚳᛁᛉᚻᚦᚣᚻᛚᚾᛋᚱᛡᚫᛚᚫᛖᚷᚻᛞᚾᚻᛠᚠᚪᚹᛖᚠᛄᛒᛇᚱᚹᛏᛉᚾᛠᛖᛁᚠᚾᛡᚳᛋᛟᚹᛈᚷᛝᛟ",
+      "rune_count": 261,
+      "f_count": 12,
+      "evaluated_key_sign_tasks": 12,
+      "dp_transitions": 932420,
+      "top": [
+        {
+          "score": -4.6153834869380725,
+          "plaintext_runes": "ᛋᚱᚷᚩᛚᛉᚣᛚᚢᛈᚱᚢᚦᛖᚣᚳᛟᛋᛞᚳᚻᚠᚢᛏᛚᛋᚫᛝᚱᚪᚱᚳᚻᛄᚹᚫᛟᛄᛇᚠᚠᛁᛏᚦᛒᛗᛞᚷᚪᛄᚾᛖᛡᛉᚠᛚᛟᛋᛁᛏᚣᛚᚠᚠᛖᛁᚱᛗᚣᛝᛝᛚᛡᛖᛞᚫᚳᛖᚠᚫᛠᛏᛡᛚᚠᛡᚱᛠᛚᛒᚫᛖᚹᚣᛞᛠᚠᛗᛖᛞᛚᛞᛚᚠᚳᛈᛗᛝᚪᚱᛞᚦᚹᛖᚩᚠᛗᛟᚢᚷᛟᚪᛋᚾᚪᛠᛖᛗᚹᛡᚩᛗᚢᚹᚣᚻᚳᛝᛞᛖᚹᛏᛡᛒᚠᛋᚣᚦᛚᚪᛄᚹᚫᛗᛡᛚᚣᚠᚳᛒᛟᛁᚦᛁᚪᚳᛟᛚᚾᚾᛄᛇᛖᛁᚢᛞᚻᛗᛈᛏᛡᚫᛗᚳᛏᚱᛋᛗᛝᛁᛚᛞᚢᚦᚪᚣᛠᛏᚣᚢᛠᚦᚾᚫᛞᚷᚦᛝᚪᚱᚪᛋᛉᚳᛠᚪᛖᛝᚠᚾᛉᚦᚹᚪᛚᛝᛉᚾᛄᚣᚩᚢᛒᛚᛋᛖᚦᛖᚠᛋᚣᚫᛡᚷᚪᛁᛈᚢᚳᚳᚾᚫᚳᛞᚳᛝᚣᛖᛋᛋᚱ",
+          "transliteration": "SRGOLXYLUPRUTHEYCOESDCHFUTLSAENGRARCHJWAEOEJEOFFITTHBMDGAJNEIAXFLOESITYLFFEIRMYNGNGLIAEDAECEFAEEATIALFIAREALBAEEWYDEAFMEDLDLFCPMNGARDTHWEOFMOEUGOEASNAEAEMWIAOMUWYHCNGDEWTIABFSYTHLAJWAEMIALYFCBOEITHIACOELNNJEOEIUDHMPTIAAEMCTRSMNGILDUTHAYEATYUEATHNAEDGTHNGARASXCEAAENGFNXTHWALNGXNJYOUBLSETHEFSYAEIAGAIPUCCNAECDCNGYESSR",
+          "recipe": {
+            "family": "prime_totient",
+            "cipher_sign": -1,
+            "key_sign": -1,
+            "start": 57,
+            "skip_positions": [
+              39,
+              62,
+              78,
+              103,
+              115,
+              144,
+              238
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 77654,
+          "max_states": 534
+        },
+        {
+          "score": -4.6555857029344905,
+          "plaintext_runes": "ᛒᚪᛟᚠᚻᚦᛝᚠᛒᚣᚱᚩᚻᛝᚾᚣᚳᛁᛇᛠᛞᚠᚢᚹᚹᚻᚠᚱᛞᛠᛝᛖᛒᛇᛏᚦᚳᛁᚾᚠᛝᚢᚩᚳᛗᛈᚳᛟᚷᛋᛒᛏᚳᛖᚢᛖᚠᛞᚣᛇᚱᛇᚠᚳᛏᛠᚣᛈᚻᚾᚹᛁᚪᚷᚣᚪᛋᚠᚠᚪᛝᛡᛏᛝᛁᚱᚱᚩᛋᚣᛖᚱᚹᛞᚢᛡᛉᚣᚷᚩᛝᛏᛒᚠᛠᛏᚻᛇᛈᛝᚦᛞᛖᚢᛟᚠᛡᚣᛚᛞᚳᛄᛟᚪᛈᚩᛗᛖᛏᚠᚣᛚᛈᛈᛒᛁᚾᚱᚦᚹᚪᚾᛞᚦᚹᛉᛟᛒᛈᚹᚣᚳᛇᛇᛝᚩᚹᚦᚢᛖᛒᚱᛚᚱᛞᚾᚣᚪᚷᚻᛗᛖᚠᛁᚷᛈᚪᚾᛒᛖᚾᚳᚹᛇᛠᛗᛇᛇᚱᚾᛠᚫᛏᛒᚪᛏᛏᚩᛠᛠᛠᛞᛚᚦᚱᛞᛞᛡᛏᚩᛉᚣᚾᛚᚩᛋᛗᛠᛉᛠᛝᚱᚢᛠᛠᚠᛒᛚᛁᛏᚱᛞᛠᚦᛋᛖᛈᚢᚠᛡᛁᛈᚾᛚᚱᛏᛋᛄᚩᛠᚪᚷᚢᛖᛗᚩᛝᚠᛒᚹᛁ",
+          "transliteration": "BAOEFHTHNGFBYROHNGNYCIEOEADFUWWHFRDEANGEBEOTTHCINFNGUOCMPCOEGSBTCEUEFDYEOREOFCTEAYPHNWIAGYASFFANGIATNGIRROSYERWDUIAXYGONGTBFEATHEOPNGTHDEUOEFIAYLDCJOEAPOMETFYLPPBINRTHWANDTHWXOEBPWYCEOEONGOWTHUEBRLRDNYAGHMEFIGPANBENCWEOEAMEOEORNEAAETBATTOEAEAEADLTHRDDIATOXYNLOSMEAXEANGRUEAEAFBLITRDEATHSEPUFIAIPNLRTSJOEAAGUEMONGFBWI",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": 1,
+            "key_sign": 1,
+            "start": 12,
+            "skip_positions": [
+              39,
+              56,
+              62,
+              78,
+              103,
+              115,
+              238
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 77763,
+          "max_states": 534
+        },
+        {
+          "score": -4.665252110573946,
+          "plaintext_runes": "ᚠᚢᛗᛟᚣᚹᚱᚦᛟᚠᛠᛏᛝᛖᛝᛇᚻᛄᚠᛞᛈᛋᚢᛗᛡᛈᚱᛏᚾᛇᚻᚫᚳᛖᚩᚦᚾᛖᚱᚢᛖᛋᚠᚷᚱᛚᚩᚫᛠᛞᚻᛠᛚᛋᛋᚢᛒᚣᚻᚣᛈᛒᚠᛄᛁᚷᛖᛚᛉᛗᚱᛈᚳᛁᚱᚪᛏᛚᚠᛁᛝᛞᛒᛠᚣᛄᚱᛈᛈᛏᚢᛁᛋᛋᚪᚪᛏᚠᛋᚣᚾᛚᛡᚠᚩᚦᛉᚩᛚᛚᛚᛄᛄᚹᚦᛚᛋᚩᚠᛋᛠᛒᛚᛠᛖᚹᚢᛖᚹᚻᛝᚢᛚᛗᛗᚠᚾᚣᚹᛏᛋᚾᚳᚹᚣᚫᚠᛞᛠᛋᛏᛚᚫᚦᚾᛏᛠᚪᚱᛠᛇᚱᛁᚾᛉᚫᛟᚩᚷᚢᛞᚾᚻᛚᛋᛏᛋᛄᛋᚪᚪᚹᚱᛡᛋᛄᚢᛒᛏᛞᛏᚱᛞᚩᚻᚢᛈᛋᛉᚹᛋᚹᚪᛝᚠᛄᚦᛇᛉᚱᚳᚠᚠᛒᚫᚱᚣᛁᚩᚩᛠᚩᛏᚣᚹᛖᛗᚢᛋᛒᚻᚢᚷᛒᛟᚻᛡᚣᛞᛏᚪᛁᚢᚠᚣᚩᛁᚹᚦᛉᚠᛝᛄᛁᚱᛋᚾᛈᚣᛒᚪ",
+          "transliteration": "FUMOEYWRTHOEFEATNGENGEOHJFDPSUMIAPRTNEOHAECEOTHNERUESFGRLOAEEADHEALSSUBYHYPBFJIGELXMRPCIRATLFINGDBEAYJRPPTUISSAATFSYNLIAFOTHXOLLLJJWTHLSOFSEABLEAEWUEWHNGULMMFNYWTSNCWYAEFDEASTLAETHNTEAAREAEORINXAEOEOGUDNHLSTSJSAAWRIASJUBTDTRDOHUPSXWSWANGFJTHEOXRCFFBAERYIOOEAOTYWEMUSBHUGBOEHIAYDTAIUFYOIWTHXFNGJIRSNPYBA",
+          "recipe": {
+            "family": "prime",
+            "cipher_sign": -1,
+            "key_sign": 1,
+            "start": 166,
+            "skip_positions": [
+              62,
+              78,
+              97,
+              103,
+              250
+            ]
+          },
+          "replay_verified": true,
+          "transitions": 77763,
+          "max_states": 534
+        }
+      ]
+    }
+  ],
+  "new_decryptions": []
+}

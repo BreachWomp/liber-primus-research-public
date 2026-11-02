@@ -1,0 +1,21 @@
+{
+  "experiment": "E025-periodic-feedback",
+  "hypothesis_id": "H023",
+  "recurrence": "P_i = a*C_i + b*P_(i-2) mod 29; two independent initial symbols K0,K1 at positions -2,-1.",
+  "grid": "a,b in1..28 excluding four old pairs (1,1),(1,28),(28,1),(28,28); every 29^2 seed; 655980 recipes per page.",
+  "deduplication": "Four sign pairs with arbitrary short seeds and no F skips already covered by E014; excluded. Period1 in E019 is a different delay.",
+  "algebra": "For r=i mod d: S_r=0, q_r=1; S_i=C_i+b*S_(i-d), q_i=b*q_(i-d). P_i=a*S_i+q_i*x_r where x_r=P_r. Initial K_r=b^-1*(x_r-a*C_r), a bijection. This derivation works for d2 and d3; only d2 searched here.",
+  "period3_cost": "780*29^3=19023420 recipes/page, 29 times period2. Defer until measured period2 cost and validation are available; no exclusion of period3 claimed.",
+  "model": "Frozen external4gram from E016; no LP training.",
+  "controls": [["LP1-03_04_divinity",5,11],["LP1-14_15_circumference",13,7],["LP2-57_direct",28,3]],
+  "control_seeds": "Random(3301025).randrange(29), two per listed case; exact top1 in all3 required before unknown scan.",
+  "unknown_scope": "All55 unknown rune pages LP2-00..55 excluding numericLP2-50; no F skips, offset constant, alternate order or section continuation.",
+  "null": "Select highest mean score; 19 independent exact count/doublet shuffles of selected page, full655980-recipe optimizer each time; plus-one p, Bonferroni55. If zero exceedances, larger preregistered follow-up required before significance claim.",
+  "null_seed": 3301025,
+  "null_replicates": 19,
+  "workers": 1,
+  "family_max_seconds": 650,
+  "process_max_seconds": 180,
+  "memory": "2048 candidate rows at a time, at most1024 runes per page, int16 intermediates and dense29^4 score table; no full ensemble retained.",
+  "limits": "Finite exploratory family extension with no historical coefficient clue. Synthetic controls are previously seen texts; neither controls nor high scores establish a historical solution. Any cost estimate for d3 is linear extrapolation, not a completed experiment."
+}
